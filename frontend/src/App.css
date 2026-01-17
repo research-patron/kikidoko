@@ -70,9 +70,9 @@
 .search-row button {
   padding: 14px 20px;
   border-radius: 14px;
-  border: none;
+  border: 1px solid rgba(91, 61, 18, 0.18);
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-ink);
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -80,12 +80,12 @@
 
 .search-row button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(46, 90, 70, 0.18);
+  box-shadow: 0 12px 24px rgba(152, 106, 39, 0.22);
 }
 
 .hero-panel {
-  background: linear-gradient(140deg, #1f2d2a 0%, #2f3f36 55%, #1e2a27 100%);
-  color: #f4f5f3;
+  background: linear-gradient(140deg, #fde2aa 0%, #f8c677 55%, #f1b45e 100%);
+  color: #3d2b12;
   border-radius: 24px;
   padding: clamp(24px, 4vw, 40px);
   display: grid;
@@ -97,7 +97,7 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(61, 43, 18, 0.6);
   margin: 0 0 4px;
 }
 
@@ -111,7 +111,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-  background: #ffffffcc;
+  background: rgba(255, 246, 230, 0.9);
   border: 1px solid var(--line);
   border-radius: 20px;
   padding: 20px;
@@ -190,13 +190,13 @@
 .bar-track {
   height: 10px;
   border-radius: 999px;
-  background: #e8e0d6;
+  background: #f3e1c7;
   overflow: hidden;
 }
 
 .bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #2d6a4f, #6c9273);
+  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
   border-radius: 999px;
   transition: width 0.4s ease;
 }
@@ -225,7 +225,7 @@
   padding: 10px 16px;
   border-radius: 999px;
   cursor: pointer;
-  color: var(--muted-dark);
+  color: var(--accent-ink);
 }
 
 .card-grid {
@@ -236,7 +236,7 @@
 }
 
 .card {
-  background: #fff;
+  background: #fffaf1;
   border-radius: 20px;
   padding: 20px;
   border: 1px solid var(--line);
@@ -292,7 +292,7 @@
 }
 
 .card-footer a {
-  color: var(--accent);
+  color: var(--accent-ink);
   text-decoration: none;
   font-weight: 600;
 }
@@ -305,21 +305,21 @@
 }
 
 .badge-ok {
-  background: rgba(45, 106, 79, 0.12);
-  color: #1d4d38;
-  border-color: rgba(45, 106, 79, 0.25);
+  background: rgba(248, 198, 119, 0.35);
+  color: #6b4a15;
+  border-color: rgba(248, 198, 119, 0.6);
 }
 
 .badge-warn {
-  background: rgba(244, 184, 96, 0.2);
-  color: #7a4a0f;
-  border-color: rgba(244, 184, 96, 0.4);
+  background: rgba(228, 162, 74, 0.28);
+  color: #6b3f0e;
+  border-color: rgba(228, 162, 74, 0.5);
 }
 
 .badge-muted {
-  background: rgba(120, 128, 136, 0.18);
-  color: #4b515a;
-  border-color: rgba(120, 128, 136, 0.3);
+  background: rgba(199, 175, 137, 0.35);
+  color: #5b4a35;
+  border-color: rgba(199, 175, 137, 0.5);
 }
 
 .footer {

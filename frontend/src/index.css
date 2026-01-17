@@ -3,17 +3,19 @@
 :root {
   --font-body: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   --font-display: "Fraunces", "Zen Kaku Gothic New", serif;
-  --ink: #111418;
-  --muted: #6f757c;
-  --muted-dark: #4c5259;
-  --accent: #2d6a4f;
-  --surface: #fdf9f4;
-  --line: #e6dfd6;
+  --ink: #19140d;
+  --muted: #7a6d5f;
+  --muted-dark: #5c5146;
+  --accent: #f8c677;
+  --accent-strong: #e4a24a;
+  --accent-ink: #5b3d12;
+  --surface: #fff4e4;
+  --line: #f1dcc0;
   --shadow-soft: 0 16px 32px rgba(26, 32, 36, 0.08);
   --shadow-strong: 0 24px 40px rgba(12, 16, 18, 0.18);
   font-family: var(--font-body);
   color: var(--ink);
-  background-color: #f5f1ea;
+  background-color: #fef7eb;
 }
 
 * {
@@ -24,9 +26,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background-image:
-    radial-gradient(rgba(31, 31, 31, 0.06) 1px, transparent 1px),
-    radial-gradient(rgba(31, 31, 31, 0.04) 1px, transparent 1px),
-    linear-gradient(120deg, #fbf7f1 0%, #eff3ef 55%, #f4efe6 100%);
+    radial-gradient(rgba(120, 93, 55, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(120, 93, 55, 0.05) 1px, transparent 1px),
+    linear-gradient(120deg, #fff1d8 0%, #fef7eb 50%, #f8ecd3 100%);
   background-size: 28px 28px, 56px 56px, cover;
   background-position: 0 0, 12px 12px, center;
 }

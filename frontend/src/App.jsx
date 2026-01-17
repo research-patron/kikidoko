@@ -13,7 +13,7 @@ const EQUIPMENT = [
     externalUse: "可",
     feeBand: "有料",
     address: "宮城県仙台市青葉区片平",
-    sourceUrl: "https://www.tohoku.ac.jp/",
+    sourceUrl: "https://www.tohoku.ac.jp/ja/research/equipment/",
   },
   {
     id: "eq-002",
@@ -26,7 +26,7 @@ const EQUIPMENT = [
     externalUse: "要相談",
     feeBand: "有料",
     address: "東京都文京区本郷",
-    sourceUrl: "https://www.u-tokyo.ac.jp/",
+    sourceUrl: "https://www.u-tokyo.ac.jp/ja/research/equipment/",
   },
   {
     id: "eq-003",
@@ -39,7 +39,7 @@ const EQUIPMENT = [
     externalUse: "可",
     feeBand: "有料",
     address: "新潟県新潟市西区五十嵐",
-    sourceUrl: "https://www.niigata-u.ac.jp/",
+    sourceUrl: "https://www.niigata-u.ac.jp/ja/research/equipment/",
   },
   {
     id: "eq-004",
@@ -52,7 +52,7 @@ const EQUIPMENT = [
     externalUse: "可",
     feeBand: "有料",
     address: "茨城県つくば市梅園",
-    sourceUrl: "https://www.aist.go.jp/",
+    sourceUrl: "https://www.aist.go.jp/aist_j/rd/equipment/",
   },
   {
     id: "eq-005",
@@ -65,7 +65,7 @@ const EQUIPMENT = [
     externalUse: "要相談",
     feeBand: "有料",
     address: "茨城県つくば市千現",
-    sourceUrl: "https://www.nims.go.jp/",
+    sourceUrl: "https://www.nims.go.jp/eng/facility/",
   },
   {
     id: "eq-006",
@@ -78,7 +78,7 @@ const EQUIPMENT = [
     externalUse: "不可",
     feeBand: "不明",
     address: "東京都新宿区大久保",
-    sourceUrl: "https://www.waseda.jp/",
+    sourceUrl: "https://www.waseda.jp/top/contact/",
   },
   {
     id: "eq-007",
@@ -91,7 +91,7 @@ const EQUIPMENT = [
     externalUse: "可",
     feeBand: "無料",
     address: "新潟県長岡市西片貝町",
-    sourceUrl: "https://www.nagaoka-ct.ac.jp/",
+    sourceUrl: "https://www.nagaoka-ct.ac.jp/contact/",
   },
   {
     id: "eq-008",
@@ -104,7 +104,7 @@ const EQUIPMENT = [
     externalUse: "可",
     feeBand: "有料",
     address: "神奈川県横浜市港北区日吉",
-    sourceUrl: "https://www.keio.ac.jp/",
+    sourceUrl: "https://www.keio.ac.jp/ja/contacts/",
   },
   {
     id: "eq-009",
@@ -117,7 +117,7 @@ const EQUIPMENT = [
     externalUse: "要相談",
     feeBand: "有料",
     address: "宮城県名取市愛島塩手",
-    sourceUrl: "https://www.sendai-nct.ac.jp/",
+    sourceUrl: "https://www.sendai-nct.ac.jp/contact/",
   },
 ];
 
@@ -340,27 +340,6 @@ export default function App() {
         </div>
       </section>
 
-      <section className="analysis">
-        <div className="section-title">
-          <h2>地域別の分布</h2>
-          <p>検索条件に応じた設備件数の傾向を表示します。</p>
-        </div>
-        <div className="region-bars">
-          {regionStats.map((stat) => (
-            <div className="region-bar" key={stat.region}>
-              <span>{stat.region}</span>
-              <div className="bar-track">
-                <div
-                  className="bar-fill"
-                  style={{ width: `${Math.round(stat.ratio * 100)}%` }}
-                />
-              </div>
-              <strong>{stat.count}</strong>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className="results">
         <div className="results-head">
           <div>
@@ -392,10 +371,31 @@ export default function App() {
               <div className="card-footer">
                 <span>{item.orgType}</span>
                 <a href={item.sourceUrl} target="_blank" rel="noreferrer">
-                  詳細を見る
+                  機器紹介・問い合わせへ
                 </a>
               </div>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="analysis">
+        <div className="section-title">
+          <h2>地域別の分布</h2>
+          <p>検索条件に応じた設備件数の傾向を表示します。</p>
+        </div>
+        <div className="region-bars">
+          {regionStats.map((stat) => (
+            <div className="region-bar" key={stat.region}>
+              <span>{stat.region}</span>
+              <div className="bar-track">
+                <div
+                  className="bar-fill"
+                  style={{ width: `${Math.round(stat.ratio * 100)}%` }}
+                />
+              </div>
+              <strong>{stat.count}</strong>
+            </div>
           ))}
         </div>
       </section>
