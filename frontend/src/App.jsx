@@ -272,73 +272,81 @@ export default function App() {
             />
             <button type="button">検索する</button>
           </div>
+          <div className="hero-stats">
+            <div className="stat">
+              <span>対象機関</span>
+              <strong>国立研究所 / 大学 / 高専</strong>
+            </div>
+            <div className="stat">
+              <span>最終更新</span>
+              <strong>2025.01 (サンプル)</strong>
+            </div>
+            <div className="stat">
+              <span>登録設備</span>
+              <strong>{EQUIPMENT.length} 件</strong>
+            </div>
+          </div>
         </div>
-        <div className="hero-panel">
-          <div>
-            <p className="panel-label">対象機関</p>
-            <p className="panel-value">国立研究所 / 大学 / 高専</p>
+        <aside className="filters">
+          <div className="filters-head">
+            <div>
+              <p className="filters-title">検索条件</p>
+              <p className="filters-sub">地域やカテゴリで絞り込み</p>
+            </div>
+            <button className="ghost" type="button" onClick={handleReset}>
+              条件をリセット
+            </button>
           </div>
-          <div>
-            <p className="panel-label">最新更新</p>
-            <p className="panel-value">2025.01 (サンプル)</p>
+          <div className="filter">
+            <label htmlFor="region">地域</label>
+            <select
+              id="region"
+              value={region}
+              onChange={(event) => setRegion(event.target.value)}
+            >
+              <option value="all">全国</option>
+              {REGION_OPTIONS.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
           </div>
-          <div>
-            <p className="panel-label">登録設備</p>
-            <p className="panel-value">{EQUIPMENT.length} 件</p>
+          <div className="filter">
+            <label htmlFor="category">カテゴリ</label>
+            <select
+              id="category"
+              value={category}
+              onChange={(event) => setCategory(event.target.value)}
+            >
+              <option value="all">すべて</option>
+              {CATEGORY_OPTIONS.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
           </div>
-        </div>
+          <div className="filter filter-inline">
+            <label className="toggle">
+              <input
+                type="checkbox"
+                checked={externalOnly}
+                onChange={(event) => setExternalOnly(event.target.checked)}
+              />
+              <span>学外利用可のみ</span>
+            </label>
+            <label className="toggle">
+              <input
+                type="checkbox"
+                checked={freeOnly}
+                onChange={(event) => setFreeOnly(event.target.checked)}
+              />
+              <span>無料設備のみ</span>
+            </label>
+          </div>
+        </aside>
       </header>
-
-      <section className="filters">
-        <div className="filter">
-          <label htmlFor="region">地域</label>
-          <select
-            id="region"
-            value={region}
-            onChange={(event) => setRegion(event.target.value)}
-          >
-            <option value="all">全国</option>
-            {REGION_OPTIONS.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="filter">
-          <label htmlFor="category">カテゴリ</label>
-          <select
-            id="category"
-            value={category}
-            onChange={(event) => setCategory(event.target.value)}
-          >
-            <option value="all">すべて</option>
-            {CATEGORY_OPTIONS.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="filter filter-inline">
-          <label className="toggle">
-            <input
-              type="checkbox"
-              checked={externalOnly}
-              onChange={(event) => setExternalOnly(event.target.checked)}
-            />
-            <span>学外利用可のみ</span>
-          </label>
-          <label className="toggle">
-            <input
-              type="checkbox"
-              checked={freeOnly}
-              onChange={(event) => setFreeOnly(event.target.checked)}
-            />
-            <span>無料設備のみ</span>
-          </label>
-        </div>
-      </section>
 
       <section className="results">
         <div className="results-head">
@@ -346,9 +354,6 @@ export default function App() {
             <h2>検索結果</h2>
             <p>{filteredItems.length} 件の設備が見つかりました</p>
           </div>
-          <button className="ghost" type="button" onClick={handleReset}>
-            条件をリセット
-          </button>
         </div>
         <div className="card-grid">
           {filteredItems.map((item, index) => (
