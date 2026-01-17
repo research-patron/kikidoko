@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kikidoko-crawler"
+version = "0.1.0"
+description = "Crawler for the Kikidoko equipment catalog"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12.0",
+  "firebase-admin>=6.5.0",
+  "google-cloud-firestore>=2.16.0",
+  "pydantic>=2.8.0",
+  "python-dotenv>=1.0.1",
+  "requests>=2.32.0",
+]
+
+[project.scripts]
+kikidoko-crawl = "kikidoko_crawler.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
