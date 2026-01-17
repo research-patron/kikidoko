@@ -272,16 +272,12 @@ export default function App() {
             />
             <button type="button">検索する</button>
           </div>
-          <div className="hero-stats">
-            <div className="stat">
-              <span>対象機関</span>
-              <strong>国立研究所 / 大学 / 高専</strong>
-            </div>
-            <div className="stat">
+          <div className="hero-meta">
+            <div>
               <span>最終更新</span>
               <strong>2025.01 (サンプル)</strong>
             </div>
-            <div className="stat">
+            <div>
               <span>登録設備</span>
               <strong>{EQUIPMENT.length} 件</strong>
             </div>
