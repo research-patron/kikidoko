@@ -6,7 +6,10 @@ from ..models import RawEquipment
 from .aist import fetch_aist_records
 from .hokudai import fetch_hokudai_records
 from .ims import fetch_ims_records
+from .kyoto import fetch_kyoto_records
 from .kyushu import fetch_kyushu_records
+from .nagoya import fetch_nagoya_records
+from .niigata import fetch_niigata_records
 from .nims import fetch_nims_records
 from .riken import fetch_riken_records
 from .tmd import fetch_tmd_records
@@ -21,7 +24,10 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "riken": fetch_riken_records,
     "hokudai": fetch_hokudai_records,
     "ims": fetch_ims_records,
+    "kyoto": fetch_kyoto_records,
     "kyushu": fetch_kyushu_records,
+    "nagoya": fetch_nagoya_records,
+    "niigata": fetch_niigata_records,
     "nims": fetch_nims_records,
     "tohoku": fetch_tohoku_records,
     "utokyo": fetch_utokyo_records,

@@ -19,6 +19,9 @@ kikidoko-crawl --source kyushu --dry-run
 kikidoko-crawl --source riken --dry-run
 kikidoko-crawl --source ims --dry-run
 kikidoko-crawl --source nims --dry-run
+kikidoko-crawl --source nagoya --dry-run
+kikidoko-crawl --source niigata --dry-run
+kikidoko-crawl --source kyoto --dry-run
 kikidoko-crawl --source tohoku --dry-run
 kikidoko-crawl --source utokyo --dry-run
 kikidoko-crawl --source tsukuba --dry-run
