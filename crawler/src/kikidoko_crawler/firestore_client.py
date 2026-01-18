@@ -24,6 +24,17 @@ def upsert_equipment(
     data = record.to_firestore()
     collection = client.collection("equipment")
 
+    if record.equipment_id:
+        existing = (
+            collection.where("equipment_id", "==", record.equipment_id)
+            .limit(1)
+            .stream()
+        )
+        doc = next(existing, None)
+        if doc:
+            doc.reference.set(data, merge=True)
+            return doc.id, "updated"
+
     if record.dedupe_key:
         existing = (
             collection.where("dedupe_key", "==", record.dedupe_key).limit(1).stream()

@@ -1,125 +1,7 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
 import "./App.css";
-
-const EQUIPMENT = [
-  {
-    id: "eq-001",
-    name: "透過型電子顕微鏡 JEM-2100",
-    categoryGeneral: "顕微鏡",
-    categoryDetail: "電子顕微鏡",
-    orgName: "東北大学 金属材料研究所",
-    orgType: "国立大学",
-    prefecture: "宮城県",
-    externalUse: "可",
-    feeBand: "有料",
-    address: "宮城県仙台市青葉区片平",
-    sourceUrl: "https://www.tohoku.ac.jp/ja/research/equipment/",
-  },
-  {
-    id: "eq-002",
-    name: "固体NMR 600MHz",
-    categoryGeneral: "分析装置",
-    categoryDetail: "NMR",
-    orgName: "東京大学 物性研究所",
-    orgType: "国立大学",
-    prefecture: "東京都",
-    externalUse: "要相談",
-    feeBand: "有料",
-    address: "東京都文京区本郷",
-    sourceUrl: "https://www.u-tokyo.ac.jp/ja/research/equipment/",
-  },
-  {
-    id: "eq-003",
-    name: "X線回折装置 SmartLab",
-    categoryGeneral: "分析装置",
-    categoryDetail: "XRD",
-    orgName: "新潟大学 自然科学研究科",
-    orgType: "国立大学",
-    prefecture: "新潟県",
-    externalUse: "可",
-    feeBand: "有料",
-    address: "新潟県新潟市西区五十嵐",
-    sourceUrl: "https://www.niigata-u.ac.jp/ja/research/equipment/",
-  },
-  {
-    id: "eq-004",
-    name: "走査電子顕微鏡 SU5000",
-    categoryGeneral: "顕微鏡",
-    categoryDetail: "走査電子顕微鏡",
-    orgName: "産総研 つくばセンター",
-    orgType: "公的研究機関",
-    prefecture: "茨城県",
-    externalUse: "可",
-    feeBand: "有料",
-    address: "茨城県つくば市梅園",
-    sourceUrl: "https://www.aist.go.jp/aist_j/rd/equipment/",
-  },
-  {
-    id: "eq-005",
-    name: "材料強度試験機 100kN",
-    categoryGeneral: "評価装置",
-    categoryDetail: "機械試験",
-    orgName: "NIMS 構造材料研究センター",
-    orgType: "公的研究機関",
-    prefecture: "茨城県",
-    externalUse: "要相談",
-    feeBand: "有料",
-    address: "茨城県つくば市千現",
-    sourceUrl: "https://www.nims.go.jp/eng/facility/",
-  },
-  {
-    id: "eq-006",
-    name: "超電導マグネット 11T",
-    categoryGeneral: "低温・磁場",
-    categoryDetail: "超電導磁石",
-    orgName: "早稲田大学 理工学術院",
-    orgType: "私立大学",
-    prefecture: "東京都",
-    externalUse: "不可",
-    feeBand: "不明",
-    address: "東京都新宿区大久保",
-    sourceUrl: "https://www.waseda.jp/top/contact/",
-  },
-  {
-    id: "eq-007",
-    name: "レーザードップラー振動計",
-    categoryGeneral: "計測装置",
-    categoryDetail: "振動解析",
-    orgName: "長岡工業高専 機械工学科",
-    orgType: "高等専門学校",
-    prefecture: "新潟県",
-    externalUse: "可",
-    feeBand: "無料",
-    address: "新潟県長岡市西片貝町",
-    sourceUrl: "https://www.nagaoka-ct.ac.jp/contact/",
-  },
-  {
-    id: "eq-008",
-    name: "クリーンルーム顕微鏡",
-    categoryGeneral: "顕微鏡",
-    categoryDetail: "光学顕微鏡",
-    orgName: "慶應義塾大学 理工学部",
-    orgType: "私立大学",
-    prefecture: "神奈川県",
-    externalUse: "可",
-    feeBand: "有料",
-    address: "神奈川県横浜市港北区日吉",
-    sourceUrl: "https://www.keio.ac.jp/ja/contacts/",
-  },
-  {
-    id: "eq-009",
-    name: "薄膜成膜装置 RFスパッタ",
-    categoryGeneral: "プロセス装置",
-    categoryDetail: "薄膜形成",
-    orgName: "仙台高専 材料システム工学科",
-    orgType: "高等専門学校",
-    prefecture: "宮城県",
-    externalUse: "要相談",
-    feeBand: "有料",
-    address: "宮城県名取市愛島塩手",
-    sourceUrl: "https://www.sendai-nct.ac.jp/contact/",
-  },
-];
+import { db } from "./firebase";
 
 const REGION_MAP = {
   北海道: "北海道",
@@ -183,24 +65,91 @@ const REGION_ORDER = [
   "沖縄",
 ];
 
-const CATEGORY_OPTIONS = Array.from(
-  new Set(EQUIPMENT.map((item) => item.categoryGeneral)),
-).sort();
-
-const REGION_OPTIONS = REGION_ORDER;
-
 const badgeClass = (value) => {
   if (value === "可") return "badge badge-ok";
   if (value === "要相談") return "badge badge-warn";
   return "badge badge-muted";
 };
 
+const externalLabel = (value) => {
+  return value || "不明";
+};
+
+const feeLabel = (value) => {
+  if (!value || value === "不明") return "料金要相談";
+  return value;
+};
+
+const PAGE_SIZE = 8;
+
+const formatDate = (value) => {
+  if (!value) return "未設定";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "未設定";
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}.${month}.${day}`;
+};
+
 export default function App() {
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState("");
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState("all");
   const [category, setCategory] = useState("all");
   const [externalOnly, setExternalOnly] = useState(false);
   const [freeOnly, setFreeOnly] = useState(false);
+  const [page, setPage] = useState(1);
+
+  useEffect(() => {
+    let isMounted = true;
+    const load = async () => {
+      setLoading(true);
+      setLoadError("");
+      try {
+        const snapshot = await getDocs(collection(db, "equipment"));
+        const nextItems = snapshot.docs.map((doc) => {
+          const data = doc.data() || {};
+          return {
+            id: data.equipment_id || doc.id,
+            name: data.name || "名称不明",
+            categoryGeneral: data.category_general || "未分類",
+            categoryDetail: data.category_detail || "",
+            orgName: data.org_name || "不明",
+            orgType: data.org_type || "不明",
+            prefecture: data.prefecture || "不明",
+            externalUse: data.external_use || "不明",
+            feeBand: feeLabel(data.fee_band),
+            address: data.address_raw || "所在地不明",
+            sourceUrl: data.source_url || "",
+            crawledAt: data.crawled_at || "",
+          };
+        });
+        nextItems.sort((a, b) => a.name.localeCompare(b.name, "ja"));
+        if (isMounted) {
+          setItems(nextItems);
+        }
+      } catch (error) {
+        if (isMounted) {
+          setLoadError("データ取得に失敗しました。時間をおいて再読み込みしてください。");
+        }
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+        }
+      }
+    };
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    setPage(1);
+  }, [query, region, category, externalOnly, freeOnly]);
 
   const handleReset = () => {
     setQuery("");
@@ -208,21 +157,28 @@ export default function App() {
     setCategory("all");
     setExternalOnly(false);
     setFreeOnly(false);
+    setPage(1);
   };
 
+  const categoryOptions = useMemo(() => {
+    return Array.from(
+      new Set(items.map((item) => item.categoryGeneral).filter(Boolean)),
+    ).sort();
+  }, [items]);
+
   const analysisItems = useMemo(() => {
-    const normalized = query.trim();
-    return EQUIPMENT.filter((item) => {
+    const normalized = query.trim().toLowerCase();
+    const terms = normalized.length ? normalized.split(/\s+/) : [];
+    return items.filter((item) => {
+      const haystack = `${item.name} ${item.orgName}`.toLowerCase();
       const matchesQuery =
-        normalized.length === 0 ||
-        item.name.includes(normalized) ||
-        item.orgName.includes(normalized);
+        terms.length === 0 || terms.every((term) => haystack.includes(term));
       const matchesCategory = category === "all" || item.categoryGeneral === category;
       const matchesExternal = !externalOnly || item.externalUse === "可";
       const matchesFree = !freeOnly || item.feeBand === "無料";
       return matchesQuery && matchesCategory && matchesExternal && matchesFree;
     });
-  }, [query, category, externalOnly, freeOnly]);
+  }, [items, query, category, externalOnly, freeOnly]);
 
   const filteredItems = useMemo(() => {
     return analysisItems.filter((item) => {
@@ -230,6 +186,27 @@ export default function App() {
       return region === "all" || mappedRegion === region;
     });
   }, [analysisItems, region]);
+
+  const totalPages = useMemo(() => {
+    return Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE));
+  }, [filteredItems.length]);
+
+  const pagedItems = useMemo(() => {
+    const start = (page - 1) * PAGE_SIZE;
+    return filteredItems.slice(start, start + PAGE_SIZE);
+  }, [filteredItems, page]);
+
+  const pageStart = filteredItems.length === 0 ? 0 : (page - 1) * PAGE_SIZE + 1;
+  const pageEnd = Math.min(page * PAGE_SIZE, filteredItems.length);
+
+  const latestUpdate = useMemo(() => {
+    if (!items.length) return "未設定";
+    const latest = items.reduce((acc, item) => {
+      if (!item.crawledAt) return acc;
+      return !acc || item.crawledAt > acc ? item.crawledAt : acc;
+    }, "");
+    return formatDate(latest);
+  }, [items]);
 
   const regionStats = useMemo(() => {
     const counts = REGION_ORDER.reduce((acc, key) => {
@@ -275,11 +252,11 @@ export default function App() {
           <div className="hero-meta">
             <div>
               <span>最終更新</span>
-              <strong>2025.01 (サンプル)</strong>
+              <strong>{latestUpdate}</strong>
             </div>
             <div>
               <span>登録設備</span>
-              <strong>{EQUIPMENT.length} 件</strong>
+              <strong>{items.length} 件</strong>
             </div>
           </div>
         </div>
@@ -301,7 +278,7 @@ export default function App() {
               onChange={(event) => setRegion(event.target.value)}
             >
               <option value="all">全国</option>
-              {REGION_OPTIONS.map((item) => (
+              {REGION_ORDER.map((item) => (
                 <option key={item} value={item}>
                   {item}
                 </option>
@@ -316,7 +293,7 @@ export default function App() {
               onChange={(event) => setCategory(event.target.value)}
             >
               <option value="all">すべて</option>
-              {CATEGORY_OPTIONS.map((item) => (
+              {categoryOptions.map((item) => (
                 <option key={item} value={item}>
                   {item}
                 </option>
@@ -348,36 +325,76 @@ export default function App() {
         <div className="results-head">
           <div>
             <h2>検索結果</h2>
-            <p>{filteredItems.length} 件の設備が見つかりました</p>
+            <p>
+              {filteredItems.length} 件の設備が見つかりました{" "}
+              {filteredItems.length > 0 && `(${pageStart}-${pageEnd}件を表示)`}
+            </p>
           </div>
         </div>
-        <div className="card-grid">
-          {filteredItems.map((item, index) => (
-            <article
-              key={item.id}
-              className="card"
-              style={{ animationDelay: `${index * 80}ms` }}
+        {loading ? (
+          <p className="results-status">データを読み込んでいます...</p>
+        ) : loadError ? (
+          <p className="results-status error">{loadError}</p>
+        ) : filteredItems.length === 0 ? (
+          <p className="results-status">該当する設備が見つかりませんでした。</p>
+        ) : (
+          <div className="card-grid">
+            {pagedItems.map((item, index) => (
+              <article
+                key={item.id}
+                className="card"
+                style={{ animationDelay: `${index * 80}ms` }}
+              >
+                <div className="card-header">
+                  <p className="category">{item.categoryGeneral}</p>
+                  <span className={badgeClass(item.externalUse)}>
+                    {externalLabel(item.externalUse)}
+                  </span>
+                </div>
+                <h3>{item.name}</h3>
+                <p className="org">{item.orgName}</p>
+                <div className="meta">
+                  <span>{item.prefecture}</span>
+                  <span>{item.feeBand}</span>
+                </div>
+                <p className="address">{item.address}</p>
+                <div className="card-footer">
+                  <span>{item.orgType}</span>
+                  {item.sourceUrl ? (
+                    <a href={item.sourceUrl} target="_blank" rel="noreferrer">
+                      機器紹介・問い合わせへ
+                    </a>
+                  ) : (
+                    <span className="link-disabled">情報元なし</span>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+        {!loading && !loadError && filteredItems.length > PAGE_SIZE && (
+          <div className="pagination">
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => setPage((current) => Math.max(1, current - 1))}
+              disabled={page === 1}
             >
-              <div className="card-header">
-                <p className="category">{item.categoryGeneral}</p>
-                <span className={badgeClass(item.externalUse)}>{item.externalUse}</span>
-              </div>
-              <h3>{item.name}</h3>
-              <p className="org">{item.orgName}</p>
-              <div className="meta">
-                <span>{item.prefecture}</span>
-                <span>{item.feeBand}</span>
-              </div>
-              <p className="address">{item.address}</p>
-              <div className="card-footer">
-                <span>{item.orgType}</span>
-                <a href={item.sourceUrl} target="_blank" rel="noreferrer">
-                  機器紹介・問い合わせへ
-                </a>
-              </div>
-            </article>
-          ))}
-        </div>
+              前へ
+            </button>
+            <span>
+              {page} / {totalPages}
+            </span>
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
+              disabled={page === totalPages}
+            >
+              次へ
+            </button>
+          </div>
+        )}
       </section>
 
       <section className="analysis">

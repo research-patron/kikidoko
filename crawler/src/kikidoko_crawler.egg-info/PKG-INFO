@@ -1,3 +1,16 @@
+Metadata-Version: 2.4
+Name: kikidoko-crawler
+Version: 0.1.0
+Summary: Crawler for the Kikidoko equipment catalog
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: firebase-admin>=6.5.0
+Requires-Dist: google-cloud-firestore>=2.16.0
+Requires-Dist: pydantic>=2.8.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.32.0
+
 # Crawler
 
 This package contains the scraping pipeline that collects equipment data and writes it to Firestore.
