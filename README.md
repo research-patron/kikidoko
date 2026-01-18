@@ -32,6 +32,9 @@ kikidoko-crawl --source hokudai --dry-run
 kikidoko-crawl --source riken --dry-run
 kikidoko-crawl --source ims --dry-run
 kikidoko-crawl --source nims --dry-run
+kikidoko-crawl --source chiba --dry-run
+kikidoko-crawl --source ehime --dry-run
+kikidoko-crawl --source fukui --dry-run
 kikidoko-crawl --source nagoya --dry-run
 kikidoko-crawl --source niigata --dry-run
 kikidoko-crawl --source kyoto --dry-run

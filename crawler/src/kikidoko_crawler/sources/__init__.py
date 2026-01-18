@@ -4,6 +4,9 @@ from typing import Callable
 
 from ..models import RawEquipment
 from .aist import fetch_aist_records
+from .chiba import fetch_chiba_records
+from .ehime import fetch_ehime_records
+from .fukui import fetch_fukui_records
 from .hokudai import fetch_hokudai_records
 from .ims import fetch_ims_records
 from .kyoto import fetch_kyoto_records
@@ -21,6 +24,9 @@ SourceHandler = Callable[[int, int], list[RawEquipment]]
 
 SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "aist": fetch_aist_records,
+    "chiba": fetch_chiba_records,
+    "ehime": fetch_ehime_records,
+    "fukui": fetch_fukui_records,
     "riken": fetch_riken_records,
     "hokudai": fetch_hokudai_records,
     "ims": fetch_ims_records,

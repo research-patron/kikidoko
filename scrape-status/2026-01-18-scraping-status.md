@@ -7,14 +7,14 @@
 - University of Tokyo (UTokyo)
 - NIMS (National Institute for Materials Science)
 - Tohoku University
+- Chiba University
+- Ehime University
+- Fukui University
 - Kyoto University
 - Nagoya University
 - Niigata University
 
 ## 未完了
-- Chiba University
-- Ehime University
-- Fukui University
 - Gifu University
 - Gunma University
 - Hiroshima University
@@ -70,3 +70,4 @@
 - Kyushu University は bunseki.kyushu-u.ac.jp の一覧で取得済み。ShareAidポータルは未対応。
 - AIST は TIA のHTML一覧で取得済み。PDFのみの一覧は対象外。
 - Niigata University の OFaRSⅡには新潟大学以外の機関も含まれるため、本リストでは新潟大学のみ取得。
+- Fukui University は遠赤外領域開発研究センターの機器一覧で取得済み。
