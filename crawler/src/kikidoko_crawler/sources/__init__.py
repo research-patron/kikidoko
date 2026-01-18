@@ -11,7 +11,9 @@ from .gifu import fetch_gifu_records
 from .gunma import fetch_gunma_records
 from .hiroshima import fetch_hiroshima_records
 from .hokudai import fetch_hokudai_records
+from .ibaraki import fetch_ibaraki_records
 from .ims import fetch_ims_records
+from .iwate import fetch_iwate_records
 from .kyoto import fetch_kyoto_records
 from .kyushu import fetch_kyushu_records
 from .nagoya import fetch_nagoya_records
@@ -35,7 +37,9 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "hiroshima": fetch_hiroshima_records,
     "riken": fetch_riken_records,
     "hokudai": fetch_hokudai_records,
+    "ibaraki": fetch_ibaraki_records,
     "ims": fetch_ims_records,
+    "iwate": fetch_iwate_records,
     "kyoto": fetch_kyoto_records,
     "kyushu": fetch_kyushu_records,
     "nagoya": fetch_nagoya_records,

@@ -38,9 +38,11 @@ kikidoko-crawl --source fukui --dry-run
 kikidoko-crawl --source gifu --dry-run
 kikidoko-crawl --source gunma --dry-run
 kikidoko-crawl --source hiroshima --dry-run
+kikidoko-crawl --source ibaraki --dry-run
 kikidoko-crawl --source nagoya --dry-run
 kikidoko-crawl --source niigata --dry-run
 kikidoko-crawl --source kyoto --dry-run
+kikidoko-crawl --source iwate --dry-run
 kikidoko-crawl --source tohoku --dry-run
 kikidoko-crawl --source utokyo --dry-run
 kikidoko-crawl --source tsukuba --dry-run

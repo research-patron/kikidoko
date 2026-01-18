@@ -13,14 +13,14 @@
 - Gifu University
 - Gunma University
 - Hiroshima University
+- Ibaraki University
+- Inter-University Research Institute Corporations (Ex: IMS)
+- Iwate University
 - Kyoto University
 - Nagoya University
 - Niigata University
 
 ## 未完了
-- Ibaraki University
-- Inter-University Research Institute Corporations (Ex: IMS)
-- Iwate University
 - Japan Advanced Institute of Science & Tech (JAIST)
 - KEK (High Energy Accelerator Research Org.) – Photon Factory
 - Kagoshima University
