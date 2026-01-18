@@ -22,6 +22,9 @@ kikidoko-crawl --source nims --dry-run
 kikidoko-crawl --source chiba --dry-run
 kikidoko-crawl --source ehime --dry-run
 kikidoko-crawl --source fukui --dry-run
+kikidoko-crawl --source gifu --dry-run
+kikidoko-crawl --source gunma --dry-run
+kikidoko-crawl --source hiroshima --dry-run
 kikidoko-crawl --source nagoya --dry-run
 kikidoko-crawl --source niigata --dry-run
 kikidoko-crawl --source kyoto --dry-run

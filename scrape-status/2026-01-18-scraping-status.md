@@ -10,14 +10,14 @@
 - Chiba University
 - Ehime University
 - Fukui University
+- Gifu University
+- Gunma University
+- Hiroshima University
 - Kyoto University
 - Nagoya University
 - Niigata University
 
 ## 未完了
-- Gifu University
-- Gunma University
-- Hiroshima University
 - Ibaraki University
 - Inter-University Research Institute Corporations (Ex: IMS)
 - Iwate University
@@ -71,3 +71,4 @@
 - AIST は TIA のHTML一覧で取得済み。PDFのみの一覧は対象外。
 - Niigata University の OFaRSⅡには新潟大学以外の機関も含まれるため、本リストでは新潟大学のみ取得。
 - Fukui University は遠赤外領域開発研究センターの機器一覧で取得済み。
+- Hiroshima University は facility-mgmt.hiroshima-u.ac.jp の機器一覧で取得（eqnetリンクは使用せず）。
