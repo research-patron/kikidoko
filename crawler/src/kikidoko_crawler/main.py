@@ -9,7 +9,6 @@ from .config import load_settings
 from .firestore_client import get_client, upsert_equipment
 from .models import EquipmentRecord
 from .normalizer import normalize_equipment
-from .sources import EqnetCrawler
 
 
 def parse_args() -> argparse.Namespace:
@@ -17,7 +16,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--source",
         required=True,
-        choices=["eqnet", "university", "csv"],
+        choices=["university", "csv"],
         help="Data source to crawl",
     )
     parser.add_argument("--dry-run", action="store_true", help="Skip Firestore writes")
@@ -26,11 +25,6 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=0,
         help="Limit number of items to process (0 = no limit)",
-    )
-    parser.add_argument("--list-url", help="Override list URL for eqnet")
-    parser.add_argument(
-        "--detail-url-template",
-        help="Override detail URL template for eqnet (use {id})",
     )
     parser.add_argument("--output", help="Write normalized records to a JSONL file")
     return parser.parse_args()
@@ -56,21 +50,9 @@ def main() -> int:
         output_path or "stdout",
     )
 
-    if args.source != "eqnet":
-        raise SystemExit(f"Source {args.source} is not implemented yet")
+    raise SystemExit(f"Source {args.source} is not implemented yet")
 
-    list_url = args.list_url or settings.eqnet_list_url
-    detail_template = args.detail_url_template or settings.eqnet_detail_url_template
-
-    crawler = EqnetCrawler(
-        list_url=list_url,
-        detail_url_template=detail_template,
-        timeout=settings.request_timeout,
-        logger=logger,
-    )
-    raw_records = crawler.crawl(limit=args.limit)
-    logger.info("Fetched %s raw records", len(raw_records))
-    records: list[EquipmentRecord] = [normalize_equipment(raw) for raw in raw_records]
+    records: list[EquipmentRecord] = [normalize_equipment(raw) for raw in []]
 
     if dry_run:
         _emit_records(records, output_path)

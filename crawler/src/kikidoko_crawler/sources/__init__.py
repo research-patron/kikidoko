@@ -1,3 +1,1 @@
-from .eqnet import EqnetCrawler
-
-__all__ = ["EqnetCrawler"]
+__all__ = []
