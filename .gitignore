@@ -14,3 +14,4 @@ frontend/.env.*
 
 # Firebase configuration (contains API keys)
 frontend/src/assets/firebase.js
+frontend/src/firebase.js
