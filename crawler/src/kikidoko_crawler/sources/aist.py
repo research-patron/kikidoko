@@ -16,7 +16,7 @@ AIST_PORTAL_URL = "https://www.aist.go.jp/aist_j/business/alliance/orp/index.htm
 AIST_BASE_URL = "https://www.aist.go.jp"
 
 EQUIPMENT_ID_PATTERN = re.compile(
-    r"^(?:[A-Z]{1,5}\\d{2,4}[A-Z]?|[A-Z]{1,5}-\\d{2,4}[A-Z]?|[A-Z]{1,3}\\d{2}-\\d{2,3}[A-Z]?)$"
+    r"^(?:[A-Z]{1,5}\d{2,4}[A-Z]?|[A-Z]{1,5}-\d{2,4}[A-Z]?|[A-Z]{1,3}\d{2}-\d{2,3}[A-Z]?)$"
 )
 
 

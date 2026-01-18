@@ -31,7 +31,16 @@ def fetch_hokudai_records(timeout: int, limit: int = 0) -> list[RawEquipment]:
             raise RuntimeError(f"Hokudai list returned {data.get('Result')}")
 
         total_count = data.get("TotalRecordCount", total_count)
-        for item in data.get("Records", []):
+        page_records = data.get("Records", [])
+        if start_index == 0 and total_count is not None:
+            if len(page_records) >= total_count:
+                for item in page_records:
+                    records.append(_build_record(item))
+                    if limit and len(records) >= limit:
+                        return records
+                return records
+
+        for item in page_records:
             records.append(_build_record(item))
             if limit and len(records) >= limit:
                 return records

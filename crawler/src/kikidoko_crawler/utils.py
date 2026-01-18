@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import re
 from datetime import datetime
 
@@ -60,7 +61,8 @@ DATE_PATTERN = re.compile(r"(\d{4})[./年-](\d{1,2})[./月-](\d{1,2})")
 def clean_text(value: str) -> str:
     if not value:
         return ""
-    text = re.sub(r"\s+", " ", value)
+    text = html.unescape(value)
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
