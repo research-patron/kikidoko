@@ -5,9 +5,12 @@ from typing import Callable
 from ..models import RawEquipment
 from .aist import fetch_aist_records
 from .hokudai import fetch_hokudai_records
+from .ims import fetch_ims_records
 from .kyushu import fetch_kyushu_records
+from .nims import fetch_nims_records
 from .riken import fetch_riken_records
 from .tmd import fetch_tmd_records
+from .tohoku import fetch_tohoku_records
 from .tsukuba import fetch_tsukuba_records
 from .utokyo import fetch_utokyo_records
 
@@ -17,7 +20,10 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "aist": fetch_aist_records,
     "riken": fetch_riken_records,
     "hokudai": fetch_hokudai_records,
+    "ims": fetch_ims_records,
     "kyushu": fetch_kyushu_records,
+    "nims": fetch_nims_records,
+    "tohoku": fetch_tohoku_records,
     "utokyo": fetch_utokyo_records,
     "tsukuba": fetch_tsukuba_records,
     "tmd": fetch_tmd_records,

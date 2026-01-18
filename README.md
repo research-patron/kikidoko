@@ -30,6 +30,9 @@ pip install -e .
 
 kikidoko-crawl --source hokudai --dry-run
 kikidoko-crawl --source riken --dry-run
+kikidoko-crawl --source ims --dry-run
+kikidoko-crawl --source nims --dry-run
+kikidoko-crawl --source tohoku --dry-run
 kikidoko-crawl --source utokyo --dry-run
 kikidoko-crawl --source tsukuba --dry-run
 kikidoko-crawl --source tmd --dry-run
