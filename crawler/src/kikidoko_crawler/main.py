@@ -9,6 +9,7 @@ from .config import load_settings
 from .firestore_client import get_client, upsert_equipment
 from .models import EquipmentRecord
 from .normalizer import normalize_equipment
+from .sources import available_sources, fetch_records
 
 
 def parse_args() -> argparse.Namespace:
@@ -16,7 +17,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--source",
         required=True,
-        choices=["university", "csv"],
+        choices=available_sources(),
         help="Data source to crawl",
     )
     parser.add_argument("--dry-run", action="store_true", help="Skip Firestore writes")
@@ -50,9 +51,8 @@ def main() -> int:
         output_path or "stdout",
     )
 
-    raise SystemExit(f"Source {args.source} is not implemented yet")
-
-    records: list[EquipmentRecord] = [normalize_equipment(raw) for raw in []]
+    raw_records = fetch_records(args.source, settings.request_timeout, args.limit)
+    records: list[EquipmentRecord] = [normalize_equipment(raw) for raw in raw_records]
 
     if dry_run:
         _emit_records(records, output_path)

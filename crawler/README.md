@@ -13,7 +13,10 @@ pip install -e .
 ## Run (dry)
 
 ```sh
-kikidoko-crawl --source university --dry-run
+kikidoko-crawl --source hokudai --dry-run
+kikidoko-crawl --source aist --dry-run
+kikidoko-crawl --source kyushu --dry-run
+kikidoko-crawl --source all --dry-run
 ```
 
 ## Environment
