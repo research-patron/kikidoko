@@ -14,6 +14,9 @@ from .hokudai import fetch_hokudai_records
 from .ibaraki import fetch_ibaraki_records
 from .ims import fetch_ims_records
 from .iwate import fetch_iwate_records
+from .jaist import fetch_jaist_records
+from .kagoshima import fetch_kagoshima_records
+from .kek import fetch_kek_records
 from .kyoto import fetch_kyoto_records
 from .kyushu import fetch_kyushu_records
 from .nagoya import fetch_nagoya_records
@@ -40,6 +43,9 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "ibaraki": fetch_ibaraki_records,
     "ims": fetch_ims_records,
     "iwate": fetch_iwate_records,
+    "jaist": fetch_jaist_records,
+    "kagoshima": fetch_kagoshima_records,
+    "kek": fetch_kek_records,
     "kyoto": fetch_kyoto_records,
     "kyushu": fetch_kyushu_records,
     "nagoya": fetch_nagoya_records,

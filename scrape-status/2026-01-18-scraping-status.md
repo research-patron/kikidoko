@@ -19,11 +19,11 @@
 - Kyoto University
 - Nagoya University
 - Niigata University
-
-## 未完了
 - Japan Advanced Institute of Science & Tech (JAIST)
 - KEK (High Energy Accelerator Research Org.) – Photon Factory
 - Kagoshima University
+
+## 未完了
 - Kanazawa University
 - Kitami Institute of Technology
 - Kobe University
