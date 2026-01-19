@@ -49,6 +49,9 @@ kikidoko-crawl --source nagaoka --dry-run
 kikidoko-crawl --source nagasaki --dry-run
 kikidoko-crawl --source naist --dry-run
 kikidoko-crawl --source nitech --dry-run
+kikidoko-crawl --source obihiro --dry-run
+kikidoko-crawl --source ochanomizu --dry-run
+kikidoko-crawl --source oita --dry-run
 kikidoko-crawl --source all --dry-run
 ```
 

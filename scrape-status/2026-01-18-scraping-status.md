@@ -34,11 +34,11 @@
 - Nagasaki University
 - Nagoya Institute of Technology
 - Nara Institute of Science & Technology (NAIST)
-
-## 未完了
 - Obihiro University of Agriculture & Veterinary Medicine
 - Ochanomizu University
 - Oita University
+
+## 未完了
 - Okayama University
 - Okinawa Institute of Science & Technology (OIST)
 - Osaka University

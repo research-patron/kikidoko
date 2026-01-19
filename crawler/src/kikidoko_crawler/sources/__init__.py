@@ -34,6 +34,9 @@ from .naist import fetch_naist_records
 from .nitech import fetch_nitech_records
 from .niigata import fetch_niigata_records
 from .nims import fetch_nims_records
+from .obihiro import fetch_obihiro_records
+from .ochanomizu import fetch_ochanomizu_records
+from .oita import fetch_oita_records
 from .riken import fetch_riken_records
 from .tmd import fetch_tmd_records
 from .tohoku import fetch_tohoku_records
@@ -75,6 +78,9 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "nitech": fetch_nitech_records,
     "niigata": fetch_niigata_records,
     "nims": fetch_nims_records,
+    "obihiro": fetch_obihiro_records,
+    "ochanomizu": fetch_ochanomizu_records,
+    "oita": fetch_oita_records,
     "tohoku": fetch_tohoku_records,
     "utokyo": fetch_utokyo_records,
     "tsukuba": fetch_tsukuba_records,
