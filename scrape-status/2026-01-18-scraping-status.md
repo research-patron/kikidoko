@@ -28,11 +28,11 @@
 - Kumamoto University
 - Kyushu Institute of Technology
 - Mie University
-
-## 未完了
 - Miyazaki University
 - Muroran Institute of Technology
 - Nagaoka University of Technology
+
+## 未完了
 - Nagasaki University
 - Nagoya Institute of Technology
 - Nara Institute of Science & Technology (NAIST)

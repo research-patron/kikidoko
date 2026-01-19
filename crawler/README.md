@@ -43,6 +43,9 @@ kikidoko-crawl --source kobe --dry-run
 kikidoko-crawl --source kumamoto --dry-run
 kikidoko-crawl --source kyutech --dry-run
 kikidoko-crawl --source mie --dry-run
+kikidoko-crawl --source miyazaki --dry-run
+kikidoko-crawl --source muroran --dry-run
+kikidoko-crawl --source nagaoka --dry-run
 kikidoko-crawl --source all --dry-run
 ```
 

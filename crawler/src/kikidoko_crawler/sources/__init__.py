@@ -25,6 +25,9 @@ from .kyoto import fetch_kyoto_records
 from .kyutech import fetch_kyutech_records
 from .kyushu import fetch_kyushu_records
 from .mie import fetch_mie_records
+from .miyazaki import fetch_miyazaki_records
+from .muroran import fetch_muroran_records
+from .nagaoka import fetch_nagaoka_records
 from .nagoya import fetch_nagoya_records
 from .niigata import fetch_niigata_records
 from .nims import fetch_nims_records
@@ -60,6 +63,9 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "kyutech": fetch_kyutech_records,
     "kyushu": fetch_kyushu_records,
     "mie": fetch_mie_records,
+    "miyazaki": fetch_miyazaki_records,
+    "muroran": fetch_muroran_records,
+    "nagaoka": fetch_nagaoka_records,
     "nagoya": fetch_nagoya_records,
     "niigata": fetch_niigata_records,
     "nims": fetch_nims_records,
