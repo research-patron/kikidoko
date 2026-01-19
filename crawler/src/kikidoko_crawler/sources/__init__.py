@@ -20,8 +20,11 @@ from .kagoshima import fetch_kagoshima_records
 from .kek import fetch_kek_records
 from .kitami import fetch_kitami_records
 from .kobe import fetch_kobe_records
+from .kumamoto import fetch_kumamoto_records
 from .kyoto import fetch_kyoto_records
+from .kyutech import fetch_kyutech_records
 from .kyushu import fetch_kyushu_records
+from .mie import fetch_mie_records
 from .nagoya import fetch_nagoya_records
 from .niigata import fetch_niigata_records
 from .nims import fetch_nims_records
@@ -52,8 +55,11 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "kek": fetch_kek_records,
     "kitami": fetch_kitami_records,
     "kobe": fetch_kobe_records,
+    "kumamoto": fetch_kumamoto_records,
     "kyoto": fetch_kyoto_records,
+    "kyutech": fetch_kyutech_records,
     "kyushu": fetch_kyushu_records,
+    "mie": fetch_mie_records,
     "nagoya": fetch_nagoya_records,
     "niigata": fetch_niigata_records,
     "nims": fetch_nims_records,

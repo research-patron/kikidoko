@@ -25,11 +25,11 @@
 - Kanazawa University
 - Kitami Institute of Technology
 - Kobe University
-
-## 未完了
 - Kumamoto University
 - Kyushu Institute of Technology
 - Mie University
+
+## 未完了
 - Miyazaki University
 - Muroran Institute of Technology
 - Nagaoka University of Technology
