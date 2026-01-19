@@ -50,6 +50,9 @@ kikidoko-crawl --source tmd --dry-run
 kikidoko-crawl --source jaist --dry-run
 kikidoko-crawl --source kek --dry-run
 kikidoko-crawl --source kagoshima --dry-run
+kikidoko-crawl --source kanazawa --dry-run
+kikidoko-crawl --source kitami --dry-run
+kikidoko-crawl --source kobe --dry-run
 ```
 
 ## Environment

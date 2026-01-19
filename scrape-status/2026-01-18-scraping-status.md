@@ -22,11 +22,11 @@
 - Japan Advanced Institute of Science & Tech (JAIST)
 - KEK (High Energy Accelerator Research Org.) – Photon Factory
 - Kagoshima University
-
-## 未完了
 - Kanazawa University
 - Kitami Institute of Technology
 - Kobe University
+
+## 未完了
 - Kumamoto University
 - Kyushu Institute of Technology
 - Mie University
@@ -72,3 +72,5 @@
 - Niigata University の OFaRSⅡには新潟大学以外の機関も含まれるため、本リストでは新潟大学のみ取得。
 - Fukui University は遠赤外領域開発研究センターの機器一覧で取得済み。
 - Hiroshima University は facility-mgmt.hiroshima-u.ac.jp の機器一覧で取得（eqnetリンクは使用せず）。
+- Kitami Institute of Technology は CSV に含まれる帯広畜産大学分を除外して取得。
+- Kobe University は学内専用ページが 403 のため公開ページのみ取得。
