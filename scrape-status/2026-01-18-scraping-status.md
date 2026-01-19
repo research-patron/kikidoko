@@ -31,11 +31,11 @@
 - Miyazaki University
 - Muroran Institute of Technology
 - Nagaoka University of Technology
-
-## 未完了
 - Nagasaki University
 - Nagoya Institute of Technology
 - Nara Institute of Science & Technology (NAIST)
+
+## 未完了
 - Obihiro University of Agriculture & Veterinary Medicine
 - Ochanomizu University
 - Oita University

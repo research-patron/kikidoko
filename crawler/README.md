@@ -46,6 +46,9 @@ kikidoko-crawl --source mie --dry-run
 kikidoko-crawl --source miyazaki --dry-run
 kikidoko-crawl --source muroran --dry-run
 kikidoko-crawl --source nagaoka --dry-run
+kikidoko-crawl --source nagasaki --dry-run
+kikidoko-crawl --source naist --dry-run
+kikidoko-crawl --source nitech --dry-run
 kikidoko-crawl --source all --dry-run
 ```
 

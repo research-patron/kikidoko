@@ -28,7 +28,10 @@ from .mie import fetch_mie_records
 from .miyazaki import fetch_miyazaki_records
 from .muroran import fetch_muroran_records
 from .nagaoka import fetch_nagaoka_records
+from .nagasaki import fetch_nagasaki_records
 from .nagoya import fetch_nagoya_records
+from .naist import fetch_naist_records
+from .nitech import fetch_nitech_records
 from .niigata import fetch_niigata_records
 from .nims import fetch_nims_records
 from .riken import fetch_riken_records
@@ -66,7 +69,10 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "miyazaki": fetch_miyazaki_records,
     "muroran": fetch_muroran_records,
     "nagaoka": fetch_nagaoka_records,
+    "nagasaki": fetch_nagasaki_records,
     "nagoya": fetch_nagoya_records,
+    "naist": fetch_naist_records,
+    "nitech": fetch_nitech_records,
     "niigata": fetch_niigata_records,
     "nims": fetch_nims_records,
     "tohoku": fetch_tohoku_records,
