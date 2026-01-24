@@ -52,6 +52,12 @@ kikidoko-crawl --source nitech --dry-run
 kikidoko-crawl --source obihiro --dry-run
 kikidoko-crawl --source ochanomizu --dry-run
 kikidoko-crawl --source oita --dry-run
+kikidoko-crawl --source saga --dry-run
+kikidoko-crawl --source shimane --dry-run
+kikidoko-crawl --source shinshu --dry-run
+kikidoko-crawl --source okayama --dry-run
+kikidoko-crawl --source oist --dry-run
+kikidoko-crawl --source osaka --dry-run
 kikidoko-crawl --source all --dry-run
 ```
 

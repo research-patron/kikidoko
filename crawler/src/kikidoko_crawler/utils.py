@@ -67,7 +67,10 @@ def clean_text(value: str) -> str:
 
 
 def normalize_label(value: str) -> str:
-    return clean_text(value).replace(":", "").replace("：", "")
+    text = clean_text(value)
+    for char in (":", "：", " ", "　"):
+        text = text.replace(char, "")
+    return text
 
 
 def guess_prefecture(text: str) -> str:

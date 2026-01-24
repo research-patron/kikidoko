@@ -3,6 +3,7 @@
 ## 完了
 - Hokkaido University
 - AIST (National Institute of Advanced Industrial Science & Tech)
+- RIKEN (Institute of Physical & Chemical Research)
 - Kyushu University
 - University of Tokyo (UTokyo)
 - NIMS (National Institute for Materials Science)
@@ -37,16 +38,14 @@
 - Obihiro University of Agriculture & Veterinary Medicine
 - Ochanomizu University
 - Oita University
-
-## 未完了
+- Saga University
+- Shimane University
+- Shinshu University
 - Okayama University
 - Okinawa Institute of Science & Technology (OIST)
 - Osaka University
-- RIKEN (Institute of Physical & Chemical Research)
-- Saga University
-- Saitama University
-- Shimane University
-- Shinshu University
+
+## 未完了
 - Tokyo Institute of Technology (Tokyo Tech)
 - Tokyo Medical & Dental University (TMDU)
 - Tokyo University of Agriculture & Technology (TUAT)
@@ -64,6 +63,7 @@
 ## スクレイピング対象外
 - Hirosaki University (学内限定のPDF一覧のみ)
 - Shizuoka University (PDF一覧のみ)
+- Saitama University (公開ページに機器一覧が見当たらず、スクレイピング対象として成立しないため)
 
 ## 注記
 - Nagoya University は IMaSS の共通機器一覧で取得済み。THERSポータルは未対応。

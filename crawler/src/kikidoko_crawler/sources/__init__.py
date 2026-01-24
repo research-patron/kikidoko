@@ -37,7 +37,13 @@ from .nims import fetch_nims_records
 from .obihiro import fetch_obihiro_records
 from .ochanomizu import fetch_ochanomizu_records
 from .oita import fetch_oita_records
+from .okayama import fetch_okayama_records
+from .oist import fetch_oist_records
+from .osaka import fetch_osaka_records
 from .riken import fetch_riken_records
+from .saga import fetch_saga_records
+from .shimane import fetch_shimane_records
+from .shinshu import fetch_shinshu_records
 from .tmd import fetch_tmd_records
 from .tohoku import fetch_tohoku_records
 from .tsukuba import fetch_tsukuba_records
@@ -81,6 +87,12 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "obihiro": fetch_obihiro_records,
     "ochanomizu": fetch_ochanomizu_records,
     "oita": fetch_oita_records,
+    "okayama": fetch_okayama_records,
+    "oist": fetch_oist_records,
+    "osaka": fetch_osaka_records,
+    "saga": fetch_saga_records,
+    "shimane": fetch_shimane_records,
+    "shinshu": fetch_shinshu_records,
     "tohoku": fetch_tohoku_records,
     "utokyo": fetch_utokyo_records,
     "tsukuba": fetch_tsukuba_records,
