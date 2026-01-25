@@ -52,7 +52,11 @@ from .tuat import fetch_tuat_records
 from .tsukuba import fetch_tsukuba_records
 from .toyohashi import fetch_toyohashi_records
 from .uec import fetch_uec_records
+from .utsunomiya import fetch_utsunomiya_records
 from .utokyo import fetch_utokyo_records
+from .yamaguchi import fetch_yamaguchi_records
+from .yamanashi import fetch_yamanashi_records
+from .ynu import fetch_ynu_records
 
 SourceHandler = Callable[[int, int], list[RawEquipment]]
 
@@ -107,6 +111,10 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "tuat": fetch_tuat_records,
     "toyohashi": fetch_toyohashi_records,
     "uec": fetch_uec_records,
+    "utsunomiya": fetch_utsunomiya_records,
+    "yamaguchi": fetch_yamaguchi_records,
+    "yamanashi": fetch_yamanashi_records,
+    "ynu": fetch_ynu_records,
 }
 
 

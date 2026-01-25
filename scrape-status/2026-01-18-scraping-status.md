@@ -51,12 +51,13 @@
 - Toyohashi University of Technology
 - Tsukuba University
 - University of Electro-Communications (UEC)
-
-## 未完了
 - Utsunomiya University
 - Yamaguchi University
 - Yamanashi University
 - Yokohama National University
+
+## 未完了
+- なし
 
 ## スクレイピング対象外
 - Hirosaki University (学内限定のPDF一覧のみ)
