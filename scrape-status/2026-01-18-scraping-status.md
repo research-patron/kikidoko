@@ -47,11 +47,10 @@
 - Tokyo Institute of Technology (Tokyo Tech)
 - Tokyo Medical & Dental University (TMDU)
 - Tokyo University of Agriculture & Technology (TUAT)
+- Tottori University
+- Toyohashi University of Technology
 
 ## 未完了
-- Tottori University
-- Toyama University
-- Toyohashi University of Technology
 - Tsukuba University
 - University of Electro-Communications (UEC)
 - University of the Ryukyus
@@ -64,6 +63,7 @@
 - Hirosaki University (学内限定のPDF一覧のみ)
 - Shizuoka University (PDF一覧のみ)
 - Saitama University (公開ページに機器一覧が見当たらず、スクレイピング対象として成立しないため)
+- Toyama University (公開の機器一覧が見当たらず、公開情報は方針PDFのみ)
 
 ## 注記
 - Nagoya University は IMaSS の共通機器一覧で取得済み。THERSポータルは未対応。

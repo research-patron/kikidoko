@@ -47,8 +47,10 @@ from .shinshu import fetch_shinshu_records
 from .titech import fetch_titech_records
 from .tmd import fetch_tmd_records
 from .tohoku import fetch_tohoku_records
+from .tottori import fetch_tottori_records
 from .tuat import fetch_tuat_records
 from .tsukuba import fetch_tsukuba_records
+from .toyohashi import fetch_toyohashi_records
 from .utokyo import fetch_utokyo_records
 
 SourceHandler = Callable[[int, int], list[RawEquipment]]
@@ -97,10 +99,12 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "shinshu": fetch_shinshu_records,
     "titech": fetch_titech_records,
     "tohoku": fetch_tohoku_records,
+    "tottori": fetch_tottori_records,
     "utokyo": fetch_utokyo_records,
     "tsukuba": fetch_tsukuba_records,
     "tmd": fetch_tmd_records,
     "tuat": fetch_tuat_records,
+    "toyohashi": fetch_toyohashi_records,
 }
 
 
