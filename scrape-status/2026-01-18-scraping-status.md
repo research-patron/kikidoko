@@ -44,11 +44,11 @@
 - Okayama University
 - Okinawa Institute of Science & Technology (OIST)
 - Osaka University
-
-## 未完了
 - Tokyo Institute of Technology (Tokyo Tech)
 - Tokyo Medical & Dental University (TMDU)
 - Tokyo University of Agriculture & Technology (TUAT)
+
+## 未完了
 - Tottori University
 - Toyama University
 - Toyohashi University of Technology

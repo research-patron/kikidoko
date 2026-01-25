@@ -44,8 +44,10 @@ from .riken import fetch_riken_records
 from .saga import fetch_saga_records
 from .shimane import fetch_shimane_records
 from .shinshu import fetch_shinshu_records
+from .titech import fetch_titech_records
 from .tmd import fetch_tmd_records
 from .tohoku import fetch_tohoku_records
+from .tuat import fetch_tuat_records
 from .tsukuba import fetch_tsukuba_records
 from .utokyo import fetch_utokyo_records
 
@@ -93,10 +95,12 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "saga": fetch_saga_records,
     "shimane": fetch_shimane_records,
     "shinshu": fetch_shinshu_records,
+    "titech": fetch_titech_records,
     "tohoku": fetch_tohoku_records,
     "utokyo": fetch_utokyo_records,
     "tsukuba": fetch_tsukuba_records,
     "tmd": fetch_tmd_records,
+    "tuat": fetch_tuat_records,
 }
 
 
