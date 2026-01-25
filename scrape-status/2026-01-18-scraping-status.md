@@ -23,6 +23,8 @@
 - Japan Advanced Institute of Science & Tech (JAIST)
 - KEK (High Energy Accelerator Research Org.) – Photon Factory
 - Kagoshima University
+- Kagawa University
+- Kochi University
 - Kanazawa University
 - Kitami Institute of Technology
 - Kobe University
@@ -43,10 +45,12 @@
 - Shinshu University
 - Okayama University
 - Okinawa Institute of Science & Technology (OIST)
+- University of the Ryukyus
 - Osaka University
 - Tokyo Institute of Technology (Tokyo Tech)
 - Tokyo Medical & Dental University (TMDU)
 - Tokyo University of Agriculture & Technology (TUAT)
+- Tokushima University
 - Tottori University
 - Toyohashi University of Technology
 - Tsukuba University
@@ -64,7 +68,6 @@
 - Shizuoka University (PDF一覧のみ)
 - Saitama University (公開ページに機器一覧が見当たらず、スクレイピング対象として成立しないため)
 - Toyama University (公開の機器一覧が見当たらず、公開情報は方針PDFのみ)
-- University of the Ryukyus (rfc.lab.u-ryukyu.ac.jp が 403 で閲覧不可)
 
 ## 注記
 - Nagoya University は IMaSS の共通機器一覧で取得済み。THERSポータルは未対応。
@@ -75,3 +78,4 @@
 - Hiroshima University は facility-mgmt.hiroshima-u.ac.jp の機器一覧で取得（eqnetリンクは使用せず）。
 - Kitami Institute of Technology は CSV に含まれる帯広畜産大学分を除外して取得。
 - Kobe University は学内専用ページが 403 のため公開ページのみ取得。
+- University of the Ryukyus は rfc.lab.u-ryukyu.ac.jp が 403 のため UR-CORE 公開一覧で取得。

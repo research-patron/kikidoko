@@ -17,9 +17,11 @@ from .iwate import fetch_iwate_records
 from .jaist import fetch_jaist_records
 from .kanazawa import fetch_kanazawa_records
 from .kagoshima import fetch_kagoshima_records
+from .kagawa import fetch_kagawa_records
 from .kek import fetch_kek_records
 from .kitami import fetch_kitami_records
 from .kobe import fetch_kobe_records
+from .kochi import fetch_kochi_records
 from .kumamoto import fetch_kumamoto_records
 from .kyoto import fetch_kyoto_records
 from .kyutech import fetch_kyutech_records
@@ -41,12 +43,14 @@ from .okayama import fetch_okayama_records
 from .oist import fetch_oist_records
 from .osaka import fetch_osaka_records
 from .riken import fetch_riken_records
+from .ryukyu import fetch_ryukyu_records
 from .saga import fetch_saga_records
 from .shimane import fetch_shimane_records
 from .shinshu import fetch_shinshu_records
 from .titech import fetch_titech_records
 from .tmd import fetch_tmd_records
 from .tohoku import fetch_tohoku_records
+from .tokushima import fetch_tokushima_records
 from .tottori import fetch_tottori_records
 from .tuat import fetch_tuat_records
 from .tsukuba import fetch_tsukuba_records
@@ -69,6 +73,7 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "gunma": fetch_gunma_records,
     "hiroshima": fetch_hiroshima_records,
     "riken": fetch_riken_records,
+    "ryukyu": fetch_ryukyu_records,
     "hokudai": fetch_hokudai_records,
     "ibaraki": fetch_ibaraki_records,
     "ims": fetch_ims_records,
@@ -76,9 +81,11 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "jaist": fetch_jaist_records,
     "kanazawa": fetch_kanazawa_records,
     "kagoshima": fetch_kagoshima_records,
+    "kagawa": fetch_kagawa_records,
     "kek": fetch_kek_records,
     "kitami": fetch_kitami_records,
     "kobe": fetch_kobe_records,
+    "kochi": fetch_kochi_records,
     "kumamoto": fetch_kumamoto_records,
     "kyoto": fetch_kyoto_records,
     "kyutech": fetch_kyutech_records,
@@ -104,6 +111,7 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "shinshu": fetch_shinshu_records,
     "titech": fetch_titech_records,
     "tohoku": fetch_tohoku_records,
+    "tokushima": fetch_tokushima_records,
     "tottori": fetch_tottori_records,
     "utokyo": fetch_utokyo_records,
     "tsukuba": fetch_tsukuba_records,
