@@ -38,6 +38,7 @@ kikidoko-crawl --source titech --dry-run
 kikidoko-crawl --source tuat --dry-run
 kikidoko-crawl --source tottori --dry-run
 kikidoko-crawl --source toyohashi --dry-run
+kikidoko-crawl --source uec --dry-run
 kikidoko-crawl --source jaist --dry-run
 kikidoko-crawl --source kek --dry-run
 kikidoko-crawl --source kagoshima --dry-run
