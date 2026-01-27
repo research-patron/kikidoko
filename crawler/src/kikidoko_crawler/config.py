@@ -12,6 +12,8 @@ class CrawlerSettings:
     log_level: str
     request_timeout: int
     output_path: str | None
+    geocode_enabled: bool
+    geocode_min_interval: float
 
 
 def load_settings() -> CrawlerSettings:
@@ -21,6 +23,8 @@ def load_settings() -> CrawlerSettings:
     log_level = os.getenv("KIKIDOKO_LOG_LEVEL", "INFO")
     request_timeout = int(os.getenv("KIKIDOKO_REQUEST_TIMEOUT", "20"))
     output_path = os.getenv("KIKIDOKO_OUTPUT_PATH")
+    geocode_enabled = os.getenv("KIKIDOKO_GEOCODE", "1") in {"1", "true", "True"}
+    geocode_min_interval = float(os.getenv("KIKIDOKO_GEOCODE_MIN_INTERVAL", "0.25"))
     return CrawlerSettings(
         project_id=project_id,
         credentials_path=credentials_path,
@@ -28,4 +32,6 @@ def load_settings() -> CrawlerSettings:
         log_level=log_level,
         request_timeout=request_timeout,
         output_path=output_path,
+        geocode_enabled=geocode_enabled,
+        geocode_min_interval=geocode_min_interval,
     )

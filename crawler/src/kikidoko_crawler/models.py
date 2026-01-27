@@ -15,6 +15,8 @@ class RawEquipment:
     org_type: str = ""
     prefecture: str = ""
     address_raw: str = ""
+    lat: float | None = None
+    lng: float | None = None
     external_use: str = ""
     fee_note: str = ""
     conditions_note: str = ""
@@ -31,7 +33,10 @@ class EquipmentRecord:
     org_name: str = ""
     org_type: str = ""
     prefecture: str = ""
+    region: str = ""
     address_raw: str = ""
+    lat: float | None = None
+    lng: float | None = None
     external_use: str = ""
     fee_band: str = ""
     fee_note: str = ""
@@ -40,6 +45,8 @@ class EquipmentRecord:
     crawled_at: str = ""
     source_updated_at: str = ""
     dedupe_key: str = ""
+    search_tokens: list[str] | None = None
+    search_aliases: list[str] | None = None
 
     def to_firestore(self) -> dict[str, Any]:
         data = asdict(self)

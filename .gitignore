@@ -15,3 +15,7 @@ frontend/.env.*
 # Firebase configuration (contains API keys)
 frontend/src/assets/firebase.js
 frontend/src/firebase.js
+
+# Service account credentials
+kikidoko-11493efc7f47.json
+frontend/src/kikidoko-11493efc7f47.json

@@ -10,6 +10,7 @@ from google.api_core import exceptions as gcloud_exceptions
 
 from .config import load_settings
 from .firestore_client import get_client
+from .geocoder import GeocodeSettings, enrich_with_geocode
 from .models import EquipmentRecord
 from .normalizer import normalize_equipment
 from .sources import available_sources, fetch_records
@@ -56,6 +57,12 @@ def main() -> int:
 
     raw_records = fetch_records(args.source, settings.request_timeout, args.limit)
     records: list[EquipmentRecord] = [normalize_equipment(raw) for raw in raw_records]
+    if settings.geocode_enabled:
+        geocode_settings = GeocodeSettings(
+            timeout=settings.request_timeout,
+            min_interval=settings.geocode_min_interval,
+        )
+        enrich_with_geocode(records, geocode_settings, logger)
 
     if dry_run:
         _emit_records(records, output_path)

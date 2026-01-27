@@ -6,9 +6,12 @@ from .models import EquipmentRecord, RawEquipment
 from .utils import (
     classify_external_use,
     classify_fee_band,
+    build_search_tokens,
+    build_search_aliases,
     compute_dedupe_key,
     guess_prefecture,
     parse_date,
+    resolve_region,
 )
 
 
@@ -53,11 +56,25 @@ def normalize_equipment(raw: RawEquipment) -> EquipmentRecord:
 
     org_type = raw.org_type or classify_org_type(raw.org_name)
     prefecture = raw.prefecture or guess_prefecture(raw.address_raw or raw.org_name)
+    region = resolve_region(prefecture)
     external_use = classify_external_use(raw.external_use)
     fee_band = classify_fee_band(raw.fee_note)
     source_updated_at = parse_date(raw.source_updated_at)
     crawled_at = datetime.now(timezone.utc).isoformat()
     dedupe_key = compute_dedupe_key(raw.org_name, raw.name, category_general)
+    search_tokens = build_search_tokens(
+        raw.name,
+        raw.org_name,
+        category_general,
+        category_detail,
+        prefecture,
+    )
+    search_aliases = build_search_aliases(
+        raw.name,
+        raw.org_name,
+        category_general,
+        category_detail,
+    )
 
     return EquipmentRecord(
         equipment_id=raw.equipment_id,
@@ -67,7 +84,10 @@ def normalize_equipment(raw: RawEquipment) -> EquipmentRecord:
         org_name=raw.org_name,
         org_type=org_type,
         prefecture=prefecture,
+        region=region,
         address_raw=raw.address_raw,
+        lat=raw.lat,
+        lng=raw.lng,
         external_use=external_use,
         fee_band=fee_band,
         fee_note=raw.fee_note,
@@ -76,4 +96,6 @@ def normalize_equipment(raw: RawEquipment) -> EquipmentRecord:
         crawled_at=crawled_at,
         source_updated_at=source_updated_at,
         dedupe_key=dedupe_key,
+        search_tokens=search_tokens,
+        search_aliases=search_aliases or None,
     )
