@@ -11,20 +11,24 @@
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, var(--split-left)) minmax(0, var(--split-right));
-  gap: var(--split-gap);
-  align-items: stretch;
   animation: floatIn 0.8s ease-out both;
 }
 
-.hero-copy {
+.hero-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(12px, 2.4vw, 22px);
+  align-items: stretch;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: clamp(20px, 3vw, 32px);
   box-shadow: var(--shadow-soft);
+}
+
+.hero-copy {
   height: 100%;
+  padding: 0;
 }
 
 .eyebrow {
@@ -71,9 +75,32 @@
   gap: 18px;
 }
 
+.hero-meta.hero-meta-right {
+  margin-top: 14px;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.hero-meta-inline span {
+  display: inline-block;
+  margin: 0;
+}
+
+.hero-meta-inline strong {
+  display: inline-block;
+  margin: 0;
+}
+
 .hero-meta div {
   display: grid;
   gap: 4px;
+}
+
+.hero-meta .hero-meta-inline {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  white-space: nowrap;
 }
 
 .hero-meta span {
@@ -97,6 +124,7 @@
   border-radius: 20px;
   padding: clamp(16px, 2.4vw, 24px);
   box-shadow: var(--shadow-soft);
+  align-self: stretch;
 }
 
 .search-main {
@@ -1077,7 +1105,7 @@
 }
 
 @media (max-width: 1100px) {
-  .hero {
+  .hero-shell {
     grid-template-columns: 1fr;
   }
 

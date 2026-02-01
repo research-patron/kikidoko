@@ -1699,118 +1699,120 @@ export default function App() {
   return (
     <div className="page">
       <header className="hero">
-        <div className="hero-copy">
-          <p className="eyebrow">公的機関の研究設備を、地域から探す</p>
-          <div className="title-row">
+        <div className="hero-shell">
+          <div className="hero-copy">
+            <p className="eyebrow">公的機関の研究設備を、地域から探す</p>
+            <div className="title-row">
             <div className="title-stack">
               <h1>
                 Kikidoko
                 <span>研究設備の横断検索</span>
               </h1>
             </div>
-            <div className="hero-meta">
-              <div>
-                <span>最終更新</span>
-                <strong>{latestUpdate}</strong>
-              </div>
-            </div>
           </div>
           <p className="lead">
             国立研究機関・国立大学・私立大学・高専の共用設備を一箇所で検索。
             地域別の分布を俯瞰しながら、最適な設備へアクセスできます。
           </p>
+          <div className="hero-meta hero-meta-right">
+            <div className="hero-meta-inline">
+              <span>最終更新</span>
+              <strong>{latestUpdate}</strong>
+            </div>
+          </div>
         </div>
-        <div className="search-panel">
-          <div className="search-main">
-            <input
-              type="text"
-              placeholder="機器名 / 機関名で検索（例: XRD, SEM）"
-              value={keywordInput}
-              onChange={(event) => setKeywordInput(event.target.value)}
-              onCompositionStart={() => setIsComposing(true)}
-              onCompositionEnd={() => setIsComposing(false)}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" && !isComposing) {
-                  event.preventDefault();
-                  handleSearch();
-                }
-              }}
-            />
-          </div>
-          <div className="search-options">
-            <div className="filter">
-              <label htmlFor="region">地域</label>
-              <select
-                id="region"
-                value={region}
-                onChange={(event) => setRegion(event.target.value)}
-              >
-                <option value="all">全国</option>
-                {REGION_ORDER.map((item) => (
-                  <option key={item} value={item}>
-                    {item}
-                  </option>
-                ))}
-              </select>
+          <div className="search-panel">
+            <div className="search-main">
+              <input
+                type="text"
+                placeholder="機器名 / 機関名で検索（例: XRD, SEM）"
+                value={keywordInput}
+                onChange={(event) => setKeywordInput(event.target.value)}
+                onCompositionStart={() => setIsComposing(true)}
+                onCompositionEnd={() => setIsComposing(false)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" && !isComposing) {
+                    event.preventDefault();
+                    handleSearch();
+                  }
+                }}
+              />
             </div>
-            <div className="filter">
-              <label htmlFor="category">カテゴリ</label>
-              <select
-                id="category"
-                value={category}
-                onChange={(event) => setCategory(event.target.value)}
-              >
-                <option value="all">すべて</option>
-                {categoryOptions.map((item) => (
-                  <option key={item} value={item}>
-                    {item}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="filter-inline">
-              <label className="toggle">
-                <input
-                  type="checkbox"
-                  checked={externalOnly}
-                  onChange={(event) => setExternalOnly(event.target.checked)}
-                />
-                <span>学外利用可のみ</span>
-              </label>
-              <label className="toggle">
-                <input
-                  type="checkbox"
-                  checked={freeOnly}
-                  onChange={(event) => setFreeOnly(event.target.checked)}
-                />
-                <span>無料設備のみ</span>
-              </label>
-            </div>
-          </div>
-          <div className="search-actions">
-            <div className="search-buttons">
-              <div className="search-left">
-                <button
-                  className="ghost"
-                  type="button"
-                  onClick={requestLocation}
-                  disabled={locationStatus === "loading"}
+            <div className="search-options">
+              <div className="filter">
+                <label htmlFor="region">地域</label>
+                <select
+                  id="region"
+                  value={region}
+                  onChange={(event) => setRegion(event.target.value)}
                 >
-                  {userLocation ? "現在地を更新" : "現在地を使う"}
-                </button>
+                  <option value="all">全国</option>
+                  {REGION_ORDER.map((item) => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
               </div>
-              <div className="search-right">
-                <button className="ghost" type="button" onClick={handleReset}>
-                  条件をリセット
-                </button>
-                <button className="primary" type="button" onClick={handleSearch}>
-                  検索する
-                </button>
+              <div className="filter">
+                <label htmlFor="category">カテゴリ</label>
+                <select
+                  id="category"
+                  value={category}
+                  onChange={(event) => setCategory(event.target.value)}
+                >
+                  <option value="all">すべて</option>
+                  {categoryOptions.map((item) => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="filter-inline">
+                <label className="toggle">
+                  <input
+                    type="checkbox"
+                    checked={externalOnly}
+                    onChange={(event) => setExternalOnly(event.target.checked)}
+                  />
+                  <span>学外利用可のみ</span>
+                </label>
+                <label className="toggle">
+                  <input
+                    type="checkbox"
+                    checked={freeOnly}
+                    onChange={(event) => setFreeOnly(event.target.checked)}
+                  />
+                  <span>無料設備のみ</span>
+                </label>
               </div>
             </div>
-            {locationStatus === "error" && (
-              <p className="location-note error">{locationError}</p>
-            )}
+            <div className="search-actions">
+              <div className="search-buttons">
+                <div className="search-left">
+                  <button
+                    className="ghost"
+                    type="button"
+                    onClick={requestLocation}
+                    disabled={locationStatus === "loading"}
+                  >
+                    {userLocation ? "現在地を更新" : "現在地を使う"}
+                  </button>
+                </div>
+                <div className="search-right">
+                  <button className="ghost" type="button" onClick={handleReset}>
+                    条件をリセット
+                  </button>
+                  <button className="primary" type="button" onClick={handleSearch}>
+                    検索する
+                  </button>
+                </div>
+              </div>
+              {locationStatus === "error" && (
+                <p className="location-note error">{locationError}</p>
+              )}
+            </div>
           </div>
         </div>
       </header>
