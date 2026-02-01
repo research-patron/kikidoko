@@ -1,0 +1,2090 @@
+[
+  {
+    "doc_id": "zInU6gr8nTSYugVtil94",
+    "summary": "500MHzのNMR分光計で、溶液中の核磁気共鳴信号から分子の化学環境や運動性を読み取ります。参考文献ではP1のC2ドメインやIF1のバックボーン共鳴割り当て、field-cycling NMR relaxometryによる腫瘍細胞内水の性質評価が扱われています。本装置は生体分子の共鳴割り当てと緩和測定により、構造解析の基礎データやダイナミクス評価に使われます。",
+    "bullets": [
+      "タンパク質ドメインのバックボーン共鳴割り当て（構造解析の基礎データ）",
+      "field-cycling NMR relaxometryによる水分子の性質評価",
+      "共鳴・緩和データを比較して生体分子の動態を解析"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "yQMMDHdruMc1tcVNbCQk",
+    "summary": "半固体・粘性試料に対応したNMRで、固体寄りの試料でも共鳴信号と緩和挙動を解析します。参考文献ではタンパク質ドメインの共鳴割り当て、腫瘍細胞内水の緩和挙動、IF1のNMR割り当てが報告されています。本装置は生体試料の局所構造や緩和特性を捉え、試料状態による違いを評価する用途に使われます。",
+    "bullets": [
+      "半固体・粘性試料の共鳴割り当てと局所構造評価",
+      "緩和時間を用いた細胞内水の性質比較",
+      "タンパク質の共鳴割り当てによる構造解析の基礎データ取得"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "yPkGoQ5yIiLRS07N943L",
+    "summary": "超伝導磁石を用いた高感度NMRで、溶液試料の共鳴信号から分子の化学環境とダイナミクスを解析します。参考文献ではP1ドメインやIF1の共鳴割り当て、腫瘍細胞内水の緩和測定が扱われています。本装置は生体分子の割り当て・緩和測定により、分子の構造情報と動態評価に用いられます。",
+    "bullets": [
+      "高感度の共鳴割り当てによるタンパク質解析",
+      "緩和測定を通じた水分子の性質評価",
+      "共鳴データの比較による構造・動態解析"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "yIhaMICoeEyPIBbUvZjt",
+    "summary": "NMR/ESRを備えた装置で、核磁気共鳴による構造・動態解析を行います。参考文献ではP1ドメインやIF1の共鳴割り当て、field-cycling NMR relaxometryによる細胞内水の性質評価が扱われています。本装置はNMR測定を通じて、タンパク質の割り当てや緩和特性の解析に使われます。",
+    "bullets": [
+      "タンパク質ドメインの共鳴割り当て（構造解析の基礎）",
+      "緩和測定による水分子の挙動評価",
+      "NMRデータの比較で生体分子の動態を把握"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "xmi1p7UgyMJomplEGqDg",
+    "summary": "NMR分光計として、溶液中の核磁気共鳴信号を測定し、分子の化学環境や動態を解析します。参考文献ではタンパク質ドメインやIF1の共鳴割り当て、腫瘍細胞内水の緩和評価が扱われています。本装置は生体分子の共鳴割り当てと緩和測定により、構造解析の基礎データ作成に活用されます。",
+    "bullets": [
+      "タンパク質の共鳴割り当て（構造解析の基礎データ）",
+      "緩和測定による水分子の性質評価",
+      "共鳴データから分子の動態を解析"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "xHJnfJ0Eh4bS8JPIR7k0",
+    "summary": "固体・溶液の両試料に対応したNMRで、固体試料の局所構造と溶液中分子の共鳴を測定します。参考文献ではタンパク質の共鳴割り当てや腫瘍細胞内水の緩和特性解析が報告されています。本装置は固体・溶液の両方で共鳴割り当てと緩和測定を行い、試料状態に応じた構造・動態評価に使われます。",
+    "bullets": [
+      "固体・溶液試料の共鳴割り当て",
+      "緩和測定による水分子の挙動解析",
+      "固体/溶液の状態差に着目した構造評価"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "xCGOEUMEGVuqdvnbExSb",
+    "summary": "固体試料向けの400MHz NMRで、固体中の局所構造と緩和挙動を測定します。参考文献ではタンパク質ドメインの共鳴割り当てや細胞内水の緩和解析が扱われています。本装置は固体試料の共鳴割り当てを通じて、構造解析の基礎データを得る用途に利用されます。",
+    "bullets": [
+      "固体試料の共鳴割り当てと局所構造解析",
+      "緩和測定による水分子の性質評価",
+      "固体状態の生体分子評価"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "wy4WNIYy6NTExawii4VZ",
+    "summary": "液体試料専用の500MHz NMRで、溶液中の分子の共鳴信号から化学環境や動態を解析します。参考文献ではタンパク質ドメインやIF1の共鳴割り当て、腫瘍細胞内水の緩和測定が報告されています。本装置は溶液試料の共鳴割り当てと緩和測定により、分子構造と動態を詳細に解析する用途に使われます。",
+    "bullets": [
+      "溶液試料の共鳴割り当てと構造解析",
+      "緩和測定による水分子の特性評価",
+      "溶液中の分子動態の評価"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "wrg9KujHHG1RCIiHRACi",
+    "summary": "DNPによる感度向上を備えた固体NMRで、固体試料の弱い信号を測定しやすくします。参考文献ではタンパク質の共鳴割り当てや細胞内水の緩和特性解析が示されています。本装置はDNPで信号感度を高めながら固体試料の共鳴割り当てと緩和測定を行い、局所構造や動態評価に用いられます。",
+    "bullets": [
+      "DNPで感度を高めた固体試料のNMR測定",
+      "共鳴割り当てによる局所構造解析",
+      "緩和測定による水分子の挙動評価"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "wqLvr7at1OQqJSknhp51",
+    "summary": "固体・溶液の両試料に対応するNMRで、試料状態に応じた共鳴割り当てと緩和測定を行います。参考文献ではタンパク質ドメインの共鳴割り当てと腫瘍細胞内水の緩和解析が扱われています。本装置は固液両方の試料で分子構造の割り当てと動態評価を行う用途に利用されます。",
+    "bullets": [
+      "固体・溶液試料の共鳴割り当て",
+      "緩和測定による分子ダイナミクス評価",
+      "生体分子の構造解析"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "TuboPNQzIgSF8xjg9JWi",
+    "summary": "10kVクラスの高電圧を扱う電気特性評価用の計測システムです。絶縁体やデバイスの耐圧・リーク電流・サージ耐性などを測定し、設計条件や信頼性の評価に用いられます。",
+    "bullets": [
+      "高電圧印加時の電気特性（I-V特性・リーク電流）の評価",
+      "絶縁破壊・耐圧・サージ耐性の確認",
+      "電気試験結果の比較による信頼性検証"
+    ],
+    "source_titles": [
+      "Electromagnetic and Hydro-Thermal Structural Analysis of Core and Winding for Energy-Saving Optimized 10kV Oil-Immersed Transformers",
+      "Design and validation of a high-impulse-resistant 10kV line arrester based on a bubble-suppressing core structure",
+      "Research and Implementation of a Virtual Teaching Platform for Electrical Testing"
+    ],
+    "source_dois": [
+      "10.1007/978-981-95-4274-1_74",
+      "10.1016/j.epsr.2025.112070",
+      "10.1145/3764206.3764227"
+    ]
+  },
+  {
+    "doc_id": "4iwAsYwkc0RrKXpxEoiP",
+    "summary": "赤外放射（IRエミッション）を利用して対象の温度分布や発熱箇所を可視化する顕微鏡です。半導体デバイスや回路のホットスポット観察、発熱原因の特定、熱設計の検証に使われます。",
+    "bullets": [
+      "微小領域の温度分布・発熱箇所の可視化",
+      "ホットスポットや異常発熱の解析",
+      "熱設計・放熱対策の効果検証"
+    ],
+    "source_titles": [
+      "METS-IR predicts new-onset stroke in older adults with stages 0–3 cardiovascular-kidney-metabolic syndrome: a prospective, multicohort, clinical study with statistical and machine learning",
+      "Concise synthesis of chiral tricyclic γ-lactams via synergistic isothiourea/Ir catalyzed asymmetric [3 + 2] annulation",
+      "An improved algorithm for infrared road object recognition in UAV perspective"
+    ],
+    "source_dois": [
+      "10.1186/s13098-025-02033-8",
+      "10.1038/s41467-025-67390-4",
+      "10.1038/s41598-025-32314-1"
+    ]
+  },
+  {
+    "doc_id": "B9iIiFOdCcARZXssno7H",
+    "summary": "FIB（集束イオンビーム）で試料を切削し、SEMで断面や微細構造を観察できる装置です。デバイス内部の断面観察、欠陥解析、微細加工や試料作製に用いられます。",
+    "bullets": [
+      "FIBによる断面加工・薄片作製",
+      "SEMによるナノスケールの形状・欠陥観察",
+      "デバイス内部構造の解析・故障解析"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "WWLwJA9jk0TGNsNIJQJ9",
+    "summary": "イオンビームで表面を研磨・薄片化する装置です。断面観察用の試料作製や表面のダメージ除去、TEM/SEM観察の前処理に利用されます。",
+    "bullets": [
+      "イオンビームによる表面研磨・薄片化",
+      "断面試料の作製と観察前処理",
+      "表面ダメージ層の除去と平滑化"
+    ],
+    "source_titles": [
+      "Painting a Controversial Issue in Contemporary East African Art. A Focus on Peter Ngugi and a Comparison with Arim Andrew and Michael Soi between Nairobi and Kampala",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Metacommunity models and empirical data reveal asymmetric network-constrained fish dispersal"
+    ],
+    "source_dois": [
+      "10.13138/2039-2362/4082",
+      "10.1049/icp.2025.2914",
+      "10.1111/1365-2656.70050"
+    ]
+  },
+  {
+    "doc_id": "yhcts1QaREU60vCMOL7X",
+    "summary": "インクジェット方式で機能性インクを塗布し、微細パターンを形成する装置です。試作段階の配線形成、センサー材料の配置、微小電極の作製などに利用されます。",
+    "bullets": [
+      "機能性インクの微細パターン形成",
+      "試作デバイスの配線・電極作製",
+      "材料やプロセス条件の検討"
+    ],
+    "source_titles": [
+      "Late-acting self-incompatibility in Asimina triloba: implications for the evolution of self-incompatibility in angiosperms",
+      "Integrating Ecological Function Evaluation Into Rural Revitalization: A Sustainable Development Model Of Cultural And Environmental Synergy",
+      "A novel process for fabricating SiCf/SiC by liquid silicon infiltration using CVI-derived porous carbon in fiber preform"
+    ],
+    "source_dois": [
+      "10.1186/s12870-025-07681-6",
+      "10.6180/jase.202607_30.002",
+      "10.1016/j.jeurceramsoc.2025.118089"
+    ]
+  },
+  {
+    "doc_id": "KuMXfMtAqaZr4ooiMuVf",
+    "summary": "ウェーハをチップ単位に切り出すダイシングマシンです。製造後のウェーハを所定サイズに分割し、パッケージングや評価工程へ進めるために使われます。",
+    "bullets": [
+      "ウェーハのチップ分割（ダイシング）",
+      "切断品質やチッピングの評価",
+      "パッケージ工程へ向けた前処理"
+    ],
+    "source_titles": [
+      "Painting a Controversial Issue in Contemporary East African Art. A Focus on Peter Ngugi and a Comparison with Arim Andrew and Michael Soi between Nairobi and Kampala",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Metacommunity models and empirical data reveal asymmetric network-constrained fish dispersal"
+    ],
+    "source_dois": [
+      "10.13138/2039-2362/4082",
+      "10.1049/icp.2025.2914",
+      "10.1111/1365-2656.70050"
+    ]
+  },
+  {
+    "doc_id": "BwmrMWcbiANDPGliYJcN",
+    "summary": "ターゲット材から薄膜を成膜するスパッタリング装置です。金属・酸化物・窒化物などの薄膜形成や膜厚制御、デバイス製造工程の前処理に利用されます。",
+    "bullets": [
+      "金属・酸化物などの薄膜成膜",
+      "膜厚や組成条件の最適化",
+      "デバイス製造に向けた前処理"
+    ],
+    "source_titles": [
+      "911 calls for service and community context: associations between community safety needs and neighborhood environment",
+      "Abnormal T-Cell activation and cytotoxic T-Cell frequency discriminate symptom severity in myalgic encephalomyelitis/chronic fatigue syndrome",
+      "Histone phosphorylation analysis of two main TCM syndromes of chronic fatigue syndrome"
+    ],
+    "source_dois": [
+      "10.1186/s12889-025-24965-6",
+      "10.1186/s12967-025-07507-x",
+      "10.1186/s12967-025-07579-9"
+    ]
+  },
+  {
+    "doc_id": "Ph3Mz9oBmy0H8vpbnhlu",
+    "summary": "半導体やデバイスの特性を数値シミュレーションで予測する装置（ソフトウェア環境）です。設計パラメータの影響を評価し、試作前に性能や挙動を検証する用途に使われます。",
+    "bullets": [
+      "デバイス構造のシミュレーションと特性予測",
+      "設計パラメータの感度解析",
+      "試作前の性能検証・最適化"
+    ],
+    "source_titles": [
+      "Painting a Controversial Issue in Contemporary East African Art. A Focus on Peter Ngugi and a Comparison with Arim Andrew and Michael Soi between Nairobi and Kampala",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Metacommunity models and empirical data reveal asymmetric network-constrained fish dispersal"
+    ],
+    "source_dois": [
+      "10.13138/2039-2362/4082",
+      "10.1049/icp.2025.2914",
+      "10.1111/1365-2656.70050"
+    ]
+  },
+  {
+    "doc_id": "BLClIkY4tEpN6XpJsndC",
+    "summary": "測定データや画像データを解析するための専用PCです。測定装置からのデータ取り込み、解析ソフトの実行、結果の可視化やレポート作成に利用されます。",
+    "bullets": [
+      "測定データの前処理・整理",
+      "解析ソフトによる評価・可視化",
+      "解析結果の保存とレポート作成"
+    ],
+    "source_titles": [
+      "Effect of cryogenic soaking and blend ratio on performance of PBT/PC blends: a multi-response study",
+      "Hypoxia-induced exosomal circ_0006840 promotes pancreatic cancer progress by regulating the WIF1 decay",
+      "Palliative Care Utilization Among Hospitalized Patients With Common Chronic Conditions in the United States"
+    ],
+    "source_dois": [
+      "10.1186/s40712-025-00373-x",
+      "10.1186/s12915-025-02320-w",
+      "10.1177/08258597221136733"
+    ]
+  },
+  {
+    "doc_id": "8Wu7jpQiqKCQa9TvXQbA",
+    "summary": "マスクレスでパターンを投影し、レジスト上に微細パターンを形成するリソグラフィ装置です。微細配線や電極の形成、試作デバイスのパターニング工程に利用されます。",
+    "bullets": [
+      "投影露光による微細パターン形成",
+      "試作デバイスの配線・電極パターニング",
+      "露光条件の検討と工程最適化"
+    ],
+    "source_titles": [
+      "Late-acting self-incompatibility in Asimina triloba: implications for the evolution of self-incompatibility in angiosperms",
+      "Medial heel wedge in balance training improves stability and function in chronic ankle instability",
+      "Landslide susceptibility assessment using hybrid geospatial, frequency ratio, and AHP models in Souk Ahras province, Northeastern of Algeria"
+    ],
+    "source_dois": [
+      "10.1186/s12870-025-07681-6",
+      "10.1038/s41598-025-32287-1",
+      "10.1038/s41598-025-32062-2"
+    ]
+  },
+  {
+    "doc_id": "mu4QmdADIyODE2UYpzNC",
+    "summary": "半導体チップをパッケージに実装するためのワイヤボンダ／エポキシダイボンダです。チップ接合と配線を行い、実装条件（温度・荷重・時間）を最適化しながら、接合品質や信頼性評価に使われます。",
+    "bullets": [
+      "ダイアタッチ（エポキシ接着）によるチップ固定",
+      "ワイヤボンディングでの電気的接続形成",
+      "ボンド強度や外観の評価と条件最適化"
+    ],
+    "source_titles": [
+      "Late-acting self-incompatibility in Asimina triloba: implications for the evolution of self-incompatibility in angiosperms",
+      "Integrating Ecological Function Evaluation Into Rural Revitalization: A Sustainable Development Model Of Cultural And Environmental Synergy",
+      "A novel process for fabricating SiCf/SiC by liquid silicon infiltration using CVI-derived porous carbon in fiber preform"
+    ],
+    "source_dois": [
+      "10.1186/s12870-025-07681-6",
+      "10.6180/jase.202607_30.002",
+      "10.1016/j.jeurceramsoc.2025.118089"
+    ]
+  },
+  {
+    "doc_id": "5Kyned0pvZHotK87qrkp",
+    "summary": "高耐圧パワーデバイスの電気特性を評価する装置です。高電圧I-V特性、ブレークダウン、リーク電流、耐圧などを測定し、デバイス設計や信頼性検証に利用されます。",
+    "bullets": [
+      "高電圧I-V特性・リーク電流の測定",
+      "ブレークダウン電圧や耐圧評価",
+      "測定結果の比較による素子性能の検証"
+    ],
+    "source_titles": [
+      "Painting a Controversial Issue in Contemporary East African Art. A Focus on Peter Ngugi and a Comparison with Arim Andrew and Michael Soi between Nairobi and Kampala",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Metacommunity models and empirical data reveal asymmetric network-constrained fish dispersal"
+    ],
+    "source_dois": [
+      "10.13138/2039-2362/4082",
+      "10.1049/icp.2025.2914",
+      "10.1111/1365-2656.70050"
+    ]
+  },
+  {
+    "doc_id": "ZmZoYm4Bm8wwdio8MFyi",
+    "summary": "フォトマスクとウェーハを位置合わせして露光し、微細パターンを形成するマスクアライナーです。リソグラフィ工程の中心装置で、配線・電極・微細構造の形成に使われます。",
+    "bullets": [
+      "マスクとウェーハの高精度アライメント",
+      "紫外露光による微細パターン形成",
+      "露光条件の検討と再現性の確保"
+    ],
+    "source_titles": [
+      "Soft Gradient Boosting with Learnable Feature Transforms for Sequential Regression",
+      "Wavelets associated approximation enhanced by Szász-type operators initiated by q-properties",
+      "Nonresonance for problems involving (p,q)-Laplacian equations with nonlinear perturbations"
+    ],
+    "source_dois": [
+      "10.1109/LSP.2025.3639345",
+      "10.1186/s13660-025-03417-0",
+      "10.1186/s13661-025-02183-8"
+    ]
+  },
+  {
+    "doc_id": "wWQ4Z5JIGZjw4nn1NeEX",
+    "summary": "XPS（X線光電子分光）で表面数nmの元素組成と化学状態を分析する装置です。表面汚染、酸化状態、薄膜表面の化学状態評価に利用されます。",
+    "bullets": [
+      "表面元素の同定と組成比の評価",
+      "化学結合状態（酸化・還元状態など）の解析",
+      "薄膜・表面処理後の状態確認"
+    ],
+    "source_titles": [
+      "Engineered Cu3P–ZnWO4 heterojunction integrated with porous polymer monolithic template for enhanced photocatalytic degradation of organic pollutants",
+      "Layer-dependent Raman polarization anisotropy in MoS₂ films grown by 200 mm-scale atomic layer deposition",
+      "Analyzing the surface black discoloration of oracle plastrons from the Taijiasi Site, China"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-29880-9",
+      "10.1038/s41598-025-09826-x",
+      "10.1038/s40494-026-02307-y"
+    ]
+  },
+  {
+    "doc_id": "t96AcKYZjOvPoTekpWzf",
+    "summary": "分光エリプソメータは、偏光の変化を解析して薄膜の膜厚や屈折率・消衰係数を求める装置です。多層膜や透明膜の評価、膜厚均一性の確認に利用されます。",
+    "bullets": [
+      "薄膜の膜厚・光学定数（n,k）の算出",
+      "多層膜モデルによるフィッティング解析",
+      "ウェーハ内の膜厚均一性評価"
+    ],
+    "source_titles": [
+      "Painting a Controversial Issue in Contemporary East African Art. A Focus on Peter Ngugi and a Comparison with Arim Andrew and Michael Soi between Nairobi and Kampala",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Metacommunity models and empirical data reveal asymmetric network-constrained fish dispersal"
+    ],
+    "source_dois": [
+      "10.13138/2039-2362/4082",
+      "10.1049/icp.2025.2914",
+      "10.1111/1365-2656.70050"
+    ]
+  },
+  {
+    "doc_id": "xpm0OSWLUB3qFKcjj3dQ",
+    "summary": "半導体デバイスの電気特性を測定するパラメータアナライザです。I-V/C-V測定やパルス測定を通じて、デバイスの特性・劣化・信頼性を評価します。",
+    "bullets": [
+      "I-V/C-V特性の測定とモデル評価",
+      "パルス測定による動作特性の評価",
+      "特性のばらつきや劣化の検出"
+    ],
+    "source_titles": [
+      "Interpretable XGBoost Estimation of Memristor Mobility and Thickness",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Ultrawide-bandwidth boron nitride photonic memristors"
+    ],
+    "source_dois": [
+      "10.1109/TED.2025.3646989",
+      "10.1049/icp.2025.2914",
+      "10.1038/s41565-025-01991-4"
+    ]
+  },
+  {
+    "doc_id": "mm8V3BGMxbgdMZnF66f1",
+    "summary": "反応性イオンエッチング（RIE）で薄膜や基板を加工する装置です。プラズマ中の反応種で材料を選択的に削り、微細パターンを形成します。",
+    "bullets": [
+      "プラズマによる異方性エッチング",
+      "エッチング速度・選択比の調整",
+      "微細加工用のプロセス条件最適化"
+    ],
+    "source_titles": [
+      "Hydroxide-catalyzed bonding of sapphire and quartz glass enabled by plasma activation",
+      "Quantitative Study on the Cooling Effect of Green Roofs in Bolzano City",
+      "Effect of CF4 plasma treatment on β-Ga2O3 (001) substrates for enhanced homoepitaxial growth by MOCVD"
+    ],
+    "source_dois": [
+      "10.1016/j.matlet.2026.140115",
+      "10.1007/978-981-95-1822-7_33",
+      "10.1016/j.materresbull.2025.113941"
+    ]
+  },
+  {
+    "doc_id": "A2sapmT8PnX7SgfqRT8h",
+    "summary": "XPSとUPSを組み合わせた表面分析装置です。元素組成・化学状態に加え、価電子帯や仕事関数の情報を取得でき、表面の電子状態評価に使われます。",
+    "bullets": [
+      "XPSによる元素組成と化学状態の解析",
+      "UPSによる価電子帯・仕事関数の評価",
+      "表面処理や薄膜成膜後の状態確認"
+    ],
+    "source_titles": [
+      "Engineered Cu3P–ZnWO4 heterojunction integrated with porous polymer monolithic template for enhanced photocatalytic degradation of organic pollutants",
+      "Layer-dependent Raman polarization anisotropy in MoS₂ films grown by 200 mm-scale atomic layer deposition",
+      "Analyzing the surface black discoloration of oracle plastrons from the Taijiasi Site, China"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-29880-9",
+      "10.1038/s41598-025-09826-x",
+      "10.1038/s40494-026-02307-y"
+    ]
+  },
+  {
+    "doc_id": "ZfOIIJOGXfhydKZLQGTp",
+    "summary": "小型イオンシャワーは、低エネルギーイオンで表面を軽く処理し、汚染除去や帯電抑制に使われます。表面分析や観察前の試料前処理として利用されます。",
+    "bullets": [
+      "表面の軽いスパッタ洗浄と汚染除去",
+      "帯電抑制による観察品質の向上",
+      "表面分析・観察の前処理"
+    ],
+    "source_titles": [
+      "Painting a Controversial Issue in Contemporary East African Art. A Focus on Peter Ngugi and a Comparison with Arim Andrew and Michael Soi between Nairobi and Kampala",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Metacommunity models and empirical data reveal asymmetric network-constrained fish dispersal"
+    ],
+    "source_dois": [
+      "10.13138/2039-2362/4082",
+      "10.1049/icp.2025.2914",
+      "10.1111/1365-2656.70050"
+    ]
+  },
+  {
+    "doc_id": "jFhwqrvF5H2bWPzWJ6g1",
+    "summary": "触針式表面段差計は、スタイラスで表面を走査し、段差や粗さを測定する装置です。薄膜厚さや加工後の段差確認、表面形状評価に使われます。",
+    "bullets": [
+      "段差・膜厚のプロファイル測定",
+      "表面粗さの評価",
+      "加工工程後の形状確認"
+    ],
+    "source_titles": [
+      "Effect of Complex Alloying on the Phase Composition and Thermal Characteristics of Al–Fe–Si Aluminum Alloys",
+      "Two-Echelon Inventory Control Systems in Supply Chain with Fuzzy Number for Quadratic Demand",
+      "Perceptions of Healthcare Design Course Implementation and Opportunities from a Student-Driven Multidisciplinary Collaboration"
+    ],
+    "source_dois": [
+      "10.31643/2027/6445.12",
+      "10.19139/soic-2310-5070-2975",
+      "10.30476/jamp.2025.108162.2239"
+    ]
+  },
+  {
+    "doc_id": "IuA7AmgWCJQf5Uup6peP",
+    "summary": "走査型プローブ顕微鏡/原子間力顕微鏡は、探針で表面をなぞりナノスケールの凹凸や力学応答を可視化する装置です。薄膜や材料表面の粗さ、局所硬さ・粘弾性評価に使われます。",
+    "bullets": [
+      "ナノ〜サブナノの表面形状計測",
+      "局所力学特性(硬さ・粘弾性)の評価",
+      "材料表面の均一性・欠陥の確認"
+    ],
+    "source_titles": [
+      "Interface-controlled antiferromagnetic tunnel junctions based on a metallic van der Waals A-type antiferromagnet",
+      "Comparison of viscoelastic properties of breast cancer and normal cells using AFM, FLIM and ToF-SIMS techniques",
+      "Lateral deflection-based optimization achieves sub-picometer detection limit"
+    ],
+    "source_dois": [
+      "10.1038/s41467-025-66981-5",
+      "10.1038/s41598-025-31162-3",
+      "10.1038/s41378-025-01104-0"
+    ]
+  },
+  {
+    "doc_id": "0DB6BGf9U2jma6dj1Fze",
+    "summary": "超高温炉は高温下で材料を焼結・アニールし、相変化や組織を制御する装置です。耐熱材料やセラミックスの焼成、拡散処理、雰囲気制御下の熱処理に用います。",
+    "bullets": [
+      "高温焼結・焼成プロセス",
+      "相変態・結晶性の制御",
+      "雰囲気(真空/ガス)下での熱処理"
+    ],
+    "source_titles": [
+      "Painting a Controversial Issue in Contemporary East African Art. A Focus on Peter Ngugi and a Comparison with Arim Andrew and Michael Soi between Nairobi and Kampala",
+      "Automotive Radar Interference Suppression Using Improved Dual-Path Convolutional Recurrent Network",
+      "Metacommunity models and empirical data reveal asymmetric network-constrained fish dispersal"
+    ],
+    "source_dois": [
+      "10.13138/2039-2362/4082",
+      "10.1049/icp.2025.2914",
+      "10.1111/1365-2656.70050"
+    ]
+  },
+  {
+    "doc_id": "FJh2TqdgSJlgeYAu1XZA",
+    "summary": "電子線描画装置は電子ビームでレジストに微細パターンを直接描く装置です。ナノスケールの微細加工や試作デバイスのパターン形成に使われます。",
+    "bullets": [
+      "ナノ/サブミクロンのレジスト描画",
+      "フォトマスクレスの試作加工",
+      "位置合わせを伴う高精度パターン形成"
+    ],
+    "source_titles": [
+      "Globalisation and its impact on the state legal order: challenges to state sovereignty",
+      "Experience of the sacred, spirituality, and meaning of life through the use of Artificial Intelligence",
+      "The Inquisitorial Conflict over Cuba A History of the Establishment of the Holy Office of the Inquisition in the Caribbean"
+    ],
+    "source_dois": [
+      "10.5281/zenodo.17468720",
+      "10.18566/cueteo.v53n119.a04",
+      "10.22201/iih.24486922e.2026.74.77899"
+    ]
+  },
+  {
+    "doc_id": "m3K2sSXLaZfF4sLBqmaV",
+    "summary": "電子線蒸着装置は電子ビームで材料を蒸発させ薄膜を形成する装置です。金属・酸化物の成膜や電極形成、膜厚や組成の最適化に利用します。",
+    "bullets": [
+      "金属・酸化物薄膜の成膜",
+      "電極・配線層の形成",
+      "蒸着条件と膜厚の最適化"
+    ],
+    "source_titles": [
+      "Efficacy and safety of ESR-EB and ESE in the treatment of small gastric muscularis propria tumours: single-centre prospective cohort study",
+      "The lived experience and supportive care needs of Australian parents caring for children with Epidermolysis Bullosa: a qualitative descriptive analysis",
+      "Results of a non-randomized, open-label phase I study evaluating the novel immunomodulatory peptide TCP-25 for treatment of dystrophic epidermolysis bullosa"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-29949-5",
+      "10.1186/s13023-025-04159-4",
+      "10.1186/s13023-025-04156-7"
+    ]
+  },
+  {
+    "doc_id": "fIKkABE5Ln6Iy05xZ0DL",
+    "summary": "電界放出型走査電子顕微鏡は高輝度電子源で微細構造を高分解能観察する装置です。材料表面の形態観察や粒子サイズ評価、欠陥観察に使われます。",
+    "bullets": [
+      "ナノ〜サブミクロンの形態観察",
+      "粒子径・分布の評価",
+      "表面欠陥/破断面の観察"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "2naQD8Zz5jjbKuekuqc9",
+    "summary": "顕微ラマン装置はラマン散乱を用いて分子振動を解析し、化学種や結晶性を評価する装置です。微小領域の材料同定や応力・欠陥の評価に利用します。",
+    "bullets": [
+      "化学結合・結晶性の同定",
+      "微小領域の相/材料分布解析",
+      "歪み・応力・欠陥の評価"
+    ],
+    "source_titles": [
+      "Effects of different heavy sled loads sprint training on acceleration performance in adolescent sprinters",
+      "Binding modes and interaction mechanism of bisphenol A and its analogs in constitutive androstane receptor",
+      "Exploring the influencing factors of subjective cognitive function in patients with advanced cancer pain: a cross-sectional study utilizing latent profile analysis"
+    ],
+    "source_dois": [
+      "10.1186/s13102-025-01370-5",
+      "10.1038/s41598-025-30642-w",
+      "10.1038/s41598-025-11741-0"
+    ]
+  },
+  {
+    "doc_id": "Mx4ZKyic2cXzAgJ4QInR",
+    "summary": "卓上顕微鏡(卓上SEM)は前処理を簡略化し、短時間で表面形態を観察できる装置です。材料・製品の簡易観察や品質確認、教育用途に使われます。",
+    "bullets": [
+      "簡易前処理で迅速な表面観察",
+      "形態の比較・スクリーニング",
+      "教育・試作の観察用途"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "ZerRfkIp7l3lsm9YHLTf",
+    "summary": "超高分解能ショットキーSEMは高分解能・高コントラストで微細構造を観察する装置です。ナノ構造や微小欠陥、微細加工の形状確認に用います。",
+    "bullets": [
+      "高分解能でナノ構造を観察",
+      "微小欠陥や粒子の評価",
+      "微細加工の形状・寸法確認"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "Y0KPdJiU8c6wqzKZXYHT",
+    "summary": "集束イオンビーム(FIB)装置はイオンビームで局所加工や断面作製を行い、その場で観察できる装置です。断面解析、微小試料作製、局所修正に使われます。",
+    "bullets": [
+      "断面加工・断面観察",
+      "TEM用などの微小試料作製",
+      "局所加工・配線修正"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "MjyaeNQXkmyBIqplGbh9",
+    "summary": "高分解能CD-SEMは半導体パターンの線幅や寸法(CD)を高精度で測定する装置です。リソグラフィやエッチング後の寸法管理、プロセス評価に用います。",
+    "bullets": [
+      "微細パターンの線幅/寸法測定",
+      "プロセスばらつきの評価",
+      "加工後の寸法検査"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "BA2gljE8vgIHUyf0UttN",
+    "summary": "ドライエッチングシステムはプラズマを用いて材料表面を選択的に削り、微細パターンを形成する装置です。半導体や絶縁膜の異方性エッチング、プロセス条件の最適化に使われます。",
+    "bullets": [
+      "プラズマによる微細パターン形成",
+      "Si/酸化膜/窒化膜などの選択エッチング",
+      "加工条件(ガス/圧力/電力)の最適化"
+    ],
+    "source_titles": [
+      "Late-acting self-incompatibility in Asimina triloba: implications for the evolution of self-incompatibility in angiosperms",
+      "Medial heel wedge in balance training improves stability and function in chronic ankle instability",
+      "Landslide susceptibility assessment using hybrid geospatial, frequency ratio, and AHP models in Souk Ahras province, Northeastern of Algeria"
+    ],
+    "source_dois": [
+      "10.1186/s12870-025-07681-6",
+      "10.1038/s41598-025-32287-1",
+      "10.1038/s41598-025-32062-2"
+    ]
+  },
+  {
+    "doc_id": "JjvY80aHFQV53OTbQ2Nd",
+    "summary": "極低温プローブステーションは、低温環境でデバイスの電気特性を評価する装置です。4K領域まで冷却し、半導体・超伝導素子のI-V特性や温度依存性測定に利用します。",
+    "bullets": [
+      "低温下での電気特性(I-V)測定",
+      "温度依存・信頼性の評価",
+      "ウエハ/チップのプロービング測定"
+    ],
+    "source_titles": [
+      "A prognostic matrix gene expression signature defines functional glioblastoma phenotypes and niches",
+      "Leveraging 5G networks for event video summarization via multimodal analysis",
+      "Enhancing stability and mucoadhesive properties of porous starch through chitosan surface modification for potential oral mucosal probiotic delivery"
+    ],
+    "source_dois": [
+      "10.1038/s42003-025-09245-8",
+      "10.1007/s44163-025-00719-6",
+      "10.1016/j.foodhyd.2025.112318"
+    ]
+  },
+  {
+    "doc_id": "DrpHy38EUGtaoO5Ls3Ev",
+    "summary": "薄膜X線回折装置は、薄膜の結晶構造や配向、残留応力を解析する装置です。成膜品質や結晶性の評価、相同定に用います。",
+    "bullets": [
+      "薄膜の結晶相・配向の解析",
+      "残留応力・格子定数の評価",
+      "成膜条件による結晶性比較"
+    ],
+    "source_titles": [
+      "Optimized deep learning using hybrid PSO-GA on raw XRD images for accurate classification of material degradation",
+      "Advanced XRD peak broadening analysis of gallium-doped ZnO nanoparticles for crystallite size evaluation",
+      "Synthesis, SC-XRD, HSA, DFT Calculations, and Molecular Docking Studies of a New CuI Complex Bearing the Bidentate Schiff Base Derived from Trimethylenediamine and 4-Cyanobenzaldehyde"
+    ],
+    "source_dois": [
+      "10.1186/s44147-025-00847-x",
+      "10.1038/s41598-025-31317-2",
+      "10.22036/pcr.2025.540201.2722"
+    ]
+  },
+  {
+    "doc_id": "l3yVFPLdRkXxRRCYBQJh",
+    "summary": "1.5K無冷媒冷凍機は、液体ヘリウムを使わずに極低温を得られる冷凍機です。低温物性測定や超伝導デバイスの動作評価などに用いられます。",
+    "bullets": [
+      "1.5K級の極低温環境の生成",
+      "超伝導・量子デバイスの特性測定",
+      "長時間安定運転の低温実験"
+    ],
+    "source_titles": [
+      "Robust multimodal sentiment analysis via double information bottleneck",
+      "Towards Extracting Triple-to-Text Alignments from Wikidata References Using LLMs",
+      "FastEdit: fast text-guided single-image editing via semantic-aware diffusion fine-tuning"
+    ],
+    "source_dois": [
+      "10.1016/j.inffus.2025.103964",
+      "10.1007/978-3-031-99554-5_10",
+      "10.1016/j.patcog.2025.112583"
+    ]
+  },
+  {
+    "doc_id": "XwKSdyzZMwNQHWEaHfo6",
+    "summary": "100kV透過型電子顕微鏡(TEM)は、薄片試料を透過した電子で内部構造を観察する装置です。ナノ構造や結晶欠陥の観察、電子回折による相同定に使われます。",
+    "bullets": [
+      "ナノ構造・内部組織の観察",
+      "電子回折による結晶相の同定",
+      "粒子径・界面構造の評価"
+    ],
+    "source_titles": [
+      "Quality by design of ultra deformable nanovesicles loaded with flunarizine for brain targeting utilizing risk assessment and multivariate analytical methods",
+      "Theoretical Calculation and Study of Multi-Conductor Transmission Line Equation in Lightning Field",
+      "Effect of a rising time of the lightning impulse on streamer discharge behavior"
+    ],
+    "source_dois": [
+      "10.1016/j.onano.2025.100265",
+      "10.1109/EESPE63401.2025.10986972",
+      "10.24996/ijs.2025.66.11.22"
+    ]
+  },
+  {
+    "doc_id": "AUUydx6XUviKtGmIIEp7",
+    "summary": "10X Genomics Chromiumシステムは、単一細胞をマイクロ流体で分離しバーコード化する装置です。単一細胞RNA-seqなどのライブラリ作製に用いられます。",
+    "bullets": [
+      "単一細胞の分離とバーコード付与",
+      "scRNA-seq等のライブラリ作製",
+      "細胞集団の多様性解析に利用"
+    ],
+    "source_titles": [
+      "Immunoglobulin A protease from Sutterella wadsworthensis modifies outcome of infection with Campylobacter jejuni and is associated with microbiome diversity",
+      "O‑Island 28 encodes a type I secretion and RTX adhesion system regulated by RstA and required for early EHEC O157:H7 adherence",
+      "Plate-based 10X Genomics-compatible single-cell RNA-sequencing based on Smart-seq3xpress"
+    ],
+    "source_dois": [
+      "10.1080/19490976.2025.2611543",
+      "10.1080/19490976.2025.2609461",
+      "10.1186/s12864-025-12286-2"
+    ]
+  },
+  {
+    "doc_id": "820cQ0j4FcSztQlFFUkl",
+    "summary": "10kV ACDC増幅器は、低電圧の信号を高電圧まで増幅する装置です。材料・デバイスの高電圧駆動や誘電特性測定、アクチュエータ駆動などに使われます。",
+    "bullets": [
+      "AC/DC信号の高電圧増幅",
+      "誘電特性や絶縁特性の評価",
+      "高電圧駆動実験への信号供給"
+    ],
+    "source_titles": [
+      "Attention inverted feature perturbation for semi-supervised medical image segmentation",
+      "AWD-YOLO enhancing autonomous driving perception reliability in adverse weather",
+      "UNet with self-adaptive Mamba-like attention and causal-resonance learning for medical image segmentation"
+    ],
+    "source_dois": [
+      "10.1007/s10791-025-09896-5",
+      "10.1038/s41598-025-29575-1",
+      "10.1038/s41598-025-28885-8"
+    ]
+  },
+  {
+    "doc_id": "2oDYKjYWBX8ooTGzXU2v",
+    "summary": "10x Chromiumコントローラーは、単一細胞解析用のマイクロ流体カートリッジを制御する装置です。細胞とバーコードビーズを滴下し、ライブラリ作製の前段階を行います。",
+    "bullets": [
+      "マイクロ流体による細胞分配",
+      "バーコードビーズとのドロップレット生成",
+      "単一細胞解析の前処理に利用"
+    ],
+    "source_titles": [
+      "Plate-based 10X Genomics-compatible single-cell RNA-sequencing based on Smart-seq3xpress",
+      "Features of formation and neutralization of environmentally hazardous CrO₃ in chromium pyrometallurgy",
+      "Functional pectin-based chromium-free tanning agent with outstanding antimicrobial and yellowing resistance toward sustainable leather processing"
+    ],
+    "source_dois": [
+      "10.1186/s12864-025-12286-2",
+      "10.1038/s41598-025-31840-2",
+      "10.1186/s42825-025-00226-5"
+    ]
+  },
+  {
+    "doc_id": "PQi0mxd038GwG1W6u574",
+    "summary": "12インチSi深掘ドライエッチング装置は、Siウエハを高アスペクト比で深く加工する装置です。MEMS構造や微細溝の形成などに用いられます。",
+    "bullets": [
+      "Si深掘り(高アスペクト比)加工",
+      "MEMS/微細溝の形成",
+      "大口径ウエハ(12インチ)対応"
+    ],
+    "source_titles": [
+      "Effect of Complex Alloying on the Phase Composition and Thermal Characteristics of Al–Fe–Si Aluminum Alloys",
+      "Northern Nordic river mouth N:P:Si stoichiometry shows limited evidence of Si depletion",
+      "Hybrid island-and-sea approach for corrosion protection of Si photocathode in neutral-pH water splitting"
+    ],
+    "source_dois": [
+      "10.31643/2027/6445.12",
+      "10.1038/s41598-025-34052-w",
+      "10.1038/s41598-025-30589-y"
+    ]
+  },
+  {
+    "doc_id": "gxvyeJTxK8jiiCETnakn",
+    "summary": "137Csガンマ線照射装置は、ガンマ線を用いて試料を照射する装置です。放射線耐性評価、材料劣化試験、照射効果の研究に利用します。",
+    "bullets": [
+      "ガンマ線による照射実験",
+      "放射線耐性・劣化評価",
+      "照射量(線量)条件の検討"
+    ],
+    "source_titles": [
+      "Assessment of 137Cs, 90Sr, 241Am, 239+240Pu, 3H (HTO, OBT) in the fish from lakes, rivers, and nuclear shell craters of the semipalatinsk test site",
+      "Diagnostic significance of cardiac bridging integrator 1 score in hospitalized patients with heart failure with preserved ejection fraction and its assessment of prognostic value for major adverse cardiac events",
+      "Flexible and elastic chitosan-based hydrogel film dressings for second-degree partial-thickness burn wound healing"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-31374-7",
+      "10.1186/s12872-025-05399-9",
+      "10.1007/s10856-025-06973-5"
+    ]
+  },
+  {
+    "doc_id": "RDHJ6rPC6RGSg5ICbG1L",
+    "summary": "14T動物用MRI装置は、超高磁場で小動物の体内構造を高分解能で撮像する装置です。脳・臓器の形態評価や機能解析、疾患モデル研究に使われます。",
+    "bullets": [
+      "小動物の高分解能MRI撮像",
+      "脳・臓器の形態/機能評価",
+      "疾患モデルの経時変化解析"
+    ],
+    "source_titles": [
+      "Diagnostic value of multiparametric MRI combined with an interpretable machine learning model in the differentiation of benign and malignant ovarian-adnexal lesions classified as O-RADS 4",
+      "Upgrade to malignancy after excision of MRI-only B3 breast lesions: should the size and histological type of the lesion be considered for therapeutic management?",
+      "Exploring the use of preoperative MRI for assessing the anatomical location of positive surgical margin at robot-assisted radical prostatectomy (RARP)"
+    ],
+    "source_dois": [
+      "10.1186/s12880-025-02112-2",
+      "10.1186/s13244-025-02177-1",
+      "10.1007/s00345-025-06167-2"
+    ]
+  },
+  {
+    "doc_id": "cCHwRPZSem87WkeKzIfl",
+    "summary": "1500t鍛造シミュレータは、大荷重下で材料を塑性加工する条件を再現する装置です。鍛造プロセスの成形性評価や材料流動の解析に用いられます。",
+    "bullets": [
+      "大荷重の鍛造条件再現",
+      "成形性・材料流動の評価",
+      "加工条件の最適化検討"
+    ],
+    "source_titles": [
+      "Molecular Heterogeneity of Glucose-6-Phosphate Dehydrogenase (G6PD) Deficiency in the Portuguese Population",
+      "Position Control Application with Simatic S7-1500T and Sinamics S210",
+      "4-Axis Control Application with Simatic S7-1500T and Sinamics S210"
+    ],
+    "source_dois": [
+      "10.20344/amp.17584",
+      "10.1109/MPS58874.2023.10187558",
+      "10.1109/Ee59906.2023.10346115"
+    ]
+  },
+  {
+    "doc_id": "NwkHQEFywrHQrQuWv5Bp",
+    "summary": "15面マルチディスプレイAVシステムは、大型表示壁で複数の映像やデータを同時表示する設備です。研究データの可視化や会議・発表用途に使われます。",
+    "bullets": [
+      "大画面での高解像度可視化",
+      "複数ソースの同時表示/比較",
+      "会議・共同研究のプレゼン用途"
+    ],
+    "source_titles": [
+      "Sorption Concentration of Uranium and Vanadium from Productive Solutions of Black Shale Ores",
+      "Recurrent syncope with seizure-like features: the role of emergency monitoring in revealing intermittent AV block",
+      "Predicting 1-year successful clinical use of an arteriovenous access for hemodialysis using machine learning"
+    ],
+    "source_dois": [
+      "10.31643/2027/6445.09",
+      "10.1186/s12245-025-01113-w",
+      "10.1038/s41746-025-02187-9"
+    ]
+  },
+  {
+    "doc_id": "DgVXXYqm3xzRF5sqJN1i",
+    "summary": "S1000(384ウェル対応)は、多検体を一括で処理/測定する高スループット向けの装置です。384ウェルプレートを用いた反応・測定やスクリーニングに利用されます。",
+    "bullets": [
+      "384ウェルプレートの多検体処理",
+      "高スループットの測定/スクリーニング",
+      "試薬・サンプルの一括運用に対応"
+    ],
+    "source_titles": [
+      "MicroR-15b-5p targets JAK2/STAT3 signaling pathway to regulate glucose and lipid metabolism in primary chicken hepatocytes",
+      "N-doped carbon nanofibers coupled with in situ-grown small Co3Fe7 nanoparticles and short carbon nanotubes for radar–infrared compatible stealth",
+      "Outcomes of percutaneous ultrasound-guided A1 pulley fenestration release with small-gauge needles for treatment of trigger finger"
+    ],
+    "source_dois": [
+      "10.1016/j.psj.2026.106390",
+      "10.1016/j.carbon.2025.121144",
+      "10.1007/s00256-025-05028-8"
+    ]
+  },
+  {
+    "doc_id": "veFXlRqduj6kWRZ36wSe",
+    "summary": "18T汎用超伝導マグネット装置は、強磁場環境下で物性を評価する装置です。磁化・電気伝導・材料特性の磁場依存測定などに用いられます。",
+    "bullets": [
+      "最大18Tの強磁場環境を提供",
+      "磁化・輸送特性の磁場依存測定",
+      "材料・デバイスの磁場応答評価"
+    ],
+    "source_titles": [
+      "Microbial self-regulation and electron transport reconstruction under Cr(VI)-4-CP stress: From synergistic inhibition to antagonistic interaction",
+      "Analysis of Spatio-temporal change of Carbon Emissions and Carbon Sinks and Carbon Balance partition in the Poyang Lake Ecological Economic Region",
+      "Mucilaginibacter florum sp. nov., isolated from the flower of Coreopsis grandiflora and Mucilaginibacter oryzagri sp. nov., isolated from rice paddy soil in Korea"
+    ],
+    "source_dois": [
+      "10.1016/j.watres.2025.125138",
+      "10.1051/e3sconf/202561701023",
+      "10.71150/jm.2509014"
+    ]
+  },
+  {
+    "doc_id": "GeS0IMrUMDiCgyhBibUc",
+    "summary": "18ton小型スウェージングマシーンは、回転ハンマー加工で棒材や管材の断面を縮径する装置です。金属材料の塑性加工や形状制御に利用します。",
+    "bullets": [
+      "棒材/管材の縮径加工",
+      "塑性加工による形状制御",
+      "加工条件と材料流動の評価"
+    ],
+    "source_titles": [
+      "Integrated solution to optimize drilling efficiency and production in marginal tight oil field development: A case from Songliao Basin, North China",
+      "Development and build-up of a hybrid commercial vehicle"
+    ],
+    "source_dois": [
+      "10.2118/191010-ms",
+      "10.4271/2011-01-2193"
+    ]
+  },
+  {
+    "doc_id": "YANjNIPCjNVwuVMuXv3L",
+    "summary": "1MVタンデトロン加速器は、イオンビームを加速して材料分析や改質に用いる装置です。RBS/PIXEなどの元素分析やイオン注入に使われます。",
+    "bullets": [
+      "イオンビームによる材料分析",
+      "元素分布・組成の非破壊評価",
+      "イオン注入/改質実験"
+    ],
+    "source_titles": [
+      "A decade of 1MV accelerator mass spectrometry in Romania – Expanding the range of measurable isotopes",
+      "Computational model based approach to analyse calcium concentration and ion channel effects in ventricular ECG generation for normal and arrhythmic condition using euler integration method - A simulation study",
+      "Generation of subnanosecond electromagnetic pulses by a meter-long laboratory spark discharge: A source in the near-cathode region"
+    ],
+    "source_dois": [
+      "10.1016/j.nimb.2025.165979",
+      "10.1063/5.0277224",
+      "10.1063/5.0274764"
+    ]
+  },
+  {
+    "doc_id": "JjAPdoA3qKERncC5JztO",
+    "summary": "200kV透過電子顕微鏡(TEM)は、薄片試料を透過した電子で内部構造を観察する装置です。ナノ構造観察や回折解析による結晶評価に用います。",
+    "bullets": [
+      "ナノスケールの内部構造観察",
+      "電子回折による結晶評価",
+      "界面・欠陥構造の解析"
+    ],
+    "source_titles": [
+      "Telmisartan reduces systemic inflammation and alters the renin-angiotensin system in mild COVID-19",
+      "Gauss-Newton inversion of ground transient electromagnetic data using COMSOL multiphysics",
+      "Efficacy and Safety of Capecitabine-Temozolomide as Second-Line Therapy in Platinum-Refractory Extensive Disease Small Cell Lung Carcinoma (ED-SCLC): A Prospective Real-World Experience from Northern India"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-30304-x",
+      "10.1038/s41598-025-30438-y",
+      "10.1007/s42399-025-02237-z"
+    ]
+  },
+  {
+    "doc_id": "Wqht8el3cLzCaEAPf3ri",
+    "summary": "200kV熱電子放出型TEMは、熱電子源を用いた透過電子顕微鏡です。一般的な材料観察や回折解析、組織評価に適しています。",
+    "bullets": [
+      "材料内部の形態/組織観察",
+      "回折像による結晶構造評価",
+      "試料の欠陥・析出物解析"
+    ],
+    "source_titles": [
+      "Telmisartan reduces systemic inflammation and alters the renin-angiotensin system in mild COVID-19",
+      "Gauss-Newton inversion of ground transient electromagnetic data using COMSOL multiphysics",
+      "Efficacy and Safety of Capecitabine-Temozolomide as Second-Line Therapy in Platinum-Refractory Extensive Disease Small Cell Lung Carcinoma (ED-SCLC): A Prospective Real-World Experience from Northern India"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-30304-x",
+      "10.1038/s41598-025-30438-y",
+      "10.1007/s42399-025-02237-z"
+    ]
+  },
+  {
+    "doc_id": "3gygYTDWJdqXuMOB6BSt",
+    "summary": "200kV電界放出型TEMは高輝度電子源により高分解能観察が可能な透過電子顕微鏡です。原子レベルの構造解析や元素分析に利用されます。",
+    "bullets": [
+      "高分解能での原子構造観察",
+      "微細界面・欠陥の解析",
+      "分析TEMによる元素評価"
+    ],
+    "source_titles": [
+      "Telmisartan reduces systemic inflammation and alters the renin-angiotensin system in mild COVID-19",
+      "Gauss-Newton inversion of ground transient electromagnetic data using COMSOL multiphysics",
+      "Efficacy and Safety of Capecitabine-Temozolomide as Second-Line Therapy in Platinum-Refractory Extensive Disease Small Cell Lung Carcinoma (ED-SCLC): A Prospective Real-World Experience from Northern India"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-30304-x",
+      "10.1038/s41598-025-30438-y",
+      "10.1007/s42399-025-02237-z"
+    ]
+  },
+  {
+    "doc_id": "6CkEqgiTIYOYniOomBvZ",
+    "summary": "疲労試験機は繰返し荷重を与えて材料の疲労特性を評価する装置です。S-N曲線の取得や亀裂発生・進展の評価、寿命予測に使われます。",
+    "bullets": [
+      "繰返し荷重による疲労寿命評価",
+      "S-N曲線の取得",
+      "亀裂発生・進展挙動の確認"
+    ],
+    "source_titles": [
+      "Hyaluronic acid-doped bionic multilayer hydrogel scaffolds: Synergizing mechanical and lubrication properties for articular cartilage repair",
+      "Optimizing fault diagnosis for train’s running gear bearings: Investigating multi-variable effects through resonance demodulation-CNN modeling",
+      "Experimental and numerical analyses of the displacements and stiffnesses of a needle roller bearing under different conditions"
+    ],
+    "source_dois": [
+      "10.1016/j.ijbiomac.2025.149956",
+      "10.1201/9781003470076-48",
+      "10.1038/s41598-025-87276-1"
+    ]
+  },
+  {
+    "doc_id": "7dRKsL6bWy4V3U1vsh3s",
+    "summary": "2100バイオアナライザー(DNA専用)は、マイクロ流体電気泳動でDNA断片のサイズと量を測定する装置です。次世代シーケンス前の品質確認や断片解析に用います。",
+    "bullets": [
+      "DNA断片サイズ分布の解析",
+      "濃度・品質のQC",
+      "ライブラリ調製前の確認"
+    ],
+    "source_titles": [
+      "Evaluating carboplatin and PARP inhibitor combination efficacy using high-grade serous carcinoma spheroids and organoids",
+      "Polymorphism rs8057341 in the NOD2 gene and its clinical-laboratory association with visceral leishmaniasis",
+      "A framework for optimising arthropod DNA quality and quantity for modern sequencing tools using hard ticks (Ixodidae)"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2611602",
+      "10.4025/actascihealthsci.v48i1.75131",
+      "10.1007/s00436-025-08583-0"
+    ]
+  },
+  {
+    "doc_id": "MOEiCTAx2hPKtaApJWAL",
+    "summary": "2100バイオアナライザー(RNA専用)は、RNAの品質とサイズ分布を評価する装置です。RIN評価やサンプルの劣化確認、発現解析の前処理に使われます。",
+    "bullets": [
+      "RNA品質(RIN)の評価",
+      "サイズ分布・分解状態の確認",
+      "発現解析前のQC"
+    ],
+    "source_titles": [
+      "Single-cell landscape of peripheral and tumor-infiltrating immune cells in HPV-negative HNSCC",
+      "Evaluating carboplatin and PARP inhibitor combination efficacy using high-grade serous carcinoma spheroids and organoids",
+      "Polymorphism rs8057341 in the NOD2 gene and its clinical-laboratory association with visceral leishmaniasis"
+    ],
+    "source_dois": [
+      "10.1080/2162402X.2025.2605741",
+      "10.1080/15384047.2025.2611602",
+      "10.4025/actascihealthsci.v48i1.75131"
+    ]
+  },
+  {
+    "doc_id": "e2uflAhjuaEHVpGQIeh3",
+    "summary": "2470 Wizard2は多検体を対象に発光・放射線信号などを測定できる高スループット装置です。多検出器で複数チャネルの測定やスクリーニングに用いられます。",
+    "bullets": [
+      "多検体の一括測定",
+      "多検出器による高スループット解析",
+      "スクリーニング・定量評価"
+    ],
+    "source_titles": [
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy",
+      "Hounsfield unit values in patients with diffuse idiopathic skeletal hyperostosis and thoracolumbar injuries - a single-center retrospective study",
+      "Evaluation of the impact of anatomical region-specific HU-RED conversion curves on VMAT treatment planning for head and neck cancer"
+    ],
+    "source_dois": [
+      "10.1007/s11657-025-01644-y",
+      "10.1186/s12891-025-09382-5",
+      "10.1186/s43055-025-01669-w"
+    ]
+  },
+  {
+    "doc_id": "tikonmNiKgvvbksE8dkv",
+    "summary": "2480 Wizard2システムは放射性標識や発光信号を高感度に測定する装置です。試料の定量測定やスクリーニング用途に利用されます。",
+    "bullets": [
+      "放射性/発光試料の高感度測定",
+      "多検体の定量解析",
+      "スクリーニング評価"
+    ],
+    "source_titles": [
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy",
+      "Hounsfield unit values in patients with diffuse idiopathic skeletal hyperostosis and thoracolumbar injuries - a single-center retrospective study",
+      "Evaluation of the impact of anatomical region-specific HU-RED conversion curves on VMAT treatment planning for head and neck cancer"
+    ],
+    "source_dois": [
+      "10.1007/s11657-025-01644-y",
+      "10.1186/s12891-025-09382-5",
+      "10.1186/s43055-025-01669-w"
+    ]
+  },
+  {
+    "doc_id": "OHw3NU718WahzMUDSf2h",
+    "summary": "3次元レーザードップラー振動計は、非接触で対象物の振動速度・変位を3D計測する装置です。機械構造の固有振動解析や動特性評価に使われます。",
+    "bullets": [
+      "非接触の3D振動計測",
+      "固有振動数・モード解析",
+      "微小振動の定量評価"
+    ],
+    "source_titles": [
+      "Enhancement Design of Multi-phase Transformer for Cascaded H-Bridge Motor Driver",
+      "Design of frequency synthesizer for wireless communication",
+      "Application of an anaerobic hybrid reactor for petrochemical effluent treatment"
+    ],
+    "source_dois": [
+      "10.37394/23201.2024.23.17",
+      "10.1109/RTEICT.2017.8256908",
+      "10.2166/wst.2012.088"
+    ]
+  },
+  {
+    "doc_id": "kUkNMVBdKQbXAh0VRA2m",
+    "summary": "加工熱処理シミュレータは、塑性加工と熱処理を組み合わせた条件を再現する装置です。加工組織の変化や特性の最適化に利用されます。",
+    "bullets": [
+      "熱機械処理条件の再現",
+      "組織変化・再結晶の評価",
+      "加工プロセスの最適化"
+    ],
+    "source_titles": [
+      "Research on the mechanism and morphology of coal damage by water jet deflection angle",
+      "Study on Construction Rig for Passing Ground-Crimped Tension Clamps Through Blocks",
+      "Anomalous Temperature Rise Observed in the 25-T Cryogen-Free Superconducting Magnet During Initial and Subsequent Ramp-Up"
+    ],
+    "source_dois": [
+      "10.1007/s40948-025-01069-4",
+      "10.1145/3776942.3777007",
+      "10.1109/TASC.2025.3627167"
+    ]
+  },
+  {
+    "doc_id": "0lNnz4Bb98SntDjciG8d",
+    "summary": "2次元迅速測定X線回折装置は、湾曲イメージングプレートで短時間に回折像を取得する装置です。相同定や配向評価、迅速測定に用います。",
+    "bullets": [
+      "短時間での回折像取得",
+      "相同定・結晶性の評価",
+      "配向/テクスチャ解析"
+    ],
+    "source_titles": [
+      "Optimized deep learning using hybrid PSO-GA on raw XRD images for accurate classification of material degradation",
+      "Advanced XRD peak broadening analysis of gallium-doped ZnO nanoparticles for crystallite size evaluation",
+      "Synthesis, SC-XRD, HSA, DFT Calculations, and Molecular Docking Studies of a New CuI Complex Bearing the Bidentate Schiff Base Derived from Trimethylenediamine and 4-Cyanobenzaldehyde"
+    ],
+    "source_dois": [
+      "10.1186/s44147-025-00847-x",
+      "10.1038/s41598-025-31317-2",
+      "10.22036/pcr.2025.540201.2722"
+    ]
+  },
+  {
+    "doc_id": "lJMnDLAIDw3THDboh8oq",
+    "summary": "低温単結晶X線回折装置は、低温環境で単結晶構造を精密解析する装置です。結晶構造決定や相転移の評価に利用します。",
+    "bullets": [
+      "単結晶構造の精密解析",
+      "低温下の構造変化評価",
+      "格子定数・対称性の決定"
+    ],
+    "source_titles": [
+      "Optimized deep learning using hybrid PSO-GA on raw XRD images for accurate classification of material degradation",
+      "Advanced XRD peak broadening analysis of gallium-doped ZnO nanoparticles for crystallite size evaluation",
+      "Synthesis, SC-XRD, HSA, DFT Calculations, and Molecular Docking Studies of a New CuI Complex Bearing the Bidentate Schiff Base Derived from Trimethylenediamine and 4-Cyanobenzaldehyde"
+    ],
+    "source_dois": [
+      "10.1186/s44147-025-00847-x",
+      "10.1038/s41598-025-31317-2",
+      "10.22036/pcr.2025.540201.2722"
+    ]
+  },
+  {
+    "doc_id": "4rFlNSui7qs4YJ5JvEAY",
+    "summary": "3.0T用8chアレイコイルは、MRI撮像時の信号受信用コイルです。高SNRで小口径領域の高精細撮像に利用されます。",
+    "bullets": [
+      "高SNRのMRI受信",
+      "多チャネルによる高解像度撮像",
+      "小領域の詳細観察"
+    ],
+    "source_titles": [
+      "Comparison of reduced FOV diffusion-weighted imaging of rectal cancer at 5.0T ultra-high field versus 3.0T MRI: image quality and histopathological T staging",
+      "Comparative analysis and influencing factors of aneurysm wall characteristics based on artificial intelligence-assisted 3.0T MRI and 5.0T MRI high-resolution vascular wall imaging",
+      "A novel biomarker for identifying HER2-low breast cancer using synthetic MRI"
+    ],
+    "source_dois": [
+      "10.1186/s12880-025-02076-3",
+      "10.1186/s12880-025-01959-9",
+      "10.1038/s41598-025-31322-5"
+    ]
+  },
+  {
+    "doc_id": "Uy5mXiCI8FKenVJUNEtZ",
+    "summary": "300MHz NMR測定装置は核磁気共鳴により分子構造や化学状態を解析する装置です。溶液NMRで構造決定や純度確認に用います。",
+    "bullets": [
+      "分子構造の同定",
+      "化学シフトによる官能基解析",
+      "純度・混合物の確認"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "gnRuHOoRbl2LNaE0UD96",
+    "summary": "300MHz核磁気共鳴装置は、分子の構造解析や反応解析に用いるNMR装置です。1H/13C測定による構造推定に利用されます。",
+    "bullets": [
+      "1H/13C NMRによる構造解析",
+      "反応生成物の同定",
+      "混合試料の解析"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "ZFgYN0hKPsQIonFk19kZ",
+    "summary": "300MHz核磁気共鳴装置(Bruker)は、化学構造・状態を解析する標準的なNMR装置です。合成化学や材料分析の基礎測定に使われます。",
+    "bullets": [
+      "化学構造の基礎解析",
+      "化合物同定・純度評価",
+      "反応追跡・経時変化の確認"
+    ],
+    "source_titles": [
+      "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+      "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+      "NMR assignments of the human homodimeric mitochondrial ATP synthase inhibitor IF1"
+    ],
+    "source_dois": [
+      "10.1007/s12104-025-10251-4",
+      "10.1038/s41598-025-28860-3",
+      "10.1007/s12104-025-10257-y"
+    ]
+  },
+  {
+    "doc_id": "sMUBxtsm2WW47TnS6Vhq",
+    "summary": "イメージング回折格子分光器は、空間分解能を持つ分光測定を行う装置です。発光・吸収スペクトルの解析や材料評価に利用します。",
+    "bullets": [
+      "発光/吸収スペクトルの取得",
+      "空間分解分光による局所評価",
+      "材料の光学特性解析"
+    ],
+    "source_titles": [
+      "Photovoltaic as a Second Skin Roof Optimal roof design for energy generation and thermal comfort for tropical house",
+      "Towards integrated approach for soil salinity assessment using remote sensing and process-based salt accumulation modelling",
+      "Intraoral and Extraoral Scanning Technologies in the Digital Workflow Era: An Integrative Review with Artificial Intelligence"
+    ],
+    "source_dois": [
+      "10.14246/irspsd.14.1_183",
+      "10.1117/12.3069645",
+      "10.15517/ijds.2024.60663"
+    ]
+  },
+  {
+    "doc_id": "fnDFF5gZggk7M6cIIjuP",
+    "summary": "高周波誘導真空溶解設備は、真空中で金属を誘導加熱して溶解・合金化する装置です。高純度合金の作製や脱ガス処理に用います。",
+    "bullets": [
+      "真空中での溶解・合金化",
+      "不純物・ガスの低減",
+      "試作材料の作製"
+    ],
+    "source_titles": [
+      "Number of Pairs of Natural Teeth, Rather Than Number of Present Teeth, Is Associated With Obesity Among Older Adults: A Cross-Sectional Study",
+      "Effects of applying different soil conditioners on the yield and heavy-metal content of Edamame (Glycine max (L.) Merr.)",
+      "Long-Term Outcomes After Melody Transcatheter Pulmonary Valve Implant in Patients Weighing ≤30 kg"
+    ],
+    "source_dois": [
+      "10.1111/idh.70027",
+      "10.1051/epjconf/202533201007",
+      "10.1016/j.jcin.2025.10.049"
+    ]
+  },
+  {
+    "doc_id": "NskSbUoFNUCh2UAN5zFj",
+    "summary": "3130ジェネティックアナライザはキャピラリー電気泳動でDNA断片を解析する装置です。シーケンス解析やフラグメント解析、ジェノタイピングに利用されます。",
+    "bullets": [
+      "DNAシーケンス解析",
+      "フラグメント解析・サイズ測定",
+      "遺伝子型判定"
+    ],
+    "source_titles": [
+      "Complications of Central Venous Line Insertion: A Case Series",
+      "Health and health management among motorcycle-based food delivery workers in South Korea: a qualitative interview study",
+      "Artificial Intelligence Technologies for Aircraft Maintenance: A Systematic Literature Review"
+    ],
+    "source_dois": [
+      "10.31729/jnma.v64i293.9282",
+      "10.1080/17482631.2026.2613971",
+      "10.36001/ijphm.2026.v17i1.4567"
+    ]
+  },
+  {
+    "doc_id": "KMCgHnSgUhx3GkLMiwfn",
+    "summary": "actiCHampは32チャネルの脳波(EEG)計測システムです。脳活動の計測や認知・感覚実験の信号取得に使われます。",
+    "bullets": [
+      "脳波(EEG)の多チャネル取得",
+      "事象関連電位(ERP)解析",
+      "BCI/認知実験の信号計測"
+    ],
+    "source_titles": [
+      "Frontal alpha asymmetry across genders as a distinction between major depressive disorder and bipolar disorder",
+      "Optic flow modulates electrocortical activity during steady-state treadmill walking",
+      "The individual alpha bandwidth: A trait-like neural marker associated with sensory processing and executive function"
+    ],
+    "source_dois": [
+      "10.1016/j.jad.2025.120777",
+      "10.1016/j.bbr.2025.115828",
+      "10.1016/j.neuroimage.2026.121685"
+    ]
+  },
+  {
+    "doc_id": "otX6yKYsQlc2U3S97SK3",
+    "summary": "3D DIC&モーション計測は、画像相関法で試験体の3次元変位・ひずみを可視化する計測です。引張・衝撃試験などの変形解析に使われます。",
+    "bullets": [
+      "3D変位・ひずみの可視化",
+      "材料試験時の変形分布解析",
+      "動的試験の挙動評価"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Efficacy and safety of anticoagulant therapy in patients with sepsis: a meta-analysis of randomized controlled trials",
+      "Sepsis-induced coagulopathy: recent insights on the role and clinical application of neutrophil extracellular trap formation"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s12959-025-00812-x",
+      "10.1038/s41598-025-31771-y"
+    ]
+  },
+  {
+    "doc_id": "C6DUwmsTUNpywvAvEzZe",
+    "summary": "3D X線顕微鏡は、非破壊で内部構造を三次元的に観察する装置です。材料内部の欠陥や孔、繊維配向の評価に使われます。",
+    "bullets": [
+      "非破壊の内部3D観察",
+      "欠陥・空隙の定量評価",
+      "複合材料の構造解析"
+    ],
+    "source_titles": [
+      "To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates",
+      "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol"
+    ],
+    "source_dois": [
+      "10.31643/2027/6445.08",
+      "10.1080/15476278.2025.2575599",
+      "10.1080/15384047.2025.2603095"
+    ]
+  },
+  {
+    "doc_id": "Qi3wB3OZw9L9yTJ1fynB",
+    "summary": "3D-SIM超解像イメージングは、構造化照明で光学顕微鏡の分解能を向上させる装置です。細胞内構造の3D観察や多色解析に利用します。",
+    "bullets": [
+      "超解像度での細胞観察",
+      "3D・多色イメージング",
+      "微細構造の可視化"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Implementation and evaluation of a Sim + LBL hybrid teaching model in dermatology and venereology: a prospective study",
+      "1H, 13C, and 15N backbone resonance assignments of full-length and a SIM-SEP-containing fragment (101–266) of p47, a p97 adaptor protein"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s12909-025-08440-9",
+      "10.1007/s12104-025-10254-1"
+    ]
+  },
+  {
+    "doc_id": "0SPJ41WAdBX1LsVxqKW7",
+    "summary": "3D/4D蛍光画像解析ソフトウェアは、時系列の蛍光画像から形態・動態を定量化するツールです。細胞追跡や体積計測に使われます。",
+    "bullets": [
+      "3D/4D画像のセグメンテーション",
+      "細胞・粒子の追跡解析",
+      "体積・形状パラメータの定量"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "4D printing of trigger-free shape-memory hydrogels towards self-adaptive substrates for bioelectronics",
+      "4D echocardiographic detection of early right atrial and ventricular dysfunction following dual-chamber pacing"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1038/s41467-025-67323-1",
+      "10.1186/s12872-025-05388-y"
+    ]
+  },
+  {
+    "doc_id": "sbIeozQzj7byGmx7Fjnp",
+    "summary": "3Dスキャナは対象物の形状を非接触で測定し、点群/メッシュデータを生成する装置です。リバースエンジニアリングや寸法検査に利用します。",
+    "bullets": [
+      "非接触での3D形状取得",
+      "点群・メッシュデータの生成",
+      "寸法検査・形状比較"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy",
+      "Hounsfield unit values in patients with diffuse idiopathic skeletal hyperostosis and thoracolumbar injuries - a single-center retrospective study"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1007/s11657-025-01644-y",
+      "10.1186/s12891-025-09382-5"
+    ]
+  },
+  {
+    "doc_id": "OCvabyFyv6mEDWyzHe2v",
+    "summary": "3Dスキャナーは対象物の三次元形状を高精度に取得する装置です。設計データ化や形状比較、品質確認に使われます。",
+    "bullets": [
+      "高精度3D形状測定",
+      "CAD化・形状データ作成",
+      "品質評価・検査用途"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Gut microbiome- targeted intervention ameliorates structural and transcriptomic changes in the kidney of hindlimb unloaded mouse model",
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s42523-025-00503-y",
+      "10.1007/s11657-025-01644-y"
+    ]
+  },
+  {
+    "doc_id": "v1gUy1dPMKKA1NNuS18X",
+    "summary": "3Dスキャナーは、立体形状を短時間でデジタル化する装置です。試作品の形状確認や文化財の計測にも利用されます。",
+    "bullets": [
+      "立体形状のデジタル化",
+      "試作品/現物の形状比較",
+      "解析・記録用途"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy",
+      "Hounsfield unit values in patients with diffuse idiopathic skeletal hyperostosis and thoracolumbar injuries - a single-center retrospective study"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1007/s11657-025-01644-y",
+      "10.1186/s12891-025-09382-5"
+    ]
+  },
+  {
+    "doc_id": "Z6ZYrAnlAwAsbXdjasi8",
+    "summary": "3Dプリンタは積層造形で立体物を作製する装置です。試作部品や治具、設計検証用モデルの作成に利用します。",
+    "bullets": [
+      "樹脂部品の試作造形",
+      "設計検証用モデル作成",
+      "治具・簡易部品の製作"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "mvHeWRPnzgxqa2wHKaqo",
+    "summary": "3Dプリンタは樹脂材料を積層して形状を造形する装置です。試作や形状確認、少量生産に使われます。",
+    "bullets": [
+      "樹脂積層による造形",
+      "試作・形状評価",
+      "少量部品の作製"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "4XheR15Myymx0LbKc4iT",
+    "summary": "3Dプリンタ(MF-1000)は、デジタルモデルを樹脂造形する装置です。試作モデルや治具の作製に用います。",
+    "bullets": [
+      "樹脂造形による試作",
+      "小型部品・治具の作製",
+      "形状検証のためのモデル作成"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Mealworm frass-based biofertilizer improves soil nutrient profile and Chinese kale growth parameters towards sustainable agriculture",
+      "Investigation of reinforcement behaviour on mechanical and thermal properties in Al-SiCp matrix using DIGIMAT-MF and finite element method"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13765-025-01069-8",
+      "10.1007/s41939-025-01101-w"
+    ]
+  },
+  {
+    "doc_id": "Geo6vL0akPwurtYcmNtB",
+    "summary": "3Dプリンタ(UP BOX+)は樹脂を積層して造形する装置です。構造確認や簡易パーツの作製に利用されます。",
+    "bullets": [
+      "樹脂積層による造形",
+      "試作・デザイン検証",
+      "簡易パーツの作製"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Numerical Study on the Effect of Distance Between Tubes and Bonding Width on the Performance of a Photovoltaic Thermal (PVT) System",
+      "Experimental Investigation of the Strength and Durability of Chopped Basalt Fiber Concrete for Structural Applications"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.31127/tuje.1786975",
+      "10.31127/tuje.1770956"
+    ]
+  },
+  {
+    "doc_id": "9mHA6wcY8V1ZmRrIzMcS",
+    "summary": "3Dプリンタ(UP BOX+)は、試作やモデル作成に適した樹脂造形装置です。短時間で形状を確認できます。",
+    "bullets": [
+      "短時間の試作造形",
+      "形状・寸法の確認",
+      "設計検証用途"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Numerical Study on the Effect of Distance Between Tubes and Bonding Width on the Performance of a Photovoltaic Thermal (PVT) System",
+      "Experimental Investigation of the Strength and Durability of Chopped Basalt Fiber Concrete for Structural Applications"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.31127/tuje.1786975",
+      "10.31127/tuje.1770956"
+    ]
+  },
+  {
+    "doc_id": "zbY4qgZK4bjNMYHGepyh",
+    "summary": "3Dプリンタ(Form3)は光造形方式で高精細モデルを作製する装置です。精密な樹脂部品や試作品の作成に使われます。",
+    "bullets": [
+      "高精細な樹脂造形",
+      "細部形状の再現",
+      "試作部品・模型作成"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "t6CzFvITPmP98Bbp2RbX",
+    "summary": "3Dプリンタ(キーエンス アジリスタ3110)は、微細形状の樹脂造形に対応した装置です。微細部品の試作やモデル製作に用います。",
+    "bullets": [
+      "微細形状の樹脂造形",
+      "高精度モデルの作製",
+      "機能試作・形状検証"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "I2n30Ng9EYOUxlXc6YVh",
+    "summary": "3Dプリンターは、デジタルデータから立体物を造形する装置です。試作や教育用途、デザイン検証に利用します。",
+    "bullets": [
+      "設計データの立体化",
+      "試作モデルの作製",
+      "教育・プレゼン用途"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Gut microbiome- targeted intervention ameliorates structural and transcriptomic changes in the kidney of hindlimb unloaded mouse model",
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s42523-025-00503-y",
+      "10.1007/s11657-025-01644-y"
+    ]
+  },
+  {
+    "doc_id": "lLja7HkKKqtRvFUj5wuZ",
+    "summary": "3Dプリンターは樹脂を積層して立体物を作製する装置です。試作や模型、治具の製作に用います。",
+    "bullets": [
+      "樹脂積層による造形",
+      "模型・治具の作製",
+      "設計検証のモデル作成"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy",
+      "Hounsfield unit values in patients with diffuse idiopathic skeletal hyperostosis and thoracolumbar injuries - a single-center retrospective study"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1007/s11657-025-01644-y",
+      "10.1186/s12891-025-09382-5"
+    ]
+  },
+  {
+    "doc_id": "qFSo7q55jopLJkbFICo7",
+    "summary": "3Dプリンターは、短納期で形状確認ができる試作装置です。部品のフィット確認や設計検証に利用します。",
+    "bullets": [
+      "短納期の試作造形",
+      "部品フィットの確認",
+      "設計改善の検討"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy",
+      "Hounsfield unit values in patients with diffuse idiopathic skeletal hyperostosis and thoracolumbar injuries - a single-center retrospective study"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1007/s11657-025-01644-y",
+      "10.1186/s12891-025-09382-5"
+    ]
+  },
+  {
+    "doc_id": "8r0MsQ2biGonBi20R14o",
+    "summary": "3Dプリンター(樹脂用)は、樹脂材料で立体物を造形する装置です。細部形状の再現や模型作製に向きます。",
+    "bullets": [
+      "樹脂材料での造形",
+      "細部形状の再現",
+      "模型・試作の作製"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "ZmWjWhOau35Curs2jiyS",
+    "summary": "3DマイクロX線CTは、微小領域を非破壊で3次元観察する装置です。内部欠陥や孔の定量、微細構造解析に使われます。",
+    "bullets": [
+      "微小領域の3D内部観察",
+      "欠陥・空隙の定量化",
+      "材料内部構造の解析"
+    ],
+    "source_titles": [
+      "To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates",
+      "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol"
+    ],
+    "source_dois": [
+      "10.31643/2027/6445.08",
+      "10.1080/15476278.2025.2575599",
+      "10.1080/15384047.2025.2603095"
+    ]
+  },
+  {
+    "doc_id": "aEzhtOGBl9pesVnWk96N",
+    "summary": "3DマイクロX線CTは、試料内部の微細構造を非破壊で可視化する装置です。材料評価や品質管理に利用されます。",
+    "bullets": [
+      "非破壊での内部可視化",
+      "微細構造・空隙の解析",
+      "品質評価・欠陥検査"
+    ],
+    "source_titles": [
+      "To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates",
+      "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol"
+    ],
+    "source_dois": [
+      "10.31643/2027/6445.08",
+      "10.1080/15476278.2025.2575599",
+      "10.1080/15384047.2025.2603095"
+    ]
+  },
+  {
+    "doc_id": "1hPqNREwTJFLlKqDt6uv",
+    "summary": "3Dレーザースキャナーは、レーザーで形状を計測し高精度な3Dデータを取得する装置です。寸法計測や形状比較に用います。",
+    "bullets": [
+      "レーザーによる3D形状計測",
+      "寸法精度の確認",
+      "形状比較・検査用途"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "OkLB99IsgTU5H2OcOZqV",
+    "summary": "3D形状測定機(3D-CMM)は、接触プローブで三次元座標を測定する装置です。高精度な寸法検査や形状評価に使われます。",
+    "bullets": [
+      "高精度の寸法検査",
+      "三次元座標の測定",
+      "形状公差の評価"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "0ETtIhtHkwEHGF8wNUbD",
+    "summary": "3D測定レーザー顕微鏡は、表面形状と粗さを非接触で測定する装置です。微細加工面の評価や段差測定に利用します。",
+    "bullets": [
+      "非接触の表面形状測定",
+      "段差・粗さの評価",
+      "微細加工面の検査"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Gut microbiome- targeted intervention ameliorates structural and transcriptomic changes in the kidney of hindlimb unloaded mouse model",
+      "Vertebral changes evaluated by hounsfield units after spinal fusion surgery with concomitant anabolic therapy"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s42523-025-00503-y",
+      "10.1007/s11657-025-01644-y"
+    ]
+  },
+  {
+    "doc_id": "GMT7Yur37AUA0ZWyI77o",
+    "summary": "3D測定レーザー顕微鏡(OLS4500)は、表面の3D形状を高精度に計測する装置です。表面粗さや段差評価に使われます。",
+    "bullets": [
+      "高精度3D形状計測",
+      "表面粗さ・段差評価",
+      "微細形状の定量解析"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "ZvP4WWIxJfA2c7Dp1R23",
+    "summary": "3D画像処理ソフトウェアは、ボリュームデータを再構成し可視化・計測するツールです。CT/顕微鏡画像の解析に用います。",
+    "bullets": [
+      "3D再構成と可視化",
+      "体積・形状の計測",
+      "画像の定量解析"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "dI6L4tVB3fbOBm41pFzj",
+    "summary": "3D解析ソフト(欠陥・介在物モジュール)は、内部欠陥や介在物を抽出・定量する解析ツールです。材料品質の評価に使われます。",
+    "bullets": [
+      "欠陥・介在物の自動抽出",
+      "体積・分布の定量評価",
+      "品質管理・原因解析"
+    ],
+    "source_titles": [
+      "Assessing progesterone receptor modulation in glioblastoma: from in vitro and animal model to a human pilot protocol",
+      "Renal dynamic scintigraphy using 3D-ring CZT cameras: comparison with NaI(Tl)",
+      "Automatic measurements of volar tilt and radial inclination of the distal radius on 3D models: validation against manual methods"
+    ],
+    "source_dois": [
+      "10.1080/15384047.2025.2603095",
+      "10.1186/s13550-025-01351-2",
+      "10.1038/s41598-025-33737-6"
+    ]
+  },
+  {
+    "doc_id": "PCDkksnUBegNyJeA8VZC",
+    "summary": "3T-MRI磁気共鳴断層撮影装置は、高磁場で高分解能のMRI撮像を行う装置です。脳・臓器の構造評価や機能解析に使われます。",
+    "bullets": [
+      "高分解能MRI撮像",
+      "脳・臓器の構造評価",
+      "疾患モデルの解析"
+    ],
+    "source_titles": [
+      "Automated cervix biometry, volumetry and normative models for 3D motion-corrected T2-weighted 0.55-3T fetal MRI during 2nd and 3rd trimesters",
+      "Diagnostic performance of CT and MRI in mandibular trauma assessment – a prospective comparative study",
+      "Anatomical variability of the corticospinal decussation: a diffusion tensor imaging study"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-29744-2",
+      "10.1007/s10006-025-01496-3",
+      "10.1007/s00276-025-03802-w"
+    ]
+  },
+  {
+    "doc_id": "ikqjxKuD0EPgI7kXDKk2",
+    "summary": "3T磁気共鳴断層撮影装置は、高磁場環境で詳細なMRI画像を取得する装置です。臨床・基礎研究での画像解析に利用されます。",
+    "bullets": [
+      "高磁場MRIによる詳細撮像",
+      "構造/機能イメージング",
+      "臨床・基礎研究用途"
+    ],
+    "source_titles": [
+      "Automated cervix biometry, volumetry and normative models for 3D motion-corrected T2-weighted 0.55-3T fetal MRI during 2nd and 3rd trimesters",
+      "Semi-automatic annotation of brain vessels in magnetic resonance angiography images",
+      "Temporal and spatial characterization of physiological noise in rs-fMRI at a high temporal resolution"
+    ],
+    "source_dois": [
+      "10.1038/s41598-025-29744-2",
+      "10.1038/s41597-025-06354-1",
+      "10.1038/s41598-025-31018-w"
+    ]
+  },
+  {
+    "doc_id": "O1qrYgdPerCSjsA62Ixy",
+    "summary": "3ゾーン式セラミック電気管状炉は、複数ゾーンで温度分布を制御できる加熱炉です。焼成や拡散処理、雰囲気制御の熱処理に利用します。",
+    "bullets": [
+      "ゾーン制御による均一加熱",
+      "焼成・拡散処理",
+      "雰囲気制御下の熱処理"
+    ],
+    "source_titles": [
+      "Innovative approaches to the processing of vanadium-and molybdenum-containing technogenic waste",
+      "Antigen-specific activation of gut immune cells drives autoimmune neuroinflammation",
+      "Through their lens: A photovoice study exploring pregnant and postpartum women's experiences, coping strategies and barriers to heat adaptation in an urban township in South Africa"
+    ],
+    "source_dois": [
+      "10.31643/2027/6445.10",
+      "10.1080/19490976.2025.2601430",
+      "10.1080/17441692.2025.2612452"
+    ]
+  },
+  {
+    "doc_id": "DWQcinYveoMNuhR7F3GD",
+    "summary": "3次元SEM画像測定解析システムは、SEM画像から三次元形状や寸法を解析する装置です。表面凹凸や微細形状の定量評価に使われます。",
+    "bullets": [
+      "SEM画像からの3D再構成",
+      "表面凹凸・寸法の定量化",
+      "微細形状の比較評価"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "ZIsQrVvwrLUNPiDXblKn",
+    "summary": "3次元SEM画像測定解析システムは、SEMの多視点画像を用いて表面形状を定量化する装置です。粗さや微細構造評価に利用します。",
+    "bullets": [
+      "SEM画像の3D解析",
+      "粗さ・形状の定量評価",
+      "微細構造の比較検討"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "eJBnw4iecfbwIR31bA0C",
+    "summary": "3次元SEM画像測定解析システムは、微細表面の3D形状を測定する解析装置です。加工面の品質評価に使われます。",
+    "bullets": [
+      "微細表面の3D形状計測",
+      "加工面の品質評価",
+      "形状ばらつきの解析"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  },
+  {
+    "doc_id": "hBKd04alHXb8speJhvjR",
+    "summary": "3次元SEM画像測定解析システムは、SEM画像を用いた三次元形状計測装置です。微細加工の寸法管理に利用します。",
+    "bullets": [
+      "SEM画像による3D寸法計測",
+      "微細加工の寸法管理",
+      "表面形状の定量評価"
+    ],
+    "source_titles": [
+      "The unbridled judge in atypical pecuniary enforcement",
+      "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+      "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters"
+    ],
+    "source_dois": [
+      "10.12957/redp.2026.90910",
+      "10.19139/soic-2310-5070-3032",
+      "10.31127/tuje.1804146"
+    ]
+  }
+]

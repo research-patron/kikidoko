@@ -181,6 +181,139 @@ const NORMALIZED_KEYWORDS = {
   gcms: ["gcms", "ガスクロマトグラフ質量分析", "ガスクロ質量分析"],
 };
 
+const PAPER_GENRE_LABELS = {
+  CHEM: "化学",
+  PHYS: "物理学・天文学",
+  CENG: "化学工学",
+  ENGI: "工学",
+  MATE: "材料科学",
+  COMP: "コンピュータ科学",
+  MATH: "数学",
+  EART: "地球・惑星科学",
+  ENVI: "環境科学",
+  AGRI: "農学・生物科学",
+  BIOC: "生化学・遺伝・分子生物学",
+  IMMU: "免疫学・微生物学",
+  PHAR: "薬学・毒性学・製剤学",
+  MEDI: "医学",
+  NURS: "看護学",
+  DENT: "歯学",
+  HEAL: "保健医療",
+  VETE: "獣医学",
+  NEUR: "神経科学",
+  PSYC: "心理学",
+  SOCI: "社会科学",
+  ARTS: "芸術・人文科学",
+  BUSI: "ビジネス・経営・会計",
+  DECI: "意思決定科学",
+  ECON: "経済・計量経済・金融",
+  ENER: "エネルギー",
+  MULT: "学際領域",
+};
+
+const PAPER_GENRE_NAME_LABELS = [
+  ["chemical engineering", "化学工学"],
+  ["materials science", "材料科学"],
+  ["physics and astronomy", "物理学・天文学"],
+  ["computer science", "コンピュータ科学"],
+  ["earth and planetary", "地球・惑星科学"],
+  ["environmental science", "環境科学"],
+  ["agricultural and biological sciences", "農学・生物科学"],
+  ["biochemistry, genetics and molecular biology", "生化学・遺伝・分子生物学"],
+  ["immunology and microbiology", "免疫学・微生物学"],
+  ["pharmacology, toxicology and pharmaceutics", "薬学・毒性学・製剤学"],
+  ["business, management and accounting", "ビジネス・経営・会計"],
+  ["economics, econometrics and finance", "経済・計量経済・金融"],
+  ["decision sciences", "意思決定科学"],
+  ["arts and humanities", "芸術・人文科学"],
+  ["social sciences", "社会科学"],
+  ["energy", "エネルギー"],
+  ["engineering", "工学"],
+  ["chemistry", "化学"],
+  ["mathematics", "数学"],
+  ["medicine", "医学"],
+  ["nursing", "看護学"],
+  ["dentistry", "歯学"],
+  ["health professions", "保健医療"],
+  ["veterinary", "獣医学"],
+  ["neuroscience", "神経科学"],
+  ["psychology", "心理学"],
+];
+
+const JAPANESE_PATTERN = /[ぁ-んァ-ン一-龥]/;
+
+const USAGE_THEME_LABELS = {
+  diffraction: "回折",
+  microscopy: "顕微鏡観察",
+  spectrometry: "質量分析",
+  spectroscopy: "分光",
+  thermal: "熱特性",
+  electrical: "電気特性",
+  magnetic: "磁気特性",
+  optical: "光学特性",
+  surface: "表面",
+  structure: "構造",
+  structural: "構造",
+  mechanical: "機械特性",
+  corrosion: "腐食",
+  catalyst: "触媒",
+  catalytic: "触媒反応",
+  battery: "電池",
+  batteries: "電池",
+  semiconductor: "半導体",
+  semiconductors: "半導体",
+  polymer: "ポリマー",
+  polymers: "ポリマー",
+  alloy: "合金",
+  alloys: "合金",
+  ceramic: "セラミック",
+  ceramics: "セラミック",
+  nanomaterial: "ナノ材料",
+  nanomaterials: "ナノ材料",
+  nanoparticle: "ナノ粒子",
+  nanoparticles: "ナノ粒子",
+  thinfilm: "薄膜",
+  thinfilms: "薄膜",
+  coating: "コーティング",
+  coatings: "コーティング",
+  sensor: "センサー",
+  sensors: "センサー",
+  imaging: "イメージング",
+  characterization: "特性評価",
+  evaluation: "評価",
+};
+
+const resolvePaperGenre = (value) => {
+  const raw = String(value || "").trim();
+  if (!raw) return "未分類";
+  if (JAPANESE_PATTERN.test(raw)) return raw;
+  const upper = raw.toUpperCase();
+  if (PAPER_GENRE_LABELS[upper]) {
+    return PAPER_GENRE_LABELS[upper];
+  }
+  const lower = raw.toLowerCase();
+  if (lower === "uncategorized" || lower === "unclassified" || lower === "unknown") {
+    return "未分類";
+  }
+  for (const [needle, label] of PAPER_GENRE_NAME_LABELS) {
+    if (lower.includes(needle)) {
+      return label;
+    }
+  }
+  return raw;
+};
+
+const resolveUsageTheme = (value) => {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  if (JAPANESE_PATTERN.test(raw)) return raw;
+  const normalized = raw.toLowerCase().replace(/[^a-z0-9]+/g, "");
+  if (USAGE_THEME_LABELS[normalized]) {
+    return USAGE_THEME_LABELS[normalized];
+  }
+  return raw.replace(/-/g, " ");
+};
+
 const EQUIPMENT_GUIDES = {
   xrd: {
     title: "X線回折（XRD）",
@@ -233,6 +366,154 @@ const normalizeKeyword = (value) => {
   return value.toLowerCase().replace(/[^a-z0-9ぁ-んァ-ン一-龥々ー]/g, "");
 };
 
+const normalizeForMatch = (value) => normalizeKeyword(value || "");
+
+const hasTextMatch = (value, keywordNormalized, tokens) => {
+  return (
+    scoreTextMatch(value, keywordNormalized, tokens, {
+      exact: 1,
+      prefix: 1,
+      partial: 1,
+      token: 1,
+    }) > 0
+  );
+};
+
+const scoreTextMatch = (value, keywordNormalized, tokens, weights) => {
+  if (!value) return 0;
+  const normalized = normalizeForMatch(value);
+  if (!normalized) return 0;
+  let score = 0;
+  if (keywordNormalized) {
+    if (normalized === keywordNormalized) {
+      score += weights.exact;
+    } else if (normalized.startsWith(keywordNormalized)) {
+      score += weights.prefix;
+    } else if (normalized.includes(keywordNormalized)) {
+      score += weights.partial;
+    }
+  }
+  if (tokens.length > 0) {
+    const hits = new Set();
+    tokens.forEach((token) => {
+      if (token.length < 2) return;
+      if (normalized.includes(token)) {
+        hits.add(token);
+      }
+    });
+    score += hits.size * weights.token;
+  }
+  return score;
+};
+
+const buildMatchTier = (item, keywordNormalized, tokens, aliasKeys) => {
+  if (!item || (!keywordNormalized && tokens.length === 0)) return 0;
+  const normalizedName = normalizeForMatch(item.name);
+  if (keywordNormalized && normalizedName && normalizedName === keywordNormalized) {
+    return 3;
+  }
+  const aliasMatch =
+    aliasKeys.length > 0 &&
+    Array.isArray(item.searchAliases) &&
+    item.searchAliases.some((alias) => aliasKeys.includes(alias));
+  const primaryMatch =
+    aliasMatch ||
+    hasTextMatch(item.name, keywordNormalized, tokens) ||
+    hasTextMatch(item.categoryGeneral, keywordNormalized, tokens) ||
+    hasTextMatch(item.categoryDetail, keywordNormalized, tokens) ||
+    hasTextMatch(item.orgName, keywordNormalized, tokens) ||
+    hasTextMatch(item.prefecture, keywordNormalized, tokens) ||
+    hasTextMatch(item.address, keywordNormalized, tokens) ||
+    hasTextMatch(item.orgType, keywordNormalized, tokens) ||
+    hasTextMatch(item.feeBand, keywordNormalized, tokens);
+  if (primaryMatch) {
+    return 2;
+  }
+  const descriptionText = [
+    item.usageManualSummary,
+    ...(Array.isArray(item.usageManualBullets) ? item.usageManualBullets : []),
+  ]
+    .filter(Boolean)
+    .join(" ");
+  if (hasTextMatch(descriptionText, keywordNormalized, tokens)) {
+    return 1;
+  }
+  return 0;
+};
+
+const buildSearchScore = (item, keywordNormalized, tokens, aliasKeys) => {
+  if (!item || (!keywordNormalized && tokens.length === 0)) return 0;
+  let score = 0;
+  score += scoreTextMatch(item.name, keywordNormalized, tokens, {
+    exact: 1200,
+    prefix: 900,
+    partial: 700,
+    token: 60,
+  });
+  score += scoreTextMatch(item.categoryGeneral, keywordNormalized, tokens, {
+    exact: 420,
+    prefix: 320,
+    partial: 240,
+    token: 20,
+  });
+  score += scoreTextMatch(item.categoryDetail, keywordNormalized, tokens, {
+    exact: 360,
+    prefix: 260,
+    partial: 200,
+    token: 16,
+  });
+  score += scoreTextMatch(item.orgName, keywordNormalized, tokens, {
+    exact: 320,
+    prefix: 240,
+    partial: 180,
+    token: 14,
+  });
+  score += scoreTextMatch(item.prefecture, keywordNormalized, tokens, {
+    exact: 180,
+    prefix: 140,
+    partial: 100,
+    token: 8,
+  });
+  score += scoreTextMatch(item.address, keywordNormalized, tokens, {
+    exact: 140,
+    prefix: 110,
+    partial: 80,
+    token: 6,
+  });
+  score += scoreTextMatch(item.orgType, keywordNormalized, tokens, {
+    exact: 120,
+    prefix: 90,
+    partial: 70,
+    token: 5,
+  });
+  score += scoreTextMatch(item.feeBand, keywordNormalized, tokens, {
+    exact: 80,
+    prefix: 60,
+    partial: 40,
+    token: 4,
+  });
+  if (
+    aliasKeys.length > 0 &&
+    Array.isArray(item.searchAliases) &&
+    item.searchAliases.some((alias) => aliasKeys.includes(alias))
+  ) {
+    score += 500;
+  }
+  const descriptionText = [
+    item.usageManualSummary,
+    ...(Array.isArray(item.usageManualBullets) ? item.usageManualBullets : []),
+  ]
+    .filter(Boolean)
+    .join(" ");
+  score += scoreTextMatch(descriptionText, keywordNormalized, tokens, {
+    exact: 40,
+    prefix: 24,
+    partial: 16,
+    token: 3,
+  });
+  return score;
+};
+
 const detectAliasKeys = (value) => {
   const raw = value || "";
   const compact = normalizeKeyword(raw);
@@ -269,53 +550,127 @@ const externalLabel = (value) => {
   return value || "不明";
 };
 
+const buildReferenceUsage = (item) => {
+  if (!item) return null;
+  const themes = Array.isArray(item.usageThemes) ? item.usageThemes : [];
+  const genres = Array.isArray(item.usageGenres) ? item.usageGenres : [];
+  const themeLabels = themes
+    .map(resolveUsageTheme)
+    .filter(Boolean)
+    .slice(0, 2);
+  const genreLabels = genres
+    .map(resolvePaperGenre)
+    .filter(Boolean)
+    .slice(0, 2);
+  if (themeLabels.length === 0 && genreLabels.length === 0) {
+    return null;
+  }
+  const summaryParts = [];
+  if (themeLabels.length > 0) {
+    summaryParts.push(`主題: ${themeLabels.join("・")}`);
+  }
+  if (genreLabels.length > 0) {
+    summaryParts.push(`分野: ${genreLabels.join("・")}`);
+  }
+  const summary = `参考文献の題名から抽出した${summaryParts.join(
+    "、",
+  )}を基に用途を整理しています。`;
+  const bullets = [];
+  themeLabels.forEach((theme) => {
+    bullets.push(`主題例: ${theme}`);
+  });
+  if (genreLabels.length > 0) {
+    bullets.push(`関連分野: ${genreLabels.join(" / ")}`);
+  }
+  return { summary, bullets };
+};
+
 const buildEquipmentGuide = (item) => {
-  if (!item) {
+  const referenceUsage = buildReferenceUsage(item);
+  const manualSummary = item?.usageManualSummary || "";
+  const manualBullets = Array.isArray(item?.usageManualBullets)
+    ? item.usageManualBullets.filter(Boolean)
+    : [];
+  const applyManual = (guide) => {
+    if (!manualSummary && manualBullets.length === 0) {
+      return guide;
+    }
     return {
+      ...guide,
+      summary: manualSummary || guide.summary,
+      bullets: manualBullets.length > 0 ? manualBullets : guide.bullets,
+    };
+  };
+  if (!item) {
+    return applyManual({
       title: "研究機器の概要",
       summary: "研究開発の基礎データを得るために使われます。",
       bullets: ["測定・解析の基本データ取得", "条件や材料の比較評価", "研究開発の仮説検証"],
-    };
+    });
   }
   const combined = `${item.name || ""} ${item.categoryGeneral || ""} ${item.categoryDetail || ""}`;
   const aliasKey = detectAliasKeys(combined)[0];
   if (aliasKey && EQUIPMENT_GUIDES[aliasKey]) {
-    return EQUIPMENT_GUIDES[aliasKey];
+    const guide = EQUIPMENT_GUIDES[aliasKey];
+    const guided = referenceUsage
+      ? { ...guide, summary: referenceUsage.summary, bullets: referenceUsage.bullets }
+      : guide;
+    return applyManual(guided);
   }
   const category = item.categoryGeneral || "";
   if (category.includes("分析") || category.includes("解析")) {
-    return {
+    const guide = {
       title: "分析・解析装置",
       summary: "材料の組成や構造を調べるために使われます。",
       bullets: ["物質の同定と分類", "特性差の比較評価", "プロセス条件の検討"],
     };
+    const guided = referenceUsage
+      ? { ...guide, summary: referenceUsage.summary, bullets: referenceUsage.bullets }
+      : guide;
+    return applyManual(guided);
   }
   if (category.includes("計測") || category.includes("測定")) {
-    return {
+    const guide = {
       title: "計測・測定装置",
       summary: "寸法や物性などを定量的に評価します。",
       bullets: ["寸法・形状の測定", "物性値の評価", "変化のモニタリング"],
     };
+    const guided = referenceUsage
+      ? { ...guide, summary: referenceUsage.summary, bullets: referenceUsage.bullets }
+      : guide;
+    return applyManual(guided);
   }
   if (category.includes("評価")) {
-    return {
+    const guide = {
       title: "評価装置",
       summary: "性能や品質を比較・判定するために使われます。",
       bullets: ["性能・品質の評価", "条件比較と検証", "信頼性の確認"],
     };
+    const guided = referenceUsage
+      ? { ...guide, summary: referenceUsage.summary, bullets: referenceUsage.bullets }
+      : guide;
+    return applyManual(guided);
   }
   if (category.includes("加工") || category.includes("試作") || category.includes("製作")) {
-    return {
+    const guide = {
       title: "加工・試作装置",
       summary: "試作や加工プロセスの検討に活用されます。",
       bullets: ["試作プロセスの検討", "加工条件の最適化", "試料作製の支援"],
     };
+    const guided = referenceUsage
+      ? { ...guide, summary: referenceUsage.summary, bullets: referenceUsage.bullets }
+      : guide;
+    return applyManual(guided);
   }
-  return {
+  const guide = {
     title: "研究機器の概要",
     summary: "研究開発の基礎データを得るために使われます。",
     bullets: ["測定・解析の基本データ取得", "条件や材料の比較評価", "研究開発の仮説検証"],
   };
+  const guided = referenceUsage
+    ? { ...guide, summary: referenceUsage.summary, bullets: referenceUsage.bullets }
+    : guide;
+  return applyManual(guided);
 };
 
 const feeLabel = (value) => {
@@ -389,7 +744,9 @@ export default function App() {
   const [mapsError, setMapsError] = useState("");
   const [detailItem, setDetailItem] = useState(null);
   const [detailOpen, setDetailOpen] = useState(false);
+  const [sheetExpanded, setSheetExpanded] = useState(false);
   const [selectedItemId, setSelectedItemId] = useState(null);
+  const [exactMatches, setExactMatches] = useState([]);
   const [userLocation, setUserLocation] = useState(null);
   const [locationStatus, setLocationStatus] = useState("idle");
   const [locationError, setLocationError] = useState("");
@@ -450,6 +807,12 @@ export default function App() {
       document.documentElement.style.overflow = "";
     }
   }, [activeExternal, detailOpen]);
+
+  useEffect(() => {
+    if (!detailOpen) {
+      setSheetExpanded(false);
+    }
+  }, [detailOpen]);
 
   useEffect(() => {
     if (activeExternal && detailOpen) {
@@ -589,8 +952,66 @@ export default function App() {
       sourceUrl: data.source_url || "",
       eqnetUrl: data.eqnet_url || "",
       crawledAt: data.crawled_at || "",
+      papers: Array.isArray(data.papers) ? data.papers : [],
+      papersStatus: data.papers_status || "",
+      papersUpdatedAt: data.papers_updated_at || "",
+      papersError: data.papers_error || "",
+      searchAliases: Array.isArray(data.search_aliases) ? data.search_aliases : [],
+      usageThemes: Array.isArray(data.usage_themes) ? data.usage_themes : [],
+      usageGenres: Array.isArray(data.usage_genres) ? data.usage_genres : [],
+      usageManualSummary: data.usage_manual_summary || "",
+      usageManualBullets: Array.isArray(data.usage_manual_bullets)
+        ? data.usage_manual_bullets
+        : [],
     };
   }, []);
+
+  useEffect(() => {
+    let isMounted = true;
+    const loadExactMatches = async () => {
+      const trimmed = keyword.trim();
+      if (!trimmed) {
+        setExactMatches([]);
+        return;
+      }
+      try {
+        const exactQuery = firestoreQuery(
+          collection(db, "equipment"),
+          where("name", "==", trimmed),
+          limit(5),
+        );
+        const snap = await getDocs(exactQuery);
+        if (!isMounted) return;
+        const matches = snap.docs.map(mapDocToItem);
+        const filtered = matches.filter((item) => {
+          if (region !== "all" && item.region !== region) return false;
+          if (category !== "all" && item.categoryGeneral !== category) return false;
+          if (externalOnly && item.externalUse !== "可") return false;
+          if (freeOnly && item.feeBand !== "無料") return false;
+          if (prefectureFilter && item.prefecture !== prefectureFilter) return false;
+          return true;
+        });
+        setExactMatches(filtered);
+      } catch (error) {
+        console.error(error);
+        if (isMounted) {
+          setExactMatches([]);
+        }
+      }
+    };
+    loadExactMatches();
+    return () => {
+      isMounted = false;
+    };
+  }, [
+    category,
+    externalOnly,
+    freeOnly,
+    keyword,
+    mapDocToItem,
+    prefectureFilter,
+    region,
+  ]);
 
   useEffect(() => {
     let isMounted = true;
@@ -672,6 +1093,11 @@ export default function App() {
 
   const keywordTokens = useMemo(() => buildKeywordTokens(keyword), [buildKeywordTokens, keyword]);
   const aliasKeys = useMemo(() => detectAliasKeys(keyword), [keyword]);
+  const normalizedKeyword = useMemo(() => normalizeForMatch(keyword), [keyword]);
+  const normalizedKeywordTokens = useMemo(
+    () => keywordTokens.map((token) => normalizeForMatch(token)).filter(Boolean),
+    [keywordTokens],
+  );
 
   const buildBaseQuery = useCallback(
     (tokens) => {
@@ -831,6 +1257,50 @@ export default function App() {
     return currentPageData.items || [];
   }, [currentPageData]);
 
+  const combinedItems = useMemo(() => {
+    if (exactMatches.length === 0) {
+      return currentItems;
+    }
+    const map = new Map();
+    exactMatches.forEach((item) => map.set(item.id, item));
+    currentItems.forEach((item) => {
+      if (!map.has(item.id)) {
+        map.set(item.id, item);
+      }
+    });
+    return Array.from(map.values());
+  }, [currentItems, exactMatches]);
+
+  const rankedItems = useMemo(() => {
+    if (!normalizedKeyword && normalizedKeywordTokens.length === 0) {
+      return combinedItems.map((item) => ({ ...item, searchScore: 0, matchTier: 0 }));
+    }
+    const scored = combinedItems.map((item) => {
+      const matchTier = buildMatchTier(
+        item,
+        normalizedKeyword,
+        normalizedKeywordTokens,
+        aliasKeys,
+      );
+      const score = buildSearchScore(item, normalizedKeyword, normalizedKeywordTokens, aliasKeys);
+      return { ...item, searchScore: score, matchTier };
+    });
+    scored.sort((a, b) => {
+      if (b.matchTier !== a.matchTier) {
+        return b.matchTier - a.matchTier;
+      }
+      if (b.searchScore !== a.searchScore) {
+        return b.searchScore - a.searchScore;
+      }
+      return (a.name || "").localeCompare(b.name || "", "ja");
+    });
+    return scored.slice(0, PAGE_SIZE);
+  }, [aliasKeys, combinedItems, normalizedKeyword, normalizedKeywordTokens]);
+
+  const displayedItemIds = useMemo(() => {
+    return new Set(rankedItems.map((item) => item.id));
+  }, [rankedItems]);
+
   const loadedItems = useMemo(() => {
     const map = new Map();
     pages.forEach((pageData) => {
@@ -851,7 +1321,7 @@ export default function App() {
   }, [loadedItems]);
 
   const itemsWithDistance = useMemo(() => {
-    const withDistance = currentItems.map((item) => {
+    const withDistance = rankedItems.map((item) => {
       const coord =
         Number.isFinite(item.lat) && Number.isFinite(item.lng)
           ? { lat: item.lat, lng: item.lng }
@@ -864,13 +1334,22 @@ export default function App() {
     if (!userLocation) {
       return withDistance;
     }
+    const hasKeyword = Boolean(normalizedKeyword || normalizedKeywordTokens.length > 0);
     return [...withDistance].sort((a, b) => {
+      if (hasKeyword) {
+        if (b.matchTier !== a.matchTier) {
+          return b.matchTier - a.matchTier;
+        }
+        if (b.searchScore !== a.searchScore) {
+          return b.searchScore - a.searchScore;
+        }
+      }
       if (a.distanceKm == null && b.distanceKm == null) return 0;
       if (a.distanceKm == null) return 1;
       if (b.distanceKm == null) return -1;
       return a.distanceKm - b.distanceKm;
     });
-  }, [currentItems, userLocation]);
+  }, [normalizedKeyword, normalizedKeywordTokens, rankedItems, userLocation]);
 
   const itemPageMap = useMemo(() => {
     const map = new Map();
@@ -897,6 +1376,11 @@ export default function App() {
     if (!item) return;
     setDetailItem(item);
     setDetailOpen(true);
+    setSheetExpanded(false);
+  }, []);
+
+  const handleSheetToggle = useCallback(() => {
+    setSheetExpanded((prev) => !prev);
   }, []);
 
   const handleItemSelect = useCallback(
@@ -909,6 +1393,14 @@ export default function App() {
   );
 
   const handleSheetTouchStart = (event) => {
+    const target = event.target;
+    const canHandle =
+      target?.closest?.(".equipment-sheet-handle") ||
+      target?.closest?.(".equipment-sheet-header");
+    if (!canHandle) {
+      sheetTouchStartRef.current = null;
+      return;
+    }
     sheetTouchStartRef.current = event.touches[0]?.clientY ?? null;
   };
 
@@ -916,8 +1408,15 @@ export default function App() {
     const startY = sheetTouchStartRef.current;
     if (startY == null) return;
     const endY = event.changedTouches[0]?.clientY ?? startY;
-    if (endY - startY > 80) {
-      setDetailOpen(false);
+    const delta = endY - startY;
+    if (delta < -80) {
+      setSheetExpanded(true);
+    } else if (delta > 80) {
+      if (sheetExpanded) {
+        setSheetExpanded(false);
+      } else {
+        setDetailOpen(false);
+      }
     }
     sheetTouchStartRef.current = null;
   };
@@ -929,13 +1428,13 @@ export default function App() {
       }
       return;
     }
-    if (!itemPageMap.has(selectedItemId)) {
+    if (!displayedItemIds.has(selectedItemId) && !itemPageMap.has(selectedItemId)) {
       setSelectedItemId(null);
       if (detailOpen) {
         setDetailOpen(false);
       }
     }
-  }, [detailOpen, itemPageMap, selectedItemId]);
+  }, [detailOpen, displayedItemIds, itemPageMap, selectedItemId]);
 
   const registerListItemRef = useCallback((itemId) => {
     return (node) => {
@@ -1186,6 +1685,16 @@ export default function App() {
   }, [mapsReady, mapItemById, selectedItemId]);
 
   const detailGuide = useMemo(() => buildEquipmentGuide(detailItem), [detailItem]);
+  const currentPapers = detailItem?.papers || [];
+  const papersStatus = detailItem?.papersStatus || "";
+  const paperMessage =
+    papersStatus === "no_query"
+      ? "関連論文の検索語が不足しています。"
+      : papersStatus === "no_results"
+        ? "該当する論文が見つかりませんでした。"
+        : papersStatus === "error"
+          ? detailItem?.papersError || "論文データの取得に失敗しました。"
+          : "関連論文データを準備中です。";
 
   return (
     <div className="page">
@@ -1310,7 +1819,7 @@ export default function App() {
         <div className="results-head">
           <div>
             <h2>検索結果</h2>
-            <p>{loading ? "検索結果を読み込んでいます..." : `${currentItems.length} 件を表示`}</p>
+            <p>{loading ? "検索結果を読み込んでいます..." : `${rankedItems.length} 件を表示`}</p>
           </div>
           {prefectureFilter && (
             <div className="prefecture-filter">
@@ -1327,7 +1836,7 @@ export default function App() {
               <p className="results-status">データを読み込んでいます...</p>
             ) : loadError ? (
               <p className="results-status error">{loadError}</p>
-            ) : currentItems.length === 0 ? (
+            ) : rankedItems.length === 0 ? (
               <p className="results-status">該当する設備が見つかりませんでした。</p>
             ) : (
               <>
@@ -1567,7 +2076,11 @@ export default function App() {
       )}
 
       {detailItem && (
-        <div className={`equipment-sheet${detailOpen ? " is-open" : ""}`}>
+        <div
+          className={`equipment-sheet${detailOpen ? " is-open" : ""}${
+            sheetExpanded ? " is-expanded" : ""
+          }`}
+        >
           <div className="equipment-sheet-backdrop" aria-hidden="true" />
           <div
             className="equipment-sheet-panel"
@@ -1576,7 +2089,17 @@ export default function App() {
             role="dialog"
             aria-modal="false"
           >
-            <div className="equipment-sheet-handle" />
+            <button
+              type="button"
+              className="equipment-sheet-handle"
+              onClick={handleSheetToggle}
+              aria-expanded={sheetExpanded}
+            >
+              <span className="equipment-sheet-handle-bar" aria-hidden="true" />
+              <span className="equipment-sheet-handle-text">
+                {sheetExpanded ? "タップで元に戻す" : "タップで全画面表示"}
+              </span>
+            </button>
             <div className="equipment-sheet-header">
               <div className="equipment-sheet-title">
                 <p className="equipment-sheet-eyebrow">{detailGuide.title}</p>
@@ -1600,6 +2123,34 @@ export default function App() {
                   <li key={text}>{text}</li>
                 ))}
               </ul>
+              <div className="equipment-sheet-papers">
+                <h5>関連論文（DOI）</h5>
+                {currentPapers.length === 0 ? (
+                  <p className="paper-status">{paperMessage}</p>
+                ) : (
+                  <ul className="paper-list">
+                    {currentPapers.map((paper) => (
+                      <li key={paper.doi} className="paper-item">
+                        <p className="paper-title">{paper.title || "タイトル不明"}</p>
+                        <div className="paper-meta">
+                          <span className="paper-genre">
+                            {paper.genre_ja || resolvePaperGenre(paper.genre)}
+                          </span>
+                          {paper.source && <span>{paper.source}</span>}
+                          {paper.year && <span>{paper.year}</span>}
+                          <a
+                            href={paper.url || `https://doi.org/${paper.doi}`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            DOI: {paper.doi}
+                          </a>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </div>
             <div className="equipment-sheet-actions">
               {detailItem.sourceUrl ? (
