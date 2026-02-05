@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   collection,
   doc,
+  documentId,
   getDoc,
   getDocs,
   limit,
@@ -125,40 +126,120 @@ const PREFECTURE_REGION_MAP = {
   沖縄県: "沖縄",
 };
 
-const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "";
-const JAPAN_CENTER = { lat: 36.2048, lng: 138.2529 };
-const JAPAN_BOUNDS = {
-  north: 46.2,
-  south: 24.0,
-  west: 122.5,
-  east: 153.9,
-};
-const MAP_DEFAULT_ZOOM = 5;
-const MAP_MIN_ZOOM = 4;
-const MAP_MAX_ZOOM = 17;
-const TOKEN_PATTERN = /[A-Za-z0-9]+|[ぁ-んァ-ン一-龥々ー]+/g;
+const MAP_VIEWBOX_SIZE = 1000;
+const MAP_PADDING = 24;
+const MAP_ZOOM_MIN = 1;
+const MAP_ZOOM_MAX = 6;
+const MAP_ZOOM_STEP = 1.15;
+const DEFAULT_MAP_ZOOM = 5.0;
+const MAP_ORG_FETCH_LIMIT = 400;
+const MAP_ORG_FETCH_MAX_PAGES = 10;
 
-const loadGoogleMaps = (apiKey) => {
-  if (!apiKey) {
-    return Promise.reject(new Error("Google Maps API key is missing."));
-  }
-  if (window.google?.maps) {
-    return Promise.resolve(window.google.maps);
-  }
-  if (window.__kikidokoMapsPromise) {
-    return window.__kikidokoMapsPromise;
-  }
-  window.__kikidokoMapsPromise = new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&region=JP&language=ja&v=weekly`;
-    script.async = true;
-    script.defer = true;
-    script.onload = () => resolve(window.google.maps);
-    script.onerror = () => reject(new Error("Failed to load Google Maps."));
-    document.head.appendChild(script);
-  });
-  return window.__kikidokoMapsPromise;
+const toMercatorY = (lat) => {
+  const clamped = Math.max(-85, Math.min(85, lat));
+  return Math.log(Math.tan(Math.PI / 4 + (clamped * Math.PI) / 360));
 };
+
+const collectCoordinates = (coords, output) => {
+  if (!coords) return;
+  if (typeof coords[0] === "number") {
+    output.push(coords);
+    return;
+  }
+  coords.forEach((item) => collectCoordinates(item, output));
+};
+
+const getGeoBounds = (features) => {
+  let minLng = Infinity;
+  let maxLng = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  features.forEach((feature) => {
+    const coords = [];
+    collectCoordinates(feature?.geometry?.coordinates, coords);
+    coords.forEach(([lng, lat]) => {
+      if (!Number.isFinite(lng) || !Number.isFinite(lat)) return;
+      minLng = Math.min(minLng, lng);
+      maxLng = Math.max(maxLng, lng);
+      const y = toMercatorY(lat);
+      minY = Math.min(minY, y);
+      maxY = Math.max(maxY, y);
+    });
+  });
+  if (!Number.isFinite(minLng)) {
+    return null;
+  }
+  return { minLng, maxLng, minY, maxY };
+};
+
+const buildGeoPath = (geometry, project) => {
+  if (!geometry || !project) return "";
+  const ringToPath = (ring) => {
+    if (!ring || ring.length === 0) return "";
+    return (
+      ring
+        .map((coord, index) => {
+          const [x, y] = project(coord);
+          return `${index === 0 ? "M" : "L"}${x.toFixed(2)} ${y.toFixed(2)}`;
+        })
+        .join(" ") + " Z"
+    );
+  };
+  if (geometry.type === "Polygon") {
+    return geometry.coordinates.map(ringToPath).join(" ");
+  }
+  if (geometry.type === "MultiPolygon") {
+    return geometry.coordinates.map((polygon) => polygon.map(ringToPath).join(" ")).join(" ");
+  }
+  if (geometry.type === "GeometryCollection") {
+    return geometry.geometries.map((geom) => buildGeoPath(geom, project)).join(" ");
+  }
+  return "";
+};
+
+const getPrefectureName = (properties) => {
+  if (!properties) return "";
+  const candidates = [
+    properties.nam_ja,
+    properties.name_ja,
+    properties.N03_001,
+    properties.N03_004,
+    properties.name,
+    properties.nam,
+  ];
+  const found = candidates.find((value) => typeof value === "string" && value.trim());
+  const cleaned = found ? found.trim() : "";
+  if (PREFECTURE_COORDS[cleaned]) return cleaned;
+  return cleaned;
+};
+
+const getProjectedBounds = (geometry, project) => {
+  if (!geometry || !project) return null;
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  const updateBounds = (coords) => {
+    const list = [];
+    collectCoordinates(coords, list);
+    list.forEach((coord) => {
+      const [x, y] = project(coord);
+      if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+      minX = Math.min(minX, x);
+      maxX = Math.max(maxX, x);
+      minY = Math.min(minY, y);
+      maxY = Math.max(maxY, y);
+    });
+  };
+  if (geometry.type === "GeometryCollection") {
+    geometry.geometries?.forEach((geom) => updateBounds(geom.coordinates));
+  } else {
+    updateBounds(geometry.coordinates);
+  }
+  if (!Number.isFinite(minX)) return null;
+  return { minX, minY, maxX, maxY };
+};
+const TOKEN_PATTERN = /[A-Za-z0-9]+|[ぁ-んァ-ン一-龥々ー]+/g;
 
 const NORMALIZED_KEYWORDS = {
   xrd: [
@@ -412,6 +493,10 @@ const buildMatchTier = (item, keywordNormalized, tokens, aliasKeys) => {
   if (keywordNormalized && normalizedName && normalizedName === keywordNormalized) {
     return 3;
   }
+  const normalizedOrg = normalizeForMatch(item.orgName);
+  if (keywordNormalized && normalizedOrg && normalizedOrg === keywordNormalized) {
+    return 3;
+  }
   const aliasMatch =
     aliasKeys.length > 0 &&
     Array.isArray(item.searchAliases) &&
@@ -536,6 +621,21 @@ const detectAliasKeys = (value) => {
     })
     .map(([key]) => key);
 };
+
+const ORG_KEYWORD_TERMS = [
+  "大学",
+  "高専",
+  "研究所",
+  "研究院",
+  "研究科",
+  "研究室",
+  "研究機関",
+  "機構",
+  "機関",
+  "センター",
+  "病院",
+  "学院",
+];
 
 const EQNET_BASE_URL = "https://eqnet.jp";
 const PAGE_SIZE = 6;
@@ -694,13 +794,15 @@ const formatDistance = (distanceKm) => {
   return `${Math.round(distanceKm)}km`;
 };
 
-const escapeHtml = (value) => {
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
+const buildOrgListFromItems = (items) => {
+  const orgCounts = new Map();
+  items.forEach((item) => {
+    const orgName = item.orgName || item.org_name || "不明";
+    orgCounts.set(orgName, (orgCounts.get(orgName) || 0) + 1);
+  });
+  return Array.from(orgCounts.entries())
+    .map(([orgName, count]) => ({ orgName, count }))
+    .sort((a, b) => b.count - a.count);
 };
 
 const toRad = (value) => (value * Math.PI) / 180;
@@ -724,6 +826,8 @@ const buildEqnetLink = (item) => {
   return EQNET_BASE_URL;
 };
 
+const clampValue = (value, min, max) => Math.max(min, Math.min(max, value));
+
 export default function App() {
   const [pages, setPages] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -733,64 +837,110 @@ export default function App() {
   const [latestUpdate, setLatestUpdate] = useState("未設定");
   const [prefectureSummary, setPrefectureSummary] = useState([]);
   const [prefectureSummaryLoaded, setPrefectureSummaryLoaded] = useState(false);
+  const [prefectureStats, setPrefectureStats] = useState({
+    counts: {},
+    facilityCounts: {},
+    updatedAt: "",
+  });
+  const [prefectureGeoJson, setPrefectureGeoJson] = useState({
+    type: "FeatureCollection",
+    features: [],
+  });
+  const [geoJsonStatus, setGeoJsonStatus] = useState("loading");
+  const [mapZoom, setMapZoom] = useState(DEFAULT_MAP_ZOOM);
+  const [mapPan, setMapPan] = useState({ x: 0, y: 0 });
+  const [resultsListHeight, setResultsListHeight] = useState(0);
+  const [isNarrowLayout, setIsNarrowLayout] = useState(false);
   const [prefectureFilter, setPrefectureFilter] = useState("");
+  const [orgFilter, setOrgFilter] = useState("");
   const [region, setRegion] = useState("all");
   const [category, setCategory] = useState("all");
   const [externalOnly, setExternalOnly] = useState(false);
   const [freeOnly, setFreeOnly] = useState(false);
   const [page, setPage] = useState(1);
   const [activeExternal, setActiveExternal] = useState(null);
-  const [mapsReady, setMapsReady] = useState(false);
-  const [mapsError, setMapsError] = useState("");
+  const [mapInfoPrefecture, setMapInfoPrefecture] = useState("");
+  const [mapHover, setMapHover] = useState(null);
+  const [mapOrgCache, setMapOrgCache] = useState({});
+  const [mapOrgRequest, setMapOrgRequest] = useState({
+    prefecture: "",
+    loading: false,
+    error: "",
+  });
+  const [skipNameOrder, setSkipNameOrder] = useState(false);
   const [detailItem, setDetailItem] = useState(null);
   const [detailOpen, setDetailOpen] = useState(false);
   const [sheetExpanded, setSheetExpanded] = useState(false);
   const [selectedItemId, setSelectedItemId] = useState(null);
   const [exactMatches, setExactMatches] = useState([]);
+  const [orgMatches, setOrgMatches] = useState([]);
   const [userLocation, setUserLocation] = useState(null);
   const [locationStatus, setLocationStatus] = useState("idle");
   const [locationError, setLocationError] = useState("");
   const [isComposing, setIsComposing] = useState(false);
   const pagingRef = useRef(false);
   const pagesRef = useRef(pages);
-  const mapRef = useRef(null);
-  const mapInstanceRef = useRef(null);
-  const markersRef = useRef(new Map());
-  const infoWindowRef = useRef(null);
   const listItemRefs = useRef(new Map());
   const resultsRef = useRef(null);
+  const resultsListRef = useRef(null);
   const sheetTouchStartRef = useRef(null);
   const prefectureSnapshotRef = useRef(null);
+  const mapContainerRef = useRef(null);
+  const mapDragRef = useRef(null);
+  const mapPointersRef = useRef(new Map());
+  const mapPinchRef = useRef(null);
 
   useEffect(() => {
     setPage(1);
-  }, [keyword, region, category, externalOnly, freeOnly, prefectureFilter]);
+    setSkipNameOrder(false);
+  }, [keyword, region, category, externalOnly, freeOnly, orgFilter, prefectureFilter]);
 
   useEffect(() => {
     pagesRef.current = pages;
   }, [pages]);
 
   useEffect(() => {
-    if (!GOOGLE_MAPS_API_KEY) {
-      setMapsError("Google Maps APIキーが未設定です。");
-      return;
+    if (typeof window === "undefined") return undefined;
+    const media = window.matchMedia("(max-width: 860px)");
+    const handleChange = () => setIsNarrowLayout(media.matches);
+    handleChange();
+    if (media.addEventListener) {
+      media.addEventListener("change", handleChange);
+    } else if (media.addListener) {
+      media.addListener(handleChange);
     }
-    let cancelled = false;
-    loadGoogleMaps(GOOGLE_MAPS_API_KEY)
-      .then(() => {
-        if (!cancelled) {
-          setMapsReady(true);
-        }
-      })
-      .catch(() => {
-        if (!cancelled) {
-          setMapsError("Google Mapsの読み込みに失敗しました。");
-        }
-      });
     return () => {
-      cancelled = true;
+      if (media.removeEventListener) {
+        media.removeEventListener("change", handleChange);
+      } else if (media.removeListener) {
+        media.removeListener(handleChange);
+      }
     };
   }, []);
+
+  useLayoutEffect(() => {
+    const element = resultsListRef.current;
+    if (!element) return undefined;
+    const updateHeight = () => {
+      const nextHeight = element.offsetHeight;
+      if (!nextHeight) return;
+      setResultsListHeight((prev) =>
+        Math.abs(prev - nextHeight) > 1 ? nextHeight : prev,
+      );
+    };
+    updateHeight();
+    const observer =
+      typeof ResizeObserver !== "undefined"
+        ? new ResizeObserver(() => updateHeight())
+        : null;
+    observer?.observe(element);
+    window.addEventListener("resize", updateHeight);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, []);
+
 
   useEffect(() => {
     if (!activeExternal) return undefined;
@@ -855,30 +1005,15 @@ export default function App() {
   }, [detailItem, detailOpen]);
 
   useEffect(() => {
-    if (!mapsReady || !mapRef.current || mapInstanceRef.current) return;
-    const isMobile = window.matchMedia("(max-width: 860px)").matches;
-    const map = new window.google.maps.Map(mapRef.current, {
-      center: JAPAN_CENTER,
-      zoom: MAP_DEFAULT_ZOOM,
-      minZoom: MAP_MIN_ZOOM,
-      maxZoom: MAP_MAX_ZOOM,
-      mapTypeControl: false,
-      fullscreenControl: false,
-      streetViewControl: false,
-      gestureHandling: isMobile ? "cooperative" : "auto",
-      scrollwheel: !isMobile,
-      restriction: {
-        latLngBounds: JAPAN_BOUNDS,
-        strictBounds: true,
-      },
-    });
-    mapInstanceRef.current = map;
-    infoWindowRef.current = new window.google.maps.InfoWindow();
-  }, [mapsReady]);
+    if (mapInfoPrefecture) {
+      setMapHover(null);
+    }
+  }, [mapInfoPrefecture]);
 
   const handleReset = () => {
     setKeywordInput("");
     setKeyword("");
+    setOrgFilter("");
     setPrefectureFilter("");
     prefectureSnapshotRef.current = null;
     setRegion("all");
@@ -890,22 +1025,25 @@ export default function App() {
 
   const handleSearch = () => {
     const trimmed = keywordInput.trim();
+    setOrgFilter("");
     setKeywordInput(trimmed);
     setKeyword(trimmed);
   };
 
   const handlePrefectureSelect = (prefecture) => {
     if (!prefecture) return;
-    if (!prefectureFilter) {
+    if (!prefectureFilter && !orgFilter) {
       prefectureSnapshotRef.current = {
         keywordInput,
         keyword,
+        orgFilter,
         region,
         category,
         externalOnly,
         freeOnly,
       };
     }
+    setOrgFilter("");
     setPrefectureFilter(prefecture);
     setRegion(PREFECTURE_REGION_MAP[prefecture] || "all");
     setPage(1);
@@ -914,9 +1052,54 @@ export default function App() {
     }
   };
 
+  const handleMapPrefectureClick = useCallback((prefecture) => {
+    if (!prefecture) return;
+    setMapInfoPrefecture((prev) => (prev === prefecture ? "" : prefecture));
+  }, []);
+
+  const handleOrgSelect = useCallback(
+    (orgName, prefecture) => {
+      if (!orgName) return;
+      if (!prefectureFilter && !orgFilter) {
+        prefectureSnapshotRef.current = {
+          keywordInput,
+          keyword,
+          orgFilter,
+          region,
+          category,
+          externalOnly,
+          freeOnly,
+        };
+      }
+      const trimmed = orgName.trim();
+      setKeywordInput(trimmed);
+      setKeyword(trimmed);
+      setOrgFilter(trimmed);
+      if (prefecture) {
+        setPrefectureFilter(prefecture);
+        setRegion(PREFECTURE_REGION_MAP[prefecture] || "all");
+      }
+      setPage(1);
+      if (resultsRef.current) {
+        resultsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    },
+    [
+      category,
+      externalOnly,
+      freeOnly,
+      keyword,
+      keywordInput,
+      orgFilter,
+      prefectureFilter,
+      region,
+    ],
+  );
+
   const handlePrefectureRestore = () => {
     const snapshot = prefectureSnapshotRef.current;
     setPrefectureFilter("");
+    setOrgFilter(snapshot?.orgFilter || "");
     if (snapshot) {
       setKeywordInput(snapshot.keywordInput);
       setKeyword(snapshot.keyword);
@@ -989,6 +1172,7 @@ export default function App() {
           if (externalOnly && item.externalUse !== "可") return false;
           if (freeOnly && item.feeBand !== "無料") return false;
           if (prefectureFilter && item.prefecture !== prefectureFilter) return false;
+          if (orgFilter && item.orgName !== orgFilter) return false;
           return true;
         });
         setExactMatches(filtered);
@@ -1009,6 +1193,63 @@ export default function App() {
     freeOnly,
     keyword,
     mapDocToItem,
+    orgFilter,
+    prefectureFilter,
+    region,
+  ]);
+
+  const isOrgKeyword = useMemo(() => {
+    const raw = keyword.trim();
+    if (!raw) return false;
+    return ORG_KEYWORD_TERMS.some((term) => raw.includes(term));
+  }, [keyword]);
+
+  useEffect(() => {
+    let isMounted = true;
+    const loadOrgMatches = async () => {
+      const trimmed = keyword.trim();
+      if (!trimmed || !isOrgKeyword) {
+        setOrgMatches([]);
+        return;
+      }
+      try {
+        const orgQuery = firestoreQuery(
+          collection(db, "equipment"),
+          where("org_name", "==", trimmed),
+          limit(15),
+        );
+        const snap = await getDocs(orgQuery);
+        if (!isMounted) return;
+        const matches = snap.docs.map(mapDocToItem);
+        const filtered = matches.filter((item) => {
+          if (region !== "all" && item.region !== region) return false;
+          if (category !== "all" && item.categoryGeneral !== category) return false;
+          if (externalOnly && item.externalUse !== "可") return false;
+          if (freeOnly && item.feeBand !== "無料") return false;
+          if (prefectureFilter && item.prefecture !== prefectureFilter) return false;
+          if (orgFilter && item.orgName !== orgFilter) return false;
+          return true;
+        });
+        setOrgMatches(filtered);
+      } catch (error) {
+        console.error(error);
+        if (isMounted) {
+          setOrgMatches([]);
+        }
+      }
+    };
+    loadOrgMatches();
+    return () => {
+      isMounted = false;
+    };
+  }, [
+    category,
+    externalOnly,
+    freeOnly,
+    isOrgKeyword,
+    keyword,
+    mapDocToItem,
+    orgFilter,
     prefectureFilter,
     region,
   ]);
@@ -1040,6 +1281,35 @@ export default function App() {
 
   useEffect(() => {
     let isMounted = true;
+    const loadGeoJson = async () => {
+      try {
+        const baseUrl = import.meta.env.BASE_URL || "/";
+        const response = await fetch(`${baseUrl}japan-prefectures.geojson`, {
+          cache: "force-cache",
+        });
+        if (!response.ok) {
+          throw new Error("GeoJSON fetch failed");
+        }
+        const data = await response.json();
+        if (isMounted) {
+          setPrefectureGeoJson(data);
+          setGeoJsonStatus("ready");
+        }
+      } catch (error) {
+        console.error(error);
+        if (isMounted) {
+          setGeoJsonStatus("error");
+        }
+      }
+    };
+    loadGeoJson();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    let isMounted = true;
     const loadPrefectureSummary = async () => {
       try {
         const summarySnap = await getDoc(doc(db, "stats", "prefecture_summary"));
@@ -1047,6 +1317,17 @@ export default function App() {
         const items = Array.isArray(data?.top_prefectures) ? data.top_prefectures : [];
         if (isMounted) {
           setPrefectureSummary(items);
+          setPrefectureStats({
+            counts:
+              data?.prefecture_counts && typeof data.prefecture_counts === "object"
+                ? data.prefecture_counts
+                : {},
+            facilityCounts:
+              data?.facility_counts && typeof data.facility_counts === "object"
+                ? data.facility_counts
+                : {},
+            updatedAt: typeof data?.updated_at === "string" ? data.updated_at : "",
+          });
         }
       } catch (error) {
         console.error(error);
@@ -1100,9 +1381,10 @@ export default function App() {
   );
 
   const buildBaseQuery = useCallback(
-    (tokens) => {
+    (tokens, options = {}) => {
+      const { skipOrder = false } = options;
       const constraints = [];
-      if (region !== "all") {
+      if (region !== "all" && !prefectureFilter) {
         constraints.push(where("region", "==", region));
       }
       if (category !== "all") {
@@ -1117,17 +1399,61 @@ export default function App() {
       if (prefectureFilter) {
         constraints.push(where("prefecture", "==", prefectureFilter));
       }
-      if (aliasKeys.length > 0) {
+      if (orgFilter) {
+        constraints.push(where("org_name", "==", orgFilter));
+      } else if (aliasKeys.length > 0) {
         constraints.push(where("search_aliases", "array-contains-any", aliasKeys));
       } else if (tokens.length > 0) {
         constraints.push(where("search_tokens", "array-contains-any", tokens));
       }
-      if (tokens.length === 0 && aliasKeys.length === 0) {
+      if (
+        !skipOrder &&
+        !skipNameOrder &&
+        tokens.length === 0 &&
+        aliasKeys.length === 0 &&
+        !orgFilter
+      ) {
         constraints.push(orderBy("name"));
       }
       return firestoreQuery(collection(db, "equipment"), ...constraints);
     },
-    [aliasKeys, category, externalOnly, freeOnly, prefectureFilter, region],
+    [
+      aliasKeys,
+      category,
+      externalOnly,
+      freeOnly,
+      orgFilter,
+      prefectureFilter,
+      region,
+      skipNameOrder,
+    ],
+  );
+
+  const shouldRetryQuery = useCallback((error) => {
+    const code = error?.code;
+    if (code === "failed-precondition" || code === "invalid-argument") {
+      return true;
+    }
+    const message = String(error?.message || "");
+    return message.toLowerCase().includes("index");
+  }, []);
+
+  const fetchPageData = useCallback(
+    async (baseQuery, cursor) => {
+      let pageQuery = baseQuery;
+      if (cursor) {
+        pageQuery = firestoreQuery(pageQuery, startAfter(cursor));
+      }
+      pageQuery = firestoreQuery(pageQuery, limit(PAGE_SIZE + 1));
+      const snapshot = await getDocs(pageQuery);
+      const docs = snapshot.docs;
+      const hasNext = docs.length > PAGE_SIZE;
+      const pageDocs = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
+      const pageItems = pageDocs.map(mapDocToItem);
+      const lastDoc = pageDocs.length ? pageDocs[pageDocs.length - 1] : null;
+      return { pageItems, lastDoc, hasNext };
+    },
+    [mapDocToItem],
   );
 
   const loadPage = useCallback(
@@ -1135,21 +1461,26 @@ export default function App() {
       setLoading(true);
       setLoadError("");
       try {
-        const baseQuery = buildBaseQuery(keywordTokens);
-        let pageQuery = baseQuery;
-        if (cursor) {
-          pageQuery = firestoreQuery(pageQuery, startAfter(cursor));
+        let data;
+        try {
+          const baseQuery = buildBaseQuery(keywordTokens);
+          data = await fetchPageData(baseQuery, cursor);
+        } catch (error) {
+          if (shouldRetryQuery(error)) {
+            const baseQuery = buildBaseQuery(keywordTokens, { skipOrder: true });
+            data = await fetchPageData(baseQuery, cursor);
+            setSkipNameOrder(true);
+          } else {
+            throw error;
+          }
         }
-        pageQuery = firestoreQuery(pageQuery, limit(PAGE_SIZE + 1));
-        const snapshot = await getDocs(pageQuery);
-        const docs = snapshot.docs;
-        const hasNext = docs.length > PAGE_SIZE;
-        const pageDocs = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
-        const pageItems = pageDocs.map(mapDocToItem);
-        const lastDoc = pageDocs.length ? pageDocs[pageDocs.length - 1] : null;
         setPages((prev) => {
           const next = reset ? [] : [...prev];
-          next[pageIndex] = { items: pageItems, lastDoc, hasNext };
+          next[pageIndex] = {
+            items: data.pageItems,
+            lastDoc: data.lastDoc,
+            hasNext: data.hasNext,
+          };
           pagesRef.current = next;
           return next;
         });
@@ -1160,7 +1491,7 @@ export default function App() {
         setLoading(false);
       }
     },
-    [buildBaseQuery, keywordTokens, mapDocToItem],
+    [buildBaseQuery, fetchPageData, keywordTokens, shouldRetryQuery],
   );
 
   useEffect(() => {
@@ -1172,16 +1503,23 @@ export default function App() {
       pagesRef.current = [];
       setSelectedItemId(null);
       try {
-        const baseQuery = buildBaseQuery(keywordTokens);
-        const pageQuery = firestoreQuery(baseQuery, limit(PAGE_SIZE + 1));
-        const pageSnap = await getDocs(pageQuery);
+        let data;
+        try {
+          const baseQuery = buildBaseQuery(keywordTokens);
+          data = await fetchPageData(baseQuery, null);
+        } catch (error) {
+          if (shouldRetryQuery(error)) {
+            const baseQuery = buildBaseQuery(keywordTokens, { skipOrder: true });
+            data = await fetchPageData(baseQuery, null);
+            setSkipNameOrder(true);
+          } else {
+            throw error;
+          }
+        }
         if (!isMounted) return;
-        const docs = pageSnap.docs;
-        const hasNext = docs.length > PAGE_SIZE;
-        const pageDocs = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
-        const pageItems = pageDocs.map(mapDocToItem);
-        const lastDoc = pageDocs.length ? pageDocs[pageDocs.length - 1] : null;
-        const nextPages = [{ items: pageItems, lastDoc, hasNext }];
+        const nextPages = [
+          { items: data.pageItems, lastDoc: data.lastDoc, hasNext: data.hasNext },
+        ];
         setPages(nextPages);
         pagesRef.current = nextPages;
         setPage(1);
@@ -1200,14 +1538,32 @@ export default function App() {
     return () => {
       isMounted = false;
     };
-  }, [buildBaseQuery, keywordTokens, mapDocToItem]);
+  }, [buildBaseQuery, fetchPageData, keywordTokens, shouldRetryQuery]);
+
+  const openExternalViewer = (payload) => {
+    if (!payload?.url) return;
+    setActiveExternal({
+      url: payload.url,
+      name: payload.name || "外部ページ",
+      orgName: payload.orgName || "",
+    });
+  };
 
   const handleExternalOpen = (item) => {
     if (!item.sourceUrl) return;
-    setActiveExternal({
+    openExternalViewer({
       url: item.sourceUrl,
       name: item.name,
       orgName: item.orgName,
+    });
+  };
+
+  const handlePaperOpen = (paper) => {
+    const url = paper?.url || (paper?.doi ? `https://doi.org/${paper.doi}` : "");
+    openExternalViewer({
+      url,
+      name: paper?.title || "関連論文",
+      orgName: paper?.source || detailItem?.orgName || "",
     });
   };
 
@@ -1258,18 +1614,23 @@ export default function App() {
   }, [currentPageData]);
 
   const combinedItems = useMemo(() => {
-    if (exactMatches.length === 0) {
+    if (exactMatches.length === 0 && orgMatches.length === 0) {
       return currentItems;
     }
     const map = new Map();
     exactMatches.forEach((item) => map.set(item.id, item));
+    orgMatches.forEach((item) => {
+      if (!map.has(item.id)) {
+        map.set(item.id, item);
+      }
+    });
     currentItems.forEach((item) => {
       if (!map.has(item.id)) {
         map.set(item.id, item);
       }
     });
     return Array.from(map.values());
-  }, [currentItems, exactMatches]);
+  }, [currentItems, exactMatches, orgMatches]);
 
   const rankedItems = useMemo(() => {
     if (!normalizedKeyword && normalizedKeywordTokens.length === 0) {
@@ -1282,7 +1643,26 @@ export default function App() {
         normalizedKeywordTokens,
         aliasKeys,
       );
-      const score = buildSearchScore(item, normalizedKeyword, normalizedKeywordTokens, aliasKeys);
+      let score = buildSearchScore(
+        item,
+        normalizedKeyword,
+        normalizedKeywordTokens,
+        aliasKeys,
+      );
+      if (isOrgKeyword) {
+        const orgHit = scoreTextMatch(
+          item.orgName,
+          normalizedKeyword,
+          normalizedKeywordTokens,
+          {
+            exact: 1200,
+            prefix: 800,
+            partial: 500,
+            token: 40,
+          },
+        );
+        score += orgHit;
+      }
       return { ...item, searchScore: score, matchTier };
     });
     scored.sort((a, b) => {
@@ -1294,8 +1674,16 @@ export default function App() {
       }
       return (a.name || "").localeCompare(b.name || "", "ja");
     });
+    if (isOrgKeyword) {
+      const orgFiltered = scored.filter((item) =>
+        hasTextMatch(item.orgName, normalizedKeyword, normalizedKeywordTokens),
+      );
+      if (orgFiltered.length > 0) {
+        return orgFiltered.slice(0, PAGE_SIZE);
+      }
+    }
     return scored.slice(0, PAGE_SIZE);
-  }, [aliasKeys, combinedItems, normalizedKeyword, normalizedKeywordTokens]);
+  }, [aliasKeys, combinedItems, isOrgKeyword, normalizedKeyword, normalizedKeywordTokens]);
 
   const displayedItemIds = useMemo(() => {
     return new Set(rankedItems.map((item) => item.id));
@@ -1541,67 +1929,81 @@ export default function App() {
   const canJumpForward = page < loadedPageCount || currentPageData.hasNext;
   const canJumpBackward = page > 1;
 
-  const mapItems = useMemo(() => {
-    return loadedItems
-      .map((item) => {
-        const coord =
-          Number.isFinite(item.lat) && Number.isFinite(item.lng)
-            ? { lat: item.lat, lng: item.lng }
-            : PREFECTURE_COORDS[item.prefecture];
-        if (!coord) return null;
-        return { ...item, position: coord };
-      })
-      .filter(Boolean);
-  }, [loadedItems]);
-
-  const mapItemById = useMemo(() => {
-    const map = new Map();
-    mapItems.forEach((item) => {
-      map.set(item.id, item);
-    });
-    return map;
-  }, [mapItems]);
-
   const mapData = useMemo(() => {
-    const prefectureCounts = {};
-    const prefectureOrgs = {};
-    const missingCoords = loadedItems.filter(
-      (item) => !Number.isFinite(item.lat) || !Number.isFinite(item.lng),
-    ).length;
+    const fallbackCounts = {};
+    const fallbackOrgs = {};
     loadedItems.forEach((item) => {
       const key = item.prefecture || "不明";
-      if (!prefectureCounts[key]) {
-        prefectureCounts[key] = 0;
-        prefectureOrgs[key] = new Set();
+      if (!fallbackCounts[key]) {
+        fallbackCounts[key] = 0;
+        fallbackOrgs[key] = new Set();
       }
-      prefectureCounts[key] += 1;
+      fallbackCounts[key] += 1;
       if (item.orgName) {
-        prefectureOrgs[key].add(item.orgName);
+        fallbackOrgs[key].add(item.orgName);
       }
     });
-    const totalFacilities = new Set(
-      loadedItems.map((item) => item.orgName).filter(Boolean),
-    ).size;
 
-    const topPrefectures = Object.keys(prefectureCounts)
+    const fallbackFacilityCounts = Object.keys(fallbackOrgs).reduce((acc, key) => {
+      acc[key] = fallbackOrgs[key].size;
+      return acc;
+    }, {});
+
+    const summaryCounts = prefectureStats?.counts || {};
+    const summaryFacilityCounts = prefectureStats?.facilityCounts || {};
+    const hasSummaryCounts = Object.keys(summaryCounts).length > 0;
+    const activeCounts = hasSummaryCounts ? summaryCounts : fallbackCounts;
+    const activeFacilityCounts = hasSummaryCounts
+      ? summaryFacilityCounts
+      : fallbackFacilityCounts;
+
+    const totalEquipment = hasSummaryCounts
+      ? Object.values(activeCounts).reduce((acc, value) => acc + (value || 0), 0)
+      : loadedItems.length;
+    const totalFacilities = hasSummaryCounts
+      ? Object.values(activeFacilityCounts).reduce((acc, value) => acc + (value || 0), 0)
+      : new Set(loadedItems.map((item) => item.orgName).filter(Boolean)).size;
+
+    const topPrefectures = Object.keys(activeCounts)
       .map((prefecture) => ({
         prefecture,
-        equipmentCount: prefectureCounts[prefecture],
-        facilityCount: prefectureOrgs[prefecture].size,
+        equipmentCount: activeCounts[prefecture],
+        facilityCount: activeFacilityCounts[prefecture] || 0,
       }))
       .sort((a, b) => b.equipmentCount - a.equipmentCount)
       .slice(0, 6);
 
     return {
       totalFacilities,
-      totalEquipment: loadedItems.length,
-      prefectureCount: Object.keys(prefectureCounts).length,
+      totalEquipment,
+      prefectureCount: Object.keys(activeCounts).length,
       topPrefectures,
-      missingCoords,
+      prefectureCounts: activeCounts,
+      prefectureFacilityCounts: activeFacilityCounts,
+      usingSummaryCounts: hasSummaryCounts,
+      summaryUpdatedAt: prefectureStats?.updatedAt || "",
     };
-  }, [loadedItems]);
+  }, [loadedItems, prefectureStats]);
 
-  const summaryTopPrefectures = useMemo(() => {
+  const handleMapHover = useCallback(
+    (prefecture, event) => {
+      if (!prefecture || !event) return;
+      const rect = mapContainerRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      const equipmentCount = mapData.prefectureCounts?.[prefecture] || 0;
+      const facilityCount = mapData.prefectureFacilityCounts?.[prefecture] || 0;
+      setMapHover({
+        prefecture,
+        equipmentCount,
+        facilityCount,
+        x: event.clientX - rect.left,
+        y: event.clientY - rect.top,
+      });
+    },
+    [mapData.prefectureCounts, mapData.prefectureFacilityCounts],
+  );
+
+  const summaryPrefectureCounts = useMemo(() => {
     return prefectureSummary
       .map((item) => ({
         prefecture: item.prefecture,
@@ -1611,21 +2013,50 @@ export default function App() {
       .filter((item) => item.prefecture);
   }, [prefectureSummary]);
 
-  const displayTopPrefectures = useMemo(() => {
-    if (summaryTopPrefectures.length > 0) {
-      return summaryTopPrefectures;
-    }
-    return mapData.topPrefectures;
-  }, [mapData.topPrefectures, summaryTopPrefectures]);
+  const fallbackPrefectureCounts = useMemo(() => {
+    return Object.entries(mapData.prefectureCounts || {})
+      .map(([prefecture, equipmentCount]) => ({
+        prefecture,
+        equipmentCount,
+        facilityCount: mapData.prefectureFacilityCounts?.[prefecture] || 0,
+      }))
+      .filter((item) => item.prefecture);
+  }, [mapData.prefectureCounts, mapData.prefectureFacilityCounts]);
+
+  const topPrefecturesByRegion = useMemo(() => {
+    const source =
+      summaryPrefectureCounts.length > 0
+        ? summaryPrefectureCounts
+        : fallbackPrefectureCounts;
+    const regionMap = new Map();
+    source.forEach((item) => {
+      if (!item.prefecture || item.equipmentCount <= 0) return;
+      const regionName = PREFECTURE_REGION_MAP[item.prefecture];
+      if (!regionName) return;
+      const existing = regionMap.get(regionName);
+      if (
+        !existing ||
+        item.equipmentCount > existing.equipmentCount ||
+        (item.equipmentCount === existing.equipmentCount &&
+          item.facilityCount > existing.facilityCount)
+      ) {
+        regionMap.set(regionName, { ...item, region: regionName });
+      }
+    });
+    return Array.from(regionMap.values()).sort(
+      (a, b) =>
+        REGION_ORDER.indexOf(a.region) - REGION_ORDER.indexOf(b.region),
+    );
+  }, [fallbackPrefectureCounts, summaryPrefectureCounts]);
 
   const usingFallbackTopPrefectures =
-    summaryTopPrefectures.length === 0 && mapData.topPrefectures.length > 0;
+    summaryPrefectureCounts.length === 0 && topPrefecturesByRegion.length > 0;
 
   const sortedTopPrefectures = useMemo(() => {
     if (!userLocation) {
-      return displayTopPrefectures;
+      return topPrefecturesByRegion;
     }
-    return [...displayTopPrefectures].sort((a, b) => {
+    return [...topPrefecturesByRegion].sort((a, b) => {
       const coordA = PREFECTURE_COORDS[a.prefecture];
       const coordB = PREFECTURE_COORDS[b.prefecture];
       const distA = coordA ? getDistanceKm(userLocation, coordA) : null;
@@ -1635,54 +2066,453 @@ export default function App() {
       if (distB == null) return -1;
       return distA - distB;
     });
-  }, [displayTopPrefectures, userLocation]);
+  }, [topPrefecturesByRegion, userLocation]);
 
   useEffect(() => {
-    if (!mapsReady || !mapInstanceRef.current) return;
-    const map = mapInstanceRef.current;
-    const markers = markersRef.current;
-    const nextIds = new Set(mapItems.map((item) => item.id));
-    markers.forEach((marker, id) => {
-      if (!nextIds.has(id)) {
-        marker.setMap(null);
-        markers.delete(id);
+    if (!mapInfoPrefecture) return undefined;
+    if (!mapData.usingSummaryCounts) return undefined;
+    if (mapOrgCache[mapInfoPrefecture]) return undefined;
+    let isMounted = true;
+    const targetPrefecture = mapInfoPrefecture;
+    const targetCount = mapData.prefectureCounts?.[targetPrefecture] || 0;
+    const loadMapOrgs = async () => {
+      setMapOrgRequest({ prefecture: targetPrefecture, loading: true, error: "" });
+      try {
+        const equipmentRef = collection(db, "equipment");
+        const docMap = new Map();
+        const fetchPagedDocs = async (constraints) => {
+          let lastDoc = null;
+          let pageCount = 0;
+          let hasMore = true;
+          while (
+            hasMore &&
+            (targetCount === 0 || docMap.size < targetCount) &&
+            pageCount < MAP_ORG_FETCH_MAX_PAGES
+          ) {
+            const queryParts = [
+              equipmentRef,
+              ...constraints,
+              orderBy(documentId()),
+              limit(MAP_ORG_FETCH_LIMIT),
+            ];
+            if (lastDoc) {
+              queryParts.splice(-1, 0, startAfter(lastDoc));
+            }
+            const snap = await getDocs(firestoreQuery(...queryParts));
+            snap.forEach((docSnap) => {
+              docMap.set(docSnap.id, docSnap);
+            });
+            lastDoc = snap.docs[snap.docs.length - 1] || null;
+            hasMore = snap.size === MAP_ORG_FETCH_LIMIT;
+            pageCount += 1;
+          }
+        };
+        if (targetCount > 0) {
+          await fetchPagedDocs([where("prefecture", "==", targetPrefecture)]);
+          if (docMap.size < targetCount) {
+            await fetchPagedDocs([
+              where("search_tokens", "array-contains", targetPrefecture),
+            ]);
+          }
+        }
+        const items = [];
+        docMap.forEach((docSnap) => {
+          const data = docSnap.data() || {};
+          items.push({
+            orgName: data.org_name || "不明",
+          });
+        });
+        const orgList = buildOrgListFromItems(items);
+        if (isMounted) {
+          setMapOrgCache((prev) => ({
+            ...prev,
+            [targetPrefecture]: {
+              orgList,
+              sampleCount: docMap.size,
+            },
+          }));
+          setMapOrgRequest((prev) =>
+            prev.prefecture === targetPrefecture
+              ? { prefecture: targetPrefecture, loading: false, error: "" }
+              : prev,
+          );
+        }
+      } catch (error) {
+        console.error(error);
+        if (isMounted) {
+          setMapOrgRequest((prev) =>
+            prev.prefecture === targetPrefecture
+              ? {
+                  prefecture: targetPrefecture,
+                  loading: false,
+                  error: "機関情報の取得に失敗しました。",
+                }
+              : prev,
+          );
+        }
       }
+    };
+    loadMapOrgs();
+    return () => {
+      isMounted = false;
+    };
+  }, [
+    mapData.prefectureCounts,
+    mapData.usingSummaryCounts,
+    mapInfoPrefecture,
+    mapOrgCache,
+  ]);
+
+  const mapProjection = useMemo(() => {
+    const features = prefectureGeoJson?.features || [];
+    const bounds = getGeoBounds(features);
+    if (!bounds) return null;
+    const { minLng, maxLng, minY, maxY } = bounds;
+    const width = MAP_VIEWBOX_SIZE;
+    const height = MAP_VIEWBOX_SIZE;
+    const project = ([lng, lat]) => {
+      const x =
+        MAP_PADDING +
+        ((lng - minLng) / (maxLng - minLng)) * (width - MAP_PADDING * 2);
+      const y =
+        MAP_PADDING +
+        ((maxY - toMercatorY(lat)) / (maxY - minY)) * (height - MAP_PADDING * 2);
+      return [x, y];
+    };
+    return { project, width, height };
+  }, [prefectureGeoJson]);
+
+  const mapDefaultPan = useMemo(() => {
+    if (!mapProjection) return { x: 0, y: 0 };
+    const coord = PREFECTURE_COORDS["群馬県"];
+    if (!coord) return { x: 0, y: 0 };
+    const [x, y] = mapProjection.project([coord.lng, coord.lat]);
+    const center = MAP_VIEWBOX_SIZE / 2;
+    return { x: x - center, y: y - center };
+  }, [mapProjection]);
+
+  useEffect(() => {
+    if (!mapProjection) return;
+    setMapZoom(mapInfoPrefecture ? MAP_ZOOM_MIN : DEFAULT_MAP_ZOOM);
+    setMapPan(mapInfoPrefecture ? { x: 0, y: 0 } : mapDefaultPan);
+  }, [mapDefaultPan, mapInfoPrefecture, mapProjection]);
+
+  const prefectureShapes = useMemo(() => {
+    if (!mapProjection) return [];
+    return (prefectureGeoJson?.features || [])
+      .map((feature) => {
+        const name = getPrefectureName(feature.properties);
+        if (!name || !PREFECTURE_COORDS[name]) return null;
+        const path = buildGeoPath(feature.geometry, mapProjection.project);
+        if (!path) return null;
+        const bounds = getProjectedBounds(feature.geometry, mapProjection.project);
+        return bounds ? { prefecture: name, path, bounds } : null;
+      })
+      .filter(Boolean);
+  }, [mapProjection]);
+
+  const prefectureBoundsMap = useMemo(() => {
+    const map = new Map();
+    prefectureShapes.forEach((shape) => {
+      map.set(shape.prefecture, shape.bounds);
     });
-    mapItems.forEach((item) => {
-      const existing = markers.get(item.id);
-      if (existing) {
-        existing.setPosition(item.position);
-        existing.setTitle(item.name);
+    return map;
+  }, [prefectureShapes]);
+
+  const mapViewBox = useMemo(() => {
+    const base = { minX: 0, minY: 0, width: MAP_VIEWBOX_SIZE, height: MAP_VIEWBOX_SIZE };
+    if (!mapInfoPrefecture) return base;
+    const bounds = prefectureBoundsMap.get(mapInfoPrefecture);
+    if (!bounds) return base;
+    const padding = 60;
+    let minX = Math.max(0, bounds.minX - padding);
+    let minY = Math.max(0, bounds.minY - padding);
+    let maxX = Math.min(MAP_VIEWBOX_SIZE, bounds.maxX + padding);
+    let maxY = Math.min(MAP_VIEWBOX_SIZE, bounds.maxY + padding);
+    let width = maxX - minX;
+    let height = maxY - minY;
+    const minSize = 200;
+    if (width < minSize) {
+      const expand = (minSize - width) / 2;
+      minX = Math.max(0, minX - expand);
+      maxX = Math.min(MAP_VIEWBOX_SIZE, maxX + expand);
+      width = maxX - minX;
+    }
+    if (height < minSize) {
+      const expand = (minSize - height) / 2;
+      minY = Math.max(0, minY - expand);
+      maxY = Math.min(MAP_VIEWBOX_SIZE, maxY + expand);
+      height = maxY - minY;
+    }
+    return { minX, minY, width, height };
+  }, [mapInfoPrefecture, prefectureBoundsMap]);
+
+  const mapViewport = useMemo(() => {
+    const zoom = Math.max(MAP_ZOOM_MIN, mapZoom);
+    const width = mapViewBox.width / zoom;
+    const height = mapViewBox.height / zoom;
+    const baseCenterX = mapViewBox.minX + mapViewBox.width / 2;
+    const baseCenterY = mapViewBox.minY + mapViewBox.height / 2;
+    let minX = baseCenterX - width / 2 + mapPan.x;
+    let minY = baseCenterY - height / 2 + mapPan.y;
+    minX = clampValue(minX, 0, MAP_VIEWBOX_SIZE - width);
+    minY = clampValue(minY, 0, MAP_VIEWBOX_SIZE - height);
+    return { minX, minY, width, height };
+  }, [mapPan.x, mapPan.y, mapViewBox, mapZoom]);
+
+  const maxMapCount = useMemo(() => {
+    return Object.values(mapData.prefectureCounts || {}).reduce(
+      (acc, value) => Math.max(acc, value || 0),
+      0,
+    );
+  }, [mapData.prefectureCounts]);
+
+  const prefectureMarkers = useMemo(() => {
+    if (!mapProjection) return [];
+    return Object.entries(PREFECTURE_COORDS).map(([prefecture, coord]) => {
+      const [x, y] = mapProjection.project([coord.lng, coord.lat]);
+      return {
+        prefecture,
+        x,
+        y,
+        equipmentCount: mapData.prefectureCounts?.[prefecture] || 0,
+        facilityCount: mapData.prefectureFacilityCounts?.[prefecture] || 0,
+      };
+    });
+  }, [mapData.prefectureCounts, mapData.prefectureFacilityCounts, mapProjection]);
+
+  const prefectureMarkerMap = useMemo(() => {
+    const map = new Map();
+    prefectureMarkers.forEach((marker) => {
+      map.set(marker.prefecture, marker);
+    });
+    return map;
+  }, [prefectureMarkers]);
+
+  const mapInfoAnchor = useMemo(() => {
+    if (!mapInfoPrefecture) return null;
+    const marker = prefectureMarkerMap.get(mapInfoPrefecture);
+    if (!marker) return null;
+    const leftPct =
+      mapViewport.width > 0
+        ? ((marker.x - mapViewport.minX) / mapViewport.width) * 100
+        : 50;
+    const topPct =
+      mapViewport.height > 0
+        ? ((marker.y - mapViewport.minY) / mapViewport.height) * 100
+        : 50;
+    return {
+      left: clampValue(leftPct, 12, 88),
+      top: clampValue(topPct, 16, 90),
+    };
+  }, [mapInfoPrefecture, mapViewport, prefectureMarkerMap]);
+
+  const mapInfoData = useMemo(() => {
+    if (!mapInfoPrefecture) return null;
+    const summaryCount = mapData.prefectureCounts?.[mapInfoPrefecture] || 0;
+    const items = loadedItems.filter((item) => item.prefecture === mapInfoPrefecture);
+    const orgListFromItems = buildOrgListFromItems(items);
+    const cachedOrg = mapOrgCache[mapInfoPrefecture];
+    const orgList =
+      cachedOrg?.orgList?.length > 0 ? cachedOrg.orgList : orgListFromItems;
+    const orgSampleCount = cachedOrg?.sampleCount ?? items.length;
+    const categoryCounts = new Map();
+    items.forEach((item) => {
+      const categoryKey = item.categoryDetail || item.categoryGeneral || "未分類";
+      categoryCounts.set(categoryKey, (categoryCounts.get(categoryKey) || 0) + 1);
+    });
+    const topCategories = Array.from(categoryCounts.entries())
+      .map(([category, count]) => ({ category, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 6);
+    return {
+      prefecture: mapInfoPrefecture,
+      totalEquipment: summaryCount || items.length,
+      totalFacilities: mapData.prefectureFacilityCounts?.[mapInfoPrefecture] || orgList.length,
+      orgList,
+      topCategories,
+      isPartial: summaryCount > 0 && orgSampleCount < summaryCount,
+    };
+  }, [
+    loadedItems,
+    mapData.prefectureCounts,
+    mapData.prefectureFacilityCounts,
+    mapInfoPrefecture,
+    mapOrgCache,
+  ]);
+
+  const mapOrgStatus =
+    mapOrgRequest.prefecture === mapInfoPrefecture
+      ? mapOrgRequest
+      : { loading: false, error: "" };
+  const isMapOrgLoading = mapOrgStatus.loading;
+  const mapOrgError = mapOrgStatus.error;
+
+  const handleMapZoomIn = useCallback(() => {
+    setMapZoom((prev) => clampValue(prev * 1.25, MAP_ZOOM_MIN, MAP_ZOOM_MAX));
+  }, []);
+
+  const handleMapZoomOut = useCallback(() => {
+    setMapZoom((prev) => clampValue(prev / 1.25, MAP_ZOOM_MIN, MAP_ZOOM_MAX));
+  }, []);
+
+  const handleMapZoomReset = useCallback(() => {
+    setMapZoom(mapInfoPrefecture ? MAP_ZOOM_MIN : DEFAULT_MAP_ZOOM);
+    setMapPan(mapInfoPrefecture ? { x: 0, y: 0 } : mapDefaultPan);
+  }, [mapDefaultPan, mapInfoPrefecture]);
+
+  const handleMapWheel = useCallback(
+    (event) => {
+      if (!event) return;
+      if (mapInfoPrefecture) return;
+      if (event.target?.closest?.(".map-info")) return;
+      if (!event.ctrlKey && !event.metaKey) return;
+      event.preventDefault();
+      const direction = event.deltaY < 0 ? 1 : -1;
+      setMapZoom((prev) => {
+        const next =
+          direction > 0 ? prev * MAP_ZOOM_STEP : prev / MAP_ZOOM_STEP;
+        return clampValue(next, MAP_ZOOM_MIN, MAP_ZOOM_MAX);
+      });
+    },
+    [mapInfoPrefecture],
+  );
+
+  useEffect(() => {
+    const container = mapContainerRef.current;
+    if (!container) return undefined;
+    const handler = (event) => handleMapWheel(event);
+    container.addEventListener("wheel", handler, { passive: false });
+    return () => {
+      container.removeEventListener("wheel", handler);
+    };
+  }, [handleMapWheel]);
+
+  const handleMapPointerDown = useCallback(
+    (event) => {
+      if (!event || event.button > 0) return;
+      const target = event.target;
+      if (
+        target?.closest?.(".map-info") ||
+        target?.closest?.(".map-zoom-controls") ||
+        target?.closest?.(".jp-map-shape") ||
+        target?.closest?.(".jp-map-marker")
+      ) {
         return;
       }
-      const marker = new window.google.maps.Marker({
-        position: item.position,
-        map,
-        title: item.name,
-      });
-      marker.addListener("click", () => {
-        handleItemSelect(item);
-      });
-      markers.set(item.id, marker);
-    });
-  }, [handleItemSelect, mapsReady, mapItems]);
+      const rect = mapContainerRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      if (event.pointerType === "touch") {
+        const pointers = mapPointersRef.current;
+        pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        if (pointers.size === 2) {
+          const [first, second] = Array.from(pointers.values());
+          const distance = Math.hypot(first.x - second.x, first.y - second.y);
+          const centerX = (first.x + second.x) / 2 - rect.left;
+          const centerY = (first.y + second.y) / 2 - rect.top;
+          mapPinchRef.current = {
+            startDistance: distance,
+            startZoom: mapZoom,
+            startMapPoint: {
+              x: mapViewport.minX + (centerX / rect.width) * mapViewport.width,
+              y: mapViewport.minY + (centerY / rect.height) * mapViewport.height,
+            },
+            rect,
+          };
+          mapDragRef.current = null;
+        } else if (pointers.size === 1) {
+          mapPinchRef.current = null;
+          mapDragRef.current = {
+            pointerId: event.pointerId,
+            startX: event.clientX,
+            startY: event.clientY,
+            startPan: { ...mapPan },
+            rect,
+          };
+        }
+        mapContainerRef.current?.setPointerCapture?.(event.pointerId);
+        return;
+      }
+      mapDragRef.current = {
+        pointerId: event.pointerId,
+        startX: event.clientX,
+        startY: event.clientY,
+        startPan: { ...mapPan },
+        rect,
+      };
+      mapContainerRef.current?.setPointerCapture?.(event.pointerId);
+    },
+    [mapPan, mapViewport, mapZoom],
+  );
 
-  useEffect(() => {
-    if (!mapsReady || !mapInstanceRef.current || !infoWindowRef.current) return;
-    const selected = selectedItemId ? mapItemById.get(selectedItemId) : null;
-    if (!selected) {
-      infoWindowRef.current.close();
-      return;
+  const handleMapPointerMove = useCallback(
+    (event) => {
+      if (!event) return;
+      if (event.pointerType === "touch") {
+        const pointers = mapPointersRef.current;
+        if (pointers.has(event.pointerId)) {
+          pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        }
+        const pinch = mapPinchRef.current;
+        if (pinch && pointers.size >= 2) {
+          const [first, second] = Array.from(pointers.values());
+          const distance = Math.hypot(first.x - second.x, first.y - second.y);
+          if (distance > 0 && pinch.startDistance > 0) {
+            const scale = distance / pinch.startDistance;
+            const nextZoom = clampValue(
+              pinch.startZoom * scale,
+              MAP_ZOOM_MIN,
+              MAP_ZOOM_MAX,
+            );
+            const rect = pinch.rect;
+            const centerX = (first.x + second.x) / 2 - rect.left;
+            const centerY = (first.y + second.y) / 2 - rect.top;
+            const width = mapViewBox.width / nextZoom;
+            const height = mapViewBox.height / nextZoom;
+            const baseCenterX = mapViewBox.minX + mapViewBox.width / 2;
+            const baseCenterY = mapViewBox.minY + mapViewBox.height / 2;
+            let minX =
+              pinch.startMapPoint.x - (centerX / rect.width) * width;
+            let minY =
+              pinch.startMapPoint.y - (centerY / rect.height) * height;
+            minX = clampValue(minX, 0, MAP_VIEWBOX_SIZE - width);
+            minY = clampValue(minY, 0, MAP_VIEWBOX_SIZE - height);
+            setMapZoom(nextZoom);
+            setMapPan({
+              x: minX - (baseCenterX - width / 2),
+              y: minY - (baseCenterY - height / 2),
+            });
+          }
+          return;
+        }
+      }
+      const drag = mapDragRef.current;
+      if (!drag) return;
+      const dx = event.clientX - drag.startX;
+      const dy = event.clientY - drag.startY;
+      const scaleX = mapViewport.width / drag.rect.width;
+      const scaleY = mapViewport.height / drag.rect.height;
+      setMapPan({
+        x: drag.startPan.x - dx * scaleX,
+        y: drag.startPan.y - dy * scaleY,
+      });
+    },
+    [mapViewport.height, mapViewport.width, mapViewBox],
+  );
+
+  const handleMapPointerUp = useCallback((event) => {
+    if (!event) return;
+    const pointers = mapPointersRef.current;
+    if (pointers.has(event.pointerId)) {
+      pointers.delete(event.pointerId);
     }
-    const marker = markersRef.current.get(selectedItemId);
-    if (!marker) return;
-    const content = `<div><strong>${escapeHtml(selected.name)}</strong><br />${escapeHtml(
-      selected.prefecture || "",
-    )}</div>`;
-    infoWindowRef.current.setContent(content);
-    infoWindowRef.current.open({ map: mapInstanceRef.current, anchor: marker });
-    mapInstanceRef.current.panTo(marker.getPosition());
-  }, [mapsReady, mapItemById, selectedItemId]);
+    if (pointers.size < 2) {
+      mapPinchRef.current = null;
+    }
+    if (mapDragRef.current?.pointerId === event.pointerId) {
+      mapDragRef.current = null;
+    }
+  }, []);
 
   const detailGuide = useMemo(() => buildEquipmentGuide(detailItem), [detailItem]);
   const currentPapers = detailItem?.papers || [];
@@ -1705,8 +2535,8 @@ export default function App() {
             <div className="title-row">
             <div className="title-stack">
               <h1>
-                Kikidoko
-                <span>研究設備の横断検索</span>
+                キキドコ
+                <span>研究設備の横断検索サイト</span>
               </h1>
             </div>
           </div>
@@ -1818,22 +2648,20 @@ export default function App() {
       </header>
 
       <section className="results" ref={resultsRef}>
-        <div className="results-head">
-          <div>
-            <h2>検索結果</h2>
-            <p>{loading ? "検索結果を読み込んでいます..." : `${rankedItems.length} 件を表示`}</p>
-          </div>
-          {prefectureFilter && (
-            <div className="prefecture-filter">
-              <span>都道府県: {prefectureFilter}</span>
-              <button type="button" onClick={handlePrefectureRestore}>
-                元に戻す
-              </button>
-            </div>
-          )}
-        </div>
         <div className="results-body">
-          <div className="results-list">
+          <div className="results-list" ref={resultsListRef}>
+            <div className="results-head">
+              <h2>検索結果</h2>
+              {(prefectureFilter || orgFilter) && (
+                <div className="prefecture-filter">
+                  {prefectureFilter && <span>都道府県: {prefectureFilter}</span>}
+                  {orgFilter && <span>機関: {orgFilter}</span>}
+                  <button type="button" onClick={handlePrefectureRestore}>
+                    元に戻す
+                  </button>
+                </div>
+              )}
+            </div>
             {loading ? (
               <p className="results-status">データを読み込んでいます...</p>
             ) : loadError ? (
@@ -1979,35 +2807,237 @@ export default function App() {
               </div>
             )}
           </div>
-          <aside className="map-panel">
-            <div className="map-head">
-              <div>
-                <h3>全国分布</h3>
-                <p>全国の総合集計から拠点と機器数を俯瞰します。</p>
-              </div>
-            </div>
+          <aside
+            className="map-panel"
+            style={
+              !isNarrowLayout && resultsListHeight
+                ? { height: `${resultsListHeight}px` }
+                : undefined
+            }
+          >
+            <div className="map-head" aria-hidden="true" />
             <div className="map-canvas">
-              {mapsError ? (
-                <div className="map-placeholder error">{mapsError}</div>
-              ) : !mapsReady ? (
-                <div className="map-placeholder">地図を読み込んでいます...</div>
-              ) : (
-                <div ref={mapRef} className="map-container" />
-              )}
+              <div
+                className="jp-map-geo"
+                role="img"
+                aria-label="全国分布の地図"
+                ref={mapContainerRef}
+                onMouseLeave={() => setMapHover(null)}
+                onPointerDown={handleMapPointerDown}
+                onPointerMove={handleMapPointerMove}
+                onPointerUp={handleMapPointerUp}
+                onPointerCancel={handleMapPointerUp}
+              >
+                {geoJsonStatus === "error" ? (
+                  <div className="jp-map-empty">地図データの読み込みに失敗しました。</div>
+                ) : prefectureShapes.length === 0 ? (
+                  <div className="jp-map-empty">地図データを読み込み中です。</div>
+                ) : (
+                  <svg
+                    className="jp-map-svg"
+                    viewBox={`${mapViewport.minX} ${mapViewport.minY} ${mapViewport.width} ${mapViewport.height}`}
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <g className="jp-map-shapes">
+                      {prefectureShapes.map((shape) => {
+                        const equipmentCount =
+                          mapData.prefectureCounts?.[shape.prefecture] || 0;
+                        const facilityCount =
+                          mapData.prefectureFacilityCounts?.[shape.prefecture] || 0;
+                        const alpha =
+                          maxMapCount > 0
+                            ? 0.2 + (equipmentCount / maxMapCount) * 0.6
+                            : 0.2;
+                        const isSelected =
+                          mapInfoPrefecture === shape.prefecture ||
+                          prefectureFilter === shape.prefecture;
+                        const isEmpty = equipmentCount === 0;
+                        return (
+                          <path
+                            key={shape.prefecture}
+                            d={shape.path}
+                            className={`jp-map-shape${isSelected ? " is-selected" : ""}${
+                              isEmpty ? " is-empty" : ""
+                            }`}
+                            style={{ "--shape-alpha": alpha.toFixed(2) }}
+                            fillRule="evenodd"
+                            role="button"
+                            tabIndex={0}
+                            onClick={() => handleMapPrefectureClick(shape.prefecture)}
+                            onMouseEnter={(event) =>
+                              handleMapHover(shape.prefecture, event)
+                            }
+                            onMouseMove={(event) =>
+                              handleMapHover(shape.prefecture, event)
+                            }
+                            onMouseLeave={() => setMapHover(null)}
+                            onKeyDown={(event) => {
+                              if (event.key === "Enter" || event.key === " ") {
+                                event.preventDefault();
+                                handleMapPrefectureClick(shape.prefecture);
+                              }
+                            }}
+                          >
+                            <title>
+                              {shape.prefecture} {equipmentCount}件 / {facilityCount}拠点
+                            </title>
+                          </path>
+                        );
+                      })}
+                    </g>
+                    <g className="jp-map-markers">
+                      {prefectureMarkers.map((marker) => {
+                        const radius =
+                          maxMapCount > 0
+                            ? 6 + (marker.equipmentCount / maxMapCount) * 8
+                            : 6;
+                        const isSelected =
+                          mapInfoPrefecture === marker.prefecture ||
+                          prefectureFilter === marker.prefecture;
+                        const isEmpty = marker.equipmentCount === 0;
+                        return (
+                          <g
+                            key={marker.prefecture}
+                            className={`jp-map-marker${isSelected ? " is-selected" : ""}${
+                              isEmpty ? " is-empty" : ""
+                            }`}
+                            transform={`translate(${marker.x} ${marker.y})`}
+                            role="button"
+                            tabIndex={0}
+                            onClick={() => handleMapPrefectureClick(marker.prefecture)}
+                            onMouseEnter={(event) =>
+                              handleMapHover(marker.prefecture, event)
+                            }
+                            onMouseMove={(event) =>
+                              handleMapHover(marker.prefecture, event)
+                            }
+                            onMouseLeave={() => setMapHover(null)}
+                            onKeyDown={(event) => {
+                              if (event.key === "Enter" || event.key === " ") {
+                                event.preventDefault();
+                                handleMapPrefectureClick(marker.prefecture);
+                              }
+                            }}
+                          >
+                            <title>
+                              {marker.prefecture} {marker.equipmentCount}件 / {marker.facilityCount}拠点
+                            </title>
+                            <circle
+                              className="jp-map-marker-dot"
+                              r={radius.toFixed(2)}
+                            />
+                            {marker.equipmentCount > 0 && (
+                              <text className="jp-map-marker-text" y="4">
+                                {marker.equipmentCount}
+                              </text>
+                            )}
+                          </g>
+                        );
+                      })}
+                    </g>
+                  </svg>
+                )}
+                <div className="map-zoom-controls" role="group" aria-label="地図の拡大縮小">
+                  <button type="button" onClick={handleMapZoomIn} aria-label="拡大">
+                    +
+                  </button>
+                  <button type="button" onClick={handleMapZoomOut} aria-label="縮小">
+                    −
+                  </button>
+                  <button type="button" onClick={handleMapZoomReset} aria-label="リセット">
+                    リセット
+                  </button>
+                </div>
+                {mapInfoData && mapInfoAnchor && (
+                  <div
+                    className="map-info"
+                    style={{
+                      "--info-left": `${mapInfoAnchor.left}%`,
+                      "--info-top": `${mapInfoAnchor.top}%`,
+                    }}
+                  >
+                    <div className="map-info-head">
+                      <div>
+                        <h4>{mapInfoData.prefecture}</h4>
+                        <p>
+                          {mapInfoData.totalEquipment}件 / {mapInfoData.totalFacilities}拠点
+                        </p>
+                      </div>
+                      <div className="map-info-actions">
+                        <button
+                          type="button"
+                          className="ghost"
+                          onClick={() => setMapInfoPrefecture("")}
+                        >
+                          閉じる
+                        </button>
+                      </div>
+                    </div>
+                    <div className="map-info-body">
+                      <div className="map-info-section">
+                        <h5>機器保有機関</h5>
+                        {isMapOrgLoading ? (
+                          <p className="map-info-empty">読み込み中...</p>
+                        ) : mapOrgError ? (
+                          <p className="map-info-empty">{mapOrgError}</p>
+                        ) : mapInfoData.orgList.length === 0 ? (
+                          <p className="map-info-empty">
+                            {mapInfoData.totalEquipment > 0
+                              ? "機関情報を取得できませんでした。"
+                              : "該当なし"}
+                          </p>
+                        ) : (
+                          <ul className="map-info-list">
+                            {mapInfoData.orgList.map((org) => (
+                              <li key={org.orgName}>
+                                <button
+                                  type="button"
+                                  className="map-org-button"
+                                  onClick={() =>
+                                    handleOrgSelect(org.orgName, mapInfoData.prefecture)
+                                  }
+                                >
+                                  <span>{org.orgName}</span>
+                                  <span>{org.count}件</span>
+                                </button>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                    <p className="map-info-note">
+                      集計対象: {mapData.usingSummaryCounts ? "集計データ" : "読み込み済みの設備のみ"}
+                    </p>
+                    {mapInfoData.isPartial && (
+                      <p className="map-info-note">
+                        詳細一覧は検索結果の読み込み範囲に限られます。
+                      </p>
+                    )}
+                  </div>
+                )}
+                {mapHover && (
+                  <div
+                    className="map-tooltip"
+                    style={{ left: mapHover.x, top: mapHover.y }}
+                  >
+                    <strong>{mapHover.prefecture}</strong>
+                    <span>
+                      {mapHover.equipmentCount}件 / {mapHover.facilityCount}拠点
+                    </span>
+                  </div>
+                )}
+              </div>
               <div className="map-legend">
-                <span>ピンをクリックして設備を選択</span>
-                <span>表示範囲: 日本のみ</span>
-                <span>表示は読み込み済みの設備のみ</span>
-                {mapData.missingCoords > 0 && (
-                  <span>
-                    座標未取得: {mapData.missingCoords} 件（都道府県中心で表示）
-                  </span>
+                <span>都道府県をクリックして情報を表示</span>
+                {mapData.summaryUpdatedAt && (
+                  <span>集計更新: {formatDate(mapData.summaryUpdatedAt)}</span>
                 )}
               </div>
             </div>
             <div className="map-list">
-              <h4>機器が多い都道府県</h4>
-              {displayTopPrefectures.length === 0 ? (
+              <h4>機器が多い都道府県（地方別）</h4>
+              {sortedTopPrefectures.length === 0 ? (
                 <p className="map-list-empty">
                   {prefectureSummaryLoaded
                     ? "集計データを準備中です。"
@@ -2023,10 +3053,13 @@ export default function App() {
                       <li key={item.prefecture}>
                         <button
                           type="button"
-                          className="prefecture-link"
+                          className="prefecture-row"
                           onClick={() => handlePrefectureSelect(item.prefecture)}
                         >
-                          <span>{item.prefecture}</span>
+                          <span className="prefecture-name">
+                            <span className="prefecture-main">{item.prefecture}</span>
+                            <span className="prefecture-region">{item.region}地方</span>
+                          </span>
                           <span>{item.equipmentCount} 件</span>
                           <span>{item.facilityCount} 拠点</span>
                         </button>
@@ -2083,7 +3116,11 @@ export default function App() {
             sheetExpanded ? " is-expanded" : ""
           }`}
         >
-          <div className="equipment-sheet-backdrop" aria-hidden="true" />
+          <div
+            className="equipment-sheet-backdrop"
+            aria-hidden="true"
+            onClick={() => setDetailOpen(false)}
+          />
           <div
             className="equipment-sheet-panel"
             onTouchStart={handleSheetTouchStart}
@@ -2132,7 +3169,19 @@ export default function App() {
                 ) : (
                   <ul className="paper-list">
                     {currentPapers.map((paper) => (
-                      <li key={paper.doi} className="paper-item">
+                      <li
+                        key={paper.doi}
+                        className="paper-item"
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => handlePaperOpen(paper)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter" || event.key === " ") {
+                            event.preventDefault();
+                            handlePaperOpen(paper);
+                          }
+                        }}
+                      >
                         <p className="paper-title">{paper.title || "タイトル不明"}</p>
                         <div className="paper-meta">
                           <span className="paper-genre">
@@ -2144,6 +3193,7 @@ export default function App() {
                             href={paper.url || `https://doi.org/${paper.doi}`}
                             target="_blank"
                             rel="noreferrer"
+                            onClick={(event) => event.stopPropagation()}
                           >
                             DOI: {paper.doi}
                           </a>
