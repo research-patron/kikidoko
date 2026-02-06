@@ -2536,7 +2536,7 @@ export default function App() {
             <div className="title-stack">
               <h1>
                 キキドコ
-                <span>研究設備の横断検索サイト</span>
+                <span>その装置、国内にあります。</span>
               </h1>
             </div>
           </div>
@@ -2622,12 +2622,20 @@ export default function App() {
               <div className="search-buttons">
                 <div className="search-left">
                   <button
-                    className="ghost"
+                    className="ghost location-button"
                     type="button"
                     onClick={requestLocation}
                     disabled={locationStatus === "loading"}
                   >
-                    {userLocation ? "現在地を更新" : "現在地を使う"}
+                    <span className="location-button-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <path
+                          d="M12 2a7 7 0 0 0-7 7c0 5.05 5.5 11.55 6.23 12.39a1 1 0 0 0 1.54 0C13.5 20.55 19 14.05 19 9a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
+                    <span>{userLocation ? "現在地を更新" : "現在地を使う"}</span>
                   </button>
                 </div>
                 <div className="search-right">
