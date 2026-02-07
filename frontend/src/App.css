@@ -7,6 +7,11 @@
   --split-left: 1.1fr;
   --split-right: 0.9fr;
   --split-gap: clamp(16px, 3vw, 28px);
+  --motion-ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --motion-duration-fast: 180ms;
+  --motion-duration-medium: 280ms;
+  --motion-duration-slow: 380ms;
   touch-action: pan-y;
 }
 
@@ -291,6 +296,15 @@
   grid-template-columns: minmax(0, var(--split-left)) minmax(0, var(--split-right));
   gap: var(--split-gap);
   align-items: start;
+  transition:
+    opacity var(--motion-duration-medium) var(--motion-ease-standard),
+    transform var(--motion-duration-medium) var(--motion-ease-standard);
+  transform-origin: top center;
+}
+
+.results-body.is-loading {
+  opacity: 0.72;
+  transform: translateY(6px) scale(0.995);
 }
 
 .results-list {
@@ -304,6 +318,20 @@
   gap: 12px;
   min-height: 620px;
   box-sizing: border-box;
+  transition:
+    box-shadow var(--motion-duration-medium) var(--motion-ease-soft),
+    transform var(--motion-duration-medium) var(--motion-ease-standard);
+}
+
+.results-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: resultsSwapIn 2080ms var(--motion-ease-standard) both;
+}
+
+.results-content.is-loading {
+  animation-duration: 1680ms;
 }
 
 .list-header {
@@ -329,9 +357,12 @@
   gap: 12px;
   padding: 16px 0;
   border-bottom: 1px solid var(--line);
-  animation: fadeUp 0.5s ease both;
+  animation: rowIn 1400ms var(--motion-ease-standard) both;
+  animation-delay: calc(var(--row-index, 0) * 84ms);
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-soft),
+    transform var(--motion-duration-fast) var(--motion-ease-soft);
 }
 
 .result-row:last-child {
@@ -340,6 +371,7 @@
 
 .result-row:hover {
   background: rgba(255, 241, 214, 0.4);
+  transform: translateY(-1px);
 }
 
 .result-row:focus-visible {
@@ -469,6 +501,7 @@
   background: #fff6e6;
   color: var(--muted-dark);
   font-size: 14px;
+  animation: contentFadeIn 1400ms var(--motion-ease-standard) both;
 }
 
 .results-status.error {
@@ -484,6 +517,7 @@
   margin-top: 16px;
   font-size: 13px;
   color: var(--muted);
+  animation: contentFadeIn 1400ms var(--motion-ease-standard) both;
 }
 
 .pagination-bar {
@@ -581,6 +615,9 @@
   min-height: 620px;
   overflow: hidden;
   box-sizing: border-box;
+  transition:
+    box-shadow var(--motion-duration-medium) var(--motion-ease-soft),
+    transform var(--motion-duration-medium) var(--motion-ease-standard);
 }
 
 .map-head {
@@ -641,6 +678,9 @@
   flex-direction: column;
   gap: 8px;
   overflow: hidden;
+  transition:
+    transform var(--motion-duration-medium) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-medium) var(--motion-ease-soft);
 }
 
 .map-container {
@@ -679,6 +719,9 @@
   overflow: hidden;
   touch-action: none;
   cursor: grab;
+  transition:
+    box-shadow var(--motion-duration-medium) var(--motion-ease-soft),
+    transform var(--motion-duration-medium) var(--motion-ease-standard);
 }
 
 .jp-map-geo::after {
@@ -698,6 +741,7 @@
   display: block;
   position: relative;
   z-index: 1;
+  animation: contentFadeIn var(--motion-duration-medium) var(--motion-ease-standard) both;
 }
 
 .jp-map-shape {
@@ -705,7 +749,10 @@
   stroke: rgba(189, 150, 96, 0.9);
   stroke-width: 1.2;
   cursor: pointer;
-  transition: fill 0.15s ease, stroke 0.15s ease;
+  transition:
+    fill var(--motion-duration-fast) var(--motion-ease-soft),
+    stroke var(--motion-duration-fast) var(--motion-ease-soft),
+    stroke-width var(--motion-duration-fast) var(--motion-ease-soft);
 }
 
 .jp-map-shape:hover {
@@ -726,14 +773,20 @@
 }
 
 .jp-map-marker {
-  pointer-events: auto;
-  cursor: pointer;
+  pointer-events: none;
+  cursor: default;
+  transition:
+    opacity var(--motion-duration-fast) var(--motion-ease-soft);
 }
 
 .jp-map-marker-dot {
   fill: rgba(248, 198, 119, 0.9);
   stroke: rgba(214, 160, 77, 0.7);
   stroke-width: 2;
+  transition:
+    fill var(--motion-duration-fast) var(--motion-ease-soft),
+    stroke var(--motion-duration-fast) var(--motion-ease-soft),
+    stroke-width var(--motion-duration-fast) var(--motion-ease-soft);
 }
 
 .jp-map-marker.is-selected .jp-map-marker-dot {
@@ -774,10 +827,16 @@
   font-size: 12px;
   cursor: pointer;
   box-shadow: var(--shadow-soft);
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-soft),
+    transform var(--motion-duration-fast) var(--motion-ease-soft),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-soft);
 }
 
 .map-zoom-controls button:hover {
   background: #fff2d9;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 14px rgba(152, 106, 39, 0.14);
 }
 
 .map-info {
@@ -797,6 +856,7 @@
   flex-direction: column;
   gap: 10px;
   box-shadow: var(--shadow-soft);
+  animation: surfacePopIn var(--motion-duration-medium) var(--motion-ease-standard) both;
 }
 
 .map-info-head {
@@ -867,7 +927,7 @@
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  align-items: center;
+  align-items: flex-start;
   border: 1px solid var(--line);
   background: #fffaf3;
   color: var(--muted-dark);
@@ -876,6 +936,22 @@
   cursor: pointer;
   text-align: left;
   font: inherit;
+}
+
+.map-org-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.map-org-count {
+  flex: 0 0 auto;
+  min-width: 3.4em;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  align-self: center;
 }
 
 .map-org-button:hover {
@@ -909,6 +985,7 @@
   pointer-events: none;
   box-shadow: var(--shadow-soft);
   z-index: 6;
+  animation: contentFadeIn var(--motion-duration-fast) var(--motion-ease-soft) both;
 }
 
 .map-tooltip strong {
@@ -970,6 +1047,8 @@
   font-size: 13px;
   color: var(--muted-dark);
   border-bottom: 1px solid var(--line);
+  animation: rowIn var(--motion-duration-medium) var(--motion-ease-standard) both;
+  animation-delay: calc(var(--map-list-index, 0) * 22ms);
 }
 
 .map-list li:last-child {
@@ -989,6 +1068,10 @@
   cursor: pointer;
   text-align: left;
   font: inherit;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-soft),
+    color var(--motion-duration-fast) var(--motion-ease-soft),
+    transform var(--motion-duration-fast) var(--motion-ease-soft);
 }
 
 .prefecture-name {
@@ -1016,6 +1099,7 @@
 .prefecture-row:hover {
   background: rgba(255, 241, 214, 0.4);
   color: var(--ink);
+  transform: translateY(-1px);
 }
 
 .badge {
@@ -1050,6 +1134,7 @@
   align-items: center;
   justify-content: center;
   z-index: 20;
+  animation: contentFadeIn var(--motion-duration-medium) var(--motion-ease-soft) both;
 }
 
 .external-backdrop {
@@ -1057,6 +1142,8 @@
   inset: 0;
   background: rgba(20, 15, 10, 0.45);
   border: none;
+  opacity: 0;
+  animation: overlayFadeIn var(--motion-duration-medium) var(--motion-ease-soft) both;
 }
 
 .external-panel {
@@ -1071,6 +1158,9 @@
   flex-direction: column;
   overflow: hidden;
   z-index: 1;
+  opacity: 0;
+  transform: translateY(14px) scale(0.985);
+  animation: modalSlideIn var(--motion-duration-slow) var(--motion-ease-standard) both;
 }
 
 .external-header {
@@ -1156,6 +1246,7 @@
   display: grid;
   gap: 10px;
   z-index: 18;
+  animation: assistSlideIn var(--motion-duration-medium) var(--motion-ease-standard) both;
 }
 
 .eqnet-assist-panel.is-attention {
@@ -1320,7 +1411,7 @@
   border: none;
   background: rgba(20, 15, 10, 0.08);
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 900ms var(--motion-ease-soft);
   pointer-events: none;
 }
 
@@ -1337,8 +1428,11 @@
   border-radius: 22px 22px 0 0;
   border: 1px solid var(--line);
   box-shadow: var(--shadow-strong);
-  transform: translateY(110%);
-  transition: transform 0.25s ease;
+  transform: translateY(110%) scale(0.985);
+  opacity: 0;
+  transition:
+    transform 1200ms var(--motion-ease-standard),
+    opacity 1000ms var(--motion-ease-soft);
   padding: 12px 18px 16px;
   display: flex;
   flex-direction: column;
@@ -1348,7 +1442,8 @@
 }
 
 .equipment-sheet.is-open .equipment-sheet-panel {
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
+  opacity: 1;
 }
 
 .equipment-sheet.is-expanded .equipment-sheet-panel {
@@ -1442,6 +1537,17 @@
   align-items: stretch;
   gap: 10px;
   -webkit-overflow-scrolling: touch;
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 850ms var(--motion-ease-soft),
+    transform 1050ms var(--motion-ease-standard);
+  transition-delay: 120ms;
+}
+
+.equipment-sheet.is-open .equipment-sheet-body {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .equipment-sheet-body p {
@@ -1618,14 +1724,76 @@
   }
 }
 
-@keyframes fadeUp {
+@keyframes rowIn {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes resultsSwapIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes surfacePopIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes assistSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -1647,6 +1815,43 @@
 
   .results-body {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .result-row,
+  .results-status,
+  .results-content,
+  .map-info,
+  .map-tooltip,
+  .jp-map-svg,
+  .map-list li,
+  .external-viewer,
+  .external-backdrop,
+  .external-panel,
+  .eqnet-assist-panel,
+  .eqnet-assist-panel.is-attention,
+  .equipment-sheet-panel {
+    animation: none !important;
+  }
+
+  .results-body,
+  .results-list,
+  .pagination,
+  .map-panel,
+  .map-canvas,
+  .jp-map-geo,
+  .jp-map-shape,
+  .jp-map-marker,
+  .jp-map-marker-dot,
+  .map-zoom-controls button,
+  .prefecture-row,
+  .result-row,
+  .equipment-sheet-backdrop,
+  .equipment-sheet-body,
+  .equipment-sheet-panel {
+    transition: none !important;
   }
 }
 

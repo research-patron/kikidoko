@@ -215,6 +215,67 @@ const getPrefectureName = (properties) => {
   return cleaned;
 };
 
+const getRingArea = (ring) => {
+  if (!Array.isArray(ring) || ring.length < 3) return 0;
+  let area = 0;
+  for (let i = 0; i < ring.length; i += 1) {
+    const current = ring[i];
+    const next = ring[(i + 1) % ring.length];
+    if (!Array.isArray(current) || !Array.isArray(next)) continue;
+    const x1 = Number(current[0]);
+    const y1 = Number(current[1]);
+    const x2 = Number(next[0]);
+    const y2 = Number(next[1]);
+    if (![x1, y1, x2, y2].every(Number.isFinite)) continue;
+    area += x1 * y2 - x2 * y1;
+  }
+  return Math.abs(area / 2);
+};
+
+const getPolygonArea = (polygonCoords) => {
+  if (!Array.isArray(polygonCoords) || polygonCoords.length === 0) return 0;
+  return getRingArea(polygonCoords[0]);
+};
+
+const extractPolygonsFromGeometry = (geometry) => {
+  if (!geometry) return [];
+  if (geometry.type === "Polygon") {
+    return [geometry.coordinates];
+  }
+  if (geometry.type === "MultiPolygon") {
+    return geometry.coordinates || [];
+  }
+  if (geometry.type === "GeometryCollection") {
+    return (geometry.geometries || []).flatMap((part) =>
+      extractPolygonsFromGeometry(part),
+    );
+  }
+  return [];
+};
+
+const keepLargestPolygon = (geometry) => {
+  const polygons = extractPolygonsFromGeometry(geometry);
+  if (polygons.length <= 1) return geometry;
+  let largest = polygons[0];
+  let maxArea = getPolygonArea(largest);
+  for (let i = 1; i < polygons.length; i += 1) {
+    const area = getPolygonArea(polygons[i]);
+    if (area > maxArea) {
+      maxArea = area;
+      largest = polygons[i];
+    }
+  }
+  return largest ? { type: "Polygon", coordinates: largest } : geometry;
+};
+
+const getFocusedPrefectureGeometry = (prefecture, geometry) => {
+  if (!geometry) return null;
+  if (prefecture === "東京都") {
+    return keepLargestPolygon(geometry) || geometry;
+  }
+  return geometry;
+};
+
 const getProjectedBounds = (geometry, project) => {
   if (!geometry || !project) return null;
   let minX = Infinity;
@@ -870,6 +931,13 @@ export default function App() {
   const [geoJsonStatus, setGeoJsonStatus] = useState("loading");
   const [mapZoom, setMapZoom] = useState(DEFAULT_MAP_ZOOM);
   const [mapPan, setMapPan] = useState({ x: 0, y: 0 });
+  const [renderedMapViewport, setRenderedMapViewport] = useState({
+    minX: 0,
+    minY: 0,
+    width: MAP_VIEWBOX_SIZE,
+    height: MAP_VIEWBOX_SIZE,
+  });
+  const [mapGestureActive, setMapGestureActive] = useState(false);
   const [resultsListHeight, setResultsListHeight] = useState(0);
   const [isNarrowLayout, setIsNarrowLayout] = useState(false);
   const [prefectureFilter, setPrefectureFilter] = useState("");
@@ -917,8 +985,18 @@ export default function App() {
   const mapDragRef = useRef(null);
   const mapPointersRef = useRef(new Map());
   const mapPinchRef = useRef(null);
+  const mapViewportFrameRef = useRef(renderedMapViewport);
+  const mapViewportAnimationRef = useRef(null);
+  const detailOpenFrameRef = useRef(null);
   const eqnetCopyTimerRef = useRef(null);
   const eqnetAssistAttentionTimerRef = useRef(null);
+
+  const stopMapViewportAnimation = useCallback(() => {
+    if (mapViewportAnimationRef.current) {
+      cancelAnimationFrame(mapViewportAnimationRef.current);
+      mapViewportAnimationRef.current = null;
+    }
+  }, []);
 
   useEffect(() => {
     setPage(1);
@@ -936,6 +1014,19 @@ export default function App() {
   useEffect(() => {
     pagesRef.current = pages;
   }, [pages]);
+
+  useEffect(() => {
+    mapViewportFrameRef.current = renderedMapViewport;
+  }, [renderedMapViewport]);
+
+  useEffect(() => {
+    return () => {
+      stopMapViewportAnimation();
+      if (detailOpenFrameRef.current) {
+        cancelAnimationFrame(detailOpenFrameRef.current);
+      }
+    };
+  }, [stopMapViewportAnimation]);
 
   useEffect(() => {
     if (typeof window === "undefined") return undefined;
@@ -1061,7 +1152,7 @@ export default function App() {
 
   useEffect(() => {
     if (detailItem && !detailOpen) {
-      const timer = setTimeout(() => setDetailItem(null), 240);
+      const timer = setTimeout(() => setDetailItem(null), 1500);
       return () => clearTimeout(timer);
     }
     return undefined;
@@ -2004,12 +2095,25 @@ export default function App() {
     [itemPageMap],
   );
 
-  const openEquipmentDetail = useCallback((item) => {
-    if (!item) return;
-    setDetailItem(item);
-    setDetailOpen(true);
-    setSheetExpanded(false);
-  }, []);
+  const openEquipmentDetail = useCallback(
+    (item) => {
+      if (!item) return;
+      setSheetExpanded(false);
+      setDetailItem(item);
+      if (detailOpen) return;
+      setDetailOpen(false);
+      if (detailOpenFrameRef.current) {
+        cancelAnimationFrame(detailOpenFrameRef.current);
+      }
+      detailOpenFrameRef.current = requestAnimationFrame(() => {
+        detailOpenFrameRef.current = requestAnimationFrame(() => {
+          setDetailOpen(true);
+          detailOpenFrameRef.current = null;
+        });
+      });
+    },
+    [detailOpen],
+  );
 
   const handleSheetToggle = useCallback(() => {
     setSheetExpanded((prev) => !prev);
@@ -2447,9 +2551,11 @@ export default function App() {
       .map((feature) => {
         const name = getPrefectureName(feature.properties);
         if (!name || !PREFECTURE_COORDS[name]) return null;
-        const path = buildGeoPath(feature.geometry, mapProjection.project);
+        const focusedGeometry = getFocusedPrefectureGeometry(name, feature.geometry);
+        if (!focusedGeometry) return null;
+        const path = buildGeoPath(focusedGeometry, mapProjection.project);
         if (!path) return null;
-        const bounds = getProjectedBounds(feature.geometry, mapProjection.project);
+        const bounds = getProjectedBounds(focusedGeometry, mapProjection.project);
         return bounds ? { prefecture: name, path, bounds } : null;
       })
       .filter(Boolean);
@@ -2504,6 +2610,58 @@ export default function App() {
     return { minX, minY, width, height };
   }, [mapPan.x, mapPan.y, mapViewBox, mapZoom]);
 
+  useEffect(() => {
+    if (mapGestureActive) {
+      stopMapViewportAnimation();
+      setRenderedMapViewport(mapViewport);
+      return;
+    }
+
+    const start = mapViewportFrameRef.current;
+    const target = mapViewport;
+    const maxDelta = Math.max(
+      Math.abs(start.minX - target.minX),
+      Math.abs(start.minY - target.minY),
+      Math.abs(start.width - target.width),
+      Math.abs(start.height - target.height),
+    );
+
+    if (maxDelta < 0.2) {
+      stopMapViewportAnimation();
+      setRenderedMapViewport(target);
+      return;
+    }
+
+    stopMapViewportAnimation();
+    const durationMs = maxDelta > 120 ? 560 : 420;
+    let startedAt = 0;
+
+    const tick = (timestamp) => {
+      if (!startedAt) startedAt = timestamp;
+      const progress = Math.min((timestamp - startedAt) / durationMs, 1);
+      const eased =
+        progress < 0.5
+          ? 4 * progress * progress * progress
+          : 1 - ((-2 * progress + 2) ** 3) / 2;
+      setRenderedMapViewport({
+        minX: start.minX + (target.minX - start.minX) * eased,
+        minY: start.minY + (target.minY - start.minY) * eased,
+        width: start.width + (target.width - start.width) * eased,
+        height: start.height + (target.height - start.height) * eased,
+      });
+      if (progress < 1) {
+        mapViewportAnimationRef.current = requestAnimationFrame(tick);
+      } else {
+        mapViewportAnimationRef.current = null;
+      }
+    };
+
+    mapViewportAnimationRef.current = requestAnimationFrame(tick);
+    return () => {
+      stopMapViewportAnimation();
+    };
+  }, [mapGestureActive, mapViewport, stopMapViewportAnimation]);
+
   const maxMapCount = useMemo(() => {
     return Object.values(mapData.prefectureCounts || {}).reduce(
       (acc, value) => Math.max(acc, value || 0),
@@ -2538,18 +2696,18 @@ export default function App() {
     const marker = prefectureMarkerMap.get(mapInfoPrefecture);
     if (!marker) return null;
     const leftPct =
-      mapViewport.width > 0
-        ? ((marker.x - mapViewport.minX) / mapViewport.width) * 100
+      renderedMapViewport.width > 0
+        ? ((marker.x - renderedMapViewport.minX) / renderedMapViewport.width) * 100
         : 50;
     const topPct =
-      mapViewport.height > 0
-        ? ((marker.y - mapViewport.minY) / mapViewport.height) * 100
+      renderedMapViewport.height > 0
+        ? ((marker.y - renderedMapViewport.minY) / renderedMapViewport.height) * 100
         : 50;
     return {
       left: clampValue(leftPct, 12, 88),
       top: clampValue(topPct, 16, 90),
     };
-  }, [mapInfoPrefecture, mapViewport, prefectureMarkerMap]);
+  }, [mapInfoPrefecture, prefectureMarkerMap, renderedMapViewport]);
 
   const mapInfoData = useMemo(() => {
     if (!mapInfoPrefecture) return null;
@@ -2646,6 +2804,9 @@ export default function App() {
       }
       const rect = mapContainerRef.current?.getBoundingClientRect();
       if (!rect) return;
+      stopMapViewportAnimation();
+      setRenderedMapViewport(mapViewport);
+      setMapGestureActive(true);
       if (event.pointerType === "touch") {
         const pointers = mapPointersRef.current;
         pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
@@ -2686,7 +2847,7 @@ export default function App() {
       };
       mapContainerRef.current?.setPointerCapture?.(event.pointerId);
     },
-    [mapPan, mapViewport, mapZoom],
+    [mapPan, mapViewport, mapZoom, stopMapViewportAnimation],
   );
 
   const handleMapPointerMove = useCallback(
@@ -2756,11 +2917,43 @@ export default function App() {
     if (mapDragRef.current?.pointerId === event.pointerId) {
       mapDragRef.current = null;
     }
+    if (pointers.size === 0 && !mapDragRef.current) {
+      setMapGestureActive(false);
+    }
   }, []);
 
   const detailGuide = useMemo(() => buildEquipmentGuide(detailItem), [detailItem]);
   const currentPapers = detailItem?.papers || [];
   const papersStatus = detailItem?.papersStatus || "";
+  const resultsViewKey = useMemo(
+    () =>
+      [
+        loading ? "loading" : "ready",
+        loadError ? "error" : "ok",
+        page,
+        keyword,
+        region,
+        category,
+        externalOnly ? "1" : "0",
+        freeOnly ? "1" : "0",
+        prefectureFilter,
+        orgFilter,
+        rankedItems.length,
+      ].join("|"),
+    [
+      category,
+      externalOnly,
+      freeOnly,
+      keyword,
+      loadError,
+      loading,
+      orgFilter,
+      page,
+      prefectureFilter,
+      rankedItems.length,
+      region,
+    ],
+  );
   const paperMessage =
     papersStatus === "no_query"
       ? "関連論文の検索語が不足しています。"
@@ -2909,7 +3102,7 @@ export default function App() {
       </header>
 
       <section className="results" ref={resultsRef}>
-        <div className="results-body">
+        <div className={`results-body${loading ? " is-loading" : ""}`}>
           <div className="results-list" ref={resultsListRef}>
             <div className="results-head">
               <h2>検索結果</h2>
@@ -2923,151 +3116,157 @@ export default function App() {
                 </div>
               )}
             </div>
-            {loading ? (
-              <p className="results-status">データを読み込んでいます...</p>
-            ) : loadError ? (
-              <p className="results-status error">{loadError}</p>
-            ) : rankedItems.length === 0 ? (
-              <p className="results-status">該当する設備が見つかりませんでした。</p>
-            ) : (
-              <>
-                <div className="list-header">
-                  <span>設備</span>
-                  <span>所在地 / 近さ</span>
-                  <span>利用</span>
-                  <span>リンク</span>
-                </div>
-                <div className="list-body">
-                  {itemsWithDistance.map((item) => (
-                    <div
-                      key={item.id}
-                      className={`result-row${selectedItemId === item.id ? " is-selected" : ""}`}
-                      role="button"
-                      tabIndex={0}
-                      onClick={() => handleItemSelect(item)}
-                      onKeyDown={(event) => {
-                        if (event.key === "Enter" || event.key === " ") {
-                          event.preventDefault();
-                          handleItemSelect(item);
-                        }
-                      }}
-                      ref={registerListItemRef(item.id)}
-                    >
-                      <div className="result-title">
-                        <p className="category">{item.categoryGeneral}</p>
-                        <strong>{item.name}</strong>
-                        {item.categoryDetail && (
-                          <span className="detail">{item.categoryDetail}</span>
-                        )}
-                      </div>
-                      <div className="result-meta">
-                        <div className="result-distance">
-                          <span className="prefecture">{item.prefecture}</span>
-                          <span className="distance-value">
-                            {formatDistance(item.distanceKm)}
-                          </span>
+            <div
+              key={resultsViewKey}
+              className={`results-content${loading ? " is-loading" : ""}`}
+            >
+              {loading ? (
+                <p className="results-status">データを読み込んでいます...</p>
+              ) : loadError ? (
+                <p className="results-status error">{loadError}</p>
+              ) : rankedItems.length === 0 ? (
+                <p className="results-status">該当する設備が見つかりませんでした。</p>
+              ) : (
+                <>
+                  <div className="list-header">
+                    <span>設備</span>
+                    <span>所在地 / 近さ</span>
+                    <span>利用</span>
+                    <span>リンク</span>
+                  </div>
+                  <div className="list-body">
+                    {itemsWithDistance.map((item, index) => (
+                      <div
+                        key={item.id}
+                        className={`result-row${selectedItemId === item.id ? " is-selected" : ""}`}
+                        style={{ "--row-index": Math.min(index, 12) }}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => handleItemSelect(item)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter" || event.key === " ") {
+                            event.preventDefault();
+                            handleItemSelect(item);
+                          }
+                        }}
+                        ref={registerListItemRef(item.id)}
+                      >
+                        <div className="result-title">
+                          <p className="category">{item.categoryGeneral}</p>
+                          <strong>{item.name}</strong>
+                          {item.categoryDetail && (
+                            <span className="detail">{item.categoryDetail}</span>
+                          )}
                         </div>
-                        <div className="result-tags">
-                          <span className={badgeClass(item.externalUse)}>
-                            {externalLabel(item.externalUse)}
-                          </span>
-                          <span className="fee">{item.feeBand}</span>
+                        <div className="result-meta">
+                          <div className="result-distance">
+                            <span className="prefecture">{item.prefecture}</span>
+                            <span className="distance-value">
+                              {formatDistance(item.distanceKm)}
+                            </span>
+                          </div>
+                          <div className="result-tags">
+                            <span className={badgeClass(item.externalUse)}>
+                              {externalLabel(item.externalUse)}
+                            </span>
+                            <span className="fee">{item.feeBand}</span>
+                          </div>
                         </div>
-                      </div>
-                      <div className="result-actions">
-                        {item.sourceUrl ? (
+                        <div className="result-actions">
+                          {item.sourceUrl ? (
+                            <button
+                              type="button"
+                              className="link-button"
+                              onClick={(event) => {
+                                event.stopPropagation();
+                                handleExternalOpen(item);
+                              }}
+                            >
+                              機器ページへ
+                            </button>
+                          ) : (
+                            <span className="link-disabled">情報元なし</span>
+                          )}
                           <button
                             type="button"
-                            className="link-button"
+                            className="link-button secondary"
                             onClick={(event) => {
                               event.stopPropagation();
-                              handleExternalOpen(item);
+                              handleEqnetAssistOpen(item);
                             }}
                           >
-                            機器ページへ
+                            eqnetで確認
                           </button>
-                        ) : (
-                          <span className="link-disabled">情報元なし</span>
-                        )}
-                        <button
-                          type="button"
-                          className="link-button secondary"
-                          onClick={(event) => {
-                            event.stopPropagation();
-                            handleEqnetAssistOpen(item);
-                          }}
-                        >
-                          eqnetで確認
-                        </button>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                </>
+              )}
+              {!loading && !loadError && (loadedPageCount > 1 || currentPageData.hasNext) && (
+                <div className="pagination">
+                  <div className="pagination-bar" role="navigation" aria-label="ページ送り">
+                    <button
+                      type="button"
+                      className="pager-button"
+                      onClick={handleJumpToFirst}
+                      disabled={!canJumpBackward || loading}
+                      aria-label="最初のページへ"
+                    >
+                      {"<<"}
+                    </button>
+                    <button
+                      type="button"
+                      className="pager-button pager-skip"
+                      onClick={() => handleJumpBy(-5)}
+                      disabled={!canJumpBackward || loading}
+                      aria-label="5ページ戻る"
+                    >
+                      {"<5"}
+                    </button>
+                    <button
+                      type="button"
+                      className="pager-button"
+                      onClick={handlePrevPage}
+                      disabled={!canJumpBackward || loading}
+                      aria-label="前のページへ"
+                    >
+                      {"<"}
+                    </button>
+                    <button type="button" className="page-number is-active" disabled>
+                      {page}
+                    </button>
+                    <button
+                      type="button"
+                      className="pager-button"
+                      onClick={handleNextPage}
+                      disabled={!currentPageData.hasNext || loading}
+                      aria-label="次のページへ"
+                    >
+                      {">"}
+                    </button>
+                    <button
+                      type="button"
+                      className="pager-button pager-skip"
+                      onClick={() => handleJumpBy(5)}
+                      disabled={!canJumpForward || loading}
+                      aria-label="5ページ進む"
+                    >
+                      {"5>"}
+                    </button>
+                    <button
+                      type="button"
+                      className="pager-button"
+                      onClick={handleJumpToLast}
+                      disabled={loadedPageCount === 0 || page === loadedPageCount || loading}
+                      aria-label="読み込み済みの最後へ"
+                    >
+                      {">>"}
+                    </button>
+                  </div>
                 </div>
-              </>
-            )}
-            {!loading && !loadError && (loadedPageCount > 1 || currentPageData.hasNext) && (
-              <div className="pagination">
-                <div className="pagination-bar" role="navigation" aria-label="ページ送り">
-                  <button
-                    type="button"
-                    className="pager-button"
-                    onClick={handleJumpToFirst}
-                    disabled={!canJumpBackward || loading}
-                    aria-label="最初のページへ"
-                  >
-                    {"<<"}
-                  </button>
-                  <button
-                    type="button"
-                    className="pager-button pager-skip"
-                    onClick={() => handleJumpBy(-5)}
-                    disabled={!canJumpBackward || loading}
-                    aria-label="5ページ戻る"
-                  >
-                    {"<5"}
-                  </button>
-                  <button
-                    type="button"
-                    className="pager-button"
-                    onClick={handlePrevPage}
-                    disabled={!canJumpBackward || loading}
-                    aria-label="前のページへ"
-                  >
-                    {"<"}
-                  </button>
-                  <button type="button" className="page-number is-active" disabled>
-                    {page}
-                  </button>
-                  <button
-                    type="button"
-                    className="pager-button"
-                    onClick={handleNextPage}
-                    disabled={!currentPageData.hasNext || loading}
-                    aria-label="次のページへ"
-                  >
-                    {">"}
-                  </button>
-                  <button
-                    type="button"
-                    className="pager-button pager-skip"
-                    onClick={() => handleJumpBy(5)}
-                    disabled={!canJumpForward || loading}
-                    aria-label="5ページ進む"
-                  >
-                    {"5>"}
-                  </button>
-                  <button
-                    type="button"
-                    className="pager-button"
-                    onClick={handleJumpToLast}
-                    disabled={loadedPageCount === 0 || page === loadedPageCount || loading}
-                    aria-label="読み込み済みの最後へ"
-                  >
-                    {">>"}
-                  </button>
-                </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
           <aside
             className="map-panel"
@@ -3097,7 +3296,7 @@ export default function App() {
                 ) : (
                   <svg
                     className="jp-map-svg"
-                    viewBox={`${mapViewport.minX} ${mapViewport.minY} ${mapViewport.width} ${mapViewport.height}`}
+                    viewBox={`${renderedMapViewport.minX} ${renderedMapViewport.minY} ${renderedMapViewport.width} ${renderedMapViewport.height}`}
                     preserveAspectRatio="xMidYMid meet"
                   >
                     <g className="jp-map-shapes">
@@ -3164,22 +3363,7 @@ export default function App() {
                               isEmpty ? " is-empty" : ""
                             }`}
                             transform={`translate(${marker.x} ${marker.y})`}
-                            role="button"
-                            tabIndex={0}
-                            onClick={() => handleMapPrefectureClick(marker.prefecture)}
-                            onMouseEnter={(event) =>
-                              handleMapHover(marker.prefecture, event)
-                            }
-                            onMouseMove={(event) =>
-                              handleMapHover(marker.prefecture, event)
-                            }
-                            onMouseLeave={() => setMapHover(null)}
-                            onKeyDown={(event) => {
-                              if (event.key === "Enter" || event.key === " ") {
-                                event.preventDefault();
-                                handleMapPrefectureClick(marker.prefecture);
-                              }
-                            }}
+                            aria-hidden="true"
                           >
                             <title>
                               {marker.prefecture} {marker.equipmentCount}件 / {marker.facilityCount}拠点
@@ -3259,8 +3443,8 @@ export default function App() {
                                     handleOrgSelect(org.orgName, mapInfoData.prefecture)
                                   }
                                 >
-                                  <span>{org.orgName}</span>
-                                  <span>{org.count}件</span>
+                                  <span className="map-org-name">{org.orgName}</span>
+                                  <span className="map-org-count">{org.count}件</span>
                                 </button>
                               </li>
                             ))}
@@ -3311,8 +3495,8 @@ export default function App() {
                     <p className="map-list-note">検索結果から暫定表示中</p>
                   )}
                   <ul>
-                    {sortedTopPrefectures.map((item) => (
-                      <li key={item.prefecture}>
+                    {sortedTopPrefectures.map((item, index) => (
+                      <li key={item.prefecture} style={{ "--map-list-index": Math.min(index, 8) }}>
                         <button
                           type="button"
                           className="prefecture-row"
