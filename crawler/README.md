@@ -81,6 +81,13 @@ kikidoko-crawl --source all --dry-run
 - `KIKIDOKO_DRY_RUN`: set to `1` to skip Firestore writes
 - `KIKIDOKO_OUTPUT_PATH`: JSONL output path for dry runs
 
+## EQNET link backfill
+
+```sh
+kikidoko-eqnet-backfill --project-id <your-project-id> --dry-run --limit 50
+kikidoko-eqnet-backfill --project-id <your-project-id> --batch-size 200
+```
+
 ## Source policy
 
 - Prefer HTML/CSV/JSON endpoints.

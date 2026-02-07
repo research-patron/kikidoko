@@ -20,6 +20,7 @@ dependencies = [
 [project.scripts]
 kikidoko-crawl = "kikidoko_crawler.main:main"
 kikidoko-backfill = "kikidoko_crawler.backfill:main"
+kikidoko-eqnet-backfill = "kikidoko_crawler.eqnet_backfill:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

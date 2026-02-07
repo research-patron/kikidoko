@@ -134,6 +134,8 @@ const MAP_ZOOM_STEP = 1.15;
 const DEFAULT_MAP_ZOOM = 5.0;
 const MAP_ORG_FETCH_LIMIT = 400;
 const MAP_ORG_FETCH_MAX_PAGES = 10;
+const REGION_CATEGORY_FETCH_LIMIT = 400;
+const REGION_CATEGORY_FETCH_MAX_PAGES = 20;
 
 const toMercatorY = (lat) => {
   const clamped = Math.max(-85, Math.min(85, lat));
@@ -637,7 +639,11 @@ const ORG_KEYWORD_TERMS = [
   "学院",
 ];
 
-const EQNET_BASE_URL = "https://eqnet.jp";
+const APP_BASE_URL = import.meta.env.BASE_URL || "/";
+const TERMS_URL = `${APP_BASE_URL}terms.html`;
+const PRIVACY_POLICY_URL = `${APP_BASE_URL}privacy-policy.html`;
+const CONTACT_URL = "https://student-subscription.com/contact/";
+const EQNET_PUBLIC_EQUIPMENT_URL = "https://eqnet.jp/top#/public/equipment";
 const PAGE_SIZE = 6;
 
 const badgeClass = (value) => {
@@ -821,9 +827,24 @@ const getDistanceKm = (from, to) => {
   return earthRadiusKm * c;
 };
 
-const buildEqnetLink = (item) => {
-  if (item.eqnetUrl) return item.eqnetUrl;
-  return EQNET_BASE_URL;
+const buildEqnetHints = (item) => {
+  if (!item) return [];
+  const values = [
+    item.name,
+    item.orgName,
+    item.categoryGeneral,
+    item.prefecture,
+    item.eqnetEquipmentId ? `設備ID: ${item.eqnetEquipmentId}` : "",
+  ];
+  const seen = new Set();
+  const hints = [];
+  values.forEach((value) => {
+    const text = String(value || "").trim();
+    if (!text || seen.has(text)) return;
+    seen.add(text);
+    hints.push(text);
+  });
+  return hints.slice(0, 4);
 };
 
 const clampValue = (value, min, max) => Math.max(min, Math.min(max, value));
@@ -855,10 +876,17 @@ export default function App() {
   const [orgFilter, setOrgFilter] = useState("");
   const [region, setRegion] = useState("all");
   const [category, setCategory] = useState("all");
+  const [regionInput, setRegionInput] = useState("all");
+  const [categoryInput, setCategoryInput] = useState("all");
+  const [regionCategoryOptionsMap, setRegionCategoryOptionsMap] = useState({});
+  const [categoryOptionsLoading, setCategoryOptionsLoading] = useState(false);
   const [externalOnly, setExternalOnly] = useState(false);
   const [freeOnly, setFreeOnly] = useState(false);
   const [page, setPage] = useState(1);
   const [activeExternal, setActiveExternal] = useState(null);
+  const [eqnetAssistItem, setEqnetAssistItem] = useState(null);
+  const [eqnetCopiedField, setEqnetCopiedField] = useState("");
+  const [eqnetAssistAttention, setEqnetAssistAttention] = useState(false);
   const [mapInfoPrefecture, setMapInfoPrefecture] = useState("");
   const [mapHover, setMapHover] = useState(null);
   const [mapOrgCache, setMapOrgCache] = useState({});
@@ -889,11 +917,21 @@ export default function App() {
   const mapDragRef = useRef(null);
   const mapPointersRef = useRef(new Map());
   const mapPinchRef = useRef(null);
+  const eqnetCopyTimerRef = useRef(null);
+  const eqnetAssistAttentionTimerRef = useRef(null);
 
   useEffect(() => {
     setPage(1);
     setSkipNameOrder(false);
   }, [keyword, region, category, externalOnly, freeOnly, orgFilter, prefectureFilter]);
+
+  useEffect(() => {
+    setRegionInput(region);
+  }, [region]);
+
+  useEffect(() => {
+    setCategoryInput(category);
+  }, [category]);
 
   useEffect(() => {
     pagesRef.current = pages;
@@ -984,6 +1022,31 @@ export default function App() {
   }, [activeExternal]);
 
   useEffect(() => {
+    if (!eqnetAssistItem) return undefined;
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setEqnetAssistItem(null);
+        setEqnetCopiedField("");
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [eqnetAssistItem]);
+
+  useEffect(() => {
+    return () => {
+      if (eqnetCopyTimerRef.current) {
+        clearTimeout(eqnetCopyTimerRef.current);
+      }
+      if (eqnetAssistAttentionTimerRef.current) {
+        clearTimeout(eqnetAssistAttentionTimerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
     if (!detailOpen) return undefined;
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -1018,6 +1081,8 @@ export default function App() {
     prefectureSnapshotRef.current = null;
     setRegion("all");
     setCategory("all");
+    setRegionInput("all");
+    setCategoryInput("all");
     setExternalOnly(false);
     setFreeOnly(false);
     setPage(1);
@@ -1028,6 +1093,8 @@ export default function App() {
     setOrgFilter("");
     setKeywordInput(trimmed);
     setKeyword(trimmed);
+    setRegion(regionInput);
+    setCategory(categoryInput);
   };
 
   const handlePrefectureSelect = (prefecture) => {
@@ -1046,6 +1113,7 @@ export default function App() {
     setOrgFilter("");
     setPrefectureFilter(prefecture);
     setRegion(PREFECTURE_REGION_MAP[prefecture] || "all");
+    setRegionInput(PREFECTURE_REGION_MAP[prefecture] || "all");
     setPage(1);
     if (resultsRef.current) {
       resultsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1078,6 +1146,7 @@ export default function App() {
       if (prefecture) {
         setPrefectureFilter(prefecture);
         setRegion(PREFECTURE_REGION_MAP[prefecture] || "all");
+        setRegionInput(PREFECTURE_REGION_MAP[prefecture] || "all");
       }
       setPage(1);
       if (resultsRef.current) {
@@ -1105,6 +1174,8 @@ export default function App() {
       setKeyword(snapshot.keyword);
       setRegion(snapshot.region);
       setCategory(snapshot.category);
+      setRegionInput(snapshot.region);
+      setCategoryInput(snapshot.category);
       setExternalOnly(snapshot.externalOnly);
       setFreeOnly(snapshot.freeOnly);
     }
@@ -1134,6 +1205,9 @@ export default function App() {
       lng,
       sourceUrl: data.source_url || "",
       eqnetUrl: data.eqnet_url || "",
+      eqnetEquipmentId: data.eqnet_equipment_id || "",
+      eqnetMatchStatus: data.eqnet_match_status || "",
+      eqnetCandidates: Array.isArray(data.eqnet_candidates) ? data.eqnet_candidates : [],
       crawledAt: data.crawled_at || "",
       papers: Array.isArray(data.papers) ? data.papers : [],
       papersStatus: data.papers_status || "",
@@ -1571,6 +1645,105 @@ export default function App() {
     setActiveExternal(null);
   };
 
+  const openEqnetPage = () => {
+    if (typeof window === "undefined") return;
+    window.open(EQNET_PUBLIC_EQUIPMENT_URL, "_blank", "noopener,noreferrer");
+  };
+
+  const copyText = async (value) => {
+    const text = String(value || "").trim();
+    if (!text) return false;
+    if (navigator?.clipboard?.writeText && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    try {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.opacity = "0";
+      textArea.style.pointerEvents = "none";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    } catch (error) {
+      console.error(error);
+      return false;
+    }
+  };
+
+  const setEqnetCopyFeedback = (key) => {
+    if (eqnetCopyTimerRef.current) {
+      clearTimeout(eqnetCopyTimerRef.current);
+    }
+    setEqnetCopiedField(key);
+    eqnetCopyTimerRef.current = setTimeout(() => {
+      setEqnetCopiedField("");
+      eqnetCopyTimerRef.current = null;
+    }, 1600);
+  };
+
+  const handleEqnetFieldCopy = async (key, value) => {
+    const copied = await copyText(value);
+    if (copied) {
+      setEqnetCopyFeedback(key);
+    }
+  };
+
+  const handleEqnetSummaryCopy = async () => {
+    if (!eqnetAssistItem) return;
+    const summary = [
+      eqnetAssistItem.name ? `機器名: ${eqnetAssistItem.name}` : "",
+      eqnetAssistItem.orgName ? `保有機関: ${eqnetAssistItem.orgName}` : "",
+      eqnetAssistItem.prefecture ? `都道府県: ${eqnetAssistItem.prefecture}` : "",
+      eqnetAssistItem.category ? `カテゴリ: ${eqnetAssistItem.category}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const copied = await copyText(summary);
+    if (copied) {
+      setEqnetCopyFeedback("summary");
+    }
+  };
+
+  const handleEqnetAssistOpen = (item) => {
+    if (!item) return;
+    if (eqnetAssistAttentionTimerRef.current) {
+      clearTimeout(eqnetAssistAttentionTimerRef.current);
+    }
+    setEqnetAssistItem({
+      name: item.name || "機器名不明",
+      orgName: item.orgName || "",
+      category: item.categoryGeneral || "",
+      prefecture: item.prefecture || "",
+      hints: buildEqnetHints(item),
+    });
+    setEqnetCopiedField("");
+    setEqnetAssistAttention(true);
+    eqnetAssistAttentionTimerRef.current = setTimeout(() => {
+      setEqnetAssistAttention(false);
+      eqnetAssistAttentionTimerRef.current = null;
+    }, 1800);
+  };
+
+  const handleEqnetAssistClose = () => {
+    setEqnetAssistItem(null);
+    setEqnetCopiedField("");
+    setEqnetAssistAttention(false);
+    if (eqnetAssistAttentionTimerRef.current) {
+      clearTimeout(eqnetAssistAttentionTimerRef.current);
+      eqnetAssistAttentionTimerRef.current = null;
+    }
+  };
+
   const requestLocation = () => {
     if (!navigator.geolocation) {
       setLocationError("このブラウザでは位置情報が利用できません。");
@@ -1702,11 +1875,82 @@ export default function App() {
     return Array.from(map.values());
   }, [pages]);
 
-  const categoryOptions = useMemo(() => {
+  const globalCategoryOptions = useMemo(() => {
     return Array.from(
       new Set(loadedItems.map((item) => item.categoryGeneral).filter(Boolean)),
     ).sort();
   }, [loadedItems]);
+
+  useEffect(() => {
+    if (regionInput === "all") {
+      setCategoryOptionsLoading(false);
+      return undefined;
+    }
+    const cached = regionCategoryOptionsMap[regionInput];
+    if (Array.isArray(cached)) {
+      setCategoryOptionsLoading(false);
+      return undefined;
+    }
+    let isMounted = true;
+    const loadRegionCategories = async () => {
+      setCategoryOptionsLoading(true);
+      try {
+        const categories = new Set();
+        let lastDoc = null;
+        let pageCount = 0;
+        let hasMore = true;
+        while (hasMore && pageCount < REGION_CATEGORY_FETCH_MAX_PAGES) {
+          const queryParts = [
+            collection(db, "equipment"),
+            where("region", "==", regionInput),
+            orderBy(documentId()),
+            limit(REGION_CATEGORY_FETCH_LIMIT),
+          ];
+          if (lastDoc) {
+            queryParts.splice(-1, 0, startAfter(lastDoc));
+          }
+          const snap = await getDocs(firestoreQuery(...queryParts));
+          snap.forEach((docSnap) => {
+            const value = docSnap.data()?.category_general;
+            if (typeof value === "string" && value.trim()) {
+              categories.add(value.trim());
+            }
+          });
+          lastDoc = snap.docs[snap.docs.length - 1] || null;
+          hasMore = snap.size === REGION_CATEGORY_FETCH_LIMIT && Boolean(lastDoc);
+          pageCount += 1;
+        }
+        if (!isMounted) return;
+        const sorted = Array.from(categories).sort((a, b) => a.localeCompare(b, "ja"));
+        setRegionCategoryOptionsMap((prev) => ({ ...prev, [regionInput]: sorted }));
+      } catch (error) {
+        console.error(error);
+        if (!isMounted) return;
+        setRegionCategoryOptionsMap((prev) => ({ ...prev, [regionInput]: [] }));
+      } finally {
+        if (isMounted) {
+          setCategoryOptionsLoading(false);
+        }
+      }
+    };
+    loadRegionCategories();
+    return () => {
+      isMounted = false;
+    };
+  }, [regionCategoryOptionsMap, regionInput]);
+
+  const categoryOptions = useMemo(() => {
+    if (regionInput === "all") {
+      return globalCategoryOptions;
+    }
+    return regionCategoryOptionsMap[regionInput] || [];
+  }, [globalCategoryOptions, regionCategoryOptionsMap, regionInput]);
+
+  useEffect(() => {
+    if (categoryInput === "all") return;
+    if (categoryOptions.includes(categoryInput)) return;
+    setCategoryInput("all");
+  }, [categoryInput, categoryOptions]);
 
   const itemsWithDistance = useMemo(() => {
     const withDistance = rankedItems.map((item) => {
@@ -2573,8 +2817,11 @@ export default function App() {
                 <label htmlFor="region">地域</label>
                 <select
                   id="region"
-                  value={region}
-                  onChange={(event) => setRegion(event.target.value)}
+                  value={regionInput}
+                  onChange={(event) => {
+                    setRegionInput(event.target.value);
+                    setCategoryInput("all");
+                  }}
                 >
                   <option value="all">全国</option>
                   {REGION_ORDER.map((item) => (
@@ -2588,10 +2835,16 @@ export default function App() {
                 <label htmlFor="category">カテゴリ</label>
                 <select
                   id="category"
-                  value={category}
-                  onChange={(event) => setCategory(event.target.value)}
+                  value={categoryInput}
+                  onChange={(event) => setCategoryInput(event.target.value)}
+                  disabled={regionInput !== "all" && categoryOptionsLoading}
                 >
                   <option value="all">すべて</option>
+                  {regionInput !== "all" && categoryOptionsLoading && (
+                    <option value="" disabled>
+                      読み込み中...
+                    </option>
+                  )}
                   {categoryOptions.map((item) => (
                     <option key={item} value={item}>
                       {item}
@@ -2736,15 +2989,16 @@ export default function App() {
                         ) : (
                           <span className="link-disabled">情報元なし</span>
                         )}
-                        <a
-                          href={buildEqnetLink(item)}
+                        <button
+                          type="button"
                           className="link-button secondary"
-                          target="_blank"
-                          rel="noreferrer"
-                          onClick={(event) => event.stopPropagation()}
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            handleEqnetAssistOpen(item);
+                          }}
                         >
-                          eqnetで利用登録
-                        </a>
+                          eqnetで確認
+                        </button>
                       </div>
                     </div>
                   ))}
@@ -3118,6 +3372,83 @@ export default function App() {
         </div>
       )}
 
+      {eqnetAssistItem && (
+        <aside
+          className={`eqnet-assist-panel${eqnetAssistAttention ? " is-attention" : ""}`}
+          aria-live="polite"
+        >
+          <div className="eqnet-assist-head">
+            <div>
+              <h4>eqnet検索補助</h4>
+              <p>先に検索語をコピーしてから「eqnetを開く」を押してください。</p>
+            </div>
+            <button type="button" onClick={handleEqnetAssistClose} aria-label="補助パネルを閉じる">
+              閉じる
+            </button>
+          </div>
+          <div className="eqnet-assist-fields">
+            <div className="eqnet-assist-field">
+              <span>機器名</span>
+              <strong>{eqnetAssistItem.name}</strong>
+              <button type="button" onClick={() => handleEqnetFieldCopy("name", eqnetAssistItem.name)}>
+                {eqnetCopiedField === "name" ? "コピー済み" : "コピー"}
+              </button>
+            </div>
+            {eqnetAssistItem.orgName && (
+              <div className="eqnet-assist-field">
+                <span>保有機関</span>
+                <strong>{eqnetAssistItem.orgName}</strong>
+                <button
+                  type="button"
+                  onClick={() => handleEqnetFieldCopy("org", eqnetAssistItem.orgName)}
+                >
+                  {eqnetCopiedField === "org" ? "コピー済み" : "コピー"}
+                </button>
+              </div>
+            )}
+            {eqnetAssistItem.prefecture && (
+              <div className="eqnet-assist-field">
+                <span>都道府県</span>
+                <strong>{eqnetAssistItem.prefecture}</strong>
+                <button
+                  type="button"
+                  onClick={() => handleEqnetFieldCopy("prefecture", eqnetAssistItem.prefecture)}
+                >
+                  {eqnetCopiedField === "prefecture" ? "コピー済み" : "コピー"}
+                </button>
+              </div>
+            )}
+            {eqnetAssistItem.category && (
+              <div className="eqnet-assist-field">
+                <span>カテゴリ</span>
+                <strong>{eqnetAssistItem.category}</strong>
+                <button
+                  type="button"
+                  onClick={() => handleEqnetFieldCopy("category", eqnetAssistItem.category)}
+                >
+                  {eqnetCopiedField === "category" ? "コピー済み" : "コピー"}
+                </button>
+              </div>
+            )}
+          </div>
+          {eqnetAssistItem.hints.length > 0 && (
+            <div className="eqnet-assist-hints">
+              {eqnetAssistItem.hints.map((hint) => (
+                <span key={hint}>{hint}</span>
+              ))}
+            </div>
+          )}
+          <div className="eqnet-assist-actions">
+            <button type="button" onClick={handleEqnetSummaryCopy}>
+              {eqnetCopiedField === "summary" ? "コピー済み" : "まとめてコピー"}
+            </button>
+            <button type="button" onClick={openEqnetPage}>
+              eqnetを開く
+            </button>
+          </div>
+        </aside>
+      )}
+
       {detailItem && (
         <div
           className={`equipment-sheet${detailOpen ? " is-open" : ""}${
@@ -3224,14 +3555,13 @@ export default function App() {
               ) : (
                 <span className="link-disabled">情報元なし</span>
               )}
-              <a
-                href={buildEqnetLink(detailItem)}
+              <button
+                type="button"
                 className="link-button secondary"
-                target="_blank"
-                rel="noreferrer"
+                onClick={() => handleEqnetAssistOpen(detailItem)}
               >
-                eqnetで利用登録
-              </a>
+                eqnetで確認
+              </button>
             </div>
             <p className="equipment-sheet-note">
               詳細な用途や利用条件は機器ページでご確認ください。
@@ -3243,6 +3573,17 @@ export default function App() {
       <footer className="footer">
         <p>データは公的機関が公開する情報をもとに収集・更新します。</p>
         <p>利用登録や手続きはeqnet側で実施してください。</p>
+        <p className="footer-links">
+          <a href={TERMS_URL} target="_blank" rel="noreferrer">
+            利用規約
+          </a>
+          <a href={PRIVACY_POLICY_URL} target="_blank" rel="noreferrer">
+            プライバシーポリシー
+          </a>
+          <a href={CONTACT_URL} target="_blank" rel="noreferrer">
+            お問い合わせ
+          </a>
+        </p>
       </footer>
     </div>
   );

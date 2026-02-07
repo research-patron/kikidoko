@@ -47,12 +47,7 @@ body {
   min-height: 100vh;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-image:
-    radial-gradient(rgba(120, 93, 55, 0.06) 1px, transparent 1px),
-    radial-gradient(rgba(120, 93, 55, 0.04) 1px, transparent 1px),
-    linear-gradient(120deg, #fff4df 0%, #fef7eb 50%, #faecd3 100%);
-  background-size: 28px 28px, 56px 56px, cover;
-  background-position: 0 0, 12px 12px, center;
+  background-color: #fef0d2;
 }
 
 a {
@@ -67,4 +62,5 @@ select {
 
 #root {
   min-height: 100vh;
+  background-color: #fef0d2;
 }
