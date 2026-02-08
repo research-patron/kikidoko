@@ -126,6 +126,26 @@ const PREFECTURE_REGION_MAP = {
   沖縄県: "沖縄",
 };
 
+const REGION_PREFECTURE_MAP = REGION_ORDER.reduce((acc, regionName) => {
+  acc[regionName] = Object.keys(PREFECTURE_REGION_MAP).filter(
+    (prefecture) => PREFECTURE_REGION_MAP[prefecture] === regionName,
+  );
+  return acc;
+}, {});
+
+const PREFECTURE_KEYWORD_CANDIDATES = [
+  ...Object.keys(PREFECTURE_COORDS).map((prefecture) => ({
+    needle: prefecture,
+    prefecture,
+  })),
+  ...Object.keys(PREFECTURE_COORDS)
+    .filter((prefecture) => /[都府県]$/.test(prefecture))
+    .map((prefecture) => ({
+      needle: prefecture.slice(0, -1),
+      prefecture,
+    })),
+].sort((a, b) => b.needle.length - a.needle.length);
+
 const MAP_VIEWBOX_SIZE = 1000;
 const MAP_PADDING = 24;
 const MAP_ZOOM_MIN = 1;
@@ -705,6 +725,14 @@ const TERMS_URL = `${APP_BASE_URL}terms.html`;
 const PRIVACY_POLICY_URL = `${APP_BASE_URL}privacy-policy.html`;
 const CONTACT_URL = "https://student-subscription.com/contact/";
 const EQNET_PUBLIC_EQUIPMENT_URL = "https://eqnet.jp/top#/public/equipment";
+const EQNET_ATTENTION_DURATION_MS = 2250;
+const EQNET_ATTENTION_ITERATIONS = 2;
+const EQNET_ATTENTION_ECHO_DELAY_MS = 140;
+const EQNET_ATTENTION_END_BUFFER_MS = 120;
+const EQNET_ATTENTION_TOTAL_MS =
+  EQNET_ATTENTION_DURATION_MS * EQNET_ATTENTION_ITERATIONS +
+  EQNET_ATTENTION_ECHO_DELAY_MS +
+  EQNET_ATTENTION_END_BUFFER_MS;
 const PAGE_SIZE = 6;
 
 const badgeClass = (value) => {
@@ -910,6 +938,17 @@ const buildEqnetHints = (item) => {
 
 const clampValue = (value, min, max) => Math.max(min, Math.min(max, value));
 
+const detectPrefectureFromKeyword = (value) => {
+  const compact = String(value || "").trim().replace(/\s+/g, "");
+  if (!compact) return "";
+  for (const candidate of PREFECTURE_KEYWORD_CANDIDATES) {
+    if (candidate.needle && compact.includes(candidate.needle)) {
+      return candidate.prefecture;
+    }
+  }
+  return "";
+};
+
 export default function App() {
   const [pages, setPages] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -938,7 +977,7 @@ export default function App() {
     height: MAP_VIEWBOX_SIZE,
   });
   const [mapGestureActive, setMapGestureActive] = useState(false);
-  const [resultsListHeight, setResultsListHeight] = useState(0);
+  const [appliedColumnHeight, setAppliedColumnHeight] = useState(0);
   const [isNarrowLayout, setIsNarrowLayout] = useState(false);
   const [prefectureFilter, setPrefectureFilter] = useState("");
   const [orgFilter, setOrgFilter] = useState("");
@@ -990,6 +1029,12 @@ export default function App() {
   const detailOpenFrameRef = useRef(null);
   const eqnetCopyTimerRef = useRef(null);
   const eqnetAssistAttentionTimerRef = useRef(null);
+  const attentionRestartRafRef = useRef(null);
+  const mobilePaginationScrollPendingRef = useRef(false);
+  const measuredResultsListHeightRef = useRef(0);
+  const prevLoadingRef = useRef(loading);
+  const heightSyncFrameRef = useRef(null);
+  const stableItemsWithDistanceRef = useRef([]);
 
   const stopMapViewportAnimation = useCallback(() => {
     if (mapViewportAnimationRef.current) {
@@ -997,6 +1042,39 @@ export default function App() {
       mapViewportAnimationRef.current = null;
     }
   }, []);
+
+  const cancelHeightSyncFrame = useCallback(() => {
+    if (heightSyncFrameRef.current) {
+      cancelAnimationFrame(heightSyncFrameRef.current);
+      heightSyncFrameRef.current = null;
+    }
+  }, []);
+
+  const clearEqnetAttentionPlayback = useCallback(() => {
+    if (eqnetAssistAttentionTimerRef.current) {
+      clearTimeout(eqnetAssistAttentionTimerRef.current);
+      eqnetAssistAttentionTimerRef.current = null;
+    }
+    if (attentionRestartRafRef.current) {
+      cancelAnimationFrame(attentionRestartRafRef.current);
+      attentionRestartRafRef.current = null;
+    }
+  }, []);
+
+  const restartEqnetAttention = useCallback(() => {
+    clearEqnetAttentionPlayback();
+    setEqnetAssistAttention(false);
+    attentionRestartRafRef.current = requestAnimationFrame(() => {
+      attentionRestartRafRef.current = requestAnimationFrame(() => {
+        setEqnetAssistAttention(true);
+        eqnetAssistAttentionTimerRef.current = setTimeout(() => {
+          setEqnetAssistAttention(false);
+          eqnetAssistAttentionTimerRef.current = null;
+        }, EQNET_ATTENTION_TOTAL_MS);
+        attentionRestartRafRef.current = null;
+      });
+    });
+  }, [clearEqnetAttentionPlayback]);
 
   useEffect(() => {
     setPage(1);
@@ -1025,8 +1103,9 @@ export default function App() {
       if (detailOpenFrameRef.current) {
         cancelAnimationFrame(detailOpenFrameRef.current);
       }
+      cancelHeightSyncFrame();
     };
-  }, [stopMapViewportAnimation]);
+  }, [cancelHeightSyncFrame, stopMapViewportAnimation]);
 
   useEffect(() => {
     if (typeof window === "undefined") return undefined;
@@ -1053,9 +1132,12 @@ export default function App() {
     const updateHeight = () => {
       const nextHeight = element.offsetHeight;
       if (!nextHeight) return;
-      setResultsListHeight((prev) =>
-        Math.abs(prev - nextHeight) > 1 ? nextHeight : prev,
-      );
+      measuredResultsListHeightRef.current = nextHeight;
+      if (!isNarrowLayout && !loading) {
+        setAppliedColumnHeight((prev) =>
+          Math.abs(prev - nextHeight) > 1 ? nextHeight : prev,
+        );
+      }
     };
     updateHeight();
     const observer =
@@ -1068,8 +1150,40 @@ export default function App() {
       observer?.disconnect();
       window.removeEventListener("resize", updateHeight);
     };
-  }, []);
+  }, [isNarrowLayout, loading]);
 
+  useEffect(() => {
+    if (isNarrowLayout) {
+      prevLoadingRef.current = loading;
+      return;
+    }
+
+    const wasLoading = prevLoadingRef.current;
+    cancelHeightSyncFrame();
+
+    if (!wasLoading && loading) {
+      const fallbackHeight = measuredResultsListHeightRef.current;
+      setAppliedColumnHeight((prev) => {
+        const lockedHeight = prev > 0 ? prev : fallbackHeight;
+        if (!lockedHeight) return prev;
+        return Math.abs(prev - lockedHeight) > 1 ? lockedHeight : prev;
+      });
+    } else if (wasLoading && !loading) {
+      heightSyncFrameRef.current = requestAnimationFrame(() => {
+        heightSyncFrameRef.current = requestAnimationFrame(() => {
+          const nextHeight = measuredResultsListHeightRef.current;
+          if (nextHeight) {
+            setAppliedColumnHeight((prev) =>
+              Math.abs(prev - nextHeight) > 1 ? nextHeight : prev,
+            );
+          }
+          heightSyncFrameRef.current = null;
+        });
+      });
+    }
+
+    prevLoadingRef.current = loading;
+  }, [cancelHeightSyncFrame, isNarrowLayout, loading]);
 
   useEffect(() => {
     if (!activeExternal) return undefined;
@@ -1116,26 +1230,31 @@ export default function App() {
     if (!eqnetAssistItem) return undefined;
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
+        clearEqnetAttentionPlayback();
         setEqnetAssistItem(null);
         setEqnetCopiedField("");
+        setEqnetAssistAttention(false);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [eqnetAssistItem]);
+  }, [clearEqnetAttentionPlayback, eqnetAssistItem]);
+
+  useEffect(() => {
+    if (!eqnetAssistItem) return;
+    restartEqnetAttention();
+  }, [eqnetAssistItem, restartEqnetAttention]);
 
   useEffect(() => {
     return () => {
       if (eqnetCopyTimerRef.current) {
         clearTimeout(eqnetCopyTimerRef.current);
       }
-      if (eqnetAssistAttentionTimerRef.current) {
-        clearTimeout(eqnetAssistAttentionTimerRef.current);
-      }
+      clearEqnetAttentionPlayback();
     };
-  }, []);
+  }, [clearEqnetAttentionPlayback]);
 
   useEffect(() => {
     if (!detailOpen) return undefined;
@@ -1163,6 +1282,10 @@ export default function App() {
       setMapHover(null);
     }
   }, [mapInfoPrefecture]);
+
+  useEffect(() => {
+    setMapInfoPrefecture("");
+  }, [keyword, prefectureFilter, region]);
 
   const handleReset = () => {
     setKeywordInput("");
@@ -1540,6 +1663,22 @@ export default function App() {
   const keywordTokens = useMemo(() => buildKeywordTokens(keyword), [buildKeywordTokens, keyword]);
   const aliasKeys = useMemo(() => detectAliasKeys(keyword), [keyword]);
   const normalizedKeyword = useMemo(() => normalizeForMatch(keyword), [keyword]);
+  const keywordFocusedPrefecture = useMemo(
+    () => detectPrefectureFromKeyword(keyword),
+    [keyword],
+  );
+  const searchFocusedPrefecture = useMemo(
+    () => prefectureFilter || keywordFocusedPrefecture || "",
+    [keywordFocusedPrefecture, prefectureFilter],
+  );
+  const mapFocusedPrefecture = useMemo(
+    () => searchFocusedPrefecture || mapInfoPrefecture || "",
+    [mapInfoPrefecture, searchFocusedPrefecture],
+  );
+  const mapFocusedRegion = useMemo(() => {
+    if (mapFocusedPrefecture) return "";
+    return region !== "all" ? region : "";
+  }, [mapFocusedPrefecture, region]);
   const normalizedKeywordTokens = useMemo(
     () => keywordTokens.map((token) => normalizeForMatch(token)).filter(Boolean),
     [keywordTokens],
@@ -1807,9 +1946,7 @@ export default function App() {
 
   const handleEqnetAssistOpen = (item) => {
     if (!item) return;
-    if (eqnetAssistAttentionTimerRef.current) {
-      clearTimeout(eqnetAssistAttentionTimerRef.current);
-    }
+    clearEqnetAttentionPlayback();
     setEqnetAssistItem({
       name: item.name || "機器名不明",
       orgName: item.orgName || "",
@@ -1818,22 +1955,24 @@ export default function App() {
       hints: buildEqnetHints(item),
     });
     setEqnetCopiedField("");
-    setEqnetAssistAttention(true);
-    eqnetAssistAttentionTimerRef.current = setTimeout(() => {
-      setEqnetAssistAttention(false);
-      eqnetAssistAttentionTimerRef.current = null;
-    }, 1800);
+    setEqnetAssistAttention(false);
   };
 
   const handleEqnetAssistClose = () => {
+    clearEqnetAttentionPlayback();
     setEqnetAssistItem(null);
     setEqnetCopiedField("");
     setEqnetAssistAttention(false);
-    if (eqnetAssistAttentionTimerRef.current) {
-      clearTimeout(eqnetAssistAttentionTimerRef.current);
-      eqnetAssistAttentionTimerRef.current = null;
-    }
   };
+
+  const eqnetAssistAttentionStyle = useMemo(
+    () => ({
+      "--eqnet-attention-duration": `${EQNET_ATTENTION_DURATION_MS}ms`,
+      "--eqnet-attention-iterations": String(EQNET_ATTENTION_ITERATIONS),
+      "--eqnet-attention-echo-delay": `${EQNET_ATTENTION_ECHO_DELAY_MS}ms`,
+    }),
+    [],
+  );
 
   const requestLocation = () => {
     if (!navigator.geolocation) {
@@ -2183,6 +2322,38 @@ export default function App() {
     };
   }, []);
 
+  const queueMobilePaginationScroll = useCallback(() => {
+    if (typeof window === "undefined") return;
+    if (!window.matchMedia("(max-width: 640px)").matches) return;
+    mobilePaginationScrollPendingRef.current = true;
+  }, []);
+
+  useEffect(() => {
+    if (!mobilePaginationScrollPendingRef.current) return;
+    if (loading) return;
+    if (!window.matchMedia("(max-width: 640px)").matches) {
+      mobilePaginationScrollPendingRef.current = false;
+      return;
+    }
+    const listRoot = resultsListRef.current;
+    if (!listRoot) {
+      mobilePaginationScrollPendingRef.current = false;
+      return;
+    }
+    const targetAnchor =
+      listRoot.querySelector(".results-head") ||
+      listRoot.querySelector(".list-body .result-row");
+    if (!targetAnchor) {
+      mobilePaginationScrollPendingRef.current = false;
+      return;
+    }
+    const run = () => {
+      targetAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
+      mobilePaginationScrollPendingRef.current = false;
+    };
+    requestAnimationFrame(() => requestAnimationFrame(run));
+  }, [loading, page]);
+
   useEffect(() => {
     if (!selectedItemId) return;
     const node = listItemRefs.current.get(selectedItemId);
@@ -2193,6 +2364,7 @@ export default function App() {
 
   const handlePrevPage = () => {
     if (page > 1) {
+      queueMobilePaginationScroll();
       setPage((current) => Math.max(1, current - 1));
     }
   };
@@ -2201,11 +2373,13 @@ export default function App() {
     const nextPage = page + 1;
     if (!currentPageData.hasNext) return;
     if (pages[nextPage - 1]) {
+      queueMobilePaginationScroll();
       setPage(nextPage);
       return;
     }
     const cursor = currentPageData.lastDoc;
     if (cursor) {
+      queueMobilePaginationScroll();
       loadPage({ pageIndex: nextPage - 1, cursor, reset: false });
       setPage(nextPage);
     }
@@ -2257,6 +2431,8 @@ export default function App() {
 
   const handleJumpBy = (step) => {
     const target = Math.max(1, page + step);
+    if (target === page) return;
+    queueMobilePaginationScroll();
     if (step > 0) {
       jumpToPage(target);
     } else {
@@ -2265,11 +2441,15 @@ export default function App() {
   };
 
   const handleJumpToFirst = () => {
-    if (page !== 1) setPage(1);
+    if (page !== 1) {
+      queueMobilePaginationScroll();
+      setPage(1);
+    }
   };
 
   const handleJumpToLast = () => {
-    if (loadedPageCount > 0) {
+    if (loadedPageCount > 0 && page !== loadedPageCount) {
+      queueMobilePaginationScroll();
       setPage(loadedPageCount);
     }
   };
@@ -2539,11 +2719,36 @@ export default function App() {
     return { x: x - center, y: y - center };
   }, [mapProjection]);
 
+  const mapRegionPan = useMemo(() => {
+    if (!mapProjection || !mapFocusedRegion) return mapDefaultPan;
+    const prefectures = REGION_PREFECTURE_MAP[mapFocusedRegion] || [];
+    if (prefectures.length === 0) return mapDefaultPan;
+    let sumX = 0;
+    let sumY = 0;
+    let count = 0;
+    prefectures.forEach((prefecture) => {
+      const coord = PREFECTURE_COORDS[prefecture];
+      if (!coord) return;
+      const [x, y] = mapProjection.project([coord.lng, coord.lat]);
+      sumX += x;
+      sumY += y;
+      count += 1;
+    });
+    if (count === 0) return mapDefaultPan;
+    const center = MAP_VIEWBOX_SIZE / 2;
+    return { x: sumX / count - center, y: sumY / count - center };
+  }, [mapDefaultPan, mapFocusedRegion, mapProjection]);
+
   useEffect(() => {
     if (!mapProjection) return;
-    setMapZoom(mapInfoPrefecture ? MAP_ZOOM_MIN : DEFAULT_MAP_ZOOM);
-    setMapPan(mapInfoPrefecture ? { x: 0, y: 0 } : mapDefaultPan);
-  }, [mapDefaultPan, mapInfoPrefecture, mapProjection]);
+    if (mapFocusedPrefecture) {
+      setMapZoom(MAP_ZOOM_MIN);
+      setMapPan({ x: 0, y: 0 });
+      return;
+    }
+    setMapZoom(DEFAULT_MAP_ZOOM);
+    setMapPan(mapFocusedRegion ? mapRegionPan : mapDefaultPan);
+  }, [mapDefaultPan, mapFocusedPrefecture, mapFocusedRegion, mapProjection, mapRegionPan]);
 
   const prefectureShapes = useMemo(() => {
     if (!mapProjection) return [];
@@ -2571,8 +2776,8 @@ export default function App() {
 
   const mapViewBox = useMemo(() => {
     const base = { minX: 0, minY: 0, width: MAP_VIEWBOX_SIZE, height: MAP_VIEWBOX_SIZE };
-    if (!mapInfoPrefecture) return base;
-    const bounds = prefectureBoundsMap.get(mapInfoPrefecture);
+    if (!mapFocusedPrefecture) return base;
+    const bounds = prefectureBoundsMap.get(mapFocusedPrefecture);
     if (!bounds) return base;
     const padding = 60;
     let minX = Math.max(0, bounds.minX - padding);
@@ -2595,7 +2800,7 @@ export default function App() {
       height = maxY - minY;
     }
     return { minX, minY, width, height };
-  }, [mapInfoPrefecture, prefectureBoundsMap]);
+  }, [mapFocusedPrefecture, prefectureBoundsMap]);
 
   const mapViewport = useMemo(() => {
     const zoom = Math.max(MAP_ZOOM_MIN, mapZoom);
@@ -2759,14 +2964,19 @@ export default function App() {
   }, []);
 
   const handleMapZoomReset = useCallback(() => {
-    setMapZoom(mapInfoPrefecture ? MAP_ZOOM_MIN : DEFAULT_MAP_ZOOM);
-    setMapPan(mapInfoPrefecture ? { x: 0, y: 0 } : mapDefaultPan);
-  }, [mapDefaultPan, mapInfoPrefecture]);
+    if (mapFocusedPrefecture) {
+      setMapZoom(MAP_ZOOM_MIN);
+      setMapPan({ x: 0, y: 0 });
+      return;
+    }
+    setMapZoom(DEFAULT_MAP_ZOOM);
+    setMapPan(mapFocusedRegion ? mapRegionPan : mapDefaultPan);
+  }, [mapDefaultPan, mapFocusedPrefecture, mapFocusedRegion, mapRegionPan]);
 
   const handleMapWheel = useCallback(
     (event) => {
       if (!event) return;
-      if (mapInfoPrefecture) return;
+      if (mapFocusedPrefecture) return;
       if (event.target?.closest?.(".map-info")) return;
       if (!event.ctrlKey && !event.metaKey) return;
       event.preventDefault();
@@ -2777,7 +2987,7 @@ export default function App() {
         return clampValue(next, MAP_ZOOM_MIN, MAP_ZOOM_MAX);
       });
     },
-    [mapInfoPrefecture],
+    [mapFocusedPrefecture],
   );
 
   useEffect(() => {
@@ -2925,35 +3135,28 @@ export default function App() {
   const detailGuide = useMemo(() => buildEquipmentGuide(detailItem), [detailItem]);
   const currentPapers = detailItem?.papers || [];
   const papersStatus = detailItem?.papersStatus || "";
-  const resultsViewKey = useMemo(
-    () =>
-      [
-        loading ? "loading" : "ready",
-        loadError ? "error" : "ok",
-        page,
-        keyword,
-        region,
-        category,
-        externalOnly ? "1" : "0",
-        freeOnly ? "1" : "0",
-        prefectureFilter,
-        orgFilter,
-        rankedItems.length,
-      ].join("|"),
-    [
-      category,
-      externalOnly,
-      freeOnly,
-      keyword,
-      loadError,
-      loading,
-      orgFilter,
-      page,
-      prefectureFilter,
-      rankedItems.length,
-      region,
-    ],
-  );
+  const hasResults = rankedItems.length > 0;
+  const hasStableResults = stableItemsWithDistanceRef.current.length > 0;
+  const visibleItemsWithDistance =
+    loading && hasStableResults ? stableItemsWithDistanceRef.current : itemsWithDistance;
+  const showResultsError = !loading && Boolean(loadError);
+  const showResultsEmpty = !loading && !loadError && !hasResults;
+  const showResultsList = !loadError && (hasResults || (loading && hasStableResults));
+  useEffect(() => {
+    if (loading) return;
+    if (loadError || !hasResults) {
+      stableItemsWithDistanceRef.current = [];
+      return;
+    }
+    stableItemsWithDistanceRef.current = itemsWithDistance;
+  }, [hasResults, itemsWithDistance, loadError, loading]);
+  const mapStatusMessage =
+    geoJsonStatus === "error"
+      ? "地図データの読み込みに失敗しました。"
+      : prefectureShapes.length === 0
+        ? "地図データを読み込み中です。"
+        : "";
+  const isMapLoadingState = Boolean(mapStatusMessage);
   const paperMessage =
     papersStatus === "no_query"
       ? "関連論文の検索語が不足しています。"
@@ -3102,8 +3305,16 @@ export default function App() {
       </header>
 
       <section className="results" ref={resultsRef}>
-        <div className={`results-body${loading ? " is-loading" : ""}`}>
-          <div className="results-list" ref={resultsListRef}>
+        <div className="results-body">
+          <div
+            className={`results-list${loading ? " is-loading" : ""}`}
+            ref={resultsListRef}
+            style={
+              !isNarrowLayout && loading && appliedColumnHeight
+                ? { minHeight: `${appliedColumnHeight}px` }
+                : undefined
+            }
+          >
             <div className="results-head">
               <h2>検索結果</h2>
               {(prefectureFilter || orgFilter) && (
@@ -3116,17 +3327,12 @@ export default function App() {
                 </div>
               )}
             </div>
-            <div
-              key={resultsViewKey}
-              className={`results-content${loading ? " is-loading" : ""}`}
-            >
-              {loading ? (
-                <p className="results-status">データを読み込んでいます...</p>
-              ) : loadError ? (
+            <div className={`results-content${loading ? " is-loading" : ""}`}>
+              {showResultsError ? (
                 <p className="results-status error">{loadError}</p>
-              ) : rankedItems.length === 0 ? (
+              ) : showResultsEmpty ? (
                 <p className="results-status">該当する設備が見つかりませんでした。</p>
-              ) : (
+              ) : showResultsList ? (
                 <>
                   <div className="list-header">
                     <span>設備</span>
@@ -3134,75 +3340,77 @@ export default function App() {
                     <span>利用</span>
                     <span>リンク</span>
                   </div>
-                  <div className="list-body">
-                    {itemsWithDistance.map((item, index) => (
-                      <div
-                        key={item.id}
-                        className={`result-row${selectedItemId === item.id ? " is-selected" : ""}`}
-                        style={{ "--row-index": Math.min(index, 12) }}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => handleItemSelect(item)}
-                        onKeyDown={(event) => {
-                          if (event.key === "Enter" || event.key === " ") {
-                            event.preventDefault();
-                            handleItemSelect(item);
-                          }
-                        }}
-                        ref={registerListItemRef(item.id)}
-                      >
-                        <div className="result-title">
-                          <p className="category">{item.categoryGeneral}</p>
-                          <strong>{item.name}</strong>
-                          {item.categoryDetail && (
-                            <span className="detail">{item.categoryDetail}</span>
-                          )}
-                        </div>
-                        <div className="result-meta">
-                          <div className="result-distance">
-                            <span className="prefecture">{item.prefecture}</span>
-                            <span className="distance-value">
-                              {formatDistance(item.distanceKm)}
-                            </span>
+                  <div className="list-body-shell">
+                    <div className="list-body">
+                      {visibleItemsWithDistance.map((item, index) => (
+                        <div
+                          key={item.id}
+                          className={`result-row${selectedItemId === item.id ? " is-selected" : ""}`}
+                          style={{ "--row-index": Math.min(index, 12) }}
+                          role="button"
+                          tabIndex={0}
+                          onClick={() => handleItemSelect(item)}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              handleItemSelect(item);
+                            }
+                          }}
+                          ref={registerListItemRef(item.id)}
+                        >
+                          <div className="result-title">
+                            <p className="category">{item.categoryGeneral}</p>
+                            <strong>{item.name}</strong>
+                            {item.categoryDetail && (
+                              <span className="detail">{item.categoryDetail}</span>
+                            )}
                           </div>
-                          <div className="result-tags">
-                            <span className={badgeClass(item.externalUse)}>
-                              {externalLabel(item.externalUse)}
-                            </span>
-                            <span className="fee">{item.feeBand}</span>
+                          <div className="result-meta">
+                            <div className="result-distance">
+                              <span className="prefecture">{item.prefecture}</span>
+                              <span className="distance-value">
+                                {formatDistance(item.distanceKm)}
+                              </span>
+                            </div>
+                            <div className="result-tags">
+                              <span className={badgeClass(item.externalUse)}>
+                                {externalLabel(item.externalUse)}
+                              </span>
+                              <span className="fee">{item.feeBand}</span>
+                            </div>
                           </div>
-                        </div>
-                        <div className="result-actions">
-                          {item.sourceUrl ? (
+                          <div className="result-actions">
+                            {item.sourceUrl ? (
+                              <button
+                                type="button"
+                                className="link-button"
+                                onClick={(event) => {
+                                  event.stopPropagation();
+                                  handleExternalOpen(item);
+                                }}
+                              >
+                                機器ページへ
+                              </button>
+                            ) : (
+                              <span className="link-disabled">情報元なし</span>
+                            )}
                             <button
                               type="button"
-                              className="link-button"
+                              className="link-button secondary"
                               onClick={(event) => {
                                 event.stopPropagation();
-                                handleExternalOpen(item);
+                                handleEqnetAssistOpen(item);
                               }}
                             >
-                              機器ページへ
+                              eqnetで確認
                             </button>
-                          ) : (
-                            <span className="link-disabled">情報元なし</span>
-                          )}
-                          <button
-                            type="button"
-                            className="link-button secondary"
-                            onClick={(event) => {
-                              event.stopPropagation();
-                              handleEqnetAssistOpen(item);
-                            }}
-                          >
-                            eqnetで確認
-                          </button>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </>
-              )}
+              ) : null}
               {!loading && !loadError && (loadedPageCount > 1 || currentPageData.hasNext) && (
                 <div className="pagination">
                   <div className="pagination-bar" role="navigation" aria-label="ページ送り">
@@ -3271,15 +3479,15 @@ export default function App() {
           <aside
             className="map-panel"
             style={
-              !isNarrowLayout && resultsListHeight
-                ? { height: `${resultsListHeight}px` }
+              !isNarrowLayout && appliedColumnHeight
+                ? { height: `${appliedColumnHeight}px` }
                 : undefined
             }
           >
             <div className="map-head" aria-hidden="true" />
             <div className="map-canvas">
               <div
-                className="jp-map-geo"
+                className={`jp-map-geo${isMapLoadingState ? " is-loading" : " is-ready"}`}
                 role="img"
                 aria-label="全国分布の地図"
                 ref={mapContainerRef}
@@ -3289,100 +3497,107 @@ export default function App() {
                 onPointerUp={handleMapPointerUp}
                 onPointerCancel={handleMapPointerUp}
               >
-                {geoJsonStatus === "error" ? (
-                  <div className="jp-map-empty">地図データの読み込みに失敗しました。</div>
-                ) : prefectureShapes.length === 0 ? (
-                  <div className="jp-map-empty">地図データを読み込み中です。</div>
-                ) : (
-                  <svg
-                    className="jp-map-svg"
-                    viewBox={`${renderedMapViewport.minX} ${renderedMapViewport.minY} ${renderedMapViewport.width} ${renderedMapViewport.height}`}
-                    preserveAspectRatio="xMidYMid meet"
-                  >
-                    <g className="jp-map-shapes">
-                      {prefectureShapes.map((shape) => {
-                        const equipmentCount =
-                          mapData.prefectureCounts?.[shape.prefecture] || 0;
-                        const facilityCount =
-                          mapData.prefectureFacilityCounts?.[shape.prefecture] || 0;
-                        const alpha =
-                          maxMapCount > 0
-                            ? 0.2 + (equipmentCount / maxMapCount) * 0.6
-                            : 0.2;
-                        const isSelected =
-                          mapInfoPrefecture === shape.prefecture ||
-                          prefectureFilter === shape.prefecture;
-                        const isEmpty = equipmentCount === 0;
-                        return (
-                          <path
-                            key={shape.prefecture}
-                            d={shape.path}
-                            className={`jp-map-shape${isSelected ? " is-selected" : ""}${
-                              isEmpty ? " is-empty" : ""
-                            }`}
-                            style={{ "--shape-alpha": alpha.toFixed(2) }}
-                            fillRule="evenodd"
-                            role="button"
-                            tabIndex={0}
-                            onClick={() => handleMapPrefectureClick(shape.prefecture)}
-                            onMouseEnter={(event) =>
-                              handleMapHover(shape.prefecture, event)
+                <svg
+                  className="jp-map-svg"
+                  viewBox={`${renderedMapViewport.minX} ${renderedMapViewport.minY} ${renderedMapViewport.width} ${renderedMapViewport.height}`}
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g className="jp-map-shapes">
+                    {prefectureShapes.map((shape) => {
+                      const equipmentCount =
+                        mapData.prefectureCounts?.[shape.prefecture] || 0;
+                      const facilityCount =
+                        mapData.prefectureFacilityCounts?.[shape.prefecture] || 0;
+                      const alpha =
+                        maxMapCount > 0
+                          ? 0.2 + (equipmentCount / maxMapCount) * 0.6
+                          : 0.2;
+                      const isSelected = mapFocusedPrefecture
+                        ? mapFocusedPrefecture === shape.prefecture
+                        : mapFocusedRegion
+                          ? PREFECTURE_REGION_MAP[shape.prefecture] === mapFocusedRegion
+                          : false;
+                      const isEmpty = equipmentCount === 0;
+                      return (
+                        <path
+                          key={shape.prefecture}
+                          d={shape.path}
+                          className={`jp-map-shape${isSelected ? " is-selected" : ""}${
+                            isEmpty ? " is-empty" : ""
+                          }`}
+                          style={{ "--shape-alpha": alpha.toFixed(2) }}
+                          fillRule="evenodd"
+                          role="button"
+                          tabIndex={0}
+                          onClick={() => handleMapPrefectureClick(shape.prefecture)}
+                          onMouseEnter={(event) =>
+                            handleMapHover(shape.prefecture, event)
+                          }
+                          onMouseMove={(event) =>
+                            handleMapHover(shape.prefecture, event)
+                          }
+                          onMouseLeave={() => setMapHover(null)}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              handleMapPrefectureClick(shape.prefecture);
                             }
-                            onMouseMove={(event) =>
-                              handleMapHover(shape.prefecture, event)
-                            }
-                            onMouseLeave={() => setMapHover(null)}
-                            onKeyDown={(event) => {
-                              if (event.key === "Enter" || event.key === " ") {
-                                event.preventDefault();
-                                handleMapPrefectureClick(shape.prefecture);
-                              }
-                            }}
-                          >
-                            <title>
-                              {shape.prefecture} {equipmentCount}件 / {facilityCount}拠点
-                            </title>
-                          </path>
-                        );
-                      })}
-                    </g>
-                    <g className="jp-map-markers">
-                      {prefectureMarkers.map((marker) => {
-                        const radius =
-                          maxMapCount > 0
-                            ? 6 + (marker.equipmentCount / maxMapCount) * 8
-                            : 6;
-                        const isSelected =
-                          mapInfoPrefecture === marker.prefecture ||
-                          prefectureFilter === marker.prefecture;
-                        const isEmpty = marker.equipmentCount === 0;
-                        return (
-                          <g
-                            key={marker.prefecture}
-                            className={`jp-map-marker${isSelected ? " is-selected" : ""}${
-                              isEmpty ? " is-empty" : ""
-                            }`}
-                            transform={`translate(${marker.x} ${marker.y})`}
-                            aria-hidden="true"
-                          >
-                            <title>
-                              {marker.prefecture} {marker.equipmentCount}件 / {marker.facilityCount}拠点
-                            </title>
-                            <circle
-                              className="jp-map-marker-dot"
-                              r={radius.toFixed(2)}
-                            />
-                            {marker.equipmentCount > 0 && (
-                              <text className="jp-map-marker-text" y="4">
-                                {marker.equipmentCount}
-                              </text>
-                            )}
-                          </g>
-                        );
-                      })}
-                    </g>
-                  </svg>
-                )}
+                          }}
+                        >
+                          <title>
+                            {shape.prefecture} {equipmentCount}件 / {facilityCount}拠点
+                          </title>
+                        </path>
+                      );
+                    })}
+                  </g>
+                  <g className="jp-map-markers">
+                    {prefectureMarkers.map((marker) => {
+                      const radius =
+                        maxMapCount > 0
+                          ? 6 + (marker.equipmentCount / maxMapCount) * 8
+                          : 6;
+                      const isSelected = mapFocusedPrefecture
+                        ? mapFocusedPrefecture === marker.prefecture
+                        : mapFocusedRegion
+                          ? PREFECTURE_REGION_MAP[marker.prefecture] === mapFocusedRegion
+                          : false;
+                      const isEmpty = marker.equipmentCount === 0;
+                      return (
+                        <g
+                          key={marker.prefecture}
+                          className={`jp-map-marker${isSelected ? " is-selected" : ""}${
+                            isEmpty ? " is-empty" : ""
+                          }`}
+                          transform={`translate(${marker.x} ${marker.y})`}
+                          aria-hidden="true"
+                        >
+                          <title>
+                            {marker.prefecture} {marker.equipmentCount}件 / {marker.facilityCount}拠点
+                          </title>
+                          <circle
+                            className="jp-map-marker-dot"
+                            r={radius.toFixed(2)}
+                          />
+                          {marker.equipmentCount > 0 && (
+                            <text className="jp-map-marker-text" y="4">
+                              {marker.equipmentCount}
+                            </text>
+                          )}
+                        </g>
+                      );
+                    })}
+                  </g>
+                </svg>
+                <div
+                  className={`jp-map-empty${isMapLoadingState ? " is-visible" : ""}${
+                    geoJsonStatus === "error" ? " error" : ""
+                  }`}
+                  aria-live="polite"
+                  aria-hidden={!isMapLoadingState}
+                >
+                  {mapStatusMessage}
+                </div>
                 <div className="map-zoom-controls" role="group" aria-label="地図の拡大縮小">
                   <button type="button" onClick={handleMapZoomIn} aria-label="拡大">
                     +
@@ -3560,75 +3775,80 @@ export default function App() {
         <aside
           className={`eqnet-assist-panel${eqnetAssistAttention ? " is-attention" : ""}`}
           aria-live="polite"
+          style={eqnetAssistAttentionStyle}
         >
-          <div className="eqnet-assist-head">
-            <div>
-              <h4>eqnet検索補助</h4>
-              <p>先に検索語をコピーしてから「eqnetを開く」を押してください。</p>
-            </div>
-            <button type="button" onClick={handleEqnetAssistClose} aria-label="補助パネルを閉じる">
-              閉じる
-            </button>
-          </div>
-          <div className="eqnet-assist-fields">
-            <div className="eqnet-assist-field">
-              <span>機器名</span>
-              <strong>{eqnetAssistItem.name}</strong>
-              <button type="button" onClick={() => handleEqnetFieldCopy("name", eqnetAssistItem.name)}>
-                {eqnetCopiedField === "name" ? "コピー済み" : "コピー"}
+          <div className="eqnet-assist-body">
+            <div className="eqnet-assist-head">
+              <div>
+                <h4>eqnet検索補助</h4>
+                <p>先に検索語をコピーしてから「eqnetを開く」を押してください。</p>
+              </div>
+              <button type="button" onClick={handleEqnetAssistClose} aria-label="補助パネルを閉じる">
+                閉じる
               </button>
             </div>
-            {eqnetAssistItem.orgName && (
+
+            <div className="eqnet-assist-fields">
               <div className="eqnet-assist-field">
-                <span>保有機関</span>
-                <strong>{eqnetAssistItem.orgName}</strong>
-                <button
-                  type="button"
-                  onClick={() => handleEqnetFieldCopy("org", eqnetAssistItem.orgName)}
-                >
-                  {eqnetCopiedField === "org" ? "コピー済み" : "コピー"}
+                <span>機器名</span>
+                <strong>{eqnetAssistItem.name}</strong>
+                <button type="button" onClick={() => handleEqnetFieldCopy("name", eqnetAssistItem.name)}>
+                  {eqnetCopiedField === "name" ? "コピー済み" : "コピー"}
                 </button>
               </div>
-            )}
-            {eqnetAssistItem.prefecture && (
-              <div className="eqnet-assist-field">
-                <span>都道府県</span>
-                <strong>{eqnetAssistItem.prefecture}</strong>
-                <button
-                  type="button"
-                  onClick={() => handleEqnetFieldCopy("prefecture", eqnetAssistItem.prefecture)}
-                >
-                  {eqnetCopiedField === "prefecture" ? "コピー済み" : "コピー"}
-                </button>
-              </div>
-            )}
-            {eqnetAssistItem.category && (
-              <div className="eqnet-assist-field">
-                <span>カテゴリ</span>
-                <strong>{eqnetAssistItem.category}</strong>
-                <button
-                  type="button"
-                  onClick={() => handleEqnetFieldCopy("category", eqnetAssistItem.category)}
-                >
-                  {eqnetCopiedField === "category" ? "コピー済み" : "コピー"}
-                </button>
-              </div>
-            )}
-          </div>
-          {eqnetAssistItem.hints.length > 0 && (
-            <div className="eqnet-assist-hints">
-              {eqnetAssistItem.hints.map((hint) => (
-                <span key={hint}>{hint}</span>
-              ))}
+              {eqnetAssistItem.orgName && (
+                <div className="eqnet-assist-field">
+                  <span>保有機関</span>
+                  <strong>{eqnetAssistItem.orgName}</strong>
+                  <button
+                    type="button"
+                    onClick={() => handleEqnetFieldCopy("org", eqnetAssistItem.orgName)}
+                  >
+                    {eqnetCopiedField === "org" ? "コピー済み" : "コピー"}
+                  </button>
+                </div>
+              )}
+              {eqnetAssistItem.prefecture && (
+                <div className="eqnet-assist-field">
+                  <span>都道府県</span>
+                  <strong>{eqnetAssistItem.prefecture}</strong>
+                  <button
+                    type="button"
+                    onClick={() => handleEqnetFieldCopy("prefecture", eqnetAssistItem.prefecture)}
+                  >
+                    {eqnetCopiedField === "prefecture" ? "コピー済み" : "コピー"}
+                  </button>
+                </div>
+              )}
+              {eqnetAssistItem.category && (
+                <div className="eqnet-assist-field">
+                  <span>カテゴリ</span>
+                  <strong>{eqnetAssistItem.category}</strong>
+                  <button
+                    type="button"
+                    onClick={() => handleEqnetFieldCopy("category", eqnetAssistItem.category)}
+                  >
+                    {eqnetCopiedField === "category" ? "コピー済み" : "コピー"}
+                  </button>
+                </div>
+              )}
             </div>
-          )}
-          <div className="eqnet-assist-actions">
-            <button type="button" onClick={handleEqnetSummaryCopy}>
-              {eqnetCopiedField === "summary" ? "コピー済み" : "まとめてコピー"}
-            </button>
-            <button type="button" onClick={openEqnetPage}>
-              eqnetを開く
-            </button>
+
+            {eqnetAssistItem.hints.length > 0 && (
+              <div className="eqnet-assist-hints">
+                {eqnetAssistItem.hints.map((hint) => (
+                  <span key={hint}>{hint}</span>
+                ))}
+              </div>
+            )}
+            <div className="eqnet-assist-actions">
+              <button type="button" onClick={handleEqnetSummaryCopy}>
+                {eqnetCopiedField === "summary" ? "コピー済み" : "まとめてコピー"}
+              </button>
+              <button type="button" onClick={openEqnetPage}>
+                eqnetを開く
+              </button>
+            </div>
           </div>
         </aside>
       )}
