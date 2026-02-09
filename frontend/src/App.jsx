@@ -156,6 +156,26 @@ const MAP_ORG_FETCH_LIMIT = 400;
 const MAP_ORG_FETCH_MAX_PAGES = 10;
 const REGION_CATEGORY_FETCH_LIMIT = 400;
 const REGION_CATEGORY_FETCH_MAX_PAGES = 20;
+const RECO_INITIAL_VISIBLE = 3;
+const RECO_INCREMENT = 5;
+const RECO_MAX_VISIBLE = 20;
+const RECO_QUERY_PREFS_LIMIT = 8;
+const RECO_PAGE_SIZE = 40;
+const RECO_MAX_PAGES = 2;
+const RECO_FALLBACK_PREFECTURES = [
+  "東京都",
+  "大阪府",
+  "神奈川県",
+  "愛知県",
+  "福岡県",
+  "京都府",
+  "兵庫県",
+  "北海道",
+];
+const DETAIL_SWITCH_ANIMATION_MS = 420;
+const DETAIL_SWIPE_MIN_DISTANCE = 56;
+const DETAIL_SWIPE_HORIZONTAL_RATIO = 1.25;
+const DETAIL_SWIPE_MAX_DURATION_MS = 900;
 
 const toMercatorY = (lat) => {
   const clamped = Math.max(-85, Math.min(85, lat));
@@ -949,6 +969,21 @@ const detectPrefectureFromKeyword = (value) => {
   return "";
 };
 
+const normalizePrefectureValue = (value) => {
+  const text = String(value || "").replace(/[\u3000\s]+/g, "").trim();
+  if (!text) return "";
+  if (PREFECTURE_COORDS[text]) return text;
+  return detectPrefectureFromKeyword(text);
+};
+
+const resolvePrefectureFromSources = (...values) => {
+  for (const value of values) {
+    const prefecture = normalizePrefectureValue(value);
+    if (prefecture) return prefecture;
+  }
+  return "";
+};
+
 export default function App() {
   const [pages, setPages] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -1004,7 +1039,22 @@ export default function App() {
   });
   const [skipNameOrder, setSkipNameOrder] = useState(false);
   const [detailItem, setDetailItem] = useState(null);
+  const [detailRecommendationState, setDetailRecommendationState] = useState({
+    itemId: "",
+    mode: "accessible",
+    prefectureSignature: "",
+    pool: [],
+    visibleCount: RECO_INITIAL_VISIBLE,
+    loading: false,
+    loadingMore: false,
+    hasMore: false,
+    cursor: null,
+    error: "",
+  });
   const [detailOpen, setDetailOpen] = useState(false);
+  const [detailSession, setDetailSession] = useState(null);
+  const [detailSwitchDirection, setDetailSwitchDirection] = useState("");
+  const [detailSwitchToken, setDetailSwitchToken] = useState(0);
   const [sheetExpanded, setSheetExpanded] = useState(false);
   const [selectedItemId, setSelectedItemId] = useState(null);
   const [exactMatches, setExactMatches] = useState([]);
@@ -1035,6 +1085,11 @@ export default function App() {
   const prevLoadingRef = useRef(loading);
   const heightSyncFrameRef = useRef(null);
   const stableItemsWithDistanceRef = useRef([]);
+  const detailRecommendationCacheRef = useRef(new Map());
+  const detailRecommendationStateRef = useRef(detailRecommendationState);
+  const detailSessionRef = useRef(detailSession);
+  const detailSwitchTimerRef = useRef(null);
+  const detailSwipeGestureRef = useRef(null);
 
   const stopMapViewportAnimation = useCallback(() => {
     if (mapViewportAnimationRef.current) {
@@ -1098,10 +1153,22 @@ export default function App() {
   }, [renderedMapViewport]);
 
   useEffect(() => {
+    detailRecommendationStateRef.current = detailRecommendationState;
+  }, [detailRecommendationState]);
+
+  useEffect(() => {
+    detailSessionRef.current = detailSession;
+  }, [detailSession]);
+
+  useEffect(() => {
     return () => {
       stopMapViewportAnimation();
       if (detailOpenFrameRef.current) {
         cancelAnimationFrame(detailOpenFrameRef.current);
+      }
+      if (detailSwitchTimerRef.current) {
+        clearTimeout(detailSwitchTimerRef.current);
+        detailSwitchTimerRef.current = null;
       }
       cancelHeightSyncFrame();
     };
@@ -1210,6 +1277,12 @@ export default function App() {
   useEffect(() => {
     if (activeExternal && detailOpen) {
       setDetailOpen(false);
+      setDetailSession(null);
+      setDetailSwitchDirection("");
+      if (detailSwitchTimerRef.current) {
+        clearTimeout(detailSwitchTimerRef.current);
+        detailSwitchTimerRef.current = null;
+      }
     }
   }, [activeExternal, detailOpen]);
 
@@ -1261,6 +1334,12 @@ export default function App() {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
         setDetailOpen(false);
+        setDetailSession(null);
+        setDetailSwitchDirection("");
+        if (detailSwitchTimerRef.current) {
+          clearTimeout(detailSwitchTimerRef.current);
+          detailSwitchTimerRef.current = null;
+        }
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -1403,18 +1482,26 @@ export default function App() {
     const rawLng = typeof data.lng === "number" ? data.lng : Number.parseFloat(data.lng);
     const lat = Number.isFinite(rawLat) ? rawLat : null;
     const lng = Number.isFinite(rawLng) ? rawLng : null;
+    const orgName = String(data.org_name || "").trim() || "不明";
+    const address = String(data.address_raw || data.address || "").trim();
+    const prefecture =
+      resolvePrefectureFromSources(data.prefecture, address, orgName) || "不明";
+    const region =
+      (typeof data.region === "string" && data.region.trim()) ||
+      PREFECTURE_REGION_MAP[prefecture] ||
+      "不明";
     return {
       id: data.equipment_id || doc.id,
       name: data.name || "名称不明",
       categoryGeneral: data.category_general || "未分類",
       categoryDetail: data.category_detail || "",
-      orgName: data.org_name || "不明",
+      orgName,
       orgType: data.org_type || "不明",
-      prefecture: data.prefecture || "不明",
-      region: data.region || "不明",
+      prefecture,
+      region,
       externalUse: data.external_use || "不明",
       feeBand: feeLabel(data.fee_band),
-      address: data.address_raw || "所在地不明",
+      address: address || "所在地不明",
       lat,
       lng,
       sourceUrl: data.source_url || "",
@@ -1436,6 +1523,195 @@ export default function App() {
         : [],
     };
   }, []);
+
+  const makeRecommendationCacheKey = useCallback((itemId, mode, prefectureSignature) => {
+    return `${String(itemId || "")}|${String(mode || "")}|${String(prefectureSignature || "")}`;
+  }, []);
+
+  const buildInitialRecommendationCursor = useCallback((prefectureSet) => {
+    return {
+      stage: Array.isArray(prefectureSet) && prefectureSet.length > 0 ? "prefecture" : "category",
+      pagesFetched: 0,
+      prefectureLastId: "",
+      categoryLastId: "",
+    };
+  }, []);
+
+  const getRecommendationCoordinate = useCallback((item) => {
+    if (!item) return null;
+    if (Number.isFinite(item.lat) && Number.isFinite(item.lng)) {
+      return { lat: item.lat, lng: item.lng };
+    }
+    return PREFECTURE_COORDS[item.prefecture] || null;
+  }, []);
+
+  const sortRecommendationPool = useCallback(
+    (items, targetItem, mode) => {
+      const targetPrefecture = String(targetItem?.prefecture || "").trim();
+      const facilityCounts = prefectureStats?.facilityCounts || {};
+      const sorted = [...items];
+      sorted.sort((left, right) => {
+        if (mode === "nearby") {
+          const coordA = getRecommendationCoordinate(left);
+          const coordB = getRecommendationCoordinate(right);
+          const distA = userLocation && coordA ? getDistanceKm(userLocation, coordA) : null;
+          const distB = userLocation && coordB ? getDistanceKm(userLocation, coordB) : null;
+          if (distA == null && distB == null) {
+            return (left.name || "").localeCompare(right.name || "", "ja");
+          }
+          if (distA == null) return 1;
+          if (distB == null) return -1;
+          if (Math.abs(distA - distB) > 0.01) return distA - distB;
+          return (left.name || "").localeCompare(right.name || "", "ja");
+        }
+        const facilityA = Number(facilityCounts[left.prefecture] || 0);
+        const facilityB = Number(facilityCounts[right.prefecture] || 0);
+        if (facilityB !== facilityA) {
+          return facilityB - facilityA;
+        }
+        const samePrefA = left.prefecture === targetPrefecture ? 1 : 0;
+        const samePrefB = right.prefecture === targetPrefecture ? 1 : 0;
+        if (samePrefB !== samePrefA) {
+          return samePrefB - samePrefA;
+        }
+        return (left.name || "").localeCompare(right.name || "", "ja");
+      });
+      return sorted;
+    },
+    [getRecommendationCoordinate, prefectureStats, userLocation],
+  );
+
+  const fetchRecommendationChunk = useCallback(
+    async ({ category, prefectureSet, cursor }) => {
+      const normalizedCategory = String(category || "").trim();
+      const normalizedPrefectureSet = Array.isArray(prefectureSet)
+        ? prefectureSet.filter(Boolean).slice(0, RECO_QUERY_PREFS_LIMIT)
+        : [];
+      const currentCursor = cursor || buildInitialRecommendationCursor(normalizedPrefectureSet);
+      if (!normalizedCategory) {
+        return { items: [], cursor: { ...currentCursor, stage: "done" }, hasMore: false };
+      }
+      if (currentCursor.stage === "done" || currentCursor.pagesFetched >= RECO_MAX_PAGES) {
+        return { items: [], cursor: { ...currentCursor, stage: "done" }, hasMore: false };
+      }
+
+      let stage = currentCursor.stage;
+      if (stage === "prefecture" && normalizedPrefectureSet.length === 0) {
+        stage = "category";
+      }
+      let snapshot = null;
+      const nextCursor = { ...currentCursor };
+      const runQuery = async (queryStage) => {
+        const queryParts = [
+          collection(db, "equipment"),
+          where("category_general", "==", normalizedCategory),
+        ];
+        if (queryStage === "prefecture") {
+          queryParts.push(where("prefecture", "in", normalizedPrefectureSet));
+        }
+        queryParts.push(orderBy(documentId()));
+        if (queryStage === "prefecture" && nextCursor.prefectureLastId) {
+          queryParts.push(startAfter(nextCursor.prefectureLastId));
+        }
+        if (queryStage === "category" && nextCursor.categoryLastId) {
+          queryParts.push(startAfter(nextCursor.categoryLastId));
+        }
+        queryParts.push(limit(RECO_PAGE_SIZE));
+        return getDocs(firestoreQuery(...queryParts));
+      };
+
+      if (stage === "prefecture") {
+        try {
+          snapshot = await runQuery("prefecture");
+        } catch (error) {
+          console.error(error);
+          stage = "category";
+          nextCursor.stage = "category";
+        }
+      }
+      if (!snapshot && stage === "category") {
+        snapshot = await runQuery("category");
+      }
+
+      const docs = snapshot?.docs || [];
+      const items = docs.map(mapDocToItem);
+      const lastDocId = docs[docs.length - 1]?.id || "";
+      nextCursor.pagesFetched += 1;
+      if (stage === "prefecture") {
+        nextCursor.prefectureLastId = lastDocId;
+        const hasPrefectureNextPage = docs.length === RECO_PAGE_SIZE && Boolean(lastDocId);
+        nextCursor.stage = hasPrefectureNextPage ? "prefecture" : "category";
+      } else {
+        nextCursor.categoryLastId = lastDocId;
+        const hasCategoryNextPage = docs.length === RECO_PAGE_SIZE && Boolean(lastDocId);
+        nextCursor.stage = hasCategoryNextPage ? "category" : "done";
+      }
+      if (nextCursor.pagesFetched >= RECO_MAX_PAGES) {
+        nextCursor.stage = "done";
+      }
+      const hasMore = nextCursor.stage !== "done" && nextCursor.pagesFetched < RECO_MAX_PAGES;
+      return { items, cursor: nextCursor, hasMore };
+    },
+    [buildInitialRecommendationCursor, mapDocToItem],
+  );
+
+  const extendRecommendationPool = useCallback(
+    async ({
+      targetItem,
+      mode,
+      prefectureSet,
+      initialPool,
+      initialCursor,
+      initialHasMore,
+      minPoolSize,
+    }) => {
+      const targetCategory = String(targetItem?.categoryGeneral || "").trim();
+      if (!targetCategory) {
+        return {
+          pool: [],
+          cursor: { stage: "done", pagesFetched: 0, prefectureLastId: "", categoryLastId: "" },
+          hasMore: false,
+        };
+      }
+      const unique = new Map();
+      (initialPool || []).forEach((item) => {
+        if (!item?.id) return;
+        if (item.id === targetItem.id) return;
+        if (item.categoryGeneral !== targetCategory) return;
+        unique.set(item.id, item);
+      });
+      let cursor = initialCursor || buildInitialRecommendationCursor(prefectureSet);
+      let hasMore = Boolean(initialHasMore);
+      const targetSize = Math.max(
+        RECO_INITIAL_VISIBLE,
+        Math.min(minPoolSize || RECO_INITIAL_VISIBLE, RECO_MAX_VISIBLE),
+      );
+      while (hasMore && unique.size < targetSize && unique.size < RECO_MAX_VISIBLE) {
+        const chunk = await fetchRecommendationChunk({
+          category: targetCategory,
+          prefectureSet,
+          cursor,
+        });
+        cursor = chunk.cursor;
+        hasMore = chunk.hasMore;
+        chunk.items.forEach((candidate) => {
+          if (!candidate?.id) return;
+          if (candidate.id === targetItem.id) return;
+          if (candidate.categoryGeneral !== targetCategory) return;
+          if (!unique.has(candidate.id)) {
+            unique.set(candidate.id, candidate);
+          }
+        });
+      }
+      const sortedPool = sortRecommendationPool(Array.from(unique.values()), targetItem, mode).slice(
+        0,
+        RECO_MAX_VISIBLE,
+      );
+      const nextHasMore = hasMore && sortedPool.length < RECO_MAX_VISIBLE;
+      return { pool: sortedPool, cursor, hasMore: nextHasMore };
+    },
+    [buildInitialRecommendationCursor, fetchRecommendationChunk, sortRecommendationPool],
+  );
 
   useEffect(() => {
     let isMounted = true;
@@ -1806,6 +2082,13 @@ export default function App() {
       setPages([]);
       pagesRef.current = [];
       setSelectedItemId(null);
+      setDetailSession(null);
+      setDetailOpen(false);
+      setDetailSwitchDirection("");
+      if (detailSwitchTimerRef.current) {
+        clearTimeout(detailSwitchTimerRef.current);
+        detailSwitchTimerRef.current = null;
+      }
       try {
         let data;
         try {
@@ -2184,10 +2467,15 @@ export default function App() {
 
   const itemsWithDistance = useMemo(() => {
     const withDistance = rankedItems.map((item) => {
+      const fallbackPrefecture = resolvePrefectureFromSources(
+        item.prefecture,
+        item.address,
+        item.orgName,
+      );
       const coord =
         Number.isFinite(item.lat) && Number.isFinite(item.lng)
           ? { lat: item.lat, lng: item.lng }
-          : PREFECTURE_COORDS[item.prefecture];
+          : PREFECTURE_COORDS[fallbackPrefecture];
       return {
         ...item,
         distanceKm: userLocation ? (coord ? getDistanceKm(userLocation, coord) : null) : null,
@@ -2234,12 +2522,46 @@ export default function App() {
     [itemPageMap],
   );
 
+  const closeDetailSheet = useCallback(() => {
+    if (detailOpenFrameRef.current) {
+      cancelAnimationFrame(detailOpenFrameRef.current);
+      detailOpenFrameRef.current = null;
+    }
+    setDetailOpen(false);
+    setDetailSession(null);
+    setDetailSwitchDirection("");
+    if (detailSwitchTimerRef.current) {
+      clearTimeout(detailSwitchTimerRef.current);
+      detailSwitchTimerRef.current = null;
+    }
+    detailSwipeGestureRef.current = null;
+  }, []);
+
+  const triggerDetailSwitchAnimation = useCallback((direction) => {
+    const normalized = direction === "back" ? "back" : direction === "forward" ? "forward" : "";
+    if (!normalized) return;
+    if (detailSwitchTimerRef.current) {
+      clearTimeout(detailSwitchTimerRef.current);
+      detailSwitchTimerRef.current = null;
+    }
+    setDetailSwitchDirection(normalized);
+    setDetailSwitchToken((prev) => prev + 1);
+    detailSwitchTimerRef.current = setTimeout(() => {
+      setDetailSwitchDirection("");
+      detailSwitchTimerRef.current = null;
+    }, DETAIL_SWITCH_ANIMATION_MS);
+  }, []);
+
   const openEquipmentDetail = useCallback(
-    (item) => {
+    (item, options = {}) => {
       if (!item) return;
+      const { switchDirection = "" } = options;
       setSheetExpanded(false);
       setDetailItem(item);
-      if (detailOpen) return;
+      if (detailOpen) {
+        triggerDetailSwitchAnimation(switchDirection);
+        return;
+      }
       setDetailOpen(false);
       if (detailOpenFrameRef.current) {
         cancelAnimationFrame(detailOpenFrameRef.current);
@@ -2251,8 +2573,150 @@ export default function App() {
         });
       });
     },
-    [detailOpen],
+    [detailOpen, triggerDetailSwitchAnimation],
   );
+
+  const beginDetailSessionFromItem = useCallback((item) => {
+    if (!item?.id) {
+      setDetailSession(null);
+      return;
+    }
+    if (detailSwitchTimerRef.current) {
+      clearTimeout(detailSwitchTimerRef.current);
+      detailSwitchTimerRef.current = null;
+    }
+    setDetailSwitchDirection("");
+    setDetailSession({
+      rootItemId: item.id,
+      historyIds: [item.id],
+      historyItems: { [item.id]: item },
+      cursor: 0,
+    });
+  }, []);
+
+  const appendDetailSessionItem = useCallback((item) => {
+    if (!item?.id) return;
+    setDetailSession((prev) => {
+      const fallbackRoot = prev?.rootItemId || detailItem?.id || selectedItemId || item.id;
+      const nextItems = {
+        ...(prev?.historyItems || {}),
+        ...(detailItem?.id ? { [detailItem.id]: detailItem } : {}),
+        [item.id]: item,
+      };
+      const seedHistory =
+        prev?.historyIds?.length > 0 ? prev.historyIds : fallbackRoot ? [fallbackRoot] : [];
+      const safeCursor = Math.max(
+        0,
+        Math.min(
+          Number.isInteger(prev?.cursor) ? prev.cursor : seedHistory.length - 1,
+          Math.max(seedHistory.length - 1, 0),
+        ),
+      );
+      if (seedHistory[safeCursor] === item.id) {
+        return {
+          rootItemId: fallbackRoot,
+          historyIds: seedHistory,
+          historyItems: nextItems,
+          cursor: safeCursor,
+        };
+      }
+      const trimmed = seedHistory.slice(0, safeCursor + 1);
+      const nextHistory = [...trimmed, item.id];
+      return {
+        rootItemId: fallbackRoot,
+        historyIds: nextHistory,
+        historyItems: nextItems,
+        cursor: nextHistory.length - 1,
+      };
+    });
+  }, [detailItem, selectedItemId]);
+
+  const navigateDetailHistory = useCallback(
+    (delta) => {
+      if (!delta) return;
+      const session = detailSessionRef.current;
+      if (!session?.historyIds?.length) return;
+      const nextCursor = clampValue(
+        (Number.isInteger(session.cursor) ? session.cursor : 0) + delta,
+        0,
+        session.historyIds.length - 1,
+      );
+      if (nextCursor === session.cursor) return;
+      const targetId = session.historyIds[nextCursor];
+      const targetItem = session.historyItems?.[targetId];
+      if (!targetItem) return;
+      setDetailSession((prev) => {
+        if (!prev) return prev;
+        return { ...prev, cursor: nextCursor };
+      });
+      openEquipmentDetail(targetItem, {
+        switchDirection: delta > 0 ? "forward" : "back",
+      });
+    },
+    [openEquipmentDetail],
+  );
+
+  const handleDetailReturnToRoot = useCallback(() => {
+    const session = detailSessionRef.current;
+    const rootId = session?.rootItemId;
+    if (!session || !rootId) return;
+    const rootIndex = session.historyIds?.indexOf(rootId);
+    if (rootIndex == null || rootIndex < 0) return;
+    const currentCursor = Number.isInteger(session.cursor) ? session.cursor : 0;
+    const rootItem = session.historyItems?.[rootId];
+    if (!rootItem) return;
+    setDetailSession((prev) => {
+      if (!prev) return prev;
+      return { ...prev, cursor: rootIndex };
+    });
+    selectItemById(rootId);
+    openEquipmentDetail(rootItem, {
+      switchDirection:
+        rootIndex === currentCursor ? "" : rootIndex < currentCursor ? "back" : "forward",
+    });
+  }, [openEquipmentDetail, selectItemById]);
+
+  const handleDetailBodyPointerDown = useCallback((event) => {
+    if (!event.isPrimary) return;
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    const target = event.target;
+    if (
+      target?.closest?.("a, button, input, select, textarea") ||
+      target?.closest?.(".paper-item") ||
+      target?.closest?.(".recommendation-item")
+    ) {
+      detailSwipeGestureRef.current = null;
+      return;
+    }
+    detailSwipeGestureRef.current = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      startedAt: Date.now(),
+    };
+  }, []);
+
+  const handleDetailBodyPointerUp = useCallback(
+    (event) => {
+      const gesture = detailSwipeGestureRef.current;
+      if (!gesture || gesture.pointerId !== event.pointerId) return;
+      detailSwipeGestureRef.current = null;
+      const elapsed = Date.now() - gesture.startedAt;
+      if (elapsed > DETAIL_SWIPE_MAX_DURATION_MS) return;
+      const dx = event.clientX - gesture.startX;
+      const dy = event.clientY - gesture.startY;
+      const absX = Math.abs(dx);
+      const absY = Math.abs(dy);
+      if (absX < DETAIL_SWIPE_MIN_DISTANCE) return;
+      if (absX < absY * DETAIL_SWIPE_HORIZONTAL_RATIO) return;
+      navigateDetailHistory(dx < 0 ? 1 : -1);
+    },
+    [navigateDetailHistory],
+  );
+
+  const handleDetailBodyPointerCancel = useCallback(() => {
+    detailSwipeGestureRef.current = null;
+  }, []);
 
   const handleSheetToggle = useCallback(() => {
     setSheetExpanded((prev) => !prev);
@@ -2262,10 +2726,262 @@ export default function App() {
     (item) => {
       if (!item) return;
       selectItemById(item.id);
+      beginDetailSessionFromItem(item);
       openEquipmentDetail(item);
     },
-    [openEquipmentDetail, selectItemById],
+    [beginDetailSessionFromItem, openEquipmentDetail, selectItemById],
   );
+
+  const recommendationMode = userLocation ? "nearby" : "accessible";
+  const nearbyRecommendationPrefectures = useMemo(() => {
+    if (!userLocation) return [];
+    return Object.entries(PREFECTURE_COORDS)
+      .map(([prefecture, coord]) => ({
+        prefecture,
+        distance: getDistanceKm(userLocation, coord),
+      }))
+      .filter((item) => item.prefecture && item.distance != null)
+      .sort((left, right) => left.distance - right.distance)
+      .slice(0, RECO_QUERY_PREFS_LIMIT)
+      .map((item) => item.prefecture);
+  }, [userLocation]);
+  const accessibleRecommendationPrefectures = useMemo(() => {
+    const facilityCounts = prefectureStats?.facilityCounts || {};
+    const equipmentCounts = prefectureStats?.counts || {};
+    const ranked = Object.entries(facilityCounts)
+      .map(([prefecture, count]) => ({
+        prefecture,
+        facilityCount: Number(count || 0),
+        equipmentCount: Number(equipmentCounts[prefecture] || 0),
+      }))
+      .filter((item) => item.prefecture && item.facilityCount > 0)
+      .sort((left, right) => {
+        if (right.facilityCount !== left.facilityCount) {
+          return right.facilityCount - left.facilityCount;
+        }
+        if (right.equipmentCount !== left.equipmentCount) {
+          return right.equipmentCount - left.equipmentCount;
+        }
+        return left.prefecture.localeCompare(right.prefecture, "ja");
+      })
+      .slice(0, RECO_QUERY_PREFS_LIMIT)
+      .map((item) => item.prefecture);
+    if (ranked.length > 0) {
+      return ranked;
+    }
+    return RECO_FALLBACK_PREFECTURES.slice(0, RECO_QUERY_PREFS_LIMIT);
+  }, [prefectureStats]);
+  const recommendationPrefectureSet = useMemo(() => {
+    const source =
+      recommendationMode === "nearby"
+        ? nearbyRecommendationPrefectures
+        : accessibleRecommendationPrefectures;
+    return source.slice(0, RECO_QUERY_PREFS_LIMIT);
+  }, [accessibleRecommendationPrefectures, nearbyRecommendationPrefectures, recommendationMode]);
+  const recommendationPrefectureSignature = useMemo(
+    () => recommendationPrefectureSet.join(","),
+    [recommendationPrefectureSet],
+  );
+
+  const handleDetailRecommendationSelect = useCallback(
+    (item) => {
+      if (!item) return;
+      if (detailItem?.id === item.id) return;
+      appendDetailSessionItem(item);
+      openEquipmentDetail(item, { switchDirection: "forward" });
+    },
+    [appendDetailSessionItem, detailItem, openEquipmentDetail],
+  );
+
+  useEffect(() => {
+    let isMounted = true;
+    const targetItem = detailItem;
+    const targetId = targetItem?.id || "";
+    if (!targetId) {
+      setDetailRecommendationState({
+        itemId: "",
+        mode: "accessible",
+        prefectureSignature: "",
+        pool: [],
+        visibleCount: RECO_INITIAL_VISIBLE,
+        loading: false,
+        loadingMore: false,
+        hasMore: false,
+        cursor: null,
+        error: "",
+      });
+      return () => {
+        isMounted = false;
+      };
+    }
+    const mode = recommendationMode;
+    const prefectureSignature = recommendationPrefectureSignature;
+    const cacheKey = makeRecommendationCacheKey(targetId, mode, prefectureSignature);
+    const cached = detailRecommendationCacheRef.current.get(cacheKey);
+    if (cached) {
+      setDetailRecommendationState({ ...cached, loading: false, loadingMore: false, error: "" });
+      return () => {
+        isMounted = false;
+      };
+    }
+    const initialCursor = buildInitialRecommendationCursor(recommendationPrefectureSet);
+    setDetailRecommendationState({
+      itemId: targetId,
+      mode,
+      prefectureSignature,
+      pool: [],
+      visibleCount: RECO_INITIAL_VISIBLE,
+      loading: true,
+      loadingMore: false,
+      hasMore: false,
+      cursor: initialCursor,
+      error: "",
+    });
+    const loadRecommendations = async () => {
+      try {
+        const { pool, cursor, hasMore } = await extendRecommendationPool({
+          targetItem,
+          mode,
+          prefectureSet: recommendationPrefectureSet,
+          initialPool: [],
+          initialCursor,
+          initialHasMore: true,
+          minPoolSize: RECO_INITIAL_VISIBLE,
+        });
+        if (!isMounted) return;
+        const nextState = {
+          itemId: targetId,
+          mode,
+          prefectureSignature,
+          pool,
+          visibleCount: Math.min(RECO_INITIAL_VISIBLE, pool.length),
+          loading: false,
+          loadingMore: false,
+          hasMore,
+          cursor,
+          error: "",
+        };
+        setDetailRecommendationState(nextState);
+        detailRecommendationCacheRef.current.set(cacheKey, nextState);
+      } catch (error) {
+        console.error(error);
+        if (!isMounted) return;
+        setDetailRecommendationState({
+          itemId: targetId,
+          mode,
+          prefectureSignature,
+          pool: [],
+          visibleCount: RECO_INITIAL_VISIBLE,
+          loading: false,
+          loadingMore: false,
+          hasMore: false,
+          cursor: null,
+          error: "候補の取得に失敗しました。",
+        });
+      }
+    };
+    loadRecommendations();
+    return () => {
+      isMounted = false;
+    };
+  }, [
+    buildInitialRecommendationCursor,
+    detailItem,
+    extendRecommendationPool,
+    makeRecommendationCacheKey,
+    recommendationMode,
+    recommendationPrefectureSet,
+    recommendationPrefectureSignature,
+  ]);
+
+  const handleLoadMoreRecommendations = useCallback(async () => {
+    const current = detailRecommendationStateRef.current;
+    const targetItem = detailItem;
+    if (!targetItem || current.itemId !== targetItem.id) return;
+    if (current.loading || current.loadingMore || current.error) return;
+    const cacheKey = makeRecommendationCacheKey(
+      current.itemId,
+      current.mode,
+      current.prefectureSignature,
+    );
+    const maxVisibleFromPool = Math.min(current.pool.length, RECO_MAX_VISIBLE);
+    if (current.visibleCount < maxVisibleFromPool) {
+      const nextState = {
+        ...current,
+        visibleCount: Math.min(current.visibleCount + RECO_INCREMENT, maxVisibleFromPool),
+      };
+      setDetailRecommendationState(nextState);
+      detailRecommendationCacheRef.current.set(cacheKey, nextState);
+      return;
+    }
+    if (!current.hasMore || !current.cursor || current.visibleCount >= RECO_MAX_VISIBLE) return;
+
+    const targetVisibleCount = Math.min(current.visibleCount + RECO_INCREMENT, RECO_MAX_VISIBLE);
+    setDetailRecommendationState((prev) => {
+      if (
+        prev.itemId !== current.itemId ||
+        prev.mode !== current.mode ||
+        prev.prefectureSignature !== current.prefectureSignature
+      ) {
+        return prev;
+      }
+      return {
+        ...prev,
+        loadingMore: true,
+        error: "",
+      };
+    });
+    try {
+      const { pool, cursor, hasMore } = await extendRecommendationPool({
+        targetItem,
+        mode: current.mode,
+        prefectureSet: recommendationPrefectureSet,
+        initialPool: current.pool,
+        initialCursor: current.cursor,
+        initialHasMore: current.hasMore,
+        minPoolSize: targetVisibleCount,
+      });
+      setDetailRecommendationState((prev) => {
+        if (
+          prev.itemId !== current.itemId ||
+          prev.mode !== current.mode ||
+          prev.prefectureSignature !== current.prefectureSignature
+        ) {
+          return prev;
+        }
+        const nextState = {
+          ...prev,
+          pool,
+          visibleCount: Math.min(targetVisibleCount, pool.length),
+          loadingMore: false,
+          hasMore,
+          cursor,
+          error: "",
+        };
+        detailRecommendationCacheRef.current.set(cacheKey, nextState);
+        return nextState;
+      });
+    } catch (error) {
+      console.error(error);
+      setDetailRecommendationState((prev) => {
+        if (
+          prev.itemId !== current.itemId ||
+          prev.mode !== current.mode ||
+          prev.prefectureSignature !== current.prefectureSignature
+        ) {
+          return prev;
+        }
+        const nextState = {
+          ...prev,
+          loadingMore: false,
+          hasMore: false,
+          error: "候補の取得に失敗しました。",
+        };
+        detailRecommendationCacheRef.current.set(cacheKey, nextState);
+        return nextState;
+      });
+    }
+  }, [detailItem, extendRecommendationPool, makeRecommendationCacheKey, recommendationPrefectureSet]);
 
   const handleSheetTouchStart = (event) => {
     const target = event.target;
@@ -2290,13 +3006,16 @@ export default function App() {
       if (sheetExpanded) {
         setSheetExpanded(false);
       } else {
-        setDetailOpen(false);
+        closeDetailSheet();
       }
     }
     sheetTouchStartRef.current = null;
   };
 
   useEffect(() => {
+    if (detailSession) {
+      return;
+    }
     if (!selectedItemId) {
       if (detailOpen) {
         setDetailOpen(false);
@@ -2309,7 +3028,7 @@ export default function App() {
         setDetailOpen(false);
       }
     }
-  }, [detailOpen, displayedItemIds, itemPageMap, selectedItemId]);
+  }, [detailOpen, detailSession, displayedItemIds, itemPageMap, selectedItemId]);
 
   const registerListItemRef = useCallback((itemId) => {
     return (node) => {
@@ -2764,7 +3483,7 @@ export default function App() {
         return bounds ? { prefecture: name, path, bounds } : null;
       })
       .filter(Boolean);
-  }, [mapProjection]);
+  }, [mapProjection, prefectureGeoJson?.features]);
 
   const prefectureBoundsMap = useMemo(() => {
     const map = new Map();
@@ -3165,6 +3884,52 @@ export default function App() {
         : papersStatus === "error"
           ? detailItem?.papersError || "論文データの取得に失敗しました。"
           : "関連論文データを準備中です。";
+  const isActiveRecommendationState =
+    detailRecommendationState.itemId === detailItem?.id &&
+    detailRecommendationState.mode === recommendationMode &&
+    detailRecommendationState.prefectureSignature === recommendationPrefectureSignature;
+  const detailRecommendationPool = isActiveRecommendationState ? detailRecommendationState.pool : [];
+  const detailRecommendationVisibleCount = isActiveRecommendationState
+    ? detailRecommendationState.visibleCount
+    : RECO_INITIAL_VISIBLE;
+  const detailRecommendationItems = detailRecommendationPool.slice(0, detailRecommendationVisibleCount);
+  const detailRecommendationLoading =
+    isActiveRecommendationState && detailRecommendationState.loading;
+  const detailRecommendationLoadingMore =
+    isActiveRecommendationState && detailRecommendationState.loadingMore;
+  const detailRecommendationError = isActiveRecommendationState
+    ? detailRecommendationState.error
+    : "";
+  const detailRecommendationHasMore =
+    isActiveRecommendationState && detailRecommendationState.hasMore;
+  const detailRecommendationCanLoadMore =
+    !detailRecommendationLoading &&
+    !detailRecommendationError &&
+    detailRecommendationItems.length > 0 &&
+    detailRecommendationVisibleCount < RECO_MAX_VISIBLE &&
+    (detailRecommendationVisibleCount < detailRecommendationPool.length || detailRecommendationHasMore);
+  const detailRecommendationStatusMessage = detailRecommendationLoading
+    ? "類似機器を読み込み中..."
+    : detailRecommendationItems.length === 0
+      ? detailRecommendationError || "条件に合う類似機器が見つかりませんでした。"
+      : "";
+  const detailRecommendationInlineError =
+    detailRecommendationItems.length > 0 ? detailRecommendationError : "";
+  const detailHistoryIds = detailSession?.historyIds || [];
+  const detailHistoryLength = detailHistoryIds.length;
+  const detailHistoryCursor = Number.isInteger(detailSession?.cursor)
+    ? detailSession.cursor
+    : detailHistoryLength > 0
+      ? 0
+      : -1;
+  const canDetailHistoryBack = detailHistoryLength > 1 && detailHistoryCursor > 0;
+  const canDetailHistoryForward =
+    detailHistoryLength > 1 && detailHistoryCursor >= 0 && detailHistoryCursor < detailHistoryLength - 1;
+  const detailRootItemId = detailSession?.rootItemId || "";
+  const isDetailRootActive = Boolean(detailRootItemId && detailItem?.id === detailRootItemId);
+  const detailBodySwitchClass = detailSwitchDirection
+    ? `is-switch-${detailSwitchDirection} is-switch-token-${detailSwitchToken % 2}`
+    : "";
 
   return (
     <div className="page">
@@ -3173,13 +3938,20 @@ export default function App() {
           <div className="hero-copy">
             <p className="eyebrow">公的機関の研究設備を、地域から探す</p>
             <div className="title-row">
-            <div className="title-stack">
-              <h1>
-                キキドコ
-                <span>その装置、国内にあります。</span>
-              </h1>
+              <div className="title-stack">
+                <h1>
+                  キキドコ？
+                  <span>その装置、国内にあります。</span>
+                </h1>
+              </div>
+              <div className="hero-mascot" aria-hidden="true">
+                <img
+                  className="hero-mascot-image"
+                  src="/brand/hero-icon-transparent.png"
+                  alt=""
+                />
+              </div>
             </div>
-          </div>
           <p className="lead">
             国立研究機関・国立大学・私立大学・高専の共用設備を一箇所で検索。
             地域別の分布を俯瞰しながら、最適な設備へアクセスできます。
@@ -3580,7 +4352,7 @@ export default function App() {
                             r={radius.toFixed(2)}
                           />
                           {marker.equipmentCount > 0 && (
-                            <text className="jp-map-marker-text" y="4">
+                            <text className="jp-map-marker-text" y="0">
                               {marker.equipmentCount}
                             </text>
                           )}
@@ -3862,7 +4634,7 @@ export default function App() {
           <div
             className="equipment-sheet-backdrop"
             aria-hidden="true"
-            onClick={() => setDetailOpen(false)}
+            onClick={closeDetailSheet}
           />
           <div
             className="equipment-sheet-panel"
@@ -3890,61 +4662,168 @@ export default function App() {
                   {detailItem.prefecture} ・ {detailItem.orgName}
                 </p>
               </div>
-              <button
-                type="button"
-                className="equipment-sheet-close"
-                onClick={() => setDetailOpen(false)}
-              >
-                閉じる
-              </button>
+              <div className="equipment-sheet-header-actions">
+                <div className="equipment-sheet-nav" role="group" aria-label="詳細履歴の移動">
+                  <span className="equipment-sheet-nav-position">
+                    {detailHistoryLength > 0
+                      ? `${detailHistoryCursor + 1} / ${detailHistoryLength}`
+                      : "1 / 1"}
+                  </span>
+                  <button
+                    type="button"
+                    className="equipment-sheet-nav-button"
+                    onClick={() => navigateDetailHistory(-1)}
+                    disabled={!canDetailHistoryBack}
+                  >
+                    前へ
+                  </button>
+                  <button
+                    type="button"
+                    className="equipment-sheet-nav-button"
+                    onClick={() => navigateDetailHistory(1)}
+                    disabled={!canDetailHistoryForward}
+                  >
+                    次へ
+                  </button>
+                  <button
+                    type="button"
+                    className="equipment-sheet-nav-button"
+                    onClick={handleDetailReturnToRoot}
+                    disabled={isDetailRootActive}
+                  >
+                    一覧の選択に戻る
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  className="equipment-sheet-close"
+                  onClick={closeDetailSheet}
+                >
+                  閉じる
+                </button>
+              </div>
             </div>
-            <div className="equipment-sheet-body">
-              <p>{detailGuide.summary}</p>
-              <ul>
-                {detailGuide.bullets.map((text) => (
-                  <li key={text}>{text}</li>
-                ))}
-              </ul>
-              <div className="equipment-sheet-papers">
-                <h5>関連論文（DOI）</h5>
-                {currentPapers.length === 0 ? (
-                  <p className="paper-status">{paperMessage}</p>
-                ) : (
-                  <ul className="paper-list">
-                    {currentPapers.map((paper) => (
-                      <li
-                        key={paper.doi}
-                        className="paper-item"
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => handlePaperOpen(paper)}
-                        onKeyDown={(event) => {
-                          if (event.key === "Enter" || event.key === " ") {
-                            event.preventDefault();
-                            handlePaperOpen(paper);
-                          }
-                        }}
-                      >
-                        <p className="paper-title">{paper.title || "タイトル不明"}</p>
-                        <div className="paper-meta">
-                          <span className="paper-genre">
-                            {paper.genre_ja || resolvePaperGenre(paper.genre)}
-                          </span>
-                          {paper.source && <span>{paper.source}</span>}
-                          {paper.year && <span>{paper.year}</span>}
-                          <a
-                            href={paper.url || `https://doi.org/${paper.doi}`}
-                            target="_blank"
-                            rel="noreferrer"
-                            onClick={(event) => event.stopPropagation()}
+            <div
+              className="equipment-sheet-body"
+              onPointerDown={handleDetailBodyPointerDown}
+              onPointerUp={handleDetailBodyPointerUp}
+              onPointerCancel={handleDetailBodyPointerCancel}
+            >
+              <div
+                key={`${detailItem.id || "detail"}-${detailSwitchToken}`}
+                className={`equipment-sheet-content${
+                  detailBodySwitchClass ? ` ${detailBodySwitchClass}` : ""
+                }`}
+              >
+                <p>{detailGuide.summary}</p>
+                <ul>
+                  {detailGuide.bullets.map((text) => (
+                    <li key={text}>{text}</li>
+                  ))}
+                </ul>
+                <div className="equipment-sheet-papers">
+                  <h5>関連論文（DOI）</h5>
+                  {currentPapers.length === 0 ? (
+                    <p className="paper-status">{paperMessage}</p>
+                  ) : (
+                    <ul className="paper-list">
+                      {currentPapers.map((paper) => (
+                        <li
+                          key={paper.doi}
+                          className="paper-item"
+                          role="button"
+                          tabIndex={0}
+                          onClick={() => handlePaperOpen(paper)}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              handlePaperOpen(paper);
+                            }
+                          }}
+                        >
+                          <p className="paper-title">{paper.title || "タイトル不明"}</p>
+                          <div className="paper-meta">
+                            <span className="paper-genre">
+                              {paper.genre_ja || resolvePaperGenre(paper.genre)}
+                            </span>
+                            {paper.source && <span>{paper.source}</span>}
+                            {paper.year && <span>{paper.year}</span>}
+                            <a
+                              href={paper.url || `https://doi.org/${paper.doi}`}
+                              target="_blank"
+                              rel="noreferrer"
+                              onClick={(event) => event.stopPropagation()}
+                            >
+                              DOI: {paper.doi}
+                            </a>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+                <div className="equipment-sheet-recommendations">
+                  <h5>類似機器</h5>
+                  {detailRecommendationStatusMessage ? (
+                    <p
+                      className={`recommendation-status${
+                        detailRecommendationError ? " error" : ""
+                      }`}
+                    >
+                      {detailRecommendationStatusMessage}
+                    </p>
+                  ) : (
+                    <ul className="recommendation-list">
+                      {detailRecommendationItems.map((item) => {
+                        const isActive = detailItem?.id === item.id;
+                        return (
+                          <li
+                            key={item.id}
+                            className={`recommendation-item${isActive ? " is-active" : ""}`}
+                            role="button"
+                            tabIndex={0}
+                            aria-current={isActive ? "true" : undefined}
+                            onClick={() => {
+                              if (!isActive) {
+                                handleDetailRecommendationSelect(item);
+                              }
+                            }}
+                            onKeyDown={(event) => {
+                              if ((event.key === "Enter" || event.key === " ") && !isActive) {
+                                event.preventDefault();
+                                handleDetailRecommendationSelect(item);
+                              }
+                            }}
                           >
-                            DOI: {paper.doi}
-                          </a>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                            <p className="recommendation-name">{item.name || "名称不明"}</p>
+                            <p className="recommendation-org">{item.orgName || "機関不明"}</p>
+                            <div className="recommendation-meta">
+                              <span>{item.prefecture || "不明"}</span>
+                              <span>{item.categoryGeneral || "未分類"}</span>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                  {detailRecommendationCanLoadMore && (
+                    <div className="recommendation-controls">
+                      <button
+                        type="button"
+                        className="recommendation-more-button"
+                        onClick={handleLoadMoreRecommendations}
+                        disabled={detailRecommendationLoadingMore}
+                      >
+                        {detailRecommendationLoadingMore
+                          ? "さらに候補を取得中..."
+                          : "もっと類似機器を探す"}
+                      </button>
+                    </div>
+                  )}
+                  {!detailRecommendationStatusMessage && detailRecommendationInlineError && (
+                    <p className="recommendation-status error">{detailRecommendationInlineError}</p>
+                  )}
+                </div>
               </div>
             </div>
             <div className="equipment-sheet-actions">
@@ -3976,7 +4855,7 @@ export default function App() {
 
       <footer className="footer">
         <p>データは公的機関が公開する情報をもとに収集・更新します。</p>
-        <p>利用登録や手続きはeqnet側で実施してください。</p>
+        <p>利用登録や手続きはeqnet、又は保有機関にお問い合わせください。</p>
         <p className="footer-links">
           <a href={TERMS_URL} target="_blank" rel="noreferrer">
             利用規約

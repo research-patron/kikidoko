@@ -21,6 +21,8 @@ dependencies = [
 kikidoko-crawl = "kikidoko_crawler.main:main"
 kikidoko-backfill = "kikidoko_crawler.backfill:main"
 kikidoko-eqnet-backfill = "kikidoko_crawler.eqnet_backfill:main"
+kikidoko-eqnet-category-sync = "kikidoko_crawler.eqnet_category_sync:main"
+kikidoko-eqnet-prefecture-sync = "kikidoko_crawler.eqnet_prefecture_sync:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

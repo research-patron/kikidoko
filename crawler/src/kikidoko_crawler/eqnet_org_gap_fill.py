@@ -8,7 +8,7 @@ import os
 import re
 import sys
 import unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -16,6 +16,15 @@ from typing import Any, Iterable
 import requests
 
 from .eqnet_backfill import EQNET_SEARCH_URL, build_eqnet_url, parse_eqnet_id, strip_html_wrapper
+from .eqnet_prefecture_sync import (
+    build_org_prefecture_rows,
+    build_prefecture_matchers,
+    fetch_public_equipment_html,
+    load_org_prefecture_csv,
+    parse_global_organizations,
+    resolve_prefecture_from_org_name,
+    write_org_prefecture_csv,
+)
 from .firestore_client import get_client
 from .models import RawEquipment
 from .normalizer import normalize_equipment
@@ -75,6 +84,11 @@ def parse_args(argv: Iterable[str]) -> argparse.Namespace:
         "--org-list-csv",
         default="",
         help="CSV file with org_name column (used with --skip-firestore-read).",
+    )
+    parser.add_argument(
+        "--org-prefecture-map-csv",
+        default="crawler/eqnet_org_prefecture_map.csv",
+        help="CSV path for EQNET organization->prefecture map.",
     )
     return parser.parse_args(list(argv))
 
@@ -171,6 +185,26 @@ def run(args: argparse.Namespace) -> int:
     eqnet_rows, eqnet_total = fetch_eqnet_rows(args.timeout)
     print(f"EQNET rows loaded: {len(eqnet_rows)} (total={eqnet_total})")
 
+    org_pref_path = Path(args.org_prefecture_map_csv)
+    org_pref_rows = load_org_prefecture_csv(org_pref_path)
+    if not org_pref_rows:
+        session = requests.Session()
+        session.headers.update(
+            {
+                "User-Agent": "kikidoko-eqnet-org-gap-fill/0.1",
+                "Accept": "text/html,application/xhtml+xml,application/json,text/plain,*/*",
+            }
+        )
+        html = fetch_public_equipment_html(session=session, timeout=args.timeout)
+        organizations = parse_global_organizations(html)
+        org_pref_rows = build_org_prefecture_rows(organizations)
+        write_org_prefecture_csv(org_pref_path, org_pref_rows)
+    matcher_rows, alias_matchers = build_prefecture_matchers(org_pref_rows)
+    print(
+        f"Organization prefecture map loaded: rows={len(org_pref_rows)} "
+        f"csv={org_pref_path}"
+    )
+
     client = get_client(args.project_id, args.credentials or None)
     collection = client.collection("equipment")
 
@@ -249,8 +283,16 @@ def run(args: argparse.Namespace) -> int:
         return 0
 
     to_write: list[tuple[str, dict[str, Any]]] = []
+    unresolved_prefecture_orgs: Counter[str] = Counter()
     now_iso = datetime.now(timezone.utc).isoformat()
     for org_name, rows in missing_org_to_rows.items():
+        resolved_prefecture, matched_org_name, match_mode = resolve_prefecture_from_org_name(
+            org_name=org_name,
+            matcher_rows=matcher_rows,
+            alias_matchers=alias_matchers,
+        )
+        if not resolved_prefecture:
+            unresolved_prefecture_orgs[org_name] += len(rows)
         for row in rows:
             eqnet_id = parse_eqnet_id(row.get("id"))
             if not eqnet_id:
@@ -281,6 +323,7 @@ def run(args: argparse.Namespace) -> int:
                 category_general="EQNET設備",
                 category_detail="",
                 org_name=org_name,
+                prefecture=resolved_prefecture,
                 address_raw=org_name,
                 external_use=external_use,
                 fee_note=clean_text(row.get("budget", "")),
@@ -304,6 +347,10 @@ def run(args: argparse.Namespace) -> int:
                     "eqnet_match_total": 1,
                     "eqnet_match_updated_at": now_iso,
                     "source_site": "eqnet",
+                    "prefecture_source": "eqnet_org_map" if resolved_prefecture else "",
+                    "prefecture_synced_at": now_iso if resolved_prefecture else "",
+                    "eqnet_prefecture_match_mode": match_mode,
+                    "eqnet_prefecture_matched_org_name": matched_org_name,
                 }
             )
             to_write.append((equipment_id, payload))
@@ -316,6 +363,10 @@ def run(args: argparse.Namespace) -> int:
     if args.dry_run:
         for org_name in sorted(missing_org_to_rows.keys())[:20]:
             print(f"[dry-run] missing_org: {org_name} ({len(missing_org_to_rows[org_name])} rows)")
+        if unresolved_prefecture_orgs:
+            print("[dry-run] unresolved_prefecture_orgs:")
+            for org_name, count in unresolved_prefecture_orgs.most_common(20):
+                print(f"  {count} {org_name}")
         return 0
 
     batch = client.batch()
@@ -332,6 +383,10 @@ def run(args: argparse.Namespace) -> int:
         batch.commit()
 
     print(f"Imported equipment rows: {len(to_write)}")
+    if unresolved_prefecture_orgs:
+        print("Unresolved prefecture organizations:")
+        for org_name, count in unresolved_prefecture_orgs.most_common(20):
+            print(f"  {count} {org_name}")
     return 0
 
 
