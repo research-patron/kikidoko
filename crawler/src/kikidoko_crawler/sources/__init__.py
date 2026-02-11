@@ -43,6 +43,7 @@ from .okayama import fetch_okayama_records
 from .oist import fetch_oist_records
 from .osaka import fetch_osaka_records
 from .riken import fetch_riken_records
+from .registry_low_count import fetch_registry_low_count_records
 from .ryukyu import fetch_ryukyu_records
 from .saga import fetch_saga_records
 from .shimane import fetch_shimane_records
@@ -73,6 +74,7 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "gunma": fetch_gunma_records,
     "hiroshima": fetch_hiroshima_records,
     "riken": fetch_riken_records,
+    "registry_low_count": fetch_registry_low_count_records,
     "ryukyu": fetch_ryukyu_records,
     "hokudai": fetch_hokudai_records,
     "ibaraki": fetch_ibaraki_records,
@@ -141,6 +143,8 @@ def fetch_records(source: str, timeout: int, limit: int = 0) -> list[RawEquipmen
 def _fetch_all(timeout: int, limit: int) -> list[RawEquipment]:
     records: list[RawEquipment] = []
     for key in SOURCE_HANDLERS.keys():
+        if key == "registry_low_count":
+            continue
         remaining = 0 if limit == 0 else max(limit - len(records), 0)
         records.extend(SOURCE_HANDLERS[key](timeout, remaining))
         if limit and len(records) >= limit:

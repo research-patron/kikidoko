@@ -176,6 +176,7 @@ const DETAIL_SWITCH_ANIMATION_MS = 420;
 const DETAIL_SWIPE_MIN_DISTANCE = 56;
 const DETAIL_SWIPE_HORIZONTAL_RATIO = 1.25;
 const DETAIL_SWIPE_MAX_DURATION_MS = 900;
+const NARROW_LAYOUT_QUERY = "(max-width: 1100px)";
 
 const toMercatorY = (lat) => {
   const clamped = Math.max(-85, Math.min(85, lat));
@@ -754,6 +755,7 @@ const EQNET_ATTENTION_TOTAL_MS =
   EQNET_ATTENTION_ECHO_DELAY_MS +
   EQNET_ATTENTION_END_BUFFER_MS;
 const PAGE_SIZE = 6;
+const RESULTS_COLUMN_MIN_HEIGHT = 620;
 
 const badgeClass = (value) => {
   if (value === "可") return "badge badge-ok";
@@ -1013,6 +1015,7 @@ export default function App() {
   });
   const [mapGestureActive, setMapGestureActive] = useState(false);
   const [appliedColumnHeight, setAppliedColumnHeight] = useState(0);
+  const [appliedMapPanelHeight, setAppliedMapPanelHeight] = useState(0);
   const [isNarrowLayout, setIsNarrowLayout] = useState(false);
   const [prefectureFilter, setPrefectureFilter] = useState("");
   const [orgFilter, setOrgFilter] = useState("");
@@ -1068,6 +1071,8 @@ export default function App() {
   const listItemRefs = useRef(new Map());
   const resultsRef = useRef(null);
   const resultsListRef = useRef(null);
+  const resultsHeadRef = useRef(null);
+  const resultsContentRef = useRef(null);
   const sheetTouchStartRef = useRef(null);
   const prefectureSnapshotRef = useRef(null);
   const mapContainerRef = useRef(null);
@@ -1081,9 +1086,11 @@ export default function App() {
   const eqnetAssistAttentionTimerRef = useRef(null);
   const attentionRestartRafRef = useRef(null);
   const mobilePaginationScrollPendingRef = useRef(false);
-  const measuredResultsListHeightRef = useRef(0);
-  const prevLoadingRef = useRef(loading);
   const heightSyncFrameRef = useRef(null);
+  const fullPageBaselineHeightRef = useRef(RESULTS_COLUMN_MIN_HEIGHT);
+  const loadingLockedHeightRef = useRef(0);
+  const prevLoadingRef = useRef(loading);
+  const appliedColumnHeightRef = useRef(appliedColumnHeight);
   const stableItemsWithDistanceRef = useRef([]);
   const detailRecommendationCacheRef = useRef(new Map());
   const detailRecommendationStateRef = useRef(detailRecommendationState);
@@ -1104,6 +1111,92 @@ export default function App() {
       heightSyncFrameRef.current = null;
     }
   }, []);
+
+  const measureResultsIntrinsicHeight = useCallback(() => {
+    if (typeof window === "undefined") return 0;
+    const listElement = resultsListRef.current;
+    const headElement = resultsHeadRef.current;
+    const contentElement = resultsContentRef.current;
+    if (!listElement || !headElement || !contentElement) return 0;
+
+    const computed = window.getComputedStyle(listElement);
+    const parseCssPx = (value) => {
+      const px = Number.parseFloat(value);
+      return Number.isFinite(px) ? px : 0;
+    };
+    const paddingTop = parseCssPx(computed.paddingTop);
+    const paddingBottom = parseCssPx(computed.paddingBottom);
+    const borderTop = parseCssPx(computed.borderTopWidth);
+    const borderBottom = parseCssPx(computed.borderBottomWidth);
+    let gap = parseCssPx(computed.rowGap);
+    if (!gap) {
+      gap = parseCssPx(computed.gap) || parseCssPx(computed.columnGap);
+    }
+    const nextHeight =
+      paddingTop +
+      paddingBottom +
+      borderTop +
+      borderBottom +
+      gap +
+      headElement.offsetHeight +
+      contentElement.offsetHeight;
+    if (!Number.isFinite(nextHeight) || nextHeight <= 0) return 0;
+    return Math.ceil(nextHeight);
+  }, []);
+
+  const syncColumnHeight = useCallback(() => {
+    if (isNarrowLayout) {
+      setAppliedColumnHeight((prev) => (prev === 0 ? prev : 0));
+      return;
+    }
+
+    const lockedHeight = loadingLockedHeightRef.current;
+    if (lockedHeight > 0) {
+      setAppliedColumnHeight((prev) => (Math.abs(prev - lockedHeight) > 1 ? lockedHeight : prev));
+      return;
+    }
+
+    const intrinsicHeight = measureResultsIntrinsicHeight();
+    if (!intrinsicHeight) return;
+    const itemCount = pagesRef.current[page - 1]?.items?.length ?? 0;
+
+    if (!loading && itemCount >= PAGE_SIZE) {
+      fullPageBaselineHeightRef.current = intrinsicHeight;
+    }
+
+    const baselineHeight = fullPageBaselineHeightRef.current || RESULTS_COLUMN_MIN_HEIGHT;
+    const targetHeight = Math.max(intrinsicHeight, baselineHeight, RESULTS_COLUMN_MIN_HEIGHT);
+    setAppliedColumnHeight((prev) => (Math.abs(prev - targetHeight) > 1 ? targetHeight : prev));
+  }, [isNarrowLayout, loading, measureResultsIntrinsicHeight, page]);
+
+  const syncMapPanelHeightFromRendered = useCallback(() => {
+    if (isNarrowLayout) {
+      setAppliedMapPanelHeight((prev) => (prev === 0 ? prev : 0));
+      return;
+    }
+    const renderedHeight = resultsListRef.current?.getBoundingClientRect?.().height || 0;
+    const fallbackHeight = Math.max(
+      appliedColumnHeightRef.current || 0,
+      fullPageBaselineHeightRef.current || 0,
+      RESULTS_COLUMN_MIN_HEIGHT,
+    );
+    const targetHeight = Math.max(Math.ceil(renderedHeight), fallbackHeight);
+    if (!Number.isFinite(targetHeight) || targetHeight <= 0) return;
+    setAppliedMapPanelHeight((prev) =>
+      Math.abs(prev - targetHeight) > 1 ? targetHeight : prev,
+    );
+  }, [isNarrowLayout]);
+
+  const scheduleMapPanelHeightSync = useCallback(() => {
+    cancelHeightSyncFrame();
+    heightSyncFrameRef.current = requestAnimationFrame(() => {
+      syncColumnHeight();
+      heightSyncFrameRef.current = requestAnimationFrame(() => {
+        heightSyncFrameRef.current = null;
+        syncMapPanelHeightFromRendered();
+      });
+    });
+  }, [cancelHeightSyncFrame, syncColumnHeight, syncMapPanelHeightFromRendered]);
 
   const clearEqnetAttentionPlayback = useCallback(() => {
     if (eqnetAssistAttentionTimerRef.current) {
@@ -1149,6 +1242,10 @@ export default function App() {
   }, [pages]);
 
   useEffect(() => {
+    appliedColumnHeightRef.current = appliedColumnHeight;
+  }, [appliedColumnHeight]);
+
+  useEffect(() => {
     mapViewportFrameRef.current = renderedMapViewport;
   }, [renderedMapViewport]);
 
@@ -1176,7 +1273,7 @@ export default function App() {
 
   useEffect(() => {
     if (typeof window === "undefined") return undefined;
-    const media = window.matchMedia("(max-width: 860px)");
+    const media = window.matchMedia(NARROW_LAYOUT_QUERY);
     const handleChange = () => setIsNarrowLayout(media.matches);
     handleChange();
     if (media.addEventListener) {
@@ -1194,63 +1291,59 @@ export default function App() {
   }, []);
 
   useLayoutEffect(() => {
-    const element = resultsListRef.current;
-    if (!element) return undefined;
-    const updateHeight = () => {
-      const nextHeight = element.offsetHeight;
-      if (!nextHeight) return;
-      measuredResultsListHeightRef.current = nextHeight;
-      if (!isNarrowLayout && !loading) {
-        setAppliedColumnHeight((prev) =>
-          Math.abs(prev - nextHeight) > 1 ? nextHeight : prev,
-        );
-      }
-    };
-    updateHeight();
+    const listElement = resultsListRef.current;
+    const headElement = resultsHeadRef.current;
+    const contentElement = resultsContentRef.current;
+    if (!listElement || !headElement || !contentElement) return undefined;
+    scheduleMapPanelHeightSync();
     const observer =
       typeof ResizeObserver !== "undefined"
-        ? new ResizeObserver(() => updateHeight())
+        ? new ResizeObserver(() => scheduleMapPanelHeightSync())
         : null;
-    observer?.observe(element);
-    window.addEventListener("resize", updateHeight);
+    observer?.observe(listElement);
+    observer?.observe(headElement);
+    observer?.observe(contentElement);
+    window.addEventListener("resize", scheduleMapPanelHeightSync);
     return () => {
       observer?.disconnect();
-      window.removeEventListener("resize", updateHeight);
+      window.removeEventListener("resize", scheduleMapPanelHeightSync);
     };
-  }, [isNarrowLayout, loading]);
+  }, [scheduleMapPanelHeightSync]);
 
   useEffect(() => {
     if (isNarrowLayout) {
+      loadingLockedHeightRef.current = 0;
       prevLoadingRef.current = loading;
+      cancelHeightSyncFrame();
+      setAppliedColumnHeight((prev) => (prev === 0 ? prev : 0));
+      setAppliedMapPanelHeight((prev) => (prev === 0 ? prev : 0));
       return;
     }
 
     const wasLoading = prevLoadingRef.current;
-    cancelHeightSyncFrame();
-
     if (!wasLoading && loading) {
-      const fallbackHeight = measuredResultsListHeightRef.current;
-      setAppliedColumnHeight((prev) => {
-        const lockedHeight = prev > 0 ? prev : fallbackHeight;
-        if (!lockedHeight) return prev;
-        return Math.abs(prev - lockedHeight) > 1 ? lockedHeight : prev;
-      });
+      const lockHeight = Math.max(
+        appliedColumnHeightRef.current || 0,
+        fullPageBaselineHeightRef.current || 0,
+        RESULTS_COLUMN_MIN_HEIGHT,
+      );
+      loadingLockedHeightRef.current = lockHeight;
+      setAppliedColumnHeight((prev) => (Math.abs(prev - lockHeight) > 1 ? lockHeight : prev));
+      setAppliedMapPanelHeight((prev) => (Math.abs(prev - lockHeight) > 1 ? lockHeight : prev));
     } else if (wasLoading && !loading) {
-      heightSyncFrameRef.current = requestAnimationFrame(() => {
-        heightSyncFrameRef.current = requestAnimationFrame(() => {
-          const nextHeight = measuredResultsListHeightRef.current;
-          if (nextHeight) {
-            setAppliedColumnHeight((prev) =>
-              Math.abs(prev - nextHeight) > 1 ? nextHeight : prev,
-            );
-          }
-          heightSyncFrameRef.current = null;
-        });
-      });
+      loadingLockedHeightRef.current = 0;
+      scheduleMapPanelHeightSync();
+    } else {
+      scheduleMapPanelHeightSync();
     }
 
     prevLoadingRef.current = loading;
-  }, [cancelHeightSyncFrame, isNarrowLayout, loading]);
+  }, [cancelHeightSyncFrame, isNarrowLayout, loading, scheduleMapPanelHeightSync]);
+
+  useEffect(() => {
+    if (isNarrowLayout || loading) return;
+    scheduleMapPanelHeightSync();
+  }, [isNarrowLayout, loading, page, scheduleMapPanelHeightSync]);
 
   useEffect(() => {
     if (!activeExternal) return undefined;
@@ -2555,8 +2648,8 @@ export default function App() {
   const openEquipmentDetail = useCallback(
     (item, options = {}) => {
       if (!item) return;
-      const { switchDirection = "" } = options;
-      setSheetExpanded(false);
+      const { switchDirection = "", keepExpanded = false } = options;
+      setSheetExpanded((prev) => (keepExpanded ? prev : false));
       setDetailItem(item);
       if (detailOpen) {
         triggerDetailSwitchAnimation(switchDirection);
@@ -2788,7 +2881,7 @@ export default function App() {
       if (!item) return;
       if (detailItem?.id === item.id) return;
       appendDetailSessionItem(item);
-      openEquipmentDetail(item, { switchDirection: "forward" });
+      openEquipmentDetail(item, { switchDirection: "forward", keepExpanded: true });
     },
     [appendDetailSessionItem, detailItem, openEquipmentDetail],
   );
@@ -4082,12 +4175,12 @@ export default function App() {
             className={`results-list${loading ? " is-loading" : ""}`}
             ref={resultsListRef}
             style={
-              !isNarrowLayout && loading && appliedColumnHeight
+              !isNarrowLayout && appliedColumnHeight
                 ? { minHeight: `${appliedColumnHeight}px` }
                 : undefined
             }
           >
-            <div className="results-head">
+            <div className="results-head" ref={resultsHeadRef}>
               <h2>検索結果</h2>
               {(prefectureFilter || orgFilter) && (
                 <div className="prefecture-filter">
@@ -4099,7 +4192,10 @@ export default function App() {
                 </div>
               )}
             </div>
-            <div className={`results-content${loading ? " is-loading" : ""}`}>
+            <div
+              className={`results-content${loading ? " is-loading" : ""}`}
+              ref={resultsContentRef}
+            >
               {showResultsError ? (
                 <p className="results-status error">{loadError}</p>
               ) : showResultsEmpty ? (
@@ -4251,8 +4347,8 @@ export default function App() {
           <aside
             className="map-panel"
             style={
-              !isNarrowLayout && appliedColumnHeight
-                ? { height: `${appliedColumnHeight}px` }
+              !isNarrowLayout && appliedMapPanelHeight
+                ? { height: `${appliedMapPanelHeight}px` }
                 : undefined
             }
           >

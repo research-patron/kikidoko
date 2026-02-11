@@ -1110,7 +1110,7 @@
 }
 
 .map-list {
-  flex: 0 0 auto;
+  display: none;
 }
 
 .map-list ul {
@@ -2367,8 +2367,8 @@
   }
 
   .map-canvas {
-    height: clamp(500px, 60vw, 280px);
-    min-height: 500px;
+    height: clamp(280px, 60vw, 500px);
+    min-height: 280px;
   }
 
   .map-zoom-controls {

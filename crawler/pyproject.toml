@@ -23,6 +23,8 @@ kikidoko-backfill = "kikidoko_crawler.backfill:main"
 kikidoko-eqnet-backfill = "kikidoko_crawler.eqnet_backfill:main"
 kikidoko-eqnet-category-sync = "kikidoko_crawler.eqnet_category_sync:main"
 kikidoko-eqnet-prefecture-sync = "kikidoko_crawler.eqnet_prefecture_sync:main"
+kikidoko-low-count-audit = "kikidoko_crawler.low_count_prefecture_audit:main"
+kikidoko-source-registry-sync = "kikidoko_crawler.source_registry_sync:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
