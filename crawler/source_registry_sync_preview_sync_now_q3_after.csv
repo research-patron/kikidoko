@@ -1,0 +1,21 @@
+registry_key,org_name,prefecture,parser_type,source_handler,url,fetched_raw_count,normalized_count,fetch_status,action_hint,diagnosis,would_create,would_update
+shinshu,信州大学 基盤研究支援センター 機器分析支援部門,長野県,source_handler,shinshu,https://www.shinshu-u.ac.jp/institution/kiban/kiki/secchi/,8,8,ok,sync_now,取得成功,0,8
+shimane,島根大学 研究・学術情報本部 総合科学研究支援センター 遺伝子機能解析部門,島根県,source_handler,shimane,https://www.shimane-u.ac.jp/,92,92,ok,sync_now,取得成功,0,92
+kagawa,香川大学 微細加工プラットフォーム,香川県,source_handler,kagawa,https://www.kagawa-u.ac.jp/,24,24,ok,sync_now,取得成功,0,24
+iwate,岩手大学 全学共同利用機器,岩手県,source_handler,iwate,https://www.iwate-u.ac.jp/,11,11,ok,sync_now,取得成功,0,11
+kumamoto,熊本大学工学部附属工学研究機器センター,熊本県,source_handler,kumamoto,https://www.kumamoto-u.ac.jp/,28,28,ok,sync_now,取得成功,0,28
+oita,大分大学 医学部 バイオラボセンター,大分県,source_handler,oita,https://www.oita-u.ac.jp/,35,35,ok,sync_now,取得成功,0,35
+mie,三重大学 研究基盤推進機構 先端科学研究支援センター オープンイノベーション施設,三重県,source_handler,mie,https://www.mie-u.ac.jp/,33,33,ok,sync_now,取得成功,0,33
+chiba,千葉大学 共用機器センター,千葉県,source_handler,chiba,https://www.chiba-u.jp/,16,16,ok,sync_now,取得成功,0,16
+kanazawa,金沢大学 疾患モデル総合研究センター 機器分析研究施設,石川県,source_handler,kanazawa,https://www.kanazawa-u.ac.jp/,13,13,ok,sync_now,取得成功,0,13
+gunma,群馬大学 コアファシリティ総合センター エンジニアリング分野,群馬県,source_handler,gunma,https://www.gunma-u.ac.jp/,34,34,ok,sync_now,取得成功,0,34
+fukui,福井大学 遠赤外領域開発研究センター,福井県,source_handler,fukui,https://www.u-fukui.ac.jp/,8,8,ok,sync_now,取得成功,0,8
+tokushima,徳島大学 地域協働技術センター,徳島県,source_handler,tokushima,https://kiki.st.tokushima-u.ac.jp/machine/index.html,55,55,ok,sync_now,取得成功,0,55
+ehime,愛媛大学,愛媛県,source_handler,ehime,https://www.ehime-u.ac.jp/,45,45,ok,sync_now,取得成功,0,45
+miyazaki,宮崎大学,宮崎県,source_handler,miyazaki,https://www.miyazaki-u.ac.jp/,50,50,ok,sync_now,取得成功,0,50
+yamanashi,山梨大学 機器分析センター,山梨県,source_handler,yamanashi,https://clab.yamanashi.ac.jp/list/,67,67,ok,sync_now,取得成功,0,67
+kobe,神戸大学 研究基盤センター 機器分析部門,兵庫県,source_handler,kobe,https://www.kobe-u.ac.jp/,18,18,ok,sync_now,取得成功,0,18
+utsunomiya,宇都宮大学 研究推進機構 機器分析センター,栃木県,source_handler,utsunomiya,https://www.utsunomiya-u.ac.jp/,71,71,ok,sync_now,取得成功,0,71
+shizuoka_u,静岡大学,静岡県,table_utils,,https://kiki.shizuoka.ac.jp/portal/kd/outside,33,33,ok,sync_now,取得成功,0,33
+hirosaki_u,弘前大学,青森県,source_handler,hirosaki_u,https://www.innovation.hirosaki-u.ac.jp/kiki/list.html,29,29,ok,sync_now,取得成功,0,29
+nara_kosen,奈良工業高等専門学校,奈良県,source_handler,nara_kosen,https://www.nit-nara-ia-center.share-ac.jp/facilities/,32,32,ok,sync_now,取得成功,0,32

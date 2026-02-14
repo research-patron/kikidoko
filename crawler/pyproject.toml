@@ -25,6 +25,11 @@ kikidoko-eqnet-category-sync = "kikidoko_crawler.eqnet_category_sync:main"
 kikidoko-eqnet-prefecture-sync = "kikidoko_crawler.eqnet_prefecture_sync:main"
 kikidoko-low-count-audit = "kikidoko_crawler.low_count_prefecture_audit:main"
 kikidoko-source-registry-sync = "kikidoko_crawler.source_registry_sync:main"
+kikidoko-source-candidate-refresh = "kikidoko_crawler.source_registry_candidate_refresh:main"
+kikidoko-export-snapshot = "kikidoko_crawler.snapshot_export:main"
+kikidoko-papers-audit = "kikidoko_crawler.papers_audit:main"
+kikidoko-papers-backfill = "kikidoko_crawler.papers_backfill:main"
+kikidoko-papers-strict-recheck = "kikidoko_crawler.papers_strict_recheck:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

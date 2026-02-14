@@ -1,0 +1,152 @@
+{
+  "version": "2026-02-14",
+  "generic_terms_ja": [
+    "装置",
+    "設備",
+    "システム",
+    "機器",
+    "一式",
+    "施設",
+    "分析",
+    "測定"
+  ],
+  "generic_terms_en": [
+    "system",
+    "systems",
+    "equipment",
+    "device",
+    "devices",
+    "instrument",
+    "instruments",
+    "analyzer",
+    "analysis"
+  ],
+  "vendor_terms": [
+    "島津",
+    "日立",
+    "日本電子",
+    "JEOL",
+    "Rigaku",
+    "Agilent",
+    "Thermo",
+    "Bruker",
+    "Oxford",
+    "Keyence",
+    "Nikon",
+    "Olympus",
+    "Leica",
+    "Canon"
+  ],
+  "core_rules": [
+    {
+      "pattern": "ラマン|Raman",
+      "core_ja": "ラマン分光",
+      "core_en": "raman spectroscopy",
+      "aliases_ja": [
+        "顕微ラマン",
+        "ラマン顕微鏡"
+      ],
+      "aliases_en": [
+        "raman microscope",
+        "confocal raman"
+      ]
+    },
+    {
+      "pattern": "赤外|IR|FTIR",
+      "core_ja": "赤外分光",
+      "core_en": "infrared spectroscopy",
+      "aliases_ja": [
+        "フーリエ変換赤外分光"
+      ],
+      "aliases_en": [
+        "ftir"
+      ]
+    },
+    {
+      "pattern": "質量分析|MS|LC/MS|GC/MS",
+      "core_ja": "質量分析",
+      "core_en": "mass spectrometry",
+      "aliases_ja": [
+        "液体クロマトグラフ質量分析",
+        "ガスクロマトグラフ質量分析"
+      ],
+      "aliases_en": [
+        "lc-ms",
+        "gc-ms"
+      ]
+    },
+    {
+      "pattern": "NMR|核磁気共鳴",
+      "core_ja": "核磁気共鳴",
+      "core_en": "nuclear magnetic resonance",
+      "aliases_en": [
+        "nmr"
+      ]
+    },
+    {
+      "pattern": "XRD|X線回折",
+      "core_ja": "X線回折",
+      "core_en": "x-ray diffraction",
+      "aliases_en": [
+        "xrd",
+        "x-ray diffractometer"
+      ]
+    },
+    {
+      "pattern": "SEM|走査型電子顕微鏡",
+      "core_ja": "走査電子顕微鏡",
+      "core_en": "scanning electron microscopy",
+      "aliases_en": [
+        "sem"
+      ]
+    },
+    {
+      "pattern": "TEM|透過電子顕微鏡",
+      "core_ja": "透過電子顕微鏡",
+      "core_en": "transmission electron microscopy",
+      "aliases_en": [
+        "tem"
+      ]
+    },
+    {
+      "pattern": "FIB|集束イオンビーム",
+      "core_ja": "集束イオンビーム",
+      "core_en": "focused ion beam",
+      "aliases_en": [
+        "fib"
+      ]
+    },
+    {
+      "pattern": "蛍光顕微鏡|共焦点|多光子|二光子",
+      "core_ja": "蛍光顕微鏡",
+      "core_en": "fluorescence microscopy",
+      "aliases_en": [
+        "confocal microscopy",
+        "multiphoton microscopy",
+        "two-photon microscopy"
+      ]
+    },
+    {
+      "pattern": "エリプソ|ellipsometer",
+      "core_ja": "分光エリプソメトリー",
+      "core_en": "spectroscopic ellipsometry",
+      "aliases_en": [
+        "ellipsometry"
+      ]
+    },
+    {
+      "pattern": "シーケンサ|sequencer",
+      "core_ja": "シーケンス解析",
+      "core_en": "sequencing",
+      "aliases_en": [
+        "next generation sequencing",
+        "ngs"
+      ]
+    },
+    {
+      "pattern": "レーザー",
+      "core_ja": "レーザー",
+      "core_en": "laser"
+    }
+  ]
+}

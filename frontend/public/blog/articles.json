@@ -1,0 +1,566 @@
+{
+  "version": "2026-02-14",
+  "site": {
+    "domain": "kikidoko.student-subscription.com",
+    "blog_base_url": "https://kikidoko.student-subscription.com/blog",
+    "language": "ja",
+    "target_market": "JP",
+    "primary_kpi": "app_inflow"
+  },
+  "policy": {
+    "url_pattern": "/blog/{category}/{slug}",
+    "allowed_categories": [
+      "guide",
+      "equipment",
+      "region",
+      "workflow"
+    ],
+    "required_fields": [
+      "title",
+      "primary_keyword",
+      "secondary_keywords",
+      "target_chars",
+      "category",
+      "cta_url",
+      "related_links"
+    ],
+    "title_rules": [
+      "primary_keyword_left_aligned",
+      "no_duplicate_primary_keyword"
+    ]
+  },
+  "category_quota": {
+    "guide": 4,
+    "equipment": 8,
+    "region": 5,
+    "workflow": 3
+  },
+  "publishing_schedule": {
+    "month_1_ids": [
+      "guide-01",
+      "guide-02",
+      "guide-03",
+      "guide-04",
+      "equipment-01",
+      "equipment-02",
+      "equipment-03",
+      "equipment-04",
+      "equipment-05",
+      "equipment-06",
+      "region-01",
+      "region-02"
+    ],
+    "month_2_ids": [
+      "equipment-07",
+      "equipment-08",
+      "region-03",
+      "region-04",
+      "region-05",
+      "workflow-01",
+      "workflow-02",
+      "workflow-03"
+    ]
+  },
+  "articles": [
+    {
+      "id": "guide-01",
+      "category": "guide",
+      "slug": "research-equipment-sharing-basics",
+      "url": "/blog/guide/research-equipment-sharing-basics",
+      "title": "研究機器の共用利用とは？大学・公的機関の設備を探す基本ガイド",
+      "primary_keyword": "研究機器 共用",
+      "secondary_keywords": [
+        "共用設備 とは",
+        "研究設備 横断検索",
+        "学外利用 研究機器"
+      ],
+      "target_chars": {
+        "min": 3500,
+        "max": 4500
+      },
+      "intent_cluster": "基礎",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/guide/search-external-usable-equipment",
+        "/blog/guide/research-equipment-pricing-guide",
+        "/blog/equipment/sem-external-use-guide"
+      ]
+    },
+    {
+      "id": "guide-02",
+      "category": "guide",
+      "slug": "search-external-usable-equipment",
+      "url": "/blog/guide/search-external-usable-equipment",
+      "title": "学外利用可の研究機器を探す方法：失敗しない検索手順",
+      "primary_keyword": "学外利用可 研究機器",
+      "secondary_keywords": [
+        "研究設備 学外利用",
+        "研究機器 探し方",
+        "共用設備 検索"
+      ],
+      "target_chars": {
+        "min": 3000,
+        "max": 4000
+      },
+      "intent_cluster": "基礎",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/guide/research-equipment-sharing-basics",
+        "/blog/guide/research-equipment-inquiry-template",
+        "/blog/region/tokyo-research-equipment-guide"
+      ]
+    },
+    {
+      "id": "guide-03",
+      "category": "guide",
+      "slug": "research-equipment-pricing-guide",
+      "url": "/blog/guide/research-equipment-pricing-guide",
+      "title": "研究設備の利用料金はどう見る？無料・有料・要相談の判断ポイント",
+      "primary_keyword": "研究設備 料金",
+      "secondary_keywords": [
+        "無料 研究機器",
+        "有料 研究設備",
+        "研究機器 費用"
+      ],
+      "target_chars": {
+        "min": 3000,
+        "max": 4000
+      },
+      "intent_cluster": "基礎",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/guide/research-equipment-sharing-basics",
+        "/blog/guide/search-external-usable-equipment",
+        "/blog/workflow/shared-vs-outsourced-analysis"
+      ]
+    },
+    {
+      "id": "guide-04",
+      "category": "guide",
+      "slug": "research-equipment-inquiry-template",
+      "url": "/blog/guide/research-equipment-inquiry-template",
+      "title": "研究機器利用の問い合わせテンプレート：初回連絡で確認すべき項目",
+      "primary_keyword": "研究機器 問い合わせ",
+      "secondary_keywords": [
+        "共用設備 申請",
+        "研究設備 連絡方法",
+        "機器利用 テンプレート"
+      ],
+      "target_chars": {
+        "min": 2800,
+        "max": 3600
+      },
+      "intent_cluster": "基礎",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/guide/search-external-usable-equipment",
+        "/blog/guide/research-equipment-pricing-guide",
+        "/blog/workflow/joint-research-equipment-flow"
+      ]
+    },
+    {
+      "id": "equipment-01",
+      "category": "equipment",
+      "slug": "sem-external-use-guide",
+      "url": "/blog/equipment/sem-external-use-guide",
+      "title": "SEM（走査電子顕微鏡）を学外で使うには？探し方と確認項目",
+      "primary_keyword": "SEM 学外利用",
+      "secondary_keywords": [
+        "走査電子顕微鏡 共同利用",
+        "電子顕微鏡 学外",
+        "SEM 予約"
+      ],
+      "target_chars": {
+        "min": 2800,
+        "max": 3600
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/tem-collaboration-guide",
+        "/blog/equipment/xrd-collaboration-guide",
+        "/blog/guide/search-external-usable-equipment"
+      ]
+    },
+    {
+      "id": "equipment-02",
+      "category": "equipment",
+      "slug": "tem-collaboration-guide",
+      "url": "/blog/equipment/tem-collaboration-guide",
+      "title": "TEM（透過電子顕微鏡）の共同利用ガイド：予約前チェックリスト",
+      "primary_keyword": "TEM 共同利用",
+      "secondary_keywords": [
+        "透過電子顕微鏡 利用",
+        "TEM 学外利用",
+        "電子顕微鏡 相談"
+      ],
+      "target_chars": {
+        "min": 2800,
+        "max": 3600
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/sem-external-use-guide",
+        "/blog/equipment/xrd-collaboration-guide",
+        "/blog/workflow/thesis-equipment-selection"
+      ]
+    },
+    {
+      "id": "equipment-03",
+      "category": "equipment",
+      "slug": "xrd-collaboration-guide",
+      "url": "/blog/equipment/xrd-collaboration-guide",
+      "title": "XRD（X線回折装置）を使いたい人向け：装置選びと依頼時の注意点",
+      "primary_keyword": "XRD 共同利用",
+      "secondary_keywords": [
+        "X線回折装置 学外利用",
+        "XRD 測定依頼",
+        "構造解析 装置"
+      ],
+      "target_chars": {
+        "min": 2800,
+        "max": 3600
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/sem-external-use-guide",
+        "/blog/equipment/nmr-frequency-selection-guide",
+        "/blog/guide/research-equipment-pricing-guide"
+      ]
+    },
+    {
+      "id": "equipment-04",
+      "category": "equipment",
+      "slug": "nmr-frequency-selection-guide",
+      "url": "/blog/equipment/nmr-frequency-selection-guide",
+      "title": "NMR装置の外部利用ガイド：周波数帯別に見る選び方",
+      "primary_keyword": "NMR 外部利用",
+      "secondary_keywords": [
+        "400MHz NMR",
+        "600MHz NMR",
+        "NMR 共同利用"
+      ],
+      "target_chars": {
+        "min": 2800,
+        "max": 3600
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/xrd-collaboration-guide",
+        "/blog/equipment/lcms-shared-analysis-guide",
+        "/blog/guide/research-equipment-pricing-guide"
+      ]
+    },
+    {
+      "id": "equipment-05",
+      "category": "equipment",
+      "slug": "lcms-shared-analysis-guide",
+      "url": "/blog/equipment/lcms-shared-analysis-guide",
+      "title": "LC-MS/MSを使う前に読む記事：共用設備での分析依頼のコツ",
+      "primary_keyword": "LC-MS/MS 共同利用",
+      "secondary_keywords": [
+        "質量分析 外部利用",
+        "LCMS 依頼",
+        "MS 装置 共用"
+      ],
+      "target_chars": {
+        "min": 2800,
+        "max": 3600
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/hplc-uplc-shared-equipment-guide",
+        "/blog/equipment/ngs-shared-equipment-guide",
+        "/blog/workflow/shared-vs-outsourced-analysis"
+      ]
+    },
+    {
+      "id": "equipment-06",
+      "category": "equipment",
+      "slug": "hplc-uplc-shared-equipment-guide",
+      "url": "/blog/equipment/hplc-uplc-shared-equipment-guide",
+      "title": "HPLC/UPLCの共用機器を探す：前処理と条件相談の基本",
+      "primary_keyword": "HPLC 共同利用",
+      "secondary_keywords": [
+        "UPLC 外部利用",
+        "液体クロマトグラフ",
+        "分析条件 相談"
+      ],
+      "target_chars": {
+        "min": 2600,
+        "max": 3400
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/lcms-shared-analysis-guide",
+        "/blog/equipment/ngs-shared-equipment-guide",
+        "/blog/guide/research-equipment-inquiry-template"
+      ]
+    },
+    {
+      "id": "equipment-07",
+      "category": "equipment",
+      "slug": "confocal-microscope-external-use-guide",
+      "url": "/blog/equipment/confocal-microscope-external-use-guide",
+      "title": "共焦点顕微鏡を学外利用するには？観察目的別の探し方",
+      "primary_keyword": "共焦点顕微鏡 学外利用",
+      "secondary_keywords": [
+        "蛍光顕微鏡 共同利用",
+        "顕微鏡 観察条件",
+        "イメージング 装置"
+      ],
+      "target_chars": {
+        "min": 2600,
+        "max": 3400
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/sem-external-use-guide",
+        "/blog/equipment/tem-collaboration-guide",
+        "/blog/workflow/thesis-equipment-selection"
+      ]
+    },
+    {
+      "id": "equipment-08",
+      "category": "equipment",
+      "slug": "ngs-shared-equipment-guide",
+      "url": "/blog/equipment/ngs-shared-equipment-guide",
+      "title": "NGS（DNAシーケンサー）を共用設備で使う方法：相談前に決めること",
+      "primary_keyword": "NGS 共同利用",
+      "secondary_keywords": [
+        "DNAシーケンサー 外部利用",
+        "シーケンス 依頼",
+        "ゲノム解析 共用設備"
+      ],
+      "target_chars": {
+        "min": 2600,
+        "max": 3400
+      },
+      "intent_cluster": "機器別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/equipment/lcms-shared-analysis-guide",
+        "/blog/equipment/hplc-uplc-shared-equipment-guide",
+        "/blog/guide/research-equipment-inquiry-template"
+      ]
+    },
+    {
+      "id": "region-01",
+      "category": "region",
+      "slug": "tokyo-research-equipment-guide",
+      "url": "/blog/region/tokyo-research-equipment-guide",
+      "title": "東京都で研究機器を探す：大学・研究機関の共用設備活用ガイド",
+      "primary_keyword": "東京都 研究機器",
+      "secondary_keywords": [
+        "東京 共用設備",
+        "首都圏 研究設備",
+        "都内 機器検索"
+      ],
+      "target_chars": {
+        "min": 2200,
+        "max": 3000
+      },
+      "intent_cluster": "地域別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/region/osaka-shared-equipment-guide",
+        "/blog/region/aichi-research-equipment-guide",
+        "/blog/equipment/sem-external-use-guide"
+      ]
+    },
+    {
+      "id": "region-02",
+      "category": "region",
+      "slug": "osaka-shared-equipment-guide",
+      "url": "/blog/region/osaka-shared-equipment-guide",
+      "title": "大阪府で使える研究設備を探す：学外利用可の見つけ方",
+      "primary_keyword": "大阪 研究機器",
+      "secondary_keywords": [
+        "大阪 共用設備",
+        "関西 研究設備",
+        "学外利用可 機器"
+      ],
+      "target_chars": {
+        "min": 2200,
+        "max": 3000
+      },
+      "intent_cluster": "地域別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/region/tokyo-research-equipment-guide",
+        "/blog/region/fukuoka-research-equipment-guide",
+        "/blog/guide/search-external-usable-equipment"
+      ]
+    },
+    {
+      "id": "region-03",
+      "category": "region",
+      "slug": "aichi-research-equipment-guide",
+      "url": "/blog/region/aichi-research-equipment-guide",
+      "title": "愛知県の研究機器共用情報まとめ：地域で探す分析設備",
+      "primary_keyword": "愛知 研究機器",
+      "secondary_keywords": [
+        "名古屋 研究設備",
+        "中部 共用設備",
+        "分析機器 愛知"
+      ],
+      "target_chars": {
+        "min": 2200,
+        "max": 3000
+      },
+      "intent_cluster": "地域別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/region/tokyo-research-equipment-guide",
+        "/blog/region/hokkaido-research-equipment-guide",
+        "/blog/equipment/xrd-collaboration-guide"
+      ]
+    },
+    {
+      "id": "region-04",
+      "category": "region",
+      "slug": "fukuoka-research-equipment-guide",
+      "url": "/blog/region/fukuoka-research-equipment-guide",
+      "title": "福岡県の共用研究設備ガイド：九州エリアで機器を探す",
+      "primary_keyword": "福岡 研究機器",
+      "secondary_keywords": [
+        "九州 研究設備",
+        "福岡 共用設備",
+        "地域別 機器検索"
+      ],
+      "target_chars": {
+        "min": 2200,
+        "max": 3000
+      },
+      "intent_cluster": "地域別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/region/osaka-shared-equipment-guide",
+        "/blog/region/hokkaido-research-equipment-guide",
+        "/blog/workflow/joint-research-equipment-flow"
+      ]
+    },
+    {
+      "id": "region-05",
+      "category": "region",
+      "slug": "hokkaido-research-equipment-guide",
+      "url": "/blog/region/hokkaido-research-equipment-guide",
+      "title": "北海道の研究設備を探す：共用機器の検索と利用の流れ",
+      "primary_keyword": "北海道 研究機器",
+      "secondary_keywords": [
+        "共用機器 北海道",
+        "地方 研究設備",
+        "学外利用 北海道"
+      ],
+      "target_chars": {
+        "min": 2200,
+        "max": 3000
+      },
+      "intent_cluster": "地域別",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/region/tokyo-research-equipment-guide",
+        "/blog/region/fukuoka-research-equipment-guide",
+        "/blog/guide/research-equipment-sharing-basics"
+      ]
+    },
+    {
+      "id": "workflow-01",
+      "category": "workflow",
+      "slug": "thesis-equipment-selection",
+      "url": "/blog/workflow/thesis-equipment-selection",
+      "title": "卒論・修論で使う研究機器の探し方：短期間で候補を絞る手順",
+      "primary_keyword": "卒論 研究機器",
+      "secondary_keywords": [
+        "修論 実験設備",
+        "研究機器 選定",
+        "学生向け 共用設備"
+      ],
+      "target_chars": {
+        "min": 2400,
+        "max": 3200
+      },
+      "intent_cluster": "実務",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/workflow/joint-research-equipment-flow",
+        "/blog/workflow/shared-vs-outsourced-analysis",
+        "/blog/equipment/tem-collaboration-guide"
+      ]
+    },
+    {
+      "id": "workflow-02",
+      "category": "workflow",
+      "slug": "joint-research-equipment-flow",
+      "url": "/blog/workflow/joint-research-equipment-flow",
+      "title": "共同研究で機器を探すときの実務フロー：学内外連携の進め方",
+      "primary_keyword": "共同研究 研究機器",
+      "secondary_keywords": [
+        "機器共用 連携",
+        "共同利用 フロー",
+        "研究設備 調整"
+      ],
+      "target_chars": {
+        "min": 2400,
+        "max": 3200
+      },
+      "intent_cluster": "実務",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/workflow/thesis-equipment-selection",
+        "/blog/workflow/shared-vs-outsourced-analysis",
+        "/blog/guide/research-equipment-inquiry-template"
+      ]
+    },
+    {
+      "id": "workflow-03",
+      "category": "workflow",
+      "slug": "shared-vs-outsourced-analysis",
+      "url": "/blog/workflow/shared-vs-outsourced-analysis",
+      "title": "共用設備と受託分析の違い：どちらを選ぶべきか判断する",
+      "primary_keyword": "共用設備 受託分析 違い",
+      "secondary_keywords": [
+        "分析依頼 比較",
+        "機器利用 判断",
+        "研究コスト 最適化"
+      ],
+      "target_chars": {
+        "min": 2400,
+        "max": 3200
+      },
+      "intent_cluster": "実務",
+      "cta_url": "https://kikidoko.student-subscription.com/",
+      "related_links": [
+        "/",
+        "/blog/workflow/thesis-equipment-selection",
+        "/blog/workflow/joint-research-equipment-flow",
+        "/blog/equipment/lcms-shared-analysis-guide"
+      ]
+    }
+  ]
+}

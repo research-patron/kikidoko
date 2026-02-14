@@ -9,7 +9,9 @@ from .ehime import fetch_ehime_records
 from .fukui import fetch_fukui_records
 from .gifu import fetch_gifu_records
 from .gunma import fetch_gunma_records
+from .hamamatsu_med import fetch_hamamatsu_med_records
 from .hiroshima import fetch_hiroshima_records
+from .hirosaki_u import fetch_hirosaki_u_records
 from .hokudai import fetch_hokudai_records
 from .ibaraki import fetch_ibaraki_records
 from .ims import fetch_ims_records
@@ -31,6 +33,8 @@ from .miyazaki import fetch_miyazaki_records
 from .muroran import fetch_muroran_records
 from .nagaoka import fetch_nagaoka_records
 from .nagasaki import fetch_nagasaki_records
+from .nara_kosen import fetch_nara_kosen_records
+from .nara_wu import fetch_nara_wu_records
 from .nagoya import fetch_nagoya_records
 from .naist import fetch_naist_records
 from .nitech import fetch_nitech_records
@@ -60,6 +64,7 @@ from .uec import fetch_uec_records
 from .utsunomiya import fetch_utsunomiya_records
 from .utokyo import fetch_utokyo_records
 from .yamaguchi import fetch_yamaguchi_records
+from .yamagata_u import fetch_yamagata_u_records
 from .yamanashi import fetch_yamanashi_records
 from .ynu import fetch_ynu_records
 
@@ -72,7 +77,9 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "fukui": fetch_fukui_records,
     "gifu": fetch_gifu_records,
     "gunma": fetch_gunma_records,
+    "hamamatsu_med": fetch_hamamatsu_med_records,
     "hiroshima": fetch_hiroshima_records,
+    "hirosaki_u": fetch_hirosaki_u_records,
     "riken": fetch_riken_records,
     "registry_low_count": fetch_registry_low_count_records,
     "ryukyu": fetch_ryukyu_records,
@@ -97,6 +104,8 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "muroran": fetch_muroran_records,
     "nagaoka": fetch_nagaoka_records,
     "nagasaki": fetch_nagasaki_records,
+    "nara_kosen": fetch_nara_kosen_records,
+    "nara_wu": fetch_nara_wu_records,
     "nagoya": fetch_nagoya_records,
     "naist": fetch_naist_records,
     "nitech": fetch_nitech_records,
@@ -123,6 +132,7 @@ SOURCE_HANDLERS: dict[str, SourceHandler] = {
     "uec": fetch_uec_records,
     "utsunomiya": fetch_utsunomiya_records,
     "yamaguchi": fetch_yamaguchi_records,
+    "yamagata_u": fetch_yamagata_u_records,
     "yamanashi": fetch_yamanashi_records,
     "ynu": fetch_ynu_records,
 }

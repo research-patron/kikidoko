@@ -25,6 +25,21 @@ from .sources.table_utils import TableConfig, fetch_table_records
 DEFAULT_REGISTRY_PATH = "crawler/config/source_registry_low_count.json"
 DEFAULT_PREVIEW_OUT = "crawler/source_registry_sync_preview.csv"
 WORKSPACE_ROOT = Path(__file__).resolve().parents[3]
+PREVIEW_FIELDNAMES = [
+    "registry_key",
+    "org_name",
+    "prefecture",
+    "parser_type",
+    "source_handler",
+    "url",
+    "fetched_raw_count",
+    "normalized_count",
+    "fetch_status",
+    "action_hint",
+    "diagnosis",
+    "would_create",
+    "would_update",
+]
 
 
 @dataclass(frozen=True)
@@ -284,6 +299,18 @@ def safe_doc_id(value: str) -> str:
     return value.replace("/", "_")
 
 
+def classify_preview(fetch_status: str, normalized_count: int) -> tuple[str, str]:
+    if fetch_status == "query_only":
+        return ("implement_source", "公式URLと取得方式(parser_type)の設定が未完了")
+    if fetch_status == "ok" and normalized_count > 0:
+        return ("sync_now", "取得成功")
+    if fetch_status == "ok":
+        return ("verify_url", "取得0件（URL/selectorの要再確認）")
+    if fetch_status.startswith("error:"):
+        return ("verify_url", fetch_status[6:])
+    return ("verify_url", fetch_status or "unknown")
+
+
 def commit_batch_with_retry(batch, retries: int = 4) -> None:
     for attempt in range(retries):
         try:
@@ -333,6 +360,7 @@ def run(args: argparse.Namespace) -> int:
             normalized = normalize_equipment(hydrated)
             normalized_records.append((entry, normalized))
             record_count += 1
+        action_hint, diagnosis = classify_preview(fetch_status, record_count)
         preview_rows.append(
             {
                 "registry_key": entry.key,
@@ -344,6 +372,8 @@ def run(args: argparse.Namespace) -> int:
                 "fetched_raw_count": len(raw_rows),
                 "normalized_count": record_count,
                 "fetch_status": fetch_status,
+                "action_hint": action_hint,
+                "diagnosis": diagnosis,
                 "would_create": "",
                 "would_update": "",
             }
@@ -355,19 +385,7 @@ def run(args: argparse.Namespace) -> int:
         with preview_out.open("w", newline="", encoding="utf-8") as fh:
             writer = csv.DictWriter(
                 fh,
-                fieldnames=[
-                    "registry_key",
-                    "org_name",
-                    "prefecture",
-                    "parser_type",
-                    "source_handler",
-                    "url",
-                    "fetched_raw_count",
-                    "normalized_count",
-                    "fetch_status",
-                    "would_create",
-                    "would_update",
-                ],
+                fieldnames=PREVIEW_FIELDNAMES,
             )
             writer.writeheader()
             for row in preview_rows:
@@ -382,19 +400,7 @@ def run(args: argparse.Namespace) -> int:
             with preview_out.open("w", newline="", encoding="utf-8") as fh:
                 writer = csv.DictWriter(
                     fh,
-                    fieldnames=[
-                        "registry_key",
-                        "org_name",
-                        "prefecture",
-                        "parser_type",
-                        "source_handler",
-                        "url",
-                        "fetched_raw_count",
-                        "normalized_count",
-                        "fetch_status",
-                        "would_create",
-                        "would_update",
-                    ],
+                    fieldnames=PREVIEW_FIELDNAMES,
                 )
                 writer.writeheader()
                 for row in preview_rows:
@@ -489,19 +495,7 @@ def run(args: argparse.Namespace) -> int:
     with preview_out.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(
             fh,
-            fieldnames=[
-                "registry_key",
-                "org_name",
-                "prefecture",
-                "parser_type",
-                "source_handler",
-                "url",
-                "fetched_raw_count",
-                "normalized_count",
-                "fetch_status",
-                "would_create",
-                "would_update",
-            ],
+            fieldnames=PREVIEW_FIELDNAMES,
         )
         writer.writeheader()
         for row in preview_rows:

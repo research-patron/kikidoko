@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import os
 import re
 import sys
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any, Dict, Iterable, List, Tuple
 
 import requests
@@ -15,7 +17,17 @@ from .utils import NORMALIZED_KEYWORDS, TOKEN_PATTERN, clean_text
 
 ELSEVIER_API_URL = "https://api.elsevier.com/content/search/scopus"
 DOC_TYPE_FILTER = "DOCTYPE(ar OR cp)"
-SKIP_STATUSES = {"ready", "no_results", "no_query"}
+SKIP_STATUSES = {"ready", "no_results", "no_query", "no_results_verified"}
+PENDING_READY_STATUSES = {"", "ready", "pending"}
+UI_KNOWN_STATUSES = {
+    "",
+    "pending",
+    "ready",
+    "no_query",
+    "no_results",
+    "no_results_verified",
+    "error",
+}
 TITLE_TOKEN_PATTERN = re.compile(r"[A-Za-z][A-Za-z0-9-]{2,}")
 STOPWORDS = {
     "a",
@@ -152,6 +164,32 @@ def parse_args(argv: Iterable[str]) -> argparse.Namespace:
         help="Recompute papers even if already present.",
     )
     parser.add_argument(
+        "--only-pending",
+        action="store_true",
+        help="Process only records that still appear as paper-pending in UI.",
+    )
+    parser.add_argument(
+        "--input-csv",
+        default="",
+        help="Optional audit CSV path. When set, only listed document IDs are processed.",
+    )
+    parser.add_argument(
+        "--max-queries-per-doc",
+        type=int,
+        default=3,
+        help="Maximum number of Scopus queries to try per document (default: 3).",
+    )
+    parser.add_argument(
+        "--mark-verified-no-results",
+        action="store_true",
+        help="Write no_results_verified when recheck finished with zero DOI hits.",
+    )
+    parser.add_argument(
+        "--result-csv",
+        default="crawler/papers_recheck_result.csv",
+        help="Result CSV output path (default: crawler/papers_recheck_result.csv).",
+    )
+    parser.add_argument(
         "--log-every",
         type=int,
         default=100,
@@ -226,6 +264,109 @@ def build_query(data: Dict[str, Any]) -> str:
     parts = [f'TITLE-ABS-KEY("{sanitize_term(term)}")' for term in terms]
     base = " OR ".join(parts)
     return f"({base}) AND {DOC_TYPE_FILTER}"
+
+
+def is_papers_pending_record(
+    papers_value: Any,
+    status_value: Any,
+) -> bool:
+    status = str(status_value or "").strip()
+    papers = papers_value if isinstance(papers_value, list) else []
+    if papers:
+        return False
+    if status in PENDING_READY_STATUSES:
+        return True
+    if status not in UI_KNOWN_STATUSES:
+        return True
+    return False
+
+
+def resolve_workspace_path(path_value: str) -> Path:
+    path = Path(path_value)
+    if path.is_absolute():
+        return path
+    if path.exists():
+        return path
+    return Path(__file__).resolve().parents[3] / path
+
+
+def load_doc_ids_from_csv(path_value: str) -> set[str]:
+    path = resolve_workspace_path(path_value)
+    if not path.exists():
+        raise FileNotFoundError(f"input csv not found: {path}")
+    ids: set[str] = set()
+    with path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            doc_id = (
+                (row.get("document_id") or "").strip()
+                or (row.get("doc_id") or "").strip()
+                or (row.get("id") or "").strip()
+            )
+            if doc_id:
+                ids.add(doc_id)
+    return ids
+
+
+def extract_org_term(data: Dict[str, Any]) -> str:
+    org_name = clean_text(str(data.get("org_name", "")))
+    if not org_name:
+        return ""
+    org_name = re.sub(r"[（）()]", " ", org_name)
+    org_name = re.sub(r"\s+", " ", org_name).strip()
+    if not org_name:
+        return ""
+    for token in org_name.split(" "):
+        token = token.strip()
+        if token and len(token) >= 2:
+            return token
+    return org_name
+
+
+def extract_field_term(data: Dict[str, Any]) -> str:
+    for key in ("category_detail", "category_general", "category"):
+        value = clean_text(str(data.get(key, "")))
+        if value:
+            value = re.sub(r"[（）()]", " ", value)
+            value = re.sub(r"\s+", " ", value).strip()
+            if value:
+                return value
+    return ""
+
+
+def build_query_candidates(data: Dict[str, Any], max_queries: int) -> List[str]:
+    terms = build_query_terms(data)
+    if not terms:
+        return []
+    main_term = sanitize_term(terms[0])
+    alias_term = sanitize_term(terms[1]) if len(terms) > 1 else main_term
+    field_term = sanitize_term(extract_field_term(data))
+    org_term = sanitize_term(extract_org_term(data))
+
+    candidates: List[str] = []
+    if main_term:
+        candidates.append(f'TITLE-ABS-KEY("{main_term}") AND {DOC_TYPE_FILTER}')
+    if alias_term and field_term:
+        candidates.append(
+            f'TITLE-ABS-KEY("{alias_term}") AND TITLE-ABS-KEY("{field_term}") AND {DOC_TYPE_FILTER}'
+        )
+    if main_term and org_term:
+        candidates.append(f'TITLE-ABS-KEY("{main_term}") AND AFFIL("{org_term}") AND {DOC_TYPE_FILTER}')
+    fallback = build_query(data)
+    if fallback:
+        candidates.append(fallback)
+
+    deduped: List[str] = []
+    seen = set()
+    for query in candidates:
+        normalized = query.strip()
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        deduped.append(normalized)
+        if len(deduped) >= max_queries:
+            break
+    return deduped
 
 
 def extract_subject(entry: Dict[str, Any]) -> str:
@@ -408,6 +549,43 @@ def fetch_page(query, retries: int = 3) -> List[Any]:
     return []
 
 
+def fetch_document(collection, doc_id: str, retries: int = 3):
+    last_error = None
+    for attempt in range(retries):
+        try:
+            return collection.document(doc_id).get()
+        except Exception as exc:  # pragma: no cover - defensive
+            last_error = exc
+            time.sleep(2 + attempt * 2)
+    if last_error:
+        raise last_error
+    return None
+
+
+def write_result_csv(path_value: str, rows: List[Dict[str, Any]]) -> Path:
+    output_path = resolve_workspace_path(path_value)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = [
+        "document_id",
+        "equipment_id",
+        "name",
+        "org_name",
+        "previous_status",
+        "new_status",
+        "matched_query",
+        "queries_tried_count",
+        "queries_tried",
+        "papers_count",
+        "error",
+    ]
+    with output_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+    return output_path
+
+
 def run_backfill(args: argparse.Namespace) -> int:
     if not args.project_id:
         print("Missing --project-id or KIKIDOKO_PROJECT_ID.", file=sys.stderr)
@@ -424,11 +602,25 @@ def run_backfill(args: argparse.Namespace) -> int:
     if args.sleep < 0:
         print("sleep must be 0 or greater.", file=sys.stderr)
         return 2
+    if args.max_queries_per_doc <= 0:
+        print("max-queries-per-doc must be 1 or greater.", file=sys.stderr)
+        return 2
+
+    target_doc_ids: set[str] = set()
+    if args.input_csv:
+        try:
+            target_doc_ids = load_doc_ids_from_csv(args.input_csv)
+        except Exception as exc:
+            print(f"Failed to load --input-csv: {exc}", file=sys.stderr)
+            return 2
+        if not target_doc_ids:
+            print("No document IDs found in --input-csv.", file=sys.stderr)
+            return 2
 
     client = get_client(args.project_id, args.credentials or None)
     collection = client.collection("equipment")
     print(
-        f"Starting papers backfill (project={args.project_id}, page_size={args.page_size}, force={args.force}).",
+        f"Starting papers backfill (project={args.project_id}, page_size={args.page_size}, force={args.force}, only_pending={args.only_pending}, input_csv_ids={len(target_doc_ids)}).",
         flush=args.flush_logs,
     )
 
@@ -440,83 +632,171 @@ def run_backfill(args: argparse.Namespace) -> int:
     batch = client.batch()
     query_cache: Dict[str, Tuple[List[Dict[str, Any]], str]] = {}
     session = requests.Session()
+    result_rows: List[Dict[str, Any]] = []
+    status_counter: Dict[str, int] = {
+        "ready": 0,
+        "no_results": 0,
+        "no_results_verified": 0,
+        "no_query": 0,
+        "error": 0,
+    }
+    remaining_doc_ids = set(target_doc_ids)
 
     last_doc = None
     while True:
-        page_query = collection.order_by("__name__").limit(args.page_size)
-        if last_doc:
-            page_query = page_query.start_after(last_doc)
-        try:
-            docs = fetch_page(page_query)
-        except Exception as exc:  # pragma: no cover - defensive
-            print(f"Failed to fetch page: {exc}", file=sys.stderr)
-            errors += 1
+        if target_doc_ids and not remaining_doc_ids:
             break
-        if not docs:
-            break
+        if target_doc_ids:
+            doc_ids = sorted(remaining_doc_ids)[: args.page_size]
+            docs = []
+            for doc_id in doc_ids:
+                try:
+                    snapshot = fetch_document(collection, doc_id)
+                except Exception as exc:  # pragma: no cover - defensive
+                    print(f"Failed to fetch document {doc_id}: {exc}", file=sys.stderr)
+                    errors += 1
+                    remaining_doc_ids.discard(doc_id)
+                    continue
+                if not snapshot or not snapshot.exists:
+                    skipped += 1
+                    remaining_doc_ids.discard(doc_id)
+                    continue
+                docs.append(snapshot)
+            if not docs and remaining_doc_ids:
+                continue
+            if not docs:
+                break
+        else:
+            page_query = collection.order_by("__name__").limit(args.page_size)
+            if last_doc:
+                page_query = page_query.start_after(last_doc)
+            try:
+                docs = fetch_page(page_query)
+            except Exception as exc:  # pragma: no cover - defensive
+                print(f"Failed to fetch page: {exc}", file=sys.stderr)
+                errors += 1
+                break
+            if not docs:
+                break
         if args.flush_logs:
             print(f"Fetched page with {len(docs)} docs.", flush=True)
         for doc in docs:
             total += 1
             data = doc.to_dict() or {}
             existing = data.get("papers")
-            status = data.get("papers_status", "")
-            if not args.force:
-                if status in SKIP_STATUSES:
+            status = str(data.get("papers_status", "") or "")
+            is_pending_record = is_papers_pending_record(existing, status)
+            if args.only_pending and not is_pending_record:
+                skipped += 1
+                if doc.id in remaining_doc_ids:
+                    remaining_doc_ids.discard(doc.id)
+                if args.limit and total >= args.limit:
+                    break
+                continue
+            if not args.force and not args.only_pending:
+                if status in SKIP_STATUSES and not is_pending_record:
                     skipped += 1
+                    if doc.id in remaining_doc_ids:
+                        remaining_doc_ids.discard(doc.id)
                     if args.limit and total >= args.limit:
                         break
                     continue
                 if isinstance(existing, list) and len(existing) > 0:
                     skipped += 1
+                    if doc.id in remaining_doc_ids:
+                        remaining_doc_ids.discard(doc.id)
                     if args.limit and total >= args.limit:
                         break
                     continue
 
-            query = build_query(data)
+            query_candidates = build_query_candidates(data, args.max_queries_per_doc)
             papers: List[Dict[str, Any]] = []
             paper_status = "no_query"
             error_message = ""
+            matched_query = ""
+            queries_tried: List[str] = []
             try:
-                if not query:
+                if not query_candidates:
                     paper_status = "no_query"
-                elif query in query_cache:
-                    papers, paper_status = query_cache[query]
                 else:
-                    papers, paper_status = fetch_papers(
-                        session,
-                        args.api_key,
-                        args.view,
-                        args.count,
-                        query,
-                        args.timeout,
-                    )
-                    query_cache[query] = (papers, paper_status)
+                    for query in query_candidates:
+                        queries_tried.append(query)
+                        if query in query_cache:
+                            candidate_papers, candidate_status = query_cache[query]
+                        else:
+                            candidate_papers, candidate_status = fetch_papers(
+                                session,
+                                args.api_key,
+                                args.view,
+                                args.count,
+                                query,
+                                args.timeout,
+                            )
+                            query_cache[query] = (candidate_papers, candidate_status)
+                        if candidate_papers:
+                            papers = candidate_papers
+                            paper_status = "ready"
+                            matched_query = query
+                            break
+                    if not papers:
+                        matched_query = queries_tried[0] if queries_tried else ""
+                        if queries_tried:
+                            paper_status = (
+                                "no_results_verified"
+                                if args.mark_verified_no_results
+                                else "no_results"
+                            )
+                        else:
+                            paper_status = "no_query"
             except Exception as exc:
                 errors += 1
                 error_message = str(exc)
                 paper_status = "error"
                 print(f"Failed {doc.id}: {error_message}", file=sys.stderr)
 
+            now_iso = datetime.now(timezone.utc).isoformat()
             updates = {
                 "papers": papers,
                 "papers_status": paper_status,
-                "papers_query": query,
+                "papers_query": matched_query,
+                "papers_queries_tried": queries_tried,
                 "papers_source": "elsevier",
                 "papers_view": args.view,
-                "papers_updated_at": datetime.now(timezone.utc).isoformat(),
+                "papers_updated_at": now_iso,
+                "papers_rechecked_at": now_iso,
+                "papers_recheck_source": "elsevier_scopus",
                 "papers_error": error_message,
-                "usage_themes": [],
-                "usage_genres": [],
-                "usage_source": "papers",
-                "usage_updated_at": datetime.now(timezone.utc).isoformat(),
             }
+            usage_source = str(data.get("usage_source", "") or "")
             if papers:
                 usage_themes, usage_genres = build_usage_fields(papers)
                 updates["usage_themes"] = usage_themes
                 updates["usage_genres"] = usage_genres
+                updates["usage_source"] = "papers"
+                updates["usage_updated_at"] = now_iso
+            elif usage_source == "papers":
+                updates["usage_themes"] = []
+                updates["usage_genres"] = []
+                updates["usage_source"] = "papers"
+                updates["usage_updated_at"] = now_iso
 
             updated += 1
+            status_counter[paper_status] = status_counter.get(paper_status, 0) + 1
+            result_rows.append(
+                {
+                    "document_id": doc.id,
+                    "equipment_id": str(data.get("equipment_id", "") or ""),
+                    "name": str(data.get("name", "") or ""),
+                    "org_name": str(data.get("org_name", "") or ""),
+                    "previous_status": status,
+                    "new_status": paper_status,
+                    "matched_query": matched_query,
+                    "queries_tried_count": len(queries_tried),
+                    "queries_tried": " || ".join(queries_tried),
+                    "papers_count": len(papers),
+                    "error": error_message,
+                }
+            )
             if not args.dry_run:
                 batch.update(doc.reference, updates)
                 pending += 1
@@ -528,21 +808,28 @@ def run_backfill(args: argparse.Namespace) -> int:
             if args.sleep > 0:
                 time.sleep(args.sleep)
             if args.log_every and total % args.log_every == 0:
-                print(
-                    f"Processed {total} docs (updated {updated}, skipped {skipped}, errors {errors}).",
-                    flush=args.flush_logs,
-                )
+                    print(
+                        f"Processed {total} docs (updated {updated}, skipped {skipped}, errors {errors}).",
+                        flush=args.flush_logs,
+                    )
+            if doc.id in remaining_doc_ids:
+                remaining_doc_ids.discard(doc.id)
             if args.limit and total >= args.limit:
                 break
         if args.limit and total >= args.limit:
             break
-        last_doc = docs[-1]
+        if not target_doc_ids:
+            last_doc = docs[-1]
 
     if not args.dry_run and pending:
         commit_batch(batch, pending, args.sleep)
 
+    output_path = write_result_csv(args.result_csv, result_rows)
     print(
-        f"Done. processed={total} updated={updated} skipped={skipped} errors={errors}",
+        (
+            f"Done. processed={total} updated={updated} skipped={skipped} errors={errors} "
+            f"status_counts={status_counter} result_csv={output_path}"
+        ),
         flush=args.flush_logs,
     )
     return 0

@@ -1,0 +1,105 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-02-14T09:43:51.679672+00:00",
+      "article_id": "guide-01",
+      "post_id": 17,
+      "action": "created",
+      "status": "publish",
+      "slug": "research-equipment-sharing-basics",
+      "link": "https://kikidoko.student-subscription.com/blog/guide/research-equipment-sharing-basics/",
+      "category_id": 3,
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "char_count": 3762,
+          "target_chars": {
+            "min": 3500,
+            "max": 4500
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 4,
+          "cross_category_links": 2,
+          "expected_path": "/blog/guide/research-equipment-sharing-basics"
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-14T11:12:31.621950+00:00",
+      "article_id": "guide-02",
+      "post_id": 21,
+      "action": "created",
+      "status": "publish",
+      "slug": "search-external-usable-equipment",
+      "link": "https://kikidoko.student-subscription.com/blog/guide/search-external-usable-equipment/",
+      "category_id": 3,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 3068,
+          "target_chars": {
+            "min": 3000,
+            "max": 4000
+          },
+          "total_markdown_links": 7,
+          "same_category_links": 4,
+          "cross_category_links": 1,
+          "expected_path": "/blog/guide/search-external-usable-equipment",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-14T11:13:10.903383+00:00",
+      "article_id": "guide-02",
+      "post_id": 21,
+      "action": "updated",
+      "status": "publish",
+      "slug": "search-external-usable-equipment",
+      "link": "https://kikidoko.student-subscription.com/blog/guide/search-external-usable-equipment/",
+      "category_id": 3,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 3068,
+          "target_chars": {
+            "min": 3000,
+            "max": 4000
+          },
+          "total_markdown_links": 7,
+          "same_category_links": 4,
+          "cross_category_links": 1,
+          "expected_path": "/blog/guide/search-external-usable-equipment",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    }
+  ]
+}

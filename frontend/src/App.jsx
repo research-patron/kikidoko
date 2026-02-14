@@ -4,7 +4,9 @@ import {
   doc,
   documentId,
   getDoc,
+  getDocFromCache,
   getDocs,
+  getDocsFromCache,
   limit,
   orderBy,
   query as firestoreQuery,
@@ -152,10 +154,6 @@ const MAP_ZOOM_MIN = 1;
 const MAP_ZOOM_MAX = 6;
 const MAP_ZOOM_STEP = 1.15;
 const DEFAULT_MAP_ZOOM = 5.0;
-const MAP_ORG_FETCH_LIMIT = 400;
-const MAP_ORG_FETCH_MAX_PAGES = 10;
-const REGION_CATEGORY_FETCH_LIMIT = 400;
-const REGION_CATEGORY_FETCH_MAX_PAGES = 20;
 const RECO_INITIAL_VISIBLE = 3;
 const RECO_INCREMENT = 5;
 const RECO_MAX_VISIBLE = 20;
@@ -177,6 +175,250 @@ const DETAIL_SWIPE_MIN_DISTANCE = 56;
 const DETAIL_SWIPE_HORIZONTAL_RATIO = 1.25;
 const DETAIL_SWIPE_MAX_DURATION_MS = 900;
 const NARROW_LAYOUT_QUERY = "(max-width: 1100px)";
+const PREFECTURE_ORG_STATS_SUBCOLLECTION = "prefectures";
+const READ_DEBUG_QUERY_PARAM = "debugReads";
+const FIRESTORE_READ_STORE_KEY = "__kikidokoFirestoreReads";
+const FIRESTORE_DATA_VERSION_STORAGE_KEY = "kikidoko:data_version";
+const EQUIPMENT_SNAPSHOT_GZIP_PATH = "equipment_snapshot.json.gz";
+const EQUIPMENT_SNAPSHOT_JSON_PATH = "equipment_snapshot.json";
+const FIRESTORE_READ_LABELS = [
+  "base_page",
+  "region_categories",
+  "map_orgs",
+  "reco",
+  "exact_name",
+  "exact_org",
+  "latest",
+  "summary",
+];
+
+/**
+ * @typedef {Object} UiFiltersDoc
+ * @property {string[]} allCategories
+ * @property {Record<string, string[]>} regionCategories
+ * @property {string} updatedAt
+ */
+
+/**
+ * @typedef {Object} PrefectureOrgsDoc
+ * @property {string} prefecture
+ * @property {number} totalEquipment
+ * @property {number} totalFacilities
+ * @property {{orgName: string, count: number}[]} orgList
+ * @property {string} updatedAt
+ */
+
+/**
+ * @typedef {"stats" | "snapshot" | "loaded"} MapOrgSource
+ */
+
+/**
+ * @typedef {PrefectureOrgsDoc & {source: MapOrgSource, missing?: boolean}} MapOrgCacheEntry
+ */
+
+/**
+ * @typedef {Object} DataVersionDoc
+ * @property {string} version
+ * @property {string} updatedAt
+ */
+
+const normalizeStringArray = (value) => {
+  if (!Array.isArray(value)) return [];
+  const unique = new Set();
+  value.forEach((item) => {
+    if (typeof item !== "string") return;
+    const trimmed = item.trim();
+    if (!trimmed) return;
+    unique.add(trimmed);
+  });
+  return Array.from(unique).sort((a, b) => a.localeCompare(b, "ja"));
+};
+
+/** @returns {UiFiltersDoc} */
+const parseUiFiltersDoc = (data) => {
+  const source = data && typeof data === "object" ? data : {};
+  const regionSource =
+    source.region_categories && typeof source.region_categories === "object"
+      ? source.region_categories
+      : {};
+  const regionCategories = {};
+  REGION_ORDER.forEach((regionName) => {
+    regionCategories[regionName] = normalizeStringArray(regionSource[regionName]);
+  });
+  Object.keys(regionSource).forEach((regionName) => {
+    if (!regionCategories[regionName]) {
+      regionCategories[regionName] = normalizeStringArray(regionSource[regionName]);
+    }
+  });
+  const allCategories = normalizeStringArray(source.all_categories);
+  const fallbackAllCategories = normalizeStringArray(Object.values(regionCategories).flat());
+  return {
+    allCategories: allCategories.length > 0 ? allCategories : fallbackAllCategories,
+    regionCategories,
+    updatedAt:
+      typeof source.updated_at === "string" && source.updated_at.trim()
+        ? source.updated_at.trim()
+        : "",
+  };
+};
+
+/** @returns {PrefectureOrgsDoc} */
+const parsePrefectureOrgsDoc = (data, fallbackPrefecture = "") => {
+  const source = data && typeof data === "object" ? data : {};
+  const rawOrgList = Array.isArray(source.org_list) ? source.org_list : [];
+  const orgList = rawOrgList
+    .map((entry) => {
+      const orgName =
+        typeof entry?.org_name === "string" && entry.org_name.trim()
+          ? entry.org_name.trim()
+          : typeof entry?.orgName === "string" && entry.orgName.trim()
+            ? entry.orgName.trim()
+            : "";
+      const rawCount = Number(entry?.count ?? 0);
+      const count = Number.isFinite(rawCount) ? Math.max(0, Math.floor(rawCount)) : 0;
+      if (!orgName || count <= 0) return null;
+      return { orgName, count };
+    })
+    .filter(Boolean)
+    .sort((left, right) => {
+      if (right.count !== left.count) {
+        return right.count - left.count;
+      }
+      return left.orgName.localeCompare(right.orgName, "ja");
+    });
+  const rawTotalEquipment = Number(source.total_equipment);
+  const rawTotalFacilities = Number(source.total_facilities);
+  return {
+    prefecture:
+      (typeof source.prefecture === "string" && source.prefecture.trim()) ||
+      String(fallbackPrefecture || ""),
+    totalEquipment: Number.isFinite(rawTotalEquipment)
+      ? Math.max(0, Math.floor(rawTotalEquipment))
+      : orgList.reduce((acc, item) => acc + item.count, 0),
+    totalFacilities: Number.isFinite(rawTotalFacilities)
+      ? Math.max(0, Math.floor(rawTotalFacilities))
+      : orgList.length,
+    orgList,
+    updatedAt:
+      typeof source.updated_at === "string" && source.updated_at.trim()
+        ? source.updated_at.trim()
+        : "",
+  };
+};
+
+/** @returns {DataVersionDoc} */
+const parseDataVersionDoc = (data) => {
+  const source = data && typeof data === "object" ? data : {};
+  const version = String(source.version || source.updated_at || source.updatedAt || "").trim();
+  const updatedAt = String(source.updated_at || source.updatedAt || "").trim();
+  return { version, updatedAt };
+};
+
+const parseSnapshotPayload = (payload) => {
+  const source = payload && typeof payload === "object" ? payload : {};
+  const directItems = Array.isArray(payload) ? payload : [];
+  const nestedItems = Array.isArray(source.items) ? source.items : [];
+  const items = nestedItems.length > 0 ? nestedItems : directItems;
+  return {
+    items,
+    generatedAt: String(source.generated_at || source.generatedAt || "").trim(),
+  };
+};
+
+const buildPagedItems = (items) => {
+  const safeItems = Array.isArray(items) ? items : [];
+  if (safeItems.length === 0) {
+    return [{ items: [], lastDoc: null, hasNext: false }];
+  }
+  const pages = [];
+  for (let index = 0; index < safeItems.length; index += PAGE_SIZE) {
+    const pageItems = safeItems.slice(index, index + PAGE_SIZE);
+    pages.push({
+      items: pageItems,
+      lastDoc: null,
+      hasNext: index + PAGE_SIZE < safeItems.length,
+    });
+  }
+  return pages;
+};
+
+const createFirestoreReadStore = () => ({
+  totalRequests: 0,
+  totalReturnedDocs: 0,
+  totalBillableReads: 0,
+  byLabel: FIRESTORE_READ_LABELS.reduce((acc, label) => {
+    acc[label] = {
+      requests: 0,
+      returnedDocs: 0,
+      billableReads: 0,
+      lastReturnedCount: 0,
+      lastBillableCount: 0,
+      lastSource: "",
+      lastError: "",
+      lastAt: "",
+    };
+    return acc;
+  }, {}),
+});
+
+const getFirestoreReadStore = () => {
+  if (typeof window === "undefined") return null;
+  const existing = window[FIRESTORE_READ_STORE_KEY];
+  if (existing && typeof existing === "object" && existing.byLabel) {
+    return existing;
+  }
+  const fresh = createFirestoreReadStore();
+  window[FIRESTORE_READ_STORE_KEY] = fresh;
+  return fresh;
+};
+
+const cloneFirestoreReadStore = () => {
+  const store = getFirestoreReadStore();
+  if (!store) return null;
+  return JSON.parse(JSON.stringify(store));
+};
+
+const recordFirestoreReadStat = ({
+  label,
+  returnedCount = 0,
+  billableCount = 0,
+  source = "",
+  error = "",
+}) => {
+  const store = getFirestoreReadStore();
+  if (!store) return null;
+  const safeLabel = FIRESTORE_READ_LABELS.includes(label) ? label : "summary";
+  const bucket =
+    store.byLabel[safeLabel] ||
+    (store.byLabel[safeLabel] = {
+      requests: 0,
+      returnedDocs: 0,
+      billableReads: 0,
+      lastReturnedCount: 0,
+      lastBillableCount: 0,
+      lastSource: "",
+      lastError: "",
+      lastAt: "",
+    });
+  const nextReturned = Number.isFinite(returnedCount) ? Math.max(0, returnedCount) : 0;
+  const nextBillable = Number.isFinite(billableCount) ? Math.max(0, billableCount) : 0;
+  bucket.requests += 1;
+  bucket.returnedDocs += nextReturned;
+  bucket.billableReads += nextBillable;
+  bucket.lastReturnedCount = nextReturned;
+  bucket.lastBillableCount = nextBillable;
+  bucket.lastSource = source || "";
+  bucket.lastError = error || "";
+  bucket.lastAt = new Date().toISOString();
+  store.totalRequests += 1;
+  store.totalReturnedDocs += nextReturned;
+  store.totalBillableReads += nextBillable;
+  return store;
+};
+
+const inferSnapshotSource = (snapshot) => {
+  return snapshot?.metadata?.fromCache ? "cache" : "server";
+};
 
 const toMercatorY = (lat) => {
   const clamped = Math.max(-85, Math.min(85, lat));
@@ -895,16 +1137,6 @@ const feeLabel = (value) => {
   return value;
 };
 
-const formatDate = (value) => {
-  if (!value) return "未設定";
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return "未設定";
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${year}.${month}.${day}`;
-};
-
 const formatDistance = (distanceKm) => {
   if (distanceKm == null) return "距離未計算";
   if (distanceKm < 1) return "1km未満";
@@ -920,6 +1152,78 @@ const buildOrgListFromItems = (items) => {
   return Array.from(orgCounts.entries())
     .map(([orgName, count]) => ({ orgName, count }))
     .sort((a, b) => b.count - a.count);
+};
+
+/** @returns {MapOrgCacheEntry} */
+const buildMapOrgCacheEntry = ({
+  prefecture = "",
+  totalEquipment = 0,
+  totalFacilities = 0,
+  orgList = [],
+  updatedAt = "",
+  source = "loaded",
+  missing = false,
+}) => {
+  const normalizedList = (Array.isArray(orgList) ? orgList : [])
+    .map((entry) => {
+      const orgName = String(entry?.orgName || entry?.org_name || "").trim();
+      const count = Math.max(0, Math.floor(Number(entry?.count || 0)));
+      if (!orgName || count <= 0) return null;
+      return { orgName, count };
+    })
+    .filter(Boolean)
+    .sort((left, right) => {
+      if (right.count !== left.count) {
+        return right.count - left.count;
+      }
+      return left.orgName.localeCompare(right.orgName, "ja");
+    });
+  const normalizedEquipment = Math.max(0, Math.floor(Number(totalEquipment || 0)));
+  const normalizedFacilities = Math.max(0, Math.floor(Number(totalFacilities || 0)));
+  return {
+    prefecture: String(prefecture || "").trim(),
+    totalEquipment:
+      normalizedEquipment > 0
+        ? normalizedEquipment
+        : normalizedList.reduce((acc, item) => acc + item.count, 0),
+    totalFacilities:
+      normalizedFacilities > 0 ? normalizedFacilities : normalizedList.length,
+    orgList: normalizedList,
+    updatedAt: String(updatedAt || "").trim(),
+    source,
+    missing: Boolean(missing),
+  };
+};
+
+/** @returns {MapOrgCacheEntry} */
+const buildMapOrgEntryFromItems = (items, prefecture, source = "loaded") => {
+  const safePrefecture = String(prefecture || "").trim();
+  const orgList = buildOrgListFromItems(items);
+  return buildMapOrgCacheEntry({
+    prefecture: safePrefecture,
+    totalEquipment: Array.isArray(items) ? items.length : 0,
+    totalFacilities: orgList.length,
+    orgList,
+    source,
+    missing: false,
+  });
+};
+
+const buildMapOrgEntryMapByPrefecture = (items, source = "loaded") => {
+  const prefectureItems = new Map();
+  (Array.isArray(items) ? items : []).forEach((item) => {
+    const prefecture = String(item?.prefecture || "").trim();
+    if (!prefecture) return;
+    if (!prefectureItems.has(prefecture)) {
+      prefectureItems.set(prefecture, []);
+    }
+    prefectureItems.get(prefecture).push(item);
+  });
+  const entries = {};
+  prefectureItems.forEach((groupedItems, prefecture) => {
+    entries[prefecture] = buildMapOrgEntryFromItems(groupedItems, prefecture, source);
+  });
+  return entries;
 };
 
 const toRad = (value) => (value * Math.PI) / 180;
@@ -986,13 +1290,60 @@ const resolvePrefectureFromSources = (...values) => {
   return "";
 };
 
+const mapEquipmentDataToItem = (sourceData, fallbackId = "") => {
+  const data = sourceData && typeof sourceData === "object" ? sourceData : {};
+  const rawLat = typeof data.lat === "number" ? data.lat : Number.parseFloat(data.lat);
+  const rawLng = typeof data.lng === "number" ? data.lng : Number.parseFloat(data.lng);
+  const lat = Number.isFinite(rawLat) ? rawLat : null;
+  const lng = Number.isFinite(rawLng) ? rawLng : null;
+  const orgName = String(data.org_name || "").trim() || "不明";
+  const address = String(data.address_raw || data.address || "").trim();
+  const prefecture = resolvePrefectureFromSources(data.prefecture, address, orgName) || "不明";
+  const region =
+    (typeof data.region === "string" && data.region.trim()) ||
+    PREFECTURE_REGION_MAP[prefecture] ||
+    "不明";
+  const fallbackDocId = String(data.doc_id || fallbackId || "").trim();
+  const equipmentId = String(data.equipment_id || "").trim();
+  const itemId = equipmentId || fallbackDocId || `${orgName}-${data.name || "unknown"}`;
+  return {
+    id: itemId,
+    name: data.name || "名称不明",
+    categoryGeneral: data.category_general || "未分類",
+    categoryDetail: data.category_detail || "",
+    orgName,
+    orgType: data.org_type || "不明",
+    prefecture,
+    region,
+    externalUse: data.external_use || "不明",
+    feeBand: feeLabel(data.fee_band),
+    address: address || "所在地不明",
+    lat,
+    lng,
+    sourceUrl: data.source_url || "",
+    eqnetUrl: data.eqnet_url || "",
+    eqnetEquipmentId: data.eqnet_equipment_id || "",
+    eqnetMatchStatus: data.eqnet_match_status || "",
+    eqnetCandidates: Array.isArray(data.eqnet_candidates) ? data.eqnet_candidates : [],
+    crawledAt: data.crawled_at || "",
+    papers: Array.isArray(data.papers) ? data.papers : [],
+    papersStatus: data.papers_status || "",
+    papersUpdatedAt: data.papers_updated_at || "",
+    papersError: data.papers_error || "",
+    searchAliases: Array.isArray(data.search_aliases) ? data.search_aliases : [],
+    usageThemes: Array.isArray(data.usage_themes) ? data.usage_themes : [],
+    usageGenres: Array.isArray(data.usage_genres) ? data.usage_genres : [],
+    usageManualSummary: data.usage_manual_summary || "",
+    usageManualBullets: Array.isArray(data.usage_manual_bullets) ? data.usage_manual_bullets : [],
+  };
+};
+
 export default function App() {
   const [pages, setPages] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
   const [keywordInput, setKeywordInput] = useState("");
   const [keyword, setKeyword] = useState("");
-  const [latestUpdate, setLatestUpdate] = useState("未設定");
   const [prefectureSummary, setPrefectureSummary] = useState([]);
   const [prefectureSummaryLoaded, setPrefectureSummaryLoaded] = useState(false);
   const [prefectureStats, setPrefectureStats] = useState({
@@ -1023,8 +1374,22 @@ export default function App() {
   const [category, setCategory] = useState("all");
   const [regionInput, setRegionInput] = useState("all");
   const [categoryInput, setCategoryInput] = useState("all");
-  const [regionCategoryOptionsMap, setRegionCategoryOptionsMap] = useState({});
-  const [categoryOptionsLoading, setCategoryOptionsLoading] = useState(false);
+  const [uiFiltersDoc, setUiFiltersDoc] = useState(null);
+  const [uiFiltersLoaded, setUiFiltersLoaded] = useState(false);
+  const [dataVersionState, setDataVersionState] = useState({
+    ready: false,
+    preferCache: false,
+    version: "",
+    updatedAt: "",
+  });
+  const [snapshotState, setSnapshotState] = useState({
+    ready: false,
+    source: "loading",
+    items: [],
+    generatedAt: "",
+    error: "",
+  });
+  const [firestoreReadTick, setFirestoreReadTick] = useState(0);
   const [externalOnly, setExternalOnly] = useState(false);
   const [freeOnly, setFreeOnly] = useState(false);
   const [page, setPage] = useState(1);
@@ -1097,6 +1462,119 @@ export default function App() {
   const detailSessionRef = useRef(detailSession);
   const detailSwitchTimerRef = useRef(null);
   const detailSwipeGestureRef = useRef(null);
+
+  const readDebugEnabled = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    const params = new URLSearchParams(window.location.search);
+    return params.get(READ_DEBUG_QUERY_PARAM) === "1";
+  }, []);
+
+  const usingSnapshotData = snapshotState.ready && snapshotState.source === "snapshot";
+
+  const bumpFirestoreReadDebug = useCallback(() => {
+    if (!readDebugEnabled) return;
+    setFirestoreReadTick((prev) => prev + 1);
+  }, [readDebugEnabled]);
+
+  const trackedGetDoc = useCallback(
+    async (label, reference, options = {}) => {
+      const { preferCache = false } = options;
+      if (preferCache) {
+        try {
+          const cachedSnap = await getDocFromCache(reference);
+          const returnedCount = cachedSnap.exists() ? 1 : 0;
+          recordFirestoreReadStat({
+            label,
+            returnedCount,
+            billableCount: 0,
+            source: "cache",
+          });
+          bumpFirestoreReadDebug();
+          return cachedSnap;
+        } catch {
+          // Cache miss: fall through to the default fetch path.
+        }
+      }
+      try {
+        const snap = await getDoc(reference);
+        const source = inferSnapshotSource(snap);
+        const returnedCount = snap.exists() ? 1 : 0;
+        const billableCount = source === "cache" ? 0 : 1;
+        recordFirestoreReadStat({
+          label,
+          returnedCount,
+          billableCount,
+          source,
+        });
+        bumpFirestoreReadDebug();
+        return snap;
+      } catch (error) {
+        recordFirestoreReadStat({
+          label,
+          returnedCount: 0,
+          billableCount: 0,
+          source: "error",
+          error: String(error?.code || error?.message || "read_error"),
+        });
+        bumpFirestoreReadDebug();
+        throw error;
+      }
+    },
+    [bumpFirestoreReadDebug],
+  );
+
+  const trackedGetDocs = useCallback(
+    async (label, reference, options = {}) => {
+      const { preferCache = false } = options;
+      if (preferCache) {
+        try {
+          const cachedSnap = await getDocsFromCache(reference);
+          const returnedCount = cachedSnap.size;
+          recordFirestoreReadStat({
+            label,
+            returnedCount,
+            billableCount: 0,
+            source: "cache",
+          });
+          bumpFirestoreReadDebug();
+          return cachedSnap;
+        } catch {
+          // Cache miss: fall through to the default fetch path.
+        }
+      }
+      try {
+        const snap = await getDocs(reference);
+        const source = inferSnapshotSource(snap);
+        const returnedCount = snap.size;
+        const billableCount = source === "cache" ? 0 : returnedCount;
+        recordFirestoreReadStat({
+          label,
+          returnedCount,
+          billableCount,
+          source,
+        });
+        bumpFirestoreReadDebug();
+        return snap;
+      } catch (error) {
+        recordFirestoreReadStat({
+          label,
+          returnedCount: 0,
+          billableCount: 0,
+          source: "error",
+          error: String(error?.code || error?.message || "read_error"),
+        });
+        bumpFirestoreReadDebug();
+        throw error;
+      }
+    },
+    [bumpFirestoreReadDebug],
+  );
+
+  const firestoreReadStats = useMemo(() => {
+    if (!readDebugEnabled) return null;
+    if (firestoreReadTick < 0) return null;
+    return cloneFirestoreReadStore();
+  }, [firestoreReadTick, readDebugEnabled]);
 
   const stopMapViewportAnimation = useCallback(() => {
     if (mapViewportAnimationRef.current) {
@@ -1236,6 +1714,154 @@ export default function App() {
   useEffect(() => {
     setCategoryInput(category);
   }, [category]);
+
+  useEffect(() => {
+    let isMounted = true;
+    const storedVersion =
+      typeof window !== "undefined"
+        ? String(window.localStorage.getItem(FIRESTORE_DATA_VERSION_STORAGE_KEY) || "").trim()
+        : "";
+    const loadDataVersion = async () => {
+      try {
+        const snap = await trackedGetDoc("summary", doc(db, "stats", "data_version"));
+        const versionDoc = snap.exists() ? parseDataVersionDoc(snap.data()) : { version: "", updatedAt: "" };
+        const latestVersion = versionDoc.version || "";
+        if (latestVersion && typeof window !== "undefined") {
+          window.localStorage.setItem(FIRESTORE_DATA_VERSION_STORAGE_KEY, latestVersion);
+        }
+        const preferCache = Boolean(latestVersion && storedVersion && latestVersion === storedVersion);
+        if (!isMounted) return;
+        setDataVersionState({
+          ready: true,
+          preferCache,
+          version: latestVersion || storedVersion,
+          updatedAt: versionDoc.updatedAt || "",
+        });
+      } catch (error) {
+        console.error(error);
+        if (!isMounted) return;
+        setDataVersionState({
+          ready: true,
+          preferCache: Boolean(storedVersion),
+          version: storedVersion,
+          updatedAt: "",
+        });
+      }
+    };
+    loadDataVersion();
+    return () => {
+      isMounted = false;
+    };
+  }, [trackedGetDoc]);
+
+  useEffect(() => {
+    if (!dataVersionState.ready) return undefined;
+    let isMounted = true;
+    const loadSnapshot = async () => {
+      const versionToken = String(dataVersionState.version || dataVersionState.updatedAt || "").trim();
+      const buildSnapshotUrl = (path) => {
+        const suffix = versionToken ? `?v=${encodeURIComponent(versionToken)}` : "";
+        return `${APP_BASE_URL}${path}${suffix}`;
+      };
+      const readSnapshotJson = async (response, isGzip) => {
+        if (!isGzip) {
+          return response.json();
+        }
+        try {
+          return await response.clone().json();
+        } catch {
+          if (typeof DecompressionStream === "undefined") {
+            throw new Error("gzip_decompression_unsupported");
+          }
+          const compressedBuffer = await response.arrayBuffer();
+          const decompressedStream = new Blob([compressedBuffer])
+            .stream()
+            .pipeThrough(new DecompressionStream("gzip"));
+          return new Response(decompressedStream).json();
+        }
+      };
+      const fetchSnapshotPayload = async (path, isGzip) => {
+        const response = await fetch(buildSnapshotUrl(path), { cache: "force-cache" });
+        if (!response.ok) {
+          throw new Error(`snapshot_fetch_failed:${response.status}`);
+        }
+        return readSnapshotJson(response, isGzip);
+      };
+
+      try {
+        let payload;
+        try {
+          payload = await fetchSnapshotPayload(EQUIPMENT_SNAPSHOT_GZIP_PATH, true);
+        } catch {
+          payload = await fetchSnapshotPayload(EQUIPMENT_SNAPSHOT_JSON_PATH, false);
+        }
+        const { items: rawItems, generatedAt } = parseSnapshotPayload(payload);
+        const parsedItems = rawItems
+          .map((entry, index) => mapEquipmentDataToItem(entry, String(index + 1)))
+          .filter((item) => Boolean(item.id));
+        if (!isMounted) return;
+        if (parsedItems.length > 0) {
+          setSnapshotState({
+            ready: true,
+            source: "snapshot",
+            items: parsedItems,
+            generatedAt,
+            error: "",
+          });
+          return;
+        }
+        setSnapshotState({
+          ready: true,
+          source: "firestore",
+          items: [],
+          generatedAt,
+          error: "snapshot_empty",
+        });
+      } catch (error) {
+        console.warn("Equipment snapshot is unavailable. Falling back to Firestore.", error);
+        if (!isMounted) return;
+        setSnapshotState({
+          ready: true,
+          source: "firestore",
+          items: [],
+          generatedAt: "",
+          error: String(error?.message || "snapshot_unavailable"),
+        });
+      }
+    };
+    loadSnapshot();
+    return () => {
+      isMounted = false;
+    };
+  }, [dataVersionState.ready, dataVersionState.updatedAt, dataVersionState.version]);
+
+  useEffect(() => {
+    if (!dataVersionState.ready) return undefined;
+    let isMounted = true;
+    const loadUiFilters = async () => {
+      setUiFiltersLoaded(false);
+      try {
+        const snap = await trackedGetDoc("region_categories", doc(db, "stats", "ui_filters"), {
+          preferCache: dataVersionState.preferCache,
+        });
+        const nextDoc = snap.exists() ? parseUiFiltersDoc(snap.data()) : null;
+        if (!isMounted) return;
+        setUiFiltersDoc(nextDoc);
+      } catch (error) {
+        console.error(error);
+        if (!isMounted) return;
+        setUiFiltersDoc(null);
+      } finally {
+        if (isMounted) {
+          setUiFiltersLoaded(true);
+        }
+      }
+    };
+    loadUiFilters();
+    return () => {
+      isMounted = false;
+    };
+  }, [dataVersionState.preferCache, dataVersionState.ready, trackedGetDoc]);
 
   useEffect(() => {
     pagesRef.current = pages;
@@ -1570,52 +2196,22 @@ export default function App() {
   };
 
   const mapDocToItem = useCallback((doc) => {
-    const data = doc.data() || {};
-    const rawLat = typeof data.lat === "number" ? data.lat : Number.parseFloat(data.lat);
-    const rawLng = typeof data.lng === "number" ? data.lng : Number.parseFloat(data.lng);
-    const lat = Number.isFinite(rawLat) ? rawLat : null;
-    const lng = Number.isFinite(rawLng) ? rawLng : null;
-    const orgName = String(data.org_name || "").trim() || "不明";
-    const address = String(data.address_raw || data.address || "").trim();
-    const prefecture =
-      resolvePrefectureFromSources(data.prefecture, address, orgName) || "不明";
-    const region =
-      (typeof data.region === "string" && data.region.trim()) ||
-      PREFECTURE_REGION_MAP[prefecture] ||
-      "不明";
-    return {
-      id: data.equipment_id || doc.id,
-      name: data.name || "名称不明",
-      categoryGeneral: data.category_general || "未分類",
-      categoryDetail: data.category_detail || "",
-      orgName,
-      orgType: data.org_type || "不明",
-      prefecture,
-      region,
-      externalUse: data.external_use || "不明",
-      feeBand: feeLabel(data.fee_band),
-      address: address || "所在地不明",
-      lat,
-      lng,
-      sourceUrl: data.source_url || "",
-      eqnetUrl: data.eqnet_url || "",
-      eqnetEquipmentId: data.eqnet_equipment_id || "",
-      eqnetMatchStatus: data.eqnet_match_status || "",
-      eqnetCandidates: Array.isArray(data.eqnet_candidates) ? data.eqnet_candidates : [],
-      crawledAt: data.crawled_at || "",
-      papers: Array.isArray(data.papers) ? data.papers : [],
-      papersStatus: data.papers_status || "",
-      papersUpdatedAt: data.papers_updated_at || "",
-      papersError: data.papers_error || "",
-      searchAliases: Array.isArray(data.search_aliases) ? data.search_aliases : [],
-      usageThemes: Array.isArray(data.usage_themes) ? data.usage_themes : [],
-      usageGenres: Array.isArray(data.usage_genres) ? data.usage_genres : [],
-      usageManualSummary: data.usage_manual_summary || "",
-      usageManualBullets: Array.isArray(data.usage_manual_bullets)
-        ? data.usage_manual_bullets
-        : [],
-    };
+    return mapEquipmentDataToItem(doc?.data?.() || {}, doc?.id || "");
   }, []);
+
+  const matchesActiveFilters = useCallback(
+    (item) => {
+      if (!item) return false;
+      if (region !== "all" && !prefectureFilter && item.region !== region) return false;
+      if (category !== "all" && item.categoryGeneral !== category) return false;
+      if (externalOnly && item.externalUse !== "可") return false;
+      if (freeOnly && item.feeBand !== "無料") return false;
+      if (prefectureFilter && item.prefecture !== prefectureFilter) return false;
+      if (orgFilter && item.orgName !== orgFilter) return false;
+      return true;
+    },
+    [category, externalOnly, freeOnly, orgFilter, prefectureFilter, region],
+  );
 
   const makeRecommendationCacheKey = useCallback((itemId, mode, prefectureSignature) => {
     return `${String(itemId || "")}|${String(mode || "")}|${String(prefectureSignature || "")}`;
@@ -1681,6 +2277,33 @@ export default function App() {
         ? prefectureSet.filter(Boolean).slice(0, RECO_QUERY_PREFS_LIMIT)
         : [];
       const currentCursor = cursor || buildInitialRecommendationCursor(normalizedPrefectureSet);
+      if (usingSnapshotData) {
+        if (!normalizedCategory) {
+          return { items: [], cursor: { ...currentCursor, stage: "done" }, hasMore: false };
+        }
+        const prefectureSetForFilter = new Set(normalizedPrefectureSet);
+        const categoryItems = snapshotState.items.filter(
+          (item) => item.categoryGeneral === normalizedCategory,
+        );
+        const prioritizedItems =
+          prefectureSetForFilter.size > 0
+            ? categoryItems.filter((item) => prefectureSetForFilter.has(item.prefecture))
+            : [];
+        const deduped = new Map();
+        [...prioritizedItems, ...categoryItems].forEach((item) => {
+          if (!item?.id || deduped.has(item.id)) return;
+          deduped.set(item.id, item);
+        });
+        const items = Array.from(deduped.values()).slice(0, RECO_PAGE_SIZE);
+        return {
+          items,
+          cursor: { ...currentCursor, stage: "done", pagesFetched: RECO_MAX_PAGES },
+          hasMore: false,
+        };
+      }
+      if (!dataVersionState.ready) {
+        return { items: [], cursor: { ...currentCursor, stage: "done" }, hasMore: false };
+      }
       if (!normalizedCategory) {
         return { items: [], cursor: { ...currentCursor, stage: "done" }, hasMore: false };
       }
@@ -1710,7 +2333,9 @@ export default function App() {
           queryParts.push(startAfter(nextCursor.categoryLastId));
         }
         queryParts.push(limit(RECO_PAGE_SIZE));
-        return getDocs(firestoreQuery(...queryParts));
+        return trackedGetDocs("reco", firestoreQuery(...queryParts), {
+          preferCache: dataVersionState.preferCache,
+        });
       };
 
       if (stage === "prefecture") {
@@ -1745,7 +2370,15 @@ export default function App() {
       const hasMore = nextCursor.stage !== "done" && nextCursor.pagesFetched < RECO_MAX_PAGES;
       return { items, cursor: nextCursor, hasMore };
     },
-    [buildInitialRecommendationCursor, mapDocToItem],
+    [
+      buildInitialRecommendationCursor,
+      dataVersionState.preferCache,
+      dataVersionState.ready,
+      mapDocToItem,
+      snapshotState.items,
+      trackedGetDocs,
+      usingSnapshotData,
+    ],
   );
 
   const extendRecommendationPool = useCallback(
@@ -1809,9 +2442,23 @@ export default function App() {
   useEffect(() => {
     let isMounted = true;
     const loadExactMatches = async () => {
+      if (!dataVersionState.ready) {
+        setExactMatches([]);
+        return;
+      }
       const trimmed = keyword.trim();
       if (!trimmed) {
         setExactMatches([]);
+        return;
+      }
+      if (usingSnapshotData) {
+        const snapshotMatches = snapshotState.items
+          .filter((item) => item.name === trimmed)
+          .filter(matchesActiveFilters)
+          .slice(0, 5);
+        if (isMounted) {
+          setExactMatches(snapshotMatches);
+        }
         return;
       }
       try {
@@ -1820,18 +2467,12 @@ export default function App() {
           where("name", "==", trimmed),
           limit(5),
         );
-        const snap = await getDocs(exactQuery);
+        const snap = await trackedGetDocs("exact_name", exactQuery, {
+          preferCache: dataVersionState.preferCache,
+        });
         if (!isMounted) return;
         const matches = snap.docs.map(mapDocToItem);
-        const filtered = matches.filter((item) => {
-          if (region !== "all" && item.region !== region) return false;
-          if (category !== "all" && item.categoryGeneral !== category) return false;
-          if (externalOnly && item.externalUse !== "可") return false;
-          if (freeOnly && item.feeBand !== "無料") return false;
-          if (prefectureFilter && item.prefecture !== prefectureFilter) return false;
-          if (orgFilter && item.orgName !== orgFilter) return false;
-          return true;
-        });
+        const filtered = matches.filter(matchesActiveFilters);
         setExactMatches(filtered);
       } catch (error) {
         console.error(error);
@@ -1845,14 +2486,14 @@ export default function App() {
       isMounted = false;
     };
   }, [
-    category,
-    externalOnly,
-    freeOnly,
+    dataVersionState.preferCache,
+    dataVersionState.ready,
     keyword,
+    matchesActiveFilters,
     mapDocToItem,
-    orgFilter,
-    prefectureFilter,
-    region,
+    snapshotState.items,
+    trackedGetDocs,
+    usingSnapshotData,
   ]);
 
   const isOrgKeyword = useMemo(() => {
@@ -1864,9 +2505,23 @@ export default function App() {
   useEffect(() => {
     let isMounted = true;
     const loadOrgMatches = async () => {
+      if (!dataVersionState.ready) {
+        setOrgMatches([]);
+        return;
+      }
       const trimmed = keyword.trim();
       if (!trimmed || !isOrgKeyword) {
         setOrgMatches([]);
+        return;
+      }
+      if (usingSnapshotData) {
+        const snapshotMatches = snapshotState.items
+          .filter((item) => item.orgName === trimmed)
+          .filter(matchesActiveFilters)
+          .slice(0, 15);
+        if (isMounted) {
+          setOrgMatches(snapshotMatches);
+        }
         return;
       }
       try {
@@ -1875,18 +2530,12 @@ export default function App() {
           where("org_name", "==", trimmed),
           limit(15),
         );
-        const snap = await getDocs(orgQuery);
+        const snap = await trackedGetDocs("exact_org", orgQuery, {
+          preferCache: dataVersionState.preferCache,
+        });
         if (!isMounted) return;
         const matches = snap.docs.map(mapDocToItem);
-        const filtered = matches.filter((item) => {
-          if (region !== "all" && item.region !== region) return false;
-          if (category !== "all" && item.categoryGeneral !== category) return false;
-          if (externalOnly && item.externalUse !== "可") return false;
-          if (freeOnly && item.feeBand !== "無料") return false;
-          if (prefectureFilter && item.prefecture !== prefectureFilter) return false;
-          if (orgFilter && item.orgName !== orgFilter) return false;
-          return true;
-        });
+        const filtered = matches.filter(matchesActiveFilters);
         setOrgMatches(filtered);
       } catch (error) {
         console.error(error);
@@ -1900,41 +2549,16 @@ export default function App() {
       isMounted = false;
     };
   }, [
-    category,
-    externalOnly,
-    freeOnly,
+    dataVersionState.preferCache,
+    dataVersionState.ready,
     isOrgKeyword,
     keyword,
+    matchesActiveFilters,
     mapDocToItem,
-    orgFilter,
-    prefectureFilter,
-    region,
+    snapshotState.items,
+    trackedGetDocs,
+    usingSnapshotData,
   ]);
-
-  useEffect(() => {
-    let isMounted = true;
-    const loadLatestUpdate = async () => {
-      try {
-        const latestQuery = firestoreQuery(
-          collection(db, "equipment"),
-          orderBy("crawled_at", "desc"),
-          limit(1),
-        );
-        const latestSnap = await getDocs(latestQuery);
-        const latestDoc = latestSnap.docs[0];
-        const latestValue = latestDoc?.data()?.crawled_at || "";
-        if (isMounted) {
-          setLatestUpdate(formatDate(latestValue));
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    loadLatestUpdate();
-    return () => {
-      isMounted = false;
-    };
-  }, []);
 
   useEffect(() => {
     let isMounted = true;
@@ -1966,10 +2590,13 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    if (!dataVersionState.ready) return undefined;
     let isMounted = true;
     const loadPrefectureSummary = async () => {
       try {
-        const summarySnap = await getDoc(doc(db, "stats", "prefecture_summary"));
+        const summarySnap = await trackedGetDoc("summary", doc(db, "stats", "prefecture_summary"), {
+          preferCache: dataVersionState.preferCache,
+        });
         const data = summarySnap.exists() ? summarySnap.data() : null;
         const items = Array.isArray(data?.top_prefectures) ? data.top_prefectures : [];
         if (isMounted) {
@@ -1998,7 +2625,7 @@ export default function App() {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [dataVersionState.preferCache, dataVersionState.ready, trackedGetDoc]);
 
   const buildKeywordTokens = useCallback((value) => {
     const normalized = value.trim().toLowerCase();
@@ -2052,6 +2679,64 @@ export default function App() {
     () => keywordTokens.map((token) => normalizeForMatch(token)).filter(Boolean),
     [keywordTokens],
   );
+
+  const buildSnapshotSearchItems = useCallback(() => {
+    if (!usingSnapshotData) return [];
+    const baseFiltered = snapshotState.items.filter(matchesActiveFilters);
+    const hasSearchKeyword =
+      Boolean(normalizedKeyword) || normalizedKeywordTokens.length > 0 || aliasKeys.length > 0;
+    if (!hasSearchKeyword) {
+      return [...baseFiltered].sort((left, right) =>
+        (left.name || "").localeCompare(right.name || "", "ja"),
+      );
+    }
+
+    const scored = baseFiltered
+      .map((item) => {
+        const matchTier = buildMatchTier(item, normalizedKeyword, normalizedKeywordTokens, aliasKeys);
+        if (matchTier <= 0) return null;
+        let score = buildSearchScore(item, normalizedKeyword, normalizedKeywordTokens, aliasKeys);
+        if (isOrgKeyword) {
+          score += scoreTextMatch(item.orgName, normalizedKeyword, normalizedKeywordTokens, {
+            exact: 1200,
+            prefix: 800,
+            partial: 500,
+            token: 40,
+          });
+        }
+        return { item, matchTier, score };
+      })
+      .filter(Boolean);
+
+    scored.sort((left, right) => {
+      if (right.matchTier !== left.matchTier) {
+        return right.matchTier - left.matchTier;
+      }
+      if (right.score !== left.score) {
+        return right.score - left.score;
+      }
+      return (left.item.name || "").localeCompare(right.item.name || "", "ja");
+    });
+
+    let matched = scored.map((entry) => entry.item);
+    if (isOrgKeyword) {
+      const orgMatched = matched.filter((item) =>
+        hasTextMatch(item.orgName, normalizedKeyword, normalizedKeywordTokens),
+      );
+      if (orgMatched.length > 0) {
+        matched = orgMatched;
+      }
+    }
+    return matched;
+  }, [
+    aliasKeys,
+    isOrgKeyword,
+    matchesActiveFilters,
+    normalizedKeyword,
+    normalizedKeywordTokens,
+    snapshotState.items,
+    usingSnapshotData,
+  ]);
 
   const buildBaseQuery = useCallback(
     (tokens, options = {}) => {
@@ -2118,7 +2803,9 @@ export default function App() {
         pageQuery = firestoreQuery(pageQuery, startAfter(cursor));
       }
       pageQuery = firestoreQuery(pageQuery, limit(PAGE_SIZE + 1));
-      const snapshot = await getDocs(pageQuery);
+      const snapshot = await trackedGetDocs("base_page", pageQuery, {
+        preferCache: dataVersionState.preferCache,
+      });
       const docs = snapshot.docs;
       const hasNext = docs.length > PAGE_SIZE;
       const pageDocs = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
@@ -2126,11 +2813,12 @@ export default function App() {
       const lastDoc = pageDocs.length ? pageDocs[pageDocs.length - 1] : null;
       return { pageItems, lastDoc, hasNext };
     },
-    [mapDocToItem],
+    [dataVersionState.preferCache, mapDocToItem, trackedGetDocs],
   );
 
   const loadPage = useCallback(
     async ({ pageIndex, cursor, reset }) => {
+      if (!dataVersionState.ready || usingSnapshotData) return;
       setLoading(true);
       setLoadError("");
       try {
@@ -2164,10 +2852,18 @@ export default function App() {
         setLoading(false);
       }
     },
-    [buildBaseQuery, fetchPageData, keywordTokens, shouldRetryQuery],
+    [
+      buildBaseQuery,
+      dataVersionState.ready,
+      fetchPageData,
+      keywordTokens,
+      shouldRetryQuery,
+      usingSnapshotData,
+    ],
   );
 
   useEffect(() => {
+    if (!dataVersionState.ready || !snapshotState.ready) return undefined;
     let isMounted = true;
     const loadFirstPage = async () => {
       setLoading(true);
@@ -2181,6 +2877,16 @@ export default function App() {
       if (detailSwitchTimerRef.current) {
         clearTimeout(detailSwitchTimerRef.current);
         detailSwitchTimerRef.current = null;
+      }
+      if (usingSnapshotData) {
+        if (!isMounted) return;
+        const snapshotItems = buildSnapshotSearchItems();
+        const nextPages = buildPagedItems(snapshotItems);
+        setPages(nextPages);
+        pagesRef.current = nextPages;
+        setPage(1);
+        setLoading(false);
+        return;
       }
       try {
         let data;
@@ -2218,7 +2924,16 @@ export default function App() {
     return () => {
       isMounted = false;
     };
-  }, [buildBaseQuery, fetchPageData, keywordTokens, shouldRetryQuery]);
+  }, [
+    buildBaseQuery,
+    buildSnapshotSearchItems,
+    dataVersionState.ready,
+    fetchPageData,
+    keywordTokens,
+    shouldRetryQuery,
+    snapshotState.ready,
+    usingSnapshotData,
+  ]);
 
   const openExternalViewer = (payload) => {
     if (!payload?.url) return;
@@ -2487,70 +3202,42 @@ export default function App() {
     ).sort();
   }, [loadedItems]);
 
-  useEffect(() => {
-    if (regionInput === "all") {
-      setCategoryOptionsLoading(false);
-      return undefined;
-    }
-    const cached = regionCategoryOptionsMap[regionInput];
-    if (Array.isArray(cached)) {
-      setCategoryOptionsLoading(false);
-      return undefined;
-    }
-    let isMounted = true;
-    const loadRegionCategories = async () => {
-      setCategoryOptionsLoading(true);
-      try {
-        const categories = new Set();
-        let lastDoc = null;
-        let pageCount = 0;
-        let hasMore = true;
-        while (hasMore && pageCount < REGION_CATEGORY_FETCH_MAX_PAGES) {
-          const queryParts = [
-            collection(db, "equipment"),
-            where("region", "==", regionInput),
-            orderBy(documentId()),
-            limit(REGION_CATEGORY_FETCH_LIMIT),
-          ];
-          if (lastDoc) {
-            queryParts.splice(-1, 0, startAfter(lastDoc));
-          }
-          const snap = await getDocs(firestoreQuery(...queryParts));
-          snap.forEach((docSnap) => {
-            const value = docSnap.data()?.category_general;
-            if (typeof value === "string" && value.trim()) {
-              categories.add(value.trim());
-            }
-          });
-          lastDoc = snap.docs[snap.docs.length - 1] || null;
-          hasMore = snap.size === REGION_CATEGORY_FETCH_LIMIT && Boolean(lastDoc);
-          pageCount += 1;
-        }
-        if (!isMounted) return;
-        const sorted = Array.from(categories).sort((a, b) => a.localeCompare(b, "ja"));
-        setRegionCategoryOptionsMap((prev) => ({ ...prev, [regionInput]: sorted }));
-      } catch (error) {
-        console.error(error);
-        if (!isMounted) return;
-        setRegionCategoryOptionsMap((prev) => ({ ...prev, [regionInput]: [] }));
-      } finally {
-        if (isMounted) {
-          setCategoryOptionsLoading(false);
-        }
+  const fallbackRegionCategoryOptions = useMemo(() => {
+    const byRegion = {};
+    loadedItems.forEach((item) => {
+      const regionName = String(item.region || "").trim();
+      const categoryName = String(item.categoryGeneral || "").trim();
+      if (!regionName || !categoryName) return;
+      if (!byRegion[regionName]) {
+        byRegion[regionName] = new Set();
       }
-    };
-    loadRegionCategories();
-    return () => {
-      isMounted = false;
-    };
-  }, [regionCategoryOptionsMap, regionInput]);
+      byRegion[regionName].add(categoryName);
+    });
+    return Object.fromEntries(
+      Object.entries(byRegion).map(([regionName, categories]) => [
+        regionName,
+        Array.from(categories).sort((a, b) => a.localeCompare(b, "ja")),
+      ]),
+    );
+  }, [loadedItems]);
 
   const categoryOptions = useMemo(() => {
     if (regionInput === "all") {
-      return globalCategoryOptions;
+      const allCategories = uiFiltersDoc?.allCategories || [];
+      return allCategories.length > 0 ? allCategories : globalCategoryOptions;
     }
-    return regionCategoryOptionsMap[regionInput] || [];
-  }, [globalCategoryOptions, regionCategoryOptionsMap, regionInput]);
+    const fromUiFilters = uiFiltersDoc?.regionCategories?.[regionInput] || [];
+    if (fromUiFilters.length > 0) {
+      return fromUiFilters;
+    }
+    const fromLoadedItems = fallbackRegionCategoryOptions[regionInput] || [];
+    if (fromLoadedItems.length > 0) {
+      return fromLoadedItems;
+    }
+    return globalCategoryOptions;
+  }, [fallbackRegionCategoryOptions, globalCategoryOptions, regionInput, uiFiltersDoc]);
+
+  const categoryOptionsLoading = regionInput !== "all" && !uiFiltersLoaded;
 
   useEffect(() => {
     if (categoryInput === "all") return;
@@ -2744,6 +3431,7 @@ export default function App() {
       });
       openEquipmentDetail(targetItem, {
         switchDirection: delta > 0 ? "forward" : "back",
+        keepExpanded: true,
       });
     },
     [openEquipmentDetail],
@@ -2766,6 +3454,7 @@ export default function App() {
     openEquipmentDetail(rootItem, {
       switchDirection:
         rootIndex === currentCursor ? "" : rootIndex < currentCursor ? "back" : "forward",
+      keepExpanded: true,
     });
   }, [openEquipmentDetail, selectItemById]);
 
@@ -3409,67 +4098,56 @@ export default function App() {
   }, [topPrefecturesByRegion, userLocation]);
 
   useEffect(() => {
+    if (!dataVersionState.ready) return undefined;
     if (!mapInfoPrefecture) return undefined;
-    if (!mapData.usingSummaryCounts) return undefined;
+    if (usingSnapshotData) {
+      setMapOrgRequest((prev) => {
+        if (
+          prev.prefecture === mapInfoPrefecture &&
+          prev.loading === false &&
+          !prev.error
+        ) {
+          return prev;
+        }
+        return { prefecture: mapInfoPrefecture, loading: false, error: "" };
+      });
+      return undefined;
+    }
     if (mapOrgCache[mapInfoPrefecture]) return undefined;
     let isMounted = true;
     const targetPrefecture = mapInfoPrefecture;
-    const targetCount = mapData.prefectureCounts?.[targetPrefecture] || 0;
     const loadMapOrgs = async () => {
       setMapOrgRequest({ prefecture: targetPrefecture, loading: true, error: "" });
       try {
-        const equipmentRef = collection(db, "equipment");
-        const docMap = new Map();
-        const fetchPagedDocs = async (constraints) => {
-          let lastDoc = null;
-          let pageCount = 0;
-          let hasMore = true;
-          while (
-            hasMore &&
-            (targetCount === 0 || docMap.size < targetCount) &&
-            pageCount < MAP_ORG_FETCH_MAX_PAGES
-          ) {
-            const queryParts = [
-              equipmentRef,
-              ...constraints,
-              orderBy(documentId()),
-              limit(MAP_ORG_FETCH_LIMIT),
-            ];
-            if (lastDoc) {
-              queryParts.splice(-1, 0, startAfter(lastDoc));
-            }
-            const snap = await getDocs(firestoreQuery(...queryParts));
-            snap.forEach((docSnap) => {
-              docMap.set(docSnap.id, docSnap);
-            });
-            lastDoc = snap.docs[snap.docs.length - 1] || null;
-            hasMore = snap.size === MAP_ORG_FETCH_LIMIT;
-            pageCount += 1;
-          }
-        };
-        if (targetCount > 0) {
-          await fetchPagedDocs([where("prefecture", "==", targetPrefecture)]);
-          if (docMap.size < targetCount) {
-            await fetchPagedDocs([
-              where("search_tokens", "array-contains", targetPrefecture),
-            ]);
-          }
-        }
-        const items = [];
-        docMap.forEach((docSnap) => {
-          const data = docSnap.data() || {};
-          items.push({
-            orgName: data.org_name || "不明",
-          });
+        const statsRef = doc(
+          db,
+          "stats",
+          "prefecture_orgs",
+          PREFECTURE_ORG_STATS_SUBCOLLECTION,
+          targetPrefecture,
+        );
+        const snap = await trackedGetDoc("map_orgs", statsRef, {
+          preferCache: dataVersionState.preferCache,
         });
-        const orgList = buildOrgListFromItems(items);
+        const statsDoc = snap.exists()
+          ? buildMapOrgCacheEntry({
+              ...parsePrefectureOrgsDoc(snap.data(), targetPrefecture),
+              source: "stats",
+              missing: false,
+            })
+          : buildMapOrgCacheEntry({
+              prefecture: targetPrefecture,
+              totalEquipment: mapData.prefectureCounts?.[targetPrefecture] || 0,
+              totalFacilities: mapData.prefectureFacilityCounts?.[targetPrefecture] || 0,
+              orgList: [],
+              updatedAt: "",
+              source: "stats",
+              missing: true,
+            });
         if (isMounted) {
           setMapOrgCache((prev) => ({
             ...prev,
-            [targetPrefecture]: {
-              orgList,
-              sampleCount: docMap.size,
-            },
+            [targetPrefecture]: statsDoc,
           }));
           setMapOrgRequest((prev) =>
             prev.prefecture === targetPrefecture
@@ -3497,10 +4175,14 @@ export default function App() {
       isMounted = false;
     };
   }, [
+    dataVersionState.preferCache,
+    dataVersionState.ready,
     mapData.prefectureCounts,
-    mapData.usingSummaryCounts,
+    mapData.prefectureFacilityCounts,
     mapInfoPrefecture,
     mapOrgCache,
+    trackedGetDoc,
+    usingSnapshotData,
   ]);
 
   const mapProjection = useMemo(() => {
@@ -3726,17 +4408,44 @@ export default function App() {
     };
   }, [mapInfoPrefecture, prefectureMarkerMap, renderedMapViewport]);
 
+  const snapshotOrgEntriesByPrefecture = useMemo(() => {
+    if (!usingSnapshotData) return {};
+    return buildMapOrgEntryMapByPrefecture(snapshotState.items, "snapshot");
+  }, [snapshotState.items, usingSnapshotData]);
+
+  const loadedOrgEntriesByPrefecture = useMemo(() => {
+    return buildMapOrgEntryMapByPrefecture(loadedItems, "loaded");
+  }, [loadedItems]);
+
   const mapInfoData = useMemo(() => {
     if (!mapInfoPrefecture) return null;
     const summaryCount = mapData.prefectureCounts?.[mapInfoPrefecture] || 0;
-    const items = loadedItems.filter((item) => item.prefecture === mapInfoPrefecture);
-    const orgListFromItems = buildOrgListFromItems(items);
     const cachedOrg = mapOrgCache[mapInfoPrefecture];
-    const orgList =
-      cachedOrg?.orgList?.length > 0 ? cachedOrg.orgList : orgListFromItems;
-    const orgSampleCount = cachedOrg?.sampleCount ?? items.length;
+    const snapshotOrg = snapshotOrgEntriesByPrefecture[mapInfoPrefecture];
+    const loadedOrg = loadedOrgEntriesByPrefecture[mapInfoPrefecture];
+    const preferredOrg =
+      (cachedOrg?.orgList?.length ? cachedOrg : null) ||
+      (snapshotOrg?.orgList?.length ? snapshotOrg : null) ||
+      (loadedOrg?.orgList?.length ? loadedOrg : null) ||
+      cachedOrg ||
+      snapshotOrg ||
+      loadedOrg ||
+      null;
+    const orgList = preferredOrg?.orgList || [];
+    const orgSource = preferredOrg?.source || "loaded";
+    const statsMissing = Boolean(cachedOrg?.missing);
+    const loadedItemsInPrefecture = loadedItems.filter(
+      (item) => item.prefecture === mapInfoPrefecture,
+    );
+    const snapshotItemsInPrefecture = usingSnapshotData
+      ? snapshotState.items.filter((item) => item.prefecture === mapInfoPrefecture)
+      : [];
+    const categoryItems =
+      orgSource === "snapshot" && snapshotItemsInPrefecture.length > 0
+        ? snapshotItemsInPrefecture
+        : loadedItemsInPrefecture;
     const categoryCounts = new Map();
-    items.forEach((item) => {
+    categoryItems.forEach((item) => {
       const categoryKey = item.categoryDetail || item.categoryGeneral || "未分類";
       categoryCounts.set(categoryKey, (categoryCounts.get(categoryKey) || 0) + 1);
     });
@@ -3744,20 +4453,43 @@ export default function App() {
       .map(([category, count]) => ({ category, count }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 6);
+    const totalEquipment =
+      preferredOrg?.totalEquipment ||
+      summaryCount ||
+      loadedItemsInPrefecture.length ||
+      snapshotItemsInPrefecture.length;
+    const totalFacilities =
+      preferredOrg?.totalFacilities ||
+      mapData.prefectureFacilityCounts?.[mapInfoPrefecture] ||
+      orgList.length;
+    const waitingForStats = statsMissing && orgList.length === 0 && totalEquipment > 0;
+    const isPartial =
+      orgSource === "loaded" &&
+      !cachedOrg?.orgList?.length &&
+      !snapshotOrg?.orgList?.length &&
+      summaryCount > 0 &&
+      loadedItemsInPrefecture.length < summaryCount;
     return {
       prefecture: mapInfoPrefecture,
-      totalEquipment: summaryCount || items.length,
-      totalFacilities: mapData.prefectureFacilityCounts?.[mapInfoPrefecture] || orgList.length,
+      totalEquipment,
+      totalFacilities,
       orgList,
       topCategories,
-      isPartial: summaryCount > 0 && orgSampleCount < summaryCount,
+      isPartial,
+      orgSource,
+      waitingForStats,
+      statsMissing,
     };
   }, [
     loadedItems,
+    loadedOrgEntriesByPrefecture,
     mapData.prefectureCounts,
     mapData.prefectureFacilityCounts,
     mapInfoPrefecture,
     mapOrgCache,
+    snapshotOrgEntriesByPrefecture,
+    snapshotState.items,
+    usingSnapshotData,
   ]);
 
   const mapOrgStatus =
@@ -3974,6 +4706,8 @@ export default function App() {
       ? "関連論文の検索語が不足しています。"
       : papersStatus === "no_results"
         ? "該当する論文が見つかりませんでした。"
+        : papersStatus === "no_results_verified"
+        ? "該当する論文が見つかりませんでした。"
         : papersStatus === "error"
           ? detailItem?.papersError || "論文データの取得に失敗しました。"
           : "関連論文データを準備中です。";
@@ -4049,12 +4783,6 @@ export default function App() {
             国立研究機関・国立大学・私立大学・高専の共用設備を一箇所で検索。
             地域別の分布を俯瞰しながら、最適な設備へアクセスできます。
           </p>
-          <div className="hero-meta hero-meta-right">
-            <div className="hero-meta-inline">
-              <span>最終更新</span>
-              <strong>{latestUpdate}</strong>
-            </div>
-          </div>
         </div>
           <div className="search-panel">
             <div className="search-main">
@@ -4511,8 +5239,8 @@ export default function App() {
                           <p className="map-info-empty">{mapOrgError}</p>
                         ) : mapInfoData.orgList.length === 0 ? (
                           <p className="map-info-empty">
-                            {mapInfoData.totalEquipment > 0
-                              ? "機関情報を取得できませんでした。"
+                            {mapInfoData.waitingForStats
+                              ? "集計データ準備中（機関一覧は順次反映）"
                               : "該当なし"}
                           </p>
                         ) : (
@@ -4559,9 +5287,6 @@ export default function App() {
               </div>
               <div className="map-legend">
                 <span>都道府県をクリックして情報を表示</span>
-                {mapData.summaryUpdatedAt && (
-                  <span>集計更新: {formatDate(mapData.summaryUpdatedAt)}</span>
-                )}
               </div>
             </div>
             <div className="map-list">
@@ -4947,6 +5672,40 @@ export default function App() {
             </p>
           </div>
         </div>
+      )}
+
+      {readDebugEnabled && firestoreReadStats && (
+        <aside className="firestore-read-debug" aria-live="polite">
+          <h4>Firestore Reads (Debug)</h4>
+          <p>
+            data source:{" "}
+            {usingSnapshotData
+              ? `snapshot (${snapshotState.items.length} docs)`
+              : snapshotState.ready
+                ? "firestore"
+                : "snapshot loading"}
+          </p>
+          {snapshotState.generatedAt && (
+            <p>snapshot generated_at: {snapshotState.generatedAt}</p>
+          )}
+          <p>
+            requests: {firestoreReadStats.totalRequests} / returned docs:{" "}
+            {firestoreReadStats.totalReturnedDocs} / estimated billable reads:{" "}
+            {firestoreReadStats.totalBillableReads}
+          </p>
+          <ul>
+            {FIRESTORE_READ_LABELS.map((label) => {
+              const bucket = firestoreReadStats.byLabel?.[label];
+              if (!bucket || bucket.requests === 0) return null;
+              return (
+                <li key={label}>
+                  <strong>{label}</strong> req={bucket.requests} docs={bucket.returnedDocs} billable=
+                  {bucket.billableReads} source={bucket.lastSource || "-"}
+                </li>
+              );
+            })}
+          </ul>
+        </aside>
       )}
 
       <footer className="footer">

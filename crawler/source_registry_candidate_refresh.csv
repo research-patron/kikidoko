@@ -1,0 +1,27 @@
+org_name,prefecture,registry_key,fetch_status,normalized_count,action,next_step
+三重大学 研究基盤推進機構 先端科学研究支援センター オープンイノベーション施設,三重県,mie,ok,33,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+神戸大学 研究基盤センター 機器分析部門,兵庫県,kobe,ok,18,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+千葉大学 共用機器センター,千葉県,chiba,ok,16,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+大分大学 医学部 バイオラボセンター,大分県,oita,ok,35,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+奈良女子大学,奈良県,nara_wu,ok,15,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+奈良工業高等専門学校,奈良県,nara_kosen,ok,32,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+宮崎大学,宮崎県,miyazaki,ok,50,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+山形大学,山形県,yamagata_u,ok,19,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+山梨大学 機器分析センター,山梨県,yamanashi,ok,67,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+岩手大学 全学共同利用機器,岩手県,iwate,ok,11,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+島根大学 研究・学術情報本部 総合科学研究支援センター 遺伝子機能解析部門,島根県,shimane,ok,92,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+徳島大学 地域協働技術センター,徳島県,tokushima,ok,55,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+愛媛大学,愛媛県,ehime,ok,45,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+宇都宮大学 研究推進機構 機器分析センター,栃木県,utsunomiya,ok,71,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+熊本大学工学部附属工学研究機器センター,熊本県,kumamoto,ok,28,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+金沢大学 疾患モデル総合研究センター 機器分析研究施設,石川県,kanazawa,ok,13,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+福井大学 遠赤外領域開発研究センター,福井県,fukui,ok,8,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+群馬大学 コアファシリティ総合センター エンジニアリング分野,群馬県,gunma,ok,34,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+信州大学 基盤研究支援センター 機器分析支援部門,長野県,shinshu,ok,8,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+弘前大学,青森県,hirosaki_u,ok,29,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+浜松医科大学,静岡県,hamamatsu_med,ok,18,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+静岡大学,静岡県,shizuoka_u,ok,33,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+香川大学 微細加工プラットフォーム,香川県,kagawa,ok,24,sync_now,kikidoko-source-registry-syncを都道府県または20機関単位で分割実行
+埼玉大学,埼玉県,saitama_u,query_only,0,implement_source,公式URLと取得方式(parser_type)を確定してsource_registry_low_count.jsonを更新
+奈良教育大学,奈良県,nara_edu,query_only,0,implement_source,公式URLと取得方式(parser_type)を確定してsource_registry_low_count.jsonを更新
+富山大学,富山県,toyama_u,query_only,0,implement_source,公式URLと取得方式(parser_type)を確定してsource_registry_low_count.jsonを更新

@@ -1,0 +1,377 @@
+document_id,equipment_id,name,org_name,prefecture,category_general,category_detail,papers_status,papers_query,papers_updated_at
+eqnet-1027,eqnet-1027,(先端)集束イオンビーム装置 (セイコーインスツルメンツ・SMI3050HS),広島大学 先進理工系科学研究科 量子物質科学プログラム 量子機能材料科学,広島県,電子顕微鏡および関連機器,"微細加工装置(EB, FIB他)",ready,"TITLE-ABS-KEY(""focused ion beam"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1049,eqnet-1049,水銀ポロシメーター(島津・オートポアIV9500),宮崎大学 産学・地域連携センター 機器分析支援部門,宮崎県,専用測定装置,比表面積/細孔分布(ポロシメータ、吸着料測定),no_results_verified,"TITLE-ABS-KEY(""IV9500"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1118,eqnet-1118,ヘリウム再凝縮装置部 超低磁場測定部(カンタム・デザイン社製 C050JBYK(A)),富山大学 研究推進機構研究推進総合支援センター 自然科学研究支援ユニット 機器分析施設,富山県,物性計測/成分分析,"磁気特性測定装置(SQUID, VSM)",no_results_verified,"TITLE-ABS-KEY(""C050JBYK"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-112,eqnet-112,質量分析装置JEOLJMS−700N,長崎大学 研究開発推進機構,長崎県,質量分析装置(MS),二重収束型MS,ready,"TITLE-ABS-KEY(""mass spectrometry"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1148,eqnet-1148,多光子励起レーザ走査型顕微鏡 一式,広島大学 学術・社会産学連携室(社会連携) ひろしま医工連携・先進医療イノベーション拠点,広島県,光学顕微鏡/病理,多光子励起レーザ走査型顕微鏡,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1176,eqnet-1176,(工)ゲッチンゲン型風洞装置,広島大学 先進理工系科学研究科 輸送・環境システムプログラム 耐空耐航性能研究室,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""ゲッチンゲン型風洞装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1182,eqnet-1182,遺伝子導入装置 Nucleofectoe,山口大学 総合科学実験センター 遺伝子実験施設,山口県,遺伝子・ゲノム,遺伝子導入装置,no_results_verified,"TITLE-ABS-KEY(""Nucleofectoe"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1192,eqnet-1192,車両性能実証装置,名古屋大学 未来社会創造機構,愛知県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""車両性能実証装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1371,eqnet-1371,滑走式ミクロトーム(Yamoato Kohki・REM710),名古屋大学 医学教育研究支援センター分析機器部門,愛知県,光学顕微鏡/病理,染色/包埋/ミクロトーム,no_results_verified,"TITLE-ABS-KEY(""Yamoato"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1372,eqnet-1372,滑走式ミクロトーム(Yamoato Kohki・REM710),名古屋大学 医学教育研究支援センター分析機器部門,愛知県,光学顕微鏡/病理,染色/包埋/ミクロトーム,no_results_verified,"TITLE-ABS-KEY(""Yamoato"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1407,eqnet-1407,電子エネルギー損失分光器アップグレード,名古屋大学 大学院工学研究科,愛知県,光学顕微鏡/病理,その他,no_results_verified,"TITLE-ABS-KEY(""電子エネルギー損失分光器アップグレード"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1414,eqnet-1414,雷大電流発生装置 音羽電機工業(株),名古屋大学 ナショナルコンポジットセンター,愛知県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""雷大電流発生装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1415,eqnet-1415,炭素繊維複合材耐火耐炎試験装置 東洋精機製ティー・エイ,名古屋大学 ナショナルコンポジットセンター,愛知県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""炭素繊維複合材耐火耐炎試験装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1416,eqnet-1416,大型複合材プレス成形システム 川崎油工(株),名古屋大学 ナショナルコンポジットセンター,愛知県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""大型複合材プレス成形システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1667,eqnet-1667,自動血球計数器,岡山大学 自然生命科学研究支援センター,岡山県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""自動血球計数器"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1668,eqnet-1668,自動生化学分析装置,岡山大学 自然生命科学研究支援センター,岡山県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""自動生化学分析装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1674,eqnet-1674,サル用乾燥室 ((株)ワカイダ・エンジニアリング製 WINDY2000 外),岡山大学 医歯薬学域,岡山県,実験施設,飼育,no_results_verified,"TITLE-ABS-KEY(""WINDY2000"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1675,eqnet-1675,ターゲットガス・液体搬送設備(住友重機械工業(株)製),岡山大学 医歯薬学域,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ターゲットガス"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1676,eqnet-1676,ターゲットボックス及びターゲット周辺装置(住友重機械工業(株)製),岡山大学 医歯薬学域,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ターゲットボックス及びターゲット周辺装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1677,eqnet-1677,ホットセル(住友重機械工業(株)製),岡山大学 医歯薬学域,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ホットセル"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1683,eqnet-1683,超高圧発生装置,岡山大学 惑星物質研究所,岡山県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""超高圧発生装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1684,eqnet-1684,超高圧発生装置,岡山大学 惑星物質研究所,岡山県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""超高圧発生装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1687,eqnet-1687,分光光度計システム,岡山大学 惑星物質研究所,岡山県,光分析装置,可視・紫外分光光度計,no_results_verified,"TITLE-ABS-KEY(""分光光度計システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1689,eqnet-1689,内熱式ガス圧装置,岡山大学 惑星物質研究所,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""内熱式ガス圧装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1694,eqnet-1694,マグマ物性測定システム,岡山大学 惑星物質研究所,岡山県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""マグマ物性測定システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1702,eqnet-1702,6軸加圧装置,岡山大学 惑星物質研究所,岡山県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""軸加圧装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1703,eqnet-1703,下部マントル探査装置,岡山大学 惑星物質研究所,岡山県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""下部マントル探査装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1708,eqnet-1708,シームレス地球・惑星物質観察分析システム,岡山大学 惑星物質研究所,岡山県,実験施設,シームレス地球・惑星物質観察分析システム,no_results_verified,"TITLE-ABS-KEY(""シームレス地球"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1709,eqnet-1709,シームレス地球・惑星物質観察分析システム,岡山大学 惑星物質研究所,岡山県,実験施設,シームレス地球・惑星物質観察分析システム,no_results_verified,"TITLE-ABS-KEY(""シームレス地球"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1710,eqnet-1710,シームレス地球・惑星物質観察分析システム,岡山大学 惑星物質研究所,岡山県,実験施設,シームレス地球・惑星物質観察分析システム,no_results_verified,"TITLE-ABS-KEY(""シームレス地球"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1711,eqnet-1711,研究開発用マグネトロンスパッタリング装置,岡山大学 惑星物質研究所,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""研究開発用マグネトロンスパッタリング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1715,eqnet-1715,ビジュアルステージシステム,岡山大学 惑星物質研究所,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ビジュアルステージシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1717,eqnet-1717,高圧プレス用ポンプユニット,岡山大学 惑星物質研究所,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""高圧プレス用ポンプユニット"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1720,eqnet-1720,圧力測定用ラマンユニット,岡山大学 惑星物質研究所,岡山県,光分析装置,赤外分光光度計/ラマン分光装置,ready,"TITLE-ABS-KEY(""raman spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1721,eqnet-1721,赤外顕微鏡システム,岡山大学 惑星物質研究所,岡山県,光分析装置,赤外分光光度計/ラマン分光装置,ready,"TITLE-ABS-KEY(""infrared spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1722,eqnet-1722,顕微レーザーラマンシステム,岡山大学 惑星物質研究所,岡山県,光分析装置,赤外分光光度計/ラマン分光装置,ready,"TITLE-ABS-KEY(""raman spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1724,eqnet-1724,地球惑星物質濃度測定システム,岡山大学 惑星物質研究所,岡山県,実験施設,シームレス地球・惑星物質観察分析システム,no_results_verified,"TITLE-ABS-KEY(""地球惑星物質濃度測定システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1727,eqnet-1727,微小変位システム,岡山大学 惑星物質研究所,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""微小変位システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1750,eqnet-1750,示差熱天秤(リガク・TG8101D),名古屋工業大学 産学官金連携機構設備共用部門,愛知県,熱分析・熱測定装置,熱分析・熱測定装置,no_results_verified,"TITLE-ABS-KEY(""TG8101D"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1780,eqnet-1780,超微量分光光度計,東京農工大学 工学府 化学システム工学科 寺田・利谷研究室,東京都,光分析装置,可視・紫外分光光度計,no_results_verified,"TITLE-ABS-KEY(""超微量分光光度計"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1781,eqnet-1781,デジタルマイクロスコープ,東京農工大学 工学府 機械システム工学科 池田研究室,東京都,光学顕微鏡/病理,デジタルマイクロスコープ,no_results_verified,"TITLE-ABS-KEY(""デジタルマイクロスコープ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1782,eqnet-1782,ウエットブラスト式磨耗試験機,東京農工大学 工学府 機械システム工学科 池田研究室,東京都,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""ウエットブラスト式磨耗試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1783,eqnet-1783,高速高電圧アンプ,東京農工大学 工学府 機械システム工学科 西田研究室,東京都,その他,その他,no_results_verified,"TITLE-ABS-KEY(""高速高電圧アンプ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1784,eqnet-1784,高周波増幅器2,東京農工大学 工学府 機械システム工学科 西田研究室,東京都,その他,その他,no_results_verified,"TITLE-ABS-KEY(""高周波増幅器"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1785,eqnet-1785,高周波増幅器,東京農工大学 工学府 機械システム工学科 西田研究室,東京都,その他,その他,no_results_verified,"TITLE-ABS-KEY(""高周波増幅器"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1786,eqnet-1786,小型真空チャンバー,東京農工大学 工学府 機械システム工学科 西田研究室,東京都,その他,その他,no_results_verified,"TITLE-ABS-KEY(""小型真空チャンバー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1787,eqnet-1787,自動車計測ソリューション ( 視線計測/視線・まぶた・頭部運動のリアルタイム計測システム ),東京農工大学 工学府 機械システム工学科 ポンサトーン研究室,東京都,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""自動車計測ソリューション"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1800,eqnet-1800,流動高温高圧水環境評価システム,室蘭工業大学 環境・エネルギーシステム材料研究機構,北海道,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""流動高温高圧水環境評価システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1802,eqnet-1802,低ひずみ速度微小強度評価システム,室蘭工業大学 環境・エネルギーシステム材料研究機構,北海道,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""低ひずみ速度微小強度評価システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1803,eqnet-1803,亜臨界水環境試験装置,室蘭工業大学 環境・エネルギーシステム材料研究機構,北海道,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""亜臨界水環境試験装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1810,eqnet-1810,非接触表面形状精密測定システム,室蘭工業大学 環境・エネルギーシステム材料研究機構,北海道,光学顕微鏡/病理,その他,no_results_verified,"TITLE-ABS-KEY(""非接触表面形状精密測定システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1814,eqnet-1814,ホットプレス,室蘭工業大学 環境・エネルギーシステム材料研究機構,北海道,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""ホットプレス"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1924,eqnet-1924,高速冷却遠心機(ベックマン・AvantiHP30I),大阪大学 大学院医学系研究科 医学系研究科附属共同研究実習センター,大阪府,遠心/粉砕/加熱機器,遠心分離機,no_results_verified,"TITLE-ABS-KEY(""AvantiHP30I"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1925,eqnet-1925,高速冷却遠心機(ベックマン・AvantiHP30I),大阪大学 大学院医学系研究科 医学系研究科附属共同研究実習センター,大阪府,遠心/粉砕/加熱機器,遠心分離機,no_results_verified,"TITLE-ABS-KEY(""AvantiHP30I"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1960,eqnet-1960,ルミノイメージアナライザー 富士フィルムLAS1000,山口大学 総合科学実験センター 遺伝子実験施設,山口県,画像撮影/解析,化学発光・蛍光撮影装置(CCDカメラタイプ),no_results_verified,"TITLE-ABS-KEY(""LAS1000"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1965,eqnet-1965,小型超遠心機 日立CS100FX,山口大学 総合科学実験センター 遺伝子実験施設,山口県,遠心/粉砕/加熱機器,超遠心分離機,no_results_verified,"TITLE-ABS-KEY(""CS100FX"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1966,eqnet-1966,自動密度勾配作製・分離装置 グラジエントマスター・フラクショネーター,山口大学 総合科学実験センター 遺伝子実験施設,山口県,遠心/粉砕/加熱機器,密度勾配作成,no_results_verified,"TITLE-ABS-KEY(""自動密度勾配作製"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-1969,eqnet-1969,全自動磁気細胞分離装置ミルテニーバイオテク株式会社 autoMACSTMProSTarting Kit,山口大学 総合科学実験センター 遺伝子実験施設,山口県,フローサイトメトリー(FCM)/細胞分離,磁気細胞分離,no_results_verified,"TITLE-ABS-KEY(""autoMACSTMProSTarting"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2003,eqnet-2003,UHV10元スパッタ装置 (株)エイコー・エンジニアリング ES-350W,山口大学 総合科学実験センター常盤分室,山口県,成膜・蒸着・膜厚測定,真空蒸着・スパッタ(vac. coater・Sputter),no_results_verified,"TITLE-ABS-KEY(""UHV10"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2041,eqnet-2041,イオンビーム加工・表面分析装置(エスアイアイ・ナノテクノロジー(株)・Xversion200TB),福井大学 ふくい産学官共同研究拠点,福井県,電子顕微鏡および関連機器,"微細加工装置(EB, FIB他)",no_results_verified,"TITLE-ABS-KEY(""Xversion200TB"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2050,eqnet-2050,乾燥空気製造装置(特注((株)三井精機工業 他)・エアドライヤーQSQ2500C-EDC + コンプレッサーU-140376A-R),福井大学 ふくい産学官共同研究拠点,福井県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""QSQ2500C-EDC"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2052,eqnet-2052,隔離安全性試験設備(特注),福井大学 ふくい産学官共同研究拠点,福井県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""隔離安全性試験設備"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2053,eqnet-2053,充放電装置(北斗電工(株)・ハイレートサイクル部HJB0550SD8H + 大伝流印加部HJB1012SD1H + 標準サイクル部HJB0505SD8H),福井大学 ふくい産学官共同研究拠点,福井県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""HJB0550SD8H"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2059,eqnet-2059,クリーンドラフト(オリエンタル技研工業(株)),福井大学 ふくい産学官共同研究拠点,福井県,実験施設,ドラフトチャンバー,no_results_verified,"TITLE-ABS-KEY(""クリーンドラフト"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2060,eqnet-2060,超純水製造装置(小松電子(株)・うるぴゅあ KE0126),福井大学 ふくい産学官共同研究拠点,福井県,実験施設,蒸留水・超純水装置,no_results_verified,"TITLE-ABS-KEY(""KE0126"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2062,eqnet-2062,ビームプロファイラー(特注(コヒレントジャパン(株) 他)・特注),福井大学 ふくい産学官共同研究拠点,福井県,専用測定装置,レーザー,no_results_verified,"TITLE-ABS-KEY(""ビームプロファイラー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2068,eqnet-2068,乾燥保管庫(アドバンテック ((株)東洋製作所)),福井大学 ふくい産学官共同研究拠点,福井県,保管/収納,デシケーター,no_results_verified,"TITLE-ABS-KEY(""乾燥保管庫"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2069,eqnet-2069,微粉末材料フッ素化装置(特注),福井大学 ふくい産学官共同研究拠点,福井県,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""微粉末材料フッ素化装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2070,eqnet-2070,電池評価用恒温槽(アドバンテック ((株)東洋製作所)・低温恒温器 THM052PB),福井大学 ふくい産学官共同研究拠点,福井県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""THM052PB"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2080,eqnet-2080,発生工学実験システム,鳥取大学 研究推進機構,鳥取県,実験施設,飼育,no_results_verified,"TITLE-ABS-KEY(""発生工学実験システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2101,eqnet-2101,分離用超遠心機,京都工芸繊維大学 オープンファシリティセンター,京都府,遠心/粉砕/加熱機器,超遠心分離機,no_results_verified,"TITLE-ABS-KEY(""分離用超遠心機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2132,eqnet-2132,キャピラリー電気泳動装置(アジレント・テクノロジー株式会社 Agilent7100),弘前大学 共用機器基盤センター,青森県,電気泳動装置,ゲル・等電点電気泳動装置,no_results_verified,"TITLE-ABS-KEY(""Agilent7100"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2137,eqnet-2137,液体窒素供給システム,弘前大学 共用機器基盤センター,青森県,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""液体窒素供給システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2141,eqnet-2141,蒸留水製造装置(アドバンテック東洋 RFD240NA),弘前大学 保健学研究科機器管理委員会,青森県,実験施設,蒸留水・超純水装置,no_results_verified,"TITLE-ABS-KEY(""RFD240NA"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2142,eqnet-2142,超純水製造装置(アドバンテック東洋 RFU685DA),弘前大学 保健学研究科機器管理委員会,青森県,実験施設,蒸留水・超純水装置,no_results_verified,"TITLE-ABS-KEY(""RFU685DA"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2169,eqnet-2169,ガンマ線スペクトル分析装置(仁木工芸・GWL120-15),高知大学 海洋コア国際研究所,高知県,専用測定装置,放射線・RI(放射性同位体)関連,no_results_verified,"TITLE-ABS-KEY(""GWL120-15"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2179,eqnet-2179,温度変化型屈折率測定装置(京都フィッション・トラック・RIMS2000),高知大学 海洋コア国際研究所,高知県,その他,その他,ready,"TITLE-ABS-KEY(""mass spectrometry"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2209,eqnet-2209,ダイヤモンドワイヤーソー(メイワフォーシス DWS3242),岐阜大学 科学研究基盤センター 機器分析分野,岐阜県,電子顕微鏡および関連機器,電顕用試料作成装置-ミクロトーム等(EM sample preparation. e.g. Microtome.),no_results_verified,"TITLE-ABS-KEY(""DWS3242"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2220,eqnet-2220,熱画像解析装置(セキテクノトロン SC7500STEC),岐阜大学 科学研究基盤センター 機器分析分野,岐阜県,画像撮影/解析,高速度カメラ・サーモカメラ,no_results_verified,"TITLE-ABS-KEY(""SC7500STEC"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2264,eqnet-2264,オートクレーブ,岐阜大学 科学研究基盤センター RI実験分野,岐阜県,培養/恒温恒湿度器/滅菌機機,オートクレーブ,no_results_verified,"TITLE-ABS-KEY(""オートクレーブ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2290,eqnet-2290,小型遠心機DISKBOY,岐阜大学 科学研究基盤センター RI実験分野,岐阜県,専用測定装置,放射線・RI(放射性同位体)関連,no_results_verified,"TITLE-ABS-KEY(""DISKBOY"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2307,eqnet-2307,オートクレーブ,岐阜大学 科学研究基盤センター RI実験分野,岐阜県,培養/恒温恒湿度器/滅菌機機,オートクレーブ,no_results_verified,"TITLE-ABS-KEY(""オートクレーブ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2341,eqnet-2341,ビーズ式ホモジナイザー マルチビーズショッカー MB455GU (S),岐阜大学 科学研究基盤センター ゲノム研究分野,岐阜県,遠心/粉砕/加熱機器,ホモジナイザー,no_results_verified,"TITLE-ABS-KEY(""MB455GU"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2360,eqnet-2360,収束イオンビーム加工装置(日立ハイテク・MI4050),岩手大学 研究支援・産学連携センター 研究基盤管理・機器分析部門 電子顕微鏡室,岩手県,電子顕微鏡および関連機器,電顕用試料作成装置-ミクロトーム等(EM sample preparation. e.g. Microtome.),no_results_verified,"TITLE-ABS-KEY(""MI4050"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2468,eqnet-2468,多穴プレート対応流路型分注機,京都大学 医学研究科,京都府,液体操作,分注機,no_results_verified,"TITLE-ABS-KEY(""多穴プレート対応流路型分注機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2469,eqnet-2469,多穴プレート対応チップ型分注機,京都大学 医学研究科,京都府,液体操作,分注機,no_results_verified,"TITLE-ABS-KEY(""多穴プレート対応チップ型分注機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2471,eqnet-2471,細胞イメージアナライザー,京都大学 医学研究科,京都府,光学顕微鏡/病理,ライブセルイメージング装置,no_results_verified,"TITLE-ABS-KEY(""細胞イメージアナライザー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2473,eqnet-2473,細胞外フラックスアナライザー,京都大学 医学研究科,京都府,専用測定装置,フラックスアナライザー,no_results_verified,"TITLE-ABS-KEY(""細胞外フラックスアナライザー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2474,eqnet-2474,倒立蛍光顕微鏡,京都大学 医学研究科,京都府,光学顕微鏡/病理,蛍光顕微鏡,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2475,eqnet-2475,倒立蛍光顕微鏡,京都大学 医学研究科,京都府,光学顕微鏡/病理,蛍光顕微鏡,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2477,eqnet-2477,分子間相互作用解析装置,京都大学 医学研究科,京都府,分子間相互作用解析装置,その他,no_results_verified,"TITLE-ABS-KEY(""分子間相互作用解析装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2479,eqnet-2479,自動二次元電気泳動装置,京都大学 医学研究科,京都府,電気泳動装置,ゲル・等電点電気泳動装置,no_results_verified,"TITLE-ABS-KEY(""自動二次元電気泳動装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2480,eqnet-2480,二次元ゲル電気泳動装置,京都大学 医学研究科,京都府,電気泳動装置,ゲル・等電点電気泳動装置,no_results_verified,"TITLE-ABS-KEY(""二次元ゲル電気泳動装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2481,eqnet-2481,マルチラベルイメージアナライザー,京都大学 医学研究科,京都府,光学顕微鏡/病理,ライブセルイメージング装置,no_results_verified,"TITLE-ABS-KEY(""マルチラベルイメージアナライザー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2482,eqnet-2482,タンパク質スポット切り出し装置,京都大学 医学研究科,京都府,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""タンパク質スポット切り出し装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2484,eqnet-2484,マイクロアレイスキャニングシステム,京都大学 医学研究科,京都府,遺伝子・ゲノム,マイクロアレイ解析システム,no_results_verified,"TITLE-ABS-KEY(""マイクロアレイスキャニングシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2485,eqnet-2485,マイクロアレイデータ解析ソフトウェア,京都大学 医学研究科,京都府,遺伝子・ゲノム,マイクロアレイ解析システム,no_results_verified,"TITLE-ABS-KEY(""マイクロアレイデータ解析ソフトウェア"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2487,eqnet-2487,バイオアナライザー,京都大学 医学研究科,京都府,電気泳動装置,キャピラリー電気泳動装置,no_results_verified,"TITLE-ABS-KEY(""バイオアナライザー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2489,eqnet-2489,超遠心機用密度勾配作成・分画装置,京都大学 医学研究科,京都府,遠心/粉砕/加熱機器,密度勾配作成,no_results_verified,"TITLE-ABS-KEY(""超遠心機用密度勾配作成"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2490,eqnet-2490,マイクロプレートウォッシャー,京都大学 医学研究科,京都府,液体操作,プレートウォッシャー,no_results_verified,"TITLE-ABS-KEY(""マイクロプレートウォッシャー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2491,eqnet-2491,マイクロアレイスキャナ,京都大学 医学研究科,京都府,遺伝子・ゲノム,マイクロアレイ解析システム,no_results_verified,"TITLE-ABS-KEY(""マイクロアレイスキャナ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2492,eqnet-2492,次世代シーケンサーサンプル作成装置,京都大学 医学研究科,京都府,遺伝子・ゲノム,その他,ready,"TITLE-ABS-KEY(""sequencing"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2493,eqnet-2493,核酸サイズセレクション自動化装置,京都大学 医学研究科,京都府,遺伝子・ゲノム,その他,no_results_verified,"TITLE-ABS-KEY(""核酸サイズセレクション自動化装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2497,eqnet-2497,正立型多光子顕微鏡,京都大学 医学研究科,京都府,光学顕微鏡/病理,多光子励起レーザ走査型顕微鏡,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2498,eqnet-2498,倒立型二光子顕微鏡,京都大学 医学研究科,京都府,光学顕微鏡/病理,多光子励起レーザ走査型顕微鏡,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2500,eqnet-2500,インキュベータ蛍光顕微鏡,京都大学 医学研究科,京都府,光学顕微鏡/病理,ライブセルイメージング装置,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2501,eqnet-2501,多光子励起レーザー走査型インキュベータ蛍光顕微鏡,京都大学 医学研究科,京都府,光学顕微鏡/病理,ライブセルイメージング装置,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2503,eqnet-2503,多穴プレート対応チップ型分注機(2),京都大学 医学研究科,京都府,液体操作,分注機,no_results_verified,"TITLE-ABS-KEY(""多穴プレート対応チップ型分注機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2505,eqnet-2505,共焦点顕微鏡型細胞イメージアナライザー,京都大学 医学研究科,京都府,光学顕微鏡/病理,ライブセルイメージング装置,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2506,eqnet-2506,スクリーニング用化合物プレート,京都大学 医学研究科,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""スクリーニング用化合物プレート"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2507,eqnet-2507,高速高精度電子ビーム描画装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""高速高精度電子ビーム描画装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2508,eqnet-2508,レーザー直接描画装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,ready,"TITLE-ABS-KEY(""laser"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2509,eqnet-2509,高速マスクレス露光装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""高速マスクレス露光装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2510,eqnet-2510,レジスト塗布装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""レジスト塗布装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2511,eqnet-2511,レジスト現像装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""レジスト現像装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2512,eqnet-2512,スプレーコータ,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""スプレーコータ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2513,eqnet-2513,ウエハスピン洗浄装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ウエハスピン洗浄装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2514,eqnet-2514,厚膜フォトレジスト用スピンコーティング装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""厚膜フォトレジスト用スピンコーティング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2515,eqnet-2515,両面マスクアライナー,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""両面マスクアライナー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2516,eqnet-2516,露光装置(ステッパー),京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""露光装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2517,eqnet-2517,ウェハ汚染計測装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ウェハ汚染計測装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2518,eqnet-2518,紫外線露光装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""紫外線露光装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2519,eqnet-2519,液滴吐出描画装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""液滴吐出描画装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2520,eqnet-2520,有機現像液型レジスト現像装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""有機現像液型レジスト現像装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2522,eqnet-2522,ステッパ,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ステッパ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2523,eqnet-2523,移動マスク紫外線露光装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""移動マスク紫外線露光装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2524,eqnet-2524,両面マスクアライナ露光装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""両面マスクアライナ露光装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2525,eqnet-2525,大面積超高精度電子線描画装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""大面積超高精度電子線描画装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2526,eqnet-2526,真空蒸着装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""真空蒸着装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2529,eqnet-2529,電子線蒸着装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""電子線蒸着装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2531,eqnet-2531,熱酸化炉,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""熱酸化炉"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2532,eqnet-2532,電子サイクロトロン共鳴イオンビーム加工装置,京都大学 学際融合教育研究推進センター,京都府,加速器,サイクロトロン,no_results_verified,"TITLE-ABS-KEY(""電子サイクロトロン共鳴イオンビーム加工装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2533,eqnet-2533,ドライエッチング装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ドライエッチング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2534,eqnet-2534,深堀りドライエッチング装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""深堀りドライエッチング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2535,eqnet-2535,磁気中性線放電ドライエッチング装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""磁気中性線放電ドライエッチング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2536,eqnet-2536,シリコン酸化膜犠牲層ドライエッチングシステム,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""シリコン酸化膜犠牲層ドライエッチングシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2537,eqnet-2537,シリコン犠牲層ドライエッチングシステム,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""シリコン犠牲層ドライエッチングシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2538,eqnet-2538,紫外線ナノインプリントボンドアライメント装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""紫外線ナノインプリントボンドアライメント装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2539,eqnet-2539,基板接合装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""基板接合装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2541,eqnet-2541,赤外フェムト秒レーザ加工装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,ready,"TITLE-ABS-KEY(""infrared spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2542,eqnet-2542,レーザアニール装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""レーザアニール装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2543,eqnet-2543,レーザダイシング装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""レーザダイシング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2544,eqnet-2544,真空マウンター,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""真空マウンター"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2545,eqnet-2545,紫外線照射装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""紫外線照射装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2546,eqnet-2546,エキスパンド装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""エキスパンド装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2547,eqnet-2547,ダイシングソー,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ダイシングソー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2548,eqnet-2548,ウェッジワイヤボンダ,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ウェッジワイヤボンダ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2549,eqnet-2549,ボールワイヤボンダ,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ボールワイヤボンダ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2550,eqnet-2550,ダイボンダ,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ダイボンダ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2551,eqnet-2551,ナノインプリントシステム,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ナノインプリントシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2556,eqnet-2556,ウエハ接合装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ウエハ接合装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2557,eqnet-2557,ナノインプリント装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ナノインプリント装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2558,eqnet-2558,ダイシング装置,京都大学 学際融合教育研究推進センター,京都府,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ダイシング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2561,eqnet-2561,真空プローバ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""真空プローバ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2563,eqnet-2563,触針式段差計1,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""触針式段差計"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2564,eqnet-2564,触針式段差計2,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""触針式段差計"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2565,eqnet-2565,マイクロシステムアナライザ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""マイクロシステムアナライザ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2566,eqnet-2566,プローバ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""プローバ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2569,eqnet-2569,三次元粒子トラッキングシステム,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""三次元粒子トラッキングシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2572,eqnet-2572,長時間撮影蛍光イメージングシステム,京都大学 学際融合教育研究推進センター,京都府,光学顕微鏡/病理,蛍光顕微鏡,no_results_verified,"TITLE-ABS-KEY(""長時間撮影蛍光イメージングシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2575,eqnet-2575,分光エリプソメーター,京都大学 学際融合教育研究推進センター,京都府,成膜・蒸着・膜厚測定,エリプソメーター,ready,"TITLE-ABS-KEY(""spectroscopic ellipsometry"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2577,eqnet-2577,パワーデバイスアナライザ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""パワーデバイスアナライザ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2578,eqnet-2578,インピーダンスアナライザ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""インピーダンスアナライザ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2579,eqnet-2579,光ヘテロダイン微小振動測定装置,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""光ヘテロダイン微小振動測定装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2580,eqnet-2580,超微小材料機械変形評価装置,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""超微小材料機械変形評価装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2582,eqnet-2582,セルテストシステム,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""セルテストシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2583,eqnet-2583,マニュアルプローバ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""マニュアルプローバ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2585,eqnet-2585,ネットワークアナライザ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ネットワークアナライザ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2586,eqnet-2586,半導体パラメータアナライザ,京都大学 学際融合教育研究推進センター,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""半導体パラメータアナライザ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2590,eqnet-2590,集束イオンビーム装置,京都大学 化学研究所,京都府,その他,その他,ready,"TITLE-ABS-KEY(""focused ion beam"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2591,eqnet-2591,精密イオン研磨装置,京都大学 化学研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""精密イオン研磨装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2592,eqnet-2592,ミクロトーム,京都大学 化学研究所,京都府,光学顕微鏡/病理,染色/包埋/ミクロトーム,no_results_verified,"TITLE-ABS-KEY(""ミクロトーム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2593,eqnet-2593,ディンプリング装置,京都大学 化学研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ディンプリング装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2594,eqnet-2594,複合ビーム材料照射装置,京都大学 エネルギー理工学研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""複合ビーム材料照射装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2599,eqnet-2599,集束イオンビーム加工観察装置,京都大学 エネルギー理工学研究所,京都府,その他,その他,ready,"TITLE-ABS-KEY(""focused ion beam"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2600,eqnet-2600,複合ビーム加工観察装置,京都大学 エネルギー理工学研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""複合ビーム加工観察装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2601,eqnet-2601,電界放出形電子プローブアナライザー,京都大学 エネルギー理工学研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""電界放出形電子プローブアナライザー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2602,eqnet-2602,電界放出形オージェマイクロプローブ,京都大学 エネルギー理工学研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""電界放出形オージェマイクロプローブ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2604,eqnet-2604,マーカス型高周波グロー放電発光表面分析装置,京都大学 エネルギー理工学研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""マーカス型高周波グロー放電発光表面分析装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2608,eqnet-2608,自由電子レーザー,京都大学 エネルギー理工学研究所,京都府,専用測定装置,その他,ready,"TITLE-ABS-KEY(""laser"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2609,eqnet-2609,振動台システム,京都大学 防災研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""振動台システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2610,eqnet-2610,動的アクチュエータシステム,京都大学 防災研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""動的アクチュエータシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2611,eqnet-2611,データ計測解析システム,京都大学 防災研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""データ計測解析システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2612,eqnet-2612,数値解析シミュレータシステム,京都大学 防災研究所,京都府,専用測定装置,シミュレーター,no_results_verified,"TITLE-ABS-KEY(""数値解析シミュレータシステム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2613,eqnet-2613,加振力倍加装置,京都大学 防災研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""加振力倍加装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2615,eqnet-2615,高感度加速度計,京都大学 防災研究所,京都府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""高感度加速度計"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2667,eqnet-2667,中規模カーボンナノファイバー室温合成装置(自作),名古屋工業大学 ナノテクノロジープラットフォーム,愛知県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""中規模カーボンナノファイバー室温合成装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2676,eqnet-2676,グラフェン・カーボンナノチューブ合成装置(自作特型),名古屋工業大学 ナノテクノロジープラットフォーム,愛知県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""グラフェン"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2702,eqnet-2702,集束イオンビーム装置(日立ハイテクサイエンス・SMI2050),大阪大学 大阪大学ナノテクノロジー設備供用拠点,大阪府,電子顕微鏡および関連機器,"微細加工装置(EB, FIB他)",ready,"TITLE-ABS-KEY(""focused ion beam"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2713,eqnet-2713,電気炉(誠南工業),大阪大学 大阪大学ナノテクノロジー設備供用拠点,大阪府,遠心/粉砕/加熱機器,電気炉,no_results_verified,"TITLE-ABS-KEY(""電気炉"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2723,eqnet-2723,触式膜厚測定器(膜厚計)(BURUKER・DektakXT),大阪大学 大阪大学ナノテクノロジー設備供用拠点,大阪府,専用測定装置,表面粗さ・表面形状測定器,no_results_verified,"TITLE-ABS-KEY(""BURUKER"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2736,eqnet-2736,同軸型ゲルマニウム半導体検出器(キャンベラ・GC2020),横浜国立大学 研究推進機構 機器分析評価センター,神奈川県,専用測定装置,放射線・RI(放射性同位体)関連,no_results_verified,"TITLE-ABS-KEY(""GC2020"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2768,eqnet-2768,トランスバレストレイン試験機,広島大学 先進理工系科学研究科 機械工学プログラム 接合プロセス工学研究室,広島県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""トランスバレストレイン試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2774,eqnet-2774,分光エリプソメーター (日本分光・ELC300),東京科学大学 オープンファシリティセンター すずかけ台分析部門,東京都,構造解析/元素分析,その他,ready,"TITLE-ABS-KEY(""spectroscopic ellipsometry"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-2895-32d741e3,eqnet-2895-32d741e3,共焦点ラマン顕微鏡,長崎大学 研究開発推進機構 設備共同利用部門 先端科学研究支援室,長崎県,光分析装置,赤外分光光度計/ラマン分光装置,ready,"TITLE-ABS-KEY(""raman spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3008,eqnet-3008,接触角測定装置(協和界面科学・DropMaster700),富山大学 研究推進機構研究推進総合支援センター,富山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""DropMaster700"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3026,eqnet-3026,パルス磁化器(MagneticMeas.・MMPM10),高知大学 海洋コア国際研究所,高知県,物性計測/成分分析,"磁気特性測定装置(SQUID, VSM)",no_results_verified,"TITLE-ABS-KEY(""MagneticMeas"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3048,eqnet-3048,211号室 局所排気装置(ヒュームフード・ドラフトチャンバー),横浜国立大学 研究推進機構 機器分析評価センター,神奈川県,実験施設,ドラフトチャンバー,no_results_verified,"TITLE-ABS-KEY(""号室"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3049,eqnet-3049,114号室 局所排気装置(ヒュームフード・ドラフトチャンバー),横浜国立大学 研究推進機構 機器分析評価センター,神奈川県,実験施設,ドラフトチャンバー,no_results_verified,"TITLE-ABS-KEY(""号室"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3062,eqnet-3062,工作室(卓上グラインダ、万能工作機械、フライス盤、ボール盤等),佐賀大学 総合分析実験センター 鍋島地区 機器分析部門,佐賀県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""工作室"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3066,eqnet-3066,蒸留水 GlassStill8型,佐賀大学 総合分析実験センター 鍋島地区 機器分析部門,佐賀県,実験施設,蒸留水・超純水装置,no_results_verified,"TITLE-ABS-KEY(""GlassStill8"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3087,eqnet-3087,電子天秤 TXB6201L,佐賀大学 総合分析実験センター 鍋島地区 機器分析部門,佐賀県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""TXB6201L"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3109,eqnet-3109,多検体細胞破砕装置 シェイクマスターネオ,佐賀大学 総合分析実験センター 鍋島地区 機器分析部門,佐賀県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""多検体細胞破砕装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3122,eqnet-3122,振とう培養器 E25R,佐賀大学 総合分析実験センター 鍋島地区 機器分析部門,佐賀県,培養/恒温恒湿度器/滅菌機機,回転/振とう培養器,no_results_verified,"TITLE-ABS-KEY(""E25R"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3301,eqnet-3301,クリオスタット マイクロエッジ・インスツルメン ト クリオスター HM560V,浜松医科大学 光尖端医学教育研究センター 先進機器共用推進部 先進機器研究推進室,静岡県,光学顕微鏡/病理,染色/包埋/ミクロトーム,no_results_verified,"TITLE-ABS-KEY(""HM560V"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3337-32d741e3,eqnet-3337-32d741e3,ウルトラミクロ電子天秤,長崎大学 研究開発推進機構 設備共同利用部門 先端科学研究支援室,長崎県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ウルトラミクロ電子天秤"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3364,eqnet-3364,動的光散乱光度計(大塚電子(株):FDLS3000),筑波大学 研究基盤総合センター分析部門,茨城県,物性計測/成分分析,光散乱光度計(ポリマー分子量・ゼータ電位・粒子径)(MALS他),no_results_verified,"TITLE-ABS-KEY(""FDLS3000"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3401,eqnet-3401,電気化学測定装置(BAS621E),琉球大学 研究基盤統括センター 機器分析施設,沖縄県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""BAS621E"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3402,eqnet-3402,ヘリウム液化装置,琉球大学 研究基盤統括センター 極低温施設,沖縄県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ヘリウム液化装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3459,eqnet-3459,データベース、データ解析サーバー,岩手大学 農学部 食料生産環境学科 石村研究室,岩手県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""データベース"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3460,eqnet-3460,振動型疲労試験装置,岩手大学 理工学部 システム創生工学科 大西弘志研究室,岩手県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""振動型疲労試験装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3461,eqnet-3461,構造物静的計測システム,岩手大学 理工学部 システム創生工学科 大西弘志研究室,岩手県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""構造物静的計測システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3511,eqnet-3511,白金・カーボンコーター (サンユー SC701C),静岡大学 浜松キャンパス共同利用機器センター 浜松キャンパス共同利用機器センター 浜松キャンパス共同利用機器センター,静岡県,成膜・蒸着・膜厚測定,真空蒸着・スパッタ(vac. coater・Sputter),no_results_verified,"TITLE-ABS-KEY(""SC701C"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3517,eqnet-3517,クリープ試験機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""クリープ試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3518,eqnet-3518,精密万能試験機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""精密万能試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3519,eqnet-3519,固体粘弾性測定装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""固体粘弾性測定装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3520,eqnet-3520,蒸気吸着量分析,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""蒸気吸着量分析"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3522,eqnet-3522,デジタルマイクロスコープ(元素分析つき),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,光学顕微鏡/病理,デジタルマイクロスコープ,no_results_verified,"TITLE-ABS-KEY(""デジタルマイクロスコープ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3523,eqnet-3523,レーザー顕微鏡,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,ready,"TITLE-ABS-KEY(""laser"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3525,eqnet-3525,微量電気泳動システム,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,電気泳動装置,キャピラリー電気泳動装置,no_results_verified,"TITLE-ABS-KEY(""微量電気泳動システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3526,eqnet-3526,3次元回転浮遊培養装置,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,培養/恒温恒湿度器/滅菌機機,回転/振とう培養器,no_results_verified,"TITLE-ABS-KEY(""次元回転浮遊培養装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3527,eqnet-3527,エレクトロポーション装置,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""エレクトロポーション装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3528,eqnet-3528,オールインワン蛍光顕微鏡,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,光学顕微鏡/病理,蛍光顕微鏡,ready,"TITLE-ABS-KEY(""fluorescence microscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3529,eqnet-3529,サイクロン エアーサンプラー,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""サイクロン"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3532,eqnet-3532,ビーズ破砕機,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ビーズ破砕機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3534,eqnet-3534,バイオハザード対策用キャビネット,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""バイオハザード対策用キャビネット"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3535,eqnet-3535,乾熱滅菌器,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""乾熱滅菌器"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3537,eqnet-3537,小型超遠心機,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,遠心/粉砕/加熱機器,超遠心分離機,no_results_verified,"TITLE-ABS-KEY(""小型超遠心機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3538,eqnet-3538,短鎖核酸解読装置,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,遺伝子・ゲノム,その他,no_results_verified,"TITLE-ABS-KEY(""短鎖核酸解読装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3539,eqnet-3539,水道水直結型超純水製造装置,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""水道水直結型超純水製造装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3540,eqnet-3540,ノンフロン超低温フリーザー,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,保管/収納,超低温フリーザー,no_results_verified,"TITLE-ABS-KEY(""ノンフロン超低温フリーザー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3541,eqnet-3541,長鎖核酸解読装置,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,遺伝子・ゲノム,その他,no_results_verified,"TITLE-ABS-KEY(""長鎖核酸解読装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3543,eqnet-3543,オールインワン微量分光・蛍光光度計,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""オールインワン微量分光"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3544,eqnet-3544,キャピラリーレオメーター,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""キャピラリーレオメーター"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3548,eqnet-3548,粘度計(液体粘弾性測定装置),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,物性計測/成分分析,その他,no_results_verified,"TITLE-ABS-KEY(""粘度計"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3549,eqnet-3549,真空自転公転ミキサー(あわとり練太郎),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""真空自転公転ミキサー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3560,eqnet-3560,ビブラトーム(メイワフォーシス ・VIB3000PLUS),広島大学 自然科学研究支援開発センター 機器共用・分析部門 電子顕微鏡,広島県,光学顕微鏡/病理,染色/包埋/ミクロトーム,no_results_verified,"TITLE-ABS-KEY(""VIB3000PLUS"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3577,eqnet-3577,プリンカップ試験機,大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""プリンカップ試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3579,eqnet-3579,モールド機,大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""モールド機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3588,eqnet-3588,示差走査熱量計(DSC204H),大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,熱分析・熱測定装置,熱分析・熱測定装置,no_results_verified,"TITLE-ABS-KEY(""DSC204H"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3592,eqnet-3592,クリープ試験機 3連,大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""クリープ試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3605,eqnet-3605,"""小型環境試験機(SH241) """,大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""SH241"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3635,eqnet-3635,分離用小型超遠心機(CS100GXL),九州大学 工学研究院 マテリアル先端リサーチインフラ,福岡県,遠心/粉砕/加熱機器,超遠心分離機,no_results_verified,"TITLE-ABS-KEY(""CS100GXL"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3647,eqnet-3647,化学吸着分析,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""化学吸着分析"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3648,eqnet-3648,粒度分布分析,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""粒度分布分析"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3649,eqnet-3649,動的吸水率測定,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""動的吸水率測定"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3673-fb111d82,eqnet-3673-fb111d82,ゼータ電位・粒径・分子量測定装置,長崎大学 工学研究科 教育研究支援部 化学・物質工学系技術室,長崎県,物性計測/成分分析,粒度分布測定・ゼータ電位測定,no_results_verified,"TITLE-ABS-KEY(""ゼータ電位"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3698,eqnet-3698,埋込機(ビューラー・SimpliMet 2),横浜国立大学 移設または廃棄済設備,神奈川県,電子顕微鏡および関連機器,電顕用試料作成装置-ミクロトーム等(EM sample preparation. e.g. Microtome.),no_results_verified,"TITLE-ABS-KEY(""SimpliMet"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3719,eqnet-3719,ハイボリウムエアーサンプラー,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ハイボリウムエアーサンプラー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3727,eqnet-3727,高圧蒸気滅菌装置,鹿児島大学 先端科学研究推進センター 生命科学動物実験ユニット 動物管理・小動物研究推進部門,鹿児島県,培養/恒温恒湿度器/滅菌機機,その他,no_results_verified,"TITLE-ABS-KEY(""高圧蒸気滅菌装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3728,eqnet-3728,高圧蒸気滅菌装置,鹿児島大学 先端科学研究推進センター 生命科学動物実験ユニット 動物管理・小動物研究推進部門,鹿児島県,培養/恒温恒湿度器/滅菌機機,その他,no_results_verified,"TITLE-ABS-KEY(""高圧蒸気滅菌装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3729,eqnet-3729,慢性実験テレメトリー自動計測システム,鹿児島大学 先端科学研究推進センター 生命科学動物実験ユニット 動物管理・小動物研究推進部門,鹿児島県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""慢性実験テレメトリー自動計測システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3731,eqnet-3731,実験動物用麻酔及び監視システム,鹿児島大学 先端科学研究推進センター 生命科学動物実験ユニット 動物管理・小動物研究推進部門,鹿児島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""実験動物用麻酔及び監視システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3732,eqnet-3732,三次元電動マイクロマニピュレーション,鹿児島大学 先端科学研究推進センター 生命科学動物実験ユニット 動物管理・小動物研究推進部門,鹿児島県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""三次元電動マイクロマニピュレーション"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3804,eqnet-3804,放射率測定装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""放射率測定装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3854,eqnet-3854,分子構造解析システム,九州大学 工学研究院 マテリアル先端リサーチインフラ,福岡県,構造解析/元素分析,その他,no_results_verified,"TITLE-ABS-KEY(""分子構造解析システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3876,eqnet-3876,クリーンルーム,山口大学 総合科学実験センター常盤分室,山口県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""クリーンルーム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3891,eqnet-3891,高性能ゾーンアラナライザー・コロニーカウンター( (株)セントラル科学貿易製・CN0202),広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""CN0202"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3903,eqnet-3903,耐候性試験機(左),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""耐候性試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3904,eqnet-3904,大型恒温恒湿槽,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""大型恒温恒湿槽"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3905,eqnet-3905,高圧耐湿試験機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""高圧耐湿試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3906,eqnet-3906,材料制振性測定装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""材料制振性測定装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3907,eqnet-3907,恒温恒湿槽,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""恒温恒湿槽"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3908,eqnet-3908,安全扉付恒温器,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""安全扉付恒温器"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3909,eqnet-3909,回転枠付恒温器,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""回転枠付恒温器"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3910,eqnet-3910,高温恒温器,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""高温恒温器"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3911,eqnet-3911,恒温水槽,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""恒温水槽"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3912,eqnet-3912,サンプル成形用マルチプレス装置システム,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""サンプル成形用マルチプレス装置システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3913,eqnet-3913,繊維径分布分析,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""繊維径分布分析"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3914,eqnet-3914,繊維長分布分析,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""繊維長分布分析"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3915,eqnet-3915,熱伝導率測定装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""熱伝導率測定装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3916,eqnet-3916,材料音響特性測定装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""材料音響特性測定装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3917,eqnet-3917,材料吸音率測定装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""材料吸音率測定装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3919,eqnet-3919,卓上射出成形機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""卓上射出成形機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3921,eqnet-3921,ダイヤモンドワイヤーソー,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""ダイヤモンドワイヤーソー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3922,eqnet-3922,回転式ミクロトーム,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""回転式ミクロトーム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3923,eqnet-3923,高速度カメラ(不織布装置),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""高速度カメラ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3924,eqnet-3924,不織布形成_可視化ローラーカードモデル装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""不織布形成"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3925,eqnet-3925,不織布形成_可視化オープナーモデル装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""不織布形成"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3926,eqnet-3926,噴霧乾燥機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""噴霧乾燥機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3927,eqnet-3927,凍結乾燥機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""凍結乾燥機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3928,eqnet-3928,凍結粉砕機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""凍結粉砕機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3929,eqnet-3929,加圧(熱)延伸機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""加圧"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3930,eqnet-3930,高度制御混錬機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""高度制御混錬機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3931,eqnet-3931,加硫機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""加硫機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3932,eqnet-3932,加硫度評価,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""加硫度評価"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3933,eqnet-3933,650ton中型射出成形機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""ton"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3934,eqnet-3934,650ton中型射出成形機金型,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""ton"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3937,eqnet-3937,熱プレス金型,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""熱プレス金型"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3938,eqnet-3938,射出圧縮成形金型,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""射出圧縮成形金型"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3939,eqnet-3939,不織布形成/解繊装置システム,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""不織布形成"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3940,eqnet-3940,塗装ブース,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""塗装ブース"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3941,eqnet-3941,ポリウレタン高圧注入成形システム,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""ポリウレタン高圧注入成形システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3942,eqnet-3942,ソーラーシミュレータ,山口大学 総合科学実験センター常盤分室,山口県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""ソーラーシミュレータ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3970,eqnet-3970,耐候性試験機(右),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""耐候性試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-3971,eqnet-3971,顕微ラマン分光装置,秋田大学 理工学研究科 システムデザイン工学科機械工学コース,秋田県,光分析装置,赤外分光光度計/ラマン分光装置,ready,"TITLE-ABS-KEY(""raman spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4020,eqnet-4020,波長可変パラメトリック増幅器分光イメージングシステム プレスト(超短パルスレーザー分子イメージングシステム),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,その他,その他,ready,"TITLE-ABS-KEY(""laser"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4043,eqnet-4043,低乱熱伝達風洞 荏原製作所(単路回流型風洞),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""低乱熱伝達風洞"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4044,eqnet-4044,小型低乱風洞 荏原製作所(単路回流型),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""小型低乱風洞"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4059,eqnet-4059,中電流イオン注入装置 日新イオン機器(EXCEED2300AH),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""EXCEED2300AH"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4090,eqnet-4090,水銀プローブ 雄山(CVmap92A),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""CVmap92A"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4091,eqnet-4091,無響室 日本音響エンジニアリング,東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""無響室"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4092,eqnet-4092,防音シールド室 日本音響エンジニアリング,東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""防音シールド室"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4119,eqnet-4119,デジタル電動サーボプレス アマダ(SDE2025SF),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""SDE2025SF"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4134,eqnet-4134,災害関連疾病病態オミックス解析システム,東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""災害関連疾病病態オミックス解析システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4137,eqnet-4137,"細胞特異的災害ストレス解析システム(全自動磁気細胞分離システム,全自動核酸・たんぱく質抽出システム)",東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""細胞特異的災害ストレス解析システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4147,eqnet-4147,マクロトライボロジー試験機 BrukerAX(UMT3-HTRD),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""BrukerAX"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4216,eqnet-4216,真空定温乾燥機(ADP300) ヤマト科学(ADP300),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,半導体製造関連装置,半導体製造関連装置,no_results_verified,"TITLE-ABS-KEY(""ADP300"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4220,eqnet-4220,レーザー描画装置(DWL200) Heidelberg Instruments(DWL200),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,半導体製造関連装置,半導体製造関連装置,ready,"TITLE-ABS-KEY(""laser"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4242,eqnet-4242,集束イオンビーム加工観察装置 日立ハイテク(FB2100),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,電子顕微鏡および関連機器,"微細加工装置(EB, FIB他)",ready,"TITLE-ABS-KEY(""focused ion beam"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4246,eqnet-4246,摩擦磨耗試験機 スター精機(UED08-3),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,専用測定装置,その他,no_results_verified,"TITLE-ABS-KEY(""UED08-3"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4269,eqnet-4269,実荷重多点載荷システム 三菱重工業,東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""実荷重多点載荷システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4275,eqnet-4275,マルチビーズショッカー 安井器械,東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,遠心/粉砕/加熱機器,ホモジナイザー,no_results_verified,"TITLE-ABS-KEY(""マルチビーズショッカー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4278,eqnet-4278,超微量粘度計,東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,物性計測/成分分析,粘度計,no_results_verified,"TITLE-ABS-KEY(""超微量粘度計"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4299,eqnet-4299,空圧式熱真空プレス機,大阪大学 理学研究科 高分子科学専攻 高島研究室,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""空圧式熱真空プレス機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4308,eqnet-4308,真空乾燥機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""真空乾燥機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4309,eqnet-4309,自動研磨機(自動低負荷試料作製システム),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""自動研磨機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4311,eqnet-4311,バッチ発泡工程可視化装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""バッチ発泡工程可視化装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4329,eqnet-4329,液体定量吐出&混合装置(ポンプ式ディスペンサ),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""液体定量吐出"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4330,eqnet-4330,偏光顕微鏡(ホットステージ付きデジタルマイクロスコープ),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""偏光顕微鏡"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4331,eqnet-4331,二軸混練押出し機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""二軸混練押出し機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4332,eqnet-4332,粉砕機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""粉砕機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4338,eqnet-4338,高温熱プレス,大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""高温熱プレス"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4388,eqnet-4388,電波暗室(リケン環境システム・5面電波暗室),名古屋工業大学 産学官金連携機構設備共用部門,愛知県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""電波暗室"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4389,eqnet-4389,シールドルーム(リケン環境システム),名古屋工業大学 産学官金連携機構設備共用部門,愛知県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""シールドルーム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4391,eqnet-4391,エミッション試験システム(TS9949-NITX),名古屋工業大学 産学官金連携機構設備共用部門,愛知県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""TS9949-NITX"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4407,eqnet-4407,(工)船型試験水槽(曳航電車・造波機),広島大学 先進理工系科学研究科 輸送・環境システムプログラム 海上輸送システム研究室,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""船型試験水槽"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4509,eqnet-4509,精密切断機(IsoMet1000),横浜国立大学 研究推進機構 機器分析評価センター,神奈川県,電子顕微鏡および関連機器,電顕用試料作成装置-ミクロトーム等(EM sample preparation. e.g. Microtome.),no_results_verified,"TITLE-ABS-KEY(""IsoMet1000"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4570,eqnet-4570,ラミネート(QVJ340) MEIKO(QVJ340),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""QVJ340"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4588,eqnet-4588,化学発光イメージャー(AIQ800) Cytiva(AIQ800),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,画像撮影/解析,化学発光・蛍光撮影装置(CCDカメラタイプ),no_results_verified,"TITLE-ABS-KEY(""AIQ800"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4614,eqnet-4614,特型エアロゾルチャンバー,広島大学 IDEC国際連携機構 PHIS 環境遺伝生態学,広島県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""特型エアロゾルチャンバー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4635,eqnet-4635,ネオオスミウムコーター(MEIWAFOSIS Neoc-ST),鹿児島大学 先端科学研究推進センター 研究支援ユニット 機器分析部門,鹿児島県,電子顕微鏡および関連機器,電顕用試料作成装置-ミクロトーム等(EM sample preparation. e.g. Microtome.),no_results_verified,"TITLE-ABS-KEY(""MEIWAFOSIS"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4687,eqnet-4687,シャルピー衝撃試験機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""シャルピー衝撃試験機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4688,eqnet-4688,高速度カメラ(複合材),広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""高速度カメラ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4689,eqnet-4689,押し出し機等用乾燥機_DX602,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""DX602"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4690,eqnet-4690,衝撃試験用ノッチ加工機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""衝撃試験用ノッチ加工機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4693,eqnet-4693,電動式加熱ローラ,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""電動式加熱ローラ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4715,eqnet-4715,ラマン分光光度計,大阪大学 理学研究科 技術部 分析機器測定室,大阪府,光分析装置,赤外分光光度計/ラマン分光装置,ready,"TITLE-ABS-KEY(""raman spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4797,eqnet-4797,ピッピンパルス,広島大学 自然科学研究支援開発センター 機器共用・分析部門 シーケンサー,広島県,電気泳動装置,ゲル・等電点電気泳動装置,no_results_verified,"TITLE-ABS-KEY(""ピッピンパルス"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4812,eqnet-4812,高分解能原子吸光分析装置(アナリティクイエナ ContrAA300),宇都宮大学 研究推進機構 機器分析センター 管理室,栃木県,構造解析/元素分析,原子吸光光度計,no_results_verified,"TITLE-ABS-KEY(""ContrAA300"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4842,eqnet-4842,永久磁石式3次元地震波加振計測総合システム,広島大学 先進理工系科学研究科 建築学プログラム 建築構造力学,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""永久磁石式"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-4969,eqnet-4969,高速遠心機(日立工機株式会社 CF7D2),神戸大学 研究基盤センター アイソトープ部門,兵庫県,遠心/粉砕/加熱機器,遠心分離機,no_results_verified,"TITLE-ABS-KEY(""CF7D2"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5014,eqnet-5014,個別換気ケージシステム(テクニプラスト BOX100SFPT),神戸大学 研究基盤センター 動物機能解析部門,兵庫県,実験施設,飼育,no_results_verified,"TITLE-ABS-KEY(""BOX100SFPT"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5016,eqnet-5016,ワンショット型非接触3次元測定解析装置キーエンスVR6200,山口大学 総合科学実験センター常盤分室,山口県,専用測定装置,表面粗さ・表面形状測定器,no_results_verified,"TITLE-ABS-KEY(""VR6200"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5041,eqnet-5041,ケミルミ撮影装置 MultiimagerII Multibox(バイオツールズ),鹿児島大学 医歯学総合研究科 共同利用研究室 共同利用研究室,鹿児島県,画像撮影/解析,化学発光・蛍光撮影装置(CCDカメラタイプ),no_results_verified,"TITLE-ABS-KEY(""MultiimagerII"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5048,eqnet-5048,研磨機 マイクログラインダーMG4000(EXAKT),鹿児島大学 医歯学総合研究科 共同利用研究室 共同利用研究室,鹿児島県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""MG4000"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5089,eqnet-5089,オミックス解析ソフトウェア,岡山大学 自然生命科学研究支援センター ゲノムプロテオーム解析部門,岡山県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""オミックス解析ソフトウェア"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5149,eqnet-5149,遠心分離機 日立工機 CF15RN,山口大学 中高温微生物研究センター,山口県,遠心/粉砕/加熱機器,遠心分離機,no_results_verified,"TITLE-ABS-KEY(""CF15RN"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5216,eqnet-5216,マウスの行動テストバッテリー 小原医科産業,鹿児島大学 医歯学総合研究科 共同利用研究室 共同利用研究室,鹿児島県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""マウスの行動テストバッテリー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5217,eqnet-5217,マウス行動解析システム 室町機械,鹿児島大学 医歯学総合研究科 共同利用研究室 共同利用研究室,鹿児島県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""マウス行動解析システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5218,eqnet-5218,脳定位固定装置及び注入装置 室町機械,鹿児島大学 医歯学総合研究科 共同利用研究室 共同利用研究室,鹿児島県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""脳定位固定装置及び注入装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5226,eqnet-5226,リアルタイムシークエンス装置 PyroMarkQ48,佐賀大学 総合分析実験センター 鍋島地区 機器分析部門,佐賀県,遺伝子・ゲノム,その他,no_results_verified,"TITLE-ABS-KEY(""PyroMarkQ48"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5237,eqnet-5237,温水循環装置,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""温水循環装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5239,eqnet-5239,大型凍結粉砕機,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""大型凍結粉砕機"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5240,eqnet-5240,(霞)細胞外フラックスアナライザー,広島大学 自然科学研究支援開発センター 機器共用・分析部門 その他機器,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""細胞外フラックスアナライザー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5242,eqnet-5242,イオンビームミリング装置 伯東 4IBE-YMGU/2048GH-WS VP3,山口大学 総合科学実験センター常盤分室,山口県,電子顕微鏡および関連機器,"微細加工装置(EB, FIB他)",no_results_verified,"TITLE-ABS-KEY(""IBE-YMGU"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5246,eqnet-5246,全自動電気泳動システム 4150TAPESTATIONシステム(Agilent・G2992AA),広島大学 ゲノム編集イノベーションセンター ゲノム編集イノベーションセンター ゲノム編集イノベーションセンター,広島県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""TAPESTATION"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5292,eqnet-5292,油圧ジャッキシステム オックスジャッキ(CMHJ50/25-30・ TCLP-500KNB),東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,その他,その他,no_results_verified,"TITLE-ABS-KEY(""CMHJ50"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5305,eqnet-5305,小型低騒音風洞 三菱重工業,東北大学 研究推進・支援機構コアファシリティ統括センター,宮城県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""小型低騒音風洞"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5339,eqnet-5339,示差熱量分析装置(島津・DSC60plus),茨城大学 農学部 食生命科学科 食品保蔵学研究室,茨城県,熱分析・熱測定装置,熱分析・熱測定装置,no_results_verified,"TITLE-ABS-KEY(""DSC60plus"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5345,eqnet-5345,原子吸光分析装置(パーキンエルマー社 PinAAcle900z),弘前大学 共用機器基盤センター,青森県,光分析装置,その他,no_results_verified,"TITLE-ABS-KEY(""PinAAcle900z"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5354,eqnet-5354,細胞培養実験室,鹿児島大学 医歯学総合研究科 南九州先端医療開発センター 南九州先端医療開発センター,鹿児島県,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""細胞培養実験室"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5389,eqnet-5389,メルトフローインデクサ,広島大学 デジタルものづくり教育研究センター 材料モデルベースリサーチ部門 材料MBRプロジェクト,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""メルトフローインデクサ"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5421,eqnet-5421,レーザー開封機,大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,ready,"TITLE-ABS-KEY(""laser"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5423,eqnet-5423,小型環境試験機(SH242),大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""SH242"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5425,eqnet-5425,送風低温高温機(上)(DKM401),大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""DKM401"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5426,eqnet-5426,送風低温高温機(下)(DKM401),大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""DKM401"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5427,eqnet-5427,送風低温高温機(DK411H),大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""DK411H"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-5428,eqnet-5428,防爆オーブン(SPH202),大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所,大阪府,その他,その他,no_results_verified,"TITLE-ABS-KEY(""SPH202"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-712,eqnet-712,(工)構造物加力載荷システム,広島大学 先進理工系科学研究科 社会基盤環境工学プログラム,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""構造物加力載荷システム"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-713,eqnet-713,(工)多目的載荷装置,広島大学 先進理工系科学研究科 社会基盤環境工学プログラム,広島県,土木・建築・工学関連装置,土木・建築・工学関連装置,no_results_verified,"TITLE-ABS-KEY(""多目的載荷装置"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-741,eqnet-741,定温培養装置(日本医化器械製作所・LPS350S),東京農工大学 先進植物工場研究施設 実験室,東京都,培養/恒温恒湿度器/滅菌機機,回転/振とう培養器,no_results_verified,"TITLE-ABS-KEY(""LPS350S"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-815,eqnet-815,レーザーラマン顕微鏡 (ナノフォトン・RAMANbasic PS-KU),鹿児島大学 先端科学研究推進センター 研究支援ユニット 機器分析部門,鹿児島県,光分析装置,赤外分光光度計/ラマン分光装置,ready,"TITLE-ABS-KEY(""raman spectroscopy"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-870,eqnet-870,バイオリソース研究施設,東京農工大学 工学府,東京都,実験施設,その他,no_results_verified,"TITLE-ABS-KEY(""バイオリソース研究施設"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-959,eqnet-959,有機薄膜膜厚評価装置(ガートナー社製 単色自動エリプソメータL116D型),広島大学 先進理工系科学研究科 量子物質科学プログラム 量子機能材料科学,広島県,成膜・蒸着・膜厚測定,エリプソメーター,ready,"TITLE-ABS-KEY(""spectroscopic ellipsometry"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00
+eqnet-973,eqnet-973,多波長マイクロプレートリーダー(カートリッジ式マルチモードマイクロプレートリーダー),東京農工大学 学術研究支援総合センター 遺伝子実験施設,東京都,光分析装置,蛍光・発光マイクロプレートリーダー,no_results_verified,"TITLE-ABS-KEY(""多波長マイクロプレートリーダー"") AND DOCTYPE(ar OR cp)",2026-02-14T06:26:14.958738+00:00

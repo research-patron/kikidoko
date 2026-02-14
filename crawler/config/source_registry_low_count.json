@@ -1,5 +1,5 @@
 {
-  "version": "2026-02-10",
+  "version": "2026-02-14-q2",
   "entries": [
     {
       "key": "shinshu",
@@ -11,7 +11,9 @@
       "category_hint": "研究設備",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["信州大学 機器分析支援部門 設備"],
+      "query_keywords": [
+        "信州大学 機器分析支援部門 設備"
+      ],
       "enabled": true
     },
     {
@@ -24,7 +26,9 @@
       "category_hint": "研究設備",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["島根大学 総合科学研究支援センター 機器"],
+      "query_keywords": [
+        "島根大学 総合科学研究支援センター 機器"
+      ],
       "enabled": true
     },
     {
@@ -37,7 +41,9 @@
       "category_hint": "微細加工プラットフォーム",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["香川大学 微細加工プラットフォーム 機器"],
+      "query_keywords": [
+        "香川大学 微細加工プラットフォーム 機器"
+      ],
       "enabled": true
     },
     {
@@ -50,7 +56,9 @@
       "category_hint": "全学共同利用機器",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["岩手大学 共同利用機器"],
+      "query_keywords": [
+        "岩手大学 共同利用機器"
+      ],
       "enabled": true
     },
     {
@@ -63,7 +71,9 @@
       "category_hint": "研究機器",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["熊本大学 工学研究機器センター"],
+      "query_keywords": [
+        "熊本大学 工学研究機器センター"
+      ],
       "enabled": true
     },
     {
@@ -76,7 +86,9 @@
       "category_hint": "バイオラボ",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["大分大学 バイオラボセンター 機器"],
+      "query_keywords": [
+        "大分大学 バイオラボセンター 機器"
+      ],
       "enabled": true
     },
     {
@@ -89,7 +101,9 @@
       "category_hint": "研究設備",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["三重大学 先端科学研究支援センター 機器"],
+      "query_keywords": [
+        "三重大学 先端科学研究支援センター 機器"
+      ],
       "enabled": true
     },
     {
@@ -102,7 +116,9 @@
       "category_hint": "共用機器",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["千葉大学 共用機器センター 設備"],
+      "query_keywords": [
+        "千葉大学 共用機器センター 設備"
+      ],
       "enabled": true
     },
     {
@@ -115,7 +131,9 @@
       "category_hint": "機器分析",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["金沢大学 機器分析研究施設"],
+      "query_keywords": [
+        "金沢大学 機器分析研究施設"
+      ],
       "enabled": true
     },
     {
@@ -128,7 +146,9 @@
       "category_hint": "コアファシリティ",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["群馬大学 コアファシリティ総合センター"],
+      "query_keywords": [
+        "群馬大学 コアファシリティ総合センター"
+      ],
       "enabled": true
     },
     {
@@ -141,7 +161,9 @@
       "category_hint": "研究設備",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["福井大学 遠赤外領域開発研究センター 機器"],
+      "query_keywords": [
+        "福井大学 遠赤外領域開発研究センター 機器"
+      ],
       "enabled": true
     },
     {
@@ -154,7 +176,9 @@
       "category_hint": "地域協働技術センター",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["徳島大学 地域協働技術センター 機器"],
+      "query_keywords": [
+        "徳島大学 地域協働技術センター 機器"
+      ],
       "enabled": true
     },
     {
@@ -167,7 +191,9 @@
       "category_hint": "研究設備",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["愛媛大学 共同利用機器"],
+      "query_keywords": [
+        "愛媛大学 共同利用機器"
+      ],
       "enabled": true
     },
     {
@@ -180,7 +206,9 @@
       "category_hint": "研究設備",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["宮崎大学 共同機器"],
+      "query_keywords": [
+        "宮崎大学 共同機器"
+      ],
       "enabled": true
     },
     {
@@ -193,7 +221,9 @@
       "category_hint": "機器分析",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["山梨大学 機器分析センター"],
+      "query_keywords": [
+        "山梨大学 機器分析センター"
+      ],
       "enabled": true
     },
     {
@@ -206,7 +236,9 @@
       "category_hint": "機器分析",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["神戸大学 研究基盤センター 機器分析"],
+      "query_keywords": [
+        "神戸大学 研究基盤センター 機器分析"
+      ],
       "enabled": true
     },
     {
@@ -219,124 +251,149 @@
       "category_hint": "機器分析",
       "external_use": "可",
       "selectors": {},
-      "query_keywords": ["宇都宮大学 機器分析センター"],
+      "query_keywords": [
+        "宇都宮大学 機器分析センター"
+      ],
       "enabled": true
     },
     {
       "key": "saitama_u",
       "org_name": "埼玉大学",
       "prefecture": "埼玉県",
-      "url": "",
+      "url": "https://www.mlsrc.saitama-u.ac.jp/",
       "parser_type": "query_only",
       "source_handler": "",
       "category_hint": "",
       "external_use": "",
       "selectors": {},
-      "query_keywords": ["埼玉大学 科学分析支援センター 機器"],
+      "query_keywords": [
+        "埼玉大学 科学分析支援センター 機器"
+      ],
       "enabled": true
     },
     {
       "key": "toyama_u",
       "org_name": "富山大学",
       "prefecture": "富山県",
-      "url": "",
+      "url": "https://www.u-toyama.ac.jp/academics/research-facility/joint-use/",
       "parser_type": "query_only",
       "source_handler": "",
       "category_hint": "",
       "external_use": "",
       "selectors": {},
-      "query_keywords": ["富山大学 機器分析施設 共用機器"],
+      "query_keywords": [
+        "富山大学 機器分析施設 共用機器"
+      ],
       "enabled": true
     },
     {
       "key": "shizuoka_u",
       "org_name": "静岡大学",
       "prefecture": "静岡県",
-      "url": "",
-      "parser_type": "query_only",
+      "url": "https://kiki.shizuoka.ac.jp/portal/kd/outside",
+      "parser_type": "table_utils",
       "source_handler": "",
-      "category_hint": "",
-      "external_use": "",
-      "selectors": {},
-      "query_keywords": ["静岡大学 機器分析センター"],
+      "category_hint": "共同利用機器",
+      "external_use": "可",
+      "selectors": {
+        "org_type": "国立大学",
+        "link_patterns": [
+          "/portal/kiki/outside/"
+        ]
+      },
+      "query_keywords": [
+        "静岡大学 機器分析センター"
+      ],
       "enabled": true
     },
     {
       "key": "hamamatsu_med",
       "org_name": "浜松医科大学",
       "prefecture": "静岡県",
-      "url": "",
-      "parser_type": "query_only",
-      "source_handler": "",
-      "category_hint": "",
-      "external_use": "",
+      "url": "https://www.hama-med.ac.jp/research/equipment.html",
+      "parser_type": "source_handler",
+      "source_handler": "hamamatsu_med",
+      "category_hint": "外部利用可能研究機器",
+      "external_use": "可",
       "selectors": {},
-      "query_keywords": ["浜松医科大学 先進機器共用推進部"],
+      "query_keywords": [
+        "浜松医科大学 先進機器共用推進部"
+      ],
       "enabled": true
     },
     {
       "key": "hirosaki_u",
       "org_name": "弘前大学",
       "prefecture": "青森県",
-      "url": "",
-      "parser_type": "query_only",
-      "source_handler": "",
-      "category_hint": "",
-      "external_use": "",
+      "url": "https://www.innovation.hirosaki-u.ac.jp/kiki/list.html",
+      "parser_type": "source_handler",
+      "source_handler": "hirosaki_u",
+      "category_hint": "共用機器",
+      "external_use": "可",
       "selectors": {},
-      "query_keywords": ["弘前大学 共用機器基盤センター"],
+      "query_keywords": [
+        "弘前大学 共用機器基盤センター"
+      ],
       "enabled": true
     },
     {
       "key": "yamagata_u",
       "org_name": "山形大学",
       "prefecture": "山形県",
-      "url": "",
-      "parser_type": "query_only",
-      "source_handler": "",
-      "category_hint": "",
-      "external_use": "",
+      "url": "https://arim.yz.yamagata-u.ac.jp/equip.html",
+      "parser_type": "source_handler",
+      "source_handler": "yamagata_u",
+      "category_hint": "ARIM共用装置",
+      "external_use": "可",
       "selectors": {},
-      "query_keywords": ["山形大学 研究設備 共同利用機器"],
+      "query_keywords": [
+        "山形大学 研究設備 共同利用機器"
+      ],
       "enabled": true
     },
     {
       "key": "nara_wu",
       "org_name": "奈良女子大学",
       "prefecture": "奈良県",
-      "url": "",
-      "parser_type": "query_only",
-      "source_handler": "",
-      "category_hint": "",
-      "external_use": "",
+      "url": "https://www.chem.nara-wu.ac.jp/chemguide/equipment.html",
+      "parser_type": "source_handler",
+      "source_handler": "nara_wu",
+      "category_hint": "化学コース共用機器",
+      "external_use": "不可",
       "selectors": {},
-      "query_keywords": ["奈良女子大学 共用機器"],
+      "query_keywords": [
+        "奈良女子大学 共用機器"
+      ],
       "enabled": true
     },
     {
       "key": "nara_edu",
       "org_name": "奈良教育大学",
       "prefecture": "奈良県",
-      "url": "",
+      "url": "https://www.nara-edu.ac.jp/cooperation/research-info.html",
       "parser_type": "query_only",
       "source_handler": "",
       "category_hint": "",
       "external_use": "",
       "selectors": {},
-      "query_keywords": ["奈良教育大学 研究設備"],
+      "query_keywords": [
+        "奈良教育大学 研究設備"
+      ],
       "enabled": true
     },
     {
       "key": "nara_kosen",
       "org_name": "奈良工業高等専門学校",
       "prefecture": "奈良県",
-      "url": "",
-      "parser_type": "query_only",
-      "source_handler": "",
-      "category_hint": "",
-      "external_use": "",
+      "url": "https://www.nit-nara-ia-center.share-ac.jp/facilities/",
+      "parser_type": "source_handler",
+      "source_handler": "nara_kosen",
+      "category_hint": "共同利用設備",
+      "external_use": "可",
       "selectors": {},
-      "query_keywords": ["奈良工業高等専門学校 共同利用設備"],
+      "query_keywords": [
+        "奈良工業高等専門学校 共同利用設備"
+      ],
       "enabled": true
     }
   ]

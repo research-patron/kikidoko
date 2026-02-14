@@ -1,0 +1,4 @@
+org_name,prefecture,query_keywords,official_url,parser_type,target_source,status,owner_note
+埼玉大学,埼玉県,埼玉大学 科学分析支援センター 機器,https://www.mlsrc.saitama-u.ac.jp/,query_only,saitama_u,needs_parser_implementation,renkei/member配下の機器ページは一般公開されておらず403(private)を返す
+奈良教育大学,奈良県,奈良教育大学 研究設備,https://www.nara-edu.ac.jp/cooperation/research-info.html,query_only,nara_edu,needs_parser_implementation,研究情報ページで公開機器一覧URLを確認できず現時点ではeqnet以外ソース未特定
+富山大学,富山県,富山大学 機器分析施設 共用機器,https://www.u-toyama.ac.jp/collaboration/kyoyo/,query_only,toyama_u,needs_parser_implementation,共同利用関連ページは方針PDF中心で公開機器一覧DBへのリンクを確認できず

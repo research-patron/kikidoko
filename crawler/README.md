@@ -88,6 +88,48 @@ kikidoko-eqnet-backfill --project-id <your-project-id> --dry-run --limit 50
 kikidoko-eqnet-backfill --project-id <your-project-id> --batch-size 200
 ```
 
+## UI stats backfill
+
+```sh
+kikidoko-backfill \
+  --project-id <your-project-id> \
+  --write-summary \
+  --write-ui-filters \
+  --write-prefecture-orgs \
+  --write-data-version
+```
+
+## Map org release checks
+
+Run this before deploying frontend changes that depend on `stats/prefecture_orgs`.
+
+1. Regenerate stats:
+
+```sh
+kikidoko-backfill \
+  --project-id <your-project-id> \
+  --write-summary \
+  --write-ui-filters \
+  --write-prefecture-orgs \
+  --write-data-version
+```
+
+2. Verify Firestore documents:
+- `stats/prefecture_orgs/prefectures/*` has 47 prefecture docs.
+- `stats/data_version` has a fresh `updated_at`.
+
+3. If snapshot mode is used, verify the snapshot file exists:
+
+```sh
+ls -lh frontend/public/equipment_snapshot.json.gz
+```
+
+## Static snapshot export
+
+```sh
+kikidoko-export-snapshot --project-id <your-project-id> --output frontend/public/equipment_snapshot.json.gz
+```
+
 ## Source policy
 
 - Prefer HTML/CSV/JSON endpoints.
