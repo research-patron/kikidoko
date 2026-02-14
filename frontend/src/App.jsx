@@ -1132,6 +1132,62 @@ const buildEquipmentGuide = (item) => {
   return applyManual(guided);
 };
 
+const PAPER_ABSTRACT_KEYS = [
+  "abstract_ja",
+  "abstract",
+  "summary",
+  "description",
+  "dc:description",
+];
+
+const FALLBACK_PAPER_USAGE_SUMMARY =
+  "関連情報をもとに、機器の代表的な使われ方を整理しています。";
+const FALLBACK_PAPER_USAGE_BULLETS = [
+  "関連論文の題名や分野から利用シーンの傾向を確認",
+  "詳細な検証や条件設定は原論文で再確認",
+];
+
+const normalizeText = (value) => String(value || "").trim();
+
+const resolvePaperAbstractText = (paper) => {
+  if (!paper || typeof paper !== "object") return "";
+  for (const key of PAPER_ABSTRACT_KEYS) {
+    const text = normalizeText(paper[key]);
+    if (text) return text;
+  }
+  return "";
+};
+
+const resolvePaperUsagePreview = (item) => {
+  const manualSummary = normalizeText(item?.usageManualSummary);
+  const manualBullets = Array.isArray(item?.usageManualBullets)
+    ? item.usageManualBullets.map((entry) => normalizeText(entry)).filter(Boolean)
+    : [];
+  if (manualSummary || manualBullets.length > 0) {
+    return {
+      summary: manualSummary || FALLBACK_PAPER_USAGE_SUMMARY,
+      bullets: manualBullets.length > 0 ? manualBullets : FALLBACK_PAPER_USAGE_BULLETS,
+    };
+  }
+
+  const guide = buildEquipmentGuide(item);
+  const guideSummary = normalizeText(guide?.summary);
+  const guideBullets = Array.isArray(guide?.bullets)
+    ? guide.bullets.map((entry) => normalizeText(entry)).filter(Boolean)
+    : [];
+  if (guideSummary || guideBullets.length > 0) {
+    return {
+      summary: guideSummary || FALLBACK_PAPER_USAGE_SUMMARY,
+      bullets: guideBullets.length > 0 ? guideBullets : FALLBACK_PAPER_USAGE_BULLETS,
+    };
+  }
+
+  return {
+    summary: FALLBACK_PAPER_USAGE_SUMMARY,
+    bullets: FALLBACK_PAPER_USAGE_BULLETS,
+  };
+};
+
 const feeLabel = (value) => {
   if (!value || value === "不明") return "料金要相談";
   return value;
@@ -1994,18 +2050,6 @@ export default function App() {
   }, [detailOpen]);
 
   useEffect(() => {
-    if (activeExternal && detailOpen) {
-      setDetailOpen(false);
-      setDetailSession(null);
-      setDetailSwitchDirection("");
-      if (detailSwitchTimerRef.current) {
-        clearTimeout(detailSwitchTimerRef.current);
-        detailSwitchTimerRef.current = null;
-      }
-    }
-  }, [activeExternal, detailOpen]);
-
-  useEffect(() => {
     if (!activeExternal) return undefined;
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -2052,6 +2096,7 @@ export default function App() {
     if (!detailOpen) return undefined;
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
+        if (activeExternal) return;
         setDetailOpen(false);
         setDetailSession(null);
         setDetailSwitchDirection("");
@@ -2065,7 +2110,7 @@ export default function App() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [detailOpen]);
+  }, [activeExternal, detailOpen]);
 
   useEffect(() => {
     if (detailItem && !detailOpen) {
@@ -2938,28 +2983,54 @@ export default function App() {
   const openExternalViewer = (payload) => {
     if (!payload?.url) return;
     setActiveExternal({
+      kind: payload.kind === "paper" ? "paper" : "equipment",
       url: payload.url,
       name: payload.name || "外部ページ",
       orgName: payload.orgName || "",
+      doi: payload.doi || "",
+      year: payload.year || "",
+      genreLabel: payload.genreLabel || "",
+      usageSummary: payload.usageSummary || "",
+      usageBullets: Array.isArray(payload.usageBullets) ? payload.usageBullets.filter(Boolean) : [],
+      abstractText: payload.abstractText || "",
+      hasAbstract: Boolean(payload.hasAbstract),
     });
   };
 
   const handleExternalOpen = (item) => {
     if (!item.sourceUrl) return;
     openExternalViewer({
+      kind: "equipment",
       url: item.sourceUrl,
       name: item.name,
       orgName: item.orgName,
     });
   };
 
+  const buildPaperExternalPayload = useCallback(
+    (paper) => {
+      const url = paper?.url || (paper?.doi ? `https://doi.org/${paper.doi}` : "");
+      const abstractText = resolvePaperAbstractText(paper);
+      const usagePreview = resolvePaperUsagePreview(detailItem);
+      return {
+        kind: "paper",
+        url,
+        name: paper?.title || "関連論文",
+        orgName: paper?.source || detailItem?.orgName || "",
+        doi: paper?.doi || "",
+        year: paper?.year || "",
+        genreLabel: paper?.genre_ja || resolvePaperGenre(paper?.genre),
+        usageSummary: usagePreview.summary,
+        usageBullets: usagePreview.bullets,
+        abstractText,
+        hasAbstract: Boolean(abstractText),
+      };
+    },
+    [detailItem],
+  );
+
   const handlePaperOpen = (paper) => {
-    const url = paper?.url || (paper?.doi ? `https://doi.org/${paper.doi}` : "");
-    openExternalViewer({
-      url,
-      name: paper?.title || "関連論文",
-      orgName: paper?.source || detailItem?.orgName || "",
-    });
+    openExternalViewer(buildPaperExternalPayload(paper));
   };
 
   const handleExternalClose = () => {
@@ -4757,6 +4828,7 @@ export default function App() {
   const detailBodySwitchClass = detailSwitchDirection
     ? `is-switch-${detailSwitchDirection} is-switch-token-${detailSwitchToken % 2}`
     : "";
+  const isPaperExternal = activeExternal?.kind === "paper";
 
   return (
     <div className="page">
@@ -5350,15 +5422,66 @@ export default function App() {
                 </button>
               </div>
             </div>
-            <div className="external-body">
-              <iframe
-                src={activeExternal.url}
-                title={`${activeExternal.name} 外部ページ`}
-                loading="lazy"
-              />
-              <p className="external-note">
-                外部サイトの表示制限で読み込めない場合は「別タブで開く」をご利用ください。
-              </p>
+            <div className={`external-body${isPaperExternal ? " is-paper" : ""}`}>
+              {isPaperExternal ? (
+                <div className="external-paper-content">
+                  <section className="external-paper-section">
+                    <h4>機器の使われ方要約</h4>
+                    <p className="external-paper-text">{activeExternal.usageSummary}</p>
+                    {activeExternal.usageBullets.length > 0 && (
+                      <ul className="external-paper-bullets">
+                        {activeExternal.usageBullets.map((bullet) => (
+                          <li key={bullet}>{bullet}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </section>
+                  <section className="external-paper-section">
+                    <h4>論文要旨</h4>
+                    {activeExternal.hasAbstract ? (
+                      <p className="external-paper-text">{activeExternal.abstractText}</p>
+                    ) : (
+                      <p className="external-paper-empty">
+                        この論文の要旨データは未登録です。必要に応じて「別タブで開く」から原文をご確認ください。
+                      </p>
+                    )}
+                  </section>
+                  <dl className="external-paper-meta">
+                    {activeExternal.doi && (
+                      <>
+                        <dt>DOI</dt>
+                        <dd>{activeExternal.doi}</dd>
+                      </>
+                    )}
+                    {activeExternal.year && (
+                      <>
+                        <dt>出版年</dt>
+                        <dd>{activeExternal.year}</dd>
+                      </>
+                    )}
+                    {activeExternal.genreLabel && (
+                      <>
+                        <dt>分野</dt>
+                        <dd>{activeExternal.genreLabel}</dd>
+                      </>
+                    )}
+                  </dl>
+                  <p className="external-note">
+                    詳細な本文確認が必要な場合は「別タブで開く」から原文をご確認ください。
+                  </p>
+                </div>
+              ) : (
+                <>
+                  <iframe
+                    src={activeExternal.url}
+                    title={`${activeExternal.name} 外部ページ`}
+                    loading="lazy"
+                  />
+                  <p className="external-note">
+                    外部サイトの表示制限で読み込めない場合は「別タブで開く」をご利用ください。
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>

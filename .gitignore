@@ -12,6 +12,9 @@ frontend/dist/
 frontend/.env
 frontend/.env.*
 memo/
+.firebase/
+frontend/public/equipment_snapshot.json
+frontend/public/equipment_snapshot.json.gz
 
 # Firebase configuration (contains API keys)
 frontend/src/assets/firebase.js

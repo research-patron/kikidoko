@@ -1,5 +1,31 @@
 {
   "firestore": {
     "rules": "firestore.rules"
+  },
+  "hosting": {
+    "public": "frontend/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/blog",
+        "destination": "https://kikidoko-blog.student-subscription.com",
+        "type": 301
+      },
+      {
+        "source": "/blog/:path*",
+        "destination": "https://kikidoko-blog.student-subscription.com/:path",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
