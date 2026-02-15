@@ -11,7 +11,7 @@ This directory stores the SEO article planning assets for pre-release publishing
 
 All article URLs must follow:
 
-`/blog/{category}/{slug}`
+`/{category}/{slug}/`
 
 Allowed categories:
 
@@ -61,7 +61,7 @@ WP_APP_PASSWORD='<wp application password>' \
 python3 tools/wp_publish_article.py \
   --article-id guide-01 \
   --manifest frontend/public/blog/articles.json \
-  --wp-base https://kikidoko.student-subscription.com/blog \
+  --wp-base https://kikidoko-blog.student-subscription.com \
   --draft frontend/public/blog/drafts/guide-01.md \
   --ensure-all-categories
 ```
@@ -74,3 +74,4 @@ If your environment cannot validate TLS certificates, add `--insecure`.
 - Use markdown headings from `##` onward for body sections.
 - The publisher writes Gutenberg blocks (`wp:paragraph`, `wp:heading`, `wp:list`) to WordPress.
 - Inline markdown (`**bold**`, `*italic*`, `` `code` ``, `[link](url)`) is converted to HTML before publish.
+- App CTA URL must point to `https://kikidoko.web.app/`.

@@ -100,6 +100,746 @@
         "warnings": []
       },
       "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T08:30:12.430674+00:00",
+      "article_id": "guide-03",
+      "post_id": 31,
+      "action": "created",
+      "status": "publish",
+      "slug": "research-equipment-pricing-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/guide/research-equipment-pricing-guide/",
+      "category_id": 3,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 3299,
+          "target_chars": {
+            "min": 3000,
+            "max": 4000
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 6,
+          "cross_category_links": 1,
+          "expected_path": "/guide/research-equipment-pricing-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T08:30:42.776499+00:00",
+      "article_id": "guide-03",
+      "post_id": 31,
+      "action": "updated",
+      "status": "publish",
+      "slug": "research-equipment-pricing-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/guide/research-equipment-pricing-guide/",
+      "category_id": 3,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 3299,
+          "target_chars": {
+            "min": 3000,
+            "max": 4000
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 6,
+          "cross_category_links": 1,
+          "expected_path": "/guide/research-equipment-pricing-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T08:31:12.603633+00:00",
+      "article_id": "guide-03",
+      "post_id": 31,
+      "action": "updated",
+      "status": "publish",
+      "slug": "research-equipment-pricing-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/guide/research-equipment-pricing-guide/",
+      "category_id": 3,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 3299,
+          "target_chars": {
+            "min": 3000,
+            "max": 4000
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 6,
+          "cross_category_links": 1,
+          "expected_path": "/guide/research-equipment-pricing-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T09:35:58.765273+00:00",
+      "article_id": "guide-04",
+      "post_id": 34,
+      "action": "created",
+      "status": "publish",
+      "slug": "research-equipment-inquiry-template",
+      "link": "https://kikidoko-blog.student-subscription.com/guide/research-equipment-inquiry-template/",
+      "category_id": 3,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2801,
+          "target_chars": {
+            "min": 2800,
+            "max": 3600
+          },
+          "total_markdown_links": 8,
+          "same_category_links": 5,
+          "cross_category_links": 1,
+          "expected_path": "/guide/research-equipment-inquiry-template/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T09:38:43.658891+00:00",
+      "article_id": "equipment-01",
+      "post_id": 36,
+      "action": "created",
+      "status": "publish",
+      "slug": "sem-external-use-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/sem-external-use-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2811,
+          "target_chars": {
+            "min": 2800,
+            "max": 3600
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 5,
+          "cross_category_links": 2,
+          "expected_path": "/equipment/sem-external-use-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T09:40:59.602275+00:00",
+      "article_id": "equipment-02",
+      "post_id": 38,
+      "action": "created",
+      "status": "publish",
+      "slug": "tem-collaboration-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/tem-collaboration-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2809,
+          "target_chars": {
+            "min": 2800,
+            "max": 3600
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 5,
+          "cross_category_links": 2,
+          "expected_path": "/equipment/tem-collaboration-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T09:43:36.628277+00:00",
+      "article_id": "equipment-03",
+      "post_id": 39,
+      "action": "created",
+      "status": "publish",
+      "slug": "xrd-collaboration-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/xrd-collaboration-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2805,
+          "target_chars": {
+            "min": 2800,
+            "max": 3600
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 5,
+          "cross_category_links": 2,
+          "expected_path": "/equipment/xrd-collaboration-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T09:46:01.110248+00:00",
+      "article_id": "equipment-04",
+      "post_id": 42,
+      "action": "created",
+      "status": "publish",
+      "slug": "nmr-frequency-selection-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/nmr-frequency-selection-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2802,
+          "target_chars": {
+            "min": 2800,
+            "max": 3600
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 5,
+          "cross_category_links": 2,
+          "expected_path": "/equipment/nmr-frequency-selection-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T09:48:30.992400+00:00",
+      "article_id": "equipment-05",
+      "post_id": 43,
+      "action": "created",
+      "status": "publish",
+      "slug": "lcms-shared-analysis-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/lcms-shared-analysis-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2802,
+          "target_chars": {
+            "min": 2800,
+            "max": 3600
+          },
+          "total_markdown_links": 8,
+          "same_category_links": 4,
+          "cross_category_links": 2,
+          "expected_path": "/equipment/lcms-shared-analysis-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T09:51:03.075577+00:00",
+      "article_id": "equipment-06",
+      "post_id": 46,
+      "action": "created",
+      "status": "publish",
+      "slug": "hplc-uplc-shared-equipment-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/hplc-uplc-shared-equipment-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2602,
+          "target_chars": {
+            "min": 2600,
+            "max": 3400
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 4,
+          "cross_category_links": 3,
+          "expected_path": "/equipment/hplc-uplc-shared-equipment-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T10:01:25.773862+00:00",
+      "article_id": "region-01",
+      "post_id": 48,
+      "action": "created",
+      "status": "publish",
+      "slug": "tokyo-research-equipment-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/region/tokyo-research-equipment-guide/",
+      "category_id": 5,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2200,
+          "target_chars": {
+            "min": 2200,
+            "max": 3000
+          },
+          "total_markdown_links": 10,
+          "same_category_links": 5,
+          "cross_category_links": 3,
+          "expected_path": "/region/tokyo-research-equipment-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T10:03:50.309769+00:00",
+      "article_id": "region-02",
+      "post_id": 49,
+      "action": "created",
+      "status": "publish",
+      "slug": "osaka-shared-equipment-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/region/osaka-shared-equipment-guide/",
+      "category_id": 5,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2202,
+          "target_chars": {
+            "min": 2200,
+            "max": 3000
+          },
+          "total_markdown_links": 10,
+          "same_category_links": 5,
+          "cross_category_links": 3,
+          "expected_path": "/region/osaka-shared-equipment-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T10:06:48.878727+00:00",
+      "article_id": "region-03",
+      "post_id": 50,
+      "action": "created",
+      "status": "publish",
+      "slug": "aichi-research-equipment-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/region/aichi-research-equipment-guide/",
+      "category_id": 5,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2203,
+          "target_chars": {
+            "min": 2200,
+            "max": 3000
+          },
+          "total_markdown_links": 10,
+          "same_category_links": 4,
+          "cross_category_links": 4,
+          "expected_path": "/region/aichi-research-equipment-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T10:09:37.731190+00:00",
+      "article_id": "region-04",
+      "post_id": 51,
+      "action": "created",
+      "status": "publish",
+      "slug": "fukuoka-research-equipment-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/region/fukuoka-research-equipment-guide/",
+      "category_id": 5,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2203,
+          "target_chars": {
+            "min": 2200,
+            "max": 3000
+          },
+          "total_markdown_links": 10,
+          "same_category_links": 4,
+          "cross_category_links": 4,
+          "expected_path": "/region/fukuoka-research-equipment-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T10:12:21.580979+00:00",
+      "article_id": "region-05",
+      "post_id": 52,
+      "action": "created",
+      "status": "publish",
+      "slug": "hokkaido-research-equipment-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/region/hokkaido-research-equipment-guide/",
+      "category_id": 5,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2203,
+          "target_chars": {
+            "min": 2200,
+            "max": 3000
+          },
+          "total_markdown_links": 10,
+          "same_category_links": 5,
+          "cross_category_links": 3,
+          "expected_path": "/region/hokkaido-research-equipment-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T10:15:58.810730+00:00",
+      "article_id": "equipment-07",
+      "post_id": 53,
+      "action": "created",
+      "status": "publish",
+      "slug": "confocal-microscope-external-use-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/confocal-microscope-external-use-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2601,
+          "target_chars": {
+            "min": 2600,
+            "max": 3400
+          },
+          "total_markdown_links": 9,
+          "same_category_links": 3,
+          "cross_category_links": 4,
+          "expected_path": "/equipment/confocal-microscope-external-use-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T10:54:04.253857+00:00",
+      "article_id": "equipment-08",
+      "post_id": 54,
+      "action": "created",
+      "status": "publish",
+      "slug": "ngs-shared-equipment-guide",
+      "link": "https://kikidoko-blog.student-subscription.com/equipment/ngs-shared-equipment-guide/",
+      "category_id": 4,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2636,
+          "target_chars": {
+            "min": 2600,
+            "max": 3400
+          },
+          "total_markdown_links": 10,
+          "same_category_links": 4,
+          "cross_category_links": 4,
+          "expected_path": "/equipment/ngs-shared-equipment-guide/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T11:02:02.498447+00:00",
+      "article_id": "workflow-01",
+      "post_id": 55,
+      "action": "created",
+      "status": "publish",
+      "slug": "thesis-equipment-selection",
+      "link": "https://kikidoko-blog.student-subscription.com/workflow/thesis-equipment-selection/",
+      "category_id": 6,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2421,
+          "target_chars": {
+            "min": 2400,
+            "max": 3200
+          },
+          "total_markdown_links": 6,
+          "same_category_links": 2,
+          "cross_category_links": 2,
+          "expected_path": "/workflow/thesis-equipment-selection/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T11:04:59.442284+00:00",
+      "article_id": "workflow-02",
+      "post_id": 56,
+      "action": "created",
+      "status": "publish",
+      "slug": "joint-research-equipment-flow",
+      "link": "https://kikidoko-blog.student-subscription.com/workflow/joint-research-equipment-flow/",
+      "category_id": 6,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2487,
+          "target_chars": {
+            "min": 2400,
+            "max": 3200
+          },
+          "total_markdown_links": 6,
+          "same_category_links": 2,
+          "cross_category_links": 2,
+          "expected_path": "/workflow/joint-research-equipment-flow/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
+    },
+    {
+      "timestamp": "2026-02-15T11:09:19.539565+00:00",
+      "article_id": "workflow-03",
+      "post_id": 57,
+      "action": "created",
+      "status": "publish",
+      "slug": "shared-vs-outsourced-analysis",
+      "link": "https://kikidoko-blog.student-subscription.com/workflow/shared-vs-outsourced-analysis/",
+      "category_id": 6,
+      "editor_format": "gutenberg",
+      "content_checks": {
+        "has_block_marker": true,
+        "has_h1": false,
+        "markdown_tokens_left": []
+      },
+      "seo_preflight": {
+        "passed": true,
+        "checks": {
+          "title_head_ok": true,
+          "leading_h1_detected": false,
+          "body_title_duplication": false,
+          "char_count": 2401,
+          "target_chars": {
+            "min": 2400,
+            "max": 3200
+          },
+          "total_markdown_links": 6,
+          "same_category_links": 2,
+          "cross_category_links": 2,
+          "expected_path": "/workflow/shared-vs-outsourced-analysis/",
+          "markdown_tokens_left": [],
+          "has_h1_in_blocks": false
+        },
+        "warnings": []
+      },
+      "verification_errors": []
     }
   ]
 }

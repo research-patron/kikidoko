@@ -459,6 +459,13 @@ def parse_entries(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 "source": source,
                 "year": year,
                 "url": url,
+                "abstract": "",
+                "abstract_ja": "",
+                "abstract_source": "",
+                "abstract_updated_at": "",
+                "abstract_ja_model": "",
+                "abstract_ja_generated_at": "",
+                "abstract_ja_auto_fallback": False,
             }
         )
     return results

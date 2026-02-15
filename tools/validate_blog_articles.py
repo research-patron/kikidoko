@@ -10,11 +10,11 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-URL_PATTERN = re.compile(r"^/blog/([a-z0-9-]+)/([a-z0-9-]+)$")
+URL_PATTERN = re.compile(r"^/([a-z0-9-]+)/([a-z0-9-]+)/?$")
 TOP_LINKS = {
     "/",
-    "https://kikidoko.student-subscription.com/",
-    "https://kikidoko.student-subscription.com",
+    "https://kikidoko.web.app/",
+    "https://kikidoko.web.app",
 }
 
 

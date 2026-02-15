@@ -671,6 +671,13 @@ def run(args: argparse.Namespace) -> int:
                         "source": reject["source"],
                         "year": reject["year"],
                         "url": f"https://doi.org/{reject['doi']}",
+                        "abstract": "",
+                        "abstract_ja": "",
+                        "abstract_source": "",
+                        "abstract_updated_at": "",
+                        "abstract_ja_model": "",
+                        "abstract_ja_generated_at": "",
+                        "abstract_ja_auto_fallback": False,
                         "_query": reject["query"],
                         "_reason": "manual_accept",
                     }
@@ -694,6 +701,13 @@ def run(args: argparse.Namespace) -> int:
                 "source": clean_text(str(item.get("source", ""))),
                 "year": clean_text(str(item.get("year", ""))),
                 "url": clean_text(str(item.get("url", ""))),
+                "abstract": clean_text(str(item.get("abstract", ""))),
+                "abstract_ja": clean_text(str(item.get("abstract_ja", ""))),
+                "abstract_source": clean_text(str(item.get("abstract_source", ""))),
+                "abstract_updated_at": clean_text(str(item.get("abstract_updated_at", ""))),
+                "abstract_ja_model": clean_text(str(item.get("abstract_ja_model", ""))),
+                "abstract_ja_generated_at": clean_text(str(item.get("abstract_ja_generated_at", ""))),
+                "abstract_ja_auto_fallback": bool(item.get("abstract_ja_auto_fallback", False)),
             }
             for item in selected
         ]

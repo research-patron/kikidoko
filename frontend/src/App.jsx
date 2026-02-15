@@ -1132,13 +1132,8 @@ const buildEquipmentGuide = (item) => {
   return applyManual(guided);
 };
 
-const PAPER_ABSTRACT_KEYS = [
-  "abstract_ja",
-  "abstract",
-  "summary",
-  "description",
-  "dc:description",
-];
+const PAPER_ABSTRACT_JA_KEYS = ["abstract_ja"];
+const PAPER_ABSTRACT_ORIGINAL_KEYS = ["abstract", "summary", "description", "dc:description"];
 
 const FALLBACK_PAPER_USAGE_SUMMARY =
   "関連情報をもとに、機器の代表的な使われ方を整理しています。";
@@ -1149,9 +1144,18 @@ const FALLBACK_PAPER_USAGE_BULLETS = [
 
 const normalizeText = (value) => String(value || "").trim();
 
-const resolvePaperAbstractText = (paper) => {
+const resolvePaperAbstractJaText = (paper) => {
   if (!paper || typeof paper !== "object") return "";
-  for (const key of PAPER_ABSTRACT_KEYS) {
+  for (const key of PAPER_ABSTRACT_JA_KEYS) {
+    const text = normalizeText(paper[key]);
+    if (text) return text;
+  }
+  return "";
+};
+
+const resolvePaperAbstractOriginalText = (paper) => {
+  if (!paper || typeof paper !== "object") return "";
+  for (const key of PAPER_ABSTRACT_ORIGINAL_KEYS) {
     const text = normalizeText(paper[key]);
     if (text) return text;
   }
@@ -1450,6 +1454,7 @@ export default function App() {
   const [freeOnly, setFreeOnly] = useState(false);
   const [page, setPage] = useState(1);
   const [activeExternal, setActiveExternal] = useState(null);
+  const [activeExternalAbstractTab, setActiveExternalAbstractTab] = useState("ja");
   const [eqnetAssistItem, setEqnetAssistItem] = useState(null);
   const [eqnetCopiedField, setEqnetCopiedField] = useState("");
   const [eqnetAssistAttention, setEqnetAssistAttention] = useState(false);
@@ -2982,6 +2987,9 @@ export default function App() {
 
   const openExternalViewer = (payload) => {
     if (!payload?.url) return;
+    const defaultAbstractTab = payload.defaultAbstractTab === "original" ? "original" : "ja";
+    const abstractJaText = payload.abstractJaText || "";
+    const abstractOriginalText = payload.abstractOriginalText || "";
     setActiveExternal({
       kind: payload.kind === "paper" ? "paper" : "equipment",
       url: payload.url,
@@ -2992,9 +3000,19 @@ export default function App() {
       genreLabel: payload.genreLabel || "",
       usageSummary: payload.usageSummary || "",
       usageBullets: Array.isArray(payload.usageBullets) ? payload.usageBullets.filter(Boolean) : [],
-      abstractText: payload.abstractText || "",
-      hasAbstract: Boolean(payload.hasAbstract),
+      abstractJaText,
+      abstractOriginalText,
+      hasAbstractJa: Boolean(payload.hasAbstractJa),
+      hasAbstractOriginal: Boolean(payload.hasAbstractOriginal),
+      defaultAbstractTab,
+      // Kept temporarily for backward compatibility in caller code.
+      abstractText: payload.abstractText || abstractJaText || abstractOriginalText || "",
+      hasAbstract:
+        payload.hasAbstract != null
+          ? Boolean(payload.hasAbstract)
+          : Boolean(payload.hasAbstractJa || payload.hasAbstractOriginal),
     });
+    setActiveExternalAbstractTab(defaultAbstractTab);
   };
 
   const handleExternalOpen = (item) => {
@@ -3010,7 +3028,8 @@ export default function App() {
   const buildPaperExternalPayload = useCallback(
     (paper) => {
       const url = paper?.url || (paper?.doi ? `https://doi.org/${paper.doi}` : "");
-      const abstractText = resolvePaperAbstractText(paper);
+      const abstractJaText = resolvePaperAbstractJaText(paper);
+      const abstractOriginalText = resolvePaperAbstractOriginalText(paper);
       const usagePreview = resolvePaperUsagePreview(detailItem);
       return {
         kind: "paper",
@@ -3022,8 +3041,11 @@ export default function App() {
         genreLabel: paper?.genre_ja || resolvePaperGenre(paper?.genre),
         usageSummary: usagePreview.summary,
         usageBullets: usagePreview.bullets,
-        abstractText,
-        hasAbstract: Boolean(abstractText),
+        abstractJaText,
+        abstractOriginalText,
+        hasAbstractJa: Boolean(abstractJaText),
+        hasAbstractOriginal: Boolean(abstractOriginalText),
+        defaultAbstractTab: "ja",
       };
     },
     [detailItem],
@@ -3035,6 +3057,7 @@ export default function App() {
 
   const handleExternalClose = () => {
     setActiveExternal(null);
+    setActiveExternalAbstractTab("ja");
   };
 
   const openEqnetPage = () => {
@@ -4829,6 +4852,14 @@ export default function App() {
     ? `is-switch-${detailSwitchDirection} is-switch-token-${detailSwitchToken % 2}`
     : "";
   const isPaperExternal = activeExternal?.kind === "paper";
+  const activePaperAbstractTab = activeExternalAbstractTab === "original" ? "original" : "ja";
+  const isPaperJaTab = activePaperAbstractTab === "ja";
+  const paperAbstractText = isPaperJaTab
+    ? activeExternal?.abstractJaText || ""
+    : activeExternal?.abstractOriginalText || "";
+  const hasPaperAbstract = isPaperJaTab
+    ? Boolean(activeExternal?.hasAbstractJa)
+    : Boolean(activeExternal?.hasAbstractOriginal);
 
   return (
     <div className="page">
@@ -5426,7 +5457,41 @@ export default function App() {
               {isPaperExternal ? (
                 <div className="external-paper-content">
                   <section className="external-paper-section">
-                    <h4>機器の使われ方要約</h4>
+                    <h4>論文要旨</h4>
+                    <div className="external-paper-tabs" role="tablist" aria-label="要旨表示言語">
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={isPaperJaTab}
+                        className={`external-paper-tab${isPaperJaTab ? " is-active" : ""}`}
+                        onClick={() => setActiveExternalAbstractTab("ja")}
+                      >
+                        日本語
+                      </button>
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={!isPaperJaTab}
+                        className={`external-paper-tab${!isPaperJaTab ? " is-active" : ""}`}
+                        onClick={() => setActiveExternalAbstractTab("original")}
+                      >
+                        原文
+                      </button>
+                    </div>
+                    <div className="external-paper-tabpanel" role="tabpanel" aria-live="polite">
+                      {hasPaperAbstract ? (
+                        <p className="external-paper-text">{paperAbstractText}</p>
+                      ) : (
+                        <p className="external-paper-empty">
+                          {isPaperJaTab
+                            ? "日本語要旨は未作成です。原文タブをご確認ください。"
+                            : "この論文の原文要旨データは未取得です。必要に応じて「別タブで開く」から原文をご確認ください。"}
+                        </p>
+                      )}
+                    </div>
+                  </section>
+                  <section className="external-paper-section">
+                    <h4>機器の使われ方について</h4>
                     <p className="external-paper-text">{activeExternal.usageSummary}</p>
                     {activeExternal.usageBullets.length > 0 && (
                       <ul className="external-paper-bullets">
@@ -5434,16 +5499,6 @@ export default function App() {
                           <li key={bullet}>{bullet}</li>
                         ))}
                       </ul>
-                    )}
-                  </section>
-                  <section className="external-paper-section">
-                    <h4>論文要旨</h4>
-                    {activeExternal.hasAbstract ? (
-                      <p className="external-paper-text">{activeExternal.abstractText}</p>
-                    ) : (
-                      <p className="external-paper-empty">
-                        この論文の要旨データは未登録です。必要に応じて「別タブで開く」から原文をご確認ください。
-                      </p>
                     )}
                   </section>
                   <dl className="external-paper-meta">

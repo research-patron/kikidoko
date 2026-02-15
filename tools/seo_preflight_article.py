@@ -19,12 +19,15 @@ from blog_content_utils import (
     strip_leading_h1_if_title_match,
 )
 
-URL_PATTERN = re.compile(r"^/blog/([a-z0-9-]+)/([a-z0-9-]+)/?$")
-SITE_ROOT = "https://kikidoko.student-subscription.com"
+URL_PATTERN = re.compile(r"^/([a-z0-9-]+)/([a-z0-9-]+)/?$")
+APP_SITE_ROOT = "https://kikidoko.web.app"
+BLOG_HOSTS = {
+    "kikidoko-blog.student-subscription.com",
+}
 APP_TOP_LINKS = {
     "/",
-    SITE_ROOT,
-    f"{SITE_ROOT}/",
+    APP_SITE_ROOT,
+    f"{APP_SITE_ROOT}/",
 }
 
 
@@ -41,17 +44,30 @@ def find_article(manifest: dict[str, Any], article_id: str) -> dict[str, Any]:
     raise KeyError(f"article id not found: {article_id}")
 
 
+def normalize_blog_path(path: str) -> str | None:
+    path = path.strip()
+    if not path:
+        return None
+    if path.startswith("/blog/"):
+        path = path[len("/blog") :]
+    if path == "/":
+        return "/"
+    if not path.startswith("/"):
+        path = f"/{path}"
+    return f"{path.rstrip('/')}/"
+
+
 def normalize_link_to_path(link: str) -> str | None:
     link = link.strip()
     if not link:
         return None
     if link.startswith("/"):
-        return link
+        return normalize_blog_path(link)
     parsed = urlparse(link)
     if parsed.scheme in {"http", "https"} and parsed.netloc:
-        if parsed.netloc != "kikidoko.student-subscription.com":
+        if parsed.netloc not in BLOG_HOSTS:
             return None
-        return parsed.path or "/"
+        return normalize_blog_path(parsed.path or "/")
     return None
 
 
@@ -60,8 +76,8 @@ def is_app_top_link(link: str) -> bool:
     if link in APP_TOP_LINKS:
         return True
     parsed = urlparse(link)
-    if parsed.scheme in {"http", "https"} and parsed.netloc == "kikidoko.student-subscription.com":
-        normalized = (parsed.path or "/").rstrip("/") or "/"
+    if parsed.scheme in {"http", "https"} and parsed.netloc == "kikidoko.web.app":
+        normalized = (parsed.path or "/").rstrip("/")
         return normalized == ""
     return False
 
@@ -149,11 +165,11 @@ def run_preflight(article: dict[str, Any], draft_text: str) -> dict[str, Any]:
             f"cross-category link requirement failed: {cross_category_count} found (need >=1)."
         )
 
-    expected_path = f"/blog/{category}/{slug}"
+    expected_path = f"/{category}/{slug}/"
     checks["expected_path"] = expected_path
     if not URL_PATTERN.match(url or ""):
         errors.append(f"manifest article url is invalid: {url}")
-    elif not (url == expected_path or url == f"{expected_path}/"):
+    elif url != expected_path:
         errors.append(f"manifest article url mismatch: {url} != {expected_path}")
 
     block_content = markdown_to_blocks(sanitized_draft)
@@ -162,7 +178,7 @@ def run_preflight(article: dict[str, Any], draft_text: str) -> dict[str, Any]:
     if markdown_tokens_left:
         errors.append(f"unconverted markdown tokens remain after block conversion: {markdown_tokens_left}")
 
-    has_h1_in_blocks = bool(re.search(r"<h1\\b", block_content, flags=re.IGNORECASE))
+    has_h1_in_blocks = bool(re.search(r"<h1\b", block_content, flags=re.IGNORECASE))
     checks["has_h1_in_blocks"] = has_h1_in_blocks
     if has_h1_in_blocks:
         errors.append("converted block content includes h1 tag.")

@@ -111,10 +111,14 @@
 
 ## 10. 手作業用途説明の反映
 
-1. 差分確認
+1. 手動精査キューを作成（優先500件）
+   - `./crawler/.venv/bin/python -m kikidoko_crawler.manual_curation_queue --project-id kikidoko --limit 500 --output crawler/manual_curation_queue_500.csv`
+2. 差分確認
    - `wc -l crawler/manual_usage_overrides.json crawler/manual_usage_done.csv`
-2. Firestore反映
+3. Firestore反映（`manual` を最優先）
    - `./crawler/.venv/bin/python -m kikidoko_crawler.apply_manual_usage --project-id kikidoko --input crawler/manual_usage_overrides.json`
+4. 注意
+   - 自動再生成を実行する場合は `usage_from_abstract_backfill` を `--skip-manual` のまま実行し、`usage_manual_editor=manual` を上書きしないこと。
 
 ## 11. 集計再生成
 

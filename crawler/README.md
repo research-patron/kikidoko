@@ -130,6 +130,26 @@ ls -lh frontend/public/equipment_snapshot.json.gz
 kikidoko-export-snapshot --project-id <your-project-id> --output frontend/public/equipment_snapshot.json.gz
 ```
 
+## Paper abstract + usage backfill (API key optional)
+
+```sh
+kikidoko-papers-abstract-backfill --project-id <your-project-id> --dry-run --limit-docs 20
+kikidoko-papers-abstract-backfill --project-id <your-project-id>
+
+# default is --generation-mode rule-based, OPENAI_API_KEY is not required
+kikidoko-usage-from-abstract --project-id <your-project-id> --dry-run --limit-docs 20
+kikidoko-usage-from-abstract --project-id <your-project-id> --generation-mode rule-based --skip-manual
+```
+
+## Manual curation queue (chat-based review)
+
+```sh
+kikidoko-manual-curation-queue --project-id <your-project-id> --limit 500 --output crawler/manual_curation_queue_500.csv
+
+# apply reviewed manual text + optional paper abstract_ja overrides
+kikidoko-apply-manual-usage --project-id <your-project-id> --input crawler/manual_usage_overrides.json
+```
+
 ## Source policy
 
 - Prefer HTML/CSV/JSON endpoints.

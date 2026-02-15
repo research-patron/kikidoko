@@ -73,6 +73,7 @@ def http_json(
 ) -> tuple[int, Any]:
     data = json.dumps(payload, ensure_ascii=False).encode("utf-8") if payload is not None else None
     last_error: Exception | None = None
+    last_url = url
 
     ssl_context = ssl._create_unverified_context() if insecure else None
 
@@ -100,12 +101,13 @@ def http_json(
             raise WPApiError(f"http error {exc.code}: {parsed}") from exc
         except URLError as exc:
             last_error = exc
+            last_url = url
             if attempt < retries:
                 time.sleep(2**attempt)
                 continue
             break
 
-    raise WPApiError(f"network error: {last_error}")
+    raise WPApiError(f"network error: {last_error} (url={last_url})")
 
 
 def api_get(
@@ -226,8 +228,18 @@ def build_excerpt(markdown_text: str, min_len: int = 120, max_len: int = 160) ->
     return excerpt
 
 
-def expected_permalink(wp_base: str, category: str, slug: str) -> str:
-    return f"{wp_base.rstrip('/')}/{category}/{slug}/"
+def normalize_wp_site_base(wp_base: str) -> str:
+    base = wp_base.strip().rstrip("/")
+    if base.endswith("/blog"):
+        base = base[: -len("/blog")]
+    return base
+
+
+def expected_permalink(site_base: str, article_url: str) -> str:
+    path = article_url.strip()
+    if not path.startswith("/"):
+        path = f"/{path}"
+    return f"{site_base}{path.rstrip('/')}/"
 
 
 def append_publish_log(path: Path, entry: dict[str, Any]) -> None:
@@ -249,7 +261,7 @@ def append_publish_log(path: Path, entry: dict[str, Any]) -> None:
 
 def validate_published_content_raw(raw_content: str) -> dict[str, Any]:
     has_block_marker = "<!-- wp:" in raw_content
-    has_h1 = bool(re.search(r"<h1\\b", raw_content, flags=re.IGNORECASE))
+    has_h1 = bool(re.search(r"<h1\b", raw_content, flags=re.IGNORECASE))
     markdown_tokens_left = detect_markdown_tokens(raw_content)
     return {
         "has_block_marker": has_block_marker,
@@ -298,7 +310,8 @@ def main() -> int:
         return 1
 
     headers = build_headers(wp_user, wp_password)
-    api_base = f"{args.wp_base.rstrip('/')}/wp-json/wp/v2"
+    site_base = normalize_wp_site_base(args.wp_base)
+    api_base = f"{site_base}/wp-json/wp/v2"
     ensure_all = bool(args.ensure_all_categories)
 
     try:
@@ -355,7 +368,7 @@ def main() -> int:
             params={"context": "edit"},
             insecure=args.insecure,
         )
-        expected_link = expected_permalink(args.wp_base, article["category"], article["slug"])
+        expected_link = expected_permalink(site_base, article["url"])
         actual_link = verified.get("link", "")
         status = verified.get("status", "")
         categories = verified.get("categories", [])

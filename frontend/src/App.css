@@ -1362,6 +1362,40 @@
   color: var(--muted-dark);
 }
 
+.external-paper-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.external-paper-tab {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted-dark);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  min-width: 92px;
+  white-space: nowrap;
+}
+
+.external-paper-tab.is-active {
+  background: #f3e2c2;
+  border-color: #ddc592;
+  color: #513f23;
+}
+
+.external-paper-tabpanel {
+  display: grid;
+  gap: 8px;
+}
+
 .external-paper-text {
   margin: 0;
   font-size: 13px;
@@ -2644,5 +2678,10 @@
     padding: 0 12px;
     font-size: 12px;
     white-space: nowrap;
+  }
+
+  .external-paper-tab {
+    min-width: 110px;
+    flex: 1 1 0;
   }
 }

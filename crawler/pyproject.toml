@@ -30,6 +30,10 @@ kikidoko-export-snapshot = "kikidoko_crawler.snapshot_export:main"
 kikidoko-papers-audit = "kikidoko_crawler.papers_audit:main"
 kikidoko-papers-backfill = "kikidoko_crawler.papers_backfill:main"
 kikidoko-papers-strict-recheck = "kikidoko_crawler.papers_strict_recheck:main"
+kikidoko-papers-abstract-backfill = "kikidoko_crawler.papers_abstract_backfill:main"
+kikidoko-usage-from-abstract = "kikidoko_crawler.usage_from_abstract_backfill:main"
+kikidoko-apply-manual-usage = "kikidoko_crawler.apply_manual_usage:main"
+kikidoko-manual-curation-queue = "kikidoko_crawler.manual_curation_queue:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
