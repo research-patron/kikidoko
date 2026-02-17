@@ -17,7 +17,7 @@ from .utils import NORMALIZED_KEYWORDS, TOKEN_PATTERN, clean_text
 
 ELSEVIER_API_URL = "https://api.elsevier.com/content/search/scopus"
 DOC_TYPE_FILTER = "DOCTYPE(ar OR cp)"
-SKIP_STATUSES = {"ready", "no_results", "no_query", "no_results_verified"}
+SKIP_STATUSES = {"ready", "no_results", "no_query", "no_results_verified", "not_applicable_space"}
 PENDING_READY_STATUSES = {"", "ready", "pending"}
 UI_KNOWN_STATUSES = {
     "",
@@ -26,6 +26,7 @@ UI_KNOWN_STATUSES = {
     "no_query",
     "no_results",
     "no_results_verified",
+    "not_applicable_space",
     "error",
 }
 TITLE_TOKEN_PATTERN = re.compile(r"[A-Za-z][A-Za-z0-9-]{2,}")

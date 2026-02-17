@@ -322,6 +322,8 @@ const parseSnapshotPayload = (payload) => {
   return {
     items,
     generatedAt: String(source.generated_at || source.generatedAt || "").trim(),
+    schemaVersion: String(source.schema_version || source.schemaVersion || "").trim(),
+    sortedBy: String(source.sorted_by || source.sortedBy || "").trim(),
   };
 };
 
@@ -341,6 +343,15 @@ const buildPagedItems = (items) => {
   }
   return pages;
 };
+
+const createKeywordPagingSessionState = (signature = "") => ({
+  signature,
+  cursor: null,
+  seenKeys: new Set(),
+  lookaheadItems: [],
+  exhausted: false,
+  loading: false,
+});
 
 const createFirestoreReadStore = () => ({
   totalRequests: 0,
@@ -997,6 +1008,7 @@ const EQNET_ATTENTION_TOTAL_MS =
   EQNET_ATTENTION_ECHO_DELAY_MS +
   EQNET_ATTENTION_END_BUFFER_MS;
 const PAGE_SIZE = 6;
+const KEYWORD_RAW_BATCH_SIZE = 24;
 const RESULTS_COLUMN_MIN_HEIGHT = 620;
 
 const badgeClass = (value) => {
@@ -1203,6 +1215,52 @@ const formatDistance = (distanceKm) => {
   return `${Math.round(distanceKm)}km`;
 };
 
+const buildResultDedupKey = (item) => {
+  if (!item || typeof item !== "object") return "unknown:missing";
+  const eqnetEquipmentId = normalizeForMatch(item.eqnetEquipmentId || "");
+  if (eqnetEquipmentId) {
+    return `eqnet:${eqnetEquipmentId}`;
+  }
+  const equipmentId = normalizeForMatch(item.equipmentId || item.equipment_id || "");
+  if (equipmentId) {
+    return `equipment:${equipmentId}`;
+  }
+  const sourceUrl = String(item.sourceUrl || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[?#].*$/, "");
+  if (sourceUrl) {
+    return `source:${sourceUrl}`;
+  }
+  const orgName = normalizeForMatch(item.orgName || "");
+  const name = normalizeForMatch(item.name || "");
+  const prefecture = normalizeForMatch(item.prefecture || "");
+  const category = normalizeForMatch(item.categoryGeneral || item.categoryDetail || "");
+  return `fallback:${orgName}|${name}|${prefecture}|${category}`;
+};
+
+const dedupeResultItems = (items) => {
+  const deduped = new Map();
+  (Array.isArray(items) ? items : []).forEach((item) => {
+    const key = buildResultDedupKey(item);
+    if (!deduped.has(key)) {
+      deduped.set(key, item);
+    }
+  });
+  const safeItems = Array.isArray(items) ? items : [];
+  return {
+    items: Array.from(deduped.values()),
+    removedCount: Math.max(0, safeItems.length - deduped.size),
+    inputCount: safeItems.length,
+  };
+};
+
+const buildResultRenderKey = (item, index) => {
+  const dedupeKey = buildResultDedupKey(item);
+  const itemId = String(item?.id || item?.docId || "").trim();
+  return `${dedupeKey}|${itemId || "noid"}|${index}`;
+};
+
 const buildOrgListFromItems = (items) => {
   const orgCounts = new Map();
   items.forEach((item) => {
@@ -1365,9 +1423,11 @@ const mapEquipmentDataToItem = (sourceData, fallbackId = "") => {
     "不明";
   const fallbackDocId = String(data.doc_id || fallbackId || "").trim();
   const equipmentId = String(data.equipment_id || "").trim();
-  const itemId = equipmentId || fallbackDocId || `${orgName}-${data.name || "unknown"}`;
+  const itemId = fallbackDocId || equipmentId || `${orgName}-${data.name || "unknown"}`;
   return {
     id: itemId,
+    docId: fallbackDocId,
+    equipmentId,
     name: data.name || "名称不明",
     categoryGeneral: data.category_general || "未分類",
     categoryDetail: data.category_detail || "",
@@ -1447,6 +1507,8 @@ export default function App() {
     source: "loading",
     items: [],
     generatedAt: "",
+    schemaVersion: "",
+    sortedBy: "",
     error: "",
   });
   const [firestoreReadTick, setFirestoreReadTick] = useState(0);
@@ -1493,6 +1555,7 @@ export default function App() {
   const [locationError, setLocationError] = useState("");
   const [isComposing, setIsComposing] = useState(false);
   const pagingRef = useRef(false);
+  const keywordPagingSessionRef = useRef(createKeywordPagingSessionState());
   const pagesRef = useRef(pages);
   const listItemRefs = useRef(new Map());
   const resultsRef = useRef(null);
@@ -1630,6 +1693,10 @@ export default function App() {
     },
     [bumpFirestoreReadDebug],
   );
+
+  const resetKeywordPagingSession = useCallback((signature = "") => {
+    keywordPagingSessionRef.current = createKeywordPagingSessionState(signature);
+  }, []);
 
   const firestoreReadStats = useMemo(() => {
     if (!readDebugEnabled) return null;
@@ -1856,7 +1923,12 @@ export default function App() {
         } catch {
           payload = await fetchSnapshotPayload(EQUIPMENT_SNAPSHOT_JSON_PATH, false);
         }
-        const { items: rawItems, generatedAt } = parseSnapshotPayload(payload);
+        const {
+          items: rawItems,
+          generatedAt,
+          schemaVersion,
+          sortedBy,
+        } = parseSnapshotPayload(payload);
         const parsedItems = rawItems
           .map((entry, index) => mapEquipmentDataToItem(entry, String(index + 1)))
           .filter((item) => Boolean(item.id));
@@ -1867,6 +1939,8 @@ export default function App() {
             source: "snapshot",
             items: parsedItems,
             generatedAt,
+            schemaVersion,
+            sortedBy,
             error: "",
           });
           return;
@@ -1876,6 +1950,8 @@ export default function App() {
           source: "firestore",
           items: [],
           generatedAt,
+          schemaVersion,
+          sortedBy,
           error: "snapshot_empty",
         });
       } catch (error) {
@@ -1886,6 +1962,8 @@ export default function App() {
           source: "firestore",
           items: [],
           generatedAt: "",
+          schemaVersion: "",
+          sortedBy: "",
           error: String(error?.message || "snapshot_unavailable"),
         });
       }
@@ -2729,16 +2807,73 @@ export default function App() {
     () => keywordTokens.map((token) => normalizeForMatch(token)).filter(Boolean),
     [keywordTokens],
   );
+  const hasActiveKeywordSearch = useMemo(
+    () =>
+      Boolean(normalizedKeyword) ||
+      normalizedKeywordTokens.length > 0 ||
+      aliasKeys.length > 0,
+    [aliasKeys.length, normalizedKeyword, normalizedKeywordTokens.length],
+  );
+  const keywordPagingSignature = useMemo(
+    () =>
+      JSON.stringify({
+        keyword: String(keyword || "").trim(),
+        region,
+        category,
+        externalOnly,
+        freeOnly,
+        prefectureFilter,
+        orgFilter,
+        skipNameOrder,
+        dataVersion: String(dataVersionState.version || dataVersionState.updatedAt || "").trim(),
+      }),
+    [
+      category,
+      dataVersionState.updatedAt,
+      dataVersionState.version,
+      externalOnly,
+      freeOnly,
+      keyword,
+      orgFilter,
+      prefectureFilter,
+      region,
+      skipNameOrder,
+    ],
+  );
+  const paginationMode = useMemo(() => {
+    if (usingSnapshotData) return "snapshot";
+    if (hasActiveKeywordSearch) return "firestore_keyword_buffered";
+    return "firestore_raw";
+  }, [hasActiveKeywordSearch, usingSnapshotData]);
+
+  useEffect(() => {
+    resetKeywordPagingSession(keywordPagingSignature);
+  }, [keywordPagingSignature, resetKeywordPagingSession]);
 
   const buildSnapshotSearchItems = useCallback(() => {
     if (!usingSnapshotData) return [];
-    const baseFiltered = snapshotState.items.filter(matchesActiveFilters);
+    const hasFilterConditions =
+      region !== "all" ||
+      category !== "all" ||
+      externalOnly ||
+      freeOnly ||
+      Boolean(prefectureFilter) ||
+      Boolean(orgFilter);
+    const baseFiltered = hasFilterConditions
+      ? snapshotState.items.filter(matchesActiveFilters)
+      : snapshotState.items;
     const hasSearchKeyword =
       Boolean(normalizedKeyword) || normalizedKeywordTokens.length > 0 || aliasKeys.length > 0;
     if (!hasSearchKeyword) {
-      return [...baseFiltered].sort((left, right) =>
-        (left.name || "").localeCompare(right.name || "", "ja"),
-      );
+      const orderedItems =
+        snapshotState.sortedBy === "name_ja_asc"
+          ? baseFiltered
+          : [...baseFiltered].sort((left, right) => {
+              const nameOrder = (left.name || "").localeCompare(right.name || "", "ja");
+              if (nameOrder !== 0) return nameOrder;
+              return (left.id || "").localeCompare(right.id || "", "ja");
+            });
+      return dedupeResultItems(orderedItems).items;
     }
 
     const scored = baseFiltered
@@ -2777,14 +2912,21 @@ export default function App() {
         matched = orgMatched;
       }
     }
-    return matched;
+    return dedupeResultItems(matched).items;
   }, [
     aliasKeys,
+    category,
+    externalOnly,
+    freeOnly,
     isOrgKeyword,
     matchesActiveFilters,
     normalizedKeyword,
     normalizedKeywordTokens,
+    orgFilter,
+    prefectureFilter,
+    region,
     snapshotState.items,
+    snapshotState.sortedBy,
     usingSnapshotData,
   ]);
 
@@ -2866,20 +3008,122 @@ export default function App() {
     [dataVersionState.preferCache, mapDocToItem, trackedGetDocs],
   );
 
+  const fetchKeywordFirestorePageBuffered = useCallback(
+    async ({ baseQuery, signature, reset = false }) => {
+      if (reset || keywordPagingSessionRef.current.signature !== signature) {
+        resetKeywordPagingSession(signature);
+      }
+      const session = keywordPagingSessionRef.current;
+      if (session.loading) {
+        return {
+          pageItems: [],
+          lastDoc: session.cursor,
+          hasNext: !session.exhausted,
+        };
+      }
+      session.loading = true;
+      try {
+        const workingSeenKeys = new Set(session.seenKeys || []);
+        const seenCandidateKeys = new Set();
+        const bufferedCandidates = [];
+        const addCandidate = (item, dedupKeyOverride = "") => {
+          if (!item) return;
+          const dedupKey = dedupKeyOverride || buildResultDedupKey(item);
+          if (!dedupKey) return;
+          if (workingSeenKeys.has(dedupKey)) return;
+          if (seenCandidateKeys.has(dedupKey)) return;
+          seenCandidateKeys.add(dedupKey);
+          bufferedCandidates.push({ item, dedupKey });
+        };
+
+        (Array.isArray(session.lookaheadItems) ? session.lookaheadItems : []).forEach((entry) => {
+          if (!entry) return;
+          if (entry.item) {
+            addCandidate(entry.item, entry.dedupKey || "");
+            return;
+          }
+          addCandidate(entry);
+        });
+
+        let cursor = session.cursor || null;
+        let exhausted = Boolean(session.exhausted);
+
+        while (bufferedCandidates.length < PAGE_SIZE + 1 && !exhausted) {
+          const pageQuery = cursor
+            ? firestoreQuery(baseQuery, startAfter(cursor), limit(KEYWORD_RAW_BATCH_SIZE))
+            : firestoreQuery(baseQuery, limit(KEYWORD_RAW_BATCH_SIZE));
+          const snapshot = await trackedGetDocs("base_page", pageQuery, {
+            preferCache: dataVersionState.preferCache,
+          });
+          const docs = snapshot.docs || [];
+          if (docs.length === 0) {
+            exhausted = true;
+            break;
+          }
+          docs.forEach((docSnap) => {
+            addCandidate(mapDocToItem(docSnap));
+          });
+          cursor = docs[docs.length - 1] || cursor;
+          if (docs.length < KEYWORD_RAW_BATCH_SIZE) {
+            exhausted = true;
+          }
+        }
+
+        const pageEntries = bufferedCandidates.slice(0, PAGE_SIZE);
+        pageEntries.forEach((entry) => {
+          workingSeenKeys.add(entry.dedupKey);
+        });
+
+        const lookaheadEntries = bufferedCandidates.slice(PAGE_SIZE).map((entry) => ({
+          item: entry.item,
+          dedupKey: entry.dedupKey,
+        }));
+
+        session.signature = signature;
+        session.cursor = cursor;
+        session.seenKeys = workingSeenKeys;
+        session.lookaheadItems = lookaheadEntries;
+        session.exhausted = exhausted && lookaheadEntries.length === 0;
+
+        return {
+          pageItems: pageEntries.map((entry) => entry.item),
+          lastDoc: cursor,
+          hasNext: lookaheadEntries.length > 0 || !session.exhausted,
+        };
+      } finally {
+        session.loading = false;
+      }
+    },
+    [dataVersionState.preferCache, mapDocToItem, resetKeywordPagingSession, trackedGetDocs],
+  );
+
   const loadPage = useCallback(
     async ({ pageIndex, cursor, reset }) => {
       if (!dataVersionState.ready || usingSnapshotData) return;
       setLoading(true);
       setLoadError("");
       try {
+        const shouldUseBufferedPaging = hasActiveKeywordSearch;
         let data;
         try {
           const baseQuery = buildBaseQuery(keywordTokens);
-          data = await fetchPageData(baseQuery, cursor);
+          data = shouldUseBufferedPaging
+            ? await fetchKeywordFirestorePageBuffered({
+                baseQuery,
+                signature: keywordPagingSignature,
+                reset: Boolean(reset || pageIndex === 0),
+              })
+            : await fetchPageData(baseQuery, cursor);
         } catch (error) {
           if (shouldRetryQuery(error)) {
             const baseQuery = buildBaseQuery(keywordTokens, { skipOrder: true });
-            data = await fetchPageData(baseQuery, cursor);
+            data = shouldUseBufferedPaging
+              ? await fetchKeywordFirestorePageBuffered({
+                  baseQuery,
+                  signature: keywordPagingSignature,
+                  reset: Boolean(reset || pageIndex === 0),
+                })
+              : await fetchPageData(baseQuery, cursor);
             setSkipNameOrder(true);
           } else {
             throw error;
@@ -2905,7 +3149,10 @@ export default function App() {
     [
       buildBaseQuery,
       dataVersionState.ready,
+      fetchKeywordFirestorePageBuffered,
       fetchPageData,
+      hasActiveKeywordSearch,
+      keywordPagingSignature,
       keywordTokens,
       shouldRetryQuery,
       usingSnapshotData,
@@ -2920,6 +3167,7 @@ export default function App() {
       setLoadError("");
       setPages([]);
       pagesRef.current = [];
+      resetKeywordPagingSession(keywordPagingSignature);
       setSelectedItemId(null);
       setDetailSession(null);
       setDetailOpen(false);
@@ -2939,14 +3187,27 @@ export default function App() {
         return;
       }
       try {
+        const shouldUseBufferedPaging = hasActiveKeywordSearch;
         let data;
         try {
           const baseQuery = buildBaseQuery(keywordTokens);
-          data = await fetchPageData(baseQuery, null);
+          data = shouldUseBufferedPaging
+            ? await fetchKeywordFirestorePageBuffered({
+                baseQuery,
+                signature: keywordPagingSignature,
+                reset: true,
+              })
+            : await fetchPageData(baseQuery, null);
         } catch (error) {
           if (shouldRetryQuery(error)) {
             const baseQuery = buildBaseQuery(keywordTokens, { skipOrder: true });
-            data = await fetchPageData(baseQuery, null);
+            data = shouldUseBufferedPaging
+              ? await fetchKeywordFirestorePageBuffered({
+                  baseQuery,
+                  signature: keywordPagingSignature,
+                  reset: true,
+                })
+              : await fetchPageData(baseQuery, null);
             setSkipNameOrder(true);
           } else {
             throw error;
@@ -2978,8 +3239,12 @@ export default function App() {
     buildBaseQuery,
     buildSnapshotSearchItems,
     dataVersionState.ready,
+    fetchKeywordFirestorePageBuffered,
     fetchPageData,
+    hasActiveKeywordSearch,
+    keywordPagingSignature,
     keywordTokens,
+    resetKeywordPagingSession,
     shouldRetryQuery,
     snapshotState.ready,
     usingSnapshotData,
@@ -3201,28 +3466,20 @@ export default function App() {
     return currentPageData.items || [];
   }, [currentPageData]);
 
-  const combinedItems = useMemo(() => {
-    if (exactMatches.length === 0 && orgMatches.length === 0) {
-      return currentItems;
-    }
-    const map = new Map();
-    exactMatches.forEach((item) => map.set(item.id, item));
-    orgMatches.forEach((item) => {
-      if (!map.has(item.id)) {
-        map.set(item.id, item);
-      }
-    });
-    currentItems.forEach((item) => {
-      if (!map.has(item.id)) {
-        map.set(item.id, item);
-      }
-    });
-    return Array.from(map.values());
-  }, [currentItems, exactMatches, orgMatches]);
+  const combinedResultState = useMemo(() => {
+    const mergeInput =
+      page === 1 ? [...exactMatches, ...orgMatches, ...currentItems] : currentItems;
+    return dedupeResultItems(mergeInput);
+  }, [currentItems, exactMatches, orgMatches, page]);
+
+  const combinedItems = combinedResultState.items;
+  const combinedItemsDedupRemoved = combinedResultState.removedCount;
 
   const rankedItems = useMemo(() => {
-    if (!normalizedKeyword && normalizedKeywordTokens.length === 0) {
-      return combinedItems.map((item) => ({ ...item, searchScore: 0, matchTier: 0 }));
+    if (!hasActiveKeywordSearch) {
+      return combinedItems
+        .slice(0, PAGE_SIZE)
+        .map((item) => ({ ...item, searchScore: 0, matchTier: 0 }));
     }
     const scored = combinedItems.map((item) => {
       const matchTier = buildMatchTier(
@@ -3271,7 +3528,14 @@ export default function App() {
       }
     }
     return scored.slice(0, PAGE_SIZE);
-  }, [aliasKeys, combinedItems, isOrgKeyword, normalizedKeyword, normalizedKeywordTokens]);
+  }, [
+    aliasKeys,
+    combinedItems,
+    hasActiveKeywordSearch,
+    isOrgKeyword,
+    normalizedKeyword,
+    normalizedKeywordTokens,
+  ]);
 
   const displayedItemIds = useMemo(() => {
     return new Set(rankedItems.map((item) => item.id));
@@ -3289,6 +3553,22 @@ export default function App() {
     });
     return Array.from(map.values());
   }, [pages]);
+
+  const mapScopedItems = useMemo(() => {
+    if (usingSnapshotData) {
+      return snapshotState.items;
+    }
+    if (hasActiveKeywordSearch) {
+      return rankedItems.slice(0, PAGE_SIZE);
+    }
+    return loadedItems;
+  }, [
+    hasActiveKeywordSearch,
+    loadedItems,
+    rankedItems,
+    snapshotState.items,
+    usingSnapshotData,
+  ]);
 
   const globalCategoryOptions = useMemo(() => {
     return Array.from(
@@ -4052,10 +4332,22 @@ export default function App() {
   const canJumpForward = page < loadedPageCount || currentPageData.hasNext;
   const canJumpBackward = page > 1;
 
+  const hasSummaryCounts = useMemo(() => {
+    const summaryCounts = prefectureStats?.counts || {};
+    return Object.keys(summaryCounts).length > 0;
+  }, [prefectureStats?.counts]);
+
+  const mapFallbackScope = useMemo(() => {
+    if (hasSummaryCounts) return "summary";
+    if (usingSnapshotData) return "snapshot";
+    if (hasActiveKeywordSearch) return "current_page";
+    return "loaded";
+  }, [hasActiveKeywordSearch, hasSummaryCounts, usingSnapshotData]);
+
   const mapData = useMemo(() => {
     const fallbackCounts = {};
     const fallbackOrgs = {};
-    loadedItems.forEach((item) => {
+    mapScopedItems.forEach((item) => {
       const key = item.prefecture || "不明";
       if (!fallbackCounts[key]) {
         fallbackCounts[key] = 0;
@@ -4074,7 +4366,6 @@ export default function App() {
 
     const summaryCounts = prefectureStats?.counts || {};
     const summaryFacilityCounts = prefectureStats?.facilityCounts || {};
-    const hasSummaryCounts = Object.keys(summaryCounts).length > 0;
     const activeCounts = hasSummaryCounts ? summaryCounts : fallbackCounts;
     const activeFacilityCounts = hasSummaryCounts
       ? summaryFacilityCounts
@@ -4082,10 +4373,10 @@ export default function App() {
 
     const totalEquipment = hasSummaryCounts
       ? Object.values(activeCounts).reduce((acc, value) => acc + (value || 0), 0)
-      : loadedItems.length;
+      : mapScopedItems.length;
     const totalFacilities = hasSummaryCounts
       ? Object.values(activeFacilityCounts).reduce((acc, value) => acc + (value || 0), 0)
-      : new Set(loadedItems.map((item) => item.orgName).filter(Boolean)).size;
+      : new Set(mapScopedItems.map((item) => item.orgName).filter(Boolean)).size;
 
     const topPrefectures = Object.keys(activeCounts)
       .map((prefecture) => ({
@@ -4103,10 +4394,11 @@ export default function App() {
       topPrefectures,
       prefectureCounts: activeCounts,
       prefectureFacilityCounts: activeFacilityCounts,
+      fallbackScope: mapFallbackScope,
       usingSummaryCounts: hasSummaryCounts,
       summaryUpdatedAt: prefectureStats?.updatedAt || "",
     };
-  }, [loadedItems, prefectureStats]);
+  }, [hasSummaryCounts, mapFallbackScope, mapScopedItems, prefectureStats]);
 
   const handleMapHover = useCallback(
     (prefecture, event) => {
@@ -4194,7 +4486,7 @@ export default function App() {
   useEffect(() => {
     if (!dataVersionState.ready) return undefined;
     if (!mapInfoPrefecture) return undefined;
-    if (usingSnapshotData) {
+    if (mapFallbackScope !== "summary") {
       setMapOrgRequest((prev) => {
         if (
           prev.prefecture === mapInfoPrefecture &&
@@ -4271,12 +4563,12 @@ export default function App() {
   }, [
     dataVersionState.preferCache,
     dataVersionState.ready,
+    mapFallbackScope,
     mapData.prefectureCounts,
     mapData.prefectureFacilityCounts,
     mapInfoPrefecture,
     mapOrgCache,
     trackedGetDoc,
-    usingSnapshotData,
   ]);
 
   const mapProjection = useMemo(() => {
@@ -4502,42 +4794,37 @@ export default function App() {
     };
   }, [mapInfoPrefecture, prefectureMarkerMap, renderedMapViewport]);
 
-  const snapshotOrgEntriesByPrefecture = useMemo(() => {
-    if (!usingSnapshotData) return {};
-    return buildMapOrgEntryMapByPrefecture(snapshotState.items, "snapshot");
-  }, [snapshotState.items, usingSnapshotData]);
-
-  const loadedOrgEntriesByPrefecture = useMemo(() => {
-    return buildMapOrgEntryMapByPrefecture(loadedItems, "loaded");
-  }, [loadedItems]);
+  const scopedOrgEntriesByPrefecture = useMemo(() => {
+    const sourceLabel =
+      mapFallbackScope === "current_page"
+        ? "current_page"
+        : mapFallbackScope === "snapshot"
+          ? "snapshot"
+          : "loaded";
+    return buildMapOrgEntryMapByPrefecture(mapScopedItems, sourceLabel);
+  }, [mapFallbackScope, mapScopedItems]);
 
   const mapInfoData = useMemo(() => {
     if (!mapInfoPrefecture) return null;
     const summaryCount = mapData.prefectureCounts?.[mapInfoPrefecture] || 0;
     const cachedOrg = mapOrgCache[mapInfoPrefecture];
-    const snapshotOrg = snapshotOrgEntriesByPrefecture[mapInfoPrefecture];
-    const loadedOrg = loadedOrgEntriesByPrefecture[mapInfoPrefecture];
-    const preferredOrg =
-      (cachedOrg?.orgList?.length ? cachedOrg : null) ||
-      (snapshotOrg?.orgList?.length ? snapshotOrg : null) ||
-      (loadedOrg?.orgList?.length ? loadedOrg : null) ||
-      cachedOrg ||
-      snapshotOrg ||
-      loadedOrg ||
-      null;
-    const orgList = preferredOrg?.orgList || [];
-    const orgSource = preferredOrg?.source || "loaded";
-    const statsMissing = Boolean(cachedOrg?.missing);
-    const loadedItemsInPrefecture = loadedItems.filter(
+    const scopedOrg = scopedOrgEntriesByPrefecture[mapInfoPrefecture];
+    const scopedItemsInPrefecture = mapScopedItems.filter(
       (item) => item.prefecture === mapInfoPrefecture,
     );
-    const snapshotItemsInPrefecture = usingSnapshotData
-      ? snapshotState.items.filter((item) => item.prefecture === mapInfoPrefecture)
-      : [];
-    const categoryItems =
-      orgSource === "snapshot" && snapshotItemsInPrefecture.length > 0
-        ? snapshotItemsInPrefecture
-        : loadedItemsInPrefecture;
+    const allowStatsBackfill = mapFallbackScope === "summary";
+    const preferredOrg = allowStatsBackfill
+      ? (cachedOrg?.orgList?.length ? cachedOrg : null) ||
+        (scopedOrg?.orgList?.length ? scopedOrg : null) ||
+        cachedOrg ||
+        scopedOrg ||
+        null
+      : scopedOrg || null;
+    const orgList = preferredOrg?.orgList || [];
+    const orgSource =
+      preferredOrg?.source || (allowStatsBackfill ? "loaded" : mapFallbackScope);
+    const statsMissing = allowStatsBackfill && Boolean(cachedOrg?.missing);
+    const categoryItems = scopedItemsInPrefecture;
     const categoryCounts = new Map();
     categoryItems.forEach((item) => {
       const categoryKey = item.categoryDetail || item.categoryGeneral || "未分類";
@@ -4547,22 +4834,22 @@ export default function App() {
       .map(([category, count]) => ({ category, count }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 6);
-    const totalEquipment =
-      preferredOrg?.totalEquipment ||
-      summaryCount ||
-      loadedItemsInPrefecture.length ||
-      snapshotItemsInPrefecture.length;
-    const totalFacilities =
-      preferredOrg?.totalFacilities ||
-      mapData.prefectureFacilityCounts?.[mapInfoPrefecture] ||
-      orgList.length;
-    const waitingForStats = statsMissing && orgList.length === 0 && totalEquipment > 0;
+    const totalEquipment = allowStatsBackfill
+      ? preferredOrg?.totalEquipment || summaryCount || scopedItemsInPrefecture.length
+      : scopedItemsInPrefecture.length;
+    const totalFacilities = allowStatsBackfill
+      ? preferredOrg?.totalFacilities ||
+        mapData.prefectureFacilityCounts?.[mapInfoPrefecture] ||
+        orgList.length
+      : orgList.length;
+    const waitingForStats =
+      allowStatsBackfill && statsMissing && orgList.length === 0 && totalEquipment > 0;
     const isPartial =
+      allowStatsBackfill &&
       orgSource === "loaded" &&
       !cachedOrg?.orgList?.length &&
-      !snapshotOrg?.orgList?.length &&
       summaryCount > 0 &&
-      loadedItemsInPrefecture.length < summaryCount;
+      scopedItemsInPrefecture.length < summaryCount;
     return {
       prefecture: mapInfoPrefecture,
       totalEquipment,
@@ -4575,15 +4862,13 @@ export default function App() {
       statsMissing,
     };
   }, [
-    loadedItems,
-    loadedOrgEntriesByPrefecture,
     mapData.prefectureCounts,
     mapData.prefectureFacilityCounts,
+    mapFallbackScope,
     mapInfoPrefecture,
     mapOrgCache,
-    snapshotOrgEntriesByPrefecture,
-    snapshotState.items,
-    usingSnapshotData,
+    mapScopedItems,
+    scopedOrgEntriesByPrefecture,
   ]);
 
   const mapOrgStatus =
@@ -4592,6 +4877,12 @@ export default function App() {
       : { loading: false, error: "" };
   const isMapOrgLoading = mapOrgStatus.loading;
   const mapOrgError = mapOrgStatus.error;
+  const mapDataScopeLabel = useMemo(() => {
+    if (mapData.usingSummaryCounts) return "集計データ";
+    if (mapData.fallbackScope === "snapshot") return "snapshot全件";
+    if (mapData.fallbackScope === "current_page") return "現在ページの検索結果";
+    return "読み込み済みの設備のみ";
+  }, [mapData.fallbackScope, mapData.usingSummaryCounts]);
 
   const handleMapZoomIn = useCallback(() => {
     setMapZoom((prev) => clampValue(prev * 1.25, MAP_ZOOM_MIN, MAP_ZOOM_MAX));
@@ -4775,9 +5066,43 @@ export default function App() {
   const papersStatus = detailItem?.papersStatus || "";
   const hasResults = rankedItems.length > 0;
   const hasStableResults = stableItemsWithDistanceRef.current.length > 0;
-  const visibleItemsWithDistance =
-    loading && hasStableResults ? stableItemsWithDistanceRef.current : itemsWithDistance;
+  const visibleItemsWithDistance = useMemo(() => {
+    const source = loading && hasStableResults ? stableItemsWithDistanceRef.current : itemsWithDistance;
+    return source.slice(0, PAGE_SIZE);
+  }, [hasStableResults, itemsWithDistance, loading]);
+  const resultsDebugStats = useMemo(
+    () => ({
+      page,
+      current: currentItems.length,
+      exact: exactMatches.length,
+      org: orgMatches.length,
+      combined: combinedItems.length,
+      dedupRemoved: combinedItemsDedupRemoved,
+      ranked: rankedItems.length,
+      visible: visibleItemsWithDistance.length,
+    }),
+    [
+      combinedItems.length,
+      combinedItemsDedupRemoved,
+      currentItems.length,
+      exactMatches.length,
+      orgMatches.length,
+      page,
+      rankedItems.length,
+      visibleItemsWithDistance.length,
+    ],
+  );
+  const keywordPagingDebugStats = (() => {
+    const session = keywordPagingSessionRef.current || createKeywordPagingSessionState();
+    return {
+      seenKeys: session.seenKeys?.size || 0,
+      lookahead: Array.isArray(session.lookaheadItems) ? session.lookaheadItems.length : 0,
+      exhausted: Boolean(session.exhausted),
+      loading: Boolean(session.loading),
+    };
+  })();
   const showResultsError = !loading && Boolean(loadError);
+  const showResultsSkeleton = loading && !hasStableResults && !loadError;
   const showResultsEmpty = !loading && !loadError && !hasResults;
   const showResultsList = !loadError && (hasResults || (loading && hasStableResults));
   useEffect(() => {
@@ -4786,8 +5111,25 @@ export default function App() {
       stableItemsWithDistanceRef.current = [];
       return;
     }
-    stableItemsWithDistanceRef.current = itemsWithDistance;
+    stableItemsWithDistanceRef.current = itemsWithDistance.slice(0, PAGE_SIZE);
   }, [hasResults, itemsWithDistance, loadError, loading]);
+  useEffect(() => {
+    if (!import.meta.env.DEV) return;
+    if (resultsDebugStats.visible <= PAGE_SIZE && resultsDebugStats.dedupRemoved === 0) {
+      return;
+    }
+    console.warn(
+      "[results]",
+      `page=${resultsDebugStats.page}`,
+      `current=${resultsDebugStats.current}`,
+      `exact=${resultsDebugStats.exact}`,
+      `org=${resultsDebugStats.org}`,
+      `combined=${resultsDebugStats.combined}`,
+      `dedupRemoved=${resultsDebugStats.dedupRemoved}`,
+      `ranked=${resultsDebugStats.ranked}`,
+      `visible=${resultsDebugStats.visible}`,
+    );
+  }, [resultsDebugStats]);
   const mapStatusMessage =
     geoJsonStatus === "error"
       ? "地図データの読み込みに失敗しました。"
@@ -4796,7 +5138,9 @@ export default function App() {
         : "";
   const isMapLoadingState = Boolean(mapStatusMessage);
   const paperMessage =
-    papersStatus === "no_query"
+    papersStatus === "not_applicable_space"
+      ? "共用設備（場所提供）として登録されている可能性が高いため、関連論文は表示していません。研究設備を含む場合もあるため、機関窓口でご確認ください。"
+      : papersStatus === "no_query"
       ? "関連論文の検索語が不足しています。"
       : papersStatus === "no_results"
         ? "該当する論文が見つかりませんでした。"
@@ -5029,6 +5373,25 @@ export default function App() {
             >
               {showResultsError ? (
                 <p className="results-status error">{loadError}</p>
+              ) : showResultsSkeleton ? (
+                <>
+                  <div className="list-header" aria-hidden="true">
+                    <span>設備</span>
+                    <span>所在地 / 近さ</span>
+                    <span>利用</span>
+                    <span>リンク</span>
+                  </div>
+                  <div className="results-skeleton" aria-busy="true" aria-live="polite">
+                    {Array.from({ length: PAGE_SIZE }).map((_, index) => (
+                      <div className="results-skeleton-row" key={`skeleton-${index}`}>
+                        <span className="results-skeleton-block title" />
+                        <span className="results-skeleton-block meta" />
+                        <span className="results-skeleton-block badge" />
+                        <span className="results-skeleton-block action" />
+                      </div>
+                    ))}
+                  </div>
+                </>
               ) : showResultsEmpty ? (
                 <p className="results-status">該当する設備が見つかりませんでした。</p>
               ) : showResultsList ? (
@@ -5043,7 +5406,7 @@ export default function App() {
                     <div className="list-body">
                       {visibleItemsWithDistance.map((item, index) => (
                         <div
-                          key={item.id}
+                          key={buildResultRenderKey(item, index)}
                           className={`result-row${selectedItemId === item.id ? " is-selected" : ""}`}
                           style={{ "--row-index": Math.min(index, 12) }}
                           role="button"
@@ -5059,10 +5422,14 @@ export default function App() {
                         >
                           <div className="result-title">
                             <p className="category">{item.categoryGeneral}</p>
-                            <strong>{item.name}</strong>
-                            {item.categoryDetail && (
-                              <span className="detail">{item.categoryDetail}</span>
-                            )}
+                            <strong title={item.name}>{item.name}</strong>
+                            <span
+                              className={`detail${item.categoryDetail ? "" : " is-empty"}`}
+                              aria-hidden={item.categoryDetail ? undefined : true}
+                              title={item.categoryDetail || undefined}
+                            >
+                              {item.categoryDetail || "\u00a0"}
+                            </span>
                           </div>
                           <div className="result-meta">
                             <div className="result-distance">
@@ -5367,7 +5734,7 @@ export default function App() {
                       </div>
                     </div>
                     <p className="map-info-note">
-                      集計対象: {mapData.usingSummaryCounts ? "集計データ" : "読み込み済みの設備のみ"}
+                      集計対象: {mapDataScopeLabel}
                     </p>
                     {mapInfoData.isPartial && (
                       <p className="map-info-note">
@@ -5870,6 +6237,17 @@ export default function App() {
             requests: {firestoreReadStats.totalRequests} / returned docs:{" "}
             {firestoreReadStats.totalReturnedDocs} / estimated billable reads:{" "}
             {firestoreReadStats.totalBillableReads}
+          </p>
+          <p>
+            results: page {resultsDebugStats.page} / current {resultsDebugStats.current} / exact{" "}
+            {resultsDebugStats.exact} / org {resultsDebugStats.org} / combined{" "}
+            {resultsDebugStats.combined} (dedup -{resultsDebugStats.dedupRemoved}) / ranked{" "}
+            {resultsDebugStats.ranked} / visible {resultsDebugStats.visible}
+          </p>
+          <p>
+            pagination: mode {paginationMode} / seen keys {keywordPagingDebugStats.seenKeys} /
+            exhausted {String(keywordPagingDebugStats.exhausted)} / lookahead{" "}
+            {keywordPagingDebugStats.lookahead} / current page items {currentItems.length}
           </p>
           <ul>
             {FIRESTORE_READ_LABELS.map((label) => {

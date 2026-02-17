@@ -18,6 +18,7 @@ UI_KNOWN_STATUSES = {
     "no_query",
     "no_results",
     "no_results_verified",
+    "not_applicable_space",
     "error",
 }
 

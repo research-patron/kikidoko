@@ -47,6 +47,19 @@ ls -lh frontend/public/equipment_snapshot.json.gz
 ```
 
 - `frontend/public/equipment_snapshot.json.gz` が存在し、サイズが 0 でないこと。
+- 新形式 snapshot（軽量）であることを確認:
+
+```bash
+python3 - <<'PY'
+import gzip, json
+with gzip.open('frontend/public/equipment_snapshot.json.gz', 'rt', encoding='utf-8') as f:
+    payload = json.load(f)
+print('schema_version=', payload.get('schema_version'))
+print('sorted_by=', payload.get('sorted_by'))
+print('count=', payload.get('count'))
+PY
+```
+
 - このファイルは Git コミットしない。
 
 ### Step 2: フロントの lint/build
