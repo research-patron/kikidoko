@@ -1,0 +1,61 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE23-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T02:01:47.225428+00:00",
+  "updated_at": "2026-03-04T02:02:44.701537+00:00",
+  "closed_at": "2026-03-04T02:02:44.701537+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle23_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE23-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "912b1937a33878abab76165ce5c0312e98971f4b5b993b5f6e8058d638824d7a",
+    "queue_sha256_at_start": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "queue_row_keys_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "queue": {
+    "target_count": 0,
+    "target_row_keys": [],
+    "target_rows": []
+  },
+  "stats": {
+    "verify_pass_count": 1,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T02:01:47.225428+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 0
+      }
+    },
+    {
+      "at": "2026-03-04T02:01:47.854822+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:02:44.701537+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 1,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

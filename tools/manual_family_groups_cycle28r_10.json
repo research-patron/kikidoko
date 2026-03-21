@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T03:58:38.948498+00:00",
+  "batch_id": "BATCH-20260304-CYCLE28R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KFgnDB32NjQcmlrkNIrU",
+          "equipment_id": "KFgnDB32NjQcmlrkNIrU",
+          "name": "超低温フリーザー_10 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 解析用ソフトウェア|マルチカラーデータ解析ソフトウェア|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "tv1Ymx1Nn5pmetD5BIlC",
+          "equipment_id": "tv1Ymx1Nn5pmetD5BIlC",
+          "name": "マルチカラーデータ解析ソフトウェア(3)",
+          "category_general": "その他",
+          "category_detail": "その他 / 解析用ソフトウェア"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|ハンドリフター-コゾウリフター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TTfvAtX3TovSCl7xp6BY",
+          "equipment_id": "TTfvAtX3TovSCl7xp6BY",
+          "name": "ハンドリフター（コゾウリフター）",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|吊りフック-アーム付きリフター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nDr8L3kPFoycGvDgbvr6",
+          "equipment_id": "nDr8L3kPFoycGvDgbvr6",
+          "name": "吊りフック･アーム付きリフター",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|簡易型クレーン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TkaHlzgtz6JO4HUisJfF",
+          "equipment_id": "TkaHlzgtz6JO4HUisJfF",
+          "name": "簡易型クレーン",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 電子天秤|ミクロ天秤-ザルトリウス-me5|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TNx5M9qMHWHXuW5E3F8F",
+          "equipment_id": "TNx5M9qMHWHXuW5E3F8F",
+          "name": "ミクロ天秤 ザルトリウス ME5",
+          "category_general": "その他",
+          "category_detail": "その他 / 電子天秤"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|bragg-edge-用中性子ターゲット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Vlcul0AalGd01n6H0jiC",
+          "equipment_id": "HOKUDAI-AP-900828",
+          "name": "Bragg edge用中性子ターゲット",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|cnc-ヒザ形-nc-フライス盤|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7FOHzKMAnUB6JyouCkVD",
+          "equipment_id": "HOKUDAI-AP-902150",
+          "name": "CNCヒザ形NCフライス盤",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|cnc-普通旋盤|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "o3TDvehQ1gPp3P9DF5aH",
+          "equipment_id": "HOKUDAI-AP-902148",
+          "name": "CNC普通旋盤",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|co2-インキュベーター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YE1HADGkfaHby26B14BD",
+          "equipment_id": "HOKUDAI-AP-901980",
+          "name": "CO2インキュベーター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9214
+}

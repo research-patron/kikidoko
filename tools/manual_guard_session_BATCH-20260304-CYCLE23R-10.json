@@ -1,0 +1,239 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE23R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T02:02:55.736031+00:00",
+  "updated_at": "2026-03-04T03:02:30.108657+00:00",
+  "closed_at": "2026-03-04T03:02:30.108657+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle23r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE23R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "912b1937a33878abab76165ce5c0312e98971f4b5b993b5f6e8058d638824d7a",
+    "queue_sha256_at_start": "64385c30e12413c8fac609cc03f9ffa54c4cceef1147c3fc2f10043475b1cda0",
+    "queue_row_keys_sha256": "3c13b12c796b0266d0b9c497261e301fce3edcc82e5ebe8e80edd402895fe06e"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "lx0ke05c7OkqxjFJbrhv::lx0ke05c7OkqxjFJbrhv",
+      "glCGKU54H7c5Cyf0zBrx::glCGKU54H7c5Cyf0zBrx",
+      "WlA0bmbv47X9mJB2Gwxu::WlA0bmbv47X9mJB2Gwxu",
+      "oBZbRVTjPgqVBtH9NUwD::oBZbRVTjPgqVBtH9NUwD",
+      "NIXVE2g6NsEaSAirdnBF::NIXVE2g6NsEaSAirdnBF",
+      "OapC5q5mbHDbYUTzaf4u::OapC5q5mbHDbYUTzaf4u",
+      "saCVGNeywsGMt4LcqaYs::saCVGNeywsGMt4LcqaYs",
+      "cPF0rHf33sWcvm8BhA9H::cPF0rHf33sWcvm8BhA9H",
+      "xOPobDM1Lev73TkjrzXj::xOPobDM1Lev73TkjrzXj",
+      "aV2IeHdgtEXZpinjH0ub::aV2IeHdgtEXZpinjH0ub"
+    ],
+    "target_rows": [
+      {
+        "row_key": "lx0ke05c7OkqxjFJbrhv::lx0ke05c7OkqxjFJbrhv",
+        "doc_id": "lx0ke05c7OkqxjFJbrhv",
+        "equipment_id": "lx0ke05c7OkqxjFJbrhv",
+        "name": "超低温フリーザー_05 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "glCGKU54H7c5Cyf0zBrx::glCGKU54H7c5Cyf0zBrx",
+        "doc_id": "glCGKU54H7c5Cyf0zBrx",
+        "equipment_id": "glCGKU54H7c5Cyf0zBrx",
+        "name": "旭町ラボ オープンラボスペース 202実験室(D)-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "WlA0bmbv47X9mJB2Gwxu::WlA0bmbv47X9mJB2Gwxu",
+        "doc_id": "WlA0bmbv47X9mJB2Gwxu",
+        "equipment_id": "WlA0bmbv47X9mJB2Gwxu",
+        "name": "旭町ラボ オープンラボスペース 202実験室(D)-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oBZbRVTjPgqVBtH9NUwD::oBZbRVTjPgqVBtH9NUwD",
+        "doc_id": "oBZbRVTjPgqVBtH9NUwD",
+        "equipment_id": "oBZbRVTjPgqVBtH9NUwD",
+        "name": "バイオハザードキャビネット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "NIXVE2g6NsEaSAirdnBF::NIXVE2g6NsEaSAirdnBF",
+        "doc_id": "NIXVE2g6NsEaSAirdnBF",
+        "equipment_id": "NIXVE2g6NsEaSAirdnBF",
+        "name": "ピペット超音波洗浄機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OapC5q5mbHDbYUTzaf4u::OapC5q5mbHDbYUTzaf4u",
+        "doc_id": "OapC5q5mbHDbYUTzaf4u",
+        "equipment_id": "OapC5q5mbHDbYUTzaf4u",
+        "name": "全自動洗浄機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "saCVGNeywsGMt4LcqaYs::saCVGNeywsGMt4LcqaYs",
+        "doc_id": "saCVGNeywsGMt4LcqaYs",
+        "equipment_id": "saCVGNeywsGMt4LcqaYs",
+        "name": "凍結乾燥機 FDU-1200",
+        "papers_count": 0
+      },
+      {
+        "row_key": "cPF0rHf33sWcvm8BhA9H::cPF0rHf33sWcvm8BhA9H",
+        "doc_id": "cPF0rHf33sWcvm8BhA9H",
+        "equipment_id": "cPF0rHf33sWcvm8BhA9H",
+        "name": "凍結乾燥機 PFR-1000",
+        "papers_count": 1
+      },
+      {
+        "row_key": "xOPobDM1Lev73TkjrzXj::xOPobDM1Lev73TkjrzXj",
+        "doc_id": "xOPobDM1Lev73TkjrzXj",
+        "equipment_id": "xOPobDM1Lev73TkjrzXj",
+        "name": "安全キャビネット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aV2IeHdgtEXZpinjH0ub::aV2IeHdgtEXZpinjH0ub",
+        "doc_id": "aV2IeHdgtEXZpinjH0ub",
+        "equipment_id": "aV2IeHdgtEXZpinjH0ub",
+        "name": "横置スクラバー装置",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 13,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T02:02:55.736031+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T02:02:55.854839+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:14.497367+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:19.304370+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:24.037648+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:28.694554+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:34.297669+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:39.530366+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:44.318488+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:48.733204+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:53.187753+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:03:57.465014+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:10:02.909159+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T02:43:59.653092+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:02:30.108657+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 13,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

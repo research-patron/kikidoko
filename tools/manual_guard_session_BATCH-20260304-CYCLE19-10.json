@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE19-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T00:39:49.844790+00:00",
+  "updated_at": "2026-03-04T00:59:54.870758+00:00",
+  "closed_at": "2026-03-04T00:59:54.870758+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle19_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE19-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "3e4e417bdc124f70313284433f1afeaa40cf5f95750f0f4126714b0015100cab",
+    "queue_sha256_at_start": "f3e0555f45369a3bbce50beb349f3393aa6f5455ceeefa514eab42892f125d2d",
+    "queue_row_keys_sha256": "c2ffa1f64a9b5db25833d3dd9c404bb2ecb392282bfc9938e80562b784ea737c"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "VUpFxtxb8tGOGZxByhQC::YAMAGUCHI-ipn225",
+      "AQ2o3gfG0qbxGLic0v8p::YAMAGUCHI-ipn220",
+      "ZoA4sTrZk99lwLHa30Y0::ZoA4sTrZk99lwLHa30Y0",
+      "2DJ72rThxEOT6G0DdgVQ::2DJ72rThxEOT6G0DdgVQ",
+      "2Q10JLabV8BTvcMHiVWK::2Q10JLabV8BTvcMHiVWK",
+      "SLdbPUTdj7OfvOPHxWCT::SLdbPUTdj7OfvOPHxWCT",
+      "Sdfg41GH5LfDu86nPtlt::Sdfg41GH5LfDu86nPtlt",
+      "iDvPQVB8f0FmD8367c2f::iDvPQVB8f0FmD8367c2f",
+      "1eEN9KtZzwfWNVFej9el::1eEN9KtZzwfWNVFej9el",
+      "btrvHxRzUrNiHEY9dLuc::btrvHxRzUrNiHEY9dLuc"
+    ],
+    "target_rows": [
+      {
+        "row_key": "VUpFxtxb8tGOGZxByhQC::YAMAGUCHI-ipn225",
+        "doc_id": "VUpFxtxb8tGOGZxByhQC",
+        "equipment_id": "YAMAGUCHI-ipn225",
+        "name": "細胞破砕装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "AQ2o3gfG0qbxGLic0v8p::YAMAGUCHI-ipn220",
+        "doc_id": "AQ2o3gfG0qbxGLic0v8p",
+        "equipment_id": "YAMAGUCHI-ipn220",
+        "name": "遠心分離機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZoA4sTrZk99lwLHa30Y0::ZoA4sTrZk99lwLHa30Y0",
+        "doc_id": "ZoA4sTrZk99lwLHa30Y0",
+        "equipment_id": "ZoA4sTrZk99lwLHa30Y0",
+        "name": "旭町 209bミーティングルーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2DJ72rThxEOT6G0DdgVQ::2DJ72rThxEOT6G0DdgVQ",
+        "doc_id": "2DJ72rThxEOT6G0DdgVQ",
+        "equipment_id": "2DJ72rThxEOT6G0DdgVQ",
+        "name": "超低温フリーザー_01 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "2Q10JLabV8BTvcMHiVWK::2Q10JLabV8BTvcMHiVWK",
+        "doc_id": "2Q10JLabV8BTvcMHiVWK",
+        "equipment_id": "2Q10JLabV8BTvcMHiVWK",
+        "name": "凍結切片作成装置 Leica CM1860",
+        "papers_count": 1
+      },
+      {
+        "row_key": "SLdbPUTdj7OfvOPHxWCT::SLdbPUTdj7OfvOPHxWCT",
+        "doc_id": "SLdbPUTdj7OfvOPHxWCT",
+        "equipment_id": "SLdbPUTdj7OfvOPHxWCT",
+        "name": "マウス用クリーンラック",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Sdfg41GH5LfDu86nPtlt::Sdfg41GH5LfDu86nPtlt",
+        "doc_id": "Sdfg41GH5LfDu86nPtlt",
+        "equipment_id": "Sdfg41GH5LfDu86nPtlt",
+        "name": "多自由度大変位実験システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "iDvPQVB8f0FmD8367c2f::iDvPQVB8f0FmD8367c2f",
+        "doc_id": "iDvPQVB8f0FmD8367c2f",
+        "equipment_id": "iDvPQVB8f0FmD8367c2f",
+        "name": "大変位2次元振動台",
+        "papers_count": 0
+      },
+      {
+        "row_key": "1eEN9KtZzwfWNVFej9el::1eEN9KtZzwfWNVFej9el",
+        "doc_id": "1eEN9KtZzwfWNVFej9el",
+        "equipment_id": "1eEN9KtZzwfWNVFej9el",
+        "name": "油圧式万能試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "btrvHxRzUrNiHEY9dLuc::btrvHxRzUrNiHEY9dLuc",
+        "doc_id": "btrvHxRzUrNiHEY9dLuc",
+        "equipment_id": "btrvHxRzUrNiHEY9dLuc",
+        "name": "温度可変型高剛性材料試験機",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T00:39:49.844790+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T00:40:06.970515+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T00:57:11.502874+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T00:59:54.870758+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

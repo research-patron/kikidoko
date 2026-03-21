@@ -1,0 +1,1311 @@
+{
+  "generated_at": "2026-03-11T14:57:52.263586+00:00",
+  "batch_id": "BATCH-20260311-CYCLE0018-100",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 100,
+  "family_count": 100,
+  "groups": [
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|単結晶-線構造解析システム|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lswL7geq85x4aKux9VCC",
+          "equipment_id": "HOKUDAI-AP-901942",
+          "name": "単結晶Ｘ線構造解析システム",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Mhe41ZmloumTERRiZoYm",
+          "equipment_id": "Mhe41ZmloumTERRiZoYm",
+          "name": "超低温フリーザー_02 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y8Ui46jeOMsXNX7ANJvd",
+          "equipment_id": "y8Ui46jeOMsXNX7ANJvd",
+          "name": "旭町ラボ オープンラボスペース 202実験室(B)-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JhuK5uDKutHxsgXGBdfu",
+          "equipment_id": "JhuK5uDKutHxsgXGBdfu",
+          "name": "旭町ラボ オープンラボスペース 202実験室(B)-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンブース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "i899HgeDZoCECFD20YU0",
+          "equipment_id": "i899HgeDZoCECFD20YU0",
+          "name": "クリーンブース１",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7fNEKtajWVbSHWjeE4WB",
+          "equipment_id": "7fNEKtajWVbSHWjeE4WB",
+          "name": "バイオトロンB棟-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "MJFAPUitdwYTyEGtctmX",
+          "equipment_id": "MJFAPUitdwYTyEGtctmX",
+          "name": "バイオトロンB棟-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--3|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dmkh3juDOR7NLusxuc8H",
+          "equipment_id": "dmkh3juDOR7NLusxuc8H",
+          "name": "バイオトロンB棟-3",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--4|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "rno2y95IN10lMAJEsg10",
+          "equipment_id": "rno2y95IN10lMAJEsg10",
+          "name": "バイオトロンB棟-4",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 生体分子合成解析|全自動アミノ酸分析機-jlc-500|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "8FflyCOgaGKLMkTC6Zq8",
+          "equipment_id": "8FflyCOgaGKLMkTC6Zq8",
+          "name": "全自動アミノ酸分析機 JLC-500/V",
+          "category_general": "その他",
+          "category_detail": "その他 / 生体分子合成解析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 解析用ソフトウェア|マルチカラーデータ解析ソフトウェア|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XiFUbtyUkn9sFM0FzDIY",
+          "equipment_id": "XiFUbtyUkn9sFM0FzDIY",
+          "name": "マルチカラーデータ解析ソフトウェア(1)",
+          "category_general": "その他",
+          "category_detail": "その他 / 解析用ソフトウェア"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 評価装置|マルチファンクションジェネレーター|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JiTLAwT88xw9ez3r1Swe",
+          "equipment_id": "MIYAZAKI-919",
+          "name": "マルチファンクションジェネレーター",
+          "category_general": "その他",
+          "category_detail": "その他 / 評価装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 質量分析前処理|遠心濃縮機|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Q9ti2E1KI8LB53OxYTkS",
+          "equipment_id": "Q9ti2E1KI8LB53OxYTkS",
+          "name": "遠心濃縮機",
+          "category_general": "その他",
+          "category_detail": "その他 / 質量分析前処理"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 質量分析試料調整|質量分析試料調整システム|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VUqUgidsddSaNDguuSwm",
+          "equipment_id": "VUqUgidsddSaNDguuSwm",
+          "name": "質量分析試料調整システム",
+          "category_general": "その他",
+          "category_detail": "その他 / 質量分析試料調整"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 超純水装置|純水製造装置-elix-essential3-uv|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dS6nWcDJzCDNHxK4HdXW",
+          "equipment_id": "dS6nWcDJzCDNHxK4HdXW",
+          "name": "純水製造装置Elix Essential3/UV",
+          "category_general": "その他",
+          "category_detail": "その他 / 超純水装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 超純水装置|超純水製造装置-simplicity-uv|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5aLFNd3z8RcehNGdNfuf",
+          "equipment_id": "5aLFNd3z8RcehNGdNfuf",
+          "name": "超純水製造装置Simplicity UV",
+          "category_general": "その他",
+          "category_detail": "その他 / 超純水装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 農業・食品関連分析(品質・物性・外観)|rgqi20a-穀粒判別器|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RlgswOOZhyXgUan0fXZU",
+          "equipment_id": "RlgswOOZhyXgUan0fXZU",
+          "name": "穀粒判別器 RGQI20A",
+          "category_general": "その他",
+          "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 農業・食品関連分析(品質・物性・外観)|味認識装置-ts-500zu|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "vTfVJbBYlvIobtuyzXjX",
+          "equipment_id": "vTfVJbBYlvIobtuyzXjX",
+          "name": "味認識装置 TS-500ZU",
+          "category_general": "その他",
+          "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 農業・食品関連分析(品質・物性・外観)|物性測定器-一式-テンシプレッサー|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "tL9iNOnRQY8H2hyxVWgB",
+          "equipment_id": "tL9iNOnRQY8H2hyxVWgB",
+          "name": "物性測定器 一式 ﾃﾝｼﾌﾟﾚｯｻｰ",
+          "category_general": "その他",
+          "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|ハンドパレットトラック|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sBMDkmKaSIJ2PNXDpWbp",
+          "equipment_id": "sBMDkmKaSIJ2PNXDpWbp",
+          "name": "ハンドパレットトラック",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|ハンドリフター-コゾウリフター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TTfvAtX3TovSCl7xp6BY",
+          "equipment_id": "TTfvAtX3TovSCl7xp6BY",
+          "name": "ハンドリフター（コゾウリフター）",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|吊りフック-アーム付きリフター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nDr8L3kPFoycGvDgbvr6",
+          "equipment_id": "nDr8L3kPFoycGvDgbvr6",
+          "name": "吊りフック･アーム付きリフター",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|簡易型クレーン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TkaHlzgtz6JO4HUisJfF",
+          "equipment_id": "TkaHlzgtz6JO4HUisJfF",
+          "name": "簡易型クレーン",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 遺伝子解析|apoe-遺伝型決定|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "78M1gzNGkeDXr7VEBGdW",
+          "equipment_id": "78M1gzNGkeDXr7VEBGdW",
+          "name": "APOE遺伝型決定",
+          "category_general": "その他",
+          "category_detail": "その他 / 遺伝子解析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 電子天秤|ミクロ天秤-ザルトリウス-me5|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TNx5M9qMHWHXuW5E3F8F",
+          "equipment_id": "TNx5M9qMHWHXuW5E3F8F",
+          "name": "ミクロ天秤 ザルトリウス ME5",
+          "category_general": "その他",
+          "category_detail": "その他 / 電子天秤"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|32ch-actichamp|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KMCgHnSgUhx3GkLMiwfn",
+          "equipment_id": "HOKUDAI-AP-901801",
+          "name": "32ch actiCHamp",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|3d-dic-モーション計測|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "otX6yKYsQlc2U3S97SK3",
+          "equipment_id": "HOKUDAI-AP-902138",
+          "name": "3D DIC&モーション計測",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|3d-スキャナ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sbIeozQzj7byGmx7Fjnp",
+          "equipment_id": "HOKUDAI-AP-901973",
+          "name": "3Dスキャナ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|3d-スキャナー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "v1gUy1dPMKKA1NNuS18X",
+          "equipment_id": "HOKUDAI-AP-901952",
+          "name": "3Dスキャナー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|3d-プリンタ-form3|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zbY4qgZK4bjNMYHGepyh",
+          "equipment_id": "HOKUDAI-AP-902155",
+          "name": "3Dプリンタ Form3",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|3d-プリンター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lLja7HkKKqtRvFUj5wuZ",
+          "equipment_id": "HOKUDAI-AP-902164",
+          "name": "3Dプリンター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|750kn-ピン型二分力計|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WnTf94TtQpab4SQ0MauL",
+          "equipment_id": "HOKUDAI-AP-901841",
+          "name": "750kNピン型二分力計",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|amersham-imagequant-fluor|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WF0I8drPxChTLIvteZs3",
+          "equipment_id": "HOKUDAI-AP-902257",
+          "name": "Amersham ImageQuant 800 Fluorシステム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|bragg-edge-用中性子ターゲット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Vlcul0AalGd01n6H0jiC",
+          "equipment_id": "HOKUDAI-AP-900828",
+          "name": "Bragg edge用中性子ターゲット",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|cnc-ヒザ形-nc-フライス盤|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7FOHzKMAnUB6JyouCkVD",
+          "equipment_id": "HOKUDAI-AP-902150",
+          "name": "CNCヒザ形NCフライス盤",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|cnc-普通旋盤|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "o3TDvehQ1gPp3P9DF5aH",
+          "equipment_id": "HOKUDAI-AP-902148",
+          "name": "CNC普通旋盤",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|co2-インキュベーター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YE1HADGkfaHby26B14BD",
+          "equipment_id": "HOKUDAI-AP-901980",
+          "name": "CO2インキュベーター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|d-hand-type-a3h-m1-3j|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "u1X1PfdnEn6EYDy2rMsD",
+          "equipment_id": "HOKUDAI-AP-901959",
+          "name": "D-Hand Type A3H-M1-3J",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|dna-rna-分析用マイクロチップ電気泳動装置|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XdtRp0hMQ2TLRFrt9kpj",
+          "equipment_id": "HOKUDAI-AP-902092",
+          "name": "DNA/RNA分析用マイクロチップ電気泳動装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|dna-rna-合成機|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "cQx30VZh8S81qhrf6pe3",
+          "equipment_id": "HOKUDAI-AP-902208",
+          "name": "DNA/RNA合成機",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|gkr-蒸留ガラスチューブオーブン-100v|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NjB7opC6bLVbtfSpr3va",
+          "equipment_id": "HOKUDAI-AP-901407",
+          "name": "GKR蒸留ガラスチューブオーブン 100V",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|glasscontour-有機溶媒精製装置|other|liquid|separation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dF4X33bQz6u5tujtN80e",
+          "equipment_id": "HOKUDAI-AP-901416",
+          "name": "GlassContour 有機溶媒精製装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|gnss-グロナス-rtk-スタティック受信機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yj2gwRmayjw5mWJE6fiX",
+          "equipment_id": "HOKUDAI-AP-901115",
+          "name": "GNSS・グロナスRTK&スタティック受信機",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|gnss-受信観測装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "x59nHhvgVk019h2lw4AH",
+          "equipment_id": "HOKUDAI-AP-902073",
+          "name": "GNSS受信観測装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|hd-カメラシステム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "994NDw7YqPbh9HXid1DP",
+          "equipment_id": "HOKUDAI-AP-901710",
+          "name": "HDカメラシステム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|high-power-キセノン光源|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gxftWapiwcn80fSYda2z",
+          "equipment_id": "HOKUDAI-AP-901296",
+          "name": "High Powerキセノン光源",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|immunospot-s6-macro|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LVSA2Dfw3IEBgWrF6oye",
+          "equipment_id": "HOKUDAI-AP-902245",
+          "name": "ImmunoSpot S6 MACRO Analyzer",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|in-vitro-vivo-遺伝子導入装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fugu07L4UeWGxoWiVEes",
+          "equipment_id": "HOKUDAI-AP-902229",
+          "name": "In Vitro & In Vivo 遺伝子導入装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|invivo2-低酸素ワークステーション|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "tG21yZZDhF45lZhQEzGZ",
+          "equipment_id": "HOKUDAI-AP-901112",
+          "name": "INVIVO2 低酸素ワークステーション 300",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|led-光照射装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yxF6BVAZ1CAlFxJbsj1n",
+          "equipment_id": "HOKUDAI-AP-901304",
+          "name": "LED光照射装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|mbr-実験装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "i0Pq9CwZdxKZHYuQ1NMb",
+          "equipment_id": "HOKUDAI-AP-900822",
+          "name": "MBR実験装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|mex-方式-3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "bHdRTjgTZ7eWrQA00Ejd",
+          "equipment_id": "HOKUDAI-AP-901854",
+          "name": "MEX方式3Dプリンタ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|mt-観測装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "UqiLftdnDAReIQLVyxd1",
+          "equipment_id": "HOKUDAI-AP-901345",
+          "name": "MT観測装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|nucleofector-tm-2b|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l9JimqYJwMgYKO7SL8Es",
+          "equipment_id": "HOKUDAI-AP-902230",
+          "name": "Nucleofector(TM) 2b Device",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|pam-2500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OAKDtGP8660BvXJUMMcH",
+          "equipment_id": "HOKUDAI-AP-902057",
+          "name": "PAM-2500",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|promethion-p2-solo-capex|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "N5gd4MWiGNawYM6fUTHE",
+          "equipment_id": "HOKUDAI-AP-902276",
+          "name": "Promethion P2 solo CapEX",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|rc-xanadu-storage-12bays|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "bFpZiGKFhwYwtccYOqL2",
+          "equipment_id": "HOKUDAI-AP-902167",
+          "name": "RC Xanadu Storage 12bays",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|s1000-1852138ja-with-384well|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "DgVXXYqm3xzRF5sqJN1i",
+          "equipment_id": "HOKUDAI-AP-902127",
+          "name": "1852138JA S1000 WITH 384WELL",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|sla-光造形-3d-プリンター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TnIpRpbhRmgyLHWElK1H",
+          "equipment_id": "HOKUDAI-AP-901850",
+          "name": "SLA光造形3Dプリンター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|thermal-cycler-simpliamp|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "IICo0TdRSYRiGhj2Gssa",
+          "equipment_id": "HOKUDAI-AP-902265",
+          "name": "Thermal Cycler SimpliAmp",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|tobii-pro-フュージョン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wNEN1InjRracqmlcnCmq",
+          "equipment_id": "HOKUDAI-AP-901802",
+          "name": "Tobii Proフュージョン",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|uc-リアクター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "c9vMWBGnx4JkALDEfwI4",
+          "equipment_id": "HOKUDAI-AP-901551",
+          "name": "UCリアクター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|uv-led-照射器スポット型|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fWAmfteVgJTZGLkkswfa",
+          "equipment_id": "HOKUDAI-AP-901562",
+          "name": "UV-LED照射器スポット型",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|uv-パルスレーザーシステム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Z94A7RIggvNqKgoGBl66",
+          "equipment_id": "HOKUDAI-AP-901085",
+          "name": "UVパルスレーザーシステム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|アイトラッカー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "X5irZ5FTgTb6cDkhoQza",
+          "equipment_id": "HOKUDAI-AP-902131",
+          "name": "アイトラッカー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|アドワンファーム水耕栽培装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wvwD0irPfETQNr389Kkq",
+          "equipment_id": "HOKUDAI-AP-901874",
+          "name": "アドワンファーム水耕栽培装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|イメージングサイトメーター|other|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LNFpzFIYnDoDpHhxw7Xu",
+          "equipment_id": "HOKUDAI-AP-902252",
+          "name": "イメージングサイトメーター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|インクジェット式ナノリットルスポッター-biospot-3|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "vaZuoq4EiUyNX8sKfYXJ",
+          "equipment_id": "HOKUDAI-AP-902260",
+          "name": "インクジェット式ナノリットルスポッター BioSpot-3",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ウルトラファインバブル発生装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "a8IP0Rdr9PuEt4HtAmX1",
+          "equipment_id": "HOKUDAI-AP-901565",
+          "name": "ウルトラファインバブル発生装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|エアーサンプラー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "O4K1kikpm0ixFTDp6X7r",
+          "equipment_id": "HOKUDAI-AP-901938",
+          "name": "エアーサンプラー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|エネルギー弁別-位置検出型-線計測装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "v1wrRcMztVKOg7sg9gnp",
+          "equipment_id": "HOKUDAI-AP-900830",
+          "name": "エネルギー弁別・位置検出型α線計測装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|カールフィッシャー水分計|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "onijciodR9Vbnkc8cxl5",
+          "equipment_id": "HOKUDAI-AP-901531",
+          "name": "カールフィッシャー水分計",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ガラスナイフメーカー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AFwa2DBKrz00HF5iR4Vo",
+          "equipment_id": "HOKUDAI-AP-901738",
+          "name": "ガラスナイフメーカー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ガンマ線スペクトロメータ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Vp0AuCbHBOnIJrzbMcB4",
+          "equipment_id": "HOKUDAI-AP-901809",
+          "name": "ガンマ線スペクトロメータ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|クリスタルカッター-neopro|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "IRnByvdV59MYot6s6khR",
+          "equipment_id": "HOKUDAI-AP-900796",
+          "name": "クリスタルカッターNeoPro",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|クロロフィル測定装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "8cx0KgvpyiNCzCYNeCAO",
+          "equipment_id": "HOKUDAI-AP-902047",
+          "name": "クロロフィル測定装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|コンクリート曲げ試験治具|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "i2c5gUsYfb1IsbNjnSJL",
+          "equipment_id": "HOKUDAI-AP-901881",
+          "name": "コンクリート曲げ試験治具",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|コンクリート用-点曲げ試験治具|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "A7MWtDQpwHGFTUhqtnjb",
+          "equipment_id": "HOKUDAI-AP-901896",
+          "name": "コンクリート用4点曲げ試験治具",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|コンピュータベースレーザー血流計-flo-lab2ch|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "3wTkQ6yZUDN5Xv7kUWTi",
+          "equipment_id": "HOKUDAI-AP-901865",
+          "name": "コンピュータベースレーザー血流計 FLO-Lab2ch",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|サーミスタチェーン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dZ9cU7Xj04tMeM6yYyfp",
+          "equipment_id": "HOKUDAI-AP-902069",
+          "name": "サーミスタチェーン",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|シングルモノクロメータ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NszDSEr9igpZXJFzBlIu",
+          "equipment_id": "HOKUDAI-AP-901317",
+          "name": "シングルモノクロメータ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|デジタルオシロスコープ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "umrWdC35NEeqTyIMmqHg",
+          "equipment_id": "HOKUDAI-AP-901852",
+          "name": "デジタルオシロスコープ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|デジタルサイドスキャンソナー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KFyF4KsusCOLKjNJMlwS",
+          "equipment_id": "HOKUDAI-AP-902065",
+          "name": "デジタルサイドスキャンソナー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|デジタルマイクロスコープ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nM8BJB8t4TN2H9mebGe4",
+          "equipment_id": "HOKUDAI-AP-900846",
+          "name": "デジタルマイクロスコープ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|デジタル旋光計|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "0UdVbsC9nh64iXRUFZW7",
+          "equipment_id": "HOKUDAI-AP-902005",
+          "name": "デジタル旋光計",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ハイボリウムエアサンプラー-hv-rw-粉じんセット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gja8bj3mwQz0W0FlsL8u",
+          "equipment_id": "HOKUDAI-AP-902087",
+          "name": "ハイボリウムエアサンプラー HV-RW 粉じんセット",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ハイボリウムサンプラ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nvZYEjPbZg1VQlrZQuJU",
+          "equipment_id": "HOKUDAI-AP-902085",
+          "name": "ハイボリウムサンプラ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ヒュームコレクター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "p1Ec0iv8Qvxy0jPJCqlk",
+          "equipment_id": "HOKUDAI-AP-902140",
+          "name": "ヒュームコレクター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ヒラヤマ高圧蒸気滅菌器|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zqMIPZukPhnebNuXgYdq",
+          "equipment_id": "HOKUDAI-AP-901734",
+          "name": "ヒラヤマ高圧蒸気滅菌器",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ビーズ式ホモジナイザー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NuKtVtILqfLhdljeDWuM",
+          "equipment_id": "HOKUDAI-AP-901346",
+          "name": "ビーズ式ホモジナイザー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|ファイバー縫い付け機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Cl8B299SWQ5qwShXrRWX",
+          "equipment_id": "HOKUDAI-AP-900823",
+          "name": "ファイバー縫い付け機",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|フラッシュ自動精製システム|other|other|separation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sD7awrsVJpNHKyknxOEi",
+          "equipment_id": "HOKUDAI-AP-901342",
+          "name": "フラッシュ自動精製システム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|フラッシュ自動精製装置|other|other|separation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "F4pSHEFYIXBfjPNRoDhd",
+          "equipment_id": "HOKUDAI-AP-901558",
+          "name": "フラッシュ自動精製装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|フレークアイスメーカー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dSA9D7hR3GfZjAEFP6BY",
+          "equipment_id": "HOKUDAI-AP-901672",
+          "name": "フレークアイスメーカー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|フロー式光反応システム|other|other|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "uATFODGJwdWfYfAiARNY",
+          "equipment_id": "HOKUDAI-AP-901420",
+          "name": "フロー式光反応システム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|プラント-キャノピー-アナライザー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HD13mEXT6x4rwc9AFS5A",
+          "equipment_id": "HOKUDAI-AP-902112",
+          "name": "プラント･キャノピー･アナライザー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|プレートリーダー解析ソフトシステム|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "cmgog5p6MNwQ989SvxZd",
+          "equipment_id": "HOKUDAI-AP-902242",
+          "name": "プレートリーダー解析ソフトシステム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|プログラマブル-ダイヤモンドソー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zKWIZRWSV82Gi9ehIFxw",
+          "equipment_id": "HOKUDAI-AP-901905",
+          "name": "プログラマブル・ダイヤモンドソー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|マイクロウェーブ合成装置|other|other|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XoKD5GU4Fl2zghPqzs0v",
+          "equipment_id": "HOKUDAI-AP-901561",
+          "name": "マイクロウェーブ合成装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|マイクロピペットプラー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "4D0s3XJZpE8QDzasu8rR",
+          "equipment_id": "HOKUDAI-AP-901356",
+          "name": "マイクロピペットプラー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 8828
+}

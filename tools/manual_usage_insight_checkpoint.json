@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-02-26T09:03:20.425663+00:00",
+  "processed_keys_this_run": 10,
+  "processed_papers_this_run": 10,
+  "done": 2170,
+  "remaining": 12,
+  "needs_manual_fix": 0,
+  "batch_size": 10,
+  "process_all": false,
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_usage_insight_queue.jsonl"
+}

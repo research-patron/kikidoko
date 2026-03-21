@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-03-02T11:25:12.500296+00:00",
+  "count_target": 1,
+  "count_processed": 1,
+  "checkpoint_done_before": 24,
+  "checkpoint_done_after": 25,
+  "checkpoint_done_delta": 1,
+  "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_1000.jsonl",
+  "checkpoint": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_beginner_1000.json",
+  "timing_log": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+  "hundred_audit_report": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_gate_1.json",
+  "items": [
+    {
+      "index": 1,
+      "doc_id": "TOKUSHIMA-6",
+      "equipment_id": "TOKUSHIMA-6",
+      "papers_count": 0,
+      "name": "3Dプリンタ",
+      "beginner_non_ws_chars": 1626,
+      "elapsed_sec": 180,
+      "validate_status": "PASS",
+      "audit_status": "PASS",
+      "validate_report": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/validate_single_article_001.json",
+      "audit_report": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_single_001.json"
+    }
+  ]
+}

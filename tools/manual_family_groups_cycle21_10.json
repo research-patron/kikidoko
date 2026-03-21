@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T01:29:45.183418+00:00",
+  "batch_id": "BATCH-20260304-CYCLE21-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2tQSyysW5GzUbZBLqC9k",
+          "equipment_id": "2tQSyysW5GzUbZBLqC9k",
+          "name": "超低温フリーザー_03 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y8Ui46jeOMsXNX7ANJvd",
+          "equipment_id": "y8Ui46jeOMsXNX7ANJvd",
+          "name": "旭町ラボ オープンラボスペース 202実験室(B)-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JhuK5uDKutHxsgXGBdfu",
+          "equipment_id": "JhuK5uDKutHxsgXGBdfu",
+          "name": "旭町ラボ オープンラボスペース 202実験室(B)-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|薬用冷蔵ショーケース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "miPx7EkVYWQ78f5x68R7",
+          "equipment_id": "miPx7EkVYWQ78f5x68R7",
+          "name": "薬用冷蔵ショーケース",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|超低温フリーザー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l2HJN64fqQChnWfoaTJG",
+          "equipment_id": "l2HJN64fqQChnWfoaTJG",
+          "name": "超低温フリーザー",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|防爆冷蔵庫-冷凍冷蔵庫|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9eSY5IK3fbCmWeQla3fa",
+          "equipment_id": "9eSY5IK3fbCmWeQla3fa",
+          "name": "防爆冷蔵庫・冷凍冷蔵庫",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室|グローブボックス|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "uc0RgupmsYy6irEL39vM",
+          "equipment_id": "uc0RgupmsYy6irEL39vM",
+          "name": "グローブボックス",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室|低温室|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wwYQXEdh4ar4GR6rbLS5",
+          "equipment_id": "wwYQXEdh4ar4GR6rbLS5",
+          "name": "低温室",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンブース-クリーンルーム本体|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2cLWDy0mMN4LEBAoqoqJ",
+          "equipment_id": "2cLWDy0mMN4LEBAoqoqJ",
+          "name": "クリーンブース（クリーンルーム本体）",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンブース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "j9bpd8SFpW0QNCPpvuij",
+          "equipment_id": "j9bpd8SFpW0QNCPpvuij",
+          "name": "クリーンブース",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9265
+}

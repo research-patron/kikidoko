@@ -1,0 +1,159 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE16-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T23:04:58.152712+00:00",
+  "updated_at": "2026-03-03T23:33:32.312612+00:00",
+  "closed_at": "2026-03-03T23:33:32.312612+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle16_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE16-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "a89795fbc4314a8f5fef70b9a5e093c5117ced5b6444629427b4ddf6420ef397",
+    "queue_sha256_at_start": "8bfa6ad6eedb22a2f2d1818990ff0a75ae33c01eae1465fe1f2f82fb3be16da0",
+    "queue_row_keys_sha256": "810488eaef374fe0646af303f6fe67990384c3fc1cb72d473ae9f0c9466eea2e"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "lswL7geq85x4aKux9VCC::HOKUDAI-AP-901942",
+      "T1HyPeqRixFBGMReRyXM::HOKUDAI-AP-902089",
+      "Hh91Qi646KaUQ0imZzHL::MIE-equipment3",
+      "Bnlyh5Lz5UQhB2LsYHRz::MIE-equipment10",
+      "JKJelUiKor4fkn6WYRYB::MIE-equipment11",
+      "BXrqEOb2zFpIEAm7J7ty::HOKUDAI-AP-100408",
+      "5R9ZyIGax9YgQrR6szFA::5R9ZyIGax9YgQrR6szFA",
+      "Rmj07jyIRebIomXmvrsj::Rmj07jyIRebIomXmvrsj",
+      "GLcjahOYdUXA1kKPr3Ky::GLcjahOYdUXA1kKPr3Ky",
+      "G3YKY3YDI8vRloTzaVGB::G3YKY3YDI8vRloTzaVGB"
+    ],
+    "target_rows": [
+      {
+        "row_key": "lswL7geq85x4aKux9VCC::HOKUDAI-AP-901942",
+        "doc_id": "lswL7geq85x4aKux9VCC",
+        "equipment_id": "HOKUDAI-AP-901942",
+        "name": "単結晶Ｘ線構造解析システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "T1HyPeqRixFBGMReRyXM::HOKUDAI-AP-902089",
+        "doc_id": "T1HyPeqRixFBGMReRyXM",
+        "equipment_id": "HOKUDAI-AP-902089",
+        "name": "走査電子顕微鏡システム及び粒子解析システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Hh91Qi646KaUQ0imZzHL::MIE-equipment3",
+        "doc_id": "Hh91Qi646KaUQ0imZzHL",
+        "equipment_id": "MIE-equipment3",
+        "name": "試料水平型多目的X線回折測定装置（XRD）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Bnlyh5Lz5UQhB2LsYHRz::MIE-equipment10",
+        "doc_id": "Bnlyh5Lz5UQhB2LsYHRz",
+        "equipment_id": "MIE-equipment10",
+        "name": "走査型X線光電子分光分析装置 （多モードトポ解析システム/XPS）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "JKJelUiKor4fkn6WYRYB::MIE-equipment11",
+        "doc_id": "JKJelUiKor4fkn6WYRYB",
+        "equipment_id": "MIE-equipment11",
+        "name": "電子線マイクロアナライザ （多モードトポ解析システム/EPMA)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "BXrqEOb2zFpIEAm7J7ty::HOKUDAI-AP-100408",
+        "doc_id": "BXrqEOb2zFpIEAm7J7ty",
+        "equipment_id": "HOKUDAI-AP-100408",
+        "name": "レーザーアブレーション-レーザー誘起ブレークダウン分光-誘導結合プラズマ質量分析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5R9ZyIGax9YgQrR6szFA::5R9ZyIGax9YgQrR6szFA",
+        "doc_id": "5R9ZyIGax9YgQrR6szFA",
+        "equipment_id": "5R9ZyIGax9YgQrR6szFA",
+        "name": "物理特性測定システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Rmj07jyIRebIomXmvrsj::Rmj07jyIRebIomXmvrsj",
+        "doc_id": "Rmj07jyIRebIomXmvrsj",
+        "equipment_id": "Rmj07jyIRebIomXmvrsj",
+        "name": "移動式集塵機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "GLcjahOYdUXA1kKPr3Ky::GLcjahOYdUXA1kKPr3Ky",
+        "doc_id": "GLcjahOYdUXA1kKPr3Ky",
+        "equipment_id": "GLcjahOYdUXA1kKPr3Ky",
+        "name": "超音波発生機 トミー精工UD-201",
+        "papers_count": 0
+      },
+      {
+        "row_key": "G3YKY3YDI8vRloTzaVGB::G3YKY3YDI8vRloTzaVGB",
+        "doc_id": "G3YKY3YDI8vRloTzaVGB",
+        "equipment_id": "G3YKY3YDI8vRloTzaVGB",
+        "name": "フローサイトメーター FACSCalibur HG",
+        "papers_count": 1
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T23:04:58.152712+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T23:04:58.264285+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T23:28:46.743371+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T23:29:14.874850+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T23:33:32.312612+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

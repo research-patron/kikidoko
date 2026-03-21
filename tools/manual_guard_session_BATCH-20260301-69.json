@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-69",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T03:17:25.334079+00:00",
+  "updated_at": "2026-03-01T03:18:56.976414+00:00",
+  "closed_at": "2026-03-01T03:18:56.976414+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch69.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-69.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "91acf956641455b4743a0c3d2c84b5a6d543d4cd5d7896820cc8820be96c8c65",
+    "queue_sha256_at_start": "a7dc467ceaa4671fcc17d80cd79e7ee2d4ba85c9a23a759a83feea779fc3eef0",
+    "queue_row_keys_sha256": "c8800d1531c526852b43d79f688a81ef16cbd1dfebf03a27baac6f04c09aca56"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "G5FTj1jIrNHRP4V2Ubgg::G5FTj1jIrNHRP4V2Ubgg",
+      "pkzb2saTlO4IwO0hP7sj::pkzb2saTlO4IwO0hP7sj",
+      "ebbkyu2UpbnyWto5EE3u::ebbkyu2UpbnyWto5EE3u",
+      "K5itvk4ebdgMwqF3xixS::K5itvk4ebdgMwqF3xixS",
+      "3ewIkcYJb9W1s3vBL5fN::3ewIkcYJb9W1s3vBL5fN",
+      "Ii05WKaBWi6Roq6I8W5u::Ii05WKaBWi6Roq6I8W5u",
+      "P0z6OybzgTlOBBtzb1Yl::P0z6OybzgTlOBBtzb1Yl",
+      "dNqN4fIHzgzRLfsNuPnI::dNqN4fIHzgzRLfsNuPnI",
+      "XEBf1egyFKbGxuAzTj9R::XEBf1egyFKbGxuAzTj9R",
+      "Hg6e042OluIX0KlukpSS::Hg6e042OluIX0KlukpSS",
+      "CfT7MeYJGySnjn8DOMqv::CfT7MeYJGySnjn8DOMqv",
+      "wrg9KujHHG1RCIiHRACi::wrg9KujHHG1RCIiHRACi",
+      "hsHKyawYPWtodr18tR6s::hsHKyawYPWtodr18tR6s",
+      "NRvKc0EASwoPtF0d7Sa1::NRvKc0EASwoPtF0d7Sa1",
+      "QU0Hm2DlEokM5DcvfXh2::QU0Hm2DlEokM5DcvfXh2",
+      "oWwNqeOg32Ug3AT0xbXH::oWwNqeOg32Ug3AT0xbXH",
+      "88YPpg3uba96ejqV9Rmv::88YPpg3uba96ejqV9Rmv",
+      "sMKiiKvPvHolfmWFPYSd::sMKiiKvPvHolfmWFPYSd",
+      "w0ehvcMB2rTtBuFqdaRa::w0ehvcMB2rTtBuFqdaRa",
+      "dF4X33bQz6u5tujtN80e::dF4X33bQz6u5tujtN80e",
+      "KUoqMIyQC6F0sDOEmIqd::KUoqMIyQC6F0sDOEmIqd",
+      "dP60IdaOXTT2dwx6RbA7::dP60IdaOXTT2dwx6RbA7",
+      "fwWT6DvUG2RaDv9jP6iQ::fwWT6DvUG2RaDv9jP6iQ",
+      "bFTYTmOVR2cGKdxzeqiw::bFTYTmOVR2cGKdxzeqiw",
+      "HzGpAglqK58rjUfBngpx::HzGpAglqK58rjUfBngpx",
+      "rz76JbURFELCzTEsbd0V::rz76JbURFELCzTEsbd0V",
+      "vTq417Ojfn4eFLzSqk32::vTq417Ojfn4eFLzSqk32",
+      "xq1KSj2Qss2kYbm2a5Mo::xq1KSj2Qss2kYbm2a5Mo",
+      "df7sk6MBYlbqGboDV9Oy::df7sk6MBYlbqGboDV9Oy",
+      "9RIxrmkYIHBlKD970lgL::9RIxrmkYIHBlKD970lgL",
+      "uPkS5Cy5GpCa58MJIRkL::uPkS5Cy5GpCa58MJIRkL",
+      "xLNhd4g66PJFYrqvbQsh::xLNhd4g66PJFYrqvbQsh",
+      "aZZ7pxzGoSWKZZcz4VOf::aZZ7pxzGoSWKZZcz4VOf",
+      "7iAAV7kOptTZMdzbwnX9::7iAAV7kOptTZMdzbwnX9",
+      "Se6P3mVFUvFUZYSnXxVW::Se6P3mVFUvFUZYSnXxVW",
+      "iOrE0qALvSQ9gWX0xUjN::iOrE0qALvSQ9gWX0xUjN",
+      "BPOy6qwQfhNZgqeUIAZg::BPOy6qwQfhNZgqeUIAZg",
+      "jsY46xoYzcpW1TVDlhGX::jsY46xoYzcpW1TVDlhGX",
+      "Z94A7RIggvNqKgoGBl66::Z94A7RIggvNqKgoGBl66",
+      "dFWPz7zDzlICADHdG59B::dFWPz7zDzlICADHdG59B",
+      "CNnsoKHhURc1qdutlSaU::CNnsoKHhURc1qdutlSaU",
+      "Im9coFWCeRXX42i31IUU::Im9coFWCeRXX42i31IUU",
+      "kaT2f0TznbqrkNM5b5cB::kaT2f0TznbqrkNM5b5cB",
+      "j1V064WhxkrjT6UuI5NV::j1V064WhxkrjT6UuI5NV",
+      "xsYA1TO5MJsdLlMosIAo::xsYA1TO5MJsdLlMosIAo",
+      "7YCOKEUYO3QYPDCcemyN::7YCOKEUYO3QYPDCcemyN",
+      "jghsGuSmjWIMGoFRTRJW::jghsGuSmjWIMGoFRTRJW",
+      "XjAckR3r2zJKD00KzJJH::XjAckR3r2zJKD00KzJJH",
+      "vQKfErGTkXaV042jo5QN::vQKfErGTkXaV042jo5QN",
+      "EAeOAktU8gRAGSlGJDgC::EAeOAktU8gRAGSlGJDgC",
+      "ZyBY4Eyc7CpYbiY5ZGQZ::ZyBY4Eyc7CpYbiY5ZGQZ",
+      "qXoLmONy158Ic8dmtjYq::qXoLmONy158Ic8dmtjYq",
+      "URpI8AN2k7Pw3pi2tcLn::URpI8AN2k7Pw3pi2tcLn",
+      "pA4Eq3haWUau0ML2vpOD::pA4Eq3haWUau0ML2vpOD",
+      "qAkABkKOJdBOMFyiEmi7::qAkABkKOJdBOMFyiEmi7",
+      "zao9Y6CwKr0RLflzGrdY::zao9Y6CwKr0RLflzGrdY",
+      "qUbPF1EbYMrfrX8TXmq8::qUbPF1EbYMrfrX8TXmq8",
+      "B6J9Bkr2E65eX5hQ2hml::B6J9Bkr2E65eX5hQ2hml",
+      "jTwENQIOrB2rmILgPBFJ::jTwENQIOrB2rmILgPBFJ",
+      "hchHA3H6Eh6rpA6tTcuO::hchHA3H6Eh6rpA6tTcuO",
+      "jGUpNRNN5e00x7FY4B4C::jGUpNRNN5e00x7FY4B4C",
+      "9ABc9zR80Qxrl20qzXA1::9ABc9zR80Qxrl20qzXA1",
+      "6adHDUMEtgCEnj47b1xV::6adHDUMEtgCEnj47b1xV",
+      "XFesJ1xpS9tV8b0Xwv1h::XFesJ1xpS9tV8b0Xwv1h",
+      "CV5ennH72h6MwxB79Zy0::CV5ennH72h6MwxB79Zy0",
+      "gOJoqPu5bZ0PiRrOkUUW::gOJoqPu5bZ0PiRrOkUUW",
+      "Vnijzb3pSduQrFPfECor::Vnijzb3pSduQrFPfECor",
+      "slRYPcbvRSjs8WAeSb6t::slRYPcbvRSjs8WAeSb6t",
+      "qsrUd0izXz0PLaiBoJbW::qsrUd0izXz0PLaiBoJbW",
+      "emHx8YWMdYAwuLpiSeXB::emHx8YWMdYAwuLpiSeXB",
+      "VM9cspeOny6cNlyTnW3X::VM9cspeOny6cNlyTnW3X",
+      "Bl587vZRKdMkqyELetCb::Bl587vZRKdMkqyELetCb",
+      "baLlV0eAAOJNz13nZ2p8::baLlV0eAAOJNz13nZ2p8",
+      "6K7XyrP7K9CBNxBTpz2U::6K7XyrP7K9CBNxBTpz2U",
+      "eO8id7aknORv0xbYMofm::eO8id7aknORv0xbYMofm",
+      "G3vGWN2qpapY51V0eMqD::G3vGWN2qpapY51V0eMqD",
+      "waWB5vcAc7y16Yi0kOCc::waWB5vcAc7y16Yi0kOCc",
+      "pCh6vsuHnUhk6ZdhhB4r::pCh6vsuHnUhk6ZdhhB4r",
+      "kLvEikj8nINNypeLIFlG::kLvEikj8nINNypeLIFlG",
+      "Hv3BtFQZxnZcNbTZWNbX::Hv3BtFQZxnZcNbTZWNbX",
+      "N83fP4krFBDuOgsBBREO::N83fP4krFBDuOgsBBREO",
+      "jgVxtjV6vis0ranm1YFc::jgVxtjV6vis0ranm1YFc",
+      "sajdAOLFgaG3KEqnd69B::sajdAOLFgaG3KEqnd69B",
+      "yZSnAHCSq7XRgMKex44R::yZSnAHCSq7XRgMKex44R",
+      "oat2vPs9mkQcEzbiZtPn::oat2vPs9mkQcEzbiZtPn",
+      "ujbJTilwXkSCrGpCbkqA::ujbJTilwXkSCrGpCbkqA",
+      "WWzugOmND5cPHUEqVST9::WWzugOmND5cPHUEqVST9",
+      "x5QhhROfcKY20o89cMZn::x5QhhROfcKY20o89cMZn",
+      "jOAnC9mamF7lpZR4oBik::jOAnC9mamF7lpZR4oBik",
+      "jv4C5HqyyaORIHAX7cNC::jv4C5HqyyaORIHAX7cNC",
+      "mt7vtQ3YTtLFkH8KHsro::mt7vtQ3YTtLFkH8KHsro",
+      "aqfjwZmYRrJDso2sg9sn::aqfjwZmYRrJDso2sg9sn",
+      "HXYmulhMdpMZAgJcX7uG::HXYmulhMdpMZAgJcX7uG",
+      "97PnkPbfv0mXQoZCBvlN::97PnkPbfv0mXQoZCBvlN",
+      "idNDfMLxKd1im2bNTg1n::idNDfMLxKd1im2bNTg1n",
+      "iJnHVVETcC90MQfJFdzy::iJnHVVETcC90MQfJFdzy",
+      "VNtmLTXVJUUIbcLTJ7HO::VNtmLTXVJUUIbcLTJ7HO",
+      "26s6Hn9skJl8T1KvP7t0::26s6Hn9skJl8T1KvP7t0",
+      "QNIbtVaXe6a80BdqMdck::QNIbtVaXe6a80BdqMdck",
+      "QLN060wBgSxoHdyXwOH6::QLN060wBgSxoHdyXwOH6"
+    ],
+    "target_rows": [
+      {
+        "row_key": "G5FTj1jIrNHRP4V2Ubgg::G5FTj1jIrNHRP4V2Ubgg",
+        "doc_id": "G5FTj1jIrNHRP4V2Ubgg",
+        "equipment_id": "G5FTj1jIrNHRP4V2Ubgg",
+        "name": "ABS樹脂3Dプリンター（熱溶解積層法造形）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "pkzb2saTlO4IwO0hP7sj::pkzb2saTlO4IwO0hP7sj",
+        "doc_id": "pkzb2saTlO4IwO0hP7sj",
+        "equipment_id": "pkzb2saTlO4IwO0hP7sj",
+        "name": "AFC qEVオートマチックフラクションコレクター",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ebbkyu2UpbnyWto5EE3u::ebbkyu2UpbnyWto5EE3u",
+        "doc_id": "ebbkyu2UpbnyWto5EE3u",
+        "equipment_id": "ebbkyu2UpbnyWto5EE3u",
+        "name": "ARVO X4 システム 2030-0040J",
+        "papers_count": 2
+      },
+      {
+        "row_key": "K5itvk4ebdgMwqF3xixS::K5itvk4ebdgMwqF3xixS",
+        "doc_id": "K5itvk4ebdgMwqF3xixS",
+        "equipment_id": "K5itvk4ebdgMwqF3xixS",
+        "name": "Agilent社2100バイオアナライザー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "3ewIkcYJb9W1s3vBL5fN::3ewIkcYJb9W1s3vBL5fN",
+        "doc_id": "3ewIkcYJb9W1s3vBL5fN",
+        "equipment_id": "3ewIkcYJb9W1s3vBL5fN",
+        "name": "BIN 電源",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Ii05WKaBWi6Roq6I8W5u::Ii05WKaBWi6Roq6I8W5u",
+        "doc_id": "Ii05WKaBWi6Roq6I8W5u",
+        "equipment_id": "Ii05WKaBWi6Roq6I8W5u",
+        "name": "BIN電源",
+        "papers_count": 2
+      },
+      {
+        "row_key": "P0z6OybzgTlOBBtzb1Yl::P0z6OybzgTlOBBtzb1Yl",
+        "doc_id": "P0z6OybzgTlOBBtzb1Yl",
+        "equipment_id": "P0z6OybzgTlOBBtzb1Yl",
+        "name": "CNC旋盤",
+        "papers_count": 2
+      },
+      {
+        "row_key": "dNqN4fIHzgzRLfsNuPnI::dNqN4fIHzgzRLfsNuPnI",
+        "doc_id": "dNqN4fIHzgzRLfsNuPnI",
+        "equipment_id": "dNqN4fIHzgzRLfsNuPnI",
+        "name": "CellDrop BF-UNLTD 明視野 自動セルカウンター",
+        "papers_count": 2
+      },
+      {
+        "row_key": "XEBf1egyFKbGxuAzTj9R::XEBf1egyFKbGxuAzTj9R",
+        "doc_id": "XEBf1egyFKbGxuAzTj9R",
+        "equipment_id": "XEBf1egyFKbGxuAzTj9R",
+        "name": "Countess 3 自動セルカウンター",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Hg6e042OluIX0KlukpSS::Hg6e042OluIX0KlukpSS",
+        "doc_id": "Hg6e042OluIX0KlukpSS",
+        "equipment_id": "Hg6e042OluIX0KlukpSS",
+        "name": "DNA Shearing System Covaris S220",
+        "papers_count": 2
+      },
+      {
+        "row_key": "CfT7MeYJGySnjn8DOMqv::CfT7MeYJGySnjn8DOMqv",
+        "doc_id": "CfT7MeYJGySnjn8DOMqv",
+        "equipment_id": "CfT7MeYJGySnjn8DOMqv",
+        "name": "DNA/RNA分析用マイクロチップ電気泳動装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "wrg9KujHHG1RCIiHRACi::wrg9KujHHG1RCIiHRACi",
+        "doc_id": "wrg9KujHHG1RCIiHRACi",
+        "equipment_id": "wrg9KujHHG1RCIiHRACi",
+        "name": "DNP固体 600MHz JEOL",
+        "papers_count": 2
+      },
+      {
+        "row_key": "hsHKyawYPWtodr18tR6s::hsHKyawYPWtodr18tR6s",
+        "doc_id": "hsHKyawYPWtodr18tR6s",
+        "equipment_id": "hsHKyawYPWtodr18tR6s",
+        "name": "DNP固体 700MHz JEOL",
+        "papers_count": 2
+      },
+      {
+        "row_key": "NRvKc0EASwoPtF0d7Sa1::NRvKc0EASwoPtF0d7Sa1",
+        "doc_id": "NRvKc0EASwoPtF0d7Sa1",
+        "equipment_id": "NRvKc0EASwoPtF0d7Sa1",
+        "name": "Digital PCR System QuantStudio Absolute Q",
+        "papers_count": 2
+      },
+      {
+        "row_key": "QU0Hm2DlEokM5DcvfXh2::QU0Hm2DlEokM5DcvfXh2",
+        "doc_id": "QU0Hm2DlEokM5DcvfXh2",
+        "equipment_id": "QU0Hm2DlEokM5DcvfXh2",
+        "name": "ESI TOF型質量分析装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "oWwNqeOg32Ug3AT0xbXH::oWwNqeOg32Ug3AT0xbXH",
+        "doc_id": "oWwNqeOg32Ug3AT0xbXH",
+        "equipment_id": "oWwNqeOg32Ug3AT0xbXH",
+        "name": "F-7000蛍光分光光度計PCバージョンアップ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "88YPpg3uba96ejqV9Rmv::88YPpg3uba96ejqV9Rmv",
+        "doc_id": "88YPpg3uba96ejqV9Rmv",
+        "equipment_id": "88YPpg3uba96ejqV9Rmv",
+        "name": "FACS機器作業サポート等料金",
+        "papers_count": 2
+      },
+      {
+        "row_key": "sMKiiKvPvHolfmWFPYSd::sMKiiKvPvHolfmWFPYSd",
+        "doc_id": "sMKiiKvPvHolfmWFPYSd",
+        "equipment_id": "sMKiiKvPvHolfmWFPYSd",
+        "name": "GC質量分析装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "w0ehvcMB2rTtBuFqdaRa::w0ehvcMB2rTtBuFqdaRa",
+        "doc_id": "w0ehvcMB2rTtBuFqdaRa",
+        "equipment_id": "w0ehvcMB2rTtBuFqdaRa",
+        "name": "Ge半導体検出器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "dF4X33bQz6u5tujtN80e::dF4X33bQz6u5tujtN80e",
+        "doc_id": "dF4X33bQz6u5tujtN80e",
+        "equipment_id": "dF4X33bQz6u5tujtN80e",
+        "name": "GlassContour 有機溶媒精製装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "KUoqMIyQC6F0sDOEmIqd::KUoqMIyQC6F0sDOEmIqd",
+        "doc_id": "KUoqMIyQC6F0sDOEmIqd",
+        "equipment_id": "KUoqMIyQC6F0sDOEmIqd",
+        "name": "GloMax Explorer Multimode Microscope Reader",
+        "papers_count": 2
+      },
+      {
+        "row_key": "dP60IdaOXTT2dwx6RbA7::dP60IdaOXTT2dwx6RbA7",
+        "doc_id": "dP60IdaOXTT2dwx6RbA7",
+        "equipment_id": "dP60IdaOXTT2dwx6RbA7",
+        "name": "HPLCシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "fwWT6DvUG2RaDv9jP6iQ::fwWT6DvUG2RaDv9jP6iQ",
+        "doc_id": "fwWT6DvUG2RaDv9jP6iQ",
+        "equipment_id": "fwWT6DvUG2RaDv9jP6iQ",
+        "name": "HPLC用円二色性検出器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "bFTYTmOVR2cGKdxzeqiw::bFTYTmOVR2cGKdxzeqiw",
+        "doc_id": "bFTYTmOVR2cGKdxzeqiw",
+        "equipment_id": "bFTYTmOVR2cGKdxzeqiw",
+        "name": "ICP発光分析装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "HzGpAglqK58rjUfBngpx::HzGpAglqK58rjUfBngpx",
+        "doc_id": "HzGpAglqK58rjUfBngpx",
+        "equipment_id": "HzGpAglqK58rjUfBngpx",
+        "name": "LightCycler 96 Real-Time PCR System",
+        "papers_count": 2
+      },
+      {
+        "row_key": "rz76JbURFELCzTEsbd0V::rz76JbURFELCzTEsbd0V",
+        "doc_id": "rz76JbURFELCzTEsbd0V",
+        "equipment_id": "rz76JbURFELCzTEsbd0V",
+        "name": "MAG/MIG・CO2/MAG/MIG自動溶接機",
+        "papers_count": 2
+      },
+      {
+        "row_key": "vTq417Ojfn4eFLzSqk32::vTq417Ojfn4eFLzSqk32",
+        "doc_id": "vTq417Ojfn4eFLzSqk32",
+        "equipment_id": "vTq417Ojfn4eFLzSqk32",
+        "name": "MALDI-TOF型質量分析システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "xq1KSj2Qss2kYbm2a5Mo::xq1KSj2Qss2kYbm2a5Mo",
+        "doc_id": "xq1KSj2Qss2kYbm2a5Mo",
+        "equipment_id": "xq1KSj2Qss2kYbm2a5Mo",
+        "name": "MALDI-TOF質量分析計",
+        "papers_count": 2
+      },
+      {
+        "row_key": "df7sk6MBYlbqGboDV9Oy::df7sk6MBYlbqGboDV9Oy",
+        "doc_id": "df7sk6MBYlbqGboDV9Oy",
+        "equipment_id": "df7sk6MBYlbqGboDV9Oy",
+        "name": "NaI(Tl)シンチレーションサーベイメータ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "9RIxrmkYIHBlKD970lgL::9RIxrmkYIHBlKD970lgL",
+        "doc_id": "9RIxrmkYIHBlKD970lgL",
+        "equipment_id": "9RIxrmkYIHBlKD970lgL",
+        "name": "NaI(Tl)検出器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "uPkS5Cy5GpCa58MJIRkL::uPkS5Cy5GpCa58MJIRkL",
+        "doc_id": "uPkS5Cy5GpCa58MJIRkL",
+        "equipment_id": "uPkS5Cy5GpCa58MJIRkL",
+        "name": "PCIオプティカルリンク",
+        "papers_count": 2
+      },
+      {
+        "row_key": "xLNhd4g66PJFYrqvbQsh::xLNhd4g66PJFYrqvbQsh",
+        "doc_id": "xLNhd4g66PJFYrqvbQsh",
+        "equipment_id": "xLNhd4g66PJFYrqvbQsh",
+        "name": "PDA検出器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "aZZ7pxzGoSWKZZcz4VOf::aZZ7pxzGoSWKZZcz4VOf",
+        "doc_id": "aZZ7pxzGoSWKZZcz4VOf",
+        "equipment_id": "aZZ7pxzGoSWKZZcz4VOf",
+        "name": "QバンドESR装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "7iAAV7kOptTZMdzbwnX9::7iAAV7kOptTZMdzbwnX9",
+        "doc_id": "7iAAV7kOptTZMdzbwnX9",
+        "equipment_id": "7iAAV7kOptTZMdzbwnX9",
+        "name": "TIG溶接機",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Se6P3mVFUvFUZYSnXxVW::Se6P3mVFUvFUZYSnXxVW",
+        "doc_id": "Se6P3mVFUvFUZYSnXxVW",
+        "equipment_id": "Se6P3mVFUvFUZYSnXxVW",
+        "name": "TOF型質量分析装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "iOrE0qALvSQ9gWX0xUjN::iOrE0qALvSQ9gWX0xUjN",
+        "doc_id": "iOrE0qALvSQ9gWX0xUjN",
+        "equipment_id": "iOrE0qALvSQ9gWX0xUjN",
+        "name": "ThermalCyclerDiceRealTimeSystemⅢwithPC",
+        "papers_count": 2
+      },
+      {
+        "row_key": "BPOy6qwQfhNZgqeUIAZg::BPOy6qwQfhNZgqeUIAZg",
+        "doc_id": "BPOy6qwQfhNZgqeUIAZg",
+        "equipment_id": "BPOy6qwQfhNZgqeUIAZg",
+        "name": "UPLC/TOF‐MS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jsY46xoYzcpW1TVDlhGX::jsY46xoYzcpW1TVDlhGX",
+        "doc_id": "jsY46xoYzcpW1TVDlhGX",
+        "equipment_id": "jsY46xoYzcpW1TVDlhGX",
+        "name": "UVオゾン洗浄装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Z94A7RIggvNqKgoGBl66::Z94A7RIggvNqKgoGBl66",
+        "doc_id": "Z94A7RIggvNqKgoGBl66",
+        "equipment_id": "Z94A7RIggvNqKgoGBl66",
+        "name": "UVパルスレーザーシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "dFWPz7zDzlICADHdG59B::dFWPz7zDzlICADHdG59B",
+        "doc_id": "dFWPz7zDzlICADHdG59B",
+        "equipment_id": "dFWPz7zDzlICADHdG59B",
+        "name": "XPSデータ解析PC",
+        "papers_count": 2
+      },
+      {
+        "row_key": "CNnsoKHhURc1qdutlSaU::CNnsoKHhURc1qdutlSaU",
+        "doc_id": "CNnsoKHhURc1qdutlSaU",
+        "equipment_id": "CNnsoKHhURc1qdutlSaU",
+        "name": "X線光電子分光分析装置 PHI 5000 VersaProbe III XPS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Im9coFWCeRXX42i31IUU::Im9coFWCeRXX42i31IUU",
+        "doc_id": "Im9coFWCeRXX42i31IUU",
+        "equipment_id": "Im9coFWCeRXX42i31IUU",
+        "name": "X線光電子分光装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "kaT2f0TznbqrkNM5b5cB::kaT2f0TznbqrkNM5b5cB",
+        "doc_id": "kaT2f0TznbqrkNM5b5cB",
+        "equipment_id": "kaT2f0TznbqrkNM5b5cB",
+        "name": "X線光電子分光装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "j1V064WhxkrjT6UuI5NV::j1V064WhxkrjT6UuI5NV",
+        "doc_id": "j1V064WhxkrjT6UuI5NV",
+        "equipment_id": "j1V064WhxkrjT6UuI5NV",
+        "name": "X線回折装置 (XRD)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "xsYA1TO5MJsdLlMosIAo::xsYA1TO5MJsdLlMosIAo",
+        "doc_id": "xsYA1TO5MJsdLlMosIAo",
+        "equipment_id": "xsYA1TO5MJsdLlMosIAo",
+        "name": "X線回折装置（XRD）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "7YCOKEUYO3QYPDCcemyN::7YCOKEUYO3QYPDCcemyN",
+        "doc_id": "7YCOKEUYO3QYPDCcemyN",
+        "equipment_id": "7YCOKEUYO3QYPDCcemyN",
+        "name": "X線粉末回折装置（XRD) RINT2100",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jghsGuSmjWIMGoFRTRJW::jghsGuSmjWIMGoFRTRJW",
+        "doc_id": "jghsGuSmjWIMGoFRTRJW",
+        "equipment_id": "jghsGuSmjWIMGoFRTRJW",
+        "name": "ZnS(Ag)シンチレーションサーベイメータ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "XjAckR3r2zJKD00KzJJH::XjAckR3r2zJKD00KzJJH",
+        "doc_id": "XjAckR3r2zJKD00KzJJH",
+        "equipment_id": "XjAckR3r2zJKD00KzJJH",
+        "name": "gentleMACS Dissociator",
+        "papers_count": 2
+      },
+      {
+        "row_key": "vQKfErGTkXaV042jo5QN::vQKfErGTkXaV042jo5QN",
+        "doc_id": "vQKfErGTkXaV042jo5QN",
+        "equipment_id": "vQKfErGTkXaV042jo5QN",
+        "name": "イオンクロマトグラフ糖質分析システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "EAeOAktU8gRAGSlGJDgC::EAeOAktU8gRAGSlGJDgC",
+        "doc_id": "EAeOAktU8gRAGSlGJDgC",
+        "equipment_id": "EAeOAktU8gRAGSlGJDgC",
+        "name": "インバータTIG溶接機",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ZyBY4Eyc7CpYbiY5ZGQZ::ZyBY4Eyc7CpYbiY5ZGQZ",
+        "doc_id": "ZyBY4Eyc7CpYbiY5ZGQZ",
+        "equipment_id": "ZyBY4Eyc7CpYbiY5ZGQZ",
+        "name": "インライン赤外分光器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "qXoLmONy158Ic8dmtjYq::qXoLmONy158Ic8dmtjYq",
+        "doc_id": "qXoLmONy158Ic8dmtjYq",
+        "equipment_id": "qXoLmONy158Ic8dmtjYq",
+        "name": "ウルトラミクロトーム ULTRACUT N",
+        "papers_count": 2
+      },
+      {
+        "row_key": "URpI8AN2k7Pw3pi2tcLn::URpI8AN2k7Pw3pi2tcLn",
+        "doc_id": "URpI8AN2k7Pw3pi2tcLn",
+        "equipment_id": "URpI8AN2k7Pw3pi2tcLn",
+        "name": "オートマチックダイシングソー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "pA4Eq3haWUau0ML2vpOD::pA4Eq3haWUau0ML2vpOD",
+        "doc_id": "pA4Eq3haWUau0ML2vpOD",
+        "equipment_id": "pA4Eq3haWUau0ML2vpOD",
+        "name": "ガスクロマトグラフ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "qAkABkKOJdBOMFyiEmi7::qAkABkKOJdBOMFyiEmi7",
+        "doc_id": "qAkABkKOJdBOMFyiEmi7",
+        "equipment_id": "qAkABkKOJdBOMFyiEmi7",
+        "name": "ガスクロマトグラフ (GC)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "zao9Y6CwKr0RLflzGrdY::zao9Y6CwKr0RLflzGrdY",
+        "doc_id": "zao9Y6CwKr0RLflzGrdY",
+        "equipment_id": "zao9Y6CwKr0RLflzGrdY",
+        "name": "ガスクロマトグラフ・GC-2014AFsc(ヘッドスペース試料導入装置）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "qUbPF1EbYMrfrX8TXmq8::qUbPF1EbYMrfrX8TXmq8",
+        "doc_id": "qUbPF1EbYMrfrX8TXmq8",
+        "equipment_id": "qUbPF1EbYMrfrX8TXmq8",
+        "name": "ガスクロマトグラフ質量分析装置(高性能気液相導入質量分析装置)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "B6J9Bkr2E65eX5hQ2hml::B6J9Bkr2E65eX5hQ2hml",
+        "doc_id": "B6J9Bkr2E65eX5hQ2hml",
+        "equipment_id": "B6J9Bkr2E65eX5hQ2hml",
+        "name": "クロスセクションポリッシャー（CP） IB-19520CCP",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jTwENQIOrB2rmILgPBFJ::jTwENQIOrB2rmILgPBFJ",
+        "doc_id": "jTwENQIOrB2rmILgPBFJ",
+        "equipment_id": "jTwENQIOrB2rmILgPBFJ",
+        "name": "クロマトグラフィーシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "hchHA3H6Eh6rpA6tTcuO::hchHA3H6Eh6rpA6tTcuO",
+        "doc_id": "hchHA3H6Eh6rpA6tTcuO",
+        "equipment_id": "hchHA3H6Eh6rpA6tTcuO",
+        "name": "コロニーピッカー Flexys RE24",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jGUpNRNN5e00x7FY4B4C::jGUpNRNN5e00x7FY4B4C",
+        "doc_id": "jGUpNRNN5e00x7FY4B4C",
+        "equipment_id": "jGUpNRNN5e00x7FY4B4C",
+        "name": "サンプルチェンジャー付きGe半導体検出器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "9ABc9zR80Qxrl20qzXA1::9ABc9zR80Qxrl20qzXA1",
+        "doc_id": "9ABc9zR80Qxrl20qzXA1",
+        "equipment_id": "9ABc9zR80Qxrl20qzXA1",
+        "name": "サンプルチェンジャ付ゲルマニウム半導体検出器 TGC 30180 (サンプルチェンジャ(SC)：SC-LBL)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "6adHDUMEtgCEnj47b1xV::6adHDUMEtgCEnj47b1xV",
+        "doc_id": "6adHDUMEtgCEnj47b1xV",
+        "equipment_id": "6adHDUMEtgCEnj47b1xV",
+        "name": "サーベイメータ類 ICS-313, TGS-146, TCS-172, TCS-316H",
+        "papers_count": 2
+      },
+      {
+        "row_key": "XFesJ1xpS9tV8b0Xwv1h::XFesJ1xpS9tV8b0Xwv1h",
+        "doc_id": "XFesJ1xpS9tV8b0Xwv1h",
+        "equipment_id": "XFesJ1xpS9tV8b0Xwv1h",
+        "name": "ショットキー電界放出形走査電子顕微鏡（FE-SEM） JSM-7900F",
+        "papers_count": 2
+      },
+      {
+        "row_key": "CV5ennH72h6MwxB79Zy0::CV5ennH72h6MwxB79Zy0",
+        "doc_id": "CV5ennH72h6MwxB79Zy0",
+        "equipment_id": "CV5ennH72h6MwxB79Zy0",
+        "name": "スリム型薬用保冷庫（毒劇物保管用）（4℃: 218 L）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "gOJoqPu5bZ0PiRrOkUUW::gOJoqPu5bZ0PiRrOkUUW",
+        "doc_id": "gOJoqPu5bZ0PiRrOkUUW",
+        "equipment_id": "gOJoqPu5bZ0PiRrOkUUW",
+        "name": "セルソーター装置 FacsAriaII",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Vnijzb3pSduQrFPfECor::Vnijzb3pSduQrFPfECor",
+        "doc_id": "Vnijzb3pSduQrFPfECor",
+        "equipment_id": "Vnijzb3pSduQrFPfECor",
+        "name": "ゼータサイザーナノZS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "slRYPcbvRSjs8WAeSb6t::slRYPcbvRSjs8WAeSb6t",
+        "doc_id": "slRYPcbvRSjs8WAeSb6t",
+        "equipment_id": "slRYPcbvRSjs8WAeSb6t",
+        "name": "デュアルビーム加工観察装置(FIB-SEM) Versa 3D DualBeam",
+        "papers_count": 2
+      },
+      {
+        "row_key": "qsrUd0izXz0PLaiBoJbW::qsrUd0izXz0PLaiBoJbW",
+        "doc_id": "qsrUd0izXz0PLaiBoJbW",
+        "equipment_id": "qsrUd0izXz0PLaiBoJbW",
+        "name": "ナノファイバー紡糸装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "emHx8YWMdYAwuLpiSeXB::emHx8YWMdYAwuLpiSeXB",
+        "doc_id": "emHx8YWMdYAwuLpiSeXB",
+        "equipment_id": "emHx8YWMdYAwuLpiSeXB",
+        "name": "ネットワークMCA",
+        "papers_count": 2
+      },
+      {
+        "row_key": "VM9cspeOny6cNlyTnW3X::VM9cspeOny6cNlyTnW3X",
+        "doc_id": "VM9cspeOny6cNlyTnW3X",
+        "equipment_id": "VM9cspeOny6cNlyTnW3X",
+        "name": "バイオメディカルフリーザー（-20℃: 690 L）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Bl587vZRKdMkqyELetCb::Bl587vZRKdMkqyELetCb",
+        "doc_id": "Bl587vZRKdMkqyELetCb",
+        "equipment_id": "Bl587vZRKdMkqyELetCb",
+        "name": "フラッシュGCノーズ・Heracles NEO",
+        "papers_count": 2
+      },
+      {
+        "row_key": "baLlV0eAAOJNz13nZ2p8::baLlV0eAAOJNz13nZ2p8",
+        "doc_id": "baLlV0eAAOJNz13nZ2p8",
+        "equipment_id": "baLlV0eAAOJNz13nZ2p8",
+        "name": "フリーザー付き薬用保冷庫（4℃: 326 L, -20℃: 136 L）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "6K7XyrP7K9CBNxBTpz2U::6K7XyrP7K9CBNxBTpz2U",
+        "doc_id": "6K7XyrP7K9CBNxBTpz2U",
+        "equipment_id": "6K7XyrP7K9CBNxBTpz2U",
+        "name": "フローサイトメーター自動細胞解析装置 FACS-Celesta",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eO8id7aknORv0xbYMofm::eO8id7aknORv0xbYMofm",
+        "doc_id": "eO8id7aknORv0xbYMofm",
+        "equipment_id": "eO8id7aknORv0xbYMofm",
+        "name": "プラスミド自動精製装置 KURABO PI-50a",
+        "papers_count": 2
+      },
+      {
+        "row_key": "G3vGWN2qpapY51V0eMqD::G3vGWN2qpapY51V0eMqD",
+        "doc_id": "G3vGWN2qpapY51V0eMqD",
+        "equipment_id": "G3vGWN2qpapY51V0eMqD",
+        "name": "ベータ線用GMサーベイメータ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "waWB5vcAc7y16Yi0kOCc::waWB5vcAc7y16Yi0kOCc",
+        "doc_id": "waWB5vcAc7y16Yi0kOCc",
+        "equipment_id": "waWB5vcAc7y16Yi0kOCc",
+        "name": "マイクロプレートリーダーPCシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "pCh6vsuHnUhk6ZdhhB4r::pCh6vsuHnUhk6ZdhhB4r",
+        "doc_id": "pCh6vsuHnUhk6ZdhhB4r",
+        "equipment_id": "pCh6vsuHnUhk6ZdhhB4r",
+        "name": "マスクアライナー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "kLvEikj8nINNypeLIFlG::kLvEikj8nINNypeLIFlG",
+        "doc_id": "kLvEikj8nINNypeLIFlG",
+        "equipment_id": "kLvEikj8nINNypeLIFlG",
+        "name": "マルチチャンネル分光器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Hv3BtFQZxnZcNbTZWNbX::Hv3BtFQZxnZcNbTZWNbX",
+        "doc_id": "Hv3BtFQZxnZcNbTZWNbX",
+        "equipment_id": "Hv3BtFQZxnZcNbTZWNbX",
+        "name": "モレキュラーデバイス社 リアルタイム生体分子間相互作用解析システム Octet K2",
+        "papers_count": 2
+      },
+      {
+        "row_key": "N83fP4krFBDuOgsBBREO::N83fP4krFBDuOgsBBREO",
+        "doc_id": "N83fP4krFBDuOgsBBREO",
+        "equipment_id": "N83fP4krFBDuOgsBBREO",
+        "name": "リアルタイム定量PCR装置 ABI Prism 7000 Sequence Detection System",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jgVxtjV6vis0ranm1YFc::jgVxtjV6vis0ranm1YFc",
+        "doc_id": "jgVxtjV6vis0ranm1YFc",
+        "equipment_id": "jgVxtjV6vis0ranm1YFc",
+        "name": "ルミノ・イメージアナライザー LAS4000miniシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "sajdAOLFgaG3KEqnd69B::sajdAOLFgaG3KEqnd69B",
+        "doc_id": "sajdAOLFgaG3KEqnd69B",
+        "equipment_id": "sajdAOLFgaG3KEqnd69B",
+        "name": "ルミノ・イメージアナライザー LAS4000miniシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "yZSnAHCSq7XRgMKex44R::yZSnAHCSq7XRgMKex44R",
+        "doc_id": "yZSnAHCSq7XRgMKex44R",
+        "equipment_id": "yZSnAHCSq7XRgMKex44R",
+        "name": "レーザーマイクロダイセクション (Laser microdissection)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "oat2vPs9mkQcEzbiZtPn::oat2vPs9mkQcEzbiZtPn",
+        "doc_id": "oat2vPs9mkQcEzbiZtPn",
+        "equipment_id": "oat2vPs9mkQcEzbiZtPn",
+        "name": "レーザーマイクロダイセクションシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ujbJTilwXkSCrGpCbkqA::ujbJTilwXkSCrGpCbkqA",
+        "doc_id": "ujbJTilwXkSCrGpCbkqA",
+        "equipment_id": "ujbJTilwXkSCrGpCbkqA",
+        "name": "レーザー走査共焦点ラマン顕微鏡装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "WWzugOmND5cPHUEqVST9::WWzugOmND5cPHUEqVST9",
+        "doc_id": "WWzugOmND5cPHUEqVST9",
+        "equipment_id": "WWzugOmND5cPHUEqVST9",
+        "name": "中圧液体クロマトグラフィー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "x5QhhROfcKY20o89cMZn::x5QhhROfcKY20o89cMZn",
+        "doc_id": "x5QhhROfcKY20o89cMZn",
+        "equipment_id": "x5QhhROfcKY20o89cMZn",
+        "name": "中型恒温振とう培養機 BR-43FH・MR",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jOAnC9mamF7lpZR4oBik::jOAnC9mamF7lpZR4oBik",
+        "doc_id": "jOAnC9mamF7lpZR4oBik",
+        "equipment_id": "jOAnC9mamF7lpZR4oBik",
+        "name": "中型恒温振とう培養機 BR-43FL・MR",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jv4C5HqyyaORIHAX7cNC::jv4C5HqyyaORIHAX7cNC",
+        "doc_id": "jv4C5HqyyaORIHAX7cNC",
+        "equipment_id": "jv4C5HqyyaORIHAX7cNC",
+        "name": "二酸化炭素溶解塔(VP50)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "mt7vtQ3YTtLFkH8KHsro::mt7vtQ3YTtLFkH8KHsro",
+        "doc_id": "mt7vtQ3YTtLFkH8KHsro",
+        "equipment_id": "mt7vtQ3YTtLFkH8KHsro",
+        "name": "偏光顕微鏡",
+        "papers_count": 2
+      },
+      {
+        "row_key": "aqfjwZmYRrJDso2sg9sn::aqfjwZmYRrJDso2sg9sn",
+        "doc_id": "aqfjwZmYRrJDso2sg9sn",
+        "equipment_id": "aqfjwZmYRrJDso2sg9sn",
+        "name": "元素分析装置(JM10)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "HXYmulhMdpMZAgJcX7uG::HXYmulhMdpMZAgJcX7uG",
+        "doc_id": "HXYmulhMdpMZAgJcX7uG",
+        "equipment_id": "HXYmulhMdpMZAgJcX7uG",
+        "name": "先端機素表面・性能システム 1-1.走査型電子顕微鏡システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "97PnkPbfv0mXQoZCBvlN::97PnkPbfv0mXQoZCBvlN",
+        "doc_id": "97PnkPbfv0mXQoZCBvlN",
+        "equipment_id": "97PnkPbfv0mXQoZCBvlN",
+        "name": "共焦点レーザー顕微鏡システム オリンパスFV1200",
+        "papers_count": 2
+      },
+      {
+        "row_key": "idNDfMLxKd1im2bNTg1n::idNDfMLxKd1im2bNTg1n",
+        "doc_id": "idNDfMLxKd1im2bNTg1n",
+        "equipment_id": "idNDfMLxKd1im2bNTg1n",
+        "name": "円偏光ルミネッセンス測定システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "iJnHVVETcC90MQfJFdzy::iJnHVVETcC90MQfJFdzy",
+        "doc_id": "iJnHVVETcC90MQfJFdzy",
+        "equipment_id": "iJnHVVETcC90MQfJFdzy",
+        "name": "冷却遠心分離機 Avanti HP-25",
+        "papers_count": 2
+      },
+      {
+        "row_key": "VNtmLTXVJUUIbcLTJ7HO::VNtmLTXVJUUIbcLTJ7HO",
+        "doc_id": "VNtmLTXVJUUIbcLTJ7HO",
+        "equipment_id": "VNtmLTXVJUUIbcLTJ7HO",
+        "name": "分光光度計 SP-3000nano（4台）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "26s6Hn9skJl8T1KvP7t0::26s6Hn9skJl8T1KvP7t0",
+        "doc_id": "26s6Hn9skJl8T1KvP7t0",
+        "equipment_id": "26s6Hn9skJl8T1KvP7t0",
+        "name": "分光蛍光光度計 F-2500",
+        "papers_count": 2
+      },
+      {
+        "row_key": "QNIbtVaXe6a80BdqMdck::QNIbtVaXe6a80BdqMdck",
+        "doc_id": "QNIbtVaXe6a80BdqMdck",
+        "equipment_id": "QNIbtVaXe6a80BdqMdck",
+        "name": "分析走査型電子顕微鏡 JSM-6510LA",
+        "papers_count": 2
+      },
+      {
+        "row_key": "QLN060wBgSxoHdyXwOH6::QLN060wBgSxoHdyXwOH6",
+        "doc_id": "QLN060wBgSxoHdyXwOH6",
+        "equipment_id": "QLN060wBgSxoHdyXwOH6",
+        "name": "化学発光・蛍光撮影装置",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T03:17:25.334079+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:25.389923+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:25.921418+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:28.527516+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:30.950334+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:33.374978+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:35.795234+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:38.267067+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:40.675316+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:43.109802+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:45.527121+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:17:47.957103+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:18:56.976414+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

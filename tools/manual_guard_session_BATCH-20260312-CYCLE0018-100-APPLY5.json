@@ -1,0 +1,449 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260312-CYCLE0018-100-APPLY5",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-11T23:07:59.314923+00:00",
+  "updated_at": "2026-03-11T23:09:46.465295+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0018_100.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0018-100-APPLY5.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "896565dde9ae0f88f8e927da46c569cd1ac8827c56ebafa453d720fe326cdb24",
+    "queue_sha256_at_start": "4f4889709a90bd3288161456c2d21d655a4ae6d95c805e8ed6d1dca03ad0df4f",
+    "queue_row_keys_sha256": "bc598d3ff5509cf9a31569d38b4caad82aed911f9f0f9caa84d2791e43aa9d65"
+  },
+  "queue": {
+    "target_count": 43,
+    "target_row_keys": [
+      "DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127",
+      "TnIpRpbhRmgyLHWElK1H::HOKUDAI-AP-901850",
+      "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+      "wNEN1InjRracqmlcnCmq::HOKUDAI-AP-901802",
+      "c9vMWBGnx4JkALDEfwI4::HOKUDAI-AP-901551",
+      "fWAmfteVgJTZGLkkswfa::HOKUDAI-AP-901562",
+      "Z94A7RIggvNqKgoGBl66::HOKUDAI-AP-901085",
+      "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131",
+      "wvwD0irPfETQNr389Kkq::HOKUDAI-AP-901874",
+      "LNFpzFIYnDoDpHhxw7Xu::HOKUDAI-AP-902252",
+      "vaZuoq4EiUyNX8sKfYXJ::HOKUDAI-AP-902260",
+      "a8IP0Rdr9PuEt4HtAmX1::HOKUDAI-AP-901565",
+      "O4K1kikpm0ixFTDp6X7r::HOKUDAI-AP-901938",
+      "v1wrRcMztVKOg7sg9gnp::HOKUDAI-AP-900830",
+      "onijciodR9Vbnkc8cxl5::HOKUDAI-AP-901531",
+      "AFwa2DBKrz00HF5iR4Vo::HOKUDAI-AP-901738",
+      "Vp0AuCbHBOnIJrzbMcB4::HOKUDAI-AP-901809",
+      "IRnByvdV59MYot6s6khR::HOKUDAI-AP-900796",
+      "8cx0KgvpyiNCzCYNeCAO::HOKUDAI-AP-902047",
+      "i2c5gUsYfb1IsbNjnSJL::HOKUDAI-AP-901881",
+      "A7MWtDQpwHGFTUhqtnjb::HOKUDAI-AP-901896",
+      "3wTkQ6yZUDN5Xv7kUWTi::HOKUDAI-AP-901865",
+      "dZ9cU7Xj04tMeM6yYyfp::HOKUDAI-AP-902069",
+      "NszDSEr9igpZXJFzBlIu::HOKUDAI-AP-901317",
+      "umrWdC35NEeqTyIMmqHg::HOKUDAI-AP-901852",
+      "KFyF4KsusCOLKjNJMlwS::HOKUDAI-AP-902065",
+      "nM8BJB8t4TN2H9mebGe4::HOKUDAI-AP-900846",
+      "0UdVbsC9nh64iXRUFZW7::HOKUDAI-AP-902005",
+      "gja8bj3mwQz0W0FlsL8u::HOKUDAI-AP-902087",
+      "nvZYEjPbZg1VQlrZQuJU::HOKUDAI-AP-902085",
+      "p1Ec0iv8Qvxy0jPJCqlk::HOKUDAI-AP-902140",
+      "zqMIPZukPhnebNuXgYdq::HOKUDAI-AP-901734",
+      "NuKtVtILqfLhdljeDWuM::HOKUDAI-AP-901346",
+      "Cl8B299SWQ5qwShXrRWX::HOKUDAI-AP-900823",
+      "sD7awrsVJpNHKyknxOEi::HOKUDAI-AP-901342",
+      "F4pSHEFYIXBfjPNRoDhd::HOKUDAI-AP-901558",
+      "dSA9D7hR3GfZjAEFP6BY::HOKUDAI-AP-901672",
+      "uATFODGJwdWfYfAiARNY::HOKUDAI-AP-901420",
+      "HD13mEXT6x4rwc9AFS5A::HOKUDAI-AP-902112",
+      "cmgog5p6MNwQ989SvxZd::HOKUDAI-AP-902242",
+      "zKWIZRWSV82Gi9ehIFxw::HOKUDAI-AP-901905",
+      "XoKD5GU4Fl2zghPqzs0v::HOKUDAI-AP-901561",
+      "4D0s3XJZpE8QDzasu8rR::HOKUDAI-AP-901356"
+    ],
+    "target_rows": [
+      {
+        "row_key": "DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127",
+        "doc_id": "DgVXXYqm3xzRF5sqJN1i",
+        "equipment_id": "HOKUDAI-AP-902127",
+        "name": "1852138JA S1000 WITH 384WELL",
+        "papers_count": 1
+      },
+      {
+        "row_key": "TnIpRpbhRmgyLHWElK1H::HOKUDAI-AP-901850",
+        "doc_id": "TnIpRpbhRmgyLHWElK1H",
+        "equipment_id": "HOKUDAI-AP-901850",
+        "name": "SLA光造形3Dプリンター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+        "doc_id": "IICo0TdRSYRiGhj2Gssa",
+        "equipment_id": "HOKUDAI-AP-902265",
+        "name": "Thermal Cycler SimpliAmp",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wNEN1InjRracqmlcnCmq::HOKUDAI-AP-901802",
+        "doc_id": "wNEN1InjRracqmlcnCmq",
+        "equipment_id": "HOKUDAI-AP-901802",
+        "name": "Tobii Proフュージョン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "c9vMWBGnx4JkALDEfwI4::HOKUDAI-AP-901551",
+        "doc_id": "c9vMWBGnx4JkALDEfwI4",
+        "equipment_id": "HOKUDAI-AP-901551",
+        "name": "UCリアクター",
+        "papers_count": 1
+      },
+      {
+        "row_key": "fWAmfteVgJTZGLkkswfa::HOKUDAI-AP-901562",
+        "doc_id": "fWAmfteVgJTZGLkkswfa",
+        "equipment_id": "HOKUDAI-AP-901562",
+        "name": "UV-LED照射器スポット型",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Z94A7RIggvNqKgoGBl66::HOKUDAI-AP-901085",
+        "doc_id": "Z94A7RIggvNqKgoGBl66",
+        "equipment_id": "HOKUDAI-AP-901085",
+        "name": "UVパルスレーザーシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131",
+        "doc_id": "X5irZ5FTgTb6cDkhoQza",
+        "equipment_id": "HOKUDAI-AP-902131",
+        "name": "アイトラッカー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wvwD0irPfETQNr389Kkq::HOKUDAI-AP-901874",
+        "doc_id": "wvwD0irPfETQNr389Kkq",
+        "equipment_id": "HOKUDAI-AP-901874",
+        "name": "アドワンファーム水耕栽培装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "LNFpzFIYnDoDpHhxw7Xu::HOKUDAI-AP-902252",
+        "doc_id": "LNFpzFIYnDoDpHhxw7Xu",
+        "equipment_id": "HOKUDAI-AP-902252",
+        "name": "イメージングサイトメーター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "vaZuoq4EiUyNX8sKfYXJ::HOKUDAI-AP-902260",
+        "doc_id": "vaZuoq4EiUyNX8sKfYXJ",
+        "equipment_id": "HOKUDAI-AP-902260",
+        "name": "インクジェット式ナノリットルスポッター BioSpot-3",
+        "papers_count": 2
+      },
+      {
+        "row_key": "a8IP0Rdr9PuEt4HtAmX1::HOKUDAI-AP-901565",
+        "doc_id": "a8IP0Rdr9PuEt4HtAmX1",
+        "equipment_id": "HOKUDAI-AP-901565",
+        "name": "ウルトラファインバブル発生装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "O4K1kikpm0ixFTDp6X7r::HOKUDAI-AP-901938",
+        "doc_id": "O4K1kikpm0ixFTDp6X7r",
+        "equipment_id": "HOKUDAI-AP-901938",
+        "name": "エアーサンプラー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "v1wrRcMztVKOg7sg9gnp::HOKUDAI-AP-900830",
+        "doc_id": "v1wrRcMztVKOg7sg9gnp",
+        "equipment_id": "HOKUDAI-AP-900830",
+        "name": "エネルギー弁別・位置検出型α線計測装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "onijciodR9Vbnkc8cxl5::HOKUDAI-AP-901531",
+        "doc_id": "onijciodR9Vbnkc8cxl5",
+        "equipment_id": "HOKUDAI-AP-901531",
+        "name": "カールフィッシャー水分計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "AFwa2DBKrz00HF5iR4Vo::HOKUDAI-AP-901738",
+        "doc_id": "AFwa2DBKrz00HF5iR4Vo",
+        "equipment_id": "HOKUDAI-AP-901738",
+        "name": "ガラスナイフメーカー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Vp0AuCbHBOnIJrzbMcB4::HOKUDAI-AP-901809",
+        "doc_id": "Vp0AuCbHBOnIJrzbMcB4",
+        "equipment_id": "HOKUDAI-AP-901809",
+        "name": "ガンマ線スペクトロメータ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "IRnByvdV59MYot6s6khR::HOKUDAI-AP-900796",
+        "doc_id": "IRnByvdV59MYot6s6khR",
+        "equipment_id": "HOKUDAI-AP-900796",
+        "name": "クリスタルカッターNeoPro",
+        "papers_count": 1
+      },
+      {
+        "row_key": "8cx0KgvpyiNCzCYNeCAO::HOKUDAI-AP-902047",
+        "doc_id": "8cx0KgvpyiNCzCYNeCAO",
+        "equipment_id": "HOKUDAI-AP-902047",
+        "name": "クロロフィル測定装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "i2c5gUsYfb1IsbNjnSJL::HOKUDAI-AP-901881",
+        "doc_id": "i2c5gUsYfb1IsbNjnSJL",
+        "equipment_id": "HOKUDAI-AP-901881",
+        "name": "コンクリート曲げ試験治具",
+        "papers_count": 3
+      },
+      {
+        "row_key": "A7MWtDQpwHGFTUhqtnjb::HOKUDAI-AP-901896",
+        "doc_id": "A7MWtDQpwHGFTUhqtnjb",
+        "equipment_id": "HOKUDAI-AP-901896",
+        "name": "コンクリート用4点曲げ試験治具",
+        "papers_count": 3
+      },
+      {
+        "row_key": "3wTkQ6yZUDN5Xv7kUWTi::HOKUDAI-AP-901865",
+        "doc_id": "3wTkQ6yZUDN5Xv7kUWTi",
+        "equipment_id": "HOKUDAI-AP-901865",
+        "name": "コンピュータベースレーザー血流計 FLO-Lab2ch",
+        "papers_count": 3
+      },
+      {
+        "row_key": "dZ9cU7Xj04tMeM6yYyfp::HOKUDAI-AP-902069",
+        "doc_id": "dZ9cU7Xj04tMeM6yYyfp",
+        "equipment_id": "HOKUDAI-AP-902069",
+        "name": "サーミスタチェーン",
+        "papers_count": 3
+      },
+      {
+        "row_key": "NszDSEr9igpZXJFzBlIu::HOKUDAI-AP-901317",
+        "doc_id": "NszDSEr9igpZXJFzBlIu",
+        "equipment_id": "HOKUDAI-AP-901317",
+        "name": "シングルモノクロメータ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "umrWdC35NEeqTyIMmqHg::HOKUDAI-AP-901852",
+        "doc_id": "umrWdC35NEeqTyIMmqHg",
+        "equipment_id": "HOKUDAI-AP-901852",
+        "name": "デジタルオシロスコープ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "KFyF4KsusCOLKjNJMlwS::HOKUDAI-AP-902065",
+        "doc_id": "KFyF4KsusCOLKjNJMlwS",
+        "equipment_id": "HOKUDAI-AP-902065",
+        "name": "デジタルサイドスキャンソナー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "nM8BJB8t4TN2H9mebGe4::HOKUDAI-AP-900846",
+        "doc_id": "nM8BJB8t4TN2H9mebGe4",
+        "equipment_id": "HOKUDAI-AP-900846",
+        "name": "デジタルマイクロスコープ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "0UdVbsC9nh64iXRUFZW7::HOKUDAI-AP-902005",
+        "doc_id": "0UdVbsC9nh64iXRUFZW7",
+        "equipment_id": "HOKUDAI-AP-902005",
+        "name": "デジタル旋光計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "gja8bj3mwQz0W0FlsL8u::HOKUDAI-AP-902087",
+        "doc_id": "gja8bj3mwQz0W0FlsL8u",
+        "equipment_id": "HOKUDAI-AP-902087",
+        "name": "ハイボリウムエアサンプラー HV-RW 粉じんセット",
+        "papers_count": 2
+      },
+      {
+        "row_key": "nvZYEjPbZg1VQlrZQuJU::HOKUDAI-AP-902085",
+        "doc_id": "nvZYEjPbZg1VQlrZQuJU",
+        "equipment_id": "HOKUDAI-AP-902085",
+        "name": "ハイボリウムサンプラ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "p1Ec0iv8Qvxy0jPJCqlk::HOKUDAI-AP-902140",
+        "doc_id": "p1Ec0iv8Qvxy0jPJCqlk",
+        "equipment_id": "HOKUDAI-AP-902140",
+        "name": "ヒュームコレクター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "zqMIPZukPhnebNuXgYdq::HOKUDAI-AP-901734",
+        "doc_id": "zqMIPZukPhnebNuXgYdq",
+        "equipment_id": "HOKUDAI-AP-901734",
+        "name": "ヒラヤマ高圧蒸気滅菌器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "NuKtVtILqfLhdljeDWuM::HOKUDAI-AP-901346",
+        "doc_id": "NuKtVtILqfLhdljeDWuM",
+        "equipment_id": "HOKUDAI-AP-901346",
+        "name": "ビーズ式ホモジナイザー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Cl8B299SWQ5qwShXrRWX::HOKUDAI-AP-900823",
+        "doc_id": "Cl8B299SWQ5qwShXrRWX",
+        "equipment_id": "HOKUDAI-AP-900823",
+        "name": "ファイバー縫い付け機",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sD7awrsVJpNHKyknxOEi::HOKUDAI-AP-901342",
+        "doc_id": "sD7awrsVJpNHKyknxOEi",
+        "equipment_id": "HOKUDAI-AP-901342",
+        "name": "フラッシュ自動精製システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "F4pSHEFYIXBfjPNRoDhd::HOKUDAI-AP-901558",
+        "doc_id": "F4pSHEFYIXBfjPNRoDhd",
+        "equipment_id": "HOKUDAI-AP-901558",
+        "name": "フラッシュ自動精製装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "dSA9D7hR3GfZjAEFP6BY::HOKUDAI-AP-901672",
+        "doc_id": "dSA9D7hR3GfZjAEFP6BY",
+        "equipment_id": "HOKUDAI-AP-901672",
+        "name": "フレークアイスメーカー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "uATFODGJwdWfYfAiARNY::HOKUDAI-AP-901420",
+        "doc_id": "uATFODGJwdWfYfAiARNY",
+        "equipment_id": "HOKUDAI-AP-901420",
+        "name": "フロー式光反応システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "HD13mEXT6x4rwc9AFS5A::HOKUDAI-AP-902112",
+        "doc_id": "HD13mEXT6x4rwc9AFS5A",
+        "equipment_id": "HOKUDAI-AP-902112",
+        "name": "プラント･キャノピー･アナライザー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "cmgog5p6MNwQ989SvxZd::HOKUDAI-AP-902242",
+        "doc_id": "cmgog5p6MNwQ989SvxZd",
+        "equipment_id": "HOKUDAI-AP-902242",
+        "name": "プレートリーダー解析ソフトシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "zKWIZRWSV82Gi9ehIFxw::HOKUDAI-AP-901905",
+        "doc_id": "zKWIZRWSV82Gi9ehIFxw",
+        "equipment_id": "HOKUDAI-AP-901905",
+        "name": "プログラマブル・ダイヤモンドソー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "XoKD5GU4Fl2zghPqzs0v::HOKUDAI-AP-901561",
+        "doc_id": "XoKD5GU4Fl2zghPqzs0v",
+        "equipment_id": "HOKUDAI-AP-901561",
+        "name": "マイクロウェーブ合成装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "4D0s3XJZpE8QDzasu8rR::HOKUDAI-AP-901356",
+        "doc_id": "4D0s3XJZpE8QDzasu8rR",
+        "equipment_id": "HOKUDAI-AP-901356",
+        "name": "マイクロピペットプラー",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 8,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-11T23:07:59.314923+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 43
+      }
+    },
+    {
+      "at": "2026-03-11T23:08:10.921912+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:08:26.555816+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:08:34.130243+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:08:41.533431+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:08:48.685281+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:08:56.145090+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:09:23.022716+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:09:46.465295+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

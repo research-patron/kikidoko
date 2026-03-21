@@ -1,0 +1,505 @@
+{
+  "batch_id": "BATCH-20260312-CYCLE0022-100",
+  "entries": [
+    {
+      "doc_id": "OlpBB4jLGeqnvHDls1wP",
+      "name": "ECRイオンシャワー",
+      "family_id": "plasma-surface-process"
+    },
+    {
+      "doc_id": "eqnet-4925",
+      "name": "フローサイトメーター・セルソーター(ベクトン・ディッキンソン社 FACS Aria III)",
+      "family_id": "cell-sorter"
+    },
+    {
+      "doc_id": "eqnet-2978",
+      "name": "紫外可視分光光度計(日本分光・V-560)",
+      "family_id": "uv-vis"
+    },
+    {
+      "doc_id": "eqnet-3762",
+      "name": "偏光顕微鏡(BX50)",
+      "family_id": "polarizing-microscope"
+    },
+    {
+      "doc_id": "eqnet-2106",
+      "name": "ゲルパーミエイションクロマトグラフィ(GPC)",
+      "family_id": "gpc"
+    },
+    {
+      "doc_id": "eqnet-4206",
+      "name": "スピンコーター(U4 MS-A150) ミカサ(MS-A150)",
+      "family_id": "spin-coater"
+    },
+    {
+      "doc_id": "eqnet-5154",
+      "name": "オートクレーブ TOMY BSX-500 2",
+      "family_id": "autoclave-system"
+    },
+    {
+      "doc_id": "eqnet-4901",
+      "name": "ガンマカウンター(パーキンエルマー社(現・Revvity社)2480 WIZARD2 )",
+      "family_id": "gamma-counter"
+    },
+    {
+      "doc_id": "eqnet-3509",
+      "name": "カーボン蒸着器 (日本電子 JEC-560)",
+      "family_id": "vacuum-evaporator"
+    },
+    {
+      "doc_id": "eqnet-3783",
+      "name": "JEOL 400 MHz solid NMR (ECZ-400R, 4 mm MAS)",
+      "family_id": "solidstate-nmr-600"
+    },
+    {
+      "doc_id": "eqnet-4328",
+      "name": "酸分解システム(ジーエルサイエンス・DigiPREP)",
+      "family_id": "acid-digestion-system"
+    },
+    {
+      "doc_id": "KbmXrbMsIXsoYwRR64nd",
+      "name": "示差走査熱量計 DSC",
+      "family_id": "thermal"
+    },
+    {
+      "doc_id": "eqnet-2998",
+      "name": "超高精度磁化測定装置 (クライオジェニック製 S700X-R)",
+      "family_id": "squid"
+    },
+    {
+      "doc_id": "eqnet-5357",
+      "name": "自家蛍光消光装置 (ネッパジーン TiYO)",
+      "family_id": "autofluorescence-quencher"
+    },
+    {
+      "doc_id": "yIbyNgdQl4wXoJjTS3TC",
+      "name": "日本電子 JMS-T100LP (AccuTOF LC-plus)",
+      "family_id": "qtof-lcms"
+    },
+    {
+      "doc_id": "eqnet-4441",
+      "name": "超遠心分離機 Hitachi CP70MX",
+      "family_id": "ultracentrifuge"
+    },
+    {
+      "doc_id": "eqnet-948",
+      "name": "(霞)次世代シーケンサーデータ解析システム",
+      "family_id": "sequencer"
+    },
+    {
+      "doc_id": "eqnet-4525",
+      "name": "微細表面構造計測顕微鏡 島津製作所(SFT-3500)",
+      "family_id": "probe-microscope"
+    },
+    {
+      "doc_id": "6uxmIy0mtp5o7D1FZea1",
+      "name": "FT-Raman／IR分光計",
+      "family_id": "ft-raman-ir"
+    },
+    {
+      "doc_id": "eqnet-3105",
+      "name": "細胞自動解析装置 FACSVerse",
+      "family_id": "flow-cytometer"
+    },
+    {
+      "doc_id": "eqnet-2790",
+      "name": "紫外可視分光光度計(日本分光・V-760S)",
+      "family_id": "uv-vis"
+    },
+    {
+      "doc_id": "eqnet-3572",
+      "name": "光学顕微鏡(Z16 APO)",
+      "family_id": "digital-microscope"
+    },
+    {
+      "doc_id": "eqnet-996",
+      "name": "サイズ排除クロマトグラフィー(東ソー HLC-8420GPC)",
+      "family_id": "gpc"
+    },
+    {
+      "doc_id": "eqnet-4061",
+      "name": "プラズマ酸化・窒化 東京エレクトロン(RLSA 2B)",
+      "family_id": "plasma-surface-process"
+    },
+    {
+      "doc_id": "eqnet-5153",
+      "name": "オートクレーブ TOMY BSX-500 ➀",
+      "family_id": "autoclave-system"
+    },
+    {
+      "doc_id": "eqnet-4081",
+      "name": "ソーラシミュレータ ワコム電創(WXS-90S-L2)",
+      "family_id": "solar-simulator"
+    },
+    {
+      "doc_id": "eqnet-4833",
+      "name": "スパッタコーター Leica Microsystems EM ACE600システム2",
+      "family_id": "sem-sputter"
+    },
+    {
+      "doc_id": "eqnet-3784",
+      "name": "JEOL 500 MHz NMR (ECZ-500R)",
+      "family_id": "nmr-500-jeol"
+    },
+    {
+      "doc_id": "CJxahEKAlpNSA0zel5bs",
+      "name": "電子スピン共鳴装置",
+      "family_id": "esr-general"
+    },
+    {
+      "doc_id": "eqnet-3612",
+      "name": "\"過渡熱測定システム(T3Ster) \"",
+      "family_id": "thermal-property-analyzer"
+    },
+    {
+      "doc_id": "eqnet-2662",
+      "name": "高周波透磁率測定装置(凌和電子 PMF-3000)",
+      "family_id": "magnetic-property-analyzer"
+    },
+    {
+      "doc_id": "eqnet-3031",
+      "name": "蛍光X線分析装置(XRF)(パナリティカル・Magix PRO PW2440/00)",
+      "family_id": "wdxrf"
+    },
+    {
+      "doc_id": "SAIp5pmOkSqNMPUgFUKM",
+      "name": "高速液体クロマトグラフシステムUPLC・タンデム四重極型質量分析装置 (Waters ACQUITY TQD)",
+      "family_id": "lcms-triplequad"
+    },
+    {
+      "doc_id": "eqnet-4793-32d741e3",
+      "name": "超遠心分離機 ベックマン・コールター L-80",
+      "family_id": "ultracentrifuge"
+    },
+    {
+      "doc_id": "eqnet-4890",
+      "name": "16本キャピラリーDNAシーケンサー(Applied Biosystems社(現・Thermo Fisher Scientific社)3130xl Genetic Analyzer)",
+      "family_id": "sequencer"
+    },
+    {
+      "doc_id": "eqnet-3642",
+      "name": "環境制御型多機能走査プローブ顕微鏡(SPI3800N)",
+      "family_id": "probe-microscope"
+    },
+    {
+      "doc_id": "LlmxAz0PMLWAJd2Uk4xi",
+      "name": "FluorVivoTM 300 HO",
+      "family_id": "in-vivo-fluorescence-imager"
+    },
+    {
+      "doc_id": "eqnet-1968",
+      "name": "自動細胞解析分離分取システムベクトン・ディッキンソン アンド カンパニー社 FACSAria III",
+      "family_id": "cell-sorter"
+    },
+    {
+      "doc_id": "eqnet-3495",
+      "name": "紫外可視近赤外分光光度計 (日本分光 V-670)",
+      "family_id": "uv-vis"
+    },
+    {
+      "doc_id": "eqnet-2324",
+      "name": "共焦点レーザースキャン顕微鏡 LSM710",
+      "family_id": "fluorescence-microscope"
+    },
+    {
+      "doc_id": "eqnet-5440",
+      "name": "フードアナライザー Nexera",
+      "family_id": "liquid-chromatography"
+    },
+    {
+      "doc_id": "eqnet-4210",
+      "name": "ホットプレート(U4 HP-1SA) アズワン(HP-1SA)",
+      "family_id": "hotplate-lab"
+    },
+    {
+      "doc_id": "eqnet-5152",
+      "name": "オートクレーブ TOMY LSX-700",
+      "family_id": "autoclave-system"
+    },
+    {
+      "doc_id": "eqnet-4241",
+      "name": "ナノインデンター 東陽テクニカ(G200)",
+      "family_id": "nanoindenter-general"
+    },
+    {
+      "doc_id": "eqnet-5298",
+      "name": "スパッタ装置 アルバック九州(株)(QAM-4-S)",
+      "family_id": "sem-sputter"
+    },
+    {
+      "doc_id": "eqnet-3415",
+      "name": "JEOL 600 MHz NMR (ECZ-600R)",
+      "family_id": "nmr-600"
+    },
+    {
+      "doc_id": "eqnet-470",
+      "name": "電子スピン共鳴装置 (JEOL・ )",
+      "family_id": "esr-general"
+    },
+    {
+      "doc_id": "eqnet-2044",
+      "name": "昇温脱離ガス質量分析装置((株)リガク・TPD typeR 200amu)",
+      "family_id": "thermal-desorption-ms"
+    },
+    {
+      "doc_id": "eqnet-2664",
+      "name": "高感度SQUID磁化測定装置(日本カンタムデザイン MPMS5)",
+      "family_id": "squid"
+    },
+    {
+      "doc_id": "eqnet-3052",
+      "name": "超電導磁石システム BioSpec 47/40",
+      "family_id": "mri"
+    },
+    {
+      "doc_id": "eqnet-477",
+      "name": "HPLC-CHIP/QTOF 質量分析装置 (アジレントテクノロジー社・ G6520型+G4240型)",
+      "family_id": "qtof-lcms"
+    },
+    {
+      "doc_id": "eqnet-5026",
+      "name": "超遠心機 (HITACHI himac CP80WX)",
+      "family_id": "ultracentrifuge"
+    },
+    {
+      "doc_id": "eqnet-2504",
+      "name": "384ウェル対応Real Time PCRシステム",
+      "family_id": "thermal-cycler"
+    },
+    {
+      "doc_id": "eqnet-4409",
+      "name": "真空蒸着装置(Au) Sanyu",
+      "family_id": "vacuum-evaporator"
+    },
+    {
+      "doc_id": "ytNCBtGRH56o7K4os1TQ",
+      "name": "GPC-1（分子材料分離分析装置群）",
+      "family_id": "gpc"
+    },
+    {
+      "doc_id": "eqnet-3315",
+      "name": "フローサイトメータ(解析用) Beckman Coulter Gallios",
+      "family_id": "flow-cytometer"
+    },
+    {
+      "doc_id": "eqnet-3627",
+      "name": "紫外可視近赤外分光測定装置(V-670)",
+      "family_id": "uv-vis"
+    },
+    {
+      "doc_id": "eqnet-2121",
+      "name": "共焦点レーザースキャン顕微鏡システム(オリンパス FV3000)",
+      "family_id": "fluorescence-microscope"
+    },
+    {
+      "doc_id": "eqnet-4431",
+      "name": "中圧クロマトグラフィ Yamazen Smart Flash",
+      "family_id": "flash-purification-system"
+    },
+    {
+      "doc_id": "eqnet-2002",
+      "name": "マスクアライナー(SUSS-MJB3)",
+      "family_id": "mask-aligner"
+    },
+    {
+      "doc_id": "eqnet-4583",
+      "name": "オートクレーブ TOMY(LSX-500)",
+      "family_id": "autoclave-system"
+    },
+    {
+      "doc_id": "eqnet-2259",
+      "name": "ハイブリオーブン(HB-80)",
+      "family_id": "hybrid-oven"
+    },
+    {
+      "doc_id": "eqnet-2202",
+      "name": "ネオオスミウムコーター(メイワフォーシス NE-01044)",
+      "family_id": "sem-sputter"
+    },
+    {
+      "doc_id": "eqnet-3785",
+      "name": "JEOL 600 MHz solid NMR (ECZ-600R, 3.2 mm MAS)",
+      "family_id": "solidstate-nmr-600"
+    },
+    {
+      "doc_id": "eqnet-471",
+      "name": "電子スピン共鳴装置 (JEOL・ )",
+      "family_id": "esr-general"
+    },
+    {
+      "doc_id": "JX2mn7xIh1MjfQYTd56S",
+      "name": "熱分析装置（固体・粉末） Rigaku DSC8231/TG-DTA8122",
+      "family_id": "thermal"
+    },
+    {
+      "doc_id": "eqnet-5337",
+      "name": "コーンプレート式粘度計(ブルックフィールド・LV-DV2T)",
+      "family_id": "viscometer"
+    },
+    {
+      "doc_id": "eqnet-3996",
+      "name": "高分解能CTスキャンシステム コムスキャンテクノ(高精細小型標本用装置ScanXmate-D160TSS105/11000 ほか)",
+      "family_id": "ct"
+    },
+    {
+      "doc_id": "eqnet-2077",
+      "name": "MALDI-TOF/TOF 質量分析システム",
+      "family_id": "single:質量分析装置(MS):マトリックス支援レーザー脱離イオン化飛行時間型質量分析装置(JEOL・JMS-S3000)"
+    },
+    {
+      "doc_id": "eqnet-1978",
+      "name": "超遠心機(100,000rpm)ベックマン・コールター株式会社 Optima L-100XP",
+      "family_id": "ultracentrifuge"
+    },
+    {
+      "doc_id": "eqnet-4891",
+      "name": "4本キャピラリーDNAシーケンサー(Applied Biosystems社(現・Thermo Fisher Scientific社)3130 Genetic Analyzer )",
+      "family_id": "sequencer"
+    },
+    {
+      "doc_id": "eqnet-1791",
+      "name": "米国Bruker Nano社製 原子間力顕微鏡システム Multimode8-A",
+      "family_id": "probe-microscope"
+    },
+    {
+      "doc_id": "GM44jqZKf9XnkIXv0Wkd",
+      "name": "GPC-2（分子材料分離分析装置群）",
+      "family_id": "gpc"
+    },
+    {
+      "doc_id": "eqnet-4320",
+      "name": "フローサイトメーター(sysmex・RF-500)",
+      "family_id": "flow-cytometer"
+    },
+    {
+      "doc_id": "eqnet-3748",
+      "name": "蛍光マイクロプレートリーダー テカンInfinite F200 Pro",
+      "family_id": "plate-reader"
+    },
+    {
+      "doc_id": "eqnet-2495",
+      "name": "共焦点レーザー蛍光顕微鏡",
+      "family_id": "fluorescence-microscope"
+    },
+    {
+      "doc_id": "eqnet-3545",
+      "name": "光散乱GPC",
+      "family_id": "gpc"
+    },
+    {
+      "doc_id": "eqnet-3874",
+      "name": "マスクレス露光装置(DDB-701-DL)",
+      "family_id": "laser-pattern-writer"
+    },
+    {
+      "doc_id": "eqnet-3331",
+      "name": "クールインキュベーター(アズワン・i-CUBE(HOT&COOL)FCI-280HG)",
+      "family_id": "cool-incubator"
+    },
+    {
+      "doc_id": "eqnet-2258",
+      "name": "ハイブリオーブン(HI-100M)",
+      "family_id": "hybrid-oven"
+    },
+    {
+      "doc_id": "eqnet-2709",
+      "name": "パルスレーザーMBE装置(誠南工業(株)・PLO-020R)",
+      "family_id": "pulsed-laser-mbe"
+    },
+    {
+      "doc_id": "RyM3gLR12z8vnv1b8JLH",
+      "name": "JEOL JNM-ECA600",
+      "family_id": "nmr-600"
+    },
+    {
+      "doc_id": "eqnet-564",
+      "name": "電子スピン共鳴装置 (JEOL・FA200)",
+      "family_id": "esr-general"
+    },
+    {
+      "doc_id": "eqnet-3591",
+      "name": "熱抵抗測定装置(WG2)",
+      "family_id": "thermal-property-analyzer"
+    },
+    {
+      "doc_id": "eqnet-5333",
+      "name": "動的光散乱測定装置(アントンパール・Litesizer500)",
+      "family_id": "particle-size-analyzer"
+    },
+    {
+      "doc_id": "7dph4QWWGmk55ym2a0Eh",
+      "name": "デジタルパソロジースキャナ（KFBIO）",
+      "family_id": "single:画像撮影/解析:デジタルパソロジースキャナ(KFBIO)"
+    },
+    {
+      "doc_id": "eqnet-4394",
+      "name": "マトリックス支援レーザー脱離イオン化飛行時間質量分析計(MALDI-TOFMS;日本電子・JMS-S3000)",
+      "family_id": "single:質量分析装置(MS):マトリックス支援レーザー脱離イオン化飛行時間型質量分析装置(JEOL・JMS-S3000)"
+    },
+    {
+      "doc_id": "eqnet-4563",
+      "name": "超遠心機(小型)(CS-150GX) 日立工機(CS-150GX)",
+      "family_id": "ultracentrifuge"
+    },
+    {
+      "doc_id": "eqnet-4892",
+      "name": "4本キャピラリーDNAシーケンサー(Thermo Fisher Scientific社 SeqStudio Genetic Analyzer )",
+      "family_id": "sequencer"
+    },
+    {
+      "doc_id": "eqnet-2681",
+      "name": "精密形状測定・局所磁気測定・局所電気特性評価装置(JEOL、JSPM-5200TM)",
+      "family_id": "probe-microscope"
+    },
+    {
+      "doc_id": "Tef9WwK62flV3dvgdCEv",
+      "name": "Gene Pulser Xcell エレクトロポレーションシステム",
+      "family_id": "gene-delivery-electroporation"
+    },
+    {
+      "doc_id": "eqnet-2147",
+      "name": "全自動細胞解析装置(ベックマン・コールター Cytomics FC500)",
+      "family_id": "flow-cytometer"
+    },
+    {
+      "doc_id": "eqnet-4355",
+      "name": "蛍光分光光度計 日立ハイテクサイエンス(F-2700形)",
+      "family_id": "fluorescence-spectrophotometer"
+    },
+    {
+      "doc_id": "eqnet-2570",
+      "name": "共焦点レーザー走査型顕微鏡",
+      "family_id": "fluorescence-microscope"
+    },
+    {
+      "doc_id": "eqnet-2193",
+      "name": "液体クロマトグラフ(島津 nanoLC)",
+      "family_id": "liquid-chromatography"
+    },
+    {
+      "doc_id": "eqnet-4234",
+      "name": "レーザー直接描画装置 ネオアーク(DDB-201-TU375)",
+      "family_id": "laser-pattern-writer"
+    },
+    {
+      "doc_id": "eqnet-5143",
+      "name": "サーモミキサー eppendorf Thermo Mixer C 2",
+      "family_id": "dry-block-bath"
+    },
+    {
+      "doc_id": "eqnet-1948",
+      "name": "フェムト秒再生増幅波長可変レーザー Spectra-Physics",
+      "family_id": "tunable-femtosecond-laser"
+    },
+    {
+      "doc_id": "Rxrzl5vi6WCgs5JURDon",
+      "name": "プラズマCVD装置",
+      "family_id": "plasma-cvd"
+    },
+    {
+      "doc_id": "SvzOuIHjKVL2PzDrYiEE",
+      "name": "JEOL JNM-ECZL600G",
+      "family_id": "nmr-600"
+    }
+  ]
+}

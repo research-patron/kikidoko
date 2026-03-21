@@ -1,0 +1,148 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/t96AcKYZjOvPoTekpWzf/10.13138%2F2039-2362%2F4082",
+    "paper_space_hash": "#/paper/t96AcKYZjOvPoTekpWzf/10.13138%2F2039-2362%2F4082",
+    "beginner_enter_hash": "#/beginner/t96AcKYZjOvPoTekpWzf",
+    "beginner_space_hash": "#/beginner/t96AcKYZjOvPoTekpWzf"
+  },
+  "desktop_cases": [
+    {
+      "row_name": "(ARIM)分光エリプソメータ",
+      "summary_len": 296,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/t96AcKYZjOvPoTekpWzf/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/t96AcKYZjOvPoTekpWzf",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 1
+    },
+    {
+      "row_name": "(ARIM)半導体特性評価システム B1500A",
+      "summary_len": 316,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/xpm0OSWLUB3qFKcjj3dQ/10.1073%2Fpnas.2509784122",
+      "beginner_hash": "#/beginner/xpm0OSWLUB3qFKcjj3dQ",
+      "paper_link_href": "https://doi.org/10.1073/pnas.2509784122",
+      "case_no": 2
+    },
+    {
+      "row_name": "(ARIM)反応性エッチング装置 RIE-10NR",
+      "summary_len": 346,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/mm8V3BGMxbgdMZnF66f1/10.1016%2Fj.matlet.2026.140115",
+      "beginner_hash": "#/beginner/mm8V3BGMxbgdMZnF66f1",
+      "paper_link_href": "https://doi.org/10.1016/j.matlet.2026.140115",
+      "case_no": 3
+    },
+    {
+      "row_name": "(ARIM)多機能走査型X線光電子分光分析装置(XPS/UPS)",
+      "summary_len": 258,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/A2sapmT8PnX7SgfqRT8h/10.1038%2Fs41598-025-29880-9",
+      "beginner_hash": "#/beginner/A2sapmT8PnX7SgfqRT8h",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-29880-9",
+      "case_no": 4
+    },
+    {
+      "row_name": "(ARIM)小型イオンシャワー",
+      "summary_len": 298,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/ZfOIIJOGXfhydKZLQGTp/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/ZfOIIJOGXfhydKZLQGTp",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 5
+    },
+    {
+      "row_name": "(ARIM)触針式表面段差計 Alpha-Step D-500",
+      "summary_len": 313,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/jFhwqrvF5H2bWPzWJ6g1/10.31643%2F2027%2F6445.12",
+      "beginner_hash": "#/beginner/jFhwqrvF5H2bWPzWJ6g1",
+      "paper_link_href": "https://doi.org/10.31643/2027/6445.12",
+      "case_no": 6
+    },
+    {
+      "row_name": "(ARIM)走査型プローブ顕微鏡(SPM/AFM) Dimension Icon",
+      "summary_len": 324,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/IuA7AmgWCJQf5Uup6peP/10.1038%2Fs41467-025-66981-5",
+      "beginner_hash": "#/beginner/IuA7AmgWCJQf5Uup6peP",
+      "paper_link_href": "https://doi.org/10.1038/s41467-025-66981-5",
+      "case_no": 7
+    },
+    {
+      "row_name": "(ARIM)超高温炉 SR1800TS",
+      "summary_len": 337,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/0DB6BGf9U2jma6dj1Fze/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/0DB6BGf9U2jma6dj1Fze",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 8
+    },
+    {
+      "row_name": "(ARIM)電子線描画装置 ELS-750EX",
+      "summary_len": 241,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/FJh2TqdgSJlgeYAu1XZA/10.5281%2Fzenodo.17468720",
+      "beginner_hash": "#/beginner/FJh2TqdgSJlgeYAu1XZA",
+      "paper_link_href": "https://doi.org/10.5281/zenodo.17468720",
+      "case_no": 9
+    },
+    {
+      "row_name": "(ARIM)電子線蒸着装置 EB-540T",
+      "summary_len": 340,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/m3K2sSXLaZfF4sLBqmaV/10.1038%2Fs41598-025-29949-5",
+      "beginner_hash": "#/beginner/m3K2sSXLaZfF4sLBqmaV",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-29949-5",
+      "case_no": 10
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

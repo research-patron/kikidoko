@@ -1,0 +1,150 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-03T12:25:38.266682+00:00",
+  "batch_id": "TEST-AUDIT-STRICT",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/_tmp_queue_family.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/_tmp_checkpoint_family.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_TEST-AUDIT-STRICT.json",
+  "inspected_count": 3,
+  "target_count": 3,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.3333333333333333,
+    "pitfall2_same_ratio": 0.3333333333333333,
+    "reviewed_at_unique_count": 3,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 3,
+    "placeholder_doi_hits": 2,
+    "body_contains_doi_hits": 0,
+    "beginner_char_min": 398,
+    "beginner_char_max": 416,
+    "beginner_char_avg": 409.3333333333333,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 0,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 90
+  },
+  "threshold_failures": [
+    "step2_same_ratio_gt_0_05",
+    "pitfall2_same_ratio_gt_0_05",
+    "reviewed_at_unique_lt_90",
+    "internal_id_reference_hit",
+    "placeholder_doi_hit"
+  ],
+  "offending_doc_ids": [
+    "diMgSNfpWiYbHVK8qj3B",
+    "t3TGtPLqzFKGKwOsBnKL",
+    "u4a3a0lcL4d7JBXLv7Kw"
+  ],
+  "issue_counts": {
+    "internal_id_reference_hit": 7,
+    "invalid_beginner_min_chars": 3,
+    "placeholder_doi_hit": 5,
+    "beginner_min_chars_not_met": 3,
+    "step2_same_ratio_gt_0_05": 1,
+    "pitfall2_same_ratio_gt_0_05": 1,
+    "reviewed_at_unique_lt_90": 1
+  },
+  "issues": [
+    {
+      "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "code": "placeholder_doi_hit"
+    },
+    {
+      "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 414,
+      "min_required": 2000
+    },
+    {
+      "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "code": "placeholder_doi_hit",
+      "doi": "10.0000/u4a3a0lcl4d7jbxlv7kw"
+    },
+    {
+      "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "code": "placeholder_doi_hit"
+    },
+    {
+      "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 398,
+      "min_required": 2000
+    },
+    {
+      "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "code": "placeholder_doi_hit",
+      "doi": "10.0000/t3tgtplqzfkgkwosbnkl"
+    },
+    {
+      "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 416,
+      "min_required": 2000
+    }
+  ],
+  "near_duplicate_pairs": [],
+  "checkpoint_snapshot": {
+    "generated_at": "2026-03-03T12:23:56.234786+00:00",
+    "batch_id": "TEST-FAMILY-STRICT",
+    "queue_sha256": "8bacdeeeaa36b4f46386bfff8b5043e6cb50a9e2625f5169dcd6008c9ea14f95",
+    "target_count": 3,
+    "selected_count": 3,
+    "eligible_count": 10220,
+    "category_count": 0,
+    "campaign": "beginner-longform",
+    "family_mode": "deterministic",
+    "include_reviewed": true,
+    "ignore_papers_filter": true,
+    "min_beginner_chars": 2000,
+    "char_count_mode": "non_whitespace",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/_tmp_queue_family.jsonl",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "reviewer_default": "codex-manual",
+    "family_map_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_family_map.json",
+    "family_groups_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_family_groups_TEST-FAMILY-STRICT.json",
+    "eligible_family_count": 9459
+  }
+}

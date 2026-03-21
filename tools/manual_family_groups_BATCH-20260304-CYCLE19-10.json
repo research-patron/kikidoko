@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T00:39:38.022733+00:00",
+  "batch_id": "BATCH-20260304-CYCLE19-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|細胞破砕装置|other|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VUpFxtxb8tGOGZxByhQC",
+          "equipment_id": "YAMAGUCHI-ipn225",
+          "name": "細胞破砕装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|遠心分離機|other|other|separation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AQ2o3gfG0qbxGLic0v8p",
+          "equipment_id": "YAMAGUCHI-ipn220",
+          "name": "遠心分離機",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 会議室|旭町-209b-ミーティングルーム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ZoA4sTrZk99lwLHa30Y0",
+          "equipment_id": "ZoA4sTrZk99lwLHa30Y0",
+          "name": "旭町 209bミーティングルーム",
+          "category_general": "その他",
+          "category_detail": "その他 / 会議室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2DJ72rThxEOT6G0DdgVQ",
+          "equipment_id": "2DJ72rThxEOT6G0DdgVQ",
+          "name": "超低温フリーザー_01 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 凍結切片作製|cm1860-凍結切片作成装置-leica|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2Q10JLabV8BTvcMHiVWK",
+          "equipment_id": "2Q10JLabV8BTvcMHiVWK",
+          "name": "凍結切片作成装置 Leica CM1860",
+          "category_general": "その他",
+          "category_detail": "その他 / 凍結切片作製"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 動物実験|マウス用クリーンラック|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SLdbPUTdj7OfvOPHxWCT",
+          "equipment_id": "SLdbPUTdj7OfvOPHxWCT",
+          "name": "マウス用クリーンラック",
+          "category_general": "その他",
+          "category_detail": "その他 / 動物実験"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|多自由度大変位実験システム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Sdfg41GH5LfDu86nPtlt",
+          "equipment_id": "Sdfg41GH5LfDu86nPtlt",
+          "name": "多自由度大変位実験システム",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|大変位-次元振動台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "iDvPQVB8f0FmD8367c2f",
+          "equipment_id": "iDvPQVB8f0FmD8367c2f",
+          "name": "大変位2次元振動台",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|油圧式万能試験機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1eEN9KtZzwfWNVFej9el",
+          "equipment_id": "1eEN9KtZzwfWNVFej9el",
+          "name": "油圧式万能試験機",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|温度可変型高剛性材料試験機|other|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "btrvHxRzUrNiHEY9dLuc",
+          "equipment_id": "btrvHxRzUrNiHEY9dLuc",
+          "name": "温度可変型高剛性材料試験機",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9281
+}

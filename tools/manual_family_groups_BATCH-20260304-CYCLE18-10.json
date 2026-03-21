@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T00:05:40.216350+00:00",
+  "batch_id": "BATCH-20260304-CYCLE18-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / サポート|facs-機器作業サポート等料金|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "88YPpg3uba96ejqV9Rmv",
+          "equipment_id": "88YPpg3uba96ejqV9Rmv",
+          "name": "FACS機器作業サポート等料金",
+          "category_general": "その他",
+          "category_detail": "その他 / サポート"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / サポート|医学科共通機器利用支援および技術支援|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VNpy7aRdbbzQqbBPs78P",
+          "equipment_id": "VNpy7aRdbbzQqbBPs78P",
+          "name": "医学科共通機器利用支援および技術支援",
+          "category_general": "その他",
+          "category_detail": "その他 / サポート"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / サポート料金|医学科研究推進センター機器利用サポート|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "c8ENZYZhz5LogffGJ7Eu",
+          "equipment_id": "c8ENZYZhz5LogffGJ7Eu",
+          "name": "医学科研究推進センター機器利用サポート",
+          "category_general": "その他",
+          "category_detail": "その他 / サポート料金"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / スパッター|マグネトロンスパッター-真空デバイス-msp-10|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Oz8vtpZqaekZ6HznxFjL",
+          "equipment_id": "Oz8vtpZqaekZ6HznxFjL",
+          "name": "マグネトロンスパッター 真空デバイス, MSP-10",
+          "category_general": "その他",
+          "category_detail": "その他 / スパッター"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / テスト|テスト設備|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wcKDyZZYZEx4vjArKEhw",
+          "equipment_id": "wcKDyZZYZEx4vjArKEhw",
+          "name": "テスト設備",
+          "category_general": "その他",
+          "category_detail": "その他 / テスト"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / ドラフト|ドラフトチャンバー-as-1500c|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VST7RYVnupLQmH7UJkGs",
+          "equipment_id": "VST7RYVnupLQmH7UJkGs",
+          "name": "ドラフトチャンバー AS-1500C・S",
+          "category_general": "その他",
+          "category_detail": "その他 / ドラフト"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / ドラフト|旭町ラボ-オープンラボスペース-実験室ドラフト-az9-few|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pSxynG4D6yy8cerM8kH5",
+          "equipment_id": "pSxynG4D6yy8cerM8kH5",
+          "name": "旭町ラボ オープンラボスペース 202実験室ドラフト AZ9-FEW",
+          "category_general": "その他",
+          "category_detail": "その他 / ドラフト"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|オートクレーブ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lnRPcRNKcSc9eDRVvdSu",
+          "equipment_id": "YAMAGUCHI-ipn223",
+          "name": "オートクレーブ",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|ガスクロマトグラフィー|chromatography|gas|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l3J3wALoa0T62coN0VRF",
+          "equipment_id": "YAMAGUCHI-ipn170-2",
+          "name": "ガスクロマトグラフィー",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|凍結乾燥機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "FudAkHXJbJLxuaARBL9P",
+          "equipment_id": "YAMAGUCHI-ipn150",
+          "name": "凍結乾燥機",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9291
+}

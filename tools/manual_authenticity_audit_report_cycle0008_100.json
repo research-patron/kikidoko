@@ -1,0 +1,139 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-07T14:59:17.392692+00:00",
+  "batch_id": "BATCH-20260307-CYCLE0008-100",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0008_100.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_next100.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0008-100.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.07,
+    "principle_dup_rate": 0.01,
+    "step1_dup_rate": 0.13,
+    "pitfall1_dup_rate": 0.22,
+    "step2_same_ratio": 0.07,
+    "pitfall2_same_ratio": 0.07,
+    "reviewed_at_unique_count": 100,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 0,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "auto_template_marker_hits": 0,
+    "beginner_char_min": 2001,
+    "beginner_char_max": 2538,
+    "beginner_char_avg": 2124.39,
+    "guide_full_dup_rate": 0.01,
+    "guide_high_similarity_pairs": 1,
+    "step2_same_ratio_threshold": 0.2,
+    "pitfall2_same_ratio_threshold": 0.2,
+    "min_reviewed_at_unique": 100
+  },
+  "threshold_failures": [
+    "summary_dup_rate_not_zero",
+    "principle_dup_rate_not_zero",
+    "step1_dup_rate_not_zero",
+    "pitfall1_dup_rate_not_zero",
+    "guide_full_dup_rate_not_zero",
+    "guide_high_similarity_detected"
+  ],
+  "offending_doc_ids": [
+    "AFZ0X9Z0XX3TwLmcSCKR",
+    "F6TUjy60Qz1otTHODI9x",
+    "KzfGolRk7kXoOCpdRZ2D",
+    "MIE-equipment11",
+    "MIE-equipment3",
+    "TOKUSHIMA-77",
+    "YTf2CxqQVg727AArwerN",
+    "iHMAH0L2G85gA2Ap7UsD",
+    "lp1iM0WBqAGsoJnCxQcR"
+  ],
+  "issue_counts": {
+    "insufficient_paper_explanations_for_multi_papers": 9,
+    "summary_dup_rate_not_zero": 1,
+    "principle_dup_rate_not_zero": 1,
+    "step1_dup_rate_not_zero": 1,
+    "pitfall1_dup_rate_not_zero": 1,
+    "guide_full_dup_rate_not_zero": 1,
+    "guide_high_similarity_detected": 1
+  },
+  "issues": [
+    {
+      "row_key": "TOKUSHIMA-77::TOKUSHIMA-77",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "MIE-equipment3::MIE-equipment3",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "MIE-equipment11::MIE-equipment11",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "iHMAH0L2G85gA2Ap7UsD::iHMAH0L2G85gA2Ap7UsD",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "KzfGolRk7kXoOCpdRZ2D::KzfGolRk7kXoOCpdRZ2D",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "YTf2CxqQVg727AArwerN::YTf2CxqQVg727AArwerN",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "AFZ0X9Z0XX3TwLmcSCKR::AFZ0X9Z0XX3TwLmcSCKR",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "F6TUjy60Qz1otTHODI9x::F6TUjy60Qz1otTHODI9x",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "lp1iM0WBqAGsoJnCxQcR::lp1iM0WBqAGsoJnCxQcR",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    }
+  ],
+  "near_duplicate_pairs": [
+    {
+      "i": 26,
+      "j": 29,
+      "ratio": 1.0
+    }
+  ],
+  "checkpoint_snapshot": {
+    "updated_at": "2026-02-28T07:47:03.454043+00:00",
+    "defaults_added": 0,
+    "processed_rows_this_run": 10,
+    "applied_rows_this_run": 10,
+    "needs_manual_fix_this_run": 0,
+    "done": 100,
+    "remaining": 0,
+    "batch_size": 10,
+    "process_all": false,
+    "reviewer_default": "codex-manual",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_next100.jsonl"
+  }
+}

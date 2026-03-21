@@ -1,0 +1,207 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260320-CYCLE0028-REPAIR13-SIM",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-20T07:05:09.781380+00:00",
+  "updated_at": "2026-03-20T07:23:42.750133+00:00",
+  "closed_at": "2026-03-20T07:23:42.750133+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0028_repair13_similarity.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260320-CYCLE0028-REPAIR13-SIM.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "6726aa5693528b38df8b52bbe3b87f77789f3678ebf3331070f624e6cba51003",
+    "queue_sha256_at_start": "9ce2b6412bef0d0c9f9e450b66567f4bff21d6c3ee56593c0670447ac41fcadf",
+    "queue_row_keys_sha256": "f669f21ea2937199eb43eb530d3a55e0df99a1b78a5164a738bf16052e3867bb"
+  },
+  "queue": {
+    "target_count": 13,
+    "target_row_keys": [
+      "gW774Do5dk0ltS6FauDl::gW774Do5dk0ltS6FauDl",
+      "yY3azy7NRZIcFXircaTw::yY3azy7NRZIcFXircaTw",
+      "neOW4fbLHXDhcJMtBbjX::AIST-COL003",
+      "tNGmjZjUMKCGtlCgb5Qz::AIST-COL004",
+      "yd98KDvfbCqqSShy6xbC::yd98KDvfbCqqSShy6xbC",
+      "E0IZ6GddoG9E8xp1Uhsn::HOKUDAI-AP-100290",
+      "y1yakDmVVyY4N0sXRH4o::y1yakDmVVyY4N0sXRH4o",
+      "3XW7807NKwieaw7sY2vb::3XW7807NKwieaw7sY2vb",
+      "geghVWTkIGCYOLVVEOWE::geghVWTkIGCYOLVVEOWE",
+      "GiO2ROwrnUpAVZiESKKi::KUMAMOTO-list5f-05",
+      "KzfGolRk7kXoOCpdRZ2D::KzfGolRk7kXoOCpdRZ2D",
+      "saCVGNeywsGMt4LcqaYs::saCVGNeywsGMt4LcqaYs",
+      "0lcLwMuStZ676K1Mzp9p::KUMAMOTO-list4f-07"
+    ],
+    "target_rows": [
+      {
+        "row_key": "gW774Do5dk0ltS6FauDl::gW774Do5dk0ltS6FauDl",
+        "doc_id": "gW774Do5dk0ltS6FauDl",
+        "equipment_id": "gW774Do5dk0ltS6FauDl",
+        "name": "サーマルサイクラー (BioRad C1000)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "yY3azy7NRZIcFXircaTw::yY3azy7NRZIcFXircaTw",
+        "doc_id": "yY3azy7NRZIcFXircaTw",
+        "equipment_id": "yY3azy7NRZIcFXircaTw",
+        "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+        "papers_count": 0
+      },
+      {
+        "row_key": "neOW4fbLHXDhcJMtBbjX::AIST-COL003",
+        "doc_id": "neOW4fbLHXDhcJMtBbjX",
+        "equipment_id": "AIST-COL003",
+        "name": "プラズマポリシリコン成膜装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "tNGmjZjUMKCGtlCgb5Qz::AIST-COL004",
+        "doc_id": "tNGmjZjUMKCGtlCgb5Qz",
+        "equipment_id": "AIST-COL004",
+        "name": "プラズマ絶縁膜成膜装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "yd98KDvfbCqqSShy6xbC::yd98KDvfbCqqSShy6xbC",
+        "doc_id": "yd98KDvfbCqqSShy6xbC",
+        "equipment_id": "yd98KDvfbCqqSShy6xbC",
+        "name": "ラウエ ／低温4軸回折X線装置 （RU-200）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "E0IZ6GddoG9E8xp1Uhsn::HOKUDAI-AP-100290",
+        "doc_id": "E0IZ6GddoG9E8xp1Uhsn",
+        "equipment_id": "HOKUDAI-AP-100290",
+        "name": "ラウエ結晶方位決定システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "y1yakDmVVyY4N0sXRH4o::y1yakDmVVyY4N0sXRH4o",
+        "doc_id": "y1yakDmVVyY4N0sXRH4o",
+        "equipment_id": "y1yakDmVVyY4N0sXRH4o",
+        "name": "リアルタイムPCR (ABI StepOne Plus)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "3XW7807NKwieaw7sY2vb::3XW7807NKwieaw7sY2vb",
+        "doc_id": "3XW7807NKwieaw7sY2vb",
+        "equipment_id": "3XW7807NKwieaw7sY2vb",
+        "name": "リアルタイムPCRシステム StepOnePlus",
+        "papers_count": 0
+      },
+      {
+        "row_key": "geghVWTkIGCYOLVVEOWE::geghVWTkIGCYOLVVEOWE",
+        "doc_id": "geghVWTkIGCYOLVVEOWE",
+        "equipment_id": "geghVWTkIGCYOLVVEOWE",
+        "name": "リアルタイムPCR装置 タカラバイオTP800",
+        "papers_count": 0
+      },
+      {
+        "row_key": "GiO2ROwrnUpAVZiESKKi::KUMAMOTO-list5f-05",
+        "doc_id": "GiO2ROwrnUpAVZiESKKi",
+        "equipment_id": "KUMAMOTO-list5f-05",
+        "name": "レーザー共焦点顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KzfGolRk7kXoOCpdRZ2D::KzfGolRk7kXoOCpdRZ2D",
+        "doc_id": "KzfGolRk7kXoOCpdRZ2D",
+        "equipment_id": "KzfGolRk7kXoOCpdRZ2D",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+        "papers_count": 0
+      },
+      {
+        "row_key": "saCVGNeywsGMt4LcqaYs::saCVGNeywsGMt4LcqaYs",
+        "doc_id": "saCVGNeywsGMt4LcqaYs",
+        "equipment_id": "saCVGNeywsGMt4LcqaYs",
+        "name": "凍結乾燥機 FDU-1200",
+        "papers_count": 0
+      },
+      {
+        "row_key": "0lcLwMuStZ676K1Mzp9p::KUMAMOTO-list4f-07",
+        "doc_id": "0lcLwMuStZ676K1Mzp9p",
+        "equipment_id": "KUMAMOTO-list4f-07",
+        "name": "凍結乾燥装置 日本電子株式会社 JFD-300",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 6,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-20T07:05:09.781380+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 13
+      }
+    },
+    {
+      "at": "2026-03-20T07:05:09.927314+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T07:05:24.652747+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T07:07:52.382503+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T07:08:25.566181+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T07:08:34.759373+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T07:08:48.950233+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T07:23:42.750133+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 6,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

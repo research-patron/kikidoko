@@ -1,0 +1,702 @@
+[
+  {
+    "doc_id": "O1qrYgdPerCSjsA62Ixy",
+    "name": "3ゾーン式セラミック電気管状炉",
+    "family": "tube_furnace",
+    "chars": 2128,
+    "papers": 2
+  },
+  {
+    "doc_id": "a9Qty8sgNRflpmQtO0v7",
+    "name": "電子天びん（UX-6200H)",
+    "family": "balance",
+    "chars": 2009,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4723",
+    "name": "セルソーター BD FACS AriaII-3号機 Becton Dickinson(FACSAriaSORP)",
+    "family": "cell_sorter",
+    "chars": 2018,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1756",
+    "name": "フーリエ変換式赤外分光光度計(日本分光・FT/IR-6300、IRT-5000)",
+    "family": "ftir",
+    "chars": 2108,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2647",
+    "name": "オールインワン蛍光顕微鏡(KEYENCE・BZ-9000)",
+    "family": "fluorescence_microscope",
+    "chars": 2066,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1914",
+    "name": "生体分子間相互作用解析装置(GE・BIAcore T200)",
+    "family": "biacore",
+    "chars": 2082,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3777",
+    "name": "JASCO・分取用HPLC",
+    "family": "hplc",
+    "chars": 2065,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5312",
+    "name": "高速イオン・中性子ビーム照射装置(サポートなし)(最高ビームエネルギー:陽子・中性子70MeV及び重イオンビーム)",
+    "family": "cyclotron",
+    "chars": 2061,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4231",
+    "name": "スパッタ装置(3FCR) アネルバ",
+    "family": "sputter",
+    "chars": 2099,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5387",
+    "name": "手動成形機 INARI",
+    "family": "generic",
+    "chars": 2014,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4761",
+    "name": "インキュベータ TAITEC HB-80 TAITEC(HB-80)",
+    "family": "incubator",
+    "chars": 2067,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5052",
+    "name": "PLT unit エアーリークテスター(関東化学)",
+    "family": "air_leak_tester",
+    "chars": 2066,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2281",
+    "name": "GM サーベイメータ",
+    "family": "survey_meter",
+    "chars": 2052,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1435",
+    "name": "イオンコータ(Au用)-III",
+    "family": "sputter",
+    "chars": 2071,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2460",
+    "name": "400MHZ 核磁気共鳴装置 (日本電子(株)・JNM−ECX型)",
+    "family": "nmr",
+    "chars": 2033,
+    "papers": 2
+  },
+  {
+    "doc_id": "YAMANASHI-GC-MS-JMS-Q1000GC-MKII",
+    "name": "ガスクロマトグラフ質量分析装置",
+    "family": "gcms",
+    "chars": 2087,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5347",
+    "name": "X線分析顕微鏡(堀場製作所・XGT-7200V)",
+    "family": "xray_microscope",
+    "chars": 2043,
+    "papers": 2
+  },
+  {
+    "doc_id": "oIfzgLv07zFu8hlMgdmX",
+    "name": "ガスクロマトグラフ（GC）",
+    "family": "gc",
+    "chars": 2068,
+    "papers": 2
+  },
+  {
+    "doc_id": "XLJDcaBiVEp7ttiiDSoC",
+    "name": "ガスクロマトグラフ／質量分析計",
+    "family": "gcms",
+    "chars": 2053,
+    "papers": 2
+  },
+  {
+    "doc_id": "a6O9Ed2vhRZWBHSeHbw5",
+    "name": "Bortexミキサー",
+    "family": "mixer",
+    "chars": 2048,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-3502",
+    "name": "示差走査熱量計 (DSC) (島津 DSC-60Plus)",
+    "family": "dsc",
+    "chars": 2003,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1766",
+    "name": "ナノ材料物性評価システム(Quantum Design・PPMS)",
+    "family": "ppms",
+    "chars": 2101,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3018",
+    "name": "X線CTスキャナ (キャノンメディカルシステムズ・Aquilion PRIME/Focus Edition)",
+    "family": "xray_ct",
+    "chars": 2066,
+    "papers": 2
+  },
+  {
+    "doc_id": "iiO1EHdjxfdb0DYxxwPa",
+    "name": "疲労試験機 (MIV-4600-20)",
+    "family": "fatigue_test",
+    "chars": 2090,
+    "papers": 1
+  },
+  {
+    "doc_id": "maXpb5MrUH59SPHCLXSR",
+    "name": "四重極型ガスクロマトグラフ質量分析装置（GC-QMS）",
+    "family": "gcms",
+    "chars": 2003,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-824",
+    "name": "MALDI-TOF/MSシステム(ブルカー・ダルトニクス株式会社・ultrafleXtreme, EASY-nLC, PROTEINEER fc II, ImagePrep)",
+    "family": "mass_spec",
+    "chars": 2023,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4984",
+    "name": "卓上超遠心機(ベックマン・コールター株式会社 Optima MAX)",
+    "family": "centrifuge",
+    "chars": 2015,
+    "papers": 2
+  },
+  {
+    "doc_id": "nO8Xkb8HqfWCjwDfSCDU",
+    "name": "[925]リアルタイムPCR Bio-Rad CFX96",
+    "family": "real_time_pcr",
+    "chars": 2024,
+    "papers": 2
+  },
+  {
+    "doc_id": "mzcgAkvNqICys4v271qh",
+    "name": "電界放出型走査電子顕微鏡（FE-SEM）",
+    "family": "sem",
+    "chars": 2004,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4217",
+    "name": "AFM(nano cute) 日立ハイテクサイエンス(nano cute)",
+    "family": "afm",
+    "chars": 2000,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4927",
+    "name": "一次元目専用等電点電気泳動システム(GEヘルスケア社(現・Cytiva社)Ettan IPGphor 3)",
+    "family": "isoelectric_focusing",
+    "chars": 2097,
+    "papers": 2
+  },
+  {
+    "doc_id": "gnys3VuVsKnck76cbqzc",
+    "name": "微小・薄膜X線回折装置 株式会社リガク SmartLab",
+    "family": "xrd_powder",
+    "chars": 2009,
+    "papers": 2
+  },
+  {
+    "doc_id": "qX9Vc5bFvyN5ryye1n1H",
+    "name": "3次元光学プロファイラーシステム",
+    "family": "optical_profiler",
+    "chars": 2043,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5266",
+    "name": "セルソーター BD FACS AriaII-4号機 Becton Dickinson(FACSAriaSORP)",
+    "family": "cell_sorter",
+    "chars": 2090,
+    "papers": 2
+  },
+  {
+    "doc_id": "xFJqTlti8gGNzH16015B",
+    "name": "フーリエ変換赤外分光光度計",
+    "family": "ftir",
+    "chars": 2007,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3672",
+    "name": "オールインワン蛍光顕微鏡(keyence製・BZ-X700)",
+    "family": "fluorescence_microscope",
+    "chars": 2031,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4982",
+    "name": "生体分子間相互作用解析装置(ザルトリウス・ジャパン株式会社 BLItz)",
+    "family": "bli",
+    "chars": 2005,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3779",
+    "name": "JASCO・蛍光検出器HPLC",
+    "family": "hplc",
+    "chars": 2055,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1672",
+    "name": "サイクロトロン(住友重機械工業(株)製 HM-12S)",
+    "family": "cyclotron",
+    "chars": 2061,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4205",
+    "name": "スピンコーター(EB用 1H-360S) ミカサ(1H-360S)",
+    "family": "spin_coater",
+    "chars": 2075,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4084",
+    "name": "抵抗率測定器 国際電気アルファ(日立国際電気)(VR-120S)",
+    "family": "resistivity_meter",
+    "chars": 2085,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5131",
+    "name": "シェーカー New Brunswick Scientific G10",
+    "family": "shaker",
+    "chars": 2092,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4902",
+    "name": "クロマトチャンバー(1)(株式会社 トミー精工 TCC-1606)",
+    "family": "chromato_chamber",
+    "chars": 2008,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4896",
+    "name": "GM型放射能測定装置(アロカ株式会社 JDC-125)",
+    "family": "survey_meter",
+    "chars": 2098,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2012",
+    "name": "エリプソメータ(分光型)(M-2000DI-YK)",
+    "family": "ellipsometer",
+    "chars": 2100,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3810",
+    "name": "400MHz NMR装置-N (JEOL/JNM-ECS400)",
+    "family": "nmr",
+    "chars": 2068,
+    "papers": 2
+  },
+  {
+    "doc_id": "YAMANASHI-4c7c0c43c9",
+    "name": "分光エリプソメーター(JAW)",
+    "family": "ellipsometer",
+    "chars": 2090,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4022",
+    "name": "X線励起蛍光X線元素分析装置 リガク(X線励起蛍光X線元素分析装置(XRF) Supermini-M)",
+    "family": "xrf",
+    "chars": 2032,
+    "papers": 2
+  },
+  {
+    "doc_id": "XxI7KLYZHrBYDESnlrEp",
+    "name": "レーザー回折/散乱式粒子径分布測定装置（SLS）",
+    "family": "particle_sizer",
+    "chars": 2064,
+    "papers": 2
+  },
+  {
+    "doc_id": "vXT2fq4pZWjgm785tuz1",
+    "name": "実体顕微鏡 Leica M165C",
+    "family": "stereomicroscope",
+    "chars": 2045,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-4707",
+    "name": "示差走査熱量計 島津製作所 DSC-60",
+    "family": "dsc",
+    "chars": 2093,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3697",
+    "name": "低温物性測定装置 Quantum Design社 PPMS",
+    "family": "ppms",
+    "chars": 2031,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2237",
+    "name": "X線マイクロCTスキャン(SKYSCAN SKYSCAN1172-GU)",
+    "family": "xray_ct",
+    "chars": 2125,
+    "papers": 2
+  },
+  {
+    "doc_id": "dT0V3YAf0atUzJXgOHfu",
+    "name": "電気サーボモーター式引張･圧縮･曲げ試験装置(50kN)",
+    "family": "mechanical_test",
+    "chars": 2021,
+    "papers": 1
+  },
+  {
+    "doc_id": "oXEYrIvW7vAOna2I111i",
+    "name": "飛行時間型ガスクロマトグラフ質量分析装置（GC-TOF/MS）",
+    "family": "gcms",
+    "chars": 2076,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-97",
+    "name": "MALDI-TOF/TOF (ブルカーneofleX)",
+    "family": "mass_spec",
+    "chars": 2053,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3124",
+    "name": "多本架冷却遠心機 LX-141",
+    "family": "centrifuge",
+    "chars": 2082,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2333",
+    "name": "エレクトロポレーター Gene Pulser II",
+    "family": "electroporator",
+    "chars": 2072,
+    "papers": 2
+  },
+  {
+    "doc_id": "IY6i91CLypsHcGlx9LXC",
+    "name": "電界放射型走査型電子顕微鏡（FE-SEM）",
+    "family": "sem",
+    "chars": 2094,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2066",
+    "name": "CMP装置(日本エンギス(株)・EJW-460I/2CMP)",
+    "family": "cmp",
+    "chars": 2123,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4909",
+    "name": "二次元電気泳動システム(GEヘルスケア社(現・Cytiva社)Ettan DALT6)",
+    "family": "two_dimensional_electrophoresis",
+    "chars": 2024,
+    "papers": 2
+  },
+  {
+    "doc_id": "W9u1nlzrVBCSIWx8Rijw",
+    "name": "粉末Ｘ線回析装置 株式会社リガク Ultima IV",
+    "family": "generic",
+    "chars": 2076,
+    "papers": 1
+  },
+  {
+    "doc_id": "HiTw7nWEPkqXPWYpB2Ut",
+    "name": "400MHz NMR装置",
+    "family": "nmr",
+    "chars": 2101,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5267",
+    "name": "セルソーター BD FACS AriaIII Becton Dickinson(FACSAria III)",
+    "family": "cell_sorter",
+    "chars": 2054,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1196",
+    "name": "フーリエ変換赤外分光光度計 (日本分光・FT-IR 6200)",
+    "family": "ftir",
+    "chars": 2104,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1949",
+    "name": "セクショニング光学顕微鏡 DeltaVision S/N : pd12562",
+    "family": "delta_vision",
+    "chars": 2090,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4727",
+    "name": "表面プラズモン共鳴測定装置 ・ Biacore T200",
+    "family": "biacore",
+    "chars": 2057,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3778",
+    "name": "SHIMADZU・フォトダイオードアレイHPLC",
+    "family": "hplc",
+    "chars": 2057,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4208",
+    "name": "スピンコーター(MS-A200) ミカサ(MS-A200)",
+    "family": "spin_coater",
+    "chars": 2031,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4694",
+    "name": "棚受け式300L材料乾燥機_DKN812",
+    "family": "material_dryer",
+    "chars": 2059,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5130",
+    "name": "シェーカー New Brunswick Scientific innova2300 2",
+    "family": "shaker",
+    "chars": 2052,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4903",
+    "name": "クロマトチャンバー(2)(株式会社 トミー精工 TCC-1606)",
+    "family": "chromato_chamber",
+    "chars": 2055,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1831",
+    "name": "Ge半導体γ線核種分析装置",
+    "family": "gamma_detector",
+    "chars": 2019,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2207",
+    "name": "スパッタコーター(メイワフォーシス SC200)",
+    "family": "sputter",
+    "chars": 2003,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3811",
+    "name": "400MHz NMR装置-S (JEOL/JNM-ECS400)",
+    "family": "nmr",
+    "chars": 2028,
+    "papers": 2
+  },
+  {
+    "doc_id": "YAMANASHI-XRD-SMARTLAB",
+    "name": "多目的X線回折装置",
+    "family": "xrd_powder",
+    "chars": 2094,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1226",
+    "name": "エネルギー分散型蛍光X線分析装置 EDX-800HS2",
+    "family": "xrf",
+    "chars": 2090,
+    "papers": 2
+  },
+  {
+    "doc_id": "SHeQZBEUC5piJ6Y8m5Uk",
+    "name": "極低加速電圧走査型電子顕微鏡・エネルギー分散型X線分析装置（FE-SEM, EDS）",
+    "family": "sem",
+    "chars": 2003,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2771",
+    "name": "示差走査熱量計(島津・DSC-60 Plus)",
+    "family": "dsc",
+    "chars": 2081,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1057",
+    "name": "小型卓上試験機(SHIMADZU・EZ-test)",
+    "family": "mechanical_test",
+    "chars": 2096,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4258",
+    "name": "X線顕微鏡 Carl Zeiss(Xradia 800 Ultra)",
+    "family": "xray_microscope",
+    "chars": 2010,
+    "papers": 2
+  },
+  {
+    "doc_id": "kGpWjtczfbuZpW81vwES",
+    "name": "質量分析装置 (LCMS-9050)",
+    "family": "mass_spec",
+    "chars": 2035,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-3634",
+    "name": "MALDI-TOFMS質量分析装置(Autoflex-maX)",
+    "family": "mass_spec",
+    "chars": 2082,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2326",
+    "name": "微量超遠心分離機 Optima TL",
+    "family": "centrifuge",
+    "chars": 2005,
+    "papers": 2
+  },
+  {
+    "doc_id": "CnXUhJgmvntfLqsEMnvv",
+    "name": "サーマルサイクラー (ABI Veriti)",
+    "family": "thermal_cycler",
+    "chars": 2107,
+    "papers": 2
+  },
+  {
+    "doc_id": "z8Lgu6BbwNmfAx3XJL2u",
+    "name": "透過型電子顕微鏡（TEM）",
+    "family": "tem",
+    "chars": 2077,
+    "papers": 1
+  },
+  {
+    "doc_id": "uz5ybTaf2NdeXg9W16Yf",
+    "name": "[197]200mmウェーハ対応原子間力顕微鏡",
+    "family": "afm",
+    "chars": 2103,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3827",
+    "name": "全自動電気泳動システム (Agilent 4150 TapeStation システム)",
+    "family": "bioanalyzer",
+    "chars": 2012,
+    "papers": 2
+  },
+  {
+    "doc_id": "PsC6xs3LHMxae5uBkZiJ",
+    "name": "400MHz 溶液NMR",
+    "family": "nmr",
+    "chars": 2073,
+    "papers": 2
+  },
+  {
+    "doc_id": "oJ5bTwYkxgJaVl0pNsGX",
+    "name": "セルソーター(1) (BD FACSAriaFusion)",
+    "family": "cell_sorter",
+    "chars": 2051,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3894",
+    "name": "フーリエ変換赤外分光光度計(FT-IR)(日本分光・FT/IR-4X)",
+    "family": "ftir",
+    "chars": 2050,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3292",
+    "name": "デジタルマイクロスコープ(KEYENCE・VHX-5000/VHX-D500)",
+    "family": "digital_microscope",
+    "chars": 2042,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-976",
+    "name": "表面プラズモン共鳴装置(GE Healthcare社・Biacore X100)",
+    "family": "biacore",
+    "chars": 2034,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1947",
+    "name": "イオンクロマトグラフ 東ソー 8010",
+    "family": "ion_chromatograph",
+    "chars": 2027,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4222",
+    "name": "ナノスピン熱処理装置(Si室) システムサービス",
+    "family": "heat_treatment",
+    "chars": 2049,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3547",
+    "name": "3Dスキャナー",
+    "family": "scanner3d",
+    "chars": 2036,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5129",
+    "name": "シェーカー New Brunswick Scientific innova2300 ➀",
+    "family": "shaker",
+    "chars": 2095,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4904",
+    "name": "クロマトチャンバー(3)(株式会社 トミー精工 TCC-1606)",
+    "family": "chromato_chamber",
+    "chars": 2084,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3452-fb111d82",
+    "name": "PRECISION ION POLISHING SYSTEM Model 691(Gatan)",
+    "family": "ion_polisher",
+    "chars": 2112,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2666",
+    "name": "スパッタリング蒸着装置(アルバック SPC-2000HC)",
+    "family": "sputter",
+    "chars": 2035,
+    "papers": 2
+  }
+]

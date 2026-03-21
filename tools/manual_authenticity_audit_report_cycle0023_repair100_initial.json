@@ -1,0 +1,348 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-03-12T15:32:23.281351+00:00",
+  "batch_id": "BATCH-20260312-CYCLE0023-REPAIR100",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0023_repair100.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0023_repair100.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0023-REPAIR100.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.01,
+    "pitfall2_same_ratio": 0.01,
+    "reviewed_at_unique_count": 100,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 0,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "auto_template_marker_hits": 0,
+    "beginner_char_min": 2000,
+    "beginner_char_max": 2977,
+    "beginner_char_avg": 2197.13,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 0,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 90
+  },
+  "threshold_failures": [],
+  "offending_doc_ids": [],
+  "issue_counts": {},
+  "issues": [],
+  "near_duplicate_pairs": [],
+  "checkpoint_snapshot": {
+    "generated_at": "2026-03-12T15:00:00+00:00",
+    "batch_id": "BATCH-20260312-CYCLE0023-REPAIR100",
+    "done": 0,
+    "remaining": 100,
+    "needs_manual_fix": 0,
+    "rows": {
+      "eqnet-5440": {
+        "status": "pending"
+      },
+      "Rxrzl5vi6WCgs5JURDon": {
+        "status": "pending"
+      },
+      "eqnet-1948": {
+        "status": "pending"
+      },
+      "eqnet-5143": {
+        "status": "pending"
+      },
+      "eqnet-2193": {
+        "status": "pending"
+      },
+      "eqnet-4355": {
+        "status": "pending"
+      },
+      "Tef9WwK62flV3dvgdCEv": {
+        "status": "pending"
+      },
+      "eqnet-4234": {
+        "status": "pending"
+      },
+      "eqnet-3874": {
+        "status": "pending"
+      },
+      "eqnet-2258": {
+        "status": "pending"
+      },
+      "eqnet-2259": {
+        "status": "pending"
+      },
+      "eqnet-564": {
+        "status": "pending"
+      },
+      "eqnet-471": {
+        "status": "pending"
+      },
+      "eqnet-470": {
+        "status": "pending"
+      },
+      "CJxahEKAlpNSA0zel5bs": {
+        "status": "pending"
+      },
+      "SvzOuIHjKVL2PzDrYiEE": {
+        "status": "pending"
+      },
+      "RyM3gLR12z8vnv1b8JLH": {
+        "status": "pending"
+      },
+      "eqnet-3415": {
+        "status": "pending"
+      },
+      "eqnet-2147": {
+        "status": "pending"
+      },
+      "eqnet-4320": {
+        "status": "pending"
+      },
+      "eqnet-3315": {
+        "status": "pending"
+      },
+      "eqnet-3105": {
+        "status": "pending"
+      },
+      "eqnet-2570": {
+        "status": "pending"
+      },
+      "eqnet-2495": {
+        "status": "pending"
+      },
+      "eqnet-2121": {
+        "status": "pending"
+      },
+      "eqnet-2324": {
+        "status": "pending"
+      },
+      "eqnet-4892": {
+        "status": "pending"
+      },
+      "eqnet-4891": {
+        "status": "pending"
+      },
+      "eqnet-4890": {
+        "status": "pending"
+      },
+      "eqnet-948": {
+        "status": "pending"
+      },
+      "eqnet-4563": {
+        "status": "pending"
+      },
+      "eqnet-1978": {
+        "status": "pending"
+      },
+      "eqnet-5026": {
+        "status": "pending"
+      },
+      "eqnet-4793-32d741e3": {
+        "status": "pending"
+      },
+      "eqnet-4441": {
+        "status": "pending"
+      },
+      "eqnet-3785": {
+        "status": "pending"
+      },
+      "eqnet-3783": {
+        "status": "pending"
+      },
+      "eqnet-4583": {
+        "status": "pending"
+      },
+      "eqnet-5152": {
+        "status": "pending"
+      },
+      "eqnet-5153": {
+        "status": "pending"
+      },
+      "eqnet-5154": {
+        "status": "pending"
+      },
+      "eqnet-3545": {
+        "status": "pending"
+      },
+      "GM44jqZKf9XnkIXv0Wkd": {
+        "status": "pending"
+      },
+      "ytNCBtGRH56o7K4os1TQ": {
+        "status": "pending"
+      },
+      "eqnet-996": {
+        "status": "pending"
+      },
+      "eqnet-2106": {
+        "status": "pending"
+      },
+      "eqnet-3627": {
+        "status": "pending"
+      },
+      "eqnet-3495": {
+        "status": "pending"
+      },
+      "eqnet-2790": {
+        "status": "pending"
+      },
+      "eqnet-2978": {
+        "status": "pending"
+      },
+      "eqnet-2681": {
+        "status": "pending"
+      },
+      "eqnet-4394": {
+        "status": "pending"
+      },
+      "7dph4QWWGmk55ym2a0Eh": {
+        "status": "pending"
+      },
+      "eqnet-5333": {
+        "status": "pending"
+      },
+      "eqnet-3591": {
+        "status": "pending"
+      },
+      "eqnet-2709": {
+        "status": "pending"
+      },
+      "eqnet-3331": {
+        "status": "pending"
+      },
+      "eqnet-3748": {
+        "status": "pending"
+      },
+      "eqnet-1791": {
+        "status": "pending"
+      },
+      "eqnet-2077": {
+        "status": "pending"
+      },
+      "eqnet-3996": {
+        "status": "pending"
+      },
+      "eqnet-5337": {
+        "status": "pending"
+      },
+      "JX2mn7xIh1MjfQYTd56S": {
+        "status": "pending"
+      },
+      "eqnet-2202": {
+        "status": "pending"
+      },
+      "eqnet-2002": {
+        "status": "pending"
+      },
+      "eqnet-4431": {
+        "status": "pending"
+      },
+      "eqnet-4409": {
+        "status": "pending"
+      },
+      "eqnet-2504": {
+        "status": "pending"
+      },
+      "eqnet-477": {
+        "status": "pending"
+      },
+      "eqnet-3052": {
+        "status": "pending"
+      },
+      "eqnet-2664": {
+        "status": "pending"
+      },
+      "eqnet-2044": {
+        "status": "pending"
+      },
+      "eqnet-5298": {
+        "status": "pending"
+      },
+      "eqnet-4241": {
+        "status": "pending"
+      },
+      "eqnet-4210": {
+        "status": "pending"
+      },
+      "eqnet-1968": {
+        "status": "pending"
+      },
+      "LlmxAz0PMLWAJd2Uk4xi": {
+        "status": "pending"
+      },
+      "eqnet-3642": {
+        "status": "pending"
+      },
+      "SAIp5pmOkSqNMPUgFUKM": {
+        "status": "pending"
+      },
+      "eqnet-3031": {
+        "status": "pending"
+      },
+      "eqnet-2662": {
+        "status": "pending"
+      },
+      "eqnet-3612": {
+        "status": "pending"
+      },
+      "eqnet-3784": {
+        "status": "pending"
+      },
+      "eqnet-4833": {
+        "status": "pending"
+      },
+      "eqnet-4081": {
+        "status": "pending"
+      },
+      "eqnet-4061": {
+        "status": "pending"
+      },
+      "eqnet-3572": {
+        "status": "pending"
+      },
+      "6uxmIy0mtp5o7D1FZea1": {
+        "status": "pending"
+      },
+      "eqnet-4525": {
+        "status": "pending"
+      },
+      "yIbyNgdQl4wXoJjTS3TC": {
+        "status": "pending"
+      },
+      "eqnet-5357": {
+        "status": "pending"
+      },
+      "eqnet-2998": {
+        "status": "pending"
+      },
+      "KbmXrbMsIXsoYwRR64nd": {
+        "status": "pending"
+      },
+      "eqnet-4328": {
+        "status": "pending"
+      },
+      "eqnet-3509": {
+        "status": "pending"
+      },
+      "eqnet-4901": {
+        "status": "pending"
+      },
+      "eqnet-4206": {
+        "status": "pending"
+      },
+      "eqnet-3762": {
+        "status": "pending"
+      },
+      "eqnet-4925": {
+        "status": "pending"
+      },
+      "OlpBB4jLGeqnvHDls1wP": {
+        "status": "pending"
+      }
+    }
+  }
+}

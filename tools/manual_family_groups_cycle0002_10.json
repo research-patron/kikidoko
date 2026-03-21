@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-05T13:10:45.163861+00:00",
+  "batch_id": "BATCH-20260305-CYCLE0002-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "2Fに設置されている機器|未分類|cp100wx-超遠心機---型式-himac|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9VRmb61YZlTBbAkqsd2X",
+          "equipment_id": "9VRmb61YZlTBbAkqsd2X",
+          "name": "超遠心機 －型式： himac CP100WX",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|cs150gx-小型超遠心機---型式-himac|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ifTzD5oXL358aBdBmbfo",
+          "equipment_id": "ifTzD5oXL358aBdBmbfo",
+          "name": "小型超遠心機 －型式： himac CS150GX",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|dna-シーケンサー---型式-spectrum-compact|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YpiYi5rGQqcX6ofJF4lt",
+          "equipment_id": "YpiYi5rGQqcX6ofJF4lt",
+          "name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|gm3000-マルチモートリーダー---型式-glomax-discover|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5X6ZriO6yzTLj79YxcNC",
+          "equipment_id": "5X6ZriO6yzTLj79YxcNC",
+          "name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|lsm700-共焦点レーザースキャン顕微鏡---型式|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OC2X0czptgbbPUaWY00k",
+          "equipment_id": "OC2X0czptgbbPUaWY00k",
+          "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|サーマルサイクラー---型式-proflex-pcrsystem|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "znbxD1h1tRk1CEbqpyFo",
+          "equipment_id": "znbxD1h1tRk1CEbqpyFo",
+          "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|スキャナータイプ画像解析装置-fla---型式-typhoon|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wi61TzbjV4NwlsUe3L1R",
+          "equipment_id": "wi61TzbjV4NwlsUe3L1R",
+          "name": "ｽｷｬﾅｰﾀｲﾌﾟ画像解析装置(FLA)－型式：Typhoon FLA 7000",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|バイオイメージングアナライザー-bas---型式-bas-2500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "repVWVGli4uWJD2ZwH4R",
+          "equipment_id": "repVWVGli4uWJD2ZwH4R",
+          "name": "ﾊﾞｲｵｲﾒｰｼﾞﾝｸﾞｱﾅﾗｲｻﾞｰ(BAS)－型式：BAS-2500",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|共焦点レーザースキャン顕微鏡---型式-lsm7duo|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ubP9vgVGw0QLZb9Sr2Ko",
+          "equipment_id": "ubP9vgVGw0QLZb9Sr2Ko",
+          "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM7DUO",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|円二色性分散計-cd---型式-j-820|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "oNcfvHTFhIAfmMBGAXQv",
+          "equipment_id": "oNcfvHTFhIAfmMBGAXQv",
+          "name": "円二色性分散計（CD）－型式：J-820",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9815
+}

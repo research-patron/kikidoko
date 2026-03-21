@@ -1,0 +1,530 @@
+{
+  "biacore": [
+    {
+      "doc_id": "UjZ7aMnXJLcWoq8BSZez",
+      "name": "BiacoreX100 S/N 1883246"
+    }
+  ],
+  "bioanalyzer": [
+    {
+      "doc_id": "eqnet-908",
+      "name": "マイクロチップ型電気泳動装置(Agilent2100バイオアナライザ)"
+    },
+    {
+      "doc_id": "eqnet-3309",
+      "name": "核酸分析システム Agilent 2100 Bioanalyzer"
+    }
+  ],
+  "biosafety-cabinet": [
+    {
+      "doc_id": "dSCUo67UKaxQwZNxxoKK",
+      "name": "BSL2安全キャビネット"
+    }
+  ],
+  "bond-tester": [
+    {
+      "doc_id": "eqnet-3601",
+      "name": "\"万能型ボンドテスター(ESR-4000)\""
+    }
+  ],
+  "cell-sorter": [
+    {
+      "doc_id": "EMLsPGzUlonPHQVNObMP",
+      "name": "BD FACS Aria Ⅱ セルソーター"
+    },
+    {
+      "doc_id": "eqnet-2148",
+      "name": "被ばく医療解析分離システム(米国ベクトン・ディッキンソン社製 BD FACSAria Special Order)"
+    }
+  ],
+  "centrifuge": [
+    {
+      "doc_id": "eqnet-4926",
+      "name": "マイクロ冷却遠心機(株式会社 久保田製作所 Model 3740)"
+    },
+    {
+      "doc_id": "eqnet-4274",
+      "name": "ユニバーサルコンパクト遠心機 Thermo Fisher Scientific(Sorvall ST 8FR)"
+    },
+    {
+      "doc_id": "eqnet-5148",
+      "name": "冷却遠心分離機 Hitachi CR20GIII"
+    },
+    {
+      "doc_id": "eqnet-5227",
+      "name": "多本架冷却遠心機 AX-511"
+    }
+  ],
+  "clean-bench": [
+    {
+      "doc_id": "eqnet-5043",
+      "name": "クリーンベンチ PCV-841-BRG(日立)"
+    }
+  ],
+  "ct": [
+    {
+      "doc_id": "eqnet-5225",
+      "name": "マイクロCT Skyscan 1276"
+    },
+    {
+      "doc_id": "eqnet-3019",
+      "name": "マイクロフォーカスX線CTスキャナ (Zeiss・Xradia)"
+    }
+  ],
+  "curve-tracer": [
+    {
+      "doc_id": "eqnet-3600",
+      "name": "\"カーブトレーサー(CS-3200)\""
+    }
+  ],
+  "demagnetizer": [
+    {
+      "doc_id": "eqnet-3024",
+      "name": "交流消磁装置(夏原技研・DEM-95)"
+    }
+  ],
+  "dry-block-bath": [
+    {
+      "doc_id": "eqnet-5102",
+      "name": "ドライブロックバス アズワン EB-603A"
+    }
+  ],
+  "electrophoresis": [
+    {
+      "doc_id": "eqnet-2738",
+      "name": "マイクロチップ電気泳動装置MultiNA(島津製作所・MCE-202)"
+    }
+  ],
+  "ellipsometer": [
+    {
+      "doc_id": "eqnet-2786",
+      "name": "簡易高速エリプソメータ(J.A.Woollam社・alpha-SE-Th)"
+    }
+  ],
+  "fermenter": [
+    {
+      "doc_id": "eqnet-4488",
+      "name": "ファーメンター (50L) Marubishi MSJ-U2W-50L"
+    }
+  ],
+  "flow-cytometer": [
+    {
+      "doc_id": "eqnet-3106",
+      "name": "細胞自動解析装置 MACSQuant"
+    },
+    {
+      "doc_id": "eqnet-1321",
+      "name": "フローサイトメーター アナライザー (BD・FACS Canto)"
+    },
+    {
+      "doc_id": "eqnet-2472",
+      "name": "セルアナライザー"
+    },
+    {
+      "doc_id": "eqnet-4165",
+      "name": "セルアナライザーLSR Fortessa Becton Dickinson(LSR Fortessa SORP)"
+    }
+  ],
+  "ftir": [
+    {
+      "doc_id": "eqnet-3626",
+      "name": "中赤外・遠赤外吸収測定装置(Spectrum400 FT-IR/FIR SpotLight400 IRイメージング)"
+    }
+  ],
+  "gpc": [
+    {
+      "doc_id": "eqnet-4300",
+      "name": "GPC(ゲル浸透クロマトグラフィー)システム(溶媒:THF)"
+    },
+    {
+      "doc_id": "eqnet-4296",
+      "name": "GPC(ゲル浸透クロマトグラフィー)システム(溶媒:ホルムアミド)"
+    }
+  ],
+  "imaging-cytometer": [
+    {
+      "doc_id": "eqnet-2331",
+      "name": "イメージングサイトメーター IN Cell Analyzer"
+    },
+    {
+      "doc_id": "eqnet-1117",
+      "name": "イメージングサイトメーター(パーキンエルマー社 Operetta)"
+    }
+  ],
+  "ion-chromatograph": [
+    {
+      "doc_id": "eqnet-2763",
+      "name": "イオンクロマトグラフ ICS-1600"
+    },
+    {
+      "doc_id": "eqnet-3333-32d741e3",
+      "name": "イオンクロマトグラフ ダイオネックス ICS-1000, ICS-1100"
+    },
+    {
+      "doc_id": "eqnet-4251",
+      "name": "イオンクロマトグラフ 分析装置 Thermo Fisher Scientific(Integrion)"
+    }
+  ],
+  "laser-profiler-microscope": [
+    {
+      "doc_id": "eqnet-2573",
+      "name": "3D測定レーザー顕微鏡"
+    },
+    {
+      "doc_id": "eqnet-4039",
+      "name": "3D測定レーザー顕微鏡 オリンパス(LEXT OLS)"
+    }
+  ],
+  "loading-frame": [
+    {
+      "doc_id": "eqnet-5063",
+      "name": "4m載荷フレーム"
+    }
+  ],
+  "lumino-imager": [
+    {
+      "doc_id": "eqnet-2313",
+      "name": "マルチ蛍光スキャナ Typhoon"
+    },
+    {
+      "doc_id": "eqnet-2633",
+      "name": "ルミノイメージアナライザー(FUJIFILM・LAS4000mini)"
+    },
+    {
+      "doc_id": "eqnet-825",
+      "name": "ルミノ・イメージアナライザー(GE ヘルスケア・ジャパン株式会社・ImageQuant LAS 4000)"
+    },
+    {
+      "doc_id": "eqnet-4807",
+      "name": "ルミノ・イメージアナライザー(GEヘルスケア:ImageQuant 800)"
+    }
+  ],
+  "maldi-matrix-coater": [
+    {
+      "doc_id": "eqnet-5168",
+      "name": "マトリックス自動塗布装置(島津製作所・iMLayer AERO)"
+    },
+    {
+      "doc_id": "eqnet-5167",
+      "name": "マトリックス蒸着装置(島津製作所・iMLayer)"
+    }
+  ],
+  "maldi-ms": [
+    {
+      "doc_id": "eqnet-2104",
+      "name": "マルディ飛行時間質量分析(MALDI TOF MS)"
+    },
+    {
+      "doc_id": "QxWI7gsrca1xHL8WeghO",
+      "name": "レーザーイオン化飛行時間型質量分析装置(MALDI-TOF/MS) (島津 MALDI-8020)"
+    }
+  ],
+  "manual-prober": [
+    {
+      "doc_id": "eqnet-4086",
+      "name": "300mm高周波対応マニュアルプローバ ベクターセミコン(S300M-973)"
+    },
+    {
+      "doc_id": "eqnet-4087",
+      "name": "マニュアルプローバ cascade 8inch,1/fノイズ計測システム付 Cascade Microtech(SQ-S11861B)"
+    }
+  ],
+  "mask-aligner": [
+    {
+      "doc_id": "eqnet-4058",
+      "name": "アライナー ユニオン光学(EMA-400)"
+    }
+  ],
+  "microarray": [
+    {
+      "doc_id": "eqnet-2637",
+      "name": "マイクロアレイ解析装置(Affymetrix・GeneAtlas)"
+    }
+  ],
+  "microvickers": [
+    {
+      "doc_id": "eqnet-4149",
+      "name": "マイクロビッカース硬度計 島津製作所(HMV-21DT)"
+    }
+  ],
+  "muffle-furnace": [
+    {
+      "doc_id": "eqnet-4310",
+      "name": "小型プログラム電気炉 MMF-2 1-6032-02"
+    }
+  ],
+  "multi-target-sputter": [
+    {
+      "doc_id": "VgQpipwfZQbZom07c2xO",
+      "name": "マグネトロンスパッタ装置 (Pt用)"
+    }
+  ],
+  "multiplex-bead-analyzer": [
+    {
+      "doc_id": "7iT9EWpsxMlihOO2an8n",
+      "name": "Bio-Plex200システム Bio-Plex200システム"
+    }
+  ],
+  "nmr-600": [
+    {
+      "doc_id": "eqnet-5431",
+      "name": "600 MHz 核磁気共鳴装置(日本電子・JNM-ECA600)"
+    },
+    {
+      "doc_id": "eqnet-3994",
+      "name": "600MHz NMR装置1 Bruker BioSpin(自己遮蔽型 AVANCE600)"
+    },
+    {
+      "doc_id": "eqnet-4151",
+      "name": "600MHz NMR装置2 Bruker BioSpin(自己遮蔽型 AVANCE600)"
+    }
+  ],
+  "online-elemental-ms": [
+    {
+      "doc_id": "eqnet-2157",
+      "name": "元素分析オンライン質量分析計 (サーモフィニガン・DELTA plus Advantage)"
+    }
+  ],
+  "particle-size-analyzer": [
+    {
+      "doc_id": "eqnet-2178",
+      "name": "レーザー粒度分布測定器 (Malvern・Mastersizer 2000)"
+    }
+  ],
+  "phytotron": [
+    {
+      "doc_id": "eqnet-4252",
+      "name": "人工光型小型 ファイトトロン M1 日本医化器械製作所(LPH-0.3PHH)"
+    }
+  ],
+  "plasma-asher": [
+    {
+      "doc_id": "eqnet-4198",
+      "name": "プラズマアッシャー(PR500) ヤマト科学(PR500)"
+    }
+  ],
+  "probe-microscope": [
+    {
+      "doc_id": "eqnet-2092",
+      "name": "原子間力/走査型トンネル顕微鏡(SPM)"
+    },
+    {
+      "doc_id": "eqnet-3135",
+      "name": "原子間力顕微鏡 SPA400"
+    },
+    {
+      "doc_id": "eqnet-2714",
+      "name": "原子間力顕微鏡((株)日立ハイテクサイエンス・SPI3800N/SPA-300HV)"
+    }
+  ],
+  "pure-water-milliq": [
+    {
+      "doc_id": "eqnet-3067",
+      "name": "超純水 Milli-Q EQ7000"
+    }
+  ],
+  "raman-microscope": [
+    {
+      "doc_id": "eqnet-1757",
+      "name": "レーザーラマン分光分析装置(日本分光・NRS-3300)"
+    }
+  ],
+  "sem-sputter": [
+    {
+      "doc_id": "eqnet-3508",
+      "name": "金スパッタ (サンユー電子 SC-701AT)"
+    },
+    {
+      "doc_id": "eqnet-3597",
+      "name": "\"スパッタ装置(E-200S)\""
+    }
+  ],
+  "sequencer": [
+    {
+      "doc_id": "eqnet-2441",
+      "name": "次世代シーケンサー(ThermoFisherScientific・IonS5)"
+    }
+  ],
+  "shaker-nr150": [
+    {
+      "doc_id": "eqnet-5124",
+      "name": "シェーカー TAITEC NR-150 ➀"
+    }
+  ],
+  "shaker-nr3": [
+    {
+      "doc_id": "eqnet-5126",
+      "name": "シェーカー TAITEC NR-3"
+    }
+  ],
+  "shaker-nr30": [
+    {
+      "doc_id": "eqnet-5127",
+      "name": "シェーカー TAITEC NR-30"
+    }
+  ],
+  "shape-measurement": [
+    {
+      "doc_id": "VrAnuKqzJ61PTRgf2rxE",
+      "name": "ワンショット3D形状測定機"
+    },
+    {
+      "doc_id": "eqnet-4225",
+      "name": "ワイドレンジナノ形状測定システム(Si室) 島津製作所(FT-3500)"
+    },
+    {
+      "doc_id": "eqnet-3575",
+      "name": "\"分光干渉レーザ変位計・高精度形状測定システム(KS-1100,SI-F01,SI-F01U)\""
+    }
+  ],
+  "single-cell-analysis": [
+    {
+      "doc_id": "KKzr5qh2MuRT2AO13c5j",
+      "name": "BD Rhapsodyシングルセル解析システム"
+    }
+  ],
+  "single:光分析装置:ラマン分光装置(日本分光(株) NRS-7100)": [
+    {
+      "doc_id": "eqnet-3493",
+      "name": "レーザーラマン分光装置 (日本分光 NRS-7100)"
+    }
+  ],
+  "single:核磁気共鳴装置(NMR):500MHz核磁気共鳴装置(Bruker・AVANCE NEO 500)": [
+    {
+      "doc_id": "eqnet-2757",
+      "name": "500MHz核磁気共鳴装置【夜間・週末・祝日用】(Bruker・AVANCE NEO 500)"
+    }
+  ],
+  "single:構造解析/元素分析:有機元素分析装置(C,H,N,S) (elementar(UNICUBE) )": [
+    {
+      "doc_id": "eqnet-3349",
+      "name": "有機元素分析装置(Fを除くハロゲン) (elementar(UNICUBE) )"
+    }
+  ],
+  "single:物性計測/成分分析:TG-MS分析装置(TG-DTA8122 / JMS-Q1600GC・8890GC)": [
+    {
+      "doc_id": "eqnet-897",
+      "name": "示差熱天秤-光イオン化質量分析同時測定システム (リガク・Thermo Mass Photo )"
+    }
+  ],
+  "slide-scanner": [
+    {
+      "doc_id": "eqnet-5285",
+      "name": "スライドスキャナー Olympus VS200 Olympus(SLIDEVIEW VS200)"
+    }
+  ],
+  "solidstate-nmr-600": [
+    {
+      "doc_id": "eqnet-463",
+      "name": "600MHZ 固体核磁気共鳴装置(Bruker Avance III600WB)"
+    }
+  ],
+  "spin-coater": [
+    {
+      "doc_id": "eqnet-4207",
+      "name": "スピンコーター(U13 MS-A150) ミカサ(MS-A150)"
+    }
+  ],
+  "squid": [
+    {
+      "doc_id": "eqnet-4837",
+      "name": "凝縮装置付きSQUID(米国カンタム・デザイン社MPMS-SQUID DC 磁気特性測定システム)"
+    }
+  ],
+  "tapestation": [
+    {
+      "doc_id": "eqnet-4589",
+      "name": "全自動電気泳動システム(4150 TapeStation) Agilent(4150 TapeStation System)"
+    },
+    {
+      "doc_id": "eqnet-3308",
+      "name": "核酸分析システム Agilent 2200 TapeStation"
+    }
+  ],
+  "tem-general": [
+    {
+      "doc_id": "eqnet-2682",
+      "name": "原子分解能分析電子顕微鏡(JEOL、ARM-200F)"
+    }
+  ],
+  "tensile-tester": [
+    {
+      "doc_id": "eqnet-4297",
+      "name": "引張試験機 AG-X-plus-50N-5kN"
+    },
+    {
+      "doc_id": "eqnet-4298",
+      "name": "引張試験機 AG-X-plus-50kN (温調オーブン附属)"
+    }
+  ],
+  "thermal": [
+    {
+      "doc_id": "vieiUkG0CMYeiZrZIfnw",
+      "name": "熱重量・熱量同時測定装置（TG-DTA/DSC）"
+    },
+    {
+      "doc_id": "eqnet-3395",
+      "name": "熱重量・示差熱分析装置(Thermo plus EVO2 TG-DTA/H-SL)"
+    },
+    {
+      "doc_id": "eqnet-1204",
+      "name": "熱重量・示差熱分析装置(リガクThermo Plus EvoII)"
+    },
+    {
+      "doc_id": "eqnet-1052",
+      "name": "示差熱熱重量同時測定装置(セイコーインスツルメンツ・TG/FTA6200)"
+    }
+  ],
+  "ultracentrifuge": [
+    {
+      "doc_id": "eqnet-4115",
+      "name": "分離用超遠心機CP80WX 日立工機(himac CP80WX)"
+    }
+  ],
+  "uni-temp": [
+    {
+      "doc_id": "eqnet-5422",
+      "name": "Uni-temp (RSS-210-S)"
+    },
+    {
+      "doc_id": "eqnet-3578",
+      "name": "Uni-temp(RSS-450-210-FA)"
+    }
+  ],
+  "uv-vis": [
+    {
+      "doc_id": "eqnet-5109",
+      "name": "分光光度計 JASCO V-730 BIO"
+    }
+  ],
+  "vacuum-evaporator": [
+    {
+      "doc_id": "eqnet-1347",
+      "name": "真空蒸着装置(Vaccum Device・VE-2030)"
+    }
+  ],
+  "wdxrf": [
+    {
+      "doc_id": "eqnet-1229-1f0c85b7",
+      "name": "波長分散型蛍光X線分析装置"
+    },
+    {
+      "doc_id": "oEq577mwnYn41lqfNHn7",
+      "name": "波長分散型蛍光X線分析装置"
+    },
+    {
+      "doc_id": "eqnet-843",
+      "name": "波長分散型蛍光X線分析装置 (RIGAKU ZSX Primus)"
+    },
+    {
+      "doc_id": "eqnet-2244",
+      "name": "波長分散型蛍光X線分析装置(Bruker AXS S8 TIGER-MA 1kW)"
+    }
+  ],
+  "xray-irradiator": [
+    {
+      "doc_id": "eqnet-3425",
+      "name": "X線照射装置(HITACHI MBR-1520R-3)"
+    }
+  ]
+}

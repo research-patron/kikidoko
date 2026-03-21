@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-4207/10.1080/02640414.2025.2540228",
+    "paper_space_hash": "#/paper/eqnet-4207/10.1080/02640414.2025.2540228",
+    "beginner_enter_hash": "#/beginner/eqnet-4207",
+    "beginner_space_hash": "#/beginner/eqnet-4207"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "スピンコーター(U13 MS-A150) ミカサ(MS-A150)",
+      "summary_len": 259,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4207/10.1080/02640414.2025.2540228",
+      "beginner_hash": "#/beginner/eqnet-4207",
+      "paper_link_href": "https://doi.org/10.1080/02640414.2025.2540228",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "スプレーコーター((株)三明・DC120)",
+      "summary_len": 195,
+      "sample_count": 2,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2056/10.1115/gt2024-128513",
+      "beginner_hash": "#/beginner/eqnet-2056",
+      "paper_link_href": "https://doi.org/10.1115/GT2024-128513",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "スライドスキャナー Olympus VS200 Olympus(SLIDEVIEW VS200)",
+      "summary_len": 286,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5285/10.1186/s12951-025-03891-0",
+      "beginner_hash": "#/beginner/eqnet-5285",
+      "paper_link_href": "https://doi.org/10.1186/s12951-025-03891-0",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "セクショニング光学顕微鏡 DeltaVision S/N : pd12562",
+      "summary_len": 201,
+      "sample_count": 2,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1949/10.1093/nar/gkaf1517",
+      "beginner_hash": "#/beginner/eqnet-1949",
+      "paper_link_href": "https://doi.org/10.1093/nar/gkaf1517",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "セクター型質量分析装置 (JEOL製・JMS700)",
+      "summary_len": 132,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-82/10.1038/s41531-025-01230-6",
+      "beginner_hash": "#/beginner/eqnet-82",
+      "paper_link_href": "https://doi.org/10.1038/s41531-025-01230-6",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "セルアナライザー",
+      "summary_len": 226,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2472/10.1038/s41545-025-00536-5",
+      "beginner_hash": "#/beginner/eqnet-2472",
+      "paper_link_href": "https://doi.org/10.1038/s41545-025-00536-5",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "セルアナライザー BD FACS CantoII Becton Dickinson(FACSCanto II)",
+      "summary_len": 174,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4724/10.1186/s40345-025-00406-6",
+      "beginner_hash": "#/beginner/eqnet-4724",
+      "paper_link_href": "https://doi.org/10.1186/s40345-025-00406-6",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "セルアナライザー BD LSR Fortessa Becton Dickinson(LSRFortessa)",
+      "summary_len": 173,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4725/10.1186/s40345-025-00406-6",
+      "beginner_hash": "#/beginner/eqnet-4725",
+      "paper_link_href": "https://doi.org/10.1186/s40345-025-00406-6",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "セルアナライザーLSR Fortessa Becton Dickinson(LSR Fortessa SORP)",
+      "summary_len": 290,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4165/10.1038/s41598-026-35236-8",
+      "beginner_hash": "#/beginner/eqnet-4165",
+      "paper_link_href": "https://doi.org/10.1038/s41598-026-35236-8",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "セルカウンター (スクラム Cell Drop)",
+      "summary_len": 167,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5194/10.1080/2162402x.2026.2613561",
+      "beginner_hash": "#/beginner/eqnet-5194",
+      "paper_link_href": "https://doi.org/10.1080/2162402X.2026.2613561",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

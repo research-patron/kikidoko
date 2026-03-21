@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/Uws7Nd0FITQFhBuZ6UX3/10.1186/s12964-025-02493-5",
+    "paper_space_hash": "#/paper/Uws7Nd0FITQFhBuZ6UX3/10.1186/s12964-025-02493-5",
+    "beginner_enter_hash": "#/beginner/Uws7Nd0FITQFhBuZ6UX3",
+    "beginner_space_hash": "#/beginner/Uws7Nd0FITQFhBuZ6UX3"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "超遠心機 －型式： himac CP100WX",
+      "summary_len": 127,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/Uws7Nd0FITQFhBuZ6UX3/10.1186/s12964-025-02493-5",
+      "beginner_hash": "#/beginner/Uws7Nd0FITQFhBuZ6UX3",
+      "paper_link_href": "https://doi.org/10.1186/s12964-025-02493-5",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "卓上タンパク質合成システム－型式：Protemist DT",
+      "summary_len": 173,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/482ergQpZB21JJEsNXxy/10.1002/bit.20026",
+      "beginner_hash": "#/beginner/482ergQpZB21JJEsNXxy",
+      "paper_link_href": "https://doi.org/10.1002/bit.20026",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        4
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "ツインドライブ型レオメータ(YG-001)",
+      "summary_len": 143,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/pKbqSe700ZzWohdFw65n/10.3390/polym13071123",
+      "beginner_hash": "#/beginner/pKbqSe700ZzWohdFw65n",
+      "paper_link_href": "https://doi.org/10.3390/polym13071123",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        4
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "ユニバーサルズーム顕微鏡 株式会社ニコンインステック MULTIZOOM AZ100",
+      "summary_len": 161,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/n8KsCALgOq9rNk6K1yah/10.7860/jcdr/2019/42116.13182",
+      "beginner_hash": "#/beginner/n8KsCALgOq9rNk6K1yah",
+      "paper_link_href": "https://doi.org/10.7860/JCDR/2019/42116.13182",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        4
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "ﾏｲｸﾛﾌﾟﾚｰﾄｼﾝﾁﾚｰｼｮﾝ・ﾙﾐﾈｯｾﾝｽｶｳﾝﾀｰ－型式：TopCount NXT",
+      "summary_len": 271,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/zi1yT7fU9lLrsbZCUane/10.1038/s41392-025-02535-x",
+      "beginner_hash": "#/beginner/zi1yT7fU9lLrsbZCUane",
+      "paper_link_href": "https://doi.org/10.1038/s41392-025-02535-x",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "走査型電子顕微鏡 日本電子株式会社 JSM-6390LV",
+      "summary_len": 224,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KUMAMOTO-list4f-06/10.31127/tuje.1804146",
+      "beginner_hash": "#/beginner/KUMAMOTO-list4f-06",
+      "paper_link_href": "https://doi.org/10.31127/tuje.1804146",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "超高真空エッチング装置",
+      "summary_len": 197,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/sbxUhEraF8q7E6MfPgPM/10.1007/s41060-025-00810-2",
+      "beginner_hash": "#/beginner/sbxUhEraF8q7E6MfPgPM",
+      "paper_link_href": "https://doi.org/10.1007/s41060-025-00810-2",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "蛍光X線分析装置（XRF）",
+      "summary_len": 221,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/arjgiO0PmkdOymefhPI3/10.31643/2027/6445.08",
+      "beginner_hash": "#/beginner/arjgiO0PmkdOymefhPI3",
+      "paper_link_href": "https://doi.org/10.31643/2027/6445.08",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "アイトラッカー",
+      "summary_len": 261,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/X5irZ5FTgTb6cDkhoQza/10.1080/19420862.2026.2618314",
+      "beginner_hash": "#/beginner/X5irZ5FTgTb6cDkhoQza",
+      "paper_link_href": "https://doi.org/10.1080/19420862.2026.2618314",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "電子天びん（AUX-320)",
+      "summary_len": 144,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/MtY3ky4z0ELvKYPVxcBh/10.5281/zenodo.17914311",
+      "beginner_hash": "#/beginner/MtY3ky4z0ELvKYPVxcBh",
+      "paper_link_href": "https://doi.org/10.5281/zenodo.17914311",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

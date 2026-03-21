@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T23:04:52.643033+00:00",
+  "batch_id": "BATCH-20260304-CYCLE16-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|単結晶-線構造解析システム|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lswL7geq85x4aKux9VCC",
+          "equipment_id": "HOKUDAI-AP-901942",
+          "name": "単結晶Ｘ線構造解析システム",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|走査電子顕微鏡システム及び粒子解析システム|sem_tem|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "T1HyPeqRixFBGMReRyXM",
+          "equipment_id": "HOKUDAI-AP-902089",
+          "name": "走査電子顕微鏡システム及び粒子解析システム",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置|試料水平型多目的-線回折測定装置-xrd|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Hh91Qi646KaUQ0imZzHL",
+          "equipment_id": "MIE-equipment3",
+          "name": "試料水平型多目的X線回折測定装置（XRD）",
+          "category_general": "その他",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置|走査型-線光電子分光分析装置-多モードトポ解析システム-xps|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Bnlyh5Lz5UQhB2LsYHRz",
+          "equipment_id": "MIE-equipment10",
+          "name": "走査型X線光電子分光分析装置 （多モードトポ解析システム/XPS）",
+          "category_general": "その他",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置|電子線マイクロアナライザ-多モードトポ解析システム-epma|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JKJelUiKor4fkn6WYRYB",
+          "equipment_id": "MIE-equipment11",
+          "name": "電子線マイクロアナライザ （多モードトポ解析システム/EPMA)",
+          "category_general": "その他",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 (Others) / その他_ (Others)|レーザーアブレーション---レーザー誘起ブレークダウン分光-誘導結合プラズマ質量分析装置|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "BXrqEOb2zFpIEAm7J7ty",
+          "equipment_id": "HOKUDAI-AP-100408",
+          "name": "レーザーアブレーション-レーザー誘起ブレークダウン分光-誘導結合プラズマ質量分析装置",
+          "category_general": "その他",
+          "category_detail": "その他 (Others) / その他_ (Others)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / - / -|物理特性測定システム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5R9ZyIGax9YgQrR6szFA",
+          "equipment_id": "5R9ZyIGax9YgQrR6szFA",
+          "name": "物理特性測定システム",
+          "category_general": "その他",
+          "category_detail": "その他 / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / - / -|移動式集塵機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Rmj07jyIRebIomXmvrsj",
+          "equipment_id": "Rmj07jyIRebIomXmvrsj",
+          "name": "移動式集塵機",
+          "category_general": "その他",
+          "category_detail": "その他 / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / - / -|超音波発生機-トミー精工-ud-201|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GLcjahOYdUXA1kKPr3Ky",
+          "equipment_id": "GLcjahOYdUXA1kKPr3Ky",
+          "name": "超音波発生機 トミー精工UD-201",
+          "category_general": "その他",
+          "category_detail": "その他 / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / FACS|フローサイトメーター-facscalibur-hg|flow|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "G3YKY3YDI8vRloTzaVGB",
+          "equipment_id": "G3YKY3YDI8vRloTzaVGB",
+          "name": "フローサイトメーター FACSCalibur HG",
+          "category_general": "その他",
+          "category_detail": "その他 / FACS"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9311
+}

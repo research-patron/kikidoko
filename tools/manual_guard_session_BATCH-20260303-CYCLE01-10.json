@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260303-CYCLE01-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T12:27:56.387863+00:00",
+  "updated_at": "2026-03-03T12:49:31.946227+00:00",
+  "closed_at": "2026-03-03T12:49:31.946227+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle01_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-CYCLE01-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "088cb491a4be064ee443a9581dd022fe1cdb1c2ab40c44fcef86d659eeff59d2",
+    "queue_sha256_at_start": "21d5155a2f070766b8c228f7af84890e1ef233df45dfb2333554d8f699128217",
+    "queue_row_keys_sha256": "c5549f64664818283b3ade859ef4866091fba9dad3f4716b0e77f50dc9b9ee01"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+      "MnKJOOuDLNYBS9hFiUEq::MnKJOOuDLNYBS9hFiUEq",
+      "iHMAH0L2G85gA2Ap7UsD::iHMAH0L2G85gA2Ap7UsD",
+      "EZ8ZzyQrYgfSJiXktdTO::AIST-COL019",
+      "a7B5vrLrCzcl2DqCdLfU::AIST-COL017",
+      "IsUCHcqpdLt46ZBq03sr::IsUCHcqpdLt46ZBq03sr",
+      "KzfGolRk7kXoOCpdRZ2D::KzfGolRk7kXoOCpdRZ2D",
+      "yY3azy7NRZIcFXircaTw::yY3azy7NRZIcFXircaTw"
+    ],
+    "target_rows": [
+      {
+        "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+        "doc_id": "u4a3a0lcL4d7JBXLv7Kw",
+        "equipment_id": "u4a3a0lcL4d7JBXLv7Kw",
+        "name": "生体分子精製装置AKTAexplorer10S",
+        "papers_count": 0
+      },
+      {
+        "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+        "doc_id": "t3TGtPLqzFKGKwOsBnKL",
+        "equipment_id": "t3TGtPLqzFKGKwOsBnKL",
+        "name": "フレンチプレス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+        "doc_id": "diMgSNfpWiYbHVK8qj3B",
+        "equipment_id": "diMgSNfpWiYbHVK8qj3B",
+        "name": "酸化炉",
+        "papers_count": 3
+      },
+      {
+        "row_key": "MnKJOOuDLNYBS9hFiUEq::MnKJOOuDLNYBS9hFiUEq",
+        "doc_id": "MnKJOOuDLNYBS9hFiUEq",
+        "equipment_id": "MnKJOOuDLNYBS9hFiUEq",
+        "name": "電子線描画装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "iHMAH0L2G85gA2Ap7UsD::iHMAH0L2G85gA2Ap7UsD",
+        "doc_id": "iHMAH0L2G85gA2Ap7UsD",
+        "equipment_id": "iHMAH0L2G85gA2Ap7UsD",
+        "name": "NMR(500MHz)－型式：AVANCEⅢHD 500",
+        "papers_count": 2
+      },
+      {
+        "row_key": "EZ8ZzyQrYgfSJiXktdTO::AIST-COL019",
+        "doc_id": "EZ8ZzyQrYgfSJiXktdTO",
+        "equipment_id": "AIST-COL019",
+        "name": "マスクレス露光装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "a7B5vrLrCzcl2DqCdLfU::AIST-COL017",
+        "doc_id": "a7B5vrLrCzcl2DqCdLfU",
+        "equipment_id": "AIST-COL017",
+        "name": "電子線描画装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IsUCHcqpdLt46ZBq03sr::IsUCHcqpdLt46ZBq03sr",
+        "doc_id": "IsUCHcqpdLt46ZBq03sr",
+        "equipment_id": "IsUCHcqpdLt46ZBq03sr",
+        "name": "小型超遠心機 －型式： himac CS150GX",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KzfGolRk7kXoOCpdRZ2D::KzfGolRk7kXoOCpdRZ2D",
+        "doc_id": "KzfGolRk7kXoOCpdRZ2D",
+        "equipment_id": "KzfGolRk7kXoOCpdRZ2D",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+        "papers_count": 2
+      },
+      {
+        "row_key": "yY3azy7NRZIcFXircaTw::yY3azy7NRZIcFXircaTw",
+        "doc_id": "yY3azy7NRZIcFXircaTw",
+        "equipment_id": "yY3azy7NRZIcFXircaTw",
+        "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+        "papers_count": 1
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T12:27:56.387863+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T12:28:44.638643+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T12:42:01.557732+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T12:49:31.946227+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T03:45:50.492517+00:00",
+  "batch_id": "BATCH-20260304-CYCLE26R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ImeR5mEpwtcC4tPFVYNo",
+          "equipment_id": "ImeR5mEpwtcC4tPFVYNo",
+          "name": "超低温フリーザー_08 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7fNEKtajWVbSHWjeE4WB",
+          "equipment_id": "7fNEKtajWVbSHWjeE4WB",
+          "name": "バイオトロンB棟-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "MJFAPUitdwYTyEGtctmX",
+          "equipment_id": "MJFAPUitdwYTyEGtctmX",
+          "name": "バイオトロンB棟-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--3|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dmkh3juDOR7NLusxuc8H",
+          "equipment_id": "dmkh3juDOR7NLusxuc8H",
+          "name": "バイオトロンB棟-3",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--4|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "rno2y95IN10lMAJEsg10",
+          "equipment_id": "rno2y95IN10lMAJEsg10",
+          "name": "バイオトロンB棟-4",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 熱分析|示差熱---熱重量同時測定装置-tg-dta|thermal|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ztROas4xDsRqkdtXf66x",
+          "equipment_id": "ztROas4xDsRqkdtXf66x",
+          "name": "示差熱-熱重量同時測定装置(TG_DTA)",
+          "category_general": "その他",
+          "category_detail": "その他 / 熱分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 熱分析|試料観察示差走査熱量計-dscvesta|thermal|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fyr7zeUIdzDXC9pc5FjC",
+          "equipment_id": "fyr7zeUIdzDXC9pc5FjC",
+          "name": "試料観察示差走査熱量計(DSCvesta)",
+          "category_general": "その他",
+          "category_detail": "その他 / 熱分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 生体分子合成解析|全自動アミノ酸分析機-jlc-500|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "8FflyCOgaGKLMkTC6Zq8",
+          "equipment_id": "8FflyCOgaGKLMkTC6Zq8",
+          "name": "全自動アミノ酸分析機 JLC-500/V",
+          "category_general": "その他",
+          "category_detail": "その他 / 生体分子合成解析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 解析用ソフトウェア|マルチカラーデータ解析ソフトウェア|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XiFUbtyUkn9sFM0FzDIY",
+          "equipment_id": "XiFUbtyUkn9sFM0FzDIY",
+          "name": "マルチカラーデータ解析ソフトウェア(1)",
+          "category_general": "その他",
+          "category_detail": "その他 / 解析用ソフトウェア"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 評価装置|マルチファンクションジェネレーター|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JiTLAwT88xw9ez3r1Swe",
+          "equipment_id": "MIYAZAKI-919",
+          "name": "マルチファンクションジェネレーター",
+          "category_general": "その他",
+          "category_detail": "その他 / 評価装置"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9230
+}

@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0006-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T07:06:09.676867+00:00",
+  "updated_at": "2026-03-07T07:15:10.354266+00:00",
+  "closed_at": "2026-03-07T07:15:10.354266+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0006_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0006-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "6ed01515d14b51758c0d3036fe37318725875bea16106e0ec4fa592110b6239e",
+    "queue_sha256_at_start": "47bb6c3d92acea7031fd8d5dfb730717677e5567e6d9a647ea6f3f025ad7de65",
+    "queue_row_keys_sha256": "0225aec15a6a1a03362bcdc395da8b2c0a79c7939f6b7bc6203da5133320f26e"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "VIp6ga7dIUZFFAyc0qlz::KUMAMOTO-list3f-06",
+      "aCaM3wSDHa4NyWNZDzDW::KUMAMOTO-list3f-09",
+      "4z2BL1tvjflMsfMD7lpz::4z2BL1tvjflMsfMD7lpz",
+      "lTqd5v0S9o9IQG3l6SZL::KUMAMOTO-list4f-08",
+      "ozOCOvoE6Sw2VpxWrhDG::KUMAMOTO-list1f-01",
+      "VD1b5MAID8FkRvfmtwTh::KUMAMOTO-list5f-02",
+      "hzzHikfI02IrG6BW6DWM::hzzHikfI02IrG6BW6DWM",
+      "TOKUSHIMA-64::TOKUSHIMA-64",
+      "OHFl57aZLStRCEjLuxEE::MIE-equipment4",
+      "AUUydx6XUviKtGmIIEp7::UTOKYO-254"
+    ],
+    "target_rows": [
+      {
+        "row_key": "VIp6ga7dIUZFFAyc0qlz::KUMAMOTO-list3f-06",
+        "doc_id": "VIp6ga7dIUZFFAyc0qlz",
+        "equipment_id": "KUMAMOTO-list3f-06",
+        "name": "プラズマクリーナー YHS-R",
+        "papers_count": 2
+      },
+      {
+        "row_key": "aCaM3wSDHa4NyWNZDzDW::KUMAMOTO-list3f-09",
+        "doc_id": "aCaM3wSDHa4NyWNZDzDW",
+        "equipment_id": "KUMAMOTO-list3f-09",
+        "name": "集束イオンビーム (Focused Ion Beam) 株式会社日立ハイテクノロジーズ NB5000",
+        "papers_count": 2
+      },
+      {
+        "row_key": "4z2BL1tvjflMsfMD7lpz::4z2BL1tvjflMsfMD7lpz",
+        "doc_id": "4z2BL1tvjflMsfMD7lpz",
+        "equipment_id": "4z2BL1tvjflMsfMD7lpz",
+        "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：LSC-6100",
+        "papers_count": 1
+      },
+      {
+        "row_key": "lTqd5v0S9o9IQG3l6SZL::KUMAMOTO-list4f-08",
+        "doc_id": "lTqd5v0S9o9IQG3l6SZL",
+        "equipment_id": "KUMAMOTO-list4f-08",
+        "name": "イオンスパッタリング装置 日本電子株式会社 JFC-1100E",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ozOCOvoE6Sw2VpxWrhDG::KUMAMOTO-list1f-01",
+        "doc_id": "ozOCOvoE6Sw2VpxWrhDG",
+        "equipment_id": "KUMAMOTO-list1f-01",
+        "name": "透過型電子顕微鏡 FEI TECNAI F20",
+        "papers_count": 1
+      },
+      {
+        "row_key": "VD1b5MAID8FkRvfmtwTh::KUMAMOTO-list5f-02",
+        "doc_id": "VD1b5MAID8FkRvfmtwTh",
+        "equipment_id": "KUMAMOTO-list5f-02",
+        "name": "二次イオン質量分析器 SIMS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "hzzHikfI02IrG6BW6DWM::hzzHikfI02IrG6BW6DWM",
+        "doc_id": "hzzHikfI02IrG6BW6DWM",
+        "equipment_id": "hzzHikfI02IrG6BW6DWM",
+        "name": "単結晶X線回折装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "TOKUSHIMA-64::TOKUSHIMA-64",
+        "doc_id": "TOKUSHIMA-64",
+        "equipment_id": "TOKUSHIMA-64",
+        "name": "単結晶X線構造解析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "OHFl57aZLStRCEjLuxEE::MIE-equipment4",
+        "doc_id": "OHFl57aZLStRCEjLuxEE",
+        "equipment_id": "MIE-equipment4",
+        "name": "X線界面構造解析装置（XRR）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "AUUydx6XUviKtGmIIEp7::UTOKYO-254",
+        "doc_id": "AUUydx6XUviKtGmIIEp7",
+        "equipment_id": "UTOKYO-254",
+        "name": "10X Genomics Chromiumシステム",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T07:06:09.676867+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-07T07:06:09.771285+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T07:06:47.521262+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T07:15:10.354266+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T16:35:37.238667+00:00",
+  "batch_id": "BATCH-20260304-CYCLE09-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|Other Analytical Instrument|biacore|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XpzDlez2GqOBbzD1ddr1",
+          "equipment_id": "XpzDlez2GqOBbzD1ddr1",
+          "name": "Biacore",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|dsc|thermal|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "PmIoo8A1VznSILtpTCH9",
+          "equipment_id": "PmIoo8A1VznSILtpTCH9",
+          "name": "DSC",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|exter-analytical-ce-440|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JezOyHSKxBhYVbWvZHw2",
+          "equipment_id": "JezOyHSKxBhYVbWvZHw2",
+          "name": "Exter Analytical CE-440",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|fluorescence-spectrophotometer|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "05nx1uFTnyHG9WfLfLOd",
+          "equipment_id": "05nx1uFTnyHG9WfLfLOd",
+          "name": "Fluorescence Spectrophotometer",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|ion-chromatography|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wGH4GfUR1dJvTPPkWF4c",
+          "equipment_id": "wGH4GfUR1dJvTPPkWF4c",
+          "name": "Ion Chromatography",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|microplate-reader|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fJzHtIlhfUheuqXVtyra",
+          "equipment_id": "fJzHtIlhfUheuqXVtyra",
+          "name": "Microplate Reader",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|microscale-thermophoresis|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "djzjIJ32oecLJk0MKRPp",
+          "equipment_id": "djzjIJ32oecLJk0MKRPp",
+          "name": "Microscale Thermophoresis System",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|peaq-itc|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zJIsSav7Uac0OOwqLSc2",
+          "equipment_id": "zJIsSav7Uac0OOwqLSc2",
+          "name": "PEAQ-ITC",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|spectropolarimeter|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "B6BldDtd77RZvAirOwuV",
+          "equipment_id": "B6BldDtd77RZvAirOwuV",
+          "name": "Spectropolarimeter",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|tg-dta|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LH77h5aEVKnCHnx8aVGM",
+          "equipment_id": "LH77h5aEVKnCHnx8aVGM",
+          "name": "TG-DTA",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9379
+}

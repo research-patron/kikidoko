@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-2430/10.1023/a:1026313511646",
+    "paper_space_hash": "#/paper/eqnet-2430/10.1023/a:1026313511646",
+    "beginner_enter_hash": "#/beginner/eqnet-2430",
+    "beginner_space_hash": "#/beginner/eqnet-2430"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "プロテインシーケンサ (SHIMADZU・PPSQ-51A)",
+      "summary_len": 301,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2430/10.1023/a:1026313511646",
+      "beginner_hash": "#/beginner/eqnet-2430",
+      "paper_link_href": "https://doi.org/10.1023/A:1026313511646",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "プロテインシーケンサー (Shimadzu PPSQ-31A)",
+      "summary_len": 302,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-613/10.1023/a:1026313511646",
+      "beginner_hash": "#/beginner/eqnet-613",
+      "paper_link_href": "https://doi.org/10.1023/A:1026313511646",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "プロテオーム前処理サービス",
+      "summary_len": 128,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-819/10.19139/soic-2310-5070-3066",
+      "beginner_hash": "#/beginner/eqnet-819",
+      "paper_link_href": "https://doi.org/10.19139/soic-2310-5070-3066",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "プローブ顕微鏡 JEOL JSPM-5200",
+      "summary_len": 141,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1938/10.1038/s41378-025-01104-0",
+      "beginner_hash": "#/beginner/eqnet-1938",
+      "paper_link_href": "https://doi.org/10.1038/s41378-025-01104-0",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "ペプチドシーケンサー(島津制作所製・PPSQ-33A)",
+      "summary_len": 160,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-853/10.1080/19490976.2025.2601430",
+      "beginner_hash": "#/beginner/eqnet-853",
+      "paper_link_href": "https://doi.org/10.1080/19490976.2025.2601430",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "ペプチドシーケンサー(島津製作所製・PPSQ-31A型)",
+      "summary_len": 161,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-478/10.1080/19490976.2025.2601430",
+      "beginner_hash": "#/beginner/eqnet-478",
+      "paper_link_href": "https://doi.org/10.1080/19490976.2025.2601430",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "ホットプレート(EB用 PMC720)(PMC720)",
+      "summary_len": 181,
+      "sample_count": 3,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4209/10.1038/s41598-025-29949-5",
+      "beginner_hash": "#/beginner/eqnet-4209",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-29949-5",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "マイクロCT Skyscan 1174(BRUKER)",
+      "summary_len": 152,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5054/10.1007/s12104-025-10251-4",
+      "beginner_hash": "#/beginner/eqnet-5054",
+      "paper_link_href": "https://doi.org/10.1007/s12104-025-10251-4",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "マイクロCT Skyscan 1276",
+      "summary_len": 267,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5225/10.1007/s12104-025-10251-4",
+      "beginner_hash": "#/beginner/eqnet-5225",
+      "paper_link_href": "https://doi.org/10.1007/s12104-025-10251-4",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "マイクロアレイ Agilent G2505C Agilent(G2505C DNA Microarray Scanne)",
+      "summary_len": 195,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4757/10.1186/s42238-025-00299-3",
+      "beginner_hash": "#/beginner/eqnet-4757",
+      "paper_link_href": "https://doi.org/10.1186/s42238-025-00299-3",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

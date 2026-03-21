@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-42",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T01:15:40.167394+00:00",
+  "updated_at": "2026-03-01T01:20:48.695119+00:00",
+  "closed_at": "2026-03-01T01:20:48.695119+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch42.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-42.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "ce8d335e41e8f76502f7ffcddabbb51acb0cfc8f3bd6f90941bd64c2fba93378",
+    "queue_sha256_at_start": "9092e09b7b823b80245d70eaecabc60816eb2f2ce3eea0f58d57fdc201daed2f",
+    "queue_row_keys_sha256": "558f784ffff86ff36af4cc8676b878bd834181a787f1ac476a1a9c01897fedf0"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "eqnet-5434::eqnet-5434",
+      "eqnet-2984::eqnet-2984",
+      "KRDirUdP41OB80PqTLy8::KRDirUdP41OB80PqTLy8",
+      "eqnet-932::eqnet-932",
+      "6Luersj0EUGlMVP5rNMg::6Luersj0EUGlMVP5rNMg",
+      "eqnet-312::eqnet-312",
+      "7HyKrsBRjxBLrkaLLGa4::7HyKrsBRjxBLrkaLLGa4",
+      "eqnet-2195::eqnet-2195",
+      "CGeimT2z7y5PLmibkjtp::CGeimT2z7y5PLmibkjtp",
+      "eqnet-3645::eqnet-3645",
+      "OshjKSjlCkhE48Tw6wQH::OshjKSjlCkhE48Tw6wQH",
+      "eqnet-4627::eqnet-4627",
+      "FdtQOqpJR5wwxRDjZQG2::FdtQOqpJR5wwxRDjZQG2",
+      "eqnet-1131::eqnet-1131",
+      "olvjDoJlvlI335fEmDCn::olvjDoJlvlI335fEmDCn",
+      "eqnet-856::eqnet-856",
+      "TEKhcl0YCJTtLjssk47y::TEKhcl0YCJTtLjssk47y",
+      "eqnet-3299::eqnet-3299",
+      "BxL8lRecqhPMe127le7n::BxL8lRecqhPMe127le7n",
+      "eqnet-3300::eqnet-3300",
+      "OdEoJpUxGCSY2G9cONuO::OdEoJpUxGCSY2G9cONuO",
+      "eqnet-4034::eqnet-4034",
+      "sy1XvQkMYcp1lg66CxD5::sy1XvQkMYcp1lg66CxD5",
+      "eqnet-4554::eqnet-4554",
+      "yagIE2BLlwT9BO2hyVNg::yagIE2BLlwT9BO2hyVNg",
+      "eqnet-761::eqnet-761",
+      "SlCTdnA4JNsu51rOdyBQ::SlCTdnA4JNsu51rOdyBQ",
+      "eqnet-3449::eqnet-3449",
+      "WVWnhghqRl8zxaE8F0vE::WVWnhghqRl8zxaE8F0vE",
+      "eqnet-552::eqnet-552",
+      "67Bedlk2MIaoEWU5jtQM::67Bedlk2MIaoEWU5jtQM",
+      "eqnet-3147::eqnet-3147",
+      "cuwZcjPyvzIaE17fJYLc::cuwZcjPyvzIaE17fJYLc",
+      "eqnet-2605::eqnet-2605",
+      "HgIqu0Z14bj5dx3zN7CV::HgIqu0Z14bj5dx3zN7CV",
+      "eqnet-5075::eqnet-5075",
+      "Ju8Zh48c9stNopKjEbqo::Ju8Zh48c9stNopKjEbqo",
+      "eqnet-1127::eqnet-1127",
+      "IaXrpEYAGgMDjjKZXsZX::IaXrpEYAGgMDjjKZXsZX",
+      "Y2BRPyNdZvuPuBeYzWB5::Y2BRPyNdZvuPuBeYzWB5",
+      "EKPDD3r0b6aPJuc7VTTF::EKPDD3r0b6aPJuc7VTTF",
+      "eqnet-3352::eqnet-3352",
+      "o8aXIh9bGNNMU1hOey8C::o8aXIh9bGNNMU1hOey8C",
+      "sg99yhHH7LLC8gg3EeK8::sg99yhHH7LLC8gg3EeK8",
+      "7LRH7UUyWkMbFqiv7GWF::7LRH7UUyWkMbFqiv7GWF",
+      "eqnet-2988::eqnet-2988",
+      "ivSSfhsDM8jVZBIwl52m::ivSSfhsDM8jVZBIwl52m",
+      "eqnet-2595::eqnet-2595",
+      "q9ZOtyV0KplwYdt0dOrD::q9ZOtyV0KplwYdt0dOrD",
+      "eqnet-855::eqnet-855",
+      "E0IZ6GddoG9E8xp1Uhsn::E0IZ6GddoG9E8xp1Uhsn",
+      "ExtFPcK2SOKSoSc9ne5p::ExtFPcK2SOKSoSc9ne5p",
+      "bTBvc0APe0M9cvaYDUij::bTBvc0APe0M9cvaYDUij",
+      "xYU1PZcWZlS2cuptxYeP::xYU1PZcWZlS2cuptxYeP",
+      "wbObYsKPH4C82uwaaEvi::wbObYsKPH4C82uwaaEvi",
+      "eqnet-1431::eqnet-1431",
+      "BHcSnDQKnANFnuffOgP1::BHcSnDQKnANFnuffOgP1",
+      "eqnet-1122::eqnet-1122",
+      "YdaMkVYvmH3PaxaMfPmn::YdaMkVYvmH3PaxaMfPmn",
+      "eqnet-3295::eqnet-3295",
+      "J7y8urvHVkZpYlLfCXgn::J7y8urvHVkZpYlLfCXgn",
+      "eqnet-3668::eqnet-3668",
+      "EUVQeyXmzYlkqlCvgU8R::EUVQeyXmzYlkqlCvgU8R",
+      "eqnet-2693::eqnet-2693",
+      "Q8hv21ObThh5Ox9xD6nv::Q8hv21ObThh5Ox9xD6nv",
+      "x5Lg8MDGN76uFkt7DpNh::x5Lg8MDGN76uFkt7DpNh",
+      "WZNc7P76ADVXQ8VCletk::WZNc7P76ADVXQ8VCletk",
+      "U2B9rSeUw5SZjKe6dTJ5::U2B9rSeUw5SZjKe6dTJ5",
+      "0oCPE6OM2sepzymC53jP::0oCPE6OM2sepzymC53jP",
+      "pxbiHeo0N6o7v65bgAHU::pxbiHeo0N6o7v65bgAHU",
+      "BXrqEOb2zFpIEAm7J7ty::BXrqEOb2zFpIEAm7J7ty",
+      "O2HJHrSOPs99Ww6ibzdC::O2HJHrSOPs99Ww6ibzdC",
+      "gckX0Wsf2D4EaUtgbs7r::gckX0Wsf2D4EaUtgbs7r",
+      "80l6onm7YxwHGVHoUaHY::80l6onm7YxwHGVHoUaHY",
+      "KDVYG1lwJM49FSaq1y2Q::KDVYG1lwJM49FSaq1y2Q",
+      "77fuujDceGvIrWfoEpPX::77fuujDceGvIrWfoEpPX",
+      "bMSKy3NAnsMFjdOrtWGL::bMSKy3NAnsMFjdOrtWGL",
+      "RMXlanFgZvefB1SQHWct::RMXlanFgZvefB1SQHWct",
+      "x0Vxdj0iBjpCc2VUr9Gz::x0Vxdj0iBjpCc2VUr9Gz",
+      "eqnet-1313::eqnet-1313",
+      "U9o44JmxD0A28rIiGd9o::U9o44JmxD0A28rIiGd9o",
+      "eqnet-1312::eqnet-1312",
+      "oS18SubETZHneJECR8L3::oS18SubETZHneJECR8L3",
+      "eqnet-1316::eqnet-1316",
+      "Pzmpiw8Wc2nBjiQOn6R4::Pzmpiw8Wc2nBjiQOn6R4",
+      "eqnet-1807::eqnet-1807",
+      "BajZHN5NlSS2feDTY2YN::BajZHN5NlSS2feDTY2YN",
+      "eqnet-1364::eqnet-1364",
+      "jcNiRBPGbJPSJ6bnVGL9::jcNiRBPGbJPSJ6bnVGL9",
+      "eqnet-1818::eqnet-1818",
+      "jgGqAYHS7xCj6uaabVDC::jgGqAYHS7xCj6uaabVDC",
+      "eqnet-1358::eqnet-1358",
+      "vRjtrlPmsqFiekfd7N1i::vRjtrlPmsqFiekfd7N1i",
+      "eqnet-1806::eqnet-1806",
+      "9KJRfkwX5fJJfZazgT9F::9KJRfkwX5fJJfZazgT9F",
+      "D4e6to4ZeCT5L58YNF8M::D4e6to4ZeCT5L58YNF8M",
+      "GU42zBLN13FyLm2U7uIV::GU42zBLN13FyLm2U7uIV",
+      "JwJyGOjMer7yx7klDiDH::JwJyGOjMer7yx7klDiDH",
+      "6f0VK6jcgbSVnbxShnvH::6f0VK6jcgbSVnbxShnvH",
+      "y7ovcCb3FFRJO6DkWELg::y7ovcCb3FFRJO6DkWELg"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-5434::eqnet-5434",
+        "doc_id": "eqnet-5434",
+        "equipment_id": "eqnet-5434",
+        "name": "マイクロフォーカスX線CT装置(島津製作所・inspeXio SMX-225CT FPD HR Plus)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2984::eqnet-2984",
+        "doc_id": "eqnet-2984",
+        "equipment_id": "eqnet-2984",
+        "name": "透過型電子顕微鏡(日本電子・JEM-2100F)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KRDirUdP41OB80PqTLy8::KRDirUdP41OB80PqTLy8",
+        "doc_id": "KRDirUdP41OB80PqTLy8",
+        "equipment_id": "KRDirUdP41OB80PqTLy8",
+        "name": "マイクロフォーカスX線透視装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-932::eqnet-932",
+        "doc_id": "eqnet-932",
+        "equipment_id": "eqnet-932",
+        "name": "透過型電子顕微鏡(日本電子・JEM1400 Plus)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "6Luersj0EUGlMVP5rNMg::6Luersj0EUGlMVP5rNMg",
+        "doc_id": "6Luersj0EUGlMVP5rNMg",
+        "equipment_id": "6Luersj0EUGlMVP5rNMg",
+        "name": "マイクロプレートリーダー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-312::eqnet-312",
+        "doc_id": "eqnet-312",
+        "equipment_id": "eqnet-312",
+        "name": "透過型電子顕微鏡(日本電子・JEM2010)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "7HyKrsBRjxBLrkaLLGa4::7HyKrsBRjxBLrkaLLGa4",
+        "doc_id": "7HyKrsBRjxBLrkaLLGa4",
+        "equipment_id": "7HyKrsBRjxBLrkaLLGa4",
+        "name": "マイクロ冷却遠心機",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2195::eqnet-2195",
+        "doc_id": "eqnet-2195",
+        "equipment_id": "eqnet-2195",
+        "name": "透過型電子顕微鏡(日立製作所 H-7000)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "CGeimT2z7y5PLmibkjtp::CGeimT2z7y5PLmibkjtp",
+        "doc_id": "CGeimT2z7y5PLmibkjtp",
+        "equipment_id": "CGeimT2z7y5PLmibkjtp",
+        "name": "マイクロ波酸分解システム（個別高速分解用）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3645::eqnet-3645",
+        "doc_id": "eqnet-3645",
+        "equipment_id": "eqnet-3645",
+        "name": "透過型電子顕微鏡システム(JEM-2010)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "OshjKSjlCkhE48Tw6wQH::OshjKSjlCkhE48Tw6wQH",
+        "doc_id": "OshjKSjlCkhE48Tw6wQH",
+        "equipment_id": "OshjKSjlCkhE48Tw6wQH",
+        "name": "マイクロ波酸分解システム（多検体同時分解用）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-4627::eqnet-4627",
+        "doc_id": "eqnet-4627",
+        "equipment_id": "eqnet-4627",
+        "name": "透過型電子顕微鏡システム(JEOL・JEM-1400Plus)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "FdtQOqpJR5wwxRDjZQG2::FdtQOqpJR5wwxRDjZQG2",
+        "doc_id": "FdtQOqpJR5wwxRDjZQG2",
+        "equipment_id": "FdtQOqpJR5wwxRDjZQG2",
+        "name": "マグネトロンスパッタリング装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1131::eqnet-1131",
+        "doc_id": "eqnet-1131",
+        "equipment_id": "eqnet-1131",
+        "name": "透過型電子顕微鏡・TEM(日立ハイテクノロジーズ社製 H-7650)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "olvjDoJlvlI335fEmDCn::olvjDoJlvlI335fEmDCn",
+        "doc_id": "olvjDoJlvlI335fEmDCn",
+        "equipment_id": "olvjDoJlvlI335fEmDCn",
+        "name": "マグネトロンスパッタ装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-856::eqnet-856",
+        "doc_id": "eqnet-856",
+        "equipment_id": "eqnet-856",
+        "name": "透過電子顕微鏡 (日本電子・JEM-2100(HC))",
+        "papers_count": 1
+      },
+      {
+        "row_key": "TEKhcl0YCJTtLjssk47y::TEKhcl0YCJTtLjssk47y",
+        "doc_id": "TEKhcl0YCJTtLjssk47y",
+        "equipment_id": "TEKhcl0YCJTtLjssk47y",
+        "name": "マグネトロンスパッタ装置 真空デバイス",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3299::eqnet-3299",
+        "doc_id": "eqnet-3299",
+        "equipment_id": "eqnet-3299",
+        "name": "透過電子顕微鏡 JEOL TEM JEM1400",
+        "papers_count": 1
+      },
+      {
+        "row_key": "BxL8lRecqhPMe127le7n::BxL8lRecqhPMe127le7n",
+        "doc_id": "BxL8lRecqhPMe127le7n",
+        "equipment_id": "BxL8lRecqhPMe127le7n",
+        "name": "マスクアライナ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3300::eqnet-3300",
+        "doc_id": "eqnet-3300",
+        "equipment_id": "eqnet-3300",
+        "name": "透過電子顕微鏡 TEM JEM1220",
+        "papers_count": 1
+      },
+      {
+        "row_key": "OdEoJpUxGCSY2G9cONuO::OdEoJpUxGCSY2G9cONuO",
+        "doc_id": "OdEoJpUxGCSY2G9cONuO",
+        "equipment_id": "OdEoJpUxGCSY2G9cONuO",
+        "name": "マスクアライナー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-4034::eqnet-4034",
+        "doc_id": "eqnet-4034",
+        "equipment_id": "eqnet-4034",
+        "name": "透過電子顕微鏡 日立(H-7650)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "sy1XvQkMYcp1lg66CxD5::sy1XvQkMYcp1lg66CxD5",
+        "doc_id": "sy1XvQkMYcp1lg66CxD5",
+        "equipment_id": "sy1XvQkMYcp1lg66CxD5",
+        "name": "マスクアライナー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-4554::eqnet-4554",
+        "doc_id": "eqnet-4554",
+        "equipment_id": "eqnet-4554",
+        "name": "透過電子顕微鏡(TEM H-7600) 日立ハイテク(TEM H-7600)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "yagIE2BLlwT9BO2hyVNg::yagIE2BLlwT9BO2hyVNg",
+        "doc_id": "yagIE2BLlwT9BO2hyVNg",
+        "equipment_id": "yagIE2BLlwT9BO2hyVNg",
+        "name": "マスクアライナ装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-761::eqnet-761",
+        "doc_id": "eqnet-761",
+        "equipment_id": "eqnet-761",
+        "name": "透過電子顕微鏡(日本電子 JEM-2100PLUS)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "SlCTdnA4JNsu51rOdyBQ::SlCTdnA4JNsu51rOdyBQ",
+        "doc_id": "SlCTdnA4JNsu51rOdyBQ",
+        "equipment_id": "SlCTdnA4JNsu51rOdyBQ",
+        "name": "マッフル炉",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3449::eqnet-3449",
+        "doc_id": "eqnet-3449",
+        "equipment_id": "eqnet-3449",
+        "name": "透過電子顕微鏡(日本電子(株)・JEM-1400)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "WVWnhghqRl8zxaE8F0vE::WVWnhghqRl8zxaE8F0vE",
+        "doc_id": "WVWnhghqRl8zxaE8F0vE",
+        "equipment_id": "WVWnhghqRl8zxaE8F0vE",
+        "name": "マニュアルスパッタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-552::eqnet-552",
+        "doc_id": "eqnet-552",
+        "equipment_id": "eqnet-552",
+        "name": "透過電子顕微鏡(日本電子(株)・JEM-2100F)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "67Bedlk2MIaoEWU5jtQM::67Bedlk2MIaoEWU5jtQM",
+        "doc_id": "67Bedlk2MIaoEWU5jtQM",
+        "equipment_id": "67Bedlk2MIaoEWU5jtQM",
+        "name": "マルチガス導入グロー放電質量分析システム（VG9000）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3147::eqnet-3147",
+        "doc_id": "eqnet-3147",
+        "equipment_id": "eqnet-3147",
+        "name": "透過電子顕微鏡(日立 H-800)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "cuwZcjPyvzIaE17fJYLc::cuwZcjPyvzIaE17fJYLc",
+        "doc_id": "cuwZcjPyvzIaE17fJYLc",
+        "equipment_id": "cuwZcjPyvzIaE17fJYLc",
+        "name": "マルチチャンネル分光システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2605::eqnet-2605",
+        "doc_id": "eqnet-2605",
+        "equipment_id": "eqnet-2605",
+        "name": "透過電子顕微鏡試料仕上げ加工装置",
+        "papers_count": 1
+      },
+      {
+        "row_key": "HgIqu0Z14bj5dx3zN7CV::HgIqu0Z14bj5dx3zN7CV",
+        "doc_id": "HgIqu0Z14bj5dx3zN7CV",
+        "equipment_id": "HgIqu0Z14bj5dx3zN7CV",
+        "name": "マルチドライブ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-5075::eqnet-5075",
+        "doc_id": "eqnet-5075",
+        "equipment_id": "eqnet-5075",
+        "name": "集束イオンビーム加工装置(FEI Quanta3D 200i)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "Ju8Zh48c9stNopKjEbqo::Ju8Zh48c9stNopKjEbqo",
+        "doc_id": "Ju8Zh48c9stNopKjEbqo",
+        "equipment_id": "Ju8Zh48c9stNopKjEbqo",
+        "name": "マルチプレックスアッセイ装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1127::eqnet-1127",
+        "doc_id": "eqnet-1127",
+        "equipment_id": "eqnet-1127",
+        "name": "集束イオンビーム加工装置・FIB (SIIナノテク社製 SKI3050)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "IaXrpEYAGgMDjjKZXsZX::IaXrpEYAGgMDjjKZXsZX",
+        "doc_id": "IaXrpEYAGgMDjjKZXsZX",
+        "equipment_id": "IaXrpEYAGgMDjjKZXsZX",
+        "name": "マルチプレートリーダー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Y2BRPyNdZvuPuBeYzWB5::Y2BRPyNdZvuPuBeYzWB5",
+        "doc_id": "Y2BRPyNdZvuPuBeYzWB5",
+        "equipment_id": "Y2BRPyNdZvuPuBeYzWB5",
+        "name": "電子プローブマイクロアナライザ (JXA-iSP100)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "EKPDD3r0b6aPJuc7VTTF::EKPDD3r0b6aPJuc7VTTF",
+        "doc_id": "EKPDD3r0b6aPJuc7VTTF",
+        "equipment_id": "EKPDD3r0b6aPJuc7VTTF",
+        "name": "マルチモードプレートリーダー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3352::eqnet-3352",
+        "doc_id": "eqnet-3352",
+        "equipment_id": "eqnet-3352",
+        "name": "電子プローブマイクロアナライザ(EPMA)(JEOL社製 JXA-8530F Electron Probe Micro Analyzer)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "o8aXIh9bGNNMU1hOey8C::o8aXIh9bGNNMU1hOey8C",
+        "doc_id": "o8aXIh9bGNNMU1hOey8C",
+        "equipment_id": "o8aXIh9bGNNMU1hOey8C",
+        "name": "マーカス型高周波グロー放電発光表面分析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sg99yhHH7LLC8gg3EeK8::sg99yhHH7LLC8gg3EeK8",
+        "doc_id": "sg99yhHH7LLC8gg3EeK8",
+        "equipment_id": "sg99yhHH7LLC8gg3EeK8",
+        "name": "電子プローブマイクロアナライザ（EPMA） JXA-8230",
+        "papers_count": 1
+      },
+      {
+        "row_key": "7LRH7UUyWkMbFqiv7GWF::7LRH7UUyWkMbFqiv7GWF",
+        "doc_id": "7LRH7UUyWkMbFqiv7GWF",
+        "equipment_id": "7LRH7UUyWkMbFqiv7GWF",
+        "name": "ミクロトーム ライカReichert-Nissei Ultracut N",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2988::eqnet-2988",
+        "doc_id": "eqnet-2988",
+        "equipment_id": "eqnet-2988",
+        "name": "電子線マイクロアナライザー(日本電子・JXA-8530F)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "ivSSfhsDM8jVZBIwl52m::ivSSfhsDM8jVZBIwl52m",
+        "doc_id": "ivSSfhsDM8jVZBIwl52m",
+        "equipment_id": "ivSSfhsDM8jVZBIwl52m",
+        "name": "モバイル計測ステーション",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2595::eqnet-2595",
+        "doc_id": "eqnet-2595",
+        "equipment_id": "eqnet-2595",
+        "name": "電界放出型透過電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "q9ZOtyV0KplwYdt0dOrD::q9ZOtyV0KplwYdt0dOrD",
+        "doc_id": "q9ZOtyV0KplwYdt0dOrD",
+        "equipment_id": "q9ZOtyV0KplwYdt0dOrD",
+        "name": "モレキュラーイメージャー(化学発光検出)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-855::eqnet-855",
+        "doc_id": "eqnet-855",
+        "equipment_id": "eqnet-855",
+        "name": "電界放出型透過電子顕微鏡 (日本電子・JEM-2200FS(HR))",
+        "papers_count": 1
+      },
+      {
+        "row_key": "E0IZ6GddoG9E8xp1Uhsn::E0IZ6GddoG9E8xp1Uhsn",
+        "doc_id": "E0IZ6GddoG9E8xp1Uhsn",
+        "equipment_id": "E0IZ6GddoG9E8xp1Uhsn",
+        "name": "ラウエ結晶方位決定システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ExtFPcK2SOKSoSc9ne5p::ExtFPcK2SOKSoSc9ne5p",
+        "doc_id": "ExtFPcK2SOKSoSc9ne5p",
+        "equipment_id": "ExtFPcK2SOKSoSc9ne5p",
+        "name": "電界放出形透過電子顕微鏡 JEOL JEM-2100F",
+        "papers_count": 1
+      },
+      {
+        "row_key": "bTBvc0APe0M9cvaYDUij::bTBvc0APe0M9cvaYDUij",
+        "doc_id": "bTBvc0APe0M9cvaYDUij",
+        "equipment_id": "bTBvc0APe0M9cvaYDUij",
+        "name": "ラマンイメージング装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "xYU1PZcWZlS2cuptxYeP::xYU1PZcWZlS2cuptxYeP",
+        "doc_id": "xYU1PZcWZlS2cuptxYeP",
+        "equipment_id": "xYU1PZcWZlS2cuptxYeP",
+        "name": "電界放射型透過型電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "wbObYsKPH4C82uwaaEvi::wbObYsKPH4C82uwaaEvi",
+        "doc_id": "wbObYsKPH4C82uwaaEvi",
+        "equipment_id": "wbObYsKPH4C82uwaaEvi",
+        "name": "ラマン顕微鏡",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1431::eqnet-1431",
+        "doc_id": "eqnet-1431",
+        "equipment_id": "eqnet-1431",
+        "name": "顕微鏡用迅速試料作成装置 (堀場製作所・TENSEC)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "BHcSnDQKnANFnuffOgP1::BHcSnDQKnANFnuffOgP1",
+        "doc_id": "BHcSnDQKnANFnuffOgP1",
+        "equipment_id": "BHcSnDQKnANFnuffOgP1",
+        "name": "リアクテブイオンエッチング装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1122::eqnet-1122",
+        "doc_id": "eqnet-1122",
+        "equipment_id": "eqnet-1122",
+        "name": "高分解能透過型電子顕微鏡・HR-TEM (日立ハイテクノロジーズ社製 H-9000NAR)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "YdaMkVYvmH3PaxaMfPmn::YdaMkVYvmH3PaxaMfPmn",
+        "doc_id": "YdaMkVYvmH3PaxaMfPmn",
+        "equipment_id": "YdaMkVYvmH3PaxaMfPmn",
+        "name": "リアルタイムPCR解析システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3295::eqnet-3295",
+        "doc_id": "eqnet-3295",
+        "equipment_id": "eqnet-3295",
+        "name": "高圧凍結装置 LEICA EM-PACT-II",
+        "papers_count": 1
+      },
+      {
+        "row_key": "J7y8urvHVkZpYlLfCXgn::J7y8urvHVkZpYlLfCXgn",
+        "doc_id": "J7y8urvHVkZpYlLfCXgn",
+        "equipment_id": "J7y8urvHVkZpYlLfCXgn",
+        "name": "リアルタイム定量PCRシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3668::eqnet-3668",
+        "doc_id": "eqnet-3668",
+        "equipment_id": "eqnet-3668",
+        "name": "高性能透過型電子顕微鏡(FEI Tecnai Polara)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "EUVQeyXmzYlkqlCvgU8R::EUVQeyXmzYlkqlCvgU8R",
+        "doc_id": "EUVQeyXmzYlkqlCvgU8R",
+        "equipment_id": "EUVQeyXmzYlkqlCvgU8R",
+        "name": "リアルタイム細胞解析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2693::eqnet-2693",
+        "doc_id": "eqnet-2693",
+        "equipment_id": "eqnet-2693",
+        "name": "高精細集束イオンビーム装置(ZEISS・ORION NanoFab)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "Q8hv21ObThh5Ox9xD6nv::Q8hv21ObThh5Ox9xD6nv",
+        "doc_id": "Q8hv21ObThh5Ox9xD6nv",
+        "equipment_id": "Q8hv21ObThh5Ox9xD6nv",
+        "name": "リークディテクタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "x5Lg8MDGN76uFkt7DpNh::x5Lg8MDGN76uFkt7DpNh",
+        "doc_id": "x5Lg8MDGN76uFkt7DpNh",
+        "equipment_id": "x5Lg8MDGN76uFkt7DpNh",
+        "name": "透過型電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "WZNc7P76ADVXQ8VCletk::WZNc7P76ADVXQ8VCletk",
+        "doc_id": "WZNc7P76ADVXQ8VCletk",
+        "equipment_id": "WZNc7P76ADVXQ8VCletk",
+        "name": "ルミノイメージアナライザー LAS4010",
+        "papers_count": 3
+      },
+      {
+        "row_key": "U2B9rSeUw5SZjKe6dTJ5::U2B9rSeUw5SZjKe6dTJ5",
+        "doc_id": "U2B9rSeUw5SZjKe6dTJ5",
+        "equipment_id": "U2B9rSeUw5SZjKe6dTJ5",
+        "name": "真空蒸着装置(TEM試料室)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "0oCPE6OM2sepzymC53jP::0oCPE6OM2sepzymC53jP",
+        "doc_id": "0oCPE6OM2sepzymC53jP",
+        "equipment_id": "0oCPE6OM2sepzymC53jP",
+        "name": "ルミノ・イメージアナライザー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "pxbiHeo0N6o7v65bgAHU::pxbiHeo0N6o7v65bgAHU",
+        "doc_id": "pxbiHeo0N6o7v65bgAHU",
+        "equipment_id": "pxbiHeo0N6o7v65bgAHU",
+        "name": "透過型電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "BXrqEOb2zFpIEAm7J7ty::BXrqEOb2zFpIEAm7J7ty",
+        "doc_id": "BXrqEOb2zFpIEAm7J7ty",
+        "equipment_id": "BXrqEOb2zFpIEAm7J7ty",
+        "name": "レーザーアブレーション-レーザー誘起ブレークダウン分光-誘導結合プラズマ質量分析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "O2HJHrSOPs99Ww6ibzdC::O2HJHrSOPs99Ww6ibzdC",
+        "doc_id": "O2HJHrSOPs99Ww6ibzdC",
+        "equipment_id": "O2HJHrSOPs99Ww6ibzdC",
+        "name": "透過型電子顕微鏡 (日本電子製) JEM-2100",
+        "papers_count": 1
+      },
+      {
+        "row_key": "gckX0Wsf2D4EaUtgbs7r::gckX0Wsf2D4EaUtgbs7r",
+        "doc_id": "gckX0Wsf2D4EaUtgbs7r",
+        "equipment_id": "gckX0Wsf2D4EaUtgbs7r",
+        "name": "レーザー描画装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "80l6onm7YxwHGVHoUaHY::80l6onm7YxwHGVHoUaHY",
+        "doc_id": "80l6onm7YxwHGVHoUaHY",
+        "equipment_id": "80l6onm7YxwHGVHoUaHY",
+        "name": "透過型電子顕微鏡 JEM-1400",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KDVYG1lwJM49FSaq1y2Q::KDVYG1lwJM49FSaq1y2Q",
+        "doc_id": "KDVYG1lwJM49FSaq1y2Q",
+        "equipment_id": "KDVYG1lwJM49FSaq1y2Q",
+        "name": "レーザー露光装置 一式",
+        "papers_count": 3
+      },
+      {
+        "row_key": "77fuujDceGvIrWfoEpPX::77fuujDceGvIrWfoEpPX",
+        "doc_id": "77fuujDceGvIrWfoEpPX",
+        "equipment_id": "77fuujDceGvIrWfoEpPX",
+        "name": "電界放射型透過電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "bMSKy3NAnsMFjdOrtWGL::bMSKy3NAnsMFjdOrtWGL",
+        "doc_id": "bMSKy3NAnsMFjdOrtWGL",
+        "equipment_id": "bMSKy3NAnsMFjdOrtWGL",
+        "name": "レーザー顕微鏡",
+        "papers_count": 3
+      },
+      {
+        "row_key": "RMXlanFgZvefB1SQHWct::RMXlanFgZvefB1SQHWct",
+        "doc_id": "RMXlanFgZvefB1SQHWct",
+        "equipment_id": "RMXlanFgZvefB1SQHWct",
+        "name": "高分解能・分析透過電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "x0Vxdj0iBjpCc2VUr9Gz::x0Vxdj0iBjpCc2VUr9Gz",
+        "doc_id": "x0Vxdj0iBjpCc2VUr9Gz",
+        "equipment_id": "x0Vxdj0iBjpCc2VUr9Gz",
+        "name": "レーザ描画装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1313::eqnet-1313",
+        "doc_id": "eqnet-1313",
+        "equipment_id": "eqnet-1313",
+        "name": "ウルトラミクロトーム(Leica・EM UC7i)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "U9o44JmxD0A28rIiGd9o::U9o44JmxD0A28rIiGd9o",
+        "doc_id": "U9o44JmxD0A28rIiGd9o",
+        "equipment_id": "U9o44JmxD0A28rIiGd9o",
+        "name": "ロバスト温室向け太陽熱利用システム機器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1312::eqnet-1312",
+        "doc_id": "eqnet-1312",
+        "equipment_id": "eqnet-1312",
+        "name": "ウルトラミクロトーム(Leica・UC7k)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "oS18SubETZHneJECR8L3::oS18SubETZHneJECR8L3",
+        "doc_id": "oS18SubETZHneJECR8L3",
+        "equipment_id": "oS18SubETZHneJECR8L3",
+        "name": "ロータリーエバポ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1316::eqnet-1316",
+        "doc_id": "eqnet-1316",
+        "equipment_id": "eqnet-1316",
+        "name": "トリミング装置(Leica・EM TRIM II)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "Pzmpiw8Wc2nBjiQOn6R4::Pzmpiw8Wc2nBjiQOn6R4",
+        "doc_id": "Pzmpiw8Wc2nBjiQOn6R4",
+        "equipment_id": "Pzmpiw8Wc2nBjiQOn6R4",
+        "name": "ロータリーミクロトーム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1807::eqnet-1807",
+        "doc_id": "eqnet-1807",
+        "equipment_id": "eqnet-1807",
+        "name": "収束イオンビーム加工装置 (FIB)(SII SMI3050)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "BajZHN5NlSS2feDTY2YN::BajZHN5NlSS2feDTY2YN",
+        "doc_id": "BajZHN5NlSS2feDTY2YN",
+        "equipment_id": "BajZHN5NlSS2feDTY2YN",
+        "name": "ロードロック室",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1364::eqnet-1364",
+        "doc_id": "eqnet-1364",
+        "equipment_id": "eqnet-1364",
+        "name": "親水化処理装置(Eiko・PIB-10)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "jcNiRBPGbJPSJ6bnVGL9::jcNiRBPGbJPSJ6bnVGL9",
+        "doc_id": "jcNiRBPGbJPSJ6bnVGL9",
+        "equipment_id": "jcNiRBPGbJPSJ6bnVGL9",
+        "name": "ワンショット3D形状測定機",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1818::eqnet-1818",
+        "doc_id": "eqnet-1818",
+        "equipment_id": "eqnet-1818",
+        "name": "透過型分析電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "jgGqAYHS7xCj6uaabVDC::jgGqAYHS7xCj6uaabVDC",
+        "doc_id": "jgGqAYHS7xCj6uaabVDC",
+        "equipment_id": "jgGqAYHS7xCj6uaabVDC",
+        "name": "一体型遠心濃縮システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1358::eqnet-1358",
+        "doc_id": "eqnet-1358",
+        "equipment_id": "eqnet-1358",
+        "name": "透過電子顕微鏡(JOEL・JEM-1400PLUS)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "vRjtrlPmsqFiekfd7N1i::vRjtrlPmsqFiekfd7N1i",
+        "doc_id": "vRjtrlPmsqFiekfd7N1i",
+        "equipment_id": "vRjtrlPmsqFiekfd7N1i",
+        "name": "両面マスクアライナ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1806::eqnet-1806",
+        "doc_id": "eqnet-1806",
+        "equipment_id": "eqnet-1806",
+        "name": "電界放出型透過電子顕微鏡 (FE-TEM)(JEOL JEM2100F)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "9KJRfkwX5fJJfZazgT9F::9KJRfkwX5fJJfZazgT9F",
+        "doc_id": "9KJRfkwX5fJJfZazgT9F",
+        "equipment_id": "9KJRfkwX5fJJfZazgT9F",
+        "name": "中性子マルチピンホールコリメーター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "D4e6to4ZeCT5L58YNF8M::D4e6to4ZeCT5L58YNF8M",
+        "doc_id": "D4e6to4ZeCT5L58YNF8M",
+        "equipment_id": "D4e6to4ZeCT5L58YNF8M",
+        "name": "顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "GU42zBLN13FyLm2U7uIV::GU42zBLN13FyLm2U7uIV",
+        "doc_id": "GU42zBLN13FyLm2U7uIV",
+        "equipment_id": "GU42zBLN13FyLm2U7uIV",
+        "name": "中性子温度イメージング昇温チャンバ ー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "JwJyGOjMer7yx7klDiDH::JwJyGOjMer7yx7klDiDH",
+        "doc_id": "JwJyGOjMer7yx7klDiDH",
+        "equipment_id": "JwJyGOjMer7yx7klDiDH",
+        "name": "中性子発生ターゲットステーション",
+        "papers_count": 3
+      },
+      {
+        "row_key": "6f0VK6jcgbSVnbxShnvH::6f0VK6jcgbSVnbxShnvH",
+        "doc_id": "6f0VK6jcgbSVnbxShnvH",
+        "equipment_id": "6f0VK6jcgbSVnbxShnvH",
+        "name": "二重収束型ICP質量分析装置（ELEMENT XR）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "y7ovcCb3FFRJO6DkWELg::y7ovcCb3FFRJO6DkWELg",
+        "doc_id": "y7ovcCb3FFRJO6DkWELg",
+        "equipment_id": "y7ovcCb3FFRJO6DkWELg",
+        "name": "人工気象器",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T01:15:40.167394+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T01:15:40.286352+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:18:53.853380+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:18:56.266765+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:18:58.605538+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:19:00.950174+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:19:03.297134+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:19:05.658896+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:19:07.991744+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:19:10.356103+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:19:12.730921+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:19:15.049112+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T01:20:48.695119+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

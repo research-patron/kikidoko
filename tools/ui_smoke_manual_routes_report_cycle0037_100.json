@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/oCRETqgx0aduVoPDIQEH/10.1038/s41598-025-31964-5",
+    "paper_space_hash": "#/paper/oCRETqgx0aduVoPDIQEH/10.1038/s41598-025-31964-5",
+    "beginner_enter_hash": "#/beginner/oCRETqgx0aduVoPDIQEH",
+    "beginner_space_hash": "#/beginner/oCRETqgx0aduVoPDIQEH"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+      "summary_len": 134,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/oCRETqgx0aduVoPDIQEH/10.1038/s41598-025-31964-5",
+      "beginner_hash": "#/beginner/oCRETqgx0aduVoPDIQEH",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-31964-5",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "光造形3Dプリンタ",
+      "summary_len": 122,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/TOKUSHIMA-72/10.1038/srep09875",
+      "beginner_hash": "#/beginner/TOKUSHIMA-72",
+      "paper_link_href": "https://doi.org/10.1038/srep09875",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "全自動タンパク質合成システム－型式：GenDecorder",
+      "summary_len": 141,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/vLxG7JK9l1a27ArfGbY1/10.1016/j.ymben.2011.09.002",
+      "beginner_hash": "#/beginner/vLxG7JK9l1a27ArfGbY1",
+      "paper_link_href": "https://doi.org/10.1016/j.ymben.2011.09.002",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "X線非破壊検査装置(YG-602)",
+      "summary_len": 130,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/qhoCPKqqubZ0uyaZfJFq/10.1115/1.4044515",
+      "beginner_hash": "#/beginner/qhoCPKqqubZ0uyaZfJFq",
+      "paper_link_href": "https://doi.org/10.1115/1.4044515",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        4
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "プラズマクリーナー YHS-R",
+      "summary_len": 123,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KUMAMOTO-list3f-06/10.1017/s1431927699000094",
+      "beginner_hash": "#/beginner/KUMAMOTO-list3f-06",
+      "paper_link_href": "https://doi.org/10.1017/S1431927699000094",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        4
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "集束イオンビーム (Focused Ion Beam) 株式会社日立ハイテクノロジーズ NB5000",
+      "summary_len": 243,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KUMAMOTO-list3f-09/10.1002/(sici)1097-0029(19961101)35:4<320::aid-jemt3>3.0.co;2-q",
+      "beginner_hash": "#/beginner/KUMAMOTO-list3f-09",
+      "paper_link_href": "https://doi.org/10.1002/(SICI)1097-0029(19961101)35:4<320::AID-JEMT3>3.0.CO;2-Q",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：AccuFLEX LSC-8000",
+      "summary_len": 211,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/VLi11PHAPvUUYmMw4Tp3/10.1016/j.apradiso.2014.04.001",
+      "beginner_hash": "#/beginner/VLi11PHAPvUUYmMw4Tp3",
+      "paper_link_href": "https://doi.org/10.1016/j.apradiso.2014.04.001",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "イオンスパッタリング装置 日本電子株式会社 JFC-1100E",
+      "summary_len": 200,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KUMAMOTO-list4f-08/10.1002/jemt.1060070302",
+      "beginner_hash": "#/beginner/KUMAMOTO-list4f-08",
+      "paper_link_href": "https://doi.org/10.1002/jemt.1060070302",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "透過型電子顕微鏡 FEI TECNAI F20",
+      "summary_len": 197,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KUMAMOTO-list1f-01/10.1039/c9ta06947j",
+      "beginner_hash": "#/beginner/KUMAMOTO-list1f-01",
+      "paper_link_href": "https://doi.org/10.1039/C9TA06947J",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "二次イオン質量分析器 SIMS",
+      "summary_len": 178,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KUMAMOTO-list5f-02/10.1021/ac902313q",
+      "beginner_hash": "#/beginner/KUMAMOTO-list5f-02",
+      "paper_link_href": "https://doi.org/10.1021/ac902313q",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

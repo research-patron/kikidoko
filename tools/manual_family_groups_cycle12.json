@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T21:44:07.639150+00:00",
+  "batch_id": "BATCH-20260304-CYCLE12-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / 生体高分子用X線回折装置|生体高分子用-線回折装置|xray|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lWtaA1bwpICi6EMCyM67",
+          "equipment_id": "lWtaA1bwpICi6EMCyM67",
+          "name": "生体高分子用X線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / 生体高分子用X線回折装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析装置|超伝導蛍光収量-線吸収微細構造分析装置-sc--xafs|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nS7UNQeumXvy7sr145Vm",
+          "equipment_id": "AIST-ANCF002",
+          "name": "超伝導蛍光収量Ｘ線吸収微細構造分析装置(SC- XAFS)",
+          "category_general": "その他",
+          "category_detail": "X線分析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回折装置(XRD)|rigaku-fr-e-superbright-超高輝度-線回折装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "uzsATRTrZpIEQme4D8sv",
+          "equipment_id": "uzsATRTrZpIEQme4D8sv",
+          "name": "Rigaku FR-E SuperBright（超高輝度X線回折装置）",
+          "category_general": "その他",
+          "category_detail": "X線回折装置(XRD)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回折装置(XRD)|粉末-線回折装置-rigaku-smartlab-se|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VCHatB2ixk4KFzv21uMT",
+          "equipment_id": "VCHatB2ixk4KFzv21uMT",
+          "name": "粉末Ｘ線回折装置 (Rigaku SmartLab SE)",
+          "category_general": "その他",
+          "category_detail": "X線回折装置(XRD)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回折装置(XRD)|粉末-線回折装置|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "J3sLqH3wcYemxXz7v1bJ",
+          "equipment_id": "J3sLqH3wcYemxXz7v1bJ",
+          "name": "粉末X線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線回折装置(XRD)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回析室|走査型蛍光-線分析装置-株式会社リガク-zsx-primusii|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AEHm8pXjYj4MuE7NABaW",
+          "equipment_id": "KUMAMOTO-list4f-01",
+          "name": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusII",
+          "category_general": "その他",
+          "category_detail": "X線回析室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線装置|単結晶-線構造解析装置|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "QZNIK0MMGBJF2m7hJCEU",
+          "equipment_id": "TOKUSHIMA-64",
+          "name": "単結晶X線構造解析装置",
+          "category_general": "その他",
+          "category_detail": "X線装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線装置|線光電子分光装置-xps|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9if09B6QjGxScVonWIgl",
+          "equipment_id": "TOKUSHIMA-59",
+          "name": "X線光電子分光装置（XPS）",
+          "category_general": "その他",
+          "category_detail": "X線装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線装置|高出力試料水平型多目的-線回折装置-xrd|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SF2P1TcsucnQByReEbFS",
+          "equipment_id": "TOKUSHIMA-77",
+          "name": "高出力試料水平型多目的X線回折装置（XRD）",
+          "category_general": "その他",
+          "category_detail": "X線装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|ip-単結晶自動-線構造解析装置|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9YrAgxOtFQsHaEW3z4jO",
+          "equipment_id": "9YrAgxOtFQsHaEW3z4jO",
+          "name": "IP単結晶自動X線構造解析装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9350
+}

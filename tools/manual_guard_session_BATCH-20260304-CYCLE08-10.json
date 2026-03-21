@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE08-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T16:25:44.799052+00:00",
+  "updated_at": "2026-03-03T16:30:47.789657+00:00",
+  "closed_at": "2026-03-03T16:30:47.789657+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle08_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE08-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "99d74dd73c4bc7147b7bb6a9e74d160b615107264f9112a8338d80642e27032f",
+    "queue_sha256_at_start": "3d2a53d13ba8117025dc2dd492db308ce7c0b731ca488b8e29cf86bee2053732",
+    "queue_row_keys_sha256": "813d387b83d026f4461d26d6e3dca10c7c75783d8b214a683eb7f116078dcace"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "hEe725TvPdjOJQXlSfSO::hEe725TvPdjOJQXlSfSO",
+      "RO0lSDV4wKsjIeOhe0c6::RO0lSDV4wKsjIeOhe0c6",
+      "yPVas32s7hBVNJr9WUST::yPVas32s7hBVNJr9WUST",
+      "OUAjpVYTpHk1m9HehTd8::OUAjpVYTpHk1m9HehTd8",
+      "MwbedcPWddVfcp5uJ782::MwbedcPWddVfcp5uJ782",
+      "x0OcXFytFQRfzM6IyJf7::x0OcXFytFQRfzM6IyJf7",
+      "Ijdmlp0wB91P0T1HbUey::Ijdmlp0wB91P0T1HbUey",
+      "Yc2w1VqfNN4YRJQoC2T4::Yc2w1VqfNN4YRJQoC2T4",
+      "rHDcOoscNCcuwZE3MIxT::rHDcOoscNCcuwZE3MIxT",
+      "WCFkxHRRYlm1CAdUuzpp::AIST-ANCF018"
+    ],
+    "target_rows": [
+      {
+        "row_key": "hEe725TvPdjOJQXlSfSO::hEe725TvPdjOJQXlSfSO",
+        "doc_id": "hEe725TvPdjOJQXlSfSO",
+        "equipment_id": "hEe725TvPdjOJQXlSfSO",
+        "name": "Mass Spectrometer (Q Exactive HF)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "RO0lSDV4wKsjIeOhe0c6::RO0lSDV4wKsjIeOhe0c6",
+        "doc_id": "RO0lSDV4wKsjIeOhe0c6",
+        "equipment_id": "RO0lSDV4wKsjIeOhe0c6",
+        "name": "Mass Spectrometer (Q Exactive Plus)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "yPVas32s7hBVNJr9WUST::yPVas32s7hBVNJr9WUST",
+        "doc_id": "yPVas32s7hBVNJr9WUST",
+        "equipment_id": "yPVas32s7hBVNJr9WUST",
+        "name": "Mass Spectrometer (HR ICP-MS Element2)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "OUAjpVYTpHk1m9HehTd8::OUAjpVYTpHk1m9HehTd8",
+        "doc_id": "OUAjpVYTpHk1m9HehTd8",
+        "equipment_id": "OUAjpVYTpHk1m9HehTd8",
+        "name": "Mass Spectrometer (LTQ Orbitrap)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "MwbedcPWddVfcp5uJ782::MwbedcPWddVfcp5uJ782",
+        "doc_id": "MwbedcPWddVfcp5uJ782",
+        "equipment_id": "MwbedcPWddVfcp5uJ782",
+        "name": "Mass Spectrometer (Pegasus 4D GCxGC)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "x0OcXFytFQRfzM6IyJf7::x0OcXFytFQRfzM6IyJf7",
+        "doc_id": "x0OcXFytFQRfzM6IyJf7",
+        "equipment_id": "x0OcXFytFQRfzM6IyJf7",
+        "name": "Mass Spectrometer (SYNAPT G2-S)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Ijdmlp0wB91P0T1HbUey::Ijdmlp0wB91P0T1HbUey",
+        "doc_id": "Ijdmlp0wB91P0T1HbUey",
+        "equipment_id": "Ijdmlp0wB91P0T1HbUey",
+        "name": "Mass Spectrometer (timsTOF)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Yc2w1VqfNN4YRJQoC2T4::Yc2w1VqfNN4YRJQoC2T4",
+        "doc_id": "Yc2w1VqfNN4YRJQoC2T4",
+        "equipment_id": "Yc2w1VqfNN4YRJQoC2T4",
+        "name": "Mass Spectrometer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "rHDcOoscNCcuwZE3MIxT::rHDcOoscNCcuwZE3MIxT",
+        "doc_id": "rHDcOoscNCcuwZE3MIxT",
+        "equipment_id": "rHDcOoscNCcuwZE3MIxT",
+        "name": "Electron Spin Resonance Spectrometer",
+        "papers_count": 2
+      },
+      {
+        "row_key": "WCFkxHRRYlm1CAdUuzpp::AIST-ANCF018",
+        "doc_id": "WCFkxHRRYlm1CAdUuzpp",
+        "equipment_id": "AIST-ANCF018",
+        "name": "固体NMR装置 (SSNMR)",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T16:25:44.799052+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T16:25:44.892420+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T16:27:10.377148+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T16:30:47.789657+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "updated_at": "2026-03-12T09:16:35.172912+00:00",
+  "defaults_added": 0,
+  "processed_rows_this_run": 2,
+  "applied_rows_this_run": 0,
+  "needs_manual_fix_this_run": 2,
+  "done": 98,
+  "remaining": 2,
+  "batch_size": 10,
+  "process_all": false,
+  "reviewer_default": "codex-manual",
+  "enforce_beginner_min_chars": 2000,
+  "enforce_beginner_max_chars": 3000,
+  "char_count_mode": "non_whitespace",
+  "forbid_internal_id": true,
+  "forbid_placeholder_doi": true,
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_100.jsonl",
+  "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json",
+  "guard_verify": {
+    "status": "PASS",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json",
+    "batch_id": "BATCH-20260312-CYCLE0020-100",
+    "reviewer_expected": "codex-manual",
+    "issues": [],
+    "details": {
+      "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+      "queue_sha256_current": "13169c6fb91b949c31979ae60aeacb6edf775fb7df4f00b199a7095c0ffd36d3",
+      "snapshot_sha256_current": "aab08ce2a119cb89d2dd3a994781a70a6b2354f8e80321a7e1455518e6aef630",
+      "queue_rows_current": 2,
+      "queue_rows_target": 100
+    },
+    "verified_at": "2026-03-12T09:15:41.828518+00:00"
+  },
+  "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+  "post_audit_step2_same_ratio_threshold": 0.05,
+  "post_audit_pitfall2_same_ratio_threshold": 0.05,
+  "post_audit_min_reviewed_at_unique": 90,
+  "post_audit_similarity_threshold": 0.92,
+  "post_audit_status": "FAIL",
+  "post_audit": {
+    "status": "FAIL",
+    "generated_at": "2026-03-12T09:16:35.095515+00:00",
+    "batch_id": "BATCH-20260312-CYCLE0020-100",
+    "reviewer_expected": "codex-manual",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_100.jsonl",
+    "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_100.json",
+    "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json",
+    "inspected_count": 100,
+    "target_count": 100,
+    "metrics": {
+      "summary_dup_rate": 0.01,
+      "principle_dup_rate": 0.01,
+      "step1_dup_rate": 0.01,
+      "pitfall1_dup_rate": 0.01,
+      "step2_same_ratio": 0.05,
+      "pitfall2_same_ratio": 0.05,
+      "reviewed_at_unique_count": 100,
+      "forbidden_pattern_hits": 0,
+      "internal_id_reference_hits": 0,
+      "placeholder_doi_hits": 0,
+      "body_contains_doi_hits": 0,
+      "auto_template_marker_hits": 0,
+      "beginner_char_min": 2005,
+      "beginner_char_max": 2978,
+      "beginner_char_avg": 2279.74,
+      "guide_full_dup_rate": 0.0,
+      "guide_high_similarity_pairs": 50,
+      "step2_same_ratio_threshold": 0.05,
+      "pitfall2_same_ratio_threshold": 0.05,
+      "min_reviewed_at_unique": 90
+    },
+    "threshold_failures": [
+      "summary_dup_rate_not_zero",
+      "principle_dup_rate_not_zero",
+      "step1_dup_rate_not_zero",
+      "pitfall1_dup_rate_not_zero",
+      "guide_high_similarity_detected"
+    ],
+    "offending_doc_ids": [],
+    "issue_counts": {
+      "summary_dup_rate_not_zero": 1,
+      "principle_dup_rate_not_zero": 1,
+      "step1_dup_rate_not_zero": 1,
+      "pitfall1_dup_rate_not_zero": 1,
+      "guide_high_similarity_detected": 1
+    },
+    "issues": [],
+    "near_duplicate_pairs": [
+      {
+        "i": 1,
+        "j": 20,
+        "ratio": 0.9954689623923878
+      },
+      {
+        "i": 1,
+        "j": 39,
+        "ratio": 0.9801117318435755
+      },
+      {
+        "i": 1,
+        "j": 58,
+        "ratio": 0.9576419213973799
+      },
+      {
+        "i": 4,
+        "j": 23,
+        "ratio": 0.9799618320610687
+      },
+      {
+        "i": 4,
+        "j": 42,
+        "ratio": 0.9900237529691212
+      },
+      {
+        "i": 4,
+        "j": 61,
+        "ratio": 0.9731285988483686
+      },
+      {
+        "i": 4,
+        "j": 80,
+        "ratio": 0.9731285988483686
+      },
+      {
+        "i": 4,
+        "j": 99,
+        "ratio": 0.9497674418604651
+      },
+      {
+        "i": 7,
+        "j": 95,
+        "ratio": 0.9502385821404227
+      },
+      {
+        "i": 10,
+        "j": 19,
+        "ratio": 0.9259632842445027
+      },
+      {
+        "i": 10,
+        "j": 48,
+        "ratio": 0.9772587584511371
+      },
+      {
+        "i": 10,
+        "j": 67,
+        "ratio": 0.9672399672399672
+      },
+      {
+        "i": 10,
+        "j": 86,
+        "ratio": 0.9762975071516142
+      },
+      {
+        "i": 11,
+        "j": 49,
+        "ratio": 0.9750644883920895
+      },
+      {
+        "i": 11,
+        "j": 87,
+        "ratio": 0.973718224903059
+      },
+      {
+        "i": 12,
+        "j": 31,
+        "ratio": 0.9811563169164882
+      },
+      {
+        "i": 12,
+        "j": 50,
+        "ratio": 0.9534732741830773
+      },
+      {
+        "i": 13,
+        "j": 32,
+        "ratio": 0.9420620437956204
+      },
+      {
+        "i": 16,
+        "j": 54,
+        "ratio": 0.9692374350086655
+      },
+      {
+        "i": 16,
+        "j": 73,
+        "ratio": 0.9714902807775379
+      },
+      {
+        "i": 16,
+        "j": 92,
+        "ratio": 0.9707022834984921
+      },
+      {
+        "i": 18,
+        "j": 37,
+        "ratio": 0.9546678635547576
+      },
+      {
+        "i": 18,
+        "j": 56,
+        "ratio": 0.9688908926961226
+      },
+      {
+        "i": 18,
+        "j": 75,
+        "ratio": 0.9628447686346022
+      },
+      {
+        "i": 18,
+        "j": 94,
+        "ratio": 0.9632671686059776
+      },
+      {
+        "i": 19,
+        "j": 48,
+        "ratio": 0.9309369951534734
+      },
+      {
+        "i": 19,
+        "j": 67,
+        "ratio": 0.9291624621594349
+      },
+      {
+        "i": 19,
+        "j": 86,
+        "ratio": 0.9301107754279959
+      },
+      {
+        "i": 20,
+        "j": 39,
+        "ratio": 0.9779264214046822
+      },
+      {
+        "i": 20,
+        "j": 58,
+        "ratio": 0.9559912854030501
+      },
+      {
+        "i": 22,
+        "j": 41,
+        "ratio": 0.966848095002474
+      },
+      {
+        "i": 22,
+        "j": 79,
+        "ratio": 0.9671454515436685
+      },
+      {
+        "i": 22,
+        "j": 98,
+        "ratio": 0.9912516823687753
+      },
+      {
+        "i": 23,
+        "j": 42,
+        "ratio": 0.9834671705243269
+      },
+      {
+        "i": 23,
+        "j": 61,
+        "ratio": 0.9666030534351145
+      },
+      {
+        "i": 23,
+        "j": 80,
+        "ratio": 0.9599236641221374
+      },
+      {
+        "i": 23,
+        "j": 99,
+        "ratio": 0.9481961147086031
+      },
+      {
+        "i": 28,
+        "j": 81,
+        "ratio": 0.9702183984116479
+      },
+      {
+        "i": 31,
+        "j": 50,
+        "ratio": 0.9704788978788541
+      },
+      {
+        "i": 34,
+        "j": 72,
+        "ratio": 0.9403493821900298
+      },
+      {
+        "i": 34,
+        "j": 91,
+        "ratio": 0.9520753102267865
+      },
+      {
+        "i": 37,
+        "j": 56,
+        "ratio": 0.9566383549396513
+      },
+      {
+        "i": 37,
+        "j": 75,
+        "ratio": 0.967683615819209
+      },
+      {
+        "i": 37,
+        "j": 94,
+        "ratio": 0.9554399457136394
+      },
+      {
+        "i": 39,
+        "j": 58,
+        "ratio": 0.9602236078262739
+      },
+      {
+        "i": 40,
+        "j": 59,
+        "ratio": 0.9921431689218682
+      },
+      {
+        "i": 40,
+        "j": 78,
+        "ratio": 0.9873472949389179
+      },
+      {
+        "i": 40,
+        "j": 97,
+        "ratio": 0.985513608428446
+      },
+      {
+        "i": 41,
+        "j": 79,
+        "ratio": 0.9672715489306546
+      },
+      {
+        "i": 41,
+        "j": 98,
+        "ratio": 0.9648456841062881
+      }
+    ],
+    "checkpoint_snapshot": {
+      "updated_at": "2026-03-12T09:15:46.262081+00:00",
+      "defaults_added": 0,
+      "processed_rows_this_run": 2,
+      "applied_rows_this_run": 2,
+      "needs_manual_fix_this_run": 0,
+      "done": 100,
+      "remaining": 0,
+      "batch_size": 10,
+      "process_all": false,
+      "reviewer_default": "codex-manual",
+      "enforce_beginner_min_chars": 2000,
+      "enforce_beginner_max_chars": 3000,
+      "char_count_mode": "non_whitespace",
+      "forbid_internal_id": true,
+      "forbid_placeholder_doi": true,
+      "timing_log_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+      "enforce_min_elapsed_sec": 0,
+      "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+      "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_100.jsonl",
+      "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json",
+      "guard_verify": {
+        "status": "PASS",
+        "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json",
+        "batch_id": "BATCH-20260312-CYCLE0020-100",
+        "reviewer_expected": "codex-manual",
+        "issues": [],
+        "details": {
+          "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+          "queue_sha256_current": "13169c6fb91b949c31979ae60aeacb6edf775fb7df4f00b199a7095c0ffd36d3",
+          "snapshot_sha256_current": "aab08ce2a119cb89d2dd3a994781a70a6b2354f8e80321a7e1455518e6aef630",
+          "queue_rows_current": 2,
+          "queue_rows_target": 100
+        },
+        "verified_at": "2026-03-12T09:15:41.828518+00:00"
+      },
+      "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+      "post_audit_step2_same_ratio_threshold": 0.05,
+      "post_audit_pitfall2_same_ratio_threshold": 0.05,
+      "post_audit_min_reviewed_at_unique": 90,
+      "post_audit_similarity_threshold": 0.92,
+      "post_audit_status": "PENDING_FINAL_BATCH"
+    }
+  },
+  "post_audit_log": "{\n  \"status\": \"FAIL\",\n  \"generated_at\": \"2026-03-12T09:16:35.095515+00:00\",\n  \"batch_id\": \"BATCH-20260312-CYCLE0020-100\",\n  \"reviewer_expected\": \"codex-manual\",\n  \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n  \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_100.jsonl\",\n  \"checkpoint_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_100.json\",\n  \"session_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json\",\n  \"inspected_count\": 100,\n  \"target_count\": 100,\n  \"metrics\": {\n    \"summary_dup_rate\": 0.01,\n    \"principle_dup_rate\": 0.01,\n    \"step1_dup_rate\": 0.01,\n    \"pitfall1_dup_rate\": 0.01,\n    \"step2_same_ratio\": 0.05,\n    \"pitfall2_same_ratio\": 0.05,\n    \"reviewed_at_unique_count\": 100,\n    \"forbidden_pattern_hits\": 0,\n    \"internal_id_reference_hits\": 0,\n    \"placeholder_doi_hits\": 0,\n    \"body_contains_doi_hits\": 0,\n    \"auto_template_marker_hits\": 0,\n    \"beginner_char_min\": 2005,\n    \"beginner_char_max\": 2978,\n    \"beginner_char_avg\": 2279.74,\n    \"guide_full_dup_rate\": 0.0,\n    \"guide_high_similarity_pairs\": 50,\n    \"step2_same_ratio_threshold\": 0.05,\n    \"pitfall2_same_ratio_threshold\": 0.05,\n    \"min_reviewed_at_unique\": 90\n  },\n  \"threshold_failures\": [\n    \"summary_dup_rate_not_zero\",\n    \"principle_dup_rate_not_zero\",\n    \"step1_dup_rate_not_zero\",\n    \"pitfall1_dup_rate_not_zero\",\n    \"guide_high_similarity_detected\"\n  ],\n  \"offending_doc_ids\": [],\n  \"issue_counts\": {\n    \"summary_dup_rate_not_zero\": 1,\n    \"principle_dup_rate_not_zero\": 1,\n    \"step1_dup_rate_not_zero\": 1,\n    \"pitfall1_dup_rate_not_zero\": 1,\n    \"guide_high_similarity_detected\": 1\n  },\n  \"issues\": [],\n  \"near_duplicate_pairs\": [\n    {\n      \"i\": 1,\n      \"j\": 20,\n      \"ratio\": 0.9954689623923878\n    },\n    {\n      \"i\": 1,\n      \"j\": 39,\n      \"ratio\": 0.9801117318435755\n    },\n    {\n      \"i\": 1,\n      \"j\": 58,\n      \"ratio\": 0.9576419213973799\n    },\n    {\n      \"i\": 4,\n      \"j\": 23,\n      \"ratio\": 0.9799618320610687\n    },\n    {\n      \"i\": 4,\n      \"j\": 42,\n      \"ratio\": 0.9900237529691212\n    },\n    {\n      \"i\": 4,\n      \"j\": 61,\n      \"ratio\": 0.9731285988483686\n    },\n    {\n      \"i\": 4,\n      \"j\": 80,\n      \"ratio\": 0.9731285988483686\n    },\n    {\n      \"i\": 4,\n      \"j\": 99,\n      \"ratio\": 0.9497674418604651\n    },\n    {\n      \"i\": 7,\n      \"j\": 95,\n      \"ratio\": 0.9502385821404227\n    },\n    {\n      \"i\": 10,\n      \"j\": 19,\n      \"ratio\": 0.9259632842445027\n    },\n    {\n      \"i\": 10,\n      \"j\": 48,\n      \"ratio\": 0.9772587584511371\n    },\n    {\n      \"i\": 10,\n      \"j\": 67,\n      \"ratio\": 0.9672399672399672\n    },\n    {\n      \"i\": 10,\n      \"j\": 86,\n      \"ratio\": 0.9762975071516142\n    },\n    {\n      \"i\": 11,\n      \"j\": 49,\n      \"ratio\": 0.9750644883920895\n    },\n    {\n      \"i\": 11,\n      \"j\": 87,\n      \"ratio\": 0.973718224903059\n    },\n    {\n      \"i\": 12,\n      \"j\": 31,\n      \"ratio\": 0.9811563169164882\n    },\n    {\n      \"i\": 12,\n      \"j\": 50,\n      \"ratio\": 0.9534732741830773\n    },\n    {\n      \"i\": 13,\n      \"j\": 32,\n      \"ratio\": 0.9420620437956204\n    },\n    {\n      \"i\": 16,\n      \"j\": 54,\n      \"ratio\": 0.9692374350086655\n    },\n    {\n      \"i\": 16,\n      \"j\": 73,\n      \"ratio\": 0.9714902807775379\n    },\n    {\n      \"i\": 16,\n      \"j\": 92,\n      \"ratio\": 0.9707022834984921\n    },\n    {\n      \"i\": 18,\n      \"j\": 37,\n      \"ratio\": 0.9546678635547576\n    },\n    {\n      \"i\": 18,\n      \"j\": 56,\n      \"ratio\": 0.9688908926961226\n    },\n    {\n      \"i\": 18,\n      \"j\": 75,\n      \"ratio\": 0.9628447686346022\n    },\n    {\n      \"i\": 18,\n      \"j\": 94,\n      \"ratio\": 0.9632671686059776\n    },\n    {\n      \"i\": 19,\n      \"j\": 48,\n      \"ratio\": 0.9309369951534734\n    },\n    {\n      \"i\": 19,\n      \"j\": 67,\n      \"ratio\": 0.9291624621594349\n    },\n    {\n      \"i\": 19,\n      \"j\": 86,\n      \"ratio\": 0.9301107754279959\n    },\n    {\n      \"i\": 20,\n      \"j\": 39,\n      \"ratio\": 0.9779264214046822\n    },\n    {\n      \"i\": 20,\n      \"j\": 58,\n      \"ratio\": 0.9559912854030501\n    },\n    {\n      \"i\": 22,\n      \"j\": 41,\n      \"ratio\": 0.966848095002474\n    },\n    {\n      \"i\": 22,\n      \"j\": 79,\n      \"ratio\": 0.9671454515436685\n    },\n    {\n      \"i\": 22,\n      \"j\": 98,\n      \"ratio\": 0.9912516823687753\n    },\n    {\n      \"i\": 23,\n      \"j\": 42,\n      \"ratio\": 0.9834671705243269\n    },\n    {\n      \"i\": 23,\n      \"j\": 61,\n      \"ratio\": 0.9666030534351145\n    },\n    {\n      \"i\": 23,\n      \"j\": 80,\n      \"ratio\": 0.9599236641221374\n    },\n    {\n      \"i\": 23,\n      \"j\": 99,\n      \"ratio\": 0.9481961147086031\n    },\n    {\n      \"i\": 28,\n      \"j\": 81,\n      \"ratio\": 0.9702183984116479\n    },\n    {\n      \"i\": 31,\n      \"j\": 50,\n      \"ratio\": 0.9704788978788541\n    },\n    {\n      \"i\": 34,\n      \"j\": 72,\n      \"ratio\": 0.9403493821900298\n    },\n    {\n      \"i\": 34,\n      \"j\": 91,\n      \"ratio\": 0.9520753102267865\n    },\n    {\n      \"i\": 37,\n      \"j\": 56,\n      \"ratio\": 0.9566383549396513\n    },\n    {\n      \"i\": 37,\n      \"j\": 75,\n      \"ratio\": 0.967683615819209\n    },\n    {\n      \"i\": 37,\n      \"j\": 94,\n      \"ratio\": 0.9554399457136394\n    },\n    {\n      \"i\": 39,\n      \"j\": 58,\n      \"ratio\": 0.9602236078262739\n    },\n    {\n      \"i\": 40,\n      \"j\": 59,\n      \"ratio\": 0.9921431689218682\n    },\n    {\n      \"i\": 40,\n      \"j\": 78,\n      \"ratio\": 0.9873472949389179\n    },\n    {\n      \"i\": 40,\n      \"j\": 97,\n      \"ratio\": 0.985513608428446\n    },\n    {\n      \"i\": 41,\n      \"j\": 79,\n      \"ratio\": 0.9672715489306546\n    },\n    {\n      \"i\": 41,\n      \"j\": 98,\n      \"ratio\": 0.9648456841062881\n    }\n  ],\n  \"checkpoint_snapshot\": {\n    \"updated_at\": \"2026-03-12T09:15:46.262081+00:00\",\n    \"defaults_added\": 0,\n    \"processed_rows_this_run\": 2,\n    \"applied_rows_this_run\": 2,\n    \"needs_manual_fix_this_run\": 0,\n    \"done\": 100,\n    \"remaining\": 0,\n    \"batch_size\": 10,\n    \"process_all\": false,\n    \"reviewer_default\": \"codex-manual\",\n    \"enforce_beginner_min_chars\": 2000,\n    \"enforce_beginner_max_chars\": 3000,\n    \"char_count_mode\": \"non_whitespace\",\n    \"forbid_internal_id\": true,\n    \"forbid_placeholder_doi\": true,\n    \"timing_log_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl\",\n    \"enforce_min_elapsed_sec\": 0,\n    \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n    \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_100.jsonl\",\n    \"attestation_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json\",\n    \"guard_verify\": {\n      \"status\": \"PASS\",\n      \"session\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json\",\n      \"batch_id\": \"BATCH-20260312-CYCLE0020-100\",\n      \"reviewer_expected\": \"codex-manual\",\n      \"issues\": [],\n      \"details\": {\n        \"agents_sha256_current\": \"f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df\",\n        \"queue_sha256_current\": \"13169c6fb91b949c31979ae60aeacb6edf775fb7df4f00b199a7095c0ffd36d3\",\n        \"snapshot_sha256_current\": \"aab08ce2a119cb89d2dd3a994781a70a6b2354f8e80321a7e1455518e6aef630\",\n        \"queue_rows_current\": 2,\n        \"queue_rows_target\": 100\n      },\n      \"verified_at\": \"2026-03-12T09:15:41.828518+00:00\"\n    },\n    \"post_audit_report_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json\",\n    \"post_audit_step2_same_ratio_threshold\": 0.05,\n    \"post_audit_pitfall2_same_ratio_threshold\": 0.05,\n    \"post_audit_min_reviewed_at_unique\": 90,\n    \"post_audit_similarity_threshold\": 0.92,\n    \"post_audit_status\": \"PENDING_FINAL_BATCH\"\n  }\n}",
+  "reverted_rows_this_run": 2
+}

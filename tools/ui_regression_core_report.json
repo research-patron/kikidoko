@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": {
+    "initial_results": {
+      "count": 6,
+      "ok": true
+    },
+    "search_nmr": {
+      "count": 6,
+      "ok": true
+    },
+    "sheet_render": {
+      "manual_usage": 1,
+      "paper_items": 1,
+      "beginner_button": 1,
+      "ok": true
+    },
+    "equipment_link": {
+      "popup_url": "https://eqnet.jp/top#/public/equipment/3613",
+      "ok": true
+    },
+    "eqnet_assist_panel": {
+      "visible": true,
+      "ok": true
+    },
+    "eqnet_open": {
+      "popup_url": "https://eqnet.jp/top#/public/equipment",
+      "ok": true
+    }
+  }
+}

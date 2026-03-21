@@ -1,0 +1,105 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260312-CYCLE0019-REPAIR-STEP2-5",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-11T23:57:05.197173+00:00",
+  "updated_at": "2026-03-11T23:59:06.362203+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0019_repair_step2_5.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0019-REPAIR-STEP2-5.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "38aefa76c3568bc3fa8bf4597b4a89aa3db6cb3a13a1083fccb7ce2bf59525f1",
+    "queue_sha256_at_start": "d389b263d3e8cd4dd20636977051e199dc27e9d1460a59f8d39df7fe3eae9e75",
+    "queue_row_keys_sha256": "16d615d3a942c3a58a424f9a4f3bd6dfb7693432888eec1b8c1b1eecba34ffce"
+  },
+  "queue": {
+    "target_count": 5,
+    "target_row_keys": [
+      "xmnLsSGoI9yiSoyLhcT2::MIE-equipment9",
+      "HmdbYdUSxx9uCuxhtnxF::HmdbYdUSxx9uCuxhtnxF",
+      "ZNKZuDs8cfqxuHXPquDA::MIE-equipment5",
+      "2BJbNIWamHA1K1YpVej6::2BJbNIWamHA1K1YpVej6",
+      "TOKUSHIMA-77::TOKUSHIMA-77"
+    ],
+    "target_rows": [
+      {
+        "row_key": "xmnLsSGoI9yiSoyLhcT2::MIE-equipment9",
+        "doc_id": "xmnLsSGoI9yiSoyLhcT2",
+        "equipment_id": "MIE-equipment9",
+        "name": "光電子分光分析装置（ESCA）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "HmdbYdUSxx9uCuxhtnxF::HmdbYdUSxx9uCuxhtnxF",
+        "doc_id": "HmdbYdUSxx9uCuxhtnxF",
+        "equipment_id": "HmdbYdUSxx9uCuxhtnxF",
+        "name": "単結晶X線回折装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZNKZuDs8cfqxuHXPquDA::MIE-equipment5",
+        "doc_id": "ZNKZuDs8cfqxuHXPquDA",
+        "equipment_id": "MIE-equipment5",
+        "name": "単結晶X線構造解析装置（SC-XRD）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2BJbNIWamHA1K1YpVej6::2BJbNIWamHA1K1YpVej6",
+        "doc_id": "2BJbNIWamHA1K1YpVej6",
+        "equipment_id": "2BJbNIWamHA1K1YpVej6",
+        "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：LSC-6100",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-77::TOKUSHIMA-77",
+        "doc_id": "TOKUSHIMA-77",
+        "equipment_id": "TOKUSHIMA-77",
+        "name": "高出力試料水平型多目的X線回折装置（XRD）",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-11T23:57:05.197173+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 5
+      }
+    },
+    {
+      "at": "2026-03-11T23:57:05.837259+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:58:09.044597+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:59:06.362203+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

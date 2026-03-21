@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-06T13:22:20.971649+00:00",
+  "batch_id": "BATCH-20260306-CYCLE0003-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "2Fに設置されている機器|未分類|化学発光イメージング装置---型式-luminograph-emi|other|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VRY5cXiT090GLPf9fhAt",
+          "equipment_id": "VRY5cXiT090GLPf9fhAt",
+          "name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|粒子径-分子量測定装置---型式-zetasizer-nano-s|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ZpEsD1VJ5uJdSfwLOx3z",
+          "equipment_id": "ZpEsD1VJ5uJdSfwLOx3z",
+          "name": "粒子径・分子量測定装置－型式：ZETASIZER Nano-S",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|紫外可視分光光度計---型式-biospectrometer-kinetic|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "acudKLs6rShQtvQwF6tA",
+          "equipment_id": "acudKLs6rShQtvQwF6tA",
+          "name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|蛍光分光光度計-fl---型式-f-2500|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WA5NfqWUHxVa97Pgyojx",
+          "equipment_id": "WA5NfqWUHxVa97Pgyojx",
+          "name": "蛍光分光光度計(FL)－型式：F-2500",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "3Dプリンタ|土木・建築・工学関連装置|3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "mvHeWRPnzgxqa2wHKaqo",
+          "equipment_id": "TOKUSHIMA-6",
+          "name": "3Dプリンタ",
+          "category_general": "3Dプリンタ",
+          "category_detail": "土木・建築・工学関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "3Dプリンタ|未分類|3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TOKUSHIMA-6",
+          "equipment_id": "TOKUSHIMA-6",
+          "name": "3Dプリンタ",
+          "category_general": "3Dプリンタ",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "3Dプリンタ|未分類|光造形-3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TOKUSHIMA-72",
+          "equipment_id": "TOKUSHIMA-72",
+          "name": "光造形3Dプリンタ",
+          "category_general": "3Dプリンタ",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "3Fに設置されている機器|3Fに設置されている機器|全自動タンパク質合成システム---型式-gendecorder|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "vLxG7JK9l1a27ArfGbY1",
+          "equipment_id": "vLxG7JK9l1a27ArfGbY1",
+          "name": "全自動タンパク質合成システム－型式：GenDecorder",
+          "category_general": "3Fに設置されている機器",
+          "category_detail": "3Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "3Fに設置されている機器|3Fに設置されている機器|卓上タンパク質合成システム---型式-protemist-dt|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GsgCedK7rtQUoIzvlFnK",
+          "equipment_id": "GsgCedK7rtQUoIzvlFnK",
+          "name": "卓上タンパク質合成システム－型式：Protemist DT",
+          "category_general": "3Fに設置されている機器",
+          "category_detail": "3Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "3Fに設置されている機器|未分類|全自動タンパク質合成システム---型式-gendecorder|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YgBfgj2Glg50OMudGFzi",
+          "equipment_id": "YgBfgj2Glg50OMudGFzi",
+          "name": "全自動タンパク質合成システム－型式：GenDecorder",
+          "category_general": "3Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9805
+}

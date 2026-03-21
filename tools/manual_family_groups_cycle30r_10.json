@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T04:16:06.029590+00:00",
+  "batch_id": "BATCH-20260304-CYCLE30R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他_HU (Others) / None|immunospot-s6-macro|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LVSA2Dfw3IEBgWrF6oye",
+          "equipment_id": "HOKUDAI-AP-902245",
+          "name": "ImmunoSpot S6 MACRO Analyzer",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|in-vitro-vivo-遺伝子導入装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fugu07L4UeWGxoWiVEes",
+          "equipment_id": "HOKUDAI-AP-902229",
+          "name": "In Vitro & In Vivo 遺伝子導入装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|invivo2-低酸素ワークステーション|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "tG21yZZDhF45lZhQEzGZ",
+          "equipment_id": "HOKUDAI-AP-901112",
+          "name": "INVIVO2 低酸素ワークステーション 300",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|led-光照射装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yxF6BVAZ1CAlFxJbsj1n",
+          "equipment_id": "HOKUDAI-AP-901304",
+          "name": "LED光照射装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|mbr-実験装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "i0Pq9CwZdxKZHYuQ1NMb",
+          "equipment_id": "HOKUDAI-AP-900822",
+          "name": "MBR実験装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|mex-方式-3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "bHdRTjgTZ7eWrQA00Ejd",
+          "equipment_id": "HOKUDAI-AP-901854",
+          "name": "MEX方式3Dプリンタ",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|mt-観測装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "UqiLftdnDAReIQLVyxd1",
+          "equipment_id": "HOKUDAI-AP-901345",
+          "name": "MT観測装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|nucleofector-tm-2b|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l9JimqYJwMgYKO7SL8Es",
+          "equipment_id": "HOKUDAI-AP-902230",
+          "name": "Nucleofector(TM) 2b Device",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|pam-2500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OAKDtGP8660BvXJUMMcH",
+          "equipment_id": "HOKUDAI-AP-902057",
+          "name": "PAM-2500",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|promethion-p2-solo-capex|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "N5gd4MWiGNawYM6fUTHE",
+          "equipment_id": "HOKUDAI-AP-902276",
+          "name": "Promethion P2 solo CapEX",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9195
+}

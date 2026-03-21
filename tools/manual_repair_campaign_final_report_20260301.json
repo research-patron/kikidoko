@@ -1,0 +1,86 @@
+{
+  "batches": [
+    {
+      "tag": "R01",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R02",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R03",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R04",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R05",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R06",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R07",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R08",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R09",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R10",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R11",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R12",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R13",
+      "approved": 3600,
+      "pending": 6998
+    },
+    {
+      "tag": "R14",
+      "approved": 3600,
+      "pending": 6998
+    }
+  ],
+  "final": {
+    "approved_count": 3600,
+    "reviewer_mismatch": 0,
+    "validation_issue_total": 0,
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.0011111111111111111,
+    "pitfall2_same_ratio": 0.0019444444444444444,
+    "reviewed_at_unique_count": 3600
+  }
+}

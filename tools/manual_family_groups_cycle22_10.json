@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T01:46:33.797393+00:00",
+  "batch_id": "BATCH-20260304-CYCLE22-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1aAqQrCCVXNq3Jf09gK3",
+          "equipment_id": "1aAqQrCCVXNq3Jf09gK3",
+          "name": "超低温フリーザー_04 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YOyGKvBvvqYAzXGWjO8R",
+          "equipment_id": "YOyGKvBvvqYAzXGWjO8R",
+          "name": "旭町ラボ オープンラボスペース 202実験室(C)-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "jbyanFAconRcEQs5BUum",
+          "equipment_id": "jbyanFAconRcEQs5BUum",
+          "name": "旭町ラボ オープンラボスペース 202実験室(C)-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンブース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "i899HgeDZoCECFD20YU0",
+          "equipment_id": "i899HgeDZoCECFD20YU0",
+          "name": "クリーンブース１",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンベンチ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Qn6wDxn7B3ZvuVfAOxxU",
+          "equipment_id": "Qn6wDxn7B3ZvuVfAOxxU",
+          "name": "クリーンベンチ",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|コバルト-ガンマ線照射装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "UMgsp6IXfinCuohovWZA",
+          "equipment_id": "UMgsp6IXfinCuohovWZA",
+          "name": "コバルト60ガンマ線照射装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフト-台-酸用-有機用|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9P6tRQHSQyboPBuxePzz",
+          "equipment_id": "9P6tRQHSQyboPBuxePzz",
+          "name": "ドラフト（2台 酸用・有機用）",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフト-台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "c6NARmD1NCVOnFzeHmQX",
+          "equipment_id": "c6NARmD1NCVOnFzeHmQX",
+          "name": "ドラフト（2台）",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフトチャンバー-rfx-183sz-y|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fwdHj6VfJAJUbssH0965",
+          "equipment_id": "fwdHj6VfJAJUbssH0965",
+          "name": "ドラフトチャンバーRFX-183SZ-Y",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフトチャンバー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RQNge6kTz1x0Kz7x8Uro",
+          "equipment_id": "RQNge6kTz1x0Kz7x8Uro",
+          "name": "ドラフトチャンバー",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9259
+}

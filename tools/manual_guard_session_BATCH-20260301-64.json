@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-64",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T03:03:21.966865+00:00",
+  "updated_at": "2026-03-01T03:04:18.371585+00:00",
+  "closed_at": "2026-03-01T03:04:18.371585+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch64.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-64.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "ecb35a12e87c71e444f1a850e55222d7a4a4b5ad47de755094fd741e20c46bba",
+    "queue_sha256_at_start": "bf9556978ffd447b341c17013da5b4bca9309d25e8ad544dd4dd0b8d5fe0b3e7",
+    "queue_row_keys_sha256": "8fd132521ff9caf0df5c5d1213b18c3373fcf45b1047bcaedd533a4811b8c169"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "3Ux9Vq4K7nStXmBM6i0x::3Ux9Vq4K7nStXmBM6i0x",
+      "HRcmnnAhvFOEkJk8qeDK::HRcmnnAhvFOEkJk8qeDK",
+      "UchqCuZg4SINInCHm4Dv::UchqCuZg4SINInCHm4Dv",
+      "OAlwHhbpfNBufTAv497s::OAlwHhbpfNBufTAv497s",
+      "Hi88iTmNS3BAAj9wQ01J::Hi88iTmNS3BAAj9wQ01J",
+      "mmcUpIzrpg7eS3tfZmrD::mmcUpIzrpg7eS3tfZmrD",
+      "Cj4P1L2qPTbp5EkauIKw::Cj4P1L2qPTbp5EkauIKw",
+      "kEO5tbER3DYuBHed53ln::kEO5tbER3DYuBHed53ln",
+      "O5DqeGQ9SWpdUaM0BKvB::O5DqeGQ9SWpdUaM0BKvB",
+      "ksG8dqr3P1dvV6iI1wF2::ksG8dqr3P1dvV6iI1wF2",
+      "LdfKPVAki5puGthBPnEN::LdfKPVAki5puGthBPnEN",
+      "TyUt3RDhVOGOuYRksfix::TyUt3RDhVOGOuYRksfix",
+      "Lj4gkVcfwRIkca639jtN::Lj4gkVcfwRIkca639jtN",
+      "Xq04lGWRiPBXBRnKQv44::Xq04lGWRiPBXBRnKQv44",
+      "vbofGOQIGhrj7NaKuMPZ::vbofGOQIGhrj7NaKuMPZ",
+      "oWf6Q4U1kBdoI75PR2el::oWf6Q4U1kBdoI75PR2el",
+      "uVuyWvrNEcyMCKVkS0Xe::uVuyWvrNEcyMCKVkS0Xe",
+      "nVUuUNCB5mKL5Ve2lsG4::nVUuUNCB5mKL5Ve2lsG4",
+      "F9vpkmiVT5nzrp4ljmwI::F9vpkmiVT5nzrp4ljmwI",
+      "rTLCYsrOslek6Pr3fyNN::rTLCYsrOslek6Pr3fyNN",
+      "in8HFE6wQcuoRpOLQYy9::in8HFE6wQcuoRpOLQYy9",
+      "B9iIiFOdCcARZXssno7H::B9iIiFOdCcARZXssno7H",
+      "WWLwJA9jk0TGNsNIJQJ9::WWLwJA9jk0TGNsNIJQJ9",
+      "KuMXfMtAqaZr4ooiMuVf::KuMXfMtAqaZr4ooiMuVf",
+      "Ph3Mz9oBmy0H8vpbnhlu::Ph3Mz9oBmy0H8vpbnhlu",
+      "BLClIkY4tEpN6XpJsndC::BLClIkY4tEpN6XpJsndC",
+      "5Kyned0pvZHotK87qrkp::5Kyned0pvZHotK87qrkp",
+      "ZmZoYm4Bm8wwdio8MFyi::ZmZoYm4Bm8wwdio8MFyi",
+      "wWQ4Z5JIGZjw4nn1NeEX::wWQ4Z5JIGZjw4nn1NeEX",
+      "t96AcKYZjOvPoTekpWzf::t96AcKYZjOvPoTekpWzf",
+      "mm8V3BGMxbgdMZnF66f1::mm8V3BGMxbgdMZnF66f1",
+      "A2sapmT8PnX7SgfqRT8h::A2sapmT8PnX7SgfqRT8h",
+      "ZfOIIJOGXfhydKZLQGTp::ZfOIIJOGXfhydKZLQGTp",
+      "jFhwqrvF5H2bWPzWJ6g1::jFhwqrvF5H2bWPzWJ6g1",
+      "0DB6BGf9U2jma6dj1Fze::0DB6BGf9U2jma6dj1Fze",
+      "m3K2sSXLaZfF4sLBqmaV::m3K2sSXLaZfF4sLBqmaV",
+      "fIKkABE5Ln6Iy05xZ0DL::fIKkABE5Ln6Iy05xZ0DL",
+      "Mx4ZKyic2cXzAgJ4QInR::Mx4ZKyic2cXzAgJ4QInR",
+      "ZerRfkIp7l3lsm9YHLTf::ZerRfkIp7l3lsm9YHLTf",
+      "Y0KPdJiU8c6wqzKZXYHT::Y0KPdJiU8c6wqzKZXYHT",
+      "MjyaeNQXkmyBIqplGbh9::MjyaeNQXkmyBIqplGbh9",
+      "JjvY80aHFQV53OTbQ2Nd::JjvY80aHFQV53OTbQ2Nd",
+      "DrpHy38EUGtaoO5Ls3Ev::DrpHy38EUGtaoO5Ls3Ev",
+      "820cQ0j4FcSztQlFFUkl::820cQ0j4FcSztQlFFUkl",
+      "gnRuHOoRbl2LNaE0UD96::gnRuHOoRbl2LNaE0UD96",
+      "otX6yKYsQlc2U3S97SK3::otX6yKYsQlc2U3S97SK3",
+      "4XheR15Myymx0LbKc4iT::4XheR15Myymx0LbKc4iT",
+      "aOqsRUWNYIdEy2NA8bQ8::aOqsRUWNYIdEy2NA8bQ8",
+      "rOF6XvCOzFlTzeqiLbdY::rOF6XvCOzFlTzeqiLbdY",
+      "Kc3W0sx8A85LJcjIkkzP::Kc3W0sx8A85LJcjIkkzP",
+      "rOLkX14fp4qpGkU8WFbu::rOLkX14fp4qpGkU8WFbu",
+      "T2JLeaGFMX0o5whDVNFR::T2JLeaGFMX0o5whDVNFR",
+      "H7SYGfhZ1ej00NOsbubk::H7SYGfhZ1ej00NOsbubk",
+      "YSjlhnuxeaWYFPZZHq5r::YSjlhnuxeaWYFPZZHq5r",
+      "0HPeIyJls2Pk3uku3v5m::0HPeIyJls2Pk3uku3v5m",
+      "0GGo2oV9YxDZFO2bNoNb::0GGo2oV9YxDZFO2bNoNb",
+      "F6OO1z5Gt6xwbFfFSFzk::F6OO1z5Gt6xwbFfFSFzk",
+      "sSNrlEfxQmVOQySHmVSu::sSNrlEfxQmVOQySHmVSu",
+      "xv5YkoNRLbxwagwCzo1B::xv5YkoNRLbxwagwCzo1B",
+      "ELhb2W3bZp4I3HfvKwAn::ELhb2W3bZp4I3HfvKwAn",
+      "uf111sF3iP8JxRHalUDX::uf111sF3iP8JxRHalUDX",
+      "70F87s3wVq64tRbIVyib::70F87s3wVq64tRbIVyib",
+      "L5Cu8Z3re24xzYBldR7O::L5Cu8Z3re24xzYBldR7O",
+      "wBBQUmIGmQdfa5KcMrLr::wBBQUmIGmQdfa5KcMrLr",
+      "Ful88Xj1wmb3xDQ8JkGr::Ful88Xj1wmb3xDQ8JkGr",
+      "PifjDbMhXZfnXrssJh71::PifjDbMhXZfnXrssJh71",
+      "Y0BsiOcywxL35Ru9HrVJ::Y0BsiOcywxL35Ru9HrVJ",
+      "1D13S9JXQOogLw1QYEme::1D13S9JXQOogLw1QYEme",
+      "k6YJrPUTldgSwG6seNxN::k6YJrPUTldgSwG6seNxN",
+      "HiK1L2YKn0kOg2bMyzdx::HiK1L2YKn0kOg2bMyzdx",
+      "v8QFac0kgTCM4bh8KiX2::v8QFac0kgTCM4bh8KiX2",
+      "r3bmVBGGHn0yAhOOddoN::r3bmVBGGHn0yAhOOddoN",
+      "S95YPkBKTW3vOYUAUCF0::S95YPkBKTW3vOYUAUCF0",
+      "J1L563ofdnh8NUpGwqOw::J1L563ofdnh8NUpGwqOw",
+      "x3t05dExs2NENLbNUQt9::x3t05dExs2NENLbNUQt9",
+      "2ZaLQoMamWsp7gbzYE1D::2ZaLQoMamWsp7gbzYE1D",
+      "PZG8lF8dppYoluiLuWyo::PZG8lF8dppYoluiLuWyo",
+      "AYvp4hhbDVW9BxOhw3Xy::AYvp4hhbDVW9BxOhw3Xy",
+      "ya6aeU2i9u227BpeKUv4::ya6aeU2i9u227BpeKUv4",
+      "iWBARFlMTog3QAEBHXsn::iWBARFlMTog3QAEBHXsn",
+      "fvODCbH0rMWvR8cVsOtY::fvODCbH0rMWvR8cVsOtY",
+      "Xp2NtP9hIvZgZKSdHZF8::Xp2NtP9hIvZgZKSdHZF8",
+      "8pu4MDD2IQh5ZMzASqii::8pu4MDD2IQh5ZMzASqii",
+      "7oVv0cAl2nunvBjc2Uce::7oVv0cAl2nunvBjc2Uce",
+      "IOTSbe44ur7btjrNJ88b::IOTSbe44ur7btjrNJ88b",
+      "uvmCRNuMHUwQzW4hcOfD::uvmCRNuMHUwQzW4hcOfD",
+      "9EhohLTGhII6MuXCa6A6::9EhohLTGhII6MuXCa6A6",
+      "BLRnZ5v6ckdDjScLg59Y::BLRnZ5v6ckdDjScLg59Y",
+      "ledcQcGbxaIiFIyhcQv2::ledcQcGbxaIiFIyhcQv2",
+      "suQuqSk9FTyzShovvOcD::suQuqSk9FTyzShovvOcD",
+      "o6MNAsoWXxpPaLPBIu5P::o6MNAsoWXxpPaLPBIu5P",
+      "ndD4IzLllDSYcv8LtQP2::ndD4IzLllDSYcv8LtQP2",
+      "hmG5THrAFvT6apo6hVn7::hmG5THrAFvT6apo6hVn7",
+      "zkaWE4nGRhlXcnHyj2oS::zkaWE4nGRhlXcnHyj2oS",
+      "w7hUomFwpPssdd6Kl7p1::w7hUomFwpPssdd6Kl7p1",
+      "htHNWxhzwCProHJtQTLV::htHNWxhzwCProHJtQTLV",
+      "iSZoYGtzK59IvsMK0ryt::iSZoYGtzK59IvsMK0ryt",
+      "M7QF4WA19te05Jj27lec::M7QF4WA19te05Jj27lec",
+      "7lltsy7tG1WAMfyfOVhp::7lltsy7tG1WAMfyfOVhp",
+      "Flz872k8gtoQ5pmrpSQt::Flz872k8gtoQ5pmrpSQt"
+    ],
+    "target_rows": [
+      {
+        "row_key": "3Ux9Vq4K7nStXmBM6i0x::3Ux9Vq4K7nStXmBM6i0x",
+        "doc_id": "3Ux9Vq4K7nStXmBM6i0x",
+        "equipment_id": "3Ux9Vq4K7nStXmBM6i0x",
+        "name": "集束イオンビーム/走査電子顕微鏡 FIB-SEM",
+        "papers_count": 2
+      },
+      {
+        "row_key": "HRcmnnAhvFOEkJk8qeDK::HRcmnnAhvFOEkJk8qeDK",
+        "doc_id": "HRcmnnAhvFOEkJk8qeDK",
+        "equipment_id": "HRcmnnAhvFOEkJk8qeDK",
+        "name": "集束イオンビーム/電界放出形走査電子顕微鏡 FIB-FESEM",
+        "papers_count": 2
+      },
+      {
+        "row_key": "UchqCuZg4SINInCHm4Dv::UchqCuZg4SINInCHm4Dv",
+        "doc_id": "UchqCuZg4SINInCHm4Dv",
+        "equipment_id": "UchqCuZg4SINInCHm4Dv",
+        "name": "電子スピン共鳴分光装置 ESR",
+        "papers_count": 2
+      },
+      {
+        "row_key": "OAlwHhbpfNBufTAv497s::OAlwHhbpfNBufTAv497s",
+        "doc_id": "OAlwHhbpfNBufTAv497s",
+        "equipment_id": "OAlwHhbpfNBufTAv497s",
+        "name": "電子スピン共鳴装置：(ESR)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Hi88iTmNS3BAAj9wQ01J::Hi88iTmNS3BAAj9wQ01J",
+        "doc_id": "Hi88iTmNS3BAAj9wQ01J",
+        "equipment_id": "Hi88iTmNS3BAAj9wQ01J",
+        "name": "電子線3次元粗さ解析装置(ERA-8900)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "mmcUpIzrpg7eS3tfZmrD::mmcUpIzrpg7eS3tfZmrD",
+        "doc_id": "mmcUpIzrpg7eS3tfZmrD",
+        "equipment_id": "mmcUpIzrpg7eS3tfZmrD",
+        "name": "電子線3次元粗さ解析装置(ERA-8900)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Cj4P1L2qPTbp5EkauIKw::Cj4P1L2qPTbp5EkauIKw",
+        "doc_id": "Cj4P1L2qPTbp5EkauIKw",
+        "equipment_id": "Cj4P1L2qPTbp5EkauIKw",
+        "name": "電界放出型走査電子顕微鏡",
+        "papers_count": 2
+      },
+      {
+        "row_key": "kEO5tbER3DYuBHed53ln::kEO5tbER3DYuBHed53ln",
+        "doc_id": "kEO5tbER3DYuBHed53ln",
+        "equipment_id": "kEO5tbER3DYuBHed53ln",
+        "name": "電界放出型走査電子顕微鏡",
+        "papers_count": 2
+      },
+      {
+        "row_key": "O5DqeGQ9SWpdUaM0BKvB::O5DqeGQ9SWpdUaM0BKvB",
+        "doc_id": "O5DqeGQ9SWpdUaM0BKvB",
+        "equipment_id": "O5DqeGQ9SWpdUaM0BKvB",
+        "name": "電界放出形走査電子顕微鏡(JSM-6701F)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ksG8dqr3P1dvV6iI1wF2::ksG8dqr3P1dvV6iI1wF2",
+        "doc_id": "ksG8dqr3P1dvV6iI1wF2",
+        "equipment_id": "ksG8dqr3P1dvV6iI1wF2",
+        "name": "電界放出形走査電子顕微鏡(JSM-6701F)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "LdfKPVAki5puGthBPnEN::LdfKPVAki5puGthBPnEN",
+        "doc_id": "LdfKPVAki5puGthBPnEN",
+        "equipment_id": "LdfKPVAki5puGthBPnEN",
+        "name": "電界放出形走査電子顕微鏡(JSM-IT800SHL)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "TyUt3RDhVOGOuYRksfix::TyUt3RDhVOGOuYRksfix",
+        "doc_id": "TyUt3RDhVOGOuYRksfix",
+        "equipment_id": "TyUt3RDhVOGOuYRksfix",
+        "name": "電界放出形走査電子顕微鏡(JSM-IT800SHL)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Lj4gkVcfwRIkca639jtN::Lj4gkVcfwRIkca639jtN",
+        "doc_id": "Lj4gkVcfwRIkca639jtN",
+        "equipment_id": "Lj4gkVcfwRIkca639jtN",
+        "name": "電界放出形走査電子顕微鏡[S4800_FE-SEM]",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Xq04lGWRiPBXBRnKQv44::Xq04lGWRiPBXBRnKQv44",
+        "doc_id": "Xq04lGWRiPBXBRnKQv44",
+        "equipment_id": "Xq04lGWRiPBXBRnKQv44",
+        "name": "電界放出形走査電子顕微鏡（JSM7400F）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "vbofGOQIGhrj7NaKuMPZ::vbofGOQIGhrj7NaKuMPZ",
+        "doc_id": "vbofGOQIGhrj7NaKuMPZ",
+        "equipment_id": "vbofGOQIGhrj7NaKuMPZ",
+        "name": "電界放出形走査電子顕微鏡［S4500/FE-SEM］（2F）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "oWf6Q4U1kBdoI75PR2el::oWf6Q4U1kBdoI75PR2el",
+        "doc_id": "oWf6Q4U1kBdoI75PR2el",
+        "equipment_id": "oWf6Q4U1kBdoI75PR2el",
+        "name": "電界放射型走査電子顕微鏡",
+        "papers_count": 2
+      },
+      {
+        "row_key": "uVuyWvrNEcyMCKVkS0Xe::uVuyWvrNEcyMCKVkS0Xe",
+        "doc_id": "uVuyWvrNEcyMCKVkS0Xe",
+        "equipment_id": "uVuyWvrNEcyMCKVkS0Xe",
+        "name": "電界放射型走査顕微鏡（FE-SEM）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "nVUuUNCB5mKL5Ve2lsG4::nVUuUNCB5mKL5Ve2lsG4",
+        "doc_id": "nVUuUNCB5mKL5Ve2lsG4",
+        "equipment_id": "nVUuUNCB5mKL5Ve2lsG4",
+        "name": "電界解放出型走査電子顕微鏡",
+        "papers_count": 2
+      },
+      {
+        "row_key": "F9vpkmiVT5nzrp4ljmwI::F9vpkmiVT5nzrp4ljmwI",
+        "doc_id": "F9vpkmiVT5nzrp4ljmwI",
+        "equipment_id": "F9vpkmiVT5nzrp4ljmwI",
+        "name": "電解放出型走査電子顕微鏡(FE-SEM-EDS)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "rTLCYsrOslek6Pr3fyNN::rTLCYsrOslek6Pr3fyNN",
+        "doc_id": "rTLCYsrOslek6Pr3fyNN",
+        "equipment_id": "rTLCYsrOslek6Pr3fyNN",
+        "name": "高速酸化膜ICPエッチング装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "in8HFE6wQcuoRpOLQYy9::in8HFE6wQcuoRpOLQYy9",
+        "doc_id": "in8HFE6wQcuoRpOLQYy9",
+        "equipment_id": "in8HFE6wQcuoRpOLQYy9",
+        "name": "ＬＡＳ4000mini",
+        "papers_count": 2
+      },
+      {
+        "row_key": "B9iIiFOdCcARZXssno7H::B9iIiFOdCcARZXssno7H",
+        "doc_id": "B9iIiFOdCcARZXssno7H",
+        "equipment_id": "B9iIiFOdCcARZXssno7H",
+        "name": "(ARIM)[委託] FIB－SEM Helios Nanolab 600i",
+        "papers_count": 2
+      },
+      {
+        "row_key": "WWLwJA9jk0TGNsNIJQJ9::WWLwJA9jk0TGNsNIJQJ9",
+        "doc_id": "WWLwJA9jk0TGNsNIJQJ9",
+        "equipment_id": "WWLwJA9jk0TGNsNIJQJ9",
+        "name": "(ARIM)イオンミリング装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "KuMXfMtAqaZr4ooiMuVf::KuMXfMtAqaZr4ooiMuVf",
+        "doc_id": "KuMXfMtAqaZr4ooiMuVf",
+        "equipment_id": "KuMXfMtAqaZr4ooiMuVf",
+        "name": "(ARIM)ウェーハーダイシングマシン DAD322",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Ph3Mz9oBmy0H8vpbnhlu::Ph3Mz9oBmy0H8vpbnhlu",
+        "doc_id": "Ph3Mz9oBmy0H8vpbnhlu",
+        "equipment_id": "Ph3Mz9oBmy0H8vpbnhlu",
+        "name": "(ARIM)デバイスシミュレーター",
+        "papers_count": 2
+      },
+      {
+        "row_key": "BLClIkY4tEpN6XpJsndC::BLClIkY4tEpN6XpJsndC",
+        "doc_id": "BLClIkY4tEpN6XpJsndC",
+        "equipment_id": "BLClIkY4tEpN6XpJsndC",
+        "name": "(ARIM)データ解析用PC",
+        "papers_count": 2
+      },
+      {
+        "row_key": "5Kyned0pvZHotK87qrkp::5Kyned0pvZHotK87qrkp",
+        "doc_id": "5Kyned0pvZHotK87qrkp",
+        "equipment_id": "5Kyned0pvZHotK87qrkp",
+        "name": "(ARIM)パワーデバイス特性評価装置 B1505A",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ZmZoYm4Bm8wwdio8MFyi::ZmZoYm4Bm8wwdio8MFyi",
+        "doc_id": "ZmZoYm4Bm8wwdio8MFyi",
+        "equipment_id": "ZmZoYm4Bm8wwdio8MFyi",
+        "name": "(ARIM)マスクアライナー Q 2001CT",
+        "papers_count": 2
+      },
+      {
+        "row_key": "wWQ4Z5JIGZjw4nn1NeEX::wWQ4Z5JIGZjw4nn1NeEX",
+        "doc_id": "wWQ4Z5JIGZjw4nn1NeEX",
+        "equipment_id": "wWQ4Z5JIGZjw4nn1NeEX",
+        "name": "(ARIM)光電子分光装置(XPS)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "t96AcKYZjOvPoTekpWzf::t96AcKYZjOvPoTekpWzf",
+        "doc_id": "t96AcKYZjOvPoTekpWzf",
+        "equipment_id": "t96AcKYZjOvPoTekpWzf",
+        "name": "(ARIM)分光エリプソメータ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "mm8V3BGMxbgdMZnF66f1::mm8V3BGMxbgdMZnF66f1",
+        "doc_id": "mm8V3BGMxbgdMZnF66f1",
+        "equipment_id": "mm8V3BGMxbgdMZnF66f1",
+        "name": "(ARIM)反応性エッチング装置 RIE-10NR",
+        "papers_count": 2
+      },
+      {
+        "row_key": "A2sapmT8PnX7SgfqRT8h::A2sapmT8PnX7SgfqRT8h",
+        "doc_id": "A2sapmT8PnX7SgfqRT8h",
+        "equipment_id": "A2sapmT8PnX7SgfqRT8h",
+        "name": "(ARIM)多機能走査型X線光電子分光分析装置(XPS/UPS)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ZfOIIJOGXfhydKZLQGTp::ZfOIIJOGXfhydKZLQGTp",
+        "doc_id": "ZfOIIJOGXfhydKZLQGTp",
+        "equipment_id": "ZfOIIJOGXfhydKZLQGTp",
+        "name": "(ARIM)小型イオンシャワー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jFhwqrvF5H2bWPzWJ6g1::jFhwqrvF5H2bWPzWJ6g1",
+        "doc_id": "jFhwqrvF5H2bWPzWJ6g1",
+        "equipment_id": "jFhwqrvF5H2bWPzWJ6g1",
+        "name": "(ARIM)触針式表面段差計 Alpha-Step D-500",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0DB6BGf9U2jma6dj1Fze::0DB6BGf9U2jma6dj1Fze",
+        "doc_id": "0DB6BGf9U2jma6dj1Fze",
+        "equipment_id": "0DB6BGf9U2jma6dj1Fze",
+        "name": "(ARIM)超高温炉 SR1800TS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "m3K2sSXLaZfF4sLBqmaV::m3K2sSXLaZfF4sLBqmaV",
+        "doc_id": "m3K2sSXLaZfF4sLBqmaV",
+        "equipment_id": "m3K2sSXLaZfF4sLBqmaV",
+        "name": "(ARIM)電子線蒸着装置 EB-540T",
+        "papers_count": 2
+      },
+      {
+        "row_key": "fIKkABE5Ln6Iy05xZ0DL::fIKkABE5Ln6Iy05xZ0DL",
+        "doc_id": "fIKkABE5Ln6Iy05xZ0DL",
+        "equipment_id": "fIKkABE5Ln6Iy05xZ0DL",
+        "name": "(ARIM)電界放出型走査電子顕微鏡 (委託観察対応機器) SU-8020",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Mx4ZKyic2cXzAgJ4QInR::Mx4ZKyic2cXzAgJ4QInR",
+        "doc_id": "Mx4ZKyic2cXzAgJ4QInR",
+        "equipment_id": "Mx4ZKyic2cXzAgJ4QInR",
+        "name": "(アドバンストSEM)卓上顕微鏡 TM4000Plus",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ZerRfkIp7l3lsm9YHLTf::ZerRfkIp7l3lsm9YHLTf",
+        "doc_id": "ZerRfkIp7l3lsm9YHLTf",
+        "equipment_id": "ZerRfkIp7l3lsm9YHLTf",
+        "name": "(アドバンストSEM)超高分解能ショットキー走査電子顕微鏡 SU7000",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Y0KPdJiU8c6wqzKZXYHT::Y0KPdJiU8c6wqzKZXYHT",
+        "doc_id": "Y0KPdJiU8c6wqzKZXYHT",
+        "equipment_id": "Y0KPdJiU8c6wqzKZXYHT",
+        "name": "(アドバンストSEM)集束イオンビーム加工観察装置JIB-4000",
+        "papers_count": 2
+      },
+      {
+        "row_key": "MjyaeNQXkmyBIqplGbh9::MjyaeNQXkmyBIqplGbh9",
+        "doc_id": "MjyaeNQXkmyBIqplGbh9",
+        "equipment_id": "MjyaeNQXkmyBIqplGbh9",
+        "name": "(アドバンストSEM)高分解能FEB測長装置(CD-SEM) CS4800",
+        "papers_count": 2
+      },
+      {
+        "row_key": "JjvY80aHFQV53OTbQ2Nd::JjvY80aHFQV53OTbQ2Nd",
+        "doc_id": "JjvY80aHFQV53OTbQ2Nd",
+        "equipment_id": "JjvY80aHFQV53OTbQ2Nd",
+        "name": "(パワエレ共用)極低温プローブステーション CMPS-308-4K-6P-20",
+        "papers_count": 2
+      },
+      {
+        "row_key": "DrpHy38EUGtaoO5Ls3Ev::DrpHy38EUGtaoO5Ls3Ev",
+        "doc_id": "DrpHy38EUGtaoO5Ls3Ev",
+        "equipment_id": "DrpHy38EUGtaoO5Ls3Ev",
+        "name": "(薄膜特性解析G)薄膜X線回折装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "820cQ0j4FcSztQlFFUkl::820cQ0j4FcSztQlFFUkl",
+        "doc_id": "820cQ0j4FcSztQlFFUkl",
+        "equipment_id": "820cQ0j4FcSztQlFFUkl",
+        "name": "10kV ACDC増幅器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "gnRuHOoRbl2LNaE0UD96::gnRuHOoRbl2LNaE0UD96",
+        "doc_id": "gnRuHOoRbl2LNaE0UD96",
+        "equipment_id": "gnRuHOoRbl2LNaE0UD96",
+        "name": "300MHz 核磁気共鳴装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "otX6yKYsQlc2U3S97SK3::otX6yKYsQlc2U3S97SK3",
+        "doc_id": "otX6yKYsQlc2U3S97SK3",
+        "equipment_id": "otX6yKYsQlc2U3S97SK3",
+        "name": "3D DIC&モーション計測",
+        "papers_count": 2
+      },
+      {
+        "row_key": "4XheR15Myymx0LbKc4iT::4XheR15Myymx0LbKc4iT",
+        "doc_id": "4XheR15Myymx0LbKc4iT",
+        "equipment_id": "4XheR15Myymx0LbKc4iT",
+        "name": "3Dプリンタ (MF-1000)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "aOqsRUWNYIdEy2NA8bQ8::aOqsRUWNYIdEy2NA8bQ8",
+        "doc_id": "aOqsRUWNYIdEy2NA8bQ8",
+        "equipment_id": "aOqsRUWNYIdEy2NA8bQ8",
+        "name": "AC/DC増幅器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "rOF6XvCOzFlTzeqiLbdY::rOF6XvCOzFlTzeqiLbdY",
+        "doc_id": "rOF6XvCOzFlTzeqiLbdY",
+        "equipment_id": "rOF6XvCOzFlTzeqiLbdY",
+        "name": "ACレジスタンスブリッジ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Kc3W0sx8A85LJcjIkkzP::Kc3W0sx8A85LJcjIkkzP",
+        "doc_id": "Kc3W0sx8A85LJcjIkkzP",
+        "equipment_id": "Kc3W0sx8A85LJcjIkkzP",
+        "name": "AR-NE1A X-Ray Diffraction and Mössbauer Spectroscopy at High Pressure",
+        "papers_count": 2
+      },
+      {
+        "row_key": "rOLkX14fp4qpGkU8WFbu::rOLkX14fp4qpGkU8WFbu",
+        "doc_id": "rOLkX14fp4qpGkU8WFbu",
+        "equipment_id": "rOLkX14fp4qpGkU8WFbu",
+        "name": "AR-NE3A Macromolecular Crystallography for Drug Design",
+        "papers_count": 2
+      },
+      {
+        "row_key": "T2JLeaGFMX0o5whDVNFR::T2JLeaGFMX0o5whDVNFR",
+        "doc_id": "T2JLeaGFMX0o5whDVNFR",
+        "equipment_id": "T2JLeaGFMX0o5whDVNFR",
+        "name": "AR-NE5C High-pressure and High-temperature X-ray Diffraction (MAX-80)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "H7SYGfhZ1ej00NOsbubk::H7SYGfhZ1ej00NOsbubk",
+        "doc_id": "H7SYGfhZ1ej00NOsbubk",
+        "equipment_id": "H7SYGfhZ1ej00NOsbubk",
+        "name": "AR-NE7A X-ray Imaging and X-ray Diffraction Experiments at High Pressure",
+        "papers_count": 2
+      },
+      {
+        "row_key": "YSjlhnuxeaWYFPZZHq5r::YSjlhnuxeaWYFPZZHq5r",
+        "doc_id": "YSjlhnuxeaWYFPZZHq5r",
+        "equipment_id": "YSjlhnuxeaWYFPZZHq5r",
+        "name": "AR-NW10A High-energy XAFS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0HPeIyJls2Pk3uku3v5m::0HPeIyJls2Pk3uku3v5m",
+        "doc_id": "0HPeIyJls2Pk3uku3v5m",
+        "equipment_id": "0HPeIyJls2Pk3uku3v5m",
+        "name": "AR-NW12A Macromolecular Crystallography",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0GGo2oV9YxDZFO2bNoNb::0GGo2oV9YxDZFO2bNoNb",
+        "doc_id": "0GGo2oV9YxDZFO2bNoNb",
+        "equipment_id": "0GGo2oV9YxDZFO2bNoNb",
+        "name": "AR-NW14A Time-resolved Diffraction and Scattering",
+        "papers_count": 2
+      },
+      {
+        "row_key": "F6OO1z5Gt6xwbFfFSFzk::F6OO1z5Gt6xwbFfFSFzk",
+        "doc_id": "F6OO1z5Gt6xwbFfFSFzk",
+        "equipment_id": "F6OO1z5Gt6xwbFfFSFzk",
+        "name": "AR-NW2A Time-resolved XAFS, X-ray Microscopy",
+        "papers_count": 2
+      },
+      {
+        "row_key": "sSNrlEfxQmVOQySHmVSu::sSNrlEfxQmVOQySHmVSu",
+        "doc_id": "sSNrlEfxQmVOQySHmVSu",
+        "equipment_id": "sSNrlEfxQmVOQySHmVSu",
+        "name": "AR-SE2A Test Beam Line (in Japanese)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "xv5YkoNRLbxwagwCzo1B::xv5YkoNRLbxwagwCzo1B",
+        "doc_id": "xv5YkoNRLbxwagwCzo1B",
+        "equipment_id": "xv5YkoNRLbxwagwCzo1B",
+        "name": "Alveo U200 アクセラレータカード",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ELhb2W3bZp4I3HfvKwAn::ELhb2W3bZp4I3HfvKwAn",
+        "doc_id": "ELhb2W3bZp4I3HfvKwAn",
+        "equipment_id": "ELhb2W3bZp4I3HfvKwAn",
+        "name": "BL-10A X-ray Diffraction and Scattering",
+        "papers_count": 2
+      },
+      {
+        "row_key": "uf111sF3iP8JxRHalUDX::uf111sF3iP8JxRHalUDX",
+        "doc_id": "uf111sF3iP8JxRHalUDX",
+        "equipment_id": "uf111sF3iP8JxRHalUDX",
+        "name": "BL-10C Small-angle X-ray Scattering",
+        "papers_count": 2
+      },
+      {
+        "row_key": "70F87s3wVq64tRbIVyib::70F87s3wVq64tRbIVyib",
+        "doc_id": "70F87s3wVq64tRbIVyib",
+        "equipment_id": "70F87s3wVq64tRbIVyib",
+        "name": "BL-11A R&D Beamline",
+        "papers_count": 2
+      },
+      {
+        "row_key": "L5Cu8Z3re24xzYBldR7O::L5Cu8Z3re24xzYBldR7O",
+        "doc_id": "L5Cu8Z3re24xzYBldR7O",
+        "equipment_id": "L5Cu8Z3re24xzYBldR7O",
+        "name": "BL-11B R&D Beamline",
+        "papers_count": 2
+      },
+      {
+        "row_key": "wBBQUmIGmQdfa5KcMrLr::wBBQUmIGmQdfa5KcMrLr",
+        "doc_id": "wBBQUmIGmQdfa5KcMrLr",
+        "equipment_id": "wBBQUmIGmQdfa5KcMrLr",
+        "name": "BL-12A Soft and Tender X-ray Beamline",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Ful88Xj1wmb3xDQ8JkGr::Ful88Xj1wmb3xDQ8JkGr",
+        "doc_id": "Ful88Xj1wmb3xDQ8JkGr",
+        "equipment_id": "Ful88Xj1wmb3xDQ8JkGr",
+        "name": "BL-12C High-throughput XAFS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "PifjDbMhXZfnXrssJh71::PifjDbMhXZfnXrssJh71",
+        "doc_id": "PifjDbMhXZfnXrssJh71",
+        "equipment_id": "PifjDbMhXZfnXrssJh71",
+        "name": "BL-13A/B Variable Polarization VUV and Soft X-ray Spectroscopy",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Y0BsiOcywxL35Ru9HrVJ::Y0BsiOcywxL35Ru9HrVJ",
+        "doc_id": "Y0BsiOcywxL35Ru9HrVJ",
+        "equipment_id": "Y0BsiOcywxL35Ru9HrVJ",
+        "name": "BL-14A Single Crystal Structure Analysis/Detector Development",
+        "papers_count": 2
+      },
+      {
+        "row_key": "1D13S9JXQOogLw1QYEme::1D13S9JXQOogLw1QYEme",
+        "doc_id": "1D13S9JXQOogLw1QYEme",
+        "equipment_id": "1D13S9JXQOogLw1QYEme",
+        "name": "BL-14B High-precision X-ray Optics",
+        "papers_count": 2
+      },
+      {
+        "row_key": "k6YJrPUTldgSwG6seNxN::k6YJrPUTldgSwG6seNxN",
+        "doc_id": "k6YJrPUTldgSwG6seNxN",
+        "equipment_id": "k6YJrPUTldgSwG6seNxN",
+        "name": "BL-14C X-ray Imaging and Multi-purpose Experiments",
+        "papers_count": 2
+      },
+      {
+        "row_key": "HiK1L2YKn0kOg2bMyzdx::HiK1L2YKn0kOg2bMyzdx",
+        "doc_id": "HiK1L2YKn0kOg2bMyzdx",
+        "equipment_id": "HiK1L2YKn0kOg2bMyzdx",
+        "name": "BL-15A1 Semi-microbeam XAFS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "v8QFac0kgTCM4bh8KiX2::v8QFac0kgTCM4bh8KiX2",
+        "doc_id": "v8QFac0kgTCM4bh8KiX2",
+        "equipment_id": "v8QFac0kgTCM4bh8KiX2",
+        "name": "BL-15A2 High-brilliance Small-angle X-ray Scattering",
+        "papers_count": 2
+      },
+      {
+        "row_key": "r3bmVBGGHn0yAhOOddoN::r3bmVBGGHn0yAhOOddoN",
+        "doc_id": "r3bmVBGGHn0yAhOOddoN",
+        "equipment_id": "r3bmVBGGHn0yAhOOddoN",
+        "name": "BL-16A Variable Polarization Soft X-ray Spectroscopy",
+        "papers_count": 2
+      },
+      {
+        "row_key": "S95YPkBKTW3vOYUAUCF0::S95YPkBKTW3vOYUAUCF0",
+        "doc_id": "S95YPkBKTW3vOYUAUCF0",
+        "equipment_id": "S95YPkBKTW3vOYUAUCF0",
+        "name": "BL-18C High Pressure X-ray Powder Diffraction (DAC)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "J1L563ofdnh8NUpGwqOw::J1L563ofdnh8NUpGwqOw",
+        "doc_id": "J1L563ofdnh8NUpGwqOw",
+        "equipment_id": "J1L563ofdnh8NUpGwqOw",
+        "name": "BL-20B White & Monochromatic X-ray Topography and Diffraction",
+        "papers_count": 2
+      },
+      {
+        "row_key": "x3t05dExs2NENLbNUQt9::x3t05dExs2NENLbNUQt9",
+        "doc_id": "x3t05dExs2NENLbNUQt9",
+        "equipment_id": "x3t05dExs2NENLbNUQt9",
+        "name": "BL-27A Radiation Biology, Soft X-ray Spectroscopy for Radioactive Samples",
+        "papers_count": 2
+      },
+      {
+        "row_key": "2ZaLQoMamWsp7gbzYE1D::2ZaLQoMamWsp7gbzYE1D",
+        "doc_id": "2ZaLQoMamWsp7gbzYE1D",
+        "equipment_id": "2ZaLQoMamWsp7gbzYE1D",
+        "name": "BL-27B Radiation Biology, XAFS for Radioactive Samples",
+        "papers_count": 2
+      },
+      {
+        "row_key": "PZG8lF8dppYoluiLuWyo::PZG8lF8dppYoluiLuWyo",
+        "doc_id": "PZG8lF8dppYoluiLuWyo",
+        "equipment_id": "PZG8lF8dppYoluiLuWyo",
+        "name": "BL-28A/B Variable Polarization VUV and Soft X-ray Spectroscopy",
+        "papers_count": 2
+      },
+      {
+        "row_key": "AYvp4hhbDVW9BxOhw3Xy::AYvp4hhbDVW9BxOhw3Xy",
+        "doc_id": "AYvp4hhbDVW9BxOhw3Xy",
+        "equipment_id": "AYvp4hhbDVW9BxOhw3Xy",
+        "name": "BL-3A X-ray Diffraction Experiment under Extreme Condition",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ya6aeU2i9u227BpeKUv4::ya6aeU2i9u227BpeKUv4",
+        "doc_id": "ya6aeU2i9u227BpeKUv4",
+        "equipment_id": "ya6aeU2i9u227BpeKUv4",
+        "name": "BL-3C X-ray Optics/White X-ray Magnetic Diffraction",
+        "papers_count": 2
+      },
+      {
+        "row_key": "iWBARFlMTog3QAEBHXsn::iWBARFlMTog3QAEBHXsn",
+        "doc_id": "iWBARFlMTog3QAEBHXsn",
+        "equipment_id": "iWBARFlMTog3QAEBHXsn",
+        "name": "BL-4A Trace Element Analysis/X-ray Microbeam",
+        "papers_count": 2
+      },
+      {
+        "row_key": "fvODCbH0rMWvR8cVsOtY::fvODCbH0rMWvR8cVsOtY",
+        "doc_id": "fvODCbH0rMWvR8cVsOtY",
+        "equipment_id": "fvODCbH0rMWvR8cVsOtY",
+        "name": "BL-4B2 Powder Diffraction",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Xp2NtP9hIvZgZKSdHZF8::Xp2NtP9hIvZgZKSdHZF8",
+        "doc_id": "Xp2NtP9hIvZgZKSdHZF8",
+        "equipment_id": "Xp2NtP9hIvZgZKSdHZF8",
+        "name": "BL-4C X-ray Diffraction Experiment",
+        "papers_count": 2
+      },
+      {
+        "row_key": "8pu4MDD2IQh5ZMzASqii::8pu4MDD2IQh5ZMzASqii",
+        "doc_id": "8pu4MDD2IQh5ZMzASqii",
+        "equipment_id": "8pu4MDD2IQh5ZMzASqii",
+        "name": "BL-5A Macromolecular Crystallography",
+        "papers_count": 2
+      },
+      {
+        "row_key": "7oVv0cAl2nunvBjc2Uce::7oVv0cAl2nunvBjc2Uce",
+        "doc_id": "7oVv0cAl2nunvBjc2Uce",
+        "equipment_id": "7oVv0cAl2nunvBjc2Uce",
+        "name": "BL-6A Small-angle X-ray Scattering",
+        "papers_count": 2
+      },
+      {
+        "row_key": "IOTSbe44ur7btjrNJ88b::IOTSbe44ur7btjrNJ88b",
+        "doc_id": "IOTSbe44ur7btjrNJ88b",
+        "equipment_id": "IOTSbe44ur7btjrNJ88b",
+        "name": "BL-6C X-ray Diffraction and Scattering",
+        "papers_count": 2
+      },
+      {
+        "row_key": "uvmCRNuMHUwQzW4hcOfD::uvmCRNuMHUwQzW4hcOfD",
+        "doc_id": "uvmCRNuMHUwQzW4hcOfD",
+        "equipment_id": "uvmCRNuMHUwQzW4hcOfD",
+        "name": "BL-7A RCS, Univ. Tokyo Soft X-ray Spectroscopy",
+        "papers_count": 2
+      },
+      {
+        "row_key": "9EhohLTGhII6MuXCa6A6::9EhohLTGhII6MuXCa6A6",
+        "doc_id": "9EhohLTGhII6MuXCa6A6",
+        "equipment_id": "9EhohLTGhII6MuXCa6A6",
+        "name": "BL-8A Powder/Single-crystal Diffraction under Extreme Conditions",
+        "papers_count": 2
+      },
+      {
+        "row_key": "BLRnZ5v6ckdDjScLg59Y::BLRnZ5v6ckdDjScLg59Y",
+        "doc_id": "BLRnZ5v6ckdDjScLg59Y",
+        "equipment_id": "BLRnZ5v6ckdDjScLg59Y",
+        "name": "BL-9A High-intensity and Low-energy XAFS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ledcQcGbxaIiFIyhcQv2::ledcQcGbxaIiFIyhcQv2",
+        "doc_id": "ledcQcGbxaIiFIyhcQv2",
+        "equipment_id": "ledcQcGbxaIiFIyhcQv2",
+        "name": "Bruker BioSpin・AVANCE III 800",
+        "papers_count": 2
+      },
+      {
+        "row_key": "suQuqSk9FTyzShovvOcD::suQuqSk9FTyzShovvOcD",
+        "doc_id": "suQuqSk9FTyzShovvOcD",
+        "equipment_id": "suQuqSk9FTyzShovvOcD",
+        "name": "Bruker BioSpin・AVANCE NEO 400",
+        "papers_count": 2
+      },
+      {
+        "row_key": "o6MNAsoWXxpPaLPBIu5P::o6MNAsoWXxpPaLPBIu5P",
+        "doc_id": "o6MNAsoWXxpPaLPBIu5P",
+        "equipment_id": "o6MNAsoWXxpPaLPBIu5P",
+        "name": "Bruker BioSpin・AVANCE NEO 400WB",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ndD4IzLllDSYcv8LtQP2::ndD4IzLllDSYcv8LtQP2",
+        "doc_id": "ndD4IzLllDSYcv8LtQP2",
+        "equipment_id": "ndD4IzLllDSYcv8LtQP2",
+        "name": "Bruker Biospin AVANCE III 600 ＋ クライオプローブ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "hmG5THrAFvT6apo6hVn7::hmG5THrAFvT6apo6hVn7",
+        "doc_id": "hmG5THrAFvT6apo6hVn7",
+        "equipment_id": "hmG5THrAFvT6apo6hVn7",
+        "name": "Bruker Biospin EMXmicro(医学地区)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "zkaWE4nGRhlXcnHyj2oS::zkaWE4nGRhlXcnHyj2oS",
+        "doc_id": "zkaWE4nGRhlXcnHyj2oS",
+        "equipment_id": "zkaWE4nGRhlXcnHyj2oS",
+        "name": "Bruker Daltonics・scimaX",
+        "papers_count": 2
+      },
+      {
+        "row_key": "w7hUomFwpPssdd6Kl7p1::w7hUomFwpPssdd6Kl7p1",
+        "doc_id": "w7hUomFwpPssdd6Kl7p1",
+        "equipment_id": "w7hUomFwpPssdd6Kl7p1",
+        "name": "Bruker Daltonics・ultrafleXtreme",
+        "papers_count": 2
+      },
+      {
+        "row_key": "htHNWxhzwCProHJtQTLV::htHNWxhzwCProHJtQTLV",
+        "doc_id": "htHNWxhzwCProHJtQTLV",
+        "equipment_id": "htHNWxhzwCProHJtQTLV",
+        "name": "C1000 Touch サーマルサイクラー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "iSZoYGtzK59IvsMK0ryt::iSZoYGtzK59IvsMK0ryt",
+        "doc_id": "iSZoYGtzK59IvsMK0ryt",
+        "equipment_id": "iSZoYGtzK59IvsMK0ryt",
+        "name": "CEM Japan MARS6",
+        "papers_count": 2
+      },
+      {
+        "row_key": "M7QF4WA19te05Jj27lec::M7QF4WA19te05Jj27lec",
+        "doc_id": "M7QF4WA19te05Jj27lec",
+        "equipment_id": "M7QF4WA19te05Jj27lec",
+        "name": "CHNコーダー (ヤナコ分析工業 MT-6)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "7lltsy7tG1WAMfyfOVhp::7lltsy7tG1WAMfyfOVhp",
+        "doc_id": "7lltsy7tG1WAMfyfOVhp",
+        "equipment_id": "7lltsy7tG1WAMfyfOVhp",
+        "name": "CLS138160J LabChip GXII HTシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Flz872k8gtoQ5pmrpSQt::Flz872k8gtoQ5pmrpSQt",
+        "doc_id": "Flz872k8gtoQ5pmrpSQt",
+        "equipment_id": "Flz872k8gtoQ5pmrpSQt",
+        "name": "CNC平面研削盤 (PSG-52DXNC)",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T03:03:21.966865+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:22.023177+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:22.587527+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:25.028988+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:27.520550+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:30.109943+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:32.733345+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:35.480705+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:38.059042+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:40.525841+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:43.036607+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:03:45.437384+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T03:04:18.371585+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

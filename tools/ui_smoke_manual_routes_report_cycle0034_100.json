@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-4778/10.1186/s12967-024-06046-1",
+    "paper_space_hash": "#/paper/eqnet-4778/10.1186/s12967-024-06046-1",
+    "beginner_enter_hash": "#/beginner/eqnet-4778",
+    "beginner_space_hash": "#/beginner/eqnet-4778"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "分注機 Multidrop Combi (1-3F) Thermo Scientific(Multidrop Combi)",
+      "summary_len": 303,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4778/10.1186/s12967-024-06046-1",
+      "beginner_hash": "#/beginner/eqnet-4778",
+      "paper_link_href": "https://www.sciencedirect.com/science/article/pii/S1479587624008285",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "分離用超遠心機CP80WX 日立工機(himac CP80WX)",
+      "summary_len": 269,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4115/10.1016/j.redox.2025.103863",
+      "beginner_hash": "#/beginner/eqnet-4115",
+      "paper_link_href": "https://doi.org/10.1016/j.redox.2025.103863",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "加熱気化水銀測定装置(MA-3000)",
+      "summary_len": 162,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3387/10.1007/s00018-025-06008-w",
+      "beginner_hash": "#/beginner/eqnet-3387",
+      "paper_link_href": "https://doi.org/10.1007/s00018-025-06008-w",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "動物隔離用アイソレーションラック FRPバイオ2000フィルターユニット CL5608-1S CL-5623",
+      "summary_len": 237,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3733/10.1038/s41598-025-31080-4",
+      "beginner_hash": "#/beginner/eqnet-3733",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-31080-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "卓上型全反射蛍光X線分析装置(リガク:ナノハンターII)",
+      "summary_len": 172,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3411/10.4185/rlcs-2027-2613",
+      "beginner_hash": "#/beginner/eqnet-3411",
+      "paper_link_href": "https://doi.org/10.4185/rlcs-2027-2613",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "卓上型走査電子顕微鏡 TinySEM",
+      "summary_len": 222,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/TOKUSHIMA-68/10.1016/s1359-0286(97)80091-5",
+      "beginner_hash": "#/beginner/TOKUSHIMA-68",
+      "paper_link_href": "https://doi.org/10.1016/S1359-0286(97)80091-5",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "卓上型超遠心機(ベックマンコールター・Optima MAX-XP)",
+      "summary_len": 154,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2970/10.1002/9780470114735.hawley05448",
+      "beginner_hash": "#/beginner/eqnet-2970",
+      "paper_link_href": "https://doi.org/10.1002/9780470114735.hawley05448",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "卓上型超遠心機(ベックマン・Optima TLX)",
+      "summary_len": 276,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1923/10.1002/9780470114735.hawley05448",
+      "beginner_hash": "#/beginner/eqnet-1923",
+      "paper_link_href": "https://doi.org/10.1002/9780470114735.hawley05448",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "卓上超遠心機(ベックマン・コールター株式会社 Optima MAX)",
+      "summary_len": 186,
+      "sample_count": 2,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4984/10.1186/s44147-025-00848-w",
+      "beginner_hash": "#/beginner/eqnet-4984",
+      "paper_link_href": "https://doi.org/10.1186/s44147-025-00848-w",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "単結晶自動X線構造解析装置 (リガク製) VariMax RAPID/α",
+      "summary_len": 185,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/ABJKZBe9h3RAOvzZQnbe/10.1039/c4cs00129j",
+      "beginner_hash": "#/beginner/ABJKZBe9h3RAOvzZQnbe",
+      "paper_link_href": "https://doi.org/10.1039/C4CS00129J",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

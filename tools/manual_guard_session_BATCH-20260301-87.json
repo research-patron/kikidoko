@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-87",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T06:24:16.222269+00:00",
+  "updated_at": "2026-03-01T06:25:12.944462+00:00",
+  "closed_at": "2026-03-01T06:25:12.944462+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch87.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-87.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "2df327429dbecfe38617873c6d1022b1f6dc130dd76f59df57730d851711b126",
+    "queue_sha256_at_start": "9f8838fcff17fd92d417772c935cd1df6673e5dc4eb7f6e7c9a90801f4d571d2",
+    "queue_row_keys_sha256": "35f77ea645484457d48d5824361035389b65fd6f51d1c5cbb2c27eb3bc98ef45"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "ngoWvEHtGyNh4K7EhD2E::ngoWvEHtGyNh4K7EhD2E",
+      "tXJCegQDid3FOee8yvzQ::tXJCegQDid3FOee8yvzQ",
+      "trE8EIlHapuXGC4DYLGF::trE8EIlHapuXGC4DYLGF",
+      "wWxqCSbkSdjqk89HR0a3::wWxqCSbkSdjqk89HR0a3",
+      "FO4GwIQbnZq2V9HEmZea::FO4GwIQbnZq2V9HEmZea",
+      "2syWa3AkDsvwEICYAY48::2syWa3AkDsvwEICYAY48",
+      "w5bjDZwazTddbKn1RK1T::w5bjDZwazTddbKn1RK1T",
+      "f6ae38BJnTJAffH9ITMh::f6ae38BJnTJAffH9ITMh",
+      "l3J3wALoa0T62coN0VRF::l3J3wALoa0T62coN0VRF",
+      "MRYMkVXKIuiuVFY1V65X::MRYMkVXKIuiuVFY1V65X",
+      "QFOGQXt3m3B5rEWQGg8O::QFOGQXt3m3B5rEWQGg8O",
+      "YNU-GCMS_AGILENT7000B::YNU-GCMS_AGILENT7000B",
+      "vSVj4DiIm7wLra7feJmv::vSVj4DiIm7wLra7feJmv",
+      "8EUZhJPiWL6WkkVeOeiw::8EUZhJPiWL6WkkVeOeiw",
+      "AjZggSi4FToai7LKZG6I::AjZggSi4FToai7LKZG6I",
+      "bEQJgIITPHXc3coGYyA3::bEQJgIITPHXc3coGYyA3",
+      "uc748Q7pZw3ksfbdJlFv::uc748Q7pZw3ksfbdJlFv",
+      "6mk7aTHmkKhpCgBFO49t::6mk7aTHmkKhpCgBFO49t",
+      "ZtO5ffaKmvEUq16IDf0L::ZtO5ffaKmvEUq16IDf0L",
+      "eqnet-1937::eqnet-1937",
+      "3nLQlBWqXY8htmMzxKjG::3nLQlBWqXY8htmMzxKjG",
+      "sAgRp90l5XvDH1ItLxgz::sAgRp90l5XvDH1ItLxgz",
+      "IsJWMNNPIMx8Me3e9nBY::IsJWMNNPIMx8Me3e9nBY",
+      "aMulexnU3QhR5H0K0jLx::aMulexnU3QhR5H0K0jLx",
+      "xaPeOtS6XaMzoTJ0wkUo::xaPeOtS6XaMzoTJ0wkUo",
+      "iJehiShQHUpueAJ01Jqr::iJehiShQHUpueAJ01Jqr",
+      "feSPGcE34YmPoZfgLptd::feSPGcE34YmPoZfgLptd",
+      "eQLtLbvk8ULcnrwOlCJs::eQLtLbvk8ULcnrwOlCJs",
+      "MlQC0AuhMm8iexlU2mTt::MlQC0AuhMm8iexlU2mTt",
+      "oYPvL1PT9JISS4EOrBhY::oYPvL1PT9JISS4EOrBhY",
+      "Vd5SwB6JtsO6vGOkYNLF::Vd5SwB6JtsO6vGOkYNLF",
+      "SSYzZgo2uKukAfHTqPMC::SSYzZgo2uKukAfHTqPMC",
+      "MI2vq5zGLybK4Eqn7yO0::MI2vq5zGLybK4Eqn7yO0",
+      "eqnet-4835::eqnet-4835",
+      "NEW1zmrRefbSzmbRg9s9::NEW1zmrRefbSzmbRg9s9",
+      "vMxoPSNyaqFLWmJt8M7q::vMxoPSNyaqFLWmJt8M7q",
+      "s2WHYAyhI1OPSeg1hhu7::s2WHYAyhI1OPSeg1hhu7",
+      "i3vOBZCIoMe9D5An2VP3::i3vOBZCIoMe9D5An2VP3",
+      "iHbkkEQneXd22KJFChaz::iHbkkEQneXd22KJFChaz",
+      "0KUjoYcKP2zNERzgkNzu::0KUjoYcKP2zNERzgkNzu",
+      "eqnet-3592::eqnet-3592",
+      "dVhoP9sYzDNGtBLxzKU0::dVhoP9sYzDNGtBLxzKU0",
+      "j9bpd8SFpW0QNCPpvuij::j9bpd8SFpW0QNCPpvuij",
+      "2cLWDy0mMN4LEBAoqoqJ::2cLWDy0mMN4LEBAoqoqJ",
+      "i899HgeDZoCECFD20YU0::i899HgeDZoCECFD20YU0",
+      "Qn6wDxn7B3ZvuVfAOxxU::Qn6wDxn7B3ZvuVfAOxxU",
+      "T669jZgcEaEwkclZyYCB::T669jZgcEaEwkclZyYCB",
+      "YY5YhLsyfI61J32V22aY::YY5YhLsyfI61J32V22aY",
+      "k2JRqpXEHEsXOuxhDEfe::k2JRqpXEHEsXOuxhDEfe",
+      "rBHcrYwyWHZ3Ehsw4L4T::rBHcrYwyWHZ3Ehsw4L4T",
+      "vmRzL3SY2g07xJ62jiu2::vmRzL3SY2g07xJ62jiu2",
+      "l1yiK5rXVvoXhjfnAd8L::l1yiK5rXVvoXhjfnAd8L",
+      "OByMk3FpEeOi9mRGdvVf::OByMk3FpEeOi9mRGdvVf",
+      "RvVSC8DKfxXDuU4uvMpc::RvVSC8DKfxXDuU4uvMpc",
+      "XyUJHXgNNFI0eB1Fq6Dq::XyUJHXgNNFI0eB1Fq6Dq",
+      "ZZTzKu4bIbSqHtDDWEe4::ZZTzKu4bIbSqHtDDWEe4",
+      "7gDaAwKLEiNaLhQR76aD::7gDaAwKLEiNaLhQR76aD",
+      "YNU-CP::YNU-CP",
+      "jqmqd1Dy2h05KZdSjM41::jqmqd1Dy2h05KZdSjM41",
+      "WVUeLiFoZin13ffCKxcO::WVUeLiFoZin13ffCKxcO",
+      "LlZPmCRKYoK84CFWjWQn::LlZPmCRKYoK84CFWjWQn",
+      "1aMlQPrAHOb5yzxwXzCr::1aMlQPrAHOb5yzxwXzCr",
+      "eqnet-2676::eqnet-2676",
+      "STiGDiZWWlMsCqqG6vGu::STiGDiZWWlMsCqqG6vGu",
+      "GnsNADn7h3TzMlFjhmZA::GnsNADn7h3TzMlFjhmZA",
+      "SoUqNAtiLPaxnKhsjjHZ::SoUqNAtiLPaxnKhsjjHZ",
+      "uc0RgupmsYy6irEL39vM::uc0RgupmsYy6irEL39vM",
+      "BJ2eIt4ZDB7IztBMC9SF::BJ2eIt4ZDB7IztBMC9SF",
+      "QWmEe1xHzSorU1NHFELo::QWmEe1xHzSorU1NHFELo",
+      "2Rdh0lv8Zbb9K1WzJCq0::2Rdh0lv8Zbb9K1WzJCq0",
+      "YUfhw9iDvbrqJi2yDjJ1::YUfhw9iDvbrqJi2yDjJ1",
+      "LZvOCpHp5WzIGND7Teug::LZvOCpHp5WzIGND7Teug",
+      "ECHELyENM3N3MYL2vZLc::ECHELyENM3N3MYL2vZLc",
+      "ZliTthIhs6bQvkGCSs7R::ZliTthIhs6bQvkGCSs7R",
+      "bAmLCwjURXiqvBOJ3xtg::bAmLCwjURXiqvBOJ3xtg",
+      "tcEzKnk5Hu28O5O2CbfI::tcEzKnk5Hu28O5O2CbfI",
+      "yhgno1tg1NTKqcPJA2o6::yhgno1tg1NTKqcPJA2o6",
+      "oB3HHyZQZEBTBTilAHE2::oB3HHyZQZEBTBTilAHE2",
+      "Dn9yLhDYhAZV5mWHyxJ2::Dn9yLhDYhAZV5mWHyxJ2",
+      "bOSxtSq0ZrjMD0ARsjdR::bOSxtSq0ZrjMD0ARsjdR",
+      "d9duMk1MzjtgvcnsVVBT::d9duMk1MzjtgvcnsVVBT",
+      "XP0czZ1oqZjEP8GJHZkz::XP0czZ1oqZjEP8GJHZkz",
+      "YoktwhmVxB51SV0CAopT::YoktwhmVxB51SV0CAopT",
+      "PBAtmJoobZ74ZJiRroij::PBAtmJoobZ74ZJiRroij",
+      "biOL2LdBih2hNuOkO7QN::biOL2LdBih2hNuOkO7QN",
+      "AQC680cRlhRyTgw8KGnO::AQC680cRlhRyTgw8KGnO",
+      "6XI7fqdDawfklMuHjOOP::6XI7fqdDawfklMuHjOOP",
+      "TOP5LRtd8iyGWZTGpSMH::TOP5LRtd8iyGWZTGpSMH",
+      "OZxNeB1v5DhkllyzFlKW::OZxNeB1v5DhkllyzFlKW",
+      "UMgsp6IXfinCuohovWZA::UMgsp6IXfinCuohovWZA",
+      "fI4WuHxL4a9Kj8rX5FFV::fI4WuHxL4a9Kj8rX5FFV",
+      "AFS7vlEEXqB1cyZyCD5V::AFS7vlEEXqB1cyZyCD5V",
+      "KHAXVq0yeiZbROCcVDpD::KHAXVq0yeiZbROCcVDpD",
+      "ovBtyEK2qn6i0aGyMO7q::ovBtyEK2qn6i0aGyMO7q",
+      "YI4l7XjJSqPMKoZfvzkO::YI4l7XjJSqPMKoZfvzkO",
+      "5Pfmx1UoBP7w68FWUmLi::5Pfmx1UoBP7w68FWUmLi",
+      "WCEBjhAfio3nqTnPlrs2::WCEBjhAfio3nqTnPlrs2",
+      "eqnet-3529::eqnet-3529",
+      "fWpvLjpKsl4IYJDA6zjt::fWpvLjpKsl4IYJDA6zjt",
+      "4MhCjtgOR4pSNbsIGMPg::4MhCjtgOR4pSNbsIGMPg"
+    ],
+    "target_rows": [
+      {
+        "row_key": "ngoWvEHtGyNh4K7EhD2E::ngoWvEHtGyNh4K7EhD2E",
+        "doc_id": "ngoWvEHtGyNh4K7EhD2E",
+        "equipment_id": "ngoWvEHtGyNh4K7EhD2E",
+        "name": "カーボンコーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "tXJCegQDid3FOee8yvzQ::tXJCegQDid3FOee8yvzQ",
+        "doc_id": "tXJCegQDid3FOee8yvzQ",
+        "equipment_id": "tXJCegQDid3FOee8yvzQ",
+        "name": "カーボンコーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "trE8EIlHapuXGC4DYLGF::trE8EIlHapuXGC4DYLGF",
+        "doc_id": "trE8EIlHapuXGC4DYLGF",
+        "equipment_id": "trE8EIlHapuXGC4DYLGF",
+        "name": "カーボンコーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wWxqCSbkSdjqk89HR0a3::wWxqCSbkSdjqk89HR0a3",
+        "doc_id": "wWxqCSbkSdjqk89HR0a3",
+        "equipment_id": "wWxqCSbkSdjqk89HR0a3",
+        "name": "カーボンコーター①",
+        "papers_count": 0
+      },
+      {
+        "row_key": "FO4GwIQbnZq2V9HEmZea::FO4GwIQbnZq2V9HEmZea",
+        "doc_id": "FO4GwIQbnZq2V9HEmZea",
+        "equipment_id": "FO4GwIQbnZq2V9HEmZea",
+        "name": "カーボンコーター②",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2syWa3AkDsvwEICYAY48::2syWa3AkDsvwEICYAY48",
+        "doc_id": "2syWa3AkDsvwEICYAY48",
+        "equipment_id": "2syWa3AkDsvwEICYAY48",
+        "name": "ガスクロマトグラフ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "w5bjDZwazTddbKn1RK1T::w5bjDZwazTddbKn1RK1T",
+        "doc_id": "w5bjDZwazTddbKn1RK1T",
+        "equipment_id": "w5bjDZwazTddbKn1RK1T",
+        "name": "ガスクロマトグラフ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "f6ae38BJnTJAffH9ITMh::f6ae38BJnTJAffH9ITMh",
+        "doc_id": "f6ae38BJnTJAffH9ITMh",
+        "equipment_id": "f6ae38BJnTJAffH9ITMh",
+        "name": "ガスクロマトグラフ #1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "l3J3wALoa0T62coN0VRF::l3J3wALoa0T62coN0VRF",
+        "doc_id": "l3J3wALoa0T62coN0VRF",
+        "equipment_id": "l3J3wALoa0T62coN0VRF",
+        "name": "ガスクロマトグラフィー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MRYMkVXKIuiuVFY1V65X::MRYMkVXKIuiuVFY1V65X",
+        "doc_id": "MRYMkVXKIuiuVFY1V65X",
+        "equipment_id": "MRYMkVXKIuiuVFY1V65X",
+        "name": "ガスクロマトグラフィー/四重極質量分析計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "QFOGQXt3m3B5rEWQGg8O::QFOGQXt3m3B5rEWQGg8O",
+        "doc_id": "QFOGQXt3m3B5rEWQGg8O",
+        "equipment_id": "QFOGQXt3m3B5rEWQGg8O",
+        "name": "ガスクロマトグラフィーシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YNU-GCMS_AGILENT7000B::YNU-GCMS_AGILENT7000B",
+        "doc_id": "YNU-GCMS_AGILENT7000B",
+        "equipment_id": "YNU-GCMS_AGILENT7000B",
+        "name": "ガスクロマトグラフートリプル四重極質量分析計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "vSVj4DiIm7wLra7feJmv::vSVj4DiIm7wLra7feJmv",
+        "doc_id": "vSVj4DiIm7wLra7feJmv",
+        "equipment_id": "vSVj4DiIm7wLra7feJmv",
+        "name": "ガスクロマトグラフ飛行時間質量分析計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "8EUZhJPiWL6WkkVeOeiw::8EUZhJPiWL6WkkVeOeiw",
+        "doc_id": "8EUZhJPiWL6WkkVeOeiw",
+        "equipment_id": "8EUZhJPiWL6WkkVeOeiw",
+        "name": "ガス吸着装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "AjZggSi4FToai7LKZG6I::AjZggSi4FToai7LKZG6I",
+        "doc_id": "AjZggSi4FToai7LKZG6I",
+        "equipment_id": "AjZggSi4FToai7LKZG6I",
+        "name": "ガス吸着装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "bEQJgIITPHXc3coGYyA3::bEQJgIITPHXc3coGYyA3",
+        "doc_id": "bEQJgIITPHXc3coGYyA3",
+        "equipment_id": "bEQJgIITPHXc3coGYyA3",
+        "name": "ガス吸着装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "uc748Q7pZw3ksfbdJlFv::uc748Q7pZw3ksfbdJlFv",
+        "doc_id": "uc748Q7pZw3ksfbdJlFv",
+        "equipment_id": "uc748Q7pZw3ksfbdJlFv",
+        "name": "ガス吸着装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6mk7aTHmkKhpCgBFO49t::6mk7aTHmkKhpCgBFO49t",
+        "doc_id": "6mk7aTHmkKhpCgBFO49t",
+        "equipment_id": "6mk7aTHmkKhpCgBFO49t",
+        "name": "ガス循環精製装置付グローブボックス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZtO5ffaKmvEUq16IDf0L::ZtO5ffaKmvEUq16IDf0L",
+        "doc_id": "ZtO5ffaKmvEUq16IDf0L",
+        "equipment_id": "ZtO5ffaKmvEUq16IDf0L",
+        "name": "ガラスナイフメーカー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1937::eqnet-1937",
+        "doc_id": "eqnet-1937",
+        "equipment_id": "eqnet-1937",
+        "name": "ガラスナイフメーカー ライカ EM KMR3",
+        "papers_count": 0
+      },
+      {
+        "row_key": "3nLQlBWqXY8htmMzxKjG::3nLQlBWqXY8htmMzxKjG",
+        "doc_id": "3nLQlBWqXY8htmMzxKjG",
+        "equipment_id": "3nLQlBWqXY8htmMzxKjG",
+        "name": "ガラスナイフ作成器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sAgRp90l5XvDH1ItLxgz::sAgRp90l5XvDH1ItLxgz",
+        "doc_id": "sAgRp90l5XvDH1ItLxgz",
+        "equipment_id": "sAgRp90l5XvDH1ItLxgz",
+        "name": "ガンマカウンター（吹田本館）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IsJWMNNPIMx8Me3e9nBY::IsJWMNNPIMx8Me3e9nBY",
+        "doc_id": "IsJWMNNPIMx8Me3e9nBY",
+        "equipment_id": "IsJWMNNPIMx8Me3e9nBY",
+        "name": "ガンマカウンター（豊中分館）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aMulexnU3QhR5H0K0jLx::aMulexnU3QhR5H0K0jLx",
+        "doc_id": "aMulexnU3QhR5H0K0jLx",
+        "equipment_id": "aMulexnU3QhR5H0K0jLx",
+        "name": "ガンマーカウンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "xaPeOtS6XaMzoTJ0wkUo::xaPeOtS6XaMzoTJ0wkUo",
+        "doc_id": "xaPeOtS6XaMzoTJ0wkUo",
+        "equipment_id": "xaPeOtS6XaMzoTJ0wkUo",
+        "name": "ガンマ線照射装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "iJehiShQHUpueAJ01Jqr::iJehiShQHUpueAJ01Jqr",
+        "doc_id": "iJehiShQHUpueAJ01Jqr",
+        "equipment_id": "iJehiShQHUpueAJ01Jqr",
+        "name": "キャピラリーウエスタンシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "feSPGcE34YmPoZfgLptd::feSPGcE34YmPoZfgLptd",
+        "doc_id": "feSPGcE34YmPoZfgLptd",
+        "equipment_id": "feSPGcE34YmPoZfgLptd",
+        "name": "キャピラリー電気泳動装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eQLtLbvk8ULcnrwOlCJs::eQLtLbvk8ULcnrwOlCJs",
+        "doc_id": "eQLtLbvk8ULcnrwOlCJs",
+        "equipment_id": "eQLtLbvk8ULcnrwOlCJs",
+        "name": "キャピラリ電気泳動システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MlQC0AuhMm8iexlU2mTt::MlQC0AuhMm8iexlU2mTt",
+        "doc_id": "MlQC0AuhMm8iexlU2mTt",
+        "equipment_id": "MlQC0AuhMm8iexlU2mTt",
+        "name": "キャプラリーガスクロマトグラフ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oYPvL1PT9JISS4EOrBhY::oYPvL1PT9JISS4EOrBhY",
+        "doc_id": "oYPvL1PT9JISS4EOrBhY",
+        "equipment_id": "oYPvL1PT9JISS4EOrBhY",
+        "name": "クイックプロQuickPro",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Vd5SwB6JtsO6vGOkYNLF::Vd5SwB6JtsO6vGOkYNLF",
+        "doc_id": "Vd5SwB6JtsO6vGOkYNLF",
+        "equipment_id": "Vd5SwB6JtsO6vGOkYNLF",
+        "name": "クライオクロスセクションポリッシャ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SSYzZgo2uKukAfHTqPMC::SSYzZgo2uKukAfHTqPMC",
+        "doc_id": "SSYzZgo2uKukAfHTqPMC",
+        "equipment_id": "SSYzZgo2uKukAfHTqPMC",
+        "name": "クライオクロスセクションポリッシャ(CCP)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MI2vq5zGLybK4Eqn7yO0::MI2vq5zGLybK4Eqn7yO0",
+        "doc_id": "MI2vq5zGLybK4Eqn7yO0",
+        "equipment_id": "MI2vq5zGLybK4Eqn7yO0",
+        "name": "クライオスタット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4835::eqnet-4835",
+        "doc_id": "eqnet-4835",
+        "equipment_id": "eqnet-4835",
+        "name": "クライオスタット ライカマイクロシステムズ CM1950",
+        "papers_count": 0
+      },
+      {
+        "row_key": "NEW1zmrRefbSzmbRg9s9::NEW1zmrRefbSzmbRg9s9",
+        "doc_id": "NEW1zmrRefbSzmbRg9s9",
+        "equipment_id": "NEW1zmrRefbSzmbRg9s9",
+        "name": "クライオ共焦点顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "vMxoPSNyaqFLWmJt8M7q::vMxoPSNyaqFLWmJt8M7q",
+        "doc_id": "vMxoPSNyaqFLWmJt8M7q",
+        "equipment_id": "vMxoPSNyaqFLWmJt8M7q",
+        "name": "クライオ電子顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "s2WHYAyhI1OPSeg1hhu7::s2WHYAyhI1OPSeg1hhu7",
+        "doc_id": "s2WHYAyhI1OPSeg1hhu7",
+        "equipment_id": "s2WHYAyhI1OPSeg1hhu7",
+        "name": "クラスⅡキャビネットSCV-1607EC2AB3 (同上用電子式着火ガスバーナー付き)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "i3vOBZCIoMe9D5An2VP3::i3vOBZCIoMe9D5An2VP3",
+        "doc_id": "i3vOBZCIoMe9D5An2VP3",
+        "equipment_id": "i3vOBZCIoMe9D5An2VP3",
+        "name": "クリオスタット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "iHbkkEQneXd22KJFChaz::iHbkkEQneXd22KJFChaz",
+        "doc_id": "iHbkkEQneXd22KJFChaz",
+        "equipment_id": "iHbkkEQneXd22KJFChaz",
+        "name": "クリオスタットミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "0KUjoYcKP2zNERzgkNzu::0KUjoYcKP2zNERzgkNzu",
+        "doc_id": "0KUjoYcKP2zNERzgkNzu",
+        "equipment_id": "0KUjoYcKP2zNERzgkNzu",
+        "name": "クリオスタット（凍結ミクロトーム）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3592::eqnet-3592",
+        "doc_id": "eqnet-3592",
+        "equipment_id": "eqnet-3592",
+        "name": "クリープ試験機 3連",
+        "papers_count": 0
+      },
+      {
+        "row_key": "dVhoP9sYzDNGtBLxzKU0::dVhoP9sYzDNGtBLxzKU0",
+        "doc_id": "dVhoP9sYzDNGtBLxzKU0",
+        "equipment_id": "dVhoP9sYzDNGtBLxzKU0",
+        "name": "クリーンオーブン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "j9bpd8SFpW0QNCPpvuij::j9bpd8SFpW0QNCPpvuij",
+        "doc_id": "j9bpd8SFpW0QNCPpvuij",
+        "equipment_id": "j9bpd8SFpW0QNCPpvuij",
+        "name": "クリーンブース",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2cLWDy0mMN4LEBAoqoqJ::2cLWDy0mMN4LEBAoqoqJ",
+        "doc_id": "2cLWDy0mMN4LEBAoqoqJ",
+        "equipment_id": "2cLWDy0mMN4LEBAoqoqJ",
+        "name": "クリーンブース（クリーンルーム本体）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "i899HgeDZoCECFD20YU0::i899HgeDZoCECFD20YU0",
+        "doc_id": "i899HgeDZoCECFD20YU0",
+        "equipment_id": "i899HgeDZoCECFD20YU0",
+        "name": "クリーンブース１",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Qn6wDxn7B3ZvuVfAOxxU::Qn6wDxn7B3ZvuVfAOxxU",
+        "doc_id": "Qn6wDxn7B3ZvuVfAOxxU",
+        "equipment_id": "Qn6wDxn7B3ZvuVfAOxxU",
+        "name": "クリーンベンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "T669jZgcEaEwkclZyYCB::T669jZgcEaEwkclZyYCB",
+        "doc_id": "T669jZgcEaEwkclZyYCB",
+        "equipment_id": "T669jZgcEaEwkclZyYCB",
+        "name": "クリーンベンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YY5YhLsyfI61J32V22aY::YY5YhLsyfI61J32V22aY",
+        "doc_id": "YY5YhLsyfI61J32V22aY",
+        "equipment_id": "YY5YhLsyfI61J32V22aY",
+        "name": "クリーンベンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "k2JRqpXEHEsXOuxhDEfe::k2JRqpXEHEsXOuxhDEfe",
+        "doc_id": "k2JRqpXEHEsXOuxhDEfe",
+        "equipment_id": "k2JRqpXEHEsXOuxhDEfe",
+        "name": "クリーンベンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "rBHcrYwyWHZ3Ehsw4L4T::rBHcrYwyWHZ3Ehsw4L4T",
+        "doc_id": "rBHcrYwyWHZ3Ehsw4L4T",
+        "equipment_id": "rBHcrYwyWHZ3Ehsw4L4T",
+        "name": "クリーンベンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "vmRzL3SY2g07xJ62jiu2::vmRzL3SY2g07xJ62jiu2",
+        "doc_id": "vmRzL3SY2g07xJ62jiu2",
+        "equipment_id": "vmRzL3SY2g07xJ62jiu2",
+        "name": "クリーンベンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "l1yiK5rXVvoXhjfnAd8L::l1yiK5rXVvoXhjfnAd8L",
+        "doc_id": "l1yiK5rXVvoXhjfnAd8L",
+        "equipment_id": "l1yiK5rXVvoXhjfnAd8L",
+        "name": "クリーンベンチ PAU1600CG",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OByMk3FpEeOi9mRGdvVf::OByMk3FpEeOi9mRGdvVf",
+        "doc_id": "OByMk3FpEeOi9mRGdvVf",
+        "equipment_id": "OByMk3FpEeOi9mRGdvVf",
+        "name": "クリーンベンチ TPV-790AG（8台）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "RvVSC8DKfxXDuU4uvMpc::RvVSC8DKfxXDuU4uvMpc",
+        "doc_id": "RvVSC8DKfxXDuU4uvMpc",
+        "equipment_id": "RvVSC8DKfxXDuU4uvMpc",
+        "name": "クリーンベンチ（バイオ実験装置群）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XyUJHXgNNFI0eB1Fq6Dq::XyUJHXgNNFI0eB1Fq6Dq",
+        "doc_id": "XyUJHXgNNFI0eB1Fq6Dq",
+        "equipment_id": "XyUJHXgNNFI0eB1Fq6Dq",
+        "name": "クリーンルーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZZTzKu4bIbSqHtDDWEe4::ZZTzKu4bIbSqHtDDWEe4",
+        "doc_id": "ZZTzKu4bIbSqHtDDWEe4",
+        "equipment_id": "ZZTzKu4bIbSqHtDDWEe4",
+        "name": "クレートコントローラ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7gDaAwKLEiNaLhQR76aD::7gDaAwKLEiNaLhQR76aD",
+        "doc_id": "7gDaAwKLEiNaLhQR76aD",
+        "equipment_id": "7gDaAwKLEiNaLhQR76aD",
+        "name": "クロスセクションポリッシャ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YNU-CP::YNU-CP",
+        "doc_id": "YNU-CP",
+        "equipment_id": "YNU-CP",
+        "name": "クロスセクションポリッシャ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "jqmqd1Dy2h05KZdSjM41::jqmqd1Dy2h05KZdSjM41",
+        "doc_id": "jqmqd1Dy2h05KZdSjM41",
+        "equipment_id": "jqmqd1Dy2h05KZdSjM41",
+        "name": "クロスセクションポリッシャ（ALD付帯）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "WVUeLiFoZin13ffCKxcO::WVUeLiFoZin13ffCKxcO",
+        "doc_id": "WVUeLiFoZin13ffCKxcO",
+        "equipment_id": "WVUeLiFoZin13ffCKxcO",
+        "name": "クロマトグラフィーシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "LlZPmCRKYoK84CFWjWQn::LlZPmCRKYoK84CFWjWQn",
+        "doc_id": "LlZPmCRKYoK84CFWjWQn",
+        "equipment_id": "LlZPmCRKYoK84CFWjWQn",
+        "name": "クールインキュベーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "1aMlQPrAHOb5yzxwXzCr::1aMlQPrAHOb5yzxwXzCr",
+        "doc_id": "1aMlQPrAHOb5yzxwXzCr",
+        "equipment_id": "1aMlQPrAHOb5yzxwXzCr",
+        "name": "グラインダー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2676::eqnet-2676",
+        "doc_id": "eqnet-2676",
+        "equipment_id": "eqnet-2676",
+        "name": "グラフェン・カーボンナノチューブ合成装置(自作特型)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "STiGDiZWWlMsCqqG6vGu::STiGDiZWWlMsCqqG6vGu",
+        "doc_id": "STiGDiZWWlMsCqqG6vGu",
+        "equipment_id": "STiGDiZWWlMsCqqG6vGu",
+        "name": "グロースチャンバ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "GnsNADn7h3TzMlFjhmZA::GnsNADn7h3TzMlFjhmZA",
+        "doc_id": "GnsNADn7h3TzMlFjhmZA",
+        "equipment_id": "GnsNADn7h3TzMlFjhmZA",
+        "name": "グローブボックス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SoUqNAtiLPaxnKhsjjHZ::SoUqNAtiLPaxnKhsjjHZ",
+        "doc_id": "SoUqNAtiLPaxnKhsjjHZ",
+        "equipment_id": "SoUqNAtiLPaxnKhsjjHZ",
+        "name": "グローブボックス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "uc0RgupmsYy6irEL39vM::uc0RgupmsYy6irEL39vM",
+        "doc_id": "uc0RgupmsYy6irEL39vM",
+        "equipment_id": "uc0RgupmsYy6irEL39vM",
+        "name": "グローブボックス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "BJ2eIt4ZDB7IztBMC9SF::BJ2eIt4ZDB7IztBMC9SF",
+        "doc_id": "BJ2eIt4ZDB7IztBMC9SF",
+        "equipment_id": "BJ2eIt4ZDB7IztBMC9SF",
+        "name": "ケミルミイメージングシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "QWmEe1xHzSorU1NHFELo::QWmEe1xHzSorU1NHFELo",
+        "doc_id": "QWmEe1xHzSorU1NHFELo",
+        "equipment_id": "QWmEe1xHzSorU1NHFELo",
+        "name": "ケミルミイメージングシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2Rdh0lv8Zbb9K1WzJCq0::2Rdh0lv8Zbb9K1WzJCq0",
+        "doc_id": "2Rdh0lv8Zbb9K1WzJCq0",
+        "equipment_id": "2Rdh0lv8Zbb9K1WzJCq0",
+        "name": "ケミルミネッセンスイメージングシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YUfhw9iDvbrqJi2yDjJ1::YUfhw9iDvbrqJi2yDjJ1",
+        "doc_id": "YUfhw9iDvbrqJi2yDjJ1",
+        "equipment_id": "YUfhw9iDvbrqJi2yDjJ1",
+        "name": "ケミルミ撮影装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "LZvOCpHp5WzIGND7Teug::LZvOCpHp5WzIGND7Teug",
+        "doc_id": "LZvOCpHp5WzIGND7Teug",
+        "equipment_id": "LZvOCpHp5WzIGND7Teug",
+        "name": "ケミルミ撮影装置(2020007)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ECHELyENM3N3MYL2vZLc::ECHELyENM3N3MYL2vZLc",
+        "doc_id": "ECHELyENM3N3MYL2vZLc",
+        "equipment_id": "ECHELyENM3N3MYL2vZLc",
+        "name": "ケミルミ画像撮影/解析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZliTthIhs6bQvkGCSs7R::ZliTthIhs6bQvkGCSs7R",
+        "doc_id": "ZliTthIhs6bQvkGCSs7R",
+        "equipment_id": "ZliTthIhs6bQvkGCSs7R",
+        "name": "ゲルマニウム半導体γ線核種分析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "bAmLCwjURXiqvBOJ3xtg::bAmLCwjURXiqvBOJ3xtg",
+        "doc_id": "bAmLCwjURXiqvBOJ3xtg",
+        "equipment_id": "bAmLCwjURXiqvBOJ3xtg",
+        "name": "ゲルマニウム半導体検出器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "tcEzKnk5Hu28O5O2CbfI::tcEzKnk5Hu28O5O2CbfI",
+        "doc_id": "tcEzKnk5Hu28O5O2CbfI",
+        "equipment_id": "tcEzKnk5Hu28O5O2CbfI",
+        "name": "ゲルマニウム半導体検出器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "yhgno1tg1NTKqcPJA2o6::yhgno1tg1NTKqcPJA2o6",
+        "doc_id": "yhgno1tg1NTKqcPJA2o6",
+        "equipment_id": "yhgno1tg1NTKqcPJA2o6",
+        "name": "ゲルマニウム検出器アレイ (ＧＲＡＰＥ) 特注",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oB3HHyZQZEBTBTilAHE2::oB3HHyZQZEBTBTilAHE2",
+        "doc_id": "oB3HHyZQZEBTBTilAHE2",
+        "equipment_id": "oB3HHyZQZEBTBTilAHE2",
+        "name": "ゲル撮影システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Dn9yLhDYhAZV5mWHyxJ2::Dn9yLhDYhAZV5mWHyxJ2",
+        "doc_id": "Dn9yLhDYhAZV5mWHyxJ2",
+        "equipment_id": "Dn9yLhDYhAZV5mWHyxJ2",
+        "name": "ゲル撮影装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "bOSxtSq0ZrjMD0ARsjdR::bOSxtSq0ZrjMD0ARsjdR",
+        "doc_id": "bOSxtSq0ZrjMD0ARsjdR",
+        "equipment_id": "bOSxtSq0ZrjMD0ARsjdR",
+        "name": "ゲル撮影装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "d9duMk1MzjtgvcnsVVBT::d9duMk1MzjtgvcnsVVBT",
+        "doc_id": "d9duMk1MzjtgvcnsVVBT",
+        "equipment_id": "d9duMk1MzjtgvcnsVVBT",
+        "name": "ゲル撮影装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XP0czZ1oqZjEP8GJHZkz::XP0czZ1oqZjEP8GJHZkz",
+        "doc_id": "XP0czZ1oqZjEP8GJHZkz",
+        "equipment_id": "XP0czZ1oqZjEP8GJHZkz",
+        "name": "ゲル撮影装置(2020008)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YoktwhmVxB51SV0CAopT::YoktwhmVxB51SV0CAopT",
+        "doc_id": "YoktwhmVxB51SV0CAopT",
+        "equipment_id": "YoktwhmVxB51SV0CAopT",
+        "name": "ゲル撮影装置GelDocEZPCシステム バイオ・ラッドラボラトリーズ170-8270J1PC.UVﾄﾚｲ.Whiteﾄﾚｲ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "PBAtmJoobZ74ZJiRroij::PBAtmJoobZ74ZJiRroij",
+        "doc_id": "PBAtmJoobZ74ZJiRroij",
+        "equipment_id": "PBAtmJoobZ74ZJiRroij",
+        "name": "ゲル浸透カラムクロマトグラフィー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "biOL2LdBih2hNuOkO7QN::biOL2LdBih2hNuOkO7QN",
+        "doc_id": "biOL2LdBih2hNuOkO7QN",
+        "equipment_id": "biOL2LdBih2hNuOkO7QN",
+        "name": "ゲートアンドディレイジェネレータ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "AQC680cRlhRyTgw8KGnO::AQC680cRlhRyTgw8KGnO",
+        "doc_id": "AQC680cRlhRyTgw8KGnO",
+        "equipment_id": "AQC680cRlhRyTgw8KGnO",
+        "name": "ゲート金属スパッタ成膜装置（スパッタ装置Ａ室）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6XI7fqdDawfklMuHjOOP::6XI7fqdDawfklMuHjOOP",
+        "doc_id": "6XI7fqdDawfklMuHjOOP",
+        "equipment_id": "6XI7fqdDawfklMuHjOOP",
+        "name": "コインシデンス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOP5LRtd8iyGWZTGpSMH::TOP5LRtd8iyGWZTGpSMH",
+        "doc_id": "TOP5LRtd8iyGWZTGpSMH",
+        "equipment_id": "TOP5LRtd8iyGWZTGpSMH",
+        "name": "コスモ卓上フライス盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OZxNeB1v5DhkllyzFlKW::OZxNeB1v5DhkllyzFlKW",
+        "doc_id": "OZxNeB1v5DhkllyzFlKW",
+        "equipment_id": "OZxNeB1v5DhkllyzFlKW",
+        "name": "コスモ卓上旋盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "UMgsp6IXfinCuohovWZA::UMgsp6IXfinCuohovWZA",
+        "doc_id": "UMgsp6IXfinCuohovWZA",
+        "equipment_id": "UMgsp6IXfinCuohovWZA",
+        "name": "コバルト60ガンマ線照射装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "fI4WuHxL4a9Kj8rX5FFV::fI4WuHxL4a9Kj8rX5FFV",
+        "doc_id": "fI4WuHxL4a9Kj8rX5FFV",
+        "equipment_id": "fI4WuHxL4a9Kj8rX5FFV",
+        "name": "コンタクトマスクアライナー[MJB4]",
+        "papers_count": 0
+      },
+      {
+        "row_key": "AFS7vlEEXqB1cyZyCD5V::AFS7vlEEXqB1cyZyCD5V",
+        "doc_id": "AFS7vlEEXqB1cyZyCD5V",
+        "equipment_id": "AFS7vlEEXqB1cyZyCD5V",
+        "name": "コンターマシン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KHAXVq0yeiZbROCcVDpD::KHAXVq0yeiZbROCcVDpD",
+        "doc_id": "KHAXVq0yeiZbROCcVDpD",
+        "equipment_id": "KHAXVq0yeiZbROCcVDpD",
+        "name": "コンターマシン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ovBtyEK2qn6i0aGyMO7q::ovBtyEK2qn6i0aGyMO7q",
+        "doc_id": "ovBtyEK2qn6i0aGyMO7q",
+        "equipment_id": "ovBtyEK2qn6i0aGyMO7q",
+        "name": "コンターマシン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YI4l7XjJSqPMKoZfvzkO::YI4l7XjJSqPMKoZfvzkO",
+        "doc_id": "YI4l7XjJSqPMKoZfvzkO",
+        "equipment_id": "YI4l7XjJSqPMKoZfvzkO",
+        "name": "コーティング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5Pfmx1UoBP7w68FWUmLi::5Pfmx1UoBP7w68FWUmLi",
+        "doc_id": "5Pfmx1UoBP7w68FWUmLi",
+        "equipment_id": "5Pfmx1UoBP7w68FWUmLi",
+        "name": "コーンプレート式粘度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "WCEBjhAfio3nqTnPlrs2::WCEBjhAfio3nqTnPlrs2",
+        "doc_id": "WCEBjhAfio3nqTnPlrs2",
+        "equipment_id": "WCEBjhAfio3nqTnPlrs2",
+        "name": "サイクリックボルタンメトリー装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3529::eqnet-3529",
+        "doc_id": "eqnet-3529",
+        "equipment_id": "eqnet-3529",
+        "name": "サイクロン エアーサンプラー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "fWpvLjpKsl4IYJDA6zjt::fWpvLjpKsl4IYJDA6zjt",
+        "doc_id": "fWpvLjpKsl4IYJDA6zjt",
+        "equipment_id": "fWpvLjpKsl4IYJDA6zjt",
+        "name": "サイズ排除クロマトグラフィ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "4MhCjtgOR4pSNbsIGMPg::4MhCjtgOR4pSNbsIGMPg",
+        "doc_id": "4MhCjtgOR4pSNbsIGMPg",
+        "equipment_id": "4MhCjtgOR4pSNbsIGMPg",
+        "name": "サムコ原子層堆積装置_2[AD-100LP]",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T06:24:16.222269+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:16.277154+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:16.872765+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:19.640389+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:22.137309+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:24.647745+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:27.155674+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:29.637603+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:32.151312+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:34.636792+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:37.127089+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:24:39.617452+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:25:12.944462+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

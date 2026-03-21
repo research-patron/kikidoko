@@ -1,0 +1,1311 @@
+{
+  "generated_at": "2026-03-11T23:47:06.170793+00:00",
+  "batch_id": "BATCH-20260312-CYCLE0019-100",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 100,
+  "family_count": 100,
+  "groups": [
+    {
+      "family_id": "1Fに設置されている機器|1Fに設置されている機器|400mhz-nmr---型式-avance|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "eDX9uS88nzDUo7DRFJox",
+          "equipment_id": "eDX9uS88nzDUo7DRFJox",
+          "name": "NMR(400MHz)－型式：AVANCE 400",
+          "category_general": "1Fに設置されている機器",
+          "category_detail": "1Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "1Fに設置されている機器|未分類|400mhz-nmr---型式-avance|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "R5b0pxQNyUgJdKFBwK5n",
+          "equipment_id": "R5b0pxQNyUgJdKFBwK5n",
+          "name": "NMR(400MHz)－型式：AVANCE 400",
+          "category_general": "1Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "1Fに設置されている機器|未分類|500mhz-nmr---型式-avanceiiihd|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sjeeh9D6hgUrxujOXjKl",
+          "equipment_id": "sjeeh9D6hgUrxujOXjKl",
+          "name": "NMR(500MHz)－型式：AVANCEⅢHD 500",
+          "category_general": "1Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|2Fに設置されている機器|cp100wx-超遠心機---型式-himac|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Uws7Nd0FITQFhBuZ6UX3",
+          "equipment_id": "Uws7Nd0FITQFhBuZ6UX3",
+          "name": "超遠心機 －型式： himac CP100WX",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|2Fに設置されている機器|dna-シーケンサー---型式-spectrum-compact|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "aL0L8jOJoNHKcJb5wRrW",
+          "equipment_id": "aL0L8jOJoNHKcJb5wRrW",
+          "name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|2Fに設置されている機器|gm3000-マルチモートリーダー---型式-glomax-discover|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zGP5IrL6MQpptV9vtbL7",
+          "equipment_id": "zGP5IrL6MQpptV9vtbL7",
+          "name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|2Fに設置されている機器|円二色性分散計-cd---型式-j-820|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zvaqj7UssGxAUiEDTBel",
+          "equipment_id": "zvaqj7UssGxAUiEDTBel",
+          "name": "円二色性分散計（CD）－型式：J-820",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|2Fに設置されている機器|化学発光イメージング装置---型式-luminograph-emi|other|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sGOjYNGg9TZMgeAGmF2B",
+          "equipment_id": "sGOjYNGg9TZMgeAGmF2B",
+          "name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|2Fに設置されている機器|紫外可視分光光度計---型式-biospectrometer-kinetic|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "oCRETqgx0aduVoPDIQEH",
+          "equipment_id": "oCRETqgx0aduVoPDIQEH",
+          "name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|2Fに設置されている機器|蛍光分光光度計-fl---型式-f-2500|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "b5I26chFGmL7Qoj4C8hy",
+          "equipment_id": "b5I26chFGmL7Qoj4C8hy",
+          "name": "蛍光分光光度計(FL)－型式：F-2500",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|cp100wx-超遠心機---型式-himac|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9VRmb61YZlTBbAkqsd2X",
+          "equipment_id": "9VRmb61YZlTBbAkqsd2X",
+          "name": "超遠心機 －型式： himac CP100WX",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|cs150gx-小型超遠心機---型式-himac|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ifTzD5oXL358aBdBmbfo",
+          "equipment_id": "ifTzD5oXL358aBdBmbfo",
+          "name": "小型超遠心機 －型式： himac CS150GX",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|dna-シーケンサー---型式-spectrum-compact|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YpiYi5rGQqcX6ofJF4lt",
+          "equipment_id": "YpiYi5rGQqcX6ofJF4lt",
+          "name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|gm3000-マルチモートリーダー---型式-glomax-discover|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5X6ZriO6yzTLj79YxcNC",
+          "equipment_id": "5X6ZriO6yzTLj79YxcNC",
+          "name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|lsm700-共焦点レーザースキャン顕微鏡---型式|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OC2X0czptgbbPUaWY00k",
+          "equipment_id": "OC2X0czptgbbPUaWY00k",
+          "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|サーマルサイクラー---型式-proflex-pcrsystem|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "znbxD1h1tRk1CEbqpyFo",
+          "equipment_id": "znbxD1h1tRk1CEbqpyFo",
+          "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|スキャナータイプ画像解析装置-fla---型式-typhoon|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wi61TzbjV4NwlsUe3L1R",
+          "equipment_id": "wi61TzbjV4NwlsUe3L1R",
+          "name": "ｽｷｬﾅｰﾀｲﾌﾟ画像解析装置(FLA)－型式：Typhoon FLA 7000",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|バイオイメージングアナライザー-bas---型式-bas-2500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "repVWVGli4uWJD2ZwH4R",
+          "equipment_id": "repVWVGli4uWJD2ZwH4R",
+          "name": "ﾊﾞｲｵｲﾒｰｼﾞﾝｸﾞｱﾅﾗｲｻﾞｰ(BAS)－型式：BAS-2500",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|共焦点レーザースキャン顕微鏡---型式-lsm7duo|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ubP9vgVGw0QLZb9Sr2Ko",
+          "equipment_id": "ubP9vgVGw0QLZb9Sr2Ko",
+          "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM7DUO",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|円二色性分散計-cd---型式-j-820|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "oNcfvHTFhIAfmMBGAXQv",
+          "equipment_id": "oNcfvHTFhIAfmMBGAXQv",
+          "name": "円二色性分散計（CD）－型式：J-820",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|化学発光イメージング装置---型式-luminograph-emi|other|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VRY5cXiT090GLPf9fhAt",
+          "equipment_id": "VRY5cXiT090GLPf9fhAt",
+          "name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|粒子径-分子量測定装置---型式-zetasizer-nano-s|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ZpEsD1VJ5uJdSfwLOx3z",
+          "equipment_id": "ZpEsD1VJ5uJdSfwLOx3z",
+          "name": "粒子径・分子量測定装置－型式：ZETASIZER Nano-S",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|紫外可視分光光度計---型式-biospectrometer-kinetic|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "acudKLs6rShQtvQwF6tA",
+          "equipment_id": "acudKLs6rShQtvQwF6tA",
+          "name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "2Fに設置されている機器|未分類|蛍光分光光度計-fl---型式-f-2500|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WA5NfqWUHxVa97Pgyojx",
+          "equipment_id": "WA5NfqWUHxVa97Pgyojx",
+          "name": "蛍光分光光度計(FL)－型式：F-2500",
+          "category_general": "2Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "3Dプリンタ|土木・建築・工学関連装置|3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "mvHeWRPnzgxqa2wHKaqo",
+          "equipment_id": "TOKUSHIMA-6",
+          "name": "3Dプリンタ",
+          "category_general": "3Dプリンタ",
+          "category_detail": "土木・建築・工学関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "3Dプリンタ|未分類|3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TOKUSHIMA-6",
+          "equipment_id": "TOKUSHIMA-6",
+          "name": "3Dプリンタ",
+          "category_general": "3Dプリンタ",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "3Dプリンタ|未分類|光造形-3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TOKUSHIMA-72",
+          "equipment_id": "TOKUSHIMA-72",
+          "name": "光造形3Dプリンタ",
+          "category_general": "3Dプリンタ",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "3Fに設置されている機器|3Fに設置されている機器|全自動タンパク質合成システム---型式-gendecorder|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "vLxG7JK9l1a27ArfGbY1",
+          "equipment_id": "vLxG7JK9l1a27ArfGbY1",
+          "name": "全自動タンパク質合成システム－型式：GenDecorder",
+          "category_general": "3Fに設置されている機器",
+          "category_detail": "3Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "3Fに設置されている機器|3Fに設置されている機器|卓上タンパク質合成システム---型式-protemist-dt|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GsgCedK7rtQUoIzvlFnK",
+          "equipment_id": "GsgCedK7rtQUoIzvlFnK",
+          "name": "卓上タンパク質合成システム－型式：Protemist DT",
+          "category_general": "3Fに設置されている機器",
+          "category_detail": "3Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "3Fに設置されている機器|未分類|全自動タンパク質合成システム---型式-gendecorder|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YgBfgj2Glg50OMudGFzi",
+          "equipment_id": "YgBfgj2Glg50OMudGFzi",
+          "name": "全自動タンパク質合成システム－型式：GenDecorder",
+          "category_general": "3Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "3Fに設置されている機器|未分類|卓上タンパク質合成システム---型式-protemist-dt|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "482ergQpZB21JJEsNXxy",
+          "equipment_id": "482ergQpZB21JJEsNXxy",
+          "name": "卓上タンパク質合成システム－型式：Protemist DT",
+          "category_general": "3Fに設置されている機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|513層多層押出成形装置|層多層押出成形装置-yg-006|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "IaeeL2CR9ANNkremST1r",
+          "equipment_id": "YAMAGATA-U-YG-006",
+          "name": "513層多層押出成形装置(YG-006)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "513層多層押出成形装置"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|X線非破壊検査装置|線非破壊検査装置-yg-602|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "qhoCPKqqubZ0uyaZfJFq",
+          "equipment_id": "YAMAGATA-U-YG-602",
+          "name": "X線非破壊検査装置(YG-602)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "X線非破壊検査装置"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|アイゾッド/シャルピー衝撃試験機|アイゾッド-シャルピー衝撃試験機-yg-010-2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "btZV71dZqxlT7EdpZgvB",
+          "equipment_id": "YAMAGATA-U-YG-010-2",
+          "name": "アイゾッド/シャルピー衝撃試験機(YG-010-2)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "アイゾッド/シャルピー衝撃試験機"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|エルメンドルフ・引裂試験機|エルメンドルフ-引裂試験機-yg-010-3|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "StSWpT4DU2TT1LQYrDTl",
+          "equipment_id": "YAMAGATA-U-YG-010-3",
+          "name": "エルメンドルフ・引裂試験機(YG-010-3)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "エルメンドルフ・引裂試験機"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|ツインドライブ型レオメータ|ツインドライブ型レオメータ-yg-001|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pKbqSe700ZzWohdFw65n",
+          "equipment_id": "YAMAGATA-U-YG-001",
+          "name": "ツインドライブ型レオメータ(YG-001)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "ツインドライブ型レオメータ"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|デジタルマイクロスコープ|デジタルマイクロスコープ-yg-010-6|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "hb2ImDBNe5CySX9C0jzB",
+          "equipment_id": "YAMAGATA-U-YG-010-6",
+          "name": "デジタルマイクロスコープ(YG-010-6)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "デジタルマイクロスコープ"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|デジタルマイクロスコープ・超深度マルチアングルレンズ|デジタルマイクロスコープ-超深度マルチアングルレンズ-yg-010-7|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XD46EBq84YbOLZUUTh4h",
+          "equipment_id": "YAMAGATA-U-YG-010-7",
+          "name": "デジタルマイクロスコープ・超深度マルチアングルレンズ(YG-010-7)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "デジタルマイクロスコープ・超深度マルチアングルレンズ"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|フィルム加工性その場可視化システム装置群|フィルム加工性その場可視化システム装置群-yg-005|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nfopABr8c9sNHOLntSgz",
+          "equipment_id": "YAMAGATA-U-YG-005",
+          "name": "フィルム加工性その場可視化システム装置群(YG-005)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "フィルム加工性その場可視化システム装置群"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|ポータブルリアクター|ポータブルリアクター-yg-007|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Wuxo4lwVUyE1kkptyL2g",
+          "equipment_id": "YAMAGATA-U-YG-007",
+          "name": "ポータブルリアクター(YG-007)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "ポータブルリアクター"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|偏光観察用システム顕微鏡|偏光観察用システム顕微鏡-yg-011-2-ミクロトーム|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "3OLDgm5Yo6Olt6Lr4bZV",
+          "equipment_id": "YAMAGATA-U-YG-011-2",
+          "name": "偏光観察用システム顕微鏡(YG-011-2)・ミクロトーム",
+          "category_general": "ARIM共用装置",
+          "category_detail": "偏光観察用システム顕微鏡"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|光沢計|光沢計-yg-010-5|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gt03Q7tDu6NppzwawuAq",
+          "equipment_id": "YAMAGATA-U-YG-010-5",
+          "name": "光沢計(YG-010-5)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "光沢計"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|全自動多目的X線回折装置|全自動多目的-線回折装置-yg-601|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XZT48BmKydVEm3kTcUYu",
+          "equipment_id": "YAMAGATA-U-YG-601",
+          "name": "全自動多目的X線回折装置(YG-601)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "全自動多目的X線回折装置"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|共押出システム|共押出システム-yg-002|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VvILmjDAV8jIqjFKkW2w",
+          "equipment_id": "YAMAGATA-U-YG-002",
+          "name": "共押出システム(YG-002)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "共押出システム"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|分光ヘーズメーター|分光ヘーズメーター-yg-010-4|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NA4jpKc98ekkVVOq8HKq",
+          "equipment_id": "YAMAGATA-U-YG-010-4",
+          "name": "分光ヘーズメーター(YG-010-4)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "分光ヘーズメーター"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|力学試験機|力学試験機-yg-008|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "K9VDRZo46oZMdPmY6s5r",
+          "equipment_id": "YAMAGATA-U-YG-008",
+          "name": "力学試験機(YG-008)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "力学試験機"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|小角光散乱装置|高分子相構造解析システム|小角光散乱装置-高分子相構造解析システム-yg-011-1|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "m23l5I1cvJgRVfvBoa0i",
+          "equipment_id": "YAMAGATA-U-YG-011-1",
+          "name": "小角光散乱装置|高分子相構造解析システム(YG-011-1)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "小角光散乱装置|高分子相構造解析システム"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|形状解析レーザ顕微鏡|形状解析レーザ顕微鏡-yg-003|sem_tem|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "hTOFucqdg6na7Tqcjpv0",
+          "equipment_id": "YAMAGATA-U-YG-003",
+          "name": "形状解析レーザ顕微鏡(YG-003)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "形状解析レーザ顕微鏡"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|示差走査熱量計DSC|示差走査熱量計-dsc-yg-004|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zhMfgcfND2IYgLxC3zlS",
+          "equipment_id": "YAMAGATA-U-YG-004",
+          "name": "示差走査熱量計DSC(YG-004)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "示差走査熱量計DSC"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|複屈折計測装置|フィルム物性測定システム|複屈折計測装置-フィルム物性測定システム-yg-010-1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "igWmqGuQmN0nAr7cubUs",
+          "equipment_id": "YAMAGATA-U-YG-010-1",
+          "name": "複屈折計測装置|フィルム物性測定システム(YG-010-1)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "複屈折計測装置|フィルム物性測定システム"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|az100-ユニバーサルズーム顕微鏡-株式会社ニコンインステック-multizoom|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "n8KsCALgOq9rNk6K1yah",
+          "equipment_id": "KUMAMOTO-list3f-08",
+          "name": "ユニバーサルズーム顕微鏡 株式会社ニコンインステック MULTIZOOM AZ100",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|プラズマクリーナー-yhs-r|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VIp6ga7dIUZFFAyc0qlz",
+          "equipment_id": "KUMAMOTO-list3f-06",
+          "name": "プラズマクリーナー YHS-R",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|精密切断機-ビューラー-アイソメット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "iN4iv68nHnLH63Rbw2tD",
+          "equipment_id": "KUMAMOTO-list3f-05",
+          "name": "精密切断機 ビューラー アイソメット",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|金スパッタリング-カーボン蒸着装置-株式会社日立ハイテクノロジーズ-e-1010|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SvQRc4JuKTgLcTu1rsJh",
+          "equipment_id": "KUMAMOTO-list3f-07",
+          "name": "金スパッタリング・カーボン蒸着装置 株式会社日立ハイテクノロジーズ E-1010",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|電子線マイクロアナライザ-株式会社島津製作所-epma-1720h|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gr3Vcqj6vgJw9QXBkJHH",
+          "equipment_id": "KUMAMOTO-list3f-01",
+          "name": "電子線マイクロアナライザ 株式会社島津製作所 EPMA-1720H",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|az100-ユニバーサルズーム顕微鏡-株式会社ニコンインステック-multizoom|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-08",
+          "equipment_id": "KUMAMOTO-list3f-08",
+          "name": "ユニバーサルズーム顕微鏡 株式会社ニコンインステック MULTIZOOM AZ100",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|lc250-自動研磨装置-ビューラー-メタザーブ-ベクトル|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-04",
+          "equipment_id": "KUMAMOTO-list3f-04",
+          "name": "自動研磨装置 ビューラー メタザーブ250 + ベクトルLC250",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|m205c-実体顕微鏡-ライカマイクロシステムズ|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-03",
+          "equipment_id": "KUMAMOTO-list3f-03",
+          "name": "実体顕微鏡 ライカマイクロシステムズ M205C",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|プラズマクリーナー-yhs-r|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-06",
+          "equipment_id": "KUMAMOTO-list3f-06",
+          "name": "プラズマクリーナー YHS-R",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|断面イオンミリング-株式会社日立ハイテクノロジーズ-e-3500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-02",
+          "equipment_id": "KUMAMOTO-list3f-02",
+          "name": "断面イオンミリング 株式会社日立ハイテクノロジーズ E-3500",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|精密切断機-ビューラー-アイソメット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-05",
+          "equipment_id": "KUMAMOTO-list3f-05",
+          "name": "精密切断機 ビューラー アイソメット",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|金スパッタリング-カーボン蒸着装置-株式会社日立ハイテクノロジーズ-e-1010|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-07",
+          "equipment_id": "KUMAMOTO-list3f-07",
+          "name": "金スパッタリング・カーボン蒸着装置 株式会社日立ハイテクノロジーズ E-1010",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|電子線マイクロアナライザ-株式会社島津製作所-epma-1720h|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-01",
+          "equipment_id": "KUMAMOTO-list3f-01",
+          "name": "電子線マイクロアナライザ 株式会社島津製作所 EPMA-1720H",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "FIB・FE-SEM室|FIB・FE-SEM室|nb5000-集束イオンビーム-focused-ion-beam-株式会社日立ハイテクノロジーズ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "aCaM3wSDHa4NyWNZDzDW",
+          "equipment_id": "KUMAMOTO-list3f-09",
+          "name": "集束イオンビーム (Focused Ion Beam) 株式会社日立ハイテクノロジーズ NB5000",
+          "category_general": "FIB・FE-SEM室",
+          "category_detail": "FIB・FE-SEM室"
+        }
+      ]
+    },
+    {
+      "family_id": "FIB・FE-SEM室|FIB・FE-SEM室|電界放出型走査電子顕微鏡-日本電子株式会社-jsm-7600f|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "U1BUr0RTkKrPe7NAznny",
+          "equipment_id": "KUMAMOTO-list3f-10",
+          "name": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600F",
+          "category_general": "FIB・FE-SEM室",
+          "category_detail": "FIB・FE-SEM室"
+        }
+      ]
+    },
+    {
+      "family_id": "FIB・FE-SEM室|未分類|nb5000-集束イオンビーム-focused-ion-beam-株式会社日立ハイテクノロジーズ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-09",
+          "equipment_id": "KUMAMOTO-list3f-09",
+          "name": "集束イオンビーム (Focused Ion Beam) 株式会社日立ハイテクノロジーズ NB5000",
+          "category_general": "FIB・FE-SEM室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "FIB・FE-SEM室|未分類|電界放出型走査電子顕微鏡-日本電子株式会社-jsm-7600f|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-10",
+          "equipment_id": "KUMAMOTO-list3f-10",
+          "name": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600F",
+          "category_general": "FIB・FE-SEM室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "RI実験室の設置機器|RI実験室の設置機器|液体シンチレーションカウンター---型式-lsc-6100|other|liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "4z2BL1tvjflMsfMD7lpz",
+          "equipment_id": "4z2BL1tvjflMsfMD7lpz",
+          "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：LSC-6100",
+          "category_general": "RI実験室の設置機器",
+          "category_detail": "RI実験室の設置機器"
+        }
+      ]
+    },
+    {
+      "family_id": "RI実験室の設置機器|未分類|マイクロプレートシンチレーション-ルミネッセンスカウンター---型式-topcount-nxt|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zi1yT7fU9lLrsbZCUane",
+          "equipment_id": "zi1yT7fU9lLrsbZCUane",
+          "name": "ﾏｲｸﾛﾌﾟﾚｰﾄｼﾝﾁﾚｰｼｮﾝ・ﾙﾐﾈｯｾﾝｽｶｳﾝﾀｰ－型式：TopCount NXT",
+          "category_general": "RI実験室の設置機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "RI実験室の設置機器|未分類|液体シンチレーションカウンター---型式-accuflex-lsc-8000|other|liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VLi11PHAPvUUYmMw4Tp3",
+          "equipment_id": "VLi11PHAPvUUYmMw4Tp3",
+          "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：AccuFLEX LSC-8000",
+          "category_general": "RI実験室の設置機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "RI実験室の設置機器|未分類|液体シンチレーションカウンター---型式-lsc-6100|other|liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2BJbNIWamHA1K1YpVej6",
+          "equipment_id": "2BJbNIWamHA1K1YpVej6",
+          "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：LSC-6100",
+          "category_general": "RI実験室の設置機器",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "SEM室|SEM室|イオンスパッタリング装置-日本電子株式会社-jfc-1100e|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lTqd5v0S9o9IQG3l6SZL",
+          "equipment_id": "KUMAMOTO-list4f-08",
+          "name": "イオンスパッタリング装置 日本電子株式会社 JFC-1100E",
+          "category_general": "SEM室",
+          "category_detail": "SEM室"
+        }
+      ]
+    },
+    {
+      "family_id": "SEM室|未分類|イオンスパッタリング装置-日本電子株式会社-jfc-1100e|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list4f-08",
+          "equipment_id": "KUMAMOTO-list4f-08",
+          "name": "イオンスパッタリング装置 日本電子株式会社 JFC-1100E",
+          "category_general": "SEM室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "SEM室|未分類|凍結乾燥装置-日本電子株式会社-jfd-300|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list4f-07",
+          "equipment_id": "KUMAMOTO-list4f-07",
+          "name": "凍結乾燥装置 日本電子株式会社 JFD-300",
+          "category_general": "SEM室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "SEM室|未分類|走査型電子顕微鏡-日本電子株式会社-jsm-6390lv|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list4f-06",
+          "equipment_id": "KUMAMOTO-list4f-06",
+          "name": "走査型電子顕微鏡 日本電子株式会社 JSM-6390LV",
+          "category_general": "SEM室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "TEM室|TEM室|f20-透過型電子顕微鏡-fei-tecnai|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ozOCOvoE6Sw2VpxWrhDG",
+          "equipment_id": "KUMAMOTO-list1f-01",
+          "name": "透過型電子顕微鏡 FEI TECNAI F20",
+          "category_general": "TEM室",
+          "category_detail": "TEM室"
+        }
+      ]
+    },
+    {
+      "family_id": "TEM室|未分類|f20-透過型電子顕微鏡-fei-tecnai|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list1f-01",
+          "equipment_id": "KUMAMOTO-list1f-01",
+          "name": "透過型電子顕微鏡 FEI TECNAI F20",
+          "category_general": "TEM室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|ULSIプロセス実験室およびULSIプロセス評価室|イオン分光装置|spectroscopy|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TwyXvE2fhknPM72TZ4hG",
+          "equipment_id": "KUMAMOTO-list5f-04",
+          "name": "イオン分光装置",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": "ULSIプロセス実験室およびULSIプロセス評価室"
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|ULSIプロセス実験室およびULSIプロセス評価室|二次イオン質量分析器-sims|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VD1b5MAID8FkRvfmtwTh",
+          "equipment_id": "KUMAMOTO-list5f-02",
+          "name": "二次イオン質量分析器 SIMS",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": "ULSIプロセス実験室およびULSIプロセス評価室"
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|ULSIプロセス実験室およびULSIプロセス評価室|超高真空エッチング装置|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sbxUhEraF8q7E6MfPgPM",
+          "equipment_id": "KUMAMOTO-list5f-06",
+          "name": "超高真空エッチング装置",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": "ULSIプロセス実験室およびULSIプロセス評価室"
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|ULSIプロセス実験室およびULSIプロセス評価室|電子損失分光装置-hreels|spectroscopy|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Wwa21o32jMwx0VVa35Fi",
+          "equipment_id": "KUMAMOTO-list5f-03",
+          "name": "電子損失分光装置 HREELS",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": "ULSIプロセス実験室およびULSIプロセス評価室"
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|未分類|ulsi-バーチャルファクトリー|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list5f-01",
+          "equipment_id": "KUMAMOTO-list5f-01",
+          "name": "ULSIバーチャルファクトリー",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|未分類|イオン分光装置|spectroscopy|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list5f-04",
+          "equipment_id": "KUMAMOTO-list5f-04",
+          "name": "イオン分光装置",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|未分類|レーザー共焦点顕微鏡|sem_tem|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list5f-05",
+          "equipment_id": "KUMAMOTO-list5f-05",
+          "name": "レーザー共焦点顕微鏡",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|未分類|二次イオン質量分析器-sims|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list5f-02",
+          "equipment_id": "KUMAMOTO-list5f-02",
+          "name": "二次イオン質量分析器 SIMS",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|未分類|超高真空エッチング装置|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list5f-06",
+          "equipment_id": "KUMAMOTO-list5f-06",
+          "name": "超高真空エッチング装置",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "ULSIプロセス実験室およびULSIプロセス評価室|未分類|電子損失分光装置-hreels|spectroscopy|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list5f-03",
+          "equipment_id": "KUMAMOTO-list5f-03",
+          "name": "電子損失分光装置 HREELS",
+          "category_general": "ULSIプロセス実験室およびULSIプロセス評価室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線回折装置（XRD）|X線回折装置(XRD)|単結晶-線回折装置|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "hzzHikfI02IrG6BW6DWM",
+          "equipment_id": "hzzHikfI02IrG6BW6DWM",
+          "name": "単結晶X線回折装置",
+          "category_general": "X線回折装置（XRD）",
+          "category_detail": "X線回折装置(XRD)"
+        }
+      ]
+    },
+    {
+      "family_id": "X線回折装置（XRD）|未分類|単結晶-線回折装置|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HmdbYdUSxx9uCuxhtnxF",
+          "equipment_id": "HmdbYdUSxx9uCuxhtnxF",
+          "name": "単結晶X線回折装置",
+          "category_general": "X線回折装置（XRD）",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線回折装置（XRD）|未分類|粉末-線回折装置|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "kjwS6xcg54MtXReDMd6c",
+          "equipment_id": "kjwS6xcg54MtXReDMd6c",
+          "name": "粉末X線回折装置",
+          "category_general": "X線回折装置（XRD）",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線装置|未分類|単結晶-線構造解析装置|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TOKUSHIMA-64",
+          "equipment_id": "TOKUSHIMA-64",
+          "name": "単結晶X線構造解析装置",
+          "category_general": "X線装置",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線装置|未分類|線光電子分光装置-xps|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TOKUSHIMA-59",
+          "equipment_id": "TOKUSHIMA-59",
+          "name": "X線光電子分光装置（XPS）",
+          "category_general": "X線装置",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線装置|未分類|高出力試料水平型多目的-線回折装置-xrd|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TOKUSHIMA-77",
+          "equipment_id": "TOKUSHIMA-77",
+          "name": "高出力試料水平型多目的X線回折装置（XRD）",
+          "category_general": "X線装置",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線関連装置|X線関連装置|光電子分光分析装置-esca|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "xmnLsSGoI9yiSoyLhcT2",
+          "equipment_id": "MIE-equipment9",
+          "name": "光電子分光分析装置（ESCA）",
+          "category_general": "X線関連装置",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "X線関連装置|X線関連装置|単結晶-線構造解析装置-sc-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ZNKZuDs8cfqxuHXPquDA",
+          "equipment_id": "MIE-equipment5",
+          "name": "単結晶X線構造解析装置（SC-XRD）",
+          "category_general": "X線関連装置",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "X線関連装置|X線関連装置|線界面構造解析装置-xrr|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OHFl57aZLStRCEjLuxEE",
+          "equipment_id": "MIE-equipment4",
+          "name": "X線界面構造解析装置（XRR）",
+          "category_general": "X線関連装置",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "X線関連装置|X線関連装置|蛍光-線分析装置-xrf|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "arjgiO0PmkdOymefhPI3",
+          "equipment_id": "MIE-equipment7",
+          "name": "蛍光X線分析装置（XRF）",
+          "category_general": "X線関連装置",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "X線関連装置|未分類|光電子分光分析装置-esca|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "MIE-equipment9",
+          "equipment_id": "MIE-equipment9",
+          "name": "光電子分光分析装置（ESCA）",
+          "category_general": "X線関連装置",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線関連装置|未分類|単結晶-線構造解析装置-sc-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "MIE-equipment5",
+          "equipment_id": "MIE-equipment5",
+          "name": "単結晶X線構造解析装置（SC-XRD）",
+          "category_general": "X線関連装置",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "X線関連装置|未分類|線界面構造解析装置-xrr|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "MIE-equipment4",
+          "equipment_id": "MIE-equipment4",
+          "name": "X線界面構造解析装置（XRR）",
+          "category_general": "X線関連装置",
+          "category_detail": ""
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9825
+}

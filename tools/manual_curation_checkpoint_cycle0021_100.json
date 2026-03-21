@@ -1,0 +1,461 @@
+{
+  "updated_at": "2026-03-12T11:17:40.618231+00:00",
+  "defaults_added": 0,
+  "processed_rows_this_run": 10,
+  "applied_rows_this_run": 0,
+  "needs_manual_fix_this_run": 10,
+  "done": 90,
+  "remaining": 10,
+  "batch_size": 10,
+  "process_all": false,
+  "reviewer_default": "codex-manual",
+  "enforce_beginner_min_chars": 2000,
+  "enforce_beginner_max_chars": 3000,
+  "char_count_mode": "non_whitespace",
+  "forbid_internal_id": true,
+  "forbid_placeholder_doi": true,
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0021_100.jsonl",
+  "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json",
+  "guard_verify": {
+    "status": "PASS",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json",
+    "batch_id": "BATCH-20260312-CYCLE0021-100",
+    "reviewer_expected": "codex-manual",
+    "issues": [],
+    "details": {
+      "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+      "queue_sha256_current": "4994fc2a9ea0e5f163e83caf1600143b4f8861d4a9874189c88aa9f828b7067a",
+      "snapshot_sha256_current": "cc4832dc2b6a85b659690db7d0eba5107f17fcff8e04a46927d584dfbdcc8176",
+      "queue_rows_current": 10,
+      "queue_rows_target": 100
+    },
+    "verified_at": "2026-03-12T11:15:52.905644+00:00"
+  },
+  "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+  "post_audit_step2_same_ratio_threshold": 0.05,
+  "post_audit_pitfall2_same_ratio_threshold": 0.05,
+  "post_audit_min_reviewed_at_unique": 90,
+  "post_audit_similarity_threshold": 0.92,
+  "post_audit_status": "FAIL",
+  "post_audit": {
+    "status": "FAIL",
+    "generated_at": "2026-03-12T11:17:40.366597+00:00",
+    "batch_id": "BATCH-20260312-CYCLE0021-100",
+    "reviewer_expected": "codex-manual",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0021_100.jsonl",
+    "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0021_100.json",
+    "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json",
+    "inspected_count": 100,
+    "target_count": 100,
+    "metrics": {
+      "summary_dup_rate": 0.0,
+      "principle_dup_rate": 0.0,
+      "step1_dup_rate": 0.01,
+      "pitfall1_dup_rate": 0.01,
+      "step2_same_ratio": 0.02,
+      "pitfall2_same_ratio": 0.02,
+      "reviewed_at_unique_count": 100,
+      "forbidden_pattern_hits": 0,
+      "internal_id_reference_hits": 0,
+      "placeholder_doi_hits": 0,
+      "body_contains_doi_hits": 0,
+      "auto_template_marker_hits": 0,
+      "beginner_char_min": 2005,
+      "beginner_char_max": 2970,
+      "beginner_char_avg": 2277.21,
+      "guide_full_dup_rate": 0.0,
+      "guide_high_similarity_pairs": 34,
+      "step2_same_ratio_threshold": 0.05,
+      "pitfall2_same_ratio_threshold": 0.05,
+      "min_reviewed_at_unique": 90
+    },
+    "threshold_failures": [
+      "step1_dup_rate_not_zero",
+      "pitfall1_dup_rate_not_zero",
+      "guide_high_similarity_detected"
+    ],
+    "offending_doc_ids": [
+      "DKTCVtbGtAEiLyqy6yNY",
+      "FgaJTbAFifzkSZc8MuMR",
+      "G0g0tIvVUa0qn1V9GDq9",
+      "eqnet-1382",
+      "eqnet-1387",
+      "eqnet-1758",
+      "eqnet-1921",
+      "eqnet-2054",
+      "eqnet-2272",
+      "eqnet-3069",
+      "eqnet-3741",
+      "eqnet-3789",
+      "eqnet-3799",
+      "eqnet-4015",
+      "eqnet-4116",
+      "eqnet-4813",
+      "eqnet-5140",
+      "eqnet-5195",
+      "eqnet-5248",
+      "eqnet-723",
+      "eqnet-946",
+      "nlPWvxUwTu60t1gYQcvV"
+    ],
+    "issue_counts": {
+      "insufficient_paper_explanations_for_multi_papers": 22,
+      "step1_dup_rate_not_zero": 1,
+      "pitfall1_dup_rate_not_zero": 1,
+      "guide_high_similarity_detected": 1
+    },
+    "issues": [
+      {
+        "row_key": "G0g0tIvVUa0qn1V9GDq9::NAIST-NR-507",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 3,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-3789::eqnet-3789",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-3741::eqnet-3741",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-4015::eqnet-4015",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-2054::eqnet-2054",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-4813::eqnet-4813",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 3,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-2272::eqnet-2272",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-1382::eqnet-1382",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-3799::eqnet-3799",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-4116::eqnet-4116",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-1387::eqnet-1387",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "nlPWvxUwTu60t1gYQcvV::NAGASAKI-168",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 3,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-723::eqnet-723",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-1921::eqnet-1921",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-5140::eqnet-5140",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-1758::eqnet-1758",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "DKTCVtbGtAEiLyqy6yNY::TOKUSHIMA-11",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 3,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-5248::eqnet-5248",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-5195::eqnet-5195",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-946::eqnet-946",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "FgaJTbAFifzkSZc8MuMR::FgaJTbAFifzkSZc8MuMR",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 3,
+        "paper_explanations_count": 1
+      },
+      {
+        "row_key": "eqnet-3069::eqnet-3069",
+        "code": "insufficient_paper_explanations_for_multi_papers",
+        "papers_count": 2,
+        "paper_explanations_count": 1
+      }
+    ],
+    "near_duplicate_pairs": [
+      {
+        "i": 0,
+        "j": 50,
+        "ratio": 0.9249382716049382
+      },
+      {
+        "i": 1,
+        "j": 19,
+        "ratio": 0.9500324464633355
+      },
+      {
+        "i": 1,
+        "j": 73,
+        "ratio": 0.9340753424657534
+      },
+      {
+        "i": 3,
+        "j": 75,
+        "ratio": 0.9223744292237442
+      },
+      {
+        "i": 4,
+        "j": 22,
+        "ratio": 0.9329956251439098
+      },
+      {
+        "i": 11,
+        "j": 29,
+        "ratio": 0.9679629256498086
+      },
+      {
+        "i": 11,
+        "j": 47,
+        "ratio": 0.9426881501121762
+      },
+      {
+        "i": 16,
+        "j": 18,
+        "ratio": 0.9363212780119814
+      },
+      {
+        "i": 16,
+        "j": 88,
+        "ratio": 0.9231762427372499
+      },
+      {
+        "i": 17,
+        "j": 35,
+        "ratio": 0.9532150265038027
+      },
+      {
+        "i": 17,
+        "j": 89,
+        "ratio": 0.936878612716763
+      },
+      {
+        "i": 18,
+        "j": 70,
+        "ratio": 0.954535274356103
+      },
+      {
+        "i": 18,
+        "j": 88,
+        "ratio": 0.9432943294329433
+      },
+      {
+        "i": 19,
+        "j": 73,
+        "ratio": 0.9379191001514168
+      },
+      {
+        "i": 24,
+        "j": 78,
+        "ratio": 0.9817945383615084
+      },
+      {
+        "i": 24,
+        "j": 96,
+        "ratio": 0.9877889228085478
+      },
+      {
+        "i": 29,
+        "j": 47,
+        "ratio": 0.9755412991178829
+      },
+      {
+        "i": 30,
+        "j": 48,
+        "ratio": 0.9971145919208574
+      },
+      {
+        "i": 37,
+        "j": 55,
+        "ratio": 0.9238174968606111
+      },
+      {
+        "i": 38,
+        "j": 56,
+        "ratio": 0.9951601751555658
+      },
+      {
+        "i": 38,
+        "j": 74,
+        "ratio": 0.991985344630181
+      },
+      {
+        "i": 38,
+        "j": 92,
+        "ratio": 0.9839963420210334
+      },
+      {
+        "i": 39,
+        "j": 57,
+        "ratio": 0.9392712550607287
+      },
+      {
+        "i": 44,
+        "j": 62,
+        "ratio": 0.9807073954983923
+      },
+      {
+        "i": 45,
+        "j": 63,
+        "ratio": 0.9422203879488238
+      },
+      {
+        "i": 56,
+        "j": 74,
+        "ratio": 0.9903669724770642
+      },
+      {
+        "i": 56,
+        "j": 92,
+        "ratio": 0.9855736203343256
+      },
+      {
+        "i": 65,
+        "j": 83,
+        "ratio": 0.943950177935943
+      },
+      {
+        "i": 70,
+        "j": 88,
+        "ratio": 0.9559174809989143
+      },
+      {
+        "i": 74,
+        "j": 92,
+        "ratio": 0.9920364050056882
+      },
+      {
+        "i": 77,
+        "j": 95,
+        "ratio": 0.9724815724815725
+      },
+      {
+        "i": 78,
+        "j": 96,
+        "ratio": 0.9938944614042738
+      },
+      {
+        "i": 79,
+        "j": 97,
+        "ratio": 0.9984659215428446
+      },
+      {
+        "i": 80,
+        "j": 98,
+        "ratio": 0.9569260890846794
+      }
+    ],
+    "checkpoint_snapshot": {
+      "updated_at": "2026-03-12T11:15:59.987423+00:00",
+      "defaults_added": 0,
+      "processed_rows_this_run": 10,
+      "applied_rows_this_run": 10,
+      "needs_manual_fix_this_run": 0,
+      "done": 100,
+      "remaining": 0,
+      "batch_size": 10,
+      "process_all": false,
+      "reviewer_default": "codex-manual",
+      "enforce_beginner_min_chars": 2000,
+      "enforce_beginner_max_chars": 3000,
+      "char_count_mode": "non_whitespace",
+      "forbid_internal_id": true,
+      "forbid_placeholder_doi": true,
+      "timing_log_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+      "enforce_min_elapsed_sec": 0,
+      "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+      "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0021_100.jsonl",
+      "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json",
+      "guard_verify": {
+        "status": "PASS",
+        "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json",
+        "batch_id": "BATCH-20260312-CYCLE0021-100",
+        "reviewer_expected": "codex-manual",
+        "issues": [],
+        "details": {
+          "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+          "queue_sha256_current": "4994fc2a9ea0e5f163e83caf1600143b4f8861d4a9874189c88aa9f828b7067a",
+          "snapshot_sha256_current": "cc4832dc2b6a85b659690db7d0eba5107f17fcff8e04a46927d584dfbdcc8176",
+          "queue_rows_current": 10,
+          "queue_rows_target": 100
+        },
+        "verified_at": "2026-03-12T11:15:52.905644+00:00"
+      },
+      "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+      "post_audit_step2_same_ratio_threshold": 0.05,
+      "post_audit_pitfall2_same_ratio_threshold": 0.05,
+      "post_audit_min_reviewed_at_unique": 90,
+      "post_audit_similarity_threshold": 0.92,
+      "post_audit_status": "PENDING_FINAL_BATCH"
+    }
+  },
+  "post_audit_log": "{\n  \"status\": \"FAIL\",\n  \"generated_at\": \"2026-03-12T11:17:40.366597+00:00\",\n  \"batch_id\": \"BATCH-20260312-CYCLE0021-100\",\n  \"reviewer_expected\": \"codex-manual\",\n  \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n  \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0021_100.jsonl\",\n  \"checkpoint_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0021_100.json\",\n  \"session_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json\",\n  \"inspected_count\": 100,\n  \"target_count\": 100,\n  \"metrics\": {\n    \"summary_dup_rate\": 0.0,\n    \"principle_dup_rate\": 0.0,\n    \"step1_dup_rate\": 0.01,\n    \"pitfall1_dup_rate\": 0.01,\n    \"step2_same_ratio\": 0.02,\n    \"pitfall2_same_ratio\": 0.02,\n    \"reviewed_at_unique_count\": 100,\n    \"forbidden_pattern_hits\": 0,\n    \"internal_id_reference_hits\": 0,\n    \"placeholder_doi_hits\": 0,\n    \"body_contains_doi_hits\": 0,\n    \"auto_template_marker_hits\": 0,\n    \"beginner_char_min\": 2005,\n    \"beginner_char_max\": 2970,\n    \"beginner_char_avg\": 2277.21,\n    \"guide_full_dup_rate\": 0.0,\n    \"guide_high_similarity_pairs\": 34,\n    \"step2_same_ratio_threshold\": 0.05,\n    \"pitfall2_same_ratio_threshold\": 0.05,\n    \"min_reviewed_at_unique\": 90\n  },\n  \"threshold_failures\": [\n    \"step1_dup_rate_not_zero\",\n    \"pitfall1_dup_rate_not_zero\",\n    \"guide_high_similarity_detected\"\n  ],\n  \"offending_doc_ids\": [\n    \"DKTCVtbGtAEiLyqy6yNY\",\n    \"FgaJTbAFifzkSZc8MuMR\",\n    \"G0g0tIvVUa0qn1V9GDq9\",\n    \"eqnet-1382\",\n    \"eqnet-1387\",\n    \"eqnet-1758\",\n    \"eqnet-1921\",\n    \"eqnet-2054\",\n    \"eqnet-2272\",\n    \"eqnet-3069\",\n    \"eqnet-3741\",\n    \"eqnet-3789\",\n    \"eqnet-3799\",\n    \"eqnet-4015\",\n    \"eqnet-4116\",\n    \"eqnet-4813\",\n    \"eqnet-5140\",\n    \"eqnet-5195\",\n    \"eqnet-5248\",\n    \"eqnet-723\",\n    \"eqnet-946\",\n    \"nlPWvxUwTu60t1gYQcvV\"\n  ],\n  \"issue_counts\": {\n    \"insufficient_paper_explanations_for_multi_papers\": 22,\n    \"step1_dup_rate_not_zero\": 1,\n    \"pitfall1_dup_rate_not_zero\": 1,\n    \"guide_high_similarity_detected\": 1\n  },\n  \"issues\": [\n    {\n      \"row_key\": \"G0g0tIvVUa0qn1V9GDq9::NAIST-NR-507\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 3,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-3789::eqnet-3789\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-3741::eqnet-3741\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-4015::eqnet-4015\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-2054::eqnet-2054\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-4813::eqnet-4813\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 3,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-2272::eqnet-2272\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-1382::eqnet-1382\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-3799::eqnet-3799\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-4116::eqnet-4116\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-1387::eqnet-1387\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"nlPWvxUwTu60t1gYQcvV::NAGASAKI-168\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 3,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-723::eqnet-723\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-1921::eqnet-1921\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-5140::eqnet-5140\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-1758::eqnet-1758\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"DKTCVtbGtAEiLyqy6yNY::TOKUSHIMA-11\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 3,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-5248::eqnet-5248\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-5195::eqnet-5195\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-946::eqnet-946\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"FgaJTbAFifzkSZc8MuMR::FgaJTbAFifzkSZc8MuMR\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 3,\n      \"paper_explanations_count\": 1\n    },\n    {\n      \"row_key\": \"eqnet-3069::eqnet-3069\",\n      \"code\": \"insufficient_paper_explanations_for_multi_papers\",\n      \"papers_count\": 2,\n      \"paper_explanations_count\": 1\n    }\n  ],\n  \"near_duplicate_pairs\": [\n    {\n      \"i\": 0,\n      \"j\": 50,\n      \"ratio\": 0.9249382716049382\n    },\n    {\n      \"i\": 1,\n      \"j\": 19,\n      \"ratio\": 0.9500324464633355\n    },\n    {\n      \"i\": 1,\n      \"j\": 73,\n      \"ratio\": 0.9340753424657534\n    },\n    {\n      \"i\": 3,\n      \"j\": 75,\n      \"ratio\": 0.9223744292237442\n    },\n    {\n      \"i\": 4,\n      \"j\": 22,\n      \"ratio\": 0.9329956251439098\n    },\n    {\n      \"i\": 11,\n      \"j\": 29,\n      \"ratio\": 0.9679629256498086\n    },\n    {\n      \"i\": 11,\n      \"j\": 47,\n      \"ratio\": 0.9426881501121762\n    },\n    {\n      \"i\": 16,\n      \"j\": 18,\n      \"ratio\": 0.9363212780119814\n    },\n    {\n      \"i\": 16,\n      \"j\": 88,\n      \"ratio\": 0.9231762427372499\n    },\n    {\n      \"i\": 17,\n      \"j\": 35,\n      \"ratio\": 0.9532150265038027\n    },\n    {\n      \"i\": 17,\n      \"j\": 89,\n      \"ratio\": 0.936878612716763\n    },\n    {\n      \"i\": 18,\n      \"j\": 70,\n      \"ratio\": 0.954535274356103\n    },\n    {\n      \"i\": 18,\n      \"j\": 88,\n      \"ratio\": 0.9432943294329433\n    },\n    {\n      \"i\": 19,\n      \"j\": 73,\n      \"ratio\": 0.9379191001514168\n    },\n    {\n      \"i\": 24,\n      \"j\": 78,\n      \"ratio\": 0.9817945383615084\n    },\n    {\n      \"i\": 24,\n      \"j\": 96,\n      \"ratio\": 0.9877889228085478\n    },\n    {\n      \"i\": 29,\n      \"j\": 47,\n      \"ratio\": 0.9755412991178829\n    },\n    {\n      \"i\": 30,\n      \"j\": 48,\n      \"ratio\": 0.9971145919208574\n    },\n    {\n      \"i\": 37,\n      \"j\": 55,\n      \"ratio\": 0.9238174968606111\n    },\n    {\n      \"i\": 38,\n      \"j\": 56,\n      \"ratio\": 0.9951601751555658\n    },\n    {\n      \"i\": 38,\n      \"j\": 74,\n      \"ratio\": 0.991985344630181\n    },\n    {\n      \"i\": 38,\n      \"j\": 92,\n      \"ratio\": 0.9839963420210334\n    },\n    {\n      \"i\": 39,\n      \"j\": 57,\n      \"ratio\": 0.9392712550607287\n    },\n    {\n      \"i\": 44,\n      \"j\": 62,\n      \"ratio\": 0.9807073954983923\n    },\n    {\n      \"i\": 45,\n      \"j\": 63,\n      \"ratio\": 0.9422203879488238\n    },\n    {\n      \"i\": 56,\n      \"j\": 74,\n      \"ratio\": 0.9903669724770642\n    },\n    {\n      \"i\": 56,\n      \"j\": 92,\n      \"ratio\": 0.9855736203343256\n    },\n    {\n      \"i\": 65,\n      \"j\": 83,\n      \"ratio\": 0.943950177935943\n    },\n    {\n      \"i\": 70,\n      \"j\": 88,\n      \"ratio\": 0.9559174809989143\n    },\n    {\n      \"i\": 74,\n      \"j\": 92,\n      \"ratio\": 0.9920364050056882\n    },\n    {\n      \"i\": 77,\n      \"j\": 95,\n      \"ratio\": 0.9724815724815725\n    },\n    {\n      \"i\": 78,\n      \"j\": 96,\n      \"ratio\": 0.9938944614042738\n    },\n    {\n      \"i\": 79,\n      \"j\": 97,\n      \"ratio\": 0.9984659215428446\n    },\n    {\n      \"i\": 80,\n      \"j\": 98,\n      \"ratio\": 0.9569260890846794\n    }\n  ],\n  \"checkpoint_snapshot\": {\n    \"updated_at\": \"2026-03-12T11:15:59.987423+00:00\",\n    \"defaults_added\": 0,\n    \"processed_rows_this_run\": 10,\n    \"applied_rows_this_run\": 10,\n    \"needs_manual_fix_this_run\": 0,\n    \"done\": 100,\n    \"remaining\": 0,\n    \"batch_size\": 10,\n    \"process_all\": false,\n    \"reviewer_default\": \"codex-manual\",\n    \"enforce_beginner_min_chars\": 2000,\n    \"enforce_beginner_max_chars\": 3000,\n    \"char_count_mode\": \"non_whitespace\",\n    \"forbid_internal_id\": true,\n    \"forbid_placeholder_doi\": true,\n    \"timing_log_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl\",\n    \"enforce_min_elapsed_sec\": 0,\n    \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n    \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0021_100.jsonl\",\n    \"attestation_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json\",\n    \"guard_verify\": {\n      \"status\": \"PASS\",\n      \"session\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0021-100.json\",\n      \"batch_id\": \"BATCH-20260312-CYCLE0021-100\",\n      \"reviewer_expected\": \"codex-manual\",\n      \"issues\": [],\n      \"details\": {\n        \"agents_sha256_current\": \"f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df\",\n        \"queue_sha256_current\": \"4994fc2a9ea0e5f163e83caf1600143b4f8861d4a9874189c88aa9f828b7067a\",\n        \"snapshot_sha256_current\": \"cc4832dc2b6a85b659690db7d0eba5107f17fcff8e04a46927d584dfbdcc8176\",\n        \"queue_rows_current\": 10,\n        \"queue_rows_target\": 100\n      },\n      \"verified_at\": \"2026-03-12T11:15:52.905644+00:00\"\n    },\n    \"post_audit_report_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json\",\n    \"post_audit_step2_same_ratio_threshold\": 0.05,\n    \"post_audit_pitfall2_same_ratio_threshold\": 0.05,\n    \"post_audit_min_reviewed_at_unique\": 90,\n    \"post_audit_similarity_threshold\": 0.92,\n    \"post_audit_status\": \"PENDING_FINAL_BATCH\"\n  }\n}",
+  "reverted_rows_this_run": 10
+}

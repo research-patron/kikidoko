@@ -1,0 +1,95 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0008-PART04-65",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T14:27:33.415391+00:00",
+  "updated_at": "2026-03-07T15:02:42.573143+00:00",
+  "closed_at": "2026-03-07T15:02:42.573143+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0008_part04_65.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0008-PART04-65.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "37f84c4c95ed05a13004cbc25fa53438ff791aef2a2a89ea9e460aef33b95b34",
+    "queue_sha256_at_start": "5a3b0bd9ce420bf1577a7c89d637d80ee0cb852d521bb996256d9b98834f9a85",
+    "queue_row_keys_sha256": "12e3cac4fd184915202fb33377d9844001626158b0cb0eb188df56b94ea86c61"
+  },
+  "queue": {
+    "target_count": 3,
+    "target_row_keys": [
+      "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+      "EZ8ZzyQrYgfSJiXktdTO::AIST-COL019",
+      "YpQFpcDWeVwv3jkPXBsi::AIST-COL018"
+    ],
+    "target_rows": [
+      {
+        "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+        "doc_id": "diMgSNfpWiYbHVK8qj3B",
+        "equipment_id": "diMgSNfpWiYbHVK8qj3B",
+        "name": "酸化炉",
+        "papers_count": 1
+      },
+      {
+        "row_key": "EZ8ZzyQrYgfSJiXktdTO::AIST-COL019",
+        "doc_id": "EZ8ZzyQrYgfSJiXktdTO",
+        "equipment_id": "AIST-COL019",
+        "name": "マスクレス露光装置",
+        "papers_count": 1
+      },
+      {
+        "row_key": "YpQFpcDWeVwv3jkPXBsi::AIST-COL018",
+        "doc_id": "YpQFpcDWeVwv3jkPXBsi",
+        "equipment_id": "AIST-COL018",
+        "name": "レジスト塗布・現像装置",
+        "papers_count": 1
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T14:27:33.415391+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 3
+      }
+    },
+    {
+      "at": "2026-03-07T14:27:33.524334+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T14:27:44.002091+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T15:02:42.573143+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

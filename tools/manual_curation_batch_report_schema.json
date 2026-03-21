@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Manual Curation Batch Report",
+  "type": "object",
+  "required": [
+    "status",
+    "generated_at",
+    "batch_id",
+    "reviewer_expected",
+    "inspected_count",
+    "target_count",
+    "metrics"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "batch_id": {
+      "type": "string"
+    },
+    "reviewer_expected": {
+      "type": "string"
+    },
+    "snapshot_path": {
+      "type": "string"
+    },
+    "queue_path": {
+      "type": "string"
+    },
+    "checkpoint_path": {
+      "type": "string"
+    },
+    "session_path": {
+      "type": "string"
+    },
+    "inspected_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "target_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "metrics": {
+      "type": "object",
+      "required": [
+        "summary_dup_rate",
+        "principle_dup_rate",
+        "step1_dup_rate",
+        "pitfall1_dup_rate",
+        "step2_same_ratio",
+        "pitfall2_same_ratio",
+        "reviewed_at_unique_count",
+        "forbidden_pattern_hits"
+      ],
+      "properties": {
+        "summary_dup_rate": {
+          "type": "number",
+          "minimum": 0
+        },
+        "principle_dup_rate": {
+          "type": "number",
+          "minimum": 0
+        },
+        "step1_dup_rate": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pitfall1_dup_rate": {
+          "type": "number",
+          "minimum": 0
+        },
+        "step2_same_ratio": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pitfall2_same_ratio": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reviewed_at_unique_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "forbidden_pattern_hits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "threshold_failures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "issue_counts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "checkpoint_snapshot": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
+

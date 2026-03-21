@@ -1,0 +1,303 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0008-REPAIR-PAPERS-29",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T14:35:29.601531+00:00",
+  "updated_at": "2026-03-07T15:02:42.688257+00:00",
+  "closed_at": "2026-03-07T15:02:42.688257+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0008_repair_papers_29.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0008-REPAIR-PAPERS-29.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "a3869908a98af346d459f4d119905546ba8cca336ba85a976d050c245d62eb13",
+    "queue_sha256_at_start": "cec134543b4c4a8c1a7cfd487213e93c5beabebf19a35ea0b10babb0649ac01b",
+    "queue_row_keys_sha256": "dcb550da11b3ee40466f6ba0b1655fee93dd4271bb90a5c6a6798300056ba1ad"
+  },
+  "queue": {
+    "target_count": 29,
+    "target_row_keys": [
+      "U1BUr0RTkKrPe7NAznny::KUMAMOTO-list3f-10",
+      "KUMAMOTO-list4f-07::KUMAMOTO-list4f-07",
+      "KUMAMOTO-list4f-06::KUMAMOTO-list4f-06",
+      "TOKUSHIMA-59::TOKUSHIMA-59",
+      "xmnLsSGoI9yiSoyLhcT2::MIE-equipment9",
+      "arjgiO0PmkdOymefhPI3::MIE-equipment7",
+      "MIE-equipment10::MIE-equipment10",
+      "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+      "MnKJOOuDLNYBS9hFiUEq::MnKJOOuDLNYBS9hFiUEq",
+      "xBbUhgNdmfD2OEmiWf0I::AIST-COL007",
+      "6iVY8ZOMhhTn6vJKOYL7::AIST-COL008",
+      "3t9iIUmXonqqSHMhEMYi::OSAKA-590",
+      "cELkFdlPg3MJK5XBwL1Y::cELkFdlPg3MJK5XBwL1Y",
+      "97TYuvni2G36owVbyBbJ::97TYuvni2G36owVbyBbJ",
+      "6fHWKVh135PUjyakV7dH::6fHWKVh135PUjyakV7dH",
+      "5jdQ6eyopZQbVuX4yT5H::5jdQ6eyopZQbVuX4yT5H",
+      "2If47ehM8XMa9D1Pjjjg::2If47ehM8XMa9D1Pjjjg",
+      "bqrVjlXXzdoIILRnjS5e::bqrVjlXXzdoIILRnjS5e",
+      "y1yakDmVVyY4N0sXRH4o::y1yakDmVVyY4N0sXRH4o",
+      "kgMlDfMdPyjB5RPeuSiS::kgMlDfMdPyjB5RPeuSiS",
+      "9Dwp8xc4WHWIFy7D5NWi::9Dwp8xc4WHWIFy7D5NWi",
+      "sB39y0rUJPD869tg6Xrh::sB39y0rUJPD869tg6Xrh",
+      "x9OT6J1fcUiKChF8Ipxr::x9OT6J1fcUiKChF8Ipxr",
+      "TCWmCCONs9PJMj7iDPms::TCWmCCONs9PJMj7iDPms",
+      "K5itvk4ebdgMwqF3xixS::K5itvk4ebdgMwqF3xixS",
+      "oaC68uaMB2GvR0uWx9xS::oaC68uaMB2GvR0uWx9xS",
+      "MUGIOGQ0fn1X3LiDvotO::MUGIOGQ0fn1X3LiDvotO",
+      "7dRKsL6bWy4V3U1vsh3s::7dRKsL6bWy4V3U1vsh3s",
+      "MOEiCTAx2hPKtaApJWAL::MOEiCTAx2hPKtaApJWAL"
+    ],
+    "target_rows": [
+      {
+        "row_key": "U1BUr0RTkKrPe7NAznny::KUMAMOTO-list3f-10",
+        "doc_id": "U1BUr0RTkKrPe7NAznny",
+        "equipment_id": "KUMAMOTO-list3f-10",
+        "name": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600F",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list4f-07::KUMAMOTO-list4f-07",
+        "doc_id": "KUMAMOTO-list4f-07",
+        "equipment_id": "KUMAMOTO-list4f-07",
+        "name": "凍結乾燥装置 日本電子株式会社 JFD-300",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list4f-06::KUMAMOTO-list4f-06",
+        "doc_id": "KUMAMOTO-list4f-06",
+        "equipment_id": "KUMAMOTO-list4f-06",
+        "name": "走査型電子顕微鏡 日本電子株式会社 JSM-6390LV",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-59::TOKUSHIMA-59",
+        "doc_id": "TOKUSHIMA-59",
+        "equipment_id": "TOKUSHIMA-59",
+        "name": "X線光電子分光装置（XPS）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "xmnLsSGoI9yiSoyLhcT2::MIE-equipment9",
+        "doc_id": "xmnLsSGoI9yiSoyLhcT2",
+        "equipment_id": "MIE-equipment9",
+        "name": "光電子分光分析装置（ESCA）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "arjgiO0PmkdOymefhPI3::MIE-equipment7",
+        "doc_id": "arjgiO0PmkdOymefhPI3",
+        "equipment_id": "MIE-equipment7",
+        "name": "蛍光X線分析装置（XRF）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MIE-equipment10::MIE-equipment10",
+        "doc_id": "MIE-equipment10",
+        "equipment_id": "MIE-equipment10",
+        "name": "走査型X線光電子分光分析装置 （多モードトポ解析システム/XPS）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+        "doc_id": "diMgSNfpWiYbHVK8qj3B",
+        "equipment_id": "diMgSNfpWiYbHVK8qj3B",
+        "name": "酸化炉",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MnKJOOuDLNYBS9hFiUEq::MnKJOOuDLNYBS9hFiUEq",
+        "doc_id": "MnKJOOuDLNYBS9hFiUEq",
+        "equipment_id": "MnKJOOuDLNYBS9hFiUEq",
+        "name": "電子線描画装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "xBbUhgNdmfD2OEmiWf0I::AIST-COL007",
+        "doc_id": "xBbUhgNdmfD2OEmiWf0I",
+        "equipment_id": "AIST-COL007",
+        "name": "アッシング装置（MAS装置A室）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6iVY8ZOMhhTn6vJKOYL7::AIST-COL008",
+        "doc_id": "6iVY8ZOMhhTn6vJKOYL7",
+        "equipment_id": "AIST-COL008",
+        "name": "等方性エッチング装置（MAS装置B室）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "3t9iIUmXonqqSHMhEMYi::OSAKA-590",
+        "doc_id": "3t9iIUmXonqqSHMhEMYi",
+        "equipment_id": "OSAKA-590",
+        "name": "走査型プローブ顕微鏡（AFM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "cELkFdlPg3MJK5XBwL1Y::cELkFdlPg3MJK5XBwL1Y",
+        "doc_id": "cELkFdlPg3MJK5XBwL1Y",
+        "equipment_id": "cELkFdlPg3MJK5XBwL1Y",
+        "name": "Automated Peptide Synthesizer",
+        "papers_count": 0
+      },
+      {
+        "row_key": "97TYuvni2G36owVbyBbJ::97TYuvni2G36owVbyBbJ",
+        "doc_id": "97TYuvni2G36owVbyBbJ",
+        "equipment_id": "97TYuvni2G36owVbyBbJ",
+        "name": "Benchwork Automation System",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6fHWKVh135PUjyakV7dH::6fHWKVh135PUjyakV7dH",
+        "doc_id": "6fHWKVh135PUjyakV7dH",
+        "equipment_id": "6fHWKVh135PUjyakV7dH",
+        "name": "Laboratory Automation System",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5jdQ6eyopZQbVuX4yT5H::5jdQ6eyopZQbVuX4yT5H",
+        "doc_id": "5jdQ6eyopZQbVuX4yT5H",
+        "equipment_id": "5jdQ6eyopZQbVuX4yT5H",
+        "name": "DNA/RNA抽出受託サービス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2If47ehM8XMa9D1Pjjjg::2If47ehM8XMa9D1Pjjjg",
+        "doc_id": "2If47ehM8XMa9D1Pjjjg",
+        "equipment_id": "2If47ehM8XMa9D1Pjjjg",
+        "name": "ピッピンパルス (sage science PippinPulse)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "bqrVjlXXzdoIILRnjS5e::bqrVjlXXzdoIILRnjS5e",
+        "doc_id": "bqrVjlXXzdoIILRnjS5e",
+        "equipment_id": "bqrVjlXXzdoIILRnjS5e",
+        "name": "マイクロチップ電気泳動装置 (島津 MultiNA)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "y1yakDmVVyY4N0sXRH4o::y1yakDmVVyY4N0sXRH4o",
+        "doc_id": "y1yakDmVVyY4N0sXRH4o",
+        "equipment_id": "y1yakDmVVyY4N0sXRH4o",
+        "name": "リアルタイムPCR (ABI StepOne Plus)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "kgMlDfMdPyjB5RPeuSiS::kgMlDfMdPyjB5RPeuSiS",
+        "doc_id": "kgMlDfMdPyjB5RPeuSiS",
+        "equipment_id": "kgMlDfMdPyjB5RPeuSiS",
+        "name": "次世代シーケンサーデータ解析システム (データ依頼解析サービス)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "9Dwp8xc4WHWIFy7D5NWi::9Dwp8xc4WHWIFy7D5NWi",
+        "doc_id": "9Dwp8xc4WHWIFy7D5NWi",
+        "equipment_id": "9Dwp8xc4WHWIFy7D5NWi",
+        "name": "次世代シーケンサーライブラリ作製 (ライブラリ依頼作製サービス)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sB39y0rUJPD869tg6Xrh::sB39y0rUJPD869tg6Xrh",
+        "doc_id": "sB39y0rUJPD869tg6Xrh",
+        "equipment_id": "sB39y0rUJPD869tg6Xrh",
+        "name": "次世代シーケンサーNextSeq2000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "x9OT6J1fcUiKChF8Ipxr::x9OT6J1fcUiKChF8Ipxr",
+        "doc_id": "x9OT6J1fcUiKChF8Ipxr",
+        "equipment_id": "x9OT6J1fcUiKChF8Ipxr",
+        "name": "次世代シーケンサーPromethION 24",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TCWmCCONs9PJMj7iDPms::TCWmCCONs9PJMj7iDPms",
+        "doc_id": "TCWmCCONs9PJMj7iDPms",
+        "equipment_id": "TCWmCCONs9PJMj7iDPms",
+        "name": "大腸菌振とう培養器（バイオシェーカー）タイテックBR-43FL-MR",
+        "papers_count": 0
+      },
+      {
+        "row_key": "K5itvk4ebdgMwqF3xixS::K5itvk4ebdgMwqF3xixS",
+        "doc_id": "K5itvk4ebdgMwqF3xixS",
+        "equipment_id": "K5itvk4ebdgMwqF3xixS",
+        "name": "Agilent社2100バイオアナライザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oaC68uaMB2GvR0uWx9xS::oaC68uaMB2GvR0uWx9xS",
+        "doc_id": "oaC68uaMB2GvR0uWx9xS",
+        "equipment_id": "oaC68uaMB2GvR0uWx9xS",
+        "name": "ゲノムDNA抽出機 QuickGene-Auto240L",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MUGIOGQ0fn1X3LiDvotO::MUGIOGQ0fn1X3LiDvotO",
+        "doc_id": "MUGIOGQ0fn1X3LiDvotO",
+        "equipment_id": "MUGIOGQ0fn1X3LiDvotO",
+        "name": "次世代シーケンサーNextSeq500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7dRKsL6bWy4V3U1vsh3s::7dRKsL6bWy4V3U1vsh3s",
+        "doc_id": "7dRKsL6bWy4V3U1vsh3s",
+        "equipment_id": "7dRKsL6bWy4V3U1vsh3s",
+        "name": "2100バイオアナライザーDNA専用",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MOEiCTAx2hPKtaApJWAL::MOEiCTAx2hPKtaApJWAL",
+        "doc_id": "MOEiCTAx2hPKtaApJWAL",
+        "equipment_id": "MOEiCTAx2hPKtaApJWAL",
+        "name": "2100バイオアナライザーRNA専用",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T14:35:29.601531+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 29
+      }
+    },
+    {
+      "at": "2026-03-07T14:35:29.718849+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T14:37:20.749324+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T15:02:42.688257+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

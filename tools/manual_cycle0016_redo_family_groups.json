@@ -1,0 +1,538 @@
+{
+  "aivia": [
+    {
+      "doc_id": "iWX78K4VyzjcsSM1LcXe",
+      "name": "AI画像解析システム AIVIA"
+    },
+    {
+      "doc_id": "O6VlTQWLFobGF4bcMbR5",
+      "name": "AI画像解析装置 Aivia"
+    }
+  ],
+  "atomic-absorption": [
+    {
+      "doc_id": "eqnet-3357",
+      "name": "原子吸光分析装置(AAS)(Hitachi High-Technologies Corporation Z-2710)"
+    },
+    {
+      "doc_id": "eqnet-3504",
+      "name": "原子吸光 (サーモエレクトロン SOLAAR S4-AA)"
+    }
+  ],
+  "bioanalyzer": [
+    {
+      "doc_id": "DN7xu9pJdC3SEBr54UGI",
+      "name": "バイオアナライザー (Agilent 2100 Bioanalyzer)"
+    },
+    {
+      "doc_id": "eqnet-2434",
+      "name": "バイオアナライザ (アジレント・テクノロジー・2100 Bioanalyzer)"
+    }
+  ],
+  "ct": [
+    {
+      "doc_id": "DM6MAH8xD9UZot2L7Qfx",
+      "name": "80列CT装置 Aquilion PRIME"
+    },
+    {
+      "doc_id": "eqnet-5054",
+      "name": "マイクロCT Skyscan 1174(BRUKER)"
+    }
+  ],
+  "electrophoresis": [
+    {
+      "doc_id": "eqnet-2437",
+      "name": "DGGE用電気泳動装置 (バイオラッド・Dcode)"
+    },
+    {
+      "doc_id": "eqnet-2436",
+      "name": "染色体DNA電気泳動装置 (バイオクラフト・BS-80)"
+    },
+    {
+      "doc_id": "eqnet-4443",
+      "name": "等電点電気泳動装置 Anatech IPG-IEF Type-PX"
+    }
+  ],
+  "flow-cytometer": [
+    {
+      "doc_id": "eqnet-2329",
+      "name": "フローサイトメーター セルアナライザーEC800"
+    },
+    {
+      "doc_id": "eqnet-2330",
+      "name": "フローサイトメーター セルソーターSH800"
+    },
+    {
+      "doc_id": "eqnet-2353",
+      "name": "フローサイトメーター(BD FACSCanto II)"
+    },
+    {
+      "doc_id": "eqnet-2627",
+      "name": "フローサイトメーター(BD・ LSRFortessa X-20)"
+    },
+    {
+      "doc_id": "eqnet-5191",
+      "name": "フローサイトメーター(セルソーター) (BD FACS AriaII)"
+    }
+  ],
+  "fluorescence-microscope": [
+    {
+      "doc_id": "zpb0S6ZkfXfwdc1aX5OC",
+      "name": "All-in-one 蛍光顕微鏡"
+    },
+    {
+      "doc_id": "eqnet-1329",
+      "name": "一体型蛍光顕微鏡(Keyence・BZ9000)"
+    }
+  ],
+  "ftir": [
+    {
+      "doc_id": "eqnet-2087",
+      "name": "フーリエ変換赤外分光測定(FT-IR)"
+    },
+    {
+      "doc_id": "eqnet-2718",
+      "name": "フーリエ変換赤外分光装置(日本分光・6100FV MCT-600)"
+    },
+    {
+      "doc_id": "eqnet-3494",
+      "name": "フーリエ変換赤外線吸収分光光度計 (FT-IR) (日本分光 FT/IR-6300, IRT-7000)"
+    }
+  ],
+  "glovebox": [
+    {
+      "doc_id": "eqnet-3336",
+      "name": "ドーム型アクリル真空グローブボックスDV型"
+    }
+  ],
+  "gpc": [
+    {
+      "doc_id": "eqnet-4295",
+      "name": "GPC(ゲル浸透クロマトグラフィー)システム(溶媒:DMSO)"
+    },
+    {
+      "doc_id": "eqnet-1331",
+      "name": "液体クロマトグラフィー(GE、AKTApurifier UPC10)"
+    },
+    {
+      "doc_id": "eqnet-582",
+      "name": "超高速液体クロマトグラフィー (Waters・ACUITY UPLC System D)"
+    }
+  ],
+  "laser-profiler-microscope": [
+    {
+      "doc_id": "eqnet-1284",
+      "name": "超深度形状測定顕微鏡 KEYENCE, VK-8500, VK-8510"
+    }
+  ],
+  "metallurgical-microscope": [
+    {
+      "doc_id": "eqnet-4202",
+      "name": "金属顕微鏡(MX50) オリンパス(MX50A/T)"
+    },
+    {
+      "doc_id": "eqnet-4083",
+      "name": "顕微鏡 オリンパス(MX50)"
+    }
+  ],
+  "micro-xrf": [
+    {
+      "doc_id": "eqnet-1954",
+      "name": "微小部測定対応蛍光X線分析装置 Rigaku ZSX Primus-μ"
+    },
+    {
+      "doc_id": "eqnet-5301",
+      "name": "微小部蛍光X線分析装置 Bruker(M4 TORNADO+ S26)"
+    }
+  ],
+  "microarray": [
+    {
+      "doc_id": "eqnet-5251",
+      "name": "マイクロアレイスキャナシステム(Agilent・G2600D)"
+    },
+    {
+      "doc_id": "eqnet-4757",
+      "name": "マイクロアレイ Agilent G2505C Agilent(G2505C DNA Microarray Scanne)"
+    }
+  ],
+  "multi-target-sputter": [
+    {
+      "doc_id": "eqnet-2694",
+      "name": "多元DC/RFスパッタ装置(キヤノンアネルバ・EB1100)"
+    },
+    {
+      "doc_id": "eqnet-2528",
+      "name": "多元スパッタ装置(仕様B)"
+    }
+  ],
+  "nanoplasma-control-system": [
+    {
+      "doc_id": "eqnet-1400",
+      "name": "先進ナノプラズマ制御システム NUシステム(株)製 NPS-100"
+    }
+  ],
+  "nmr-500": [
+    {
+      "doc_id": "eqnet-5391",
+      "name": "500MHz 溶液NMRシステム 日本電子JNM-ECZ500R"
+    },
+    {
+      "doc_id": "eqnet-572",
+      "name": "500MHz核磁気共鳴装置(BRUKER製・AVANCE NEO 500)"
+    },
+    {
+      "doc_id": "eqnet-1051",
+      "name": "500MHz 核磁気共鳴装置(Brukar・AVANCE III HD 500)"
+    },
+    {
+      "doc_id": "eqnet-2455",
+      "name": "500MHz核磁気共鳴装置(Bruker・AVANCE NEO 500)"
+    },
+    {
+      "doc_id": "eqnet-977",
+      "name": "500MHz 核磁気共鳴装置 (日本電子(株)・JNM-ECZL500型)"
+    }
+  ],
+  "nmr-800": [
+    {
+      "doc_id": "3qOpg6nYj8QD7MjuWk9d",
+      "name": "800MHz NMR測定装置(migi)(液体試料専用)"
+    }
+  ],
+  "plasma-cvd": [
+    {
+      "doc_id": "z1cJqARi9yUrk6m7Jvkv",
+      "name": "プラズマCVD装置"
+    }
+  ],
+  "probe-microscope": [
+    {
+      "doc_id": "eqnet-1938",
+      "name": "プローブ顕微鏡 JEOL JSPM-5200"
+    }
+  ],
+  "raman-microscope": [
+    {
+      "doc_id": "eqnet-3324",
+      "name": "ラマン顕微鏡 Photon Design RSM-310 [レーザー波長] 1064nm"
+    }
+  ],
+  "sem-sputter": [
+    {
+      "doc_id": "eqnet-4204",
+      "name": "SEM前処理用スパッタ(SC-701AT) サンユー電子(SC-701AT)"
+    }
+  ],
+  "sequencer": [
+    {
+      "doc_id": "eqnet-916",
+      "name": "パーソナルゲノムシーケンサーシステム(イルミナ・MS-J-001)"
+    }
+  ],
+  "shaker-br43fm": [
+    {
+      "doc_id": "eqnet-5115",
+      "name": "シェーカー TAITEC BR-43FM 4"
+    },
+    {
+      "doc_id": "eqnet-5116",
+      "name": "シェーカー TAITEC BR-43FM 5"
+    },
+    {
+      "doc_id": "eqnet-5117",
+      "name": "シェーカー TAITEC BR-43FM 6"
+    },
+    {
+      "doc_id": "eqnet-5112",
+      "name": "シェーカー TAITEC BR-43FM ➀"
+    }
+  ],
+  "single:その他:AKTA start": [
+    {
+      "doc_id": "pqtKmcXbCged9dfj4qfN",
+      "name": "AKTA start"
+    }
+  ],
+  "single:光分析装置:ラマン分光装置(日本分光(株) NRS-7100)": [
+    {
+      "doc_id": "eqnet-1112",
+      "name": "ラマン分光装置(日本分光(株) NRS-7100)"
+    }
+  ],
+  "single:光学顕微鏡/病理:(霞)高性能クリオスタット(ライカマイクロシステムズ・CM3050S)": [
+    {
+      "doc_id": "eqnet-5254",
+      "name": "(霞)高性能クリオスタット(ライカマイクロシステムズ・CM3050S)"
+    }
+  ],
+  "single:分離分析装置:超高速HPLC分離・分子構造分析システム": [
+    {
+      "doc_id": "77xKkyaT1zBcWjs1uVlP",
+      "name": "超高速HPLC分離・分子構造分析システム"
+    }
+  ],
+  "single:分離分析装置:高速液体クロマトグラフ HPLC Prominence": [
+    {
+      "doc_id": "eqnet-3075",
+      "name": "高速液体クロマトグラフ HPLC Prominence"
+    }
+  ],
+  "single:半導体製造関連装置:恒温槽(ACE-10AN) KELK(ACE-10AN)": [
+    {
+      "doc_id": "eqnet-4213",
+      "name": "恒温槽(ACE-10AN) KELK(ACE-10AN)"
+    }
+  ],
+  "single:半導体製造関連装置:金属蒸着装置(3FCR) 日本シード研究所(ESE-09)": [
+    {
+      "doc_id": "eqnet-4232",
+      "name": "金属蒸着装置(3FCR) 日本シード研究所(ESE-09)"
+    }
+  ],
+  "single:土木・建築・工学関連装置:(工)ゲッチンゲン型風洞装置": [
+    {
+      "doc_id": "eqnet-1176",
+      "name": "(工)ゲッチンゲン型風洞装置"
+    }
+  ],
+  "single:土木・建築・工学関連装置:2.8t天井クレーン": [
+    {
+      "doc_id": "eqnet-5062",
+      "name": "2.8t天井クレーン"
+    }
+  ],
+  "single:土木・建築・工学関連装置:高温ナノインデンター装置(超微小硬さ試験機)(HYSITRON TI-950 )": [
+    {
+      "doc_id": "eqnet-1804",
+      "name": "高温ナノインデンター装置(超微小硬さ試験機)(HYSITRON TI-950 )"
+    }
+  ],
+  "single:土木・建築・工学関連装置:高速度カメラ・画像相関法(DIC)解析システム (エラストマ)": [
+    {
+      "doc_id": "eqnet-3918",
+      "name": "高速度カメラ・画像相関法(DIC)解析システム (エラストマ)"
+    }
+  ],
+  "single:土木・建築・工学関連装置:高速度カメラ・画像相関法(DIC)解析システム (複合材)": [
+    {
+      "doc_id": "eqnet-3920",
+      "name": "高速度カメラ・画像相関法(DIC)解析システム (複合材)"
+    }
+  ],
+  "single:培養/恒温恒湿度器/滅菌機機:シェーカー TAITEC NR-150 2": [
+    {
+      "doc_id": "eqnet-5125",
+      "name": "シェーカー TAITEC NR-150 2"
+    }
+  ],
+  "single:実験施設:BCI/TWC/DPIイミュニティ試験システム": [
+    {
+      "doc_id": "eqnet-4392",
+      "name": "BCI/TWC/DPIイミュニティ試験システム"
+    }
+  ],
+  "single:実験施設:製氷機 FM-120K(ホシザキ)": [
+    {
+      "doc_id": "eqnet-5047",
+      "name": "製氷機 FM-120K(ホシザキ)"
+    }
+  ],
+  "single:実験施設:超純水製造装置 Advantech RFV642HA": [
+    {
+      "doc_id": "eqnet-4440",
+      "name": "超純水製造装置 Advantech RFV642HA"
+    }
+  ],
+  "single:実験施設:超純水製造装置 Millipore Milli-Q Integral 10": [
+    {
+      "doc_id": "eqnet-1944",
+      "name": "超純水製造装置 Millipore Milli-Q Integral 10"
+    }
+  ],
+  "single:専用測定装置:HANDY LAP": [
+    {
+      "doc_id": "8RumePXKXafofSnMhIK6",
+      "name": "HANDY LAP"
+    }
+  ],
+  "single:専用測定装置:ISOMET LOW SPEED SAW": [
+    {
+      "doc_id": "Taaz0WL6kUvPa8BmftoN",
+      "name": "ISOMET LOW SPEED SAW"
+    }
+  ],
+  "single:専用測定装置:形状測定器 (キーエンス VR-3200)": [
+    {
+      "doc_id": "eqnet-3507",
+      "name": "形状測定器 (キーエンス VR-3200)"
+    }
+  ],
+  "single:専用測定装置:細胞外フラックスアナライザー XF HS mini": [
+    {
+      "doc_id": "eqnet-3817",
+      "name": "細胞外フラックスアナライザー XF HS mini"
+    }
+  ],
+  "single:専用測定装置:超高速化学反応測定装置(パルスラジオリシス装置) (強力極短時間パルス放射線発生装置の一部 System Science and Software製(USA))": [
+    {
+      "doc_id": "eqnet-81",
+      "name": "超高速化学反応測定装置(パルスラジオリシス装置) (強力極短時間パルス放射線発生装置の一部 System Science and Software製(USA))"
+    }
+  ],
+  "single:成膜・蒸着・膜厚測定:オスミウムコーター(MEIWA Neoc-STB)": [
+    {
+      "doc_id": "eqnet-1095",
+      "name": "オスミウムコーター(MEIWA Neoc-STB)"
+    }
+  ],
+  "single:構造解析/元素分析:有機元素分析装置(C,H,N,S) (elementar(UNICUBE) )": [
+    {
+      "doc_id": "eqnet-3348",
+      "name": "有機元素分析装置(C,H,N,S) (elementar(UNICUBE) )"
+    }
+  ],
+  "single:機器分析センター 管理・運用設備:屈折率計（RI）": [
+    {
+      "doc_id": "r4OITrboBnO5Th7pdnMr",
+      "name": "屈折率計（RI）"
+    }
+  ],
+  "single:物性計測/成分分析:TG-MS分析装置(TG-DTA8122 / JMS-Q1600GC・8890GC)": [
+    {
+      "doc_id": "eqnet-5386",
+      "name": "TG-MS分析装置(TG-DTA8122 / JMS-Q1600GC・8890GC)"
+    }
+  ],
+  "single:物性計測/成分分析:ゼータ電位・粒径・分子量測定システム 大塚電子 ELSZ-2000ZS": [
+    {
+      "doc_id": "eqnet-3775",
+      "name": "ゼータ電位・粒径・分子量測定システム 大塚電子 ELSZ-2000ZS"
+    }
+  ],
+  "single:物性計測/成分分析:ナノ粒子解析装置(シスメックス・NANO-ZS)": [
+    {
+      "doc_id": "eqnet-2719",
+      "name": "ナノ粒子解析装置(シスメックス・NANO-ZS)"
+    }
+  ],
+  "single:物性計測/成分分析:パススルー型超伝導磁力計 Uチャンネル用 (2Gエンタープライゼス・MODEL 760R)": [
+    {
+      "doc_id": "eqnet-2156",
+      "name": "パススルー型超伝導磁力計 Uチャンネル用 (2Gエンタープライゼス・MODEL 760R)"
+    }
+  ],
+  "single:画像撮影/解析:デジタルX線画像診断システム 一式 FCR PicoシステムV": [
+    {
+      "doc_id": "eqnet-3735",
+      "name": "デジタルX線画像診断システム 一式 FCR PicoシステムV"
+    }
+  ],
+  "single:画像撮影/解析:デジタルパソロジースキャナ(KFBIO)": [
+    {
+      "doc_id": "eqnet-4678-90921ce8",
+      "name": "デジタルパソロジースキャナ(KFBIO)"
+    }
+  ],
+  "single:画像撮影/解析:フルオロイメージアナライザー (FUJIFILM FLA-5000)": [
+    {
+      "doc_id": "eqnet-847",
+      "name": "フルオロイメージアナライザー (FUJIFILM FLA-5000)"
+    }
+  ],
+  "single:質量分析装置(MS):セクター型質量分析装置 (JEOL製・JMS700)": [
+    {
+      "doc_id": "eqnet-82",
+      "name": "セクター型質量分析装置 (JEOL製・JMS700)"
+    }
+  ],
+  "single:質量分析装置(MS):タンデム四重極型質量分析装置 Waters(XEVO TQ-S)": [
+    {
+      "doc_id": "eqnet-4184",
+      "name": "タンデム四重極型質量分析装置 Waters(XEVO TQ-S)"
+    }
+  ],
+  "single:質量分析装置(MS):プロテオーム前処理サービス": [
+    {
+      "doc_id": "eqnet-819",
+      "name": "プロテオーム前処理サービス"
+    }
+  ],
+  "single:質量分析装置(MS):マトリックス支援レーザー脱離イオン化飛行時間型質量分析装置(JEOL・JMS-S3000)": [
+    {
+      "doc_id": "eqnet-923",
+      "name": "マトリックス支援レーザー脱離イオン化飛行時間型質量分析装置(JEOL・JMS-S3000)"
+    }
+  ],
+  "single:遠心/粉砕/加熱機器:DNA断片化装置(Covaris・DNA Shearing System M220)": [
+    {
+      "doc_id": "eqnet-1015",
+      "name": "DNA断片化装置(Covaris・DNA Shearing System M220)"
+    }
+  ],
+  "single:遠心/粉砕/加熱機器:あわとり錬太郎(ARV-310)": [
+    {
+      "doc_id": "eqnet-3593",
+      "name": "あわとり錬太郎(ARV-310)"
+    }
+  ],
+  "single:電子顕微鏡および関連機器:マスクアライナー(ミカサ・MA-10)": [
+    {
+      "doc_id": "eqnet-2705",
+      "name": "マスクアライナー(ミカサ・MA-10)"
+    }
+  ],
+  "single:電子顕微鏡および関連機器:マスクレス露光装置 D-LIGHT DL-1000": [
+    {
+      "doc_id": "eqnet-1174",
+      "name": "マスクレス露光装置 D-LIGHT DL-1000"
+    }
+  ],
+  "sonicator": [
+    {
+      "doc_id": "eqnet-5033",
+      "name": "ソニケーター (TOMY UD-200)"
+    },
+    {
+      "doc_id": "eqnet-4779",
+      "name": "ソニケーター BRANSON SONIFIER 250 (1-7F) BRANSON(SONIFIER 250-Advanced)"
+    }
+  ],
+  "tem-general": [
+    {
+      "doc_id": "wALOCI9U5yPjeemLZUHn",
+      "name": "透過型電子顕微鏡（TEM）"
+    }
+  ],
+  "thermal": [
+    {
+      "doc_id": "eqnet-3501",
+      "name": "熱分析装置 (TG-DTA)(島津 DTG-60A)"
+    },
+    {
+      "doc_id": "eqnet-4176",
+      "name": "熱分析装置 一式 リガク(Thermo Plus Evo 2 TD)"
+    },
+    {
+      "doc_id": "eqnet-3359",
+      "name": "熱分析装置(新機)TG/DTA/DSC(Seiko Instruments Inc. EXSTAR7000:TG/DTA7300:X-DSC7000)"
+    },
+    {
+      "doc_id": "eqnet-3360",
+      "name": "熱分析装置(旧機)TG/DTA(Seiko Instruments Inc. EXSTRAR6000series;TG/DTA6300)"
+    },
+    {
+      "doc_id": "eqnet-1759",
+      "name": "熱機械分析装置(SIIナノテクノロジー・TMA/SS7100C)"
+    }
+  ],
+  "vac-evap-hus5gb": [
+    {
+      "doc_id": "eqnet-2200",
+      "name": "真空蒸着装置(日立製作所 HUS-5GB)"
+    },
+    {
+      "doc_id": "eqnet-1432",
+      "name": "真空蒸着装置-I(日立・HUS-5GB)"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eDX9uS88nzDUo7DRFJox/10.1007/s12104-025-10251-4",
+    "paper_space_hash": "#/paper/eDX9uS88nzDUo7DRFJox/10.1007/s12104-025-10251-4",
+    "beginner_enter_hash": "#/beginner/eDX9uS88nzDUo7DRFJox",
+    "beginner_space_hash": "#/beginner/eDX9uS88nzDUo7DRFJox"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "NMR(400MHz)－型式：AVANCE 400",
+      "summary_len": 146,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eDX9uS88nzDUo7DRFJox/10.1007/s12104-025-10251-4",
+      "beginner_hash": "#/beginner/eDX9uS88nzDUo7DRFJox",
+      "paper_link_href": "https://doi.org/10.1007/s12104-025-10251-4",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "NMR(400MHz)－型式：AVANCE 400",
+      "summary_len": 151,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/R5b0pxQNyUgJdKFBwK5n/10.3390/metabo9070123",
+      "beginner_hash": "#/beginner/R5b0pxQNyUgJdKFBwK5n",
+      "paper_link_href": "https://doi.org/10.3390/metabo9070123",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "NMR(500MHz)－型式：AVANCEⅢHD 500",
+      "summary_len": 145,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/sjeeh9D6hgUrxujOXjKl/10.1021/acs.analchem.4c06477",
+      "beginner_hash": "#/beginner/sjeeh9D6hgUrxujOXjKl",
+      "paper_link_href": "https://doi.org/10.1021/acs.analchem.4c06477",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "超遠心機 －型式： himac CP100WX",
+      "summary_len": 127,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/Uws7Nd0FITQFhBuZ6UX3/10.1186/s12964-025-02493-5",
+      "beginner_hash": "#/beginner/Uws7Nd0FITQFhBuZ6UX3",
+      "paper_link_href": "https://doi.org/10.1186/s12964-025-02493-5",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+      "summary_len": 153,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/aL0L8jOJoNHKcJb5wRrW/10.1080/13685538.2026.2612794",
+      "beginner_hash": "#/beginner/aL0L8jOJoNHKcJb5wRrW",
+      "paper_link_href": "https://doi.org/10.1080/13685538.2026.2612794",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+      "summary_len": 148,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/zGP5IrL6MQpptV9vtbL7/10.1016/j.biortech.2014.06.096",
+      "beginner_hash": "#/beginner/zGP5IrL6MQpptV9vtbL7",
+      "paper_link_href": "https://doi.org/10.1016/j.biortech.2014.06.096",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "円二色性分散計（CD）－型式：J-820",
+      "summary_len": 124,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/zvaqj7UssGxAUiEDTBel/10.19139/soic-2310-5070-3148",
+      "beginner_hash": "#/beginner/zvaqj7UssGxAUiEDTBel",
+      "paper_link_href": "https://doi.org/10.19139/soic-2310-5070-3148",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+      "summary_len": 133,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/sGOjYNGg9TZMgeAGmF2B/10.1016/0166-0934(94)90074-4",
+      "beginner_hash": "#/beginner/sGOjYNGg9TZMgeAGmF2B",
+      "paper_link_href": "https://doi.org/10.1016/0166-0934(94)90074-4",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+      "summary_len": 134,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/oCRETqgx0aduVoPDIQEH/10.1038/s41598-025-31964-5",
+      "beginner_hash": "#/beginner/oCRETqgx0aduVoPDIQEH",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-31964-5",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "蛍光分光光度計(FL)－型式：F-2500",
+      "summary_len": 116,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/b5I26chFGmL7Qoj4C8hy/10.1038/s41598-025-31592-z",
+      "beginner_hash": "#/beginner/b5I26chFGmL7Qoj4C8hy",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-31592-z",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

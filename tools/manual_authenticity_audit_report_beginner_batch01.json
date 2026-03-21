@@ -1,0 +1,1214 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-01T22:12:49.104147+00:00",
+  "batch_id": "BATCH-20260302-BEGINNER-01",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch01.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_beginner_batch01.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260302-BEGINNER-01.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.02,
+    "pitfall2_same_ratio": 0.02,
+    "reviewed_at_unique_count": 100,
+    "forbidden_pattern_hits": 0,
+    "beginner_char_min": 368,
+    "beginner_char_max": 598,
+    "beginner_char_avg": 441.39,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 5
+  },
+  "threshold_failures": [
+    "guide_high_similarity_detected"
+  ],
+  "issue_counts": {
+    "invalid_beginner_min_chars": 100,
+    "beginner_min_chars_not_met": 100,
+    "insufficient_paper_explanations_for_multi_papers": 22,
+    "guide_high_similarity_detected": 1
+  },
+  "issues": [
+    {
+      "row_key": "R5b0pxQNyUgJdKFBwK5n::R5b0pxQNyUgJdKFBwK5n",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "R5b0pxQNyUgJdKFBwK5n::R5b0pxQNyUgJdKFBwK5n",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 415,
+      "min_required": 1500
+    },
+    {
+      "row_key": "eDX9uS88nzDUo7DRFJox::eDX9uS88nzDUo7DRFJox",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "eDX9uS88nzDUo7DRFJox::eDX9uS88nzDUo7DRFJox",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 431,
+      "min_required": 1500
+    },
+    {
+      "row_key": "eDX9uS88nzDUo7DRFJox::eDX9uS88nzDUo7DRFJox",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "sjeeh9D6hgUrxujOXjKl::sjeeh9D6hgUrxujOXjKl",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "sjeeh9D6hgUrxujOXjKl::sjeeh9D6hgUrxujOXjKl",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 418,
+      "min_required": 1500
+    },
+    {
+      "row_key": "YpiYi5rGQqcX6ofJF4lt::YpiYi5rGQqcX6ofJF4lt",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "YpiYi5rGQqcX6ofJF4lt::YpiYi5rGQqcX6ofJF4lt",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 427,
+      "min_required": 1500
+    },
+    {
+      "row_key": "aL0L8jOJoNHKcJb5wRrW::aL0L8jOJoNHKcJb5wRrW",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "aL0L8jOJoNHKcJb5wRrW::aL0L8jOJoNHKcJb5wRrW",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 583,
+      "min_required": 1500
+    },
+    {
+      "row_key": "aL0L8jOJoNHKcJb5wRrW::aL0L8jOJoNHKcJb5wRrW",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "znbxD1h1tRk1CEbqpyFo::znbxD1h1tRk1CEbqpyFo",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "znbxD1h1tRk1CEbqpyFo::znbxD1h1tRk1CEbqpyFo",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 420,
+      "min_required": 1500
+    },
+    {
+      "row_key": "OC2X0czptgbbPUaWY00k::OC2X0czptgbbPUaWY00k",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "OC2X0czptgbbPUaWY00k::OC2X0czptgbbPUaWY00k",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 416,
+      "min_required": 1500
+    },
+    {
+      "row_key": "ubP9vgVGw0QLZb9Sr2Ko::ubP9vgVGw0QLZb9Sr2Ko",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "ubP9vgVGw0QLZb9Sr2Ko::ubP9vgVGw0QLZb9Sr2Ko",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 417,
+      "min_required": 1500
+    },
+    {
+      "row_key": "oNcfvHTFhIAfmMBGAXQv::oNcfvHTFhIAfmMBGAXQv",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "oNcfvHTFhIAfmMBGAXQv::oNcfvHTFhIAfmMBGAXQv",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 411,
+      "min_required": 1500
+    },
+    {
+      "row_key": "zvaqj7UssGxAUiEDTBel::zvaqj7UssGxAUiEDTBel",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "zvaqj7UssGxAUiEDTBel::zvaqj7UssGxAUiEDTBel",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 465,
+      "min_required": 1500
+    },
+    {
+      "row_key": "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 421,
+      "min_required": 1500
+    },
+    {
+      "row_key": "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 421,
+      "min_required": 1500
+    },
+    {
+      "row_key": "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 413,
+      "min_required": 1500
+    },
+    {
+      "row_key": "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 421,
+      "min_required": 1500
+    },
+    {
+      "row_key": "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 426,
+      "min_required": 1500
+    },
+    {
+      "row_key": "oCRETqgx0aduVoPDIQEH::oCRETqgx0aduVoPDIQEH",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "oCRETqgx0aduVoPDIQEH::oCRETqgx0aduVoPDIQEH",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 578,
+      "min_required": 1500
+    },
+    {
+      "row_key": "oCRETqgx0aduVoPDIQEH::oCRETqgx0aduVoPDIQEH",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 412,
+      "min_required": 1500
+    },
+    {
+      "row_key": "b5I26chFGmL7Qoj4C8hy::b5I26chFGmL7Qoj4C8hy",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "b5I26chFGmL7Qoj4C8hy::b5I26chFGmL7Qoj4C8hy",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 467,
+      "min_required": 1500
+    },
+    {
+      "row_key": "b5I26chFGmL7Qoj4C8hy::b5I26chFGmL7Qoj4C8hy",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 411,
+      "min_required": 1500
+    },
+    {
+      "row_key": "Uws7Nd0FITQFhBuZ6UX3::Uws7Nd0FITQFhBuZ6UX3",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "Uws7Nd0FITQFhBuZ6UX3::Uws7Nd0FITQFhBuZ6UX3",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 465,
+      "min_required": 1500
+    },
+    {
+      "row_key": "wi61TzbjV4NwlsUe3L1R::wi61TzbjV4NwlsUe3L1R",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "wi61TzbjV4NwlsUe3L1R::wi61TzbjV4NwlsUe3L1R",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 429,
+      "min_required": 1500
+    },
+    {
+      "row_key": "repVWVGli4uWJD2ZwH4R::repVWVGli4uWJD2ZwH4R",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "repVWVGli4uWJD2ZwH4R::repVWVGli4uWJD2ZwH4R",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 427,
+      "min_required": 1500
+    },
+    {
+      "row_key": "5X6ZriO6yzTLj79YxcNC::5X6ZriO6yzTLj79YxcNC",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "5X6ZriO6yzTLj79YxcNC::5X6ZriO6yzTLj79YxcNC",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 432,
+      "min_required": 1500
+    },
+    {
+      "row_key": "zGP5IrL6MQpptV9vtbL7::zGP5IrL6MQpptV9vtbL7",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "zGP5IrL6MQpptV9vtbL7::zGP5IrL6MQpptV9vtbL7",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 432,
+      "min_required": 1500
+    },
+    {
+      "row_key": "TOKUSHIMA-6::TOKUSHIMA-6",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "TOKUSHIMA-6::TOKUSHIMA-6",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 393,
+      "min_required": 1500
+    },
+    {
+      "row_key": "mvHeWRPnzgxqa2wHKaqo::TOKUSHIMA-6",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "mvHeWRPnzgxqa2wHKaqo::TOKUSHIMA-6",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 383,
+      "min_required": 1500
+    },
+    {
+      "row_key": "mvHeWRPnzgxqa2wHKaqo::TOKUSHIMA-6",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "TOKUSHIMA-72::TOKUSHIMA-72",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "TOKUSHIMA-72::TOKUSHIMA-72",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 370,
+      "min_required": 1500
+    },
+    {
+      "row_key": "TOKUSHIMA-72::TOKUSHIMA-72",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "YgBfgj2Glg50OMudGFzi::YgBfgj2Glg50OMudGFzi",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "YgBfgj2Glg50OMudGFzi::YgBfgj2Glg50OMudGFzi",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 420,
+      "min_required": 1500
+    },
+    {
+      "row_key": "vLxG7JK9l1a27ArfGbY1::vLxG7JK9l1a27ArfGbY1",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "vLxG7JK9l1a27ArfGbY1::vLxG7JK9l1a27ArfGbY1",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 548,
+      "min_required": 1500
+    },
+    {
+      "row_key": "vLxG7JK9l1a27ArfGbY1::vLxG7JK9l1a27ArfGbY1",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "482ergQpZB21JJEsNXxy::482ergQpZB21JJEsNXxy",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "482ergQpZB21JJEsNXxy::482ergQpZB21JJEsNXxy",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 419,
+      "min_required": 1500
+    },
+    {
+      "row_key": "GsgCedK7rtQUoIzvlFnK::GsgCedK7rtQUoIzvlFnK",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "GsgCedK7rtQUoIzvlFnK::GsgCedK7rtQUoIzvlFnK",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 543,
+      "min_required": 1500
+    },
+    {
+      "row_key": "GsgCedK7rtQUoIzvlFnK::GsgCedK7rtQUoIzvlFnK",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "IaeeL2CR9ANNkremST1r::YAMAGATA-U-YG-006",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "IaeeL2CR9ANNkremST1r::YAMAGATA-U-YG-006",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 411,
+      "min_required": 1500
+    },
+    {
+      "row_key": "qhoCPKqqubZ0uyaZfJFq::YAMAGATA-U-YG-602",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "qhoCPKqqubZ0uyaZfJFq::YAMAGATA-U-YG-602",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 408,
+      "min_required": 1500
+    },
+    {
+      "row_key": "btZV71dZqxlT7EdpZgvB::YAMAGATA-U-YG-010-2",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "btZV71dZqxlT7EdpZgvB::YAMAGATA-U-YG-010-2",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 417,
+      "min_required": 1500
+    },
+    {
+      "row_key": "StSWpT4DU2TT1LQYrDTl::YAMAGATA-U-YG-010-3",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "StSWpT4DU2TT1LQYrDTl::YAMAGATA-U-YG-010-3",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 414,
+      "min_required": 1500
+    },
+    {
+      "row_key": "pKbqSe700ZzWohdFw65n::YAMAGATA-U-YG-001",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "pKbqSe700ZzWohdFw65n::YAMAGATA-U-YG-001",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 412,
+      "min_required": 1500
+    },
+    {
+      "row_key": "hb2ImDBNe5CySX9C0jzB::YAMAGATA-U-YG-010-6",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "hb2ImDBNe5CySX9C0jzB::YAMAGATA-U-YG-010-6",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 413,
+      "min_required": 1500
+    },
+    {
+      "row_key": "XD46EBq84YbOLZUUTh4h::YAMAGATA-U-YG-010-7",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "XD46EBq84YbOLZUUTh4h::YAMAGATA-U-YG-010-7",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 427,
+      "min_required": 1500
+    },
+    {
+      "row_key": "nfopABr8c9sNHOLntSgz::YAMAGATA-U-YG-005",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "nfopABr8c9sNHOLntSgz::YAMAGATA-U-YG-005",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 419,
+      "min_required": 1500
+    },
+    {
+      "row_key": "Wuxo4lwVUyE1kkptyL2g::YAMAGATA-U-YG-007",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "Wuxo4lwVUyE1kkptyL2g::YAMAGATA-U-YG-007",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 409,
+      "min_required": 1500
+    },
+    {
+      "row_key": "3OLDgm5Yo6Olt6Lr4bZV::YAMAGATA-U-YG-011-2",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "3OLDgm5Yo6Olt6Lr4bZV::YAMAGATA-U-YG-011-2",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 420,
+      "min_required": 1500
+    },
+    {
+      "row_key": "gt03Q7tDu6NppzwawuAq::YAMAGATA-U-YG-010-5",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "gt03Q7tDu6NppzwawuAq::YAMAGATA-U-YG-010-5",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 404,
+      "min_required": 1500
+    },
+    {
+      "row_key": "XZT48BmKydVEm3kTcUYu::YAMAGATA-U-YG-601",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "XZT48BmKydVEm3kTcUYu::YAMAGATA-U-YG-601",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 411,
+      "min_required": 1500
+    },
+    {
+      "row_key": "VvILmjDAV8jIqjFKkW2w::YAMAGATA-U-YG-002",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "VvILmjDAV8jIqjFKkW2w::YAMAGATA-U-YG-002",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 406,
+      "min_required": 1500
+    },
+    {
+      "row_key": "NA4jpKc98ekkVVOq8HKq::YAMAGATA-U-YG-010-4",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "NA4jpKc98ekkVVOq8HKq::YAMAGATA-U-YG-010-4",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 410,
+      "min_required": 1500
+    },
+    {
+      "row_key": "K9VDRZo46oZMdPmY6s5r::YAMAGATA-U-YG-008",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "K9VDRZo46oZMdPmY6s5r::YAMAGATA-U-YG-008",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 404,
+      "min_required": 1500
+    },
+    {
+      "row_key": "m23l5I1cvJgRVfvBoa0i::YAMAGATA-U-YG-011-1",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "m23l5I1cvJgRVfvBoa0i::YAMAGATA-U-YG-011-1",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 421,
+      "min_required": 1500
+    },
+    {
+      "row_key": "hTOFucqdg6na7Tqcjpv0::YAMAGATA-U-YG-003",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "hTOFucqdg6na7Tqcjpv0::YAMAGATA-U-YG-003",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 409,
+      "min_required": 1500
+    },
+    {
+      "row_key": "zhMfgcfND2IYgLxC3zlS::YAMAGATA-U-YG-004",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "zhMfgcfND2IYgLxC3zlS::YAMAGATA-U-YG-004",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 409,
+      "min_required": 1500
+    },
+    {
+      "row_key": "igWmqGuQmN0nAr7cubUs::YAMAGATA-U-YG-010-1",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "igWmqGuQmN0nAr7cubUs::YAMAGATA-U-YG-010-1",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 421,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-06::KUMAMOTO-list3f-06",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-06::KUMAMOTO-list3f-06",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 443,
+      "min_required": 1500
+    },
+    {
+      "row_key": "VIp6ga7dIUZFFAyc0qlz::KUMAMOTO-list3f-06",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "VIp6ga7dIUZFFAyc0qlz::KUMAMOTO-list3f-06",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 428,
+      "min_required": 1500
+    },
+    {
+      "row_key": "VIp6ga7dIUZFFAyc0qlz::KUMAMOTO-list3f-06",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-08::KUMAMOTO-list3f-08",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-08::KUMAMOTO-list3f-08",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 418,
+      "min_required": 1500
+    },
+    {
+      "row_key": "n8KsCALgOq9rNk6K1yah::KUMAMOTO-list3f-08",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "n8KsCALgOq9rNk6K1yah::KUMAMOTO-list3f-08",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 430,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-03::KUMAMOTO-list3f-03",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-03::KUMAMOTO-list3f-03",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 445,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-02::KUMAMOTO-list3f-02",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-02::KUMAMOTO-list3f-02",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 509,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-05::KUMAMOTO-list3f-05",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-05::KUMAMOTO-list3f-05",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 395,
+      "min_required": 1500
+    },
+    {
+      "row_key": "iN4iv68nHnLH63Rbw2tD::KUMAMOTO-list3f-05",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "iN4iv68nHnLH63Rbw2tD::KUMAMOTO-list3f-05",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 449,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-04::KUMAMOTO-list3f-04",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-04::KUMAMOTO-list3f-04",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 508,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-07::KUMAMOTO-list3f-07",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-07::KUMAMOTO-list3f-07",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 417,
+      "min_required": 1500
+    },
+    {
+      "row_key": "SvQRc4JuKTgLcTu1rsJh::KUMAMOTO-list3f-07",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "SvQRc4JuKTgLcTu1rsJh::KUMAMOTO-list3f-07",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 558,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-01::KUMAMOTO-list3f-01",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-01::KUMAMOTO-list3f-01",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 410,
+      "min_required": 1500
+    },
+    {
+      "row_key": "gr3Vcqj6vgJw9QXBkJHH::KUMAMOTO-list3f-01",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "gr3Vcqj6vgJw9QXBkJHH::KUMAMOTO-list3f-01",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 583,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-09::KUMAMOTO-list3f-09",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-09::KUMAMOTO-list3f-09",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 598,
+      "min_required": 1500
+    },
+    {
+      "row_key": "aCaM3wSDHa4NyWNZDzDW::KUMAMOTO-list3f-09",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "aCaM3wSDHa4NyWNZDzDW::KUMAMOTO-list3f-09",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 586,
+      "min_required": 1500
+    },
+    {
+      "row_key": "aCaM3wSDHa4NyWNZDzDW::KUMAMOTO-list3f-09",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-10::KUMAMOTO-list3f-10",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list3f-10::KUMAMOTO-list3f-10",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 518,
+      "min_required": 1500
+    },
+    {
+      "row_key": "U1BUr0RTkKrPe7NAznny::KUMAMOTO-list3f-10",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "U1BUr0RTkKrPe7NAznny::KUMAMOTO-list3f-10",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 506,
+      "min_required": 1500
+    },
+    {
+      "row_key": "U1BUr0RTkKrPe7NAznny::KUMAMOTO-list3f-10",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "VLi11PHAPvUUYmMw4Tp3::VLi11PHAPvUUYmMw4Tp3",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "VLi11PHAPvUUYmMw4Tp3::VLi11PHAPvUUYmMw4Tp3",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 426,
+      "min_required": 1500
+    },
+    {
+      "row_key": "2BJbNIWamHA1K1YpVej6::2BJbNIWamHA1K1YpVej6",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "2BJbNIWamHA1K1YpVej6::2BJbNIWamHA1K1YpVej6",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 418,
+      "min_required": 1500
+    },
+    {
+      "row_key": "4z2BL1tvjflMsfMD7lpz::4z2BL1tvjflMsfMD7lpz",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "4z2BL1tvjflMsfMD7lpz::4z2BL1tvjflMsfMD7lpz",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 527,
+      "min_required": 1500
+    },
+    {
+      "row_key": "zi1yT7fU9lLrsbZCUane::zi1yT7fU9lLrsbZCUane",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "zi1yT7fU9lLrsbZCUane::zi1yT7fU9lLrsbZCUane",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 436,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-08::KUMAMOTO-list4f-08",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-08::KUMAMOTO-list4f-08",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 504,
+      "min_required": 1500
+    },
+    {
+      "row_key": "lTqd5v0S9o9IQG3l6SZL::KUMAMOTO-list4f-08",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "lTqd5v0S9o9IQG3l6SZL::KUMAMOTO-list4f-08",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 478,
+      "min_required": 1500
+    },
+    {
+      "row_key": "lTqd5v0S9o9IQG3l6SZL::KUMAMOTO-list4f-08",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-07::KUMAMOTO-list4f-07",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-07::KUMAMOTO-list4f-07",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 426,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-07::KUMAMOTO-list4f-07",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-06::KUMAMOTO-list4f-06",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-06::KUMAMOTO-list4f-06",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 551,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list4f-06::KUMAMOTO-list4f-06",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "KUMAMOTO-list1f-01::KUMAMOTO-list1f-01",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list1f-01::KUMAMOTO-list1f-01",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 459,
+      "min_required": 1500
+    },
+    {
+      "row_key": "ozOCOvoE6Sw2VpxWrhDG::KUMAMOTO-list1f-01",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "ozOCOvoE6Sw2VpxWrhDG::KUMAMOTO-list1f-01",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 433,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-01::KUMAMOTO-list5f-01",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-01::KUMAMOTO-list5f-01",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 438,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-04::KUMAMOTO-list5f-04",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-04::KUMAMOTO-list5f-04",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 386,
+      "min_required": 1500
+    },
+    {
+      "row_key": "TwyXvE2fhknPM72TZ4hG::KUMAMOTO-list5f-04",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "TwyXvE2fhknPM72TZ4hG::KUMAMOTO-list5f-04",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 440,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-05::KUMAMOTO-list5f-05",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-05::KUMAMOTO-list5f-05",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 409,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-02::KUMAMOTO-list5f-02",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-02::KUMAMOTO-list5f-02",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 471,
+      "min_required": 1500
+    },
+    {
+      "row_key": "VD1b5MAID8FkRvfmtwTh::KUMAMOTO-list5f-02",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "VD1b5MAID8FkRvfmtwTh::KUMAMOTO-list5f-02",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 487,
+      "min_required": 1500
+    },
+    {
+      "row_key": "VD1b5MAID8FkRvfmtwTh::KUMAMOTO-list5f-02",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-06::KUMAMOTO-list5f-06",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-06::KUMAMOTO-list5f-06",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 390,
+      "min_required": 1500
+    },
+    {
+      "row_key": "sbxUhEraF8q7E6MfPgPM::KUMAMOTO-list5f-06",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "sbxUhEraF8q7E6MfPgPM::KUMAMOTO-list5f-06",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 424,
+      "min_required": 1500
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-03::KUMAMOTO-list5f-03",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "KUMAMOTO-list5f-03::KUMAMOTO-list5f-03",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 393,
+      "min_required": 1500
+    },
+    {
+      "row_key": "Wwa21o32jMwx0VVa35Fi::KUMAMOTO-list5f-03",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "Wwa21o32jMwx0VVa35Fi::KUMAMOTO-list5f-03",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 527,
+      "min_required": 1500
+    },
+    {
+      "row_key": "HmdbYdUSxx9uCuxhtnxF::HmdbYdUSxx9uCuxhtnxF",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "HmdbYdUSxx9uCuxhtnxF::HmdbYdUSxx9uCuxhtnxF",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 400,
+      "min_required": 1500
+    },
+    {
+      "row_key": "hzzHikfI02IrG6BW6DWM::hzzHikfI02IrG6BW6DWM",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "hzzHikfI02IrG6BW6DWM::hzzHikfI02IrG6BW6DWM",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 444,
+      "min_required": 1500
+    },
+    {
+      "row_key": "hzzHikfI02IrG6BW6DWM::hzzHikfI02IrG6BW6DWM",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "kjwS6xcg54MtXReDMd6c::kjwS6xcg54MtXReDMd6c",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "kjwS6xcg54MtXReDMd6c::kjwS6xcg54MtXReDMd6c",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 399,
+      "min_required": 1500
+    },
+    {
+      "row_key": "TOKUSHIMA-59::TOKUSHIMA-59",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "TOKUSHIMA-59::TOKUSHIMA-59",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 394,
+      "min_required": 1500
+    },
+    {
+      "row_key": "TOKUSHIMA-59::TOKUSHIMA-59",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "TOKUSHIMA-64::TOKUSHIMA-64",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "TOKUSHIMA-64::TOKUSHIMA-64",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 376,
+      "min_required": 1500
+    },
+    {
+      "row_key": "TOKUSHIMA-64::TOKUSHIMA-64",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "TOKUSHIMA-77::TOKUSHIMA-77",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "TOKUSHIMA-77::TOKUSHIMA-77",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 458,
+      "min_required": 1500
+    },
+    {
+      "row_key": "TOKUSHIMA-77::TOKUSHIMA-77",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "MIE-equipment4::MIE-equipment4",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "MIE-equipment4::MIE-equipment4",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 438,
+      "min_required": 1500
+    },
+    {
+      "row_key": "OHFl57aZLStRCEjLuxEE::MIE-equipment4",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "OHFl57aZLStRCEjLuxEE::MIE-equipment4",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 416,
+      "min_required": 1500
+    },
+    {
+      "row_key": "OHFl57aZLStRCEjLuxEE::MIE-equipment4",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "MIE-equipment9::MIE-equipment9",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "MIE-equipment9::MIE-equipment9",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 438,
+      "min_required": 1500
+    },
+    {
+      "row_key": "xmnLsSGoI9yiSoyLhcT2::MIE-equipment9",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "xmnLsSGoI9yiSoyLhcT2::MIE-equipment9",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 419,
+      "min_required": 1500
+    },
+    {
+      "row_key": "xmnLsSGoI9yiSoyLhcT2::MIE-equipment9",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "MIE-equipment5::MIE-equipment5",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "MIE-equipment5::MIE-equipment5",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 374,
+      "min_required": 1500
+    },
+    {
+      "row_key": "ZNKZuDs8cfqxuHXPquDA::MIE-equipment5",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "ZNKZuDs8cfqxuHXPquDA::MIE-equipment5",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 512,
+      "min_required": 1500
+    },
+    {
+      "row_key": "ZNKZuDs8cfqxuHXPquDA::MIE-equipment5",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 1
+    },
+    {
+      "row_key": "MIE-equipment7::MIE-equipment7",
+      "code": "invalid_beginner_min_chars"
+    },
+    {
+      "row_key": "MIE-equipment7::MIE-equipment7",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 368,
+      "min_required": 1500
+    }
+  ],
+  "near_duplicate_pairs": [
+    {
+      "i": 25,
+      "j": 26,
+      "ratio": 0.9304932735426009
+    },
+    {
+      "i": 78,
+      "j": 83,
+      "ratio": 0.9591397849462365
+    },
+    {
+      "i": 78,
+      "j": 85,
+      "ratio": 0.9572649572649573
+    },
+    {
+      "i": 83,
+      "j": 85,
+      "ratio": 0.940677966101695
+    },
+    {
+      "i": 97,
+      "j": 99,
+      "ratio": 0.954337899543379
+    }
+  ],
+  "checkpoint_snapshot": {
+    "generated_at": "2026-03-01T22:11:27.305195+00:00",
+    "batch_id": "BATCH-20260302-BEGINNER-01",
+    "queue_sha256": "6d30f9ca276321fa3ed72468f4da1811c51fdc3dd3b4710a1af78594847fcca0",
+    "target_count": 100,
+    "selected_count": 100,
+    "eligible_count": 10598,
+    "category_count": 0,
+    "campaign": "beginner-longform",
+    "include_reviewed": true,
+    "ignore_papers_filter": false,
+    "min_beginner_chars": 1500,
+    "char_count_mode": "non_whitespace",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch01.jsonl",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "reviewer_default": "codex-manual"
+  }
+}

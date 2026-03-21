@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260311-CYCLE0017-REPAIR3-15",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-11T14:12:34.990640+00:00",
+  "updated_at": "2026-03-11T14:32:03.059214+00:00",
+  "closed_at": "2026-03-11T14:32:03.059214+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0017_repair3_15.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260311-CYCLE0017-REPAIR3-15.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "1c4a105bc4ceb7884615fa994b53e8ae94225a0e6b22fbf5b637e03622037777",
+    "queue_sha256_at_start": "f5879922be74f5c102ecd8dad0f0d3b9d73c50af134f5ae6b6e87be03e7619b0",
+    "queue_row_keys_sha256": "4c9a23cd6440bf198ee2e0dc4e36ef2a25e801cf027dd1ef993678db81cf3eaa"
+  },
+  "queue": {
+    "target_count": 15,
+    "target_row_keys": [
+      "eqnet-4300::eqnet-4300",
+      "eqnet-4296::eqnet-4296",
+      "eqnet-5422::eqnet-5422",
+      "eqnet-3578::eqnet-3578",
+      "eqnet-4297::eqnet-4297",
+      "eqnet-3575::eqnet-3575",
+      "eqnet-3597::eqnet-3597",
+      "eqnet-4151::eqnet-4151",
+      "eqnet-2244::eqnet-2244",
+      "eqnet-1052::eqnet-1052",
+      "eqnet-4298::eqnet-4298",
+      "eqnet-4807::eqnet-4807",
+      "eqnet-2157::eqnet-2157",
+      "eqnet-5227::eqnet-5227",
+      "eqnet-2441::eqnet-2441"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-4300::eqnet-4300",
+        "doc_id": "eqnet-4300",
+        "equipment_id": "eqnet-4300",
+        "name": "GPC(ゲル浸透クロマトグラフィー)システム(溶媒:THF)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-4296::eqnet-4296",
+        "doc_id": "eqnet-4296",
+        "equipment_id": "eqnet-4296",
+        "name": "GPC(ゲル浸透クロマトグラフィー)システム(溶媒:ホルムアミド)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-5422::eqnet-5422",
+        "doc_id": "eqnet-5422",
+        "equipment_id": "eqnet-5422",
+        "name": "Uni-temp (RSS-210-S)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3578::eqnet-3578",
+        "doc_id": "eqnet-3578",
+        "equipment_id": "eqnet-3578",
+        "name": "Uni-temp(RSS-450-210-FA)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-4297::eqnet-4297",
+        "doc_id": "eqnet-4297",
+        "equipment_id": "eqnet-4297",
+        "name": "引張試験機 AG-X-plus-50N-5kN",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3575::eqnet-3575",
+        "doc_id": "eqnet-3575",
+        "equipment_id": "eqnet-3575",
+        "name": "\"分光干渉レーザ変位計・高精度形状測定システム(KS-1100,SI-F01,SI-F01U)\"",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3597::eqnet-3597",
+        "doc_id": "eqnet-3597",
+        "equipment_id": "eqnet-3597",
+        "name": "\"スパッタ装置(E-200S)\"",
+        "papers_count": 1
+      },
+      {
+        "row_key": "eqnet-4151::eqnet-4151",
+        "doc_id": "eqnet-4151",
+        "equipment_id": "eqnet-4151",
+        "name": "600MHz NMR装置2 Bruker BioSpin(自己遮蔽型 AVANCE600)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2244::eqnet-2244",
+        "doc_id": "eqnet-2244",
+        "equipment_id": "eqnet-2244",
+        "name": "波長分散型蛍光X線分析装置(Bruker AXS S8 TIGER-MA 1kW)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1052::eqnet-1052",
+        "doc_id": "eqnet-1052",
+        "equipment_id": "eqnet-1052",
+        "name": "示差熱熱重量同時測定装置(セイコーインスツルメンツ・TG/FTA6200)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-4298::eqnet-4298",
+        "doc_id": "eqnet-4298",
+        "equipment_id": "eqnet-4298",
+        "name": "引張試験機 AG-X-plus-50kN (温調オーブン附属)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-4807::eqnet-4807",
+        "doc_id": "eqnet-4807",
+        "equipment_id": "eqnet-4807",
+        "name": "ルミノ・イメージアナライザー(GEヘルスケア:ImageQuant 800)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2157::eqnet-2157",
+        "doc_id": "eqnet-2157",
+        "equipment_id": "eqnet-2157",
+        "name": "元素分析オンライン質量分析計 (サーモフィニガン・DELTA plus Advantage)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-5227::eqnet-5227",
+        "doc_id": "eqnet-5227",
+        "equipment_id": "eqnet-5227",
+        "name": "多本架冷却遠心機 AX-511",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-2441::eqnet-2441",
+        "doc_id": "eqnet-2441",
+        "equipment_id": "eqnet-2441",
+        "name": "次世代シーケンサー(ThermoFisherScientific・IonS5)",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 5,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-11T14:12:34.990640+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 15
+      }
+    },
+    {
+      "at": "2026-03-11T14:13:46.918021+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T14:14:15.851879+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T14:14:24.851736+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T14:15:30.515242+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T14:16:12.740763+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T14:30:09.309581+00:00",
+      "event": "close",
+      "details": {
+        "status": "FAIL",
+        "issues": [
+          "audit_not_pass"
+        ],
+        "evidence": {
+          "verify_pass_count": 5,
+          "audit_status": "FAIL",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    },
+    {
+      "at": "2026-03-11T14:32:03.059214+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 5,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

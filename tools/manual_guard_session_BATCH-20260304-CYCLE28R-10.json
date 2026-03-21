@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE28R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T03:58:39.818281+00:00",
+  "updated_at": "2026-03-04T04:03:03.453700+00:00",
+  "closed_at": "2026-03-04T04:03:03.453700+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle28r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE28R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "a1b3eba455cf13e39f40120b97b07c8c1a3f7804929319e5428491e80e985c15",
+    "queue_sha256_at_start": "8620cd407eae78d48996d2c68bd9d98e896771370cc51fdfc6a49b525f490a8d",
+    "queue_row_keys_sha256": "005d60357f48f6d58ac681764bfc1862e09a9a067fbf4b9c429cc8388bcec850"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "KFgnDB32NjQcmlrkNIrU::KFgnDB32NjQcmlrkNIrU",
+      "tv1Ymx1Nn5pmetD5BIlC::tv1Ymx1Nn5pmetD5BIlC",
+      "TTfvAtX3TovSCl7xp6BY::TTfvAtX3TovSCl7xp6BY",
+      "nDr8L3kPFoycGvDgbvr6::nDr8L3kPFoycGvDgbvr6",
+      "TkaHlzgtz6JO4HUisJfF::TkaHlzgtz6JO4HUisJfF",
+      "TNx5M9qMHWHXuW5E3F8F::TNx5M9qMHWHXuW5E3F8F",
+      "Vlcul0AalGd01n6H0jiC::HOKUDAI-AP-900828",
+      "7FOHzKMAnUB6JyouCkVD::HOKUDAI-AP-902150",
+      "o3TDvehQ1gPp3P9DF5aH::HOKUDAI-AP-902148",
+      "YE1HADGkfaHby26B14BD::HOKUDAI-AP-901980"
+    ],
+    "target_rows": [
+      {
+        "row_key": "KFgnDB32NjQcmlrkNIrU::KFgnDB32NjQcmlrkNIrU",
+        "doc_id": "KFgnDB32NjQcmlrkNIrU",
+        "equipment_id": "KFgnDB32NjQcmlrkNIrU",
+        "name": "超低温フリーザー_10 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "tv1Ymx1Nn5pmetD5BIlC::tv1Ymx1Nn5pmetD5BIlC",
+        "doc_id": "tv1Ymx1Nn5pmetD5BIlC",
+        "equipment_id": "tv1Ymx1Nn5pmetD5BIlC",
+        "name": "マルチカラーデータ解析ソフトウェア(3)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TTfvAtX3TovSCl7xp6BY::TTfvAtX3TovSCl7xp6BY",
+        "doc_id": "TTfvAtX3TovSCl7xp6BY",
+        "equipment_id": "TTfvAtX3TovSCl7xp6BY",
+        "name": "ハンドリフター（コゾウリフター）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nDr8L3kPFoycGvDgbvr6::nDr8L3kPFoycGvDgbvr6",
+        "doc_id": "nDr8L3kPFoycGvDgbvr6",
+        "equipment_id": "nDr8L3kPFoycGvDgbvr6",
+        "name": "吊りフック･アーム付きリフター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TkaHlzgtz6JO4HUisJfF::TkaHlzgtz6JO4HUisJfF",
+        "doc_id": "TkaHlzgtz6JO4HUisJfF",
+        "equipment_id": "TkaHlzgtz6JO4HUisJfF",
+        "name": "簡易型クレーン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TNx5M9qMHWHXuW5E3F8F::TNx5M9qMHWHXuW5E3F8F",
+        "doc_id": "TNx5M9qMHWHXuW5E3F8F",
+        "equipment_id": "TNx5M9qMHWHXuW5E3F8F",
+        "name": "ミクロ天秤 ザルトリウス ME5",
+        "papers_count": 1
+      },
+      {
+        "row_key": "Vlcul0AalGd01n6H0jiC::HOKUDAI-AP-900828",
+        "doc_id": "Vlcul0AalGd01n6H0jiC",
+        "equipment_id": "HOKUDAI-AP-900828",
+        "name": "Bragg edge用中性子ターゲット",
+        "papers_count": 3
+      },
+      {
+        "row_key": "7FOHzKMAnUB6JyouCkVD::HOKUDAI-AP-902150",
+        "doc_id": "7FOHzKMAnUB6JyouCkVD",
+        "equipment_id": "HOKUDAI-AP-902150",
+        "name": "CNCヒザ形NCフライス盤",
+        "papers_count": 3
+      },
+      {
+        "row_key": "o3TDvehQ1gPp3P9DF5aH::HOKUDAI-AP-902148",
+        "doc_id": "o3TDvehQ1gPp3P9DF5aH",
+        "equipment_id": "HOKUDAI-AP-902148",
+        "name": "CNC普通旋盤",
+        "papers_count": 2
+      },
+      {
+        "row_key": "YE1HADGkfaHby26B14BD::HOKUDAI-AP-901980",
+        "doc_id": "YE1HADGkfaHby26B14BD",
+        "equipment_id": "HOKUDAI-AP-901980",
+        "name": "CO2インキュベーター",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T03:58:39.818281+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T03:58:40.056110+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:58:57.140467+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:02.929077+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:08.641485+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:14.481457+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:20.156144+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:26.057548+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:31.791467+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:37.268794+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:42.628281+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:59:47.939559+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:00:07.347762+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:03:03.453700+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

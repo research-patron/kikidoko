@@ -1,0 +1,802 @@
+[
+  {
+    "doc_id": "3qOpg6nYj8QD7MjuWk9d",
+    "name": "800MHz NMR測定装置(migi)(液体試料専用)",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2049,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2329",
+    "name": "フローサイトメーター セルアナライザーEC800",
+    "family_id": "cell_analyzer",
+    "beginner_non_ws_chars": 2022,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2087",
+    "name": "フーリエ変換赤外分光測定(FT-IR)",
+    "family_id": "ftir",
+    "beginner_non_ws_chars": 2101,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1284",
+    "name": "超深度形状測定顕微鏡 KEYENCE, VK-8500, VK-8510",
+    "family_id": "surface_microscope",
+    "beginner_non_ws_chars": 2111,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-582",
+    "name": "超高速液体クロマトグラフィー (Waters・ACUITY UPLC System D)",
+    "family_id": "hplc",
+    "beginner_non_ws_chars": 2086,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2528",
+    "name": "多元スパッタ装置(仕様B)",
+    "family_id": "sputter",
+    "beginner_non_ws_chars": 2083,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3918",
+    "name": "高速度カメラ・画像相関法(DIC)解析システム (エラストマ)",
+    "family_id": "dic",
+    "beginner_non_ws_chars": 2127,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5115",
+    "name": "シェーカー TAITEC BR-43FM 4",
+    "family_id": "shaker",
+    "beginner_non_ws_chars": 2055,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5047",
+    "name": "製氷機 FM-120K(ホシザキ)",
+    "family_id": "ice_maker",
+    "beginner_non_ws_chars": 2105,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3507",
+    "name": "形状測定器 (キーエンス VR-3200)",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2085,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1095",
+    "name": "オスミウムコーター(MEIWA Neoc-STB)",
+    "family_id": "evaporator",
+    "beginner_non_ws_chars": 2074,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-977",
+    "name": "500MHz 核磁気共鳴装置 (日本電子(株)・JNM-ECZL500型)",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2071,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3504",
+    "name": "原子吸光 (サーモエレクトロン SOLAAR S4-AA)",
+    "family_id": "aas",
+    "beginner_non_ws_chars": 2089,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "r4OITrboBnO5Th7pdnMr",
+    "name": "屈折率計（RI）",
+    "family_id": "refractometer",
+    "beginner_non_ws_chars": 2049,
+    "paper_explanations_count": 1,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3501",
+    "name": "熱分析装置 (TG-DTA)(島津 DTG-60A)",
+    "family_id": "thermal",
+    "beginner_non_ws_chars": 2029,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5386",
+    "name": "TG-MS分析装置(TG-DTA8122 / JMS-Q1600GC・8890GC)",
+    "family_id": "tgms",
+    "beginner_non_ws_chars": 2054,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3735",
+    "name": "デジタルX線画像診断システム 一式 FCR PicoシステムV",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2081,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-82",
+    "name": "セクター型質量分析装置 (JEOL製・JMS700)",
+    "family_id": "sector_ms",
+    "beginner_non_ws_chars": 2093,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1015",
+    "name": "DNA断片化装置(Covaris・DNA Shearing System M220)",
+    "family_id": "tem",
+    "beginner_non_ws_chars": 2137,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "DN7xu9pJdC3SEBr54UGI",
+    "name": "バイオアナライザー (Agilent 2100 Bioanalyzer)",
+    "family_id": "bioanalyzer",
+    "beginner_non_ws_chars": 2066,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1938",
+    "name": "プローブ顕微鏡 JEOL JSPM-5200",
+    "family_id": "afm",
+    "beginner_non_ws_chars": 2047,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4443",
+    "name": "等電点電気泳動装置 Anatech IPG-IEF Type-PX",
+    "family_id": "electrophoresis",
+    "beginner_non_ws_chars": 2056,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "DM6MAH8xD9UZot2L7Qfx",
+    "name": "80列CT装置 Aquilion PRIME",
+    "family_id": "ct",
+    "beginner_non_ws_chars": 2082,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2330",
+    "name": "フローサイトメーター セルソーターSH800",
+    "family_id": "cell_sorter",
+    "beginner_non_ws_chars": 2114,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2718",
+    "name": "フーリエ変換赤外分光装置(日本分光・6100FV MCT-600)",
+    "family_id": "ftir",
+    "beginner_non_ws_chars": 2093,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4083",
+    "name": "顕微鏡 オリンパス(MX50)",
+    "family_id": "microscope",
+    "beginner_non_ws_chars": 2112,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3075",
+    "name": "高速液体クロマトグラフ HPLC Prominence",
+    "family_id": "hplc",
+    "beginner_non_ws_chars": 2053,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4213",
+    "name": "恒温槽(ACE-10AN) KELK(ACE-10AN)",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2135,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3920",
+    "name": "高速度カメラ・画像相関法(DIC)解析システム (複合材)",
+    "family_id": "dic",
+    "beginner_non_ws_chars": 2115,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5116",
+    "name": "シェーカー TAITEC BR-43FM 5",
+    "family_id": "shaker",
+    "beginner_non_ws_chars": 2041,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4440",
+    "name": "超純水製造装置 Advantech RFV642HA",
+    "family_id": "water",
+    "beginner_non_ws_chars": 2038,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3817",
+    "name": "細胞外フラックスアナライザー XF HS mini",
+    "family_id": "flux",
+    "beginner_non_ws_chars": 2051,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "z1cJqARi9yUrk6m7Jvkv",
+    "name": "プラズマCVD装置",
+    "family_id": "cvd",
+    "beginner_non_ws_chars": 2083,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1051",
+    "name": "500MHz 核磁気共鳴装置(Brukar・AVANCE III HD 500)",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2065,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3357",
+    "name": "原子吸光分析装置(AAS)(Hitachi High-Technologies Corporation Z-2710)",
+    "family_id": "aas",
+    "beginner_non_ws_chars": 2102,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "wALOCI9U5yPjeemLZUHn",
+    "name": "透過型電子顕微鏡（TEM）",
+    "family_id": "tem",
+    "beginner_non_ws_chars": 2031,
+    "paper_explanations_count": 1,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4176",
+    "name": "熱分析装置 一式 リガク(Thermo Plus Evo 2 TD)",
+    "family_id": "thermal",
+    "beginner_non_ws_chars": 2074,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3775",
+    "name": "ゼータ電位・粒径・分子量測定システム 大塚電子 ELSZ-2000ZS",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2034,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4678-90921ce8",
+    "name": "デジタルパソロジースキャナ(KFBIO)",
+    "family_id": "scanner",
+    "beginner_non_ws_chars": 2112,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4184",
+    "name": "タンデム四重極型質量分析装置 Waters(XEVO TQ-S)",
+    "family_id": "tqms",
+    "beginner_non_ws_chars": 2055,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3593",
+    "name": "あわとり錬太郎(ARV-310)",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2053,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-916",
+    "name": "パーソナルゲノムシーケンサーシステム(イルミナ・MS-J-001)",
+    "family_id": "ms_general",
+    "beginner_non_ws_chars": 2122,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2705",
+    "name": "マスクアライナー(ミカサ・MA-10)",
+    "family_id": "microscope",
+    "beginner_non_ws_chars": 2082,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2437",
+    "name": "DGGE用電気泳動装置 (バイオラッド・Dcode)",
+    "family_id": "electrophoresis",
+    "beginner_non_ws_chars": 2100,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "iWX78K4VyzjcsSM1LcXe",
+    "name": "AI画像解析システム AIVIA",
+    "family_id": "image_analysis",
+    "beginner_non_ws_chars": 2115,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2353",
+    "name": "フローサイトメーター(BD FACSCanto II)",
+    "family_id": "cell_analyzer",
+    "beginner_non_ws_chars": 2043,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3494",
+    "name": "フーリエ変換赤外線吸収分光光度計 (FT-IR) (日本分光 FT/IR-6300, IRT-7000)",
+    "family_id": "ftir",
+    "beginner_non_ws_chars": 2108,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "zpb0S6ZkfXfwdc1aX5OC",
+    "name": "All-in-one 蛍光顕微鏡",
+    "family_id": "fluorescence_microscope",
+    "beginner_non_ws_chars": 2033,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "77xKkyaT1zBcWjs1uVlP",
+    "name": "超高速HPLC分離・分子構造分析システム",
+    "family_id": "hplc",
+    "beginner_non_ws_chars": 2062,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4232",
+    "name": "金属蒸着装置(3FCR) 日本シード研究所(ESE-09)",
+    "family_id": "evaporator",
+    "beginner_non_ws_chars": 2033,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1804",
+    "name": "高温ナノインデンター装置(超微小硬さ試験機)(HYSITRON TI-950 )",
+    "family_id": "nanoindenter",
+    "beginner_non_ws_chars": 2042,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5117",
+    "name": "シェーカー TAITEC BR-43FM 6",
+    "family_id": "shaker",
+    "beginner_non_ws_chars": 2031,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1944",
+    "name": "超純水製造装置 Millipore Milli-Q Integral 10",
+    "family_id": "water",
+    "beginner_non_ws_chars": 2039,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-81",
+    "name": "超高速化学反応測定装置(パルスラジオリシス装置) (強力極短時間パルス放射線発生装置の一部 System Science and Software製(USA))",
+    "family_id": "tem",
+    "beginner_non_ws_chars": 2061,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2694",
+    "name": "多元DC/RFスパッタ装置(キヤノンアネルバ・EB1100)",
+    "family_id": "evaporator",
+    "beginner_non_ws_chars": 2045,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5391",
+    "name": "500MHz 溶液NMRシステム 日本電子JNM-ECZ500R",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2118,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1954",
+    "name": "微小部測定対応蛍光X線分析装置 Rigaku ZSX Primus-μ",
+    "family_id": "elemental",
+    "beginner_non_ws_chars": 2081,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3359",
+    "name": "熱分析装置(新機)TG/DTA/DSC(Seiko Instruments Inc. EXSTAR7000:TG/DTA7300:X-DSC7000)",
+    "family_id": "thermal",
+    "beginner_non_ws_chars": 2088,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2719",
+    "name": "ナノ粒子解析装置(シスメックス・NANO-ZS)",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2099,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-847",
+    "name": "フルオロイメージアナライザー (FUJIFILM FLA-5000)",
+    "family_id": "scanner",
+    "beginner_non_ws_chars": 2125,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-819",
+    "name": "プロテオーム前処理サービス",
+    "family_id": "maldi",
+    "beginner_non_ws_chars": 2068,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5033",
+    "name": "ソニケーター (TOMY UD-200)",
+    "family_id": "sonicator",
+    "beginner_non_ws_chars": 2089,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4757",
+    "name": "マイクロアレイ Agilent G2505C Agilent(G2505C DNA Microarray Scanne)",
+    "family_id": "microarray",
+    "beginner_non_ws_chars": 2070,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1174",
+    "name": "マスクレス露光装置 D-LIGHT DL-1000",
+    "family_id": "microscope",
+    "beginner_non_ws_chars": 2056,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2434",
+    "name": "バイオアナライザ (アジレント・テクノロジー・2100 Bioanalyzer)",
+    "family_id": "bioanalyzer",
+    "beginner_non_ws_chars": 2034,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "O6VlTQWLFobGF4bcMbR5",
+    "name": "AI画像解析装置 Aivia",
+    "family_id": "image_analysis",
+    "beginner_non_ws_chars": 2064,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2627",
+    "name": "フローサイトメーター(BD・ LSRFortessa X-20)",
+    "family_id": "cell_analyzer",
+    "beginner_non_ws_chars": 2132,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1112",
+    "name": "ラマン分光装置(日本分光(株) NRS-7100)",
+    "family_id": "raman",
+    "beginner_non_ws_chars": 2097,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1329",
+    "name": "一体型蛍光顕微鏡(Keyence・BZ9000)",
+    "family_id": "fluorescence_microscope",
+    "beginner_non_ws_chars": 2073,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1331",
+    "name": "液体クロマトグラフィー(GE、AKTApurifier UPC10)",
+    "family_id": "akta",
+    "beginner_non_ws_chars": 2103,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4202",
+    "name": "金属顕微鏡(MX50) オリンパス(MX50A/T)",
+    "family_id": "microscope",
+    "beginner_non_ws_chars": 2111,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1176",
+    "name": "(工)ゲッチンゲン型風洞装置",
+    "family_id": "wind_tunnel",
+    "beginner_non_ws_chars": 2077,
+    "paper_explanations_count": 1,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5112",
+    "name": "シェーカー TAITEC BR-43FM ➀",
+    "family_id": "shaker",
+    "beginner_non_ws_chars": 2031,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4392",
+    "name": "BCI/TWC/DPIイミュニティ試験システム",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2083,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "8RumePXKXafofSnMhIK6",
+    "name": "HANDY LAP",
+    "family_id": "special_measurement",
+    "beginner_non_ws_chars": 2067,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2200",
+    "name": "真空蒸着装置(日立製作所 HUS-5GB)",
+    "family_id": "evaporator",
+    "beginner_non_ws_chars": 2089,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-572",
+    "name": "500MHz核磁気共鳴装置(BRUKER製・AVANCE NEO 500)",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2075,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5301",
+    "name": "微小部蛍光X線分析装置 Bruker(M4 TORNADO+ S26)",
+    "family_id": "elemental",
+    "beginner_non_ws_chars": 2092,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3360",
+    "name": "熱分析装置(旧機)TG/DTA(Seiko Instruments Inc. EXSTRAR6000series;TG/DTA6300)",
+    "family_id": "thermal",
+    "beginner_non_ws_chars": 2161,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2156",
+    "name": "パススルー型超伝導磁力計 Uチャンネル用 (2Gエンタープライゼス・MODEL 760R)",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2044,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5054",
+    "name": "マイクロCT Skyscan 1174(BRUKER)",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2031,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-923",
+    "name": "マトリックス支援レーザー脱離イオン化飛行時間型質量分析装置(JEOL・JMS-S3000)",
+    "family_id": "maldi",
+    "beginner_non_ws_chars": 2067,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4779",
+    "name": "ソニケーター BRANSON SONIFIER 250 (1-7F) BRANSON(SONIFIER 250-Advanced)",
+    "family_id": "sonicator",
+    "beginner_non_ws_chars": 2028,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5251",
+    "name": "マイクロアレイスキャナシステム(Agilent・G2600D)",
+    "family_id": "microarray",
+    "beginner_non_ws_chars": 2084,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1400",
+    "name": "先進ナノプラズマ制御システム NUシステム(株)製 NPS-100",
+    "family_id": "microscope",
+    "beginner_non_ws_chars": 2077,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2436",
+    "name": "染色体DNA電気泳動装置 (バイオクラフト・BS-80)",
+    "family_id": "electrophoresis",
+    "beginner_non_ws_chars": 2028,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "pqtKmcXbCged9dfj4qfN",
+    "name": "AKTA start",
+    "family_id": "akta",
+    "beginner_non_ws_chars": 2078,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5191",
+    "name": "フローサイトメーター(セルソーター) (BD FACS AriaII)",
+    "family_id": "cell_sorter",
+    "beginner_non_ws_chars": 2050,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3324",
+    "name": "ラマン顕微鏡 Photon Design RSM-310 [レーザー波長] 1064nm",
+    "family_id": "raman",
+    "beginner_non_ws_chars": 2124,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5254",
+    "name": "(霞)高性能クリオスタット(ライカマイクロシステムズ・CM3050S)",
+    "family_id": "microscope",
+    "beginner_non_ws_chars": 2028,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4295",
+    "name": "GPC(ゲル浸透クロマトグラフィー)システム(溶媒:DMSO)",
+    "family_id": "gpc",
+    "beginner_non_ws_chars": 2077,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-4204",
+    "name": "SEM前処理用スパッタ(SC-701AT) サンユー電子(SC-701AT)",
+    "family_id": "sputter",
+    "beginner_non_ws_chars": 2067,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5062",
+    "name": "2.8t天井クレーン",
+    "family_id": "crane",
+    "beginner_non_ws_chars": 2088,
+    "paper_explanations_count": 1,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-5125",
+    "name": "シェーカー TAITEC NR-150 2",
+    "family_id": "shaker",
+    "beginner_non_ws_chars": 2117,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3336",
+    "name": "ドーム型アクリル真空グローブボックスDV型",
+    "family_id": "glovebox",
+    "beginner_non_ws_chars": 2110,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "Taaz0WL6kUvPa8BmftoN",
+    "name": "ISOMET LOW SPEED SAW",
+    "family_id": "general",
+    "beginner_non_ws_chars": 2054,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1432",
+    "name": "真空蒸着装置-I(日立・HUS-5GB)",
+    "family_id": "evaporator",
+    "beginner_non_ws_chars": 2089,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-2455",
+    "name": "500MHz核磁気共鳴装置(Bruker・AVANCE NEO 500)",
+    "family_id": "nmr",
+    "beginner_non_ws_chars": 2061,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-3348",
+    "name": "有機元素分析装置(C,H,N,S) (elementar(UNICUBE) )",
+    "family_id": "elemental",
+    "beginner_non_ws_chars": 2053,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  },
+  {
+    "doc_id": "eqnet-1759",
+    "name": "熱機械分析装置(SIIナノテクノロジー・TMA/SS7100C)",
+    "family_id": "tma",
+    "beginner_non_ws_chars": 2047,
+    "paper_explanations_count": 2,
+    "mode": "generated_family_manual"
+  }
+]

@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-82",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T06:19:23.038528+00:00",
+  "updated_at": "2026-03-01T06:20:20.060415+00:00",
+  "closed_at": "2026-03-01T06:20:20.060415+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch82.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-82.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "85dae240d06a84b1e6de4f5c2ef0ccf367f72cd2905ec9a7c2a2740216e57646",
+    "queue_sha256_at_start": "473ab3010b824b91ddf7b2ac71260323d35003041ec12f6495931b1a0ecd0360",
+    "queue_row_keys_sha256": "f045cdcda8333ea4294e502eda3d43ac73577981d2977b2dabb99c5ed09b9758"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "3WoPkXm439qw57W9rCGQ::3WoPkXm439qw57W9rCGQ",
+      "nwPxFtnEZQ3sAC6LHcbg::nwPxFtnEZQ3sAC6LHcbg",
+      "mZUxb9hK9jUc0pHoFznm::mZUxb9hK9jUc0pHoFznm",
+      "aZHngO8nNUBOksJOU3EO::aZHngO8nNUBOksJOU3EO",
+      "qtCtQT83cdzICAoc1jIO::qtCtQT83cdzICAoc1jIO",
+      "QhHaUOrJz7jaehxmps1B::QhHaUOrJz7jaehxmps1B",
+      "2Xw8u97forgs49Adw2Bp::2Xw8u97forgs49Adw2Bp",
+      "ygyksOrR6c6tU21zmBIx::ygyksOrR6c6tU21zmBIx",
+      "qr288SBWq7ECwmNhYNk6::qr288SBWq7ECwmNhYNk6",
+      "F4BS0whn71aNoOqBc0mg::F4BS0whn71aNoOqBc0mg",
+      "uUd7goHwDjYbpcTZITgg::uUd7goHwDjYbpcTZITgg",
+      "gVjyNlZ3rY1GTmIeYBMJ::gVjyNlZ3rY1GTmIeYBMJ",
+      "kLYBBmzHOz00sGNZBsn5::kLYBBmzHOz00sGNZBsn5",
+      "cJH420e18BOpnou6g4Kr::cJH420e18BOpnou6g4Kr",
+      "YavIeVMaBem1bwcbq3Pl::YavIeVMaBem1bwcbq3Pl",
+      "L0UjeuwwedshDUEMBXiT::L0UjeuwwedshDUEMBXiT",
+      "7je2DBAuWOlD3xkhocfq::7je2DBAuWOlD3xkhocfq",
+      "XZ7x5rWTnJjiufhaEDe1::XZ7x5rWTnJjiufhaEDe1",
+      "QGsAWFurRSbfa0rkpBgf::QGsAWFurRSbfa0rkpBgf",
+      "GAhykiPyqLnYVcNrKhw1::GAhykiPyqLnYVcNrKhw1",
+      "IgWr4YwQpQnJ6iOM3ru5::IgWr4YwQpQnJ6iOM3ru5",
+      "5AG1JDL64qfK08MPIMYx::5AG1JDL64qfK08MPIMYx",
+      "I1PqyIse4uEuB9csPFND::I1PqyIse4uEuB9csPFND",
+      "mr9RViEt4S9X6H9mgrjM::mr9RViEt4S9X6H9mgrjM",
+      "Twspl7tlF3ZRr7ZL1qLx::Twspl7tlF3ZRr7ZL1qLx",
+      "6dpz8d6yNSdWsi2JtxgE::6dpz8d6yNSdWsi2JtxgE",
+      "S2jEvc9Onh92e14lvAGo::S2jEvc9Onh92e14lvAGo",
+      "hxW2dZLCGPmD1PdfEhfC::hxW2dZLCGPmD1PdfEhfC",
+      "VGeBUmXK8wZEpZxYJLiW::VGeBUmXK8wZEpZxYJLiW",
+      "0jXHxLPq5bwEj1SN8Tp5::0jXHxLPq5bwEj1SN8Tp5",
+      "eXXKbviNknZ3UT0PsZB3::eXXKbviNknZ3UT0PsZB3",
+      "DYMQ6FT947D8bZKwjU3h::DYMQ6FT947D8bZKwjU3h",
+      "R3qOc1fh6rsnteQKPNh6::R3qOc1fh6rsnteQKPNh6",
+      "uTI8Zm9Zs16pjre5Psvg::uTI8Zm9Zs16pjre5Psvg",
+      "XkP7wz1P3HruMcbuNz18::XkP7wz1P3HruMcbuNz18",
+      "efsdcGfdPzXqzy8kh0ya::efsdcGfdPzXqzy8kh0ya",
+      "hAGk2WpVA4BlhPfGF165::hAGk2WpVA4BlhPfGF165",
+      "3SO8wmcLQArIa1M5efw4::3SO8wmcLQArIa1M5efw4",
+      "9pN570V3DRWM82YFdmd4::9pN570V3DRWM82YFdmd4",
+      "o9J6tGibe8qFxqKeuxgi::o9J6tGibe8qFxqKeuxgi",
+      "nS6U5Z6S8PKdlr6KCvcp::nS6U5Z6S8PKdlr6KCvcp",
+      "tCOFx9v3UEqYTz53Ly5Y::tCOFx9v3UEqYTz53Ly5Y",
+      "ZKUh8BFNyOWdLNqv3Pq4::ZKUh8BFNyOWdLNqv3Pq4",
+      "JmC9ew2ThJomc3QuMF1e::JmC9ew2ThJomc3QuMF1e",
+      "ZeUiIzjBixX35AH3XTfo::ZeUiIzjBixX35AH3XTfo",
+      "GORb3gpXyQCP0UeCjJ3b::GORb3gpXyQCP0UeCjJ3b",
+      "SQ1FHs30l2FhkAQpZV23::SQ1FHs30l2FhkAQpZV23",
+      "OdZaJRqjs8e0LFsGodoP::OdZaJRqjs8e0LFsGodoP",
+      "maTvXkywWS0sBeFljfqH::maTvXkywWS0sBeFljfqH",
+      "oCnbWKXrh76yhtcpN1SZ::oCnbWKXrh76yhtcpN1SZ",
+      "GcNviuyud9KEqNQx01mi::GcNviuyud9KEqNQx01mi",
+      "Jc8IqCyVSu2OSe6OD6Gf::Jc8IqCyVSu2OSe6OD6Gf",
+      "kT6AHEFXnMNsGvC221V2::kT6AHEFXnMNsGvC221V2",
+      "kphJlipRCud2tMUgsiem::kphJlipRCud2tMUgsiem",
+      "mLGvo8dg0cmt12gzLpAW::mLGvo8dg0cmt12gzLpAW",
+      "eD4ukFp0AzE37R7Co5lc::eD4ukFp0AzE37R7Co5lc",
+      "phthSV2tMR1qPbvgGOnD::phthSV2tMR1qPbvgGOnD",
+      "6tBr0SBFaTn6vPkqzJls::6tBr0SBFaTn6vPkqzJls",
+      "wtPWknCbmzxkDpBpCqNM::wtPWknCbmzxkDpBpCqNM",
+      "VIyKYs0D5Rg3IW7x6F1v::VIyKYs0D5Rg3IW7x6F1v",
+      "w3kzjmvDN3vh0T5SXS5q::w3kzjmvDN3vh0T5SXS5q",
+      "yfQA3NOcflLJfBw53lUa::yfQA3NOcflLJfBw53lUa",
+      "Wdo5yyRHWzsT7C9cfRUQ::Wdo5yyRHWzsT7C9cfRUQ",
+      "idj15XAJIQ9luG9KJECX::idj15XAJIQ9luG9KJECX",
+      "4HbW0fjaoa9d48VA02Op::4HbW0fjaoa9d48VA02Op",
+      "K3zKDusxOjbW7z1P78Sf::K3zKDusxOjbW7z1P78Sf",
+      "qnAN1QdriYwvkEDwiWBR::qnAN1QdriYwvkEDwiWBR",
+      "kMwFkp5KkXdcGHbQ0L2X::kMwFkp5KkXdcGHbQ0L2X",
+      "2vvBQlXjY4Jkc07vFHyk::2vvBQlXjY4Jkc07vFHyk",
+      "XHNNEJ5e988ovkN07YMK::XHNNEJ5e988ovkN07YMK",
+      "UaBEVSvVTGNJoglbrKMY::UaBEVSvVTGNJoglbrKMY",
+      "5KYp3qdSkrF0QAKGck2y::5KYp3qdSkrF0QAKGck2y",
+      "WVgqn1KhdHevbLWXCg5Q::WVgqn1KhdHevbLWXCg5Q",
+      "TXugVrw2lf0ZVQ178peE::TXugVrw2lf0ZVQ178peE",
+      "USy35wdB5VcvZI9raJig::USy35wdB5VcvZI9raJig",
+      "OHB8ISEKkkWjt7nCgN8s::OHB8ISEKkkWjt7nCgN8s",
+      "NEzoFgFHMKOKCPKxGGeo::NEzoFgFHMKOKCPKxGGeo",
+      "HrcHbOG2FHpE5yMlKiOI::HrcHbOG2FHpE5yMlKiOI",
+      "OnSwqMU8RPnb6cRLongO::OnSwqMU8RPnb6cRLongO",
+      "AIiwKO9KZmMQXnEiwZG1::AIiwKO9KZmMQXnEiwZG1",
+      "nbUWf6U0mWUYS9s0sGSu::nbUWf6U0mWUYS9s0sGSu",
+      "aTAah9IdOZHWBxIeHwx6::aTAah9IdOZHWBxIeHwx6",
+      "oAiJsgeXsCWicZGg6VLb::oAiJsgeXsCWicZGg6VLb",
+      "bsI1jtd6YZ4O05pZfTri::bsI1jtd6YZ4O05pZfTri",
+      "yxlW35WoarZFpVrvR22k::yxlW35WoarZFpVrvR22k",
+      "oLCdBEVR9QEnw8Sd2RFq::oLCdBEVR9QEnw8Sd2RFq",
+      "RPbHCy5uCmiU4krXiikW::RPbHCy5uCmiU4krXiikW",
+      "vjCSIg79NDaPf1dhqKCa::vjCSIg79NDaPf1dhqKCa",
+      "7RTQRBzhEBjrnYUGMSiZ::7RTQRBzhEBjrnYUGMSiZ",
+      "MBulWVwfpC0KFqwXLkZV::MBulWVwfpC0KFqwXLkZV",
+      "gtNQt2gv5lrTOqf8rXx9::gtNQt2gv5lrTOqf8rXx9",
+      "r4LQC7YGXEPAarUAyyor::r4LQC7YGXEPAarUAyyor",
+      "usQ54NcUNK1enTKY39bD::usQ54NcUNK1enTKY39bD",
+      "ZX3I5VtfRXM6ioRNdaRG::ZX3I5VtfRXM6ioRNdaRG",
+      "a2N2nSOoY5MJMC7s1VrH::a2N2nSOoY5MJMC7s1VrH",
+      "ST214YxmJ5RfZZrkF19W::ST214YxmJ5RfZZrkF19W",
+      "7zHRduhnvgOqLxbyz8P8::7zHRduhnvgOqLxbyz8P8",
+      "QXESX0TZZ4viJvRi3EhG::QXESX0TZZ4viJvRi3EhG",
+      "UEQntajdH7aqegAGlhjn::UEQntajdH7aqegAGlhjn",
+      "Yo92Xq8m2rwigRube9bE::Yo92Xq8m2rwigRube9bE"
+    ],
+    "target_rows": [
+      {
+        "row_key": "3WoPkXm439qw57W9rCGQ::3WoPkXm439qw57W9rCGQ",
+        "doc_id": "3WoPkXm439qw57W9rCGQ",
+        "equipment_id": "3WoPkXm439qw57W9rCGQ",
+        "name": "[142]クラスタスパッタ装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nwPxFtnEZQ3sAC6LHcbg::nwPxFtnEZQ3sAC6LHcbg",
+        "doc_id": "nwPxFtnEZQ3sAC6LHcbg",
+        "equipment_id": "nwPxFtnEZQ3sAC6LHcbg",
+        "name": "[147]オールメタル装置(プラズマ平坦化)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "mZUxb9hK9jUc0pHoFznm::mZUxb9hK9jUc0pHoFznm",
+        "doc_id": "mZUxb9hK9jUc0pHoFznm",
+        "equipment_id": "mZUxb9hK9jUc0pHoFznm",
+        "name": "[159]低温プローバ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aZHngO8nNUBOksJOU3EO::aZHngO8nNUBOksJOU3EO",
+        "doc_id": "aZHngO8nNUBOksJOU3EO",
+        "equipment_id": "aZHngO8nNUBOksJOU3EO",
+        "name": "[160]ソーラシミュレータ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "qtCtQT83cdzICAoc1jIO::qtCtQT83cdzICAoc1jIO",
+        "doc_id": "qtCtQT83cdzICAoc1jIO",
+        "equipment_id": "qtCtQT83cdzICAoc1jIO",
+        "name": "[162]顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "QhHaUOrJz7jaehxmps1B::QhHaUOrJz7jaehxmps1B",
+        "doc_id": "QhHaUOrJz7jaehxmps1B",
+        "equipment_id": "QhHaUOrJz7jaehxmps1B",
+        "name": "[163]抵抗率測定器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2Xw8u97forgs49Adw2Bp::2Xw8u97forgs49Adw2Bp",
+        "doc_id": "2Xw8u97forgs49Adw2Bp",
+        "equipment_id": "2Xw8u97forgs49Adw2Bp",
+        "name": "[167]マニュアルプローバ cascade 8inch,1/fノイズ計測システム付",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ygyksOrR6c6tU21zmBIx::ygyksOrR6c6tU21zmBIx",
+        "doc_id": "ygyksOrR6c6tU21zmBIx",
+        "equipment_id": "ygyksOrR6c6tU21zmBIx",
+        "name": "[168]薄膜硬度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "qr288SBWq7ECwmNhYNk6::qr288SBWq7ECwmNhYNk6",
+        "doc_id": "qr288SBWq7ECwmNhYNk6",
+        "equipment_id": "qr288SBWq7ECwmNhYNk6",
+        "name": "[171]無響室",
+        "papers_count": 0
+      },
+      {
+        "row_key": "F4BS0whn71aNoOqBc0mg::F4BS0whn71aNoOqBc0mg",
+        "doc_id": "F4BS0whn71aNoOqBc0mg",
+        "equipment_id": "F4BS0whn71aNoOqBc0mg",
+        "name": "[172]防音シールド室",
+        "papers_count": 0
+      },
+      {
+        "row_key": "uUd7goHwDjYbpcTZITgg::uUd7goHwDjYbpcTZITgg",
+        "doc_id": "uUd7goHwDjYbpcTZITgg",
+        "equipment_id": "uUd7goHwDjYbpcTZITgg",
+        "name": "[173]超精密生体分子分析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gVjyNlZ3rY1GTmIeYBMJ::gVjyNlZ3rY1GTmIeYBMJ",
+        "doc_id": "gVjyNlZ3rY1GTmIeYBMJ",
+        "equipment_id": "gVjyNlZ3rY1GTmIeYBMJ",
+        "name": "[174]生体機能画像解析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "kLYBBmzHOz00sGNZBsn5::kLYBBmzHOz00sGNZBsn5",
+        "doc_id": "kLYBBmzHOz00sGNZBsn5",
+        "equipment_id": "kLYBBmzHOz00sGNZBsn5",
+        "name": "[177]多波長画像解析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "cJH420e18BOpnou6g4Kr::cJH420e18BOpnou6g4Kr",
+        "doc_id": "cJH420e18BOpnou6g4Kr",
+        "equipment_id": "cJH420e18BOpnou6g4Kr",
+        "name": "[183]マウス・ラット自動飼育装置システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YavIeVMaBem1bwcbq3Pl::YavIeVMaBem1bwcbq3Pl",
+        "doc_id": "YavIeVMaBem1bwcbq3Pl",
+        "equipment_id": "YavIeVMaBem1bwcbq3Pl",
+        "name": "[196]実変動風荷重載荷装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "L0UjeuwwedshDUEMBXiT::L0UjeuwwedshDUEMBXiT",
+        "doc_id": "L0UjeuwwedshDUEMBXiT",
+        "equipment_id": "L0UjeuwwedshDUEMBXiT",
+        "name": "[198]超解像レーザー顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7je2DBAuWOlD3xkhocfq::7je2DBAuWOlD3xkhocfq",
+        "doc_id": "7je2DBAuWOlD3xkhocfq",
+        "equipment_id": "7je2DBAuWOlD3xkhocfq",
+        "name": "[199]高速高精細多光子・共焦点イメージング対応レーザー顕微鏡システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XZ7x5rWTnJjiufhaEDe1::XZ7x5rWTnJjiufhaEDe1",
+        "doc_id": "XZ7x5rWTnJjiufhaEDe1",
+        "equipment_id": "XZ7x5rWTnJjiufhaEDe1",
+        "name": "[200]真空凍結乾燥システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "QGsAWFurRSbfa0rkpBgf::QGsAWFurRSbfa0rkpBgf",
+        "doc_id": "QGsAWFurRSbfa0rkpBgf",
+        "equipment_id": "QGsAWFurRSbfa0rkpBgf",
+        "name": "[214]ラボラトリーオートメーションシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "GAhykiPyqLnYVcNrKhw1::GAhykiPyqLnYVcNrKhw1",
+        "doc_id": "GAhykiPyqLnYVcNrKhw1",
+        "equipment_id": "GAhykiPyqLnYVcNrKhw1",
+        "name": "[237]極微細スピンメモリ素子用電子描画装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IgWr4YwQpQnJ6iOM3ru5::IgWr4YwQpQnJ6iOM3ru5",
+        "doc_id": "IgWr4YwQpQnJ6iOM3ru5",
+        "equipment_id": "IgWr4YwQpQnJ6iOM3ru5",
+        "name": "[238]10MN大型構造物性能評価システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5AG1JDL64qfK08MPIMYx::5AG1JDL64qfK08MPIMYx",
+        "doc_id": "5AG1JDL64qfK08MPIMYx",
+        "equipment_id": "5AG1JDL64qfK08MPIMYx",
+        "name": "[242]レーザー直線描画装置 一式〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "I1PqyIse4uEuB9csPFND::I1PqyIse4uEuB9csPFND",
+        "doc_id": "I1PqyIse4uEuB9csPFND",
+        "equipment_id": "I1PqyIse4uEuB9csPFND",
+        "name": "[248]住友 PECVD〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "mr9RViEt4S9X6H9mgrjM::mr9RViEt4S9X6H9mgrjM",
+        "doc_id": "mr9RViEt4S9X6H9mgrjM",
+        "equipment_id": "mr9RViEt4S9X6H9mgrjM",
+        "name": "[249]マスク露光システム装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Twspl7tlF3ZRr7ZL1qLx::Twspl7tlF3ZRr7ZL1qLx",
+        "doc_id": "Twspl7tlF3ZRr7ZL1qLx",
+        "equipment_id": "Twspl7tlF3ZRr7ZL1qLx",
+        "name": "[253]光洋サーモシステム(株)製 ランプアニールシステム〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6dpz8d6yNSdWsi2JtxgE::6dpz8d6yNSdWsi2JtxgE",
+        "doc_id": "6dpz8d6yNSdWsi2JtxgE",
+        "equipment_id": "6dpz8d6yNSdWsi2JtxgE",
+        "name": "[255]デジタル電動サーボプレス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "S2jEvc9Onh92e14lvAGo::S2jEvc9Onh92e14lvAGo",
+        "doc_id": "S2jEvc9Onh92e14lvAGo",
+        "equipment_id": "S2jEvc9Onh92e14lvAGo",
+        "name": "[256]イオンビームミリング装置 エンドポイント分析器仕様〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "hxW2dZLCGPmD1PdfEhfC::hxW2dZLCGPmD1PdfEhfC",
+        "doc_id": "hxW2dZLCGPmD1PdfEhfC",
+        "equipment_id": "hxW2dZLCGPmD1PdfEhfC",
+        "name": "[257]TEOS PECVD システム 一式〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "VGeBUmXK8wZEpZxYJLiW::VGeBUmXK8wZEpZxYJLiW",
+        "doc_id": "VGeBUmXK8wZEpZxYJLiW",
+        "equipment_id": "VGeBUmXK8wZEpZxYJLiW",
+        "name": "[260]光洋サーモシステム(株)製 横型システム 一式〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "0jXHxLPq5bwEj1SN8Tp5::0jXHxLPq5bwEj1SN8Tp5",
+        "doc_id": "0jXHxLPq5bwEj1SN8Tp5",
+        "equipment_id": "0jXHxLPq5bwEj1SN8Tp5",
+        "name": "[263]多入射角高速分光エリプソメータ―〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eXXKbviNknZ3UT0PsZB3::eXXKbviNknZ3UT0PsZB3",
+        "doc_id": "eXXKbviNknZ3UT0PsZB3",
+        "equipment_id": "eXXKbviNknZ3UT0PsZB3",
+        "name": "[264]高周波振動レーザー観察システム〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "DYMQ6FT947D8bZKwjU3h::DYMQ6FT947D8bZKwjU3h",
+        "doc_id": "DYMQ6FT947D8bZKwjU3h",
+        "equipment_id": "DYMQ6FT947D8bZKwjU3h",
+        "name": "[267]イオンビームミリング装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "R3qOc1fh6rsnteQKPNh6::R3qOc1fh6rsnteQKPNh6",
+        "doc_id": "R3qOc1fh6rsnteQKPNh6",
+        "equipment_id": "R3qOc1fh6rsnteQKPNh6",
+        "name": "[270]リアクティブイオンエッチング装置 一式〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "uTI8Zm9Zs16pjre5Psvg::uTI8Zm9Zs16pjre5Psvg",
+        "doc_id": "uTI8Zm9Zs16pjre5Psvg",
+        "equipment_id": "uTI8Zm9Zs16pjre5Psvg",
+        "name": "[271]レーザーラマン分光光度計システム〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XkP7wz1P3HruMcbuNz18::XkP7wz1P3HruMcbuNz18",
+        "doc_id": "XkP7wz1P3HruMcbuNz18",
+        "equipment_id": "XkP7wz1P3HruMcbuNz18",
+        "name": "[272]分光エリプソメータ〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "efsdcGfdPzXqzy8kh0ya::efsdcGfdPzXqzy8kh0ya",
+        "doc_id": "efsdcGfdPzXqzy8kh0ya",
+        "equipment_id": "efsdcGfdPzXqzy8kh0ya",
+        "name": "[273]2000kN圧縮試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "hAGk2WpVA4BlhPfGF165::hAGk2WpVA4BlhPfGF165",
+        "doc_id": "hAGk2WpVA4BlhPfGF165",
+        "equipment_id": "hAGk2WpVA4BlhPfGF165",
+        "name": "[278]芝浦 スパッタ装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "3SO8wmcLQArIa1M5efw4::3SO8wmcLQArIa1M5efw4",
+        "doc_id": "3SO8wmcLQArIa1M5efw4",
+        "equipment_id": "3SO8wmcLQArIa1M5efw4",
+        "name": "[282]全自動元素分析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "9pN570V3DRWM82YFdmd4::9pN570V3DRWM82YFdmd4",
+        "doc_id": "9pN570V3DRWM82YFdmd4",
+        "equipment_id": "9pN570V3DRWM82YFdmd4",
+        "name": "[284]イオン注入装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "o9J6tGibe8qFxqKeuxgi::o9J6tGibe8qFxqKeuxgi",
+        "doc_id": "o9J6tGibe8qFxqKeuxgi",
+        "equipment_id": "o9J6tGibe8qFxqKeuxgi",
+        "name": "[287]ドライエッチング装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nS6U5Z6S8PKdlr6KCvcp::nS6U5Z6S8PKdlr6KCvcp",
+        "doc_id": "nS6U5Z6S8PKdlr6KCvcp",
+        "equipment_id": "nS6U5Z6S8PKdlr6KCvcp",
+        "name": "[288]三次元動作分析装置 本体",
+        "papers_count": 0
+      },
+      {
+        "row_key": "tCOFx9v3UEqYTz53Ly5Y::tCOFx9v3UEqYTz53Ly5Y",
+        "doc_id": "tCOFx9v3UEqYTz53Ly5Y",
+        "equipment_id": "tCOFx9v3UEqYTz53Ly5Y",
+        "name": "[289]ニューロモジュレーションシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZKUh8BFNyOWdLNqv3Pq4::ZKUh8BFNyOWdLNqv3Pq4",
+        "doc_id": "ZKUh8BFNyOWdLNqv3Pq4",
+        "equipment_id": "ZKUh8BFNyOWdLNqv3Pq4",
+        "name": "[290]高精度エネルギー代謝測定システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JmC9ew2ThJomc3QuMF1e::JmC9ew2ThJomc3QuMF1e",
+        "doc_id": "JmC9ew2ThJomc3QuMF1e",
+        "equipment_id": "JmC9ew2ThJomc3QuMF1e",
+        "name": "[315]災害関連疾病病態オミックス解析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZeUiIzjBixX35AH3XTfo::ZeUiIzjBixX35AH3XTfo",
+        "doc_id": "ZeUiIzjBixX35AH3XTfo",
+        "equipment_id": "ZeUiIzjBixX35AH3XTfo",
+        "name": "[317]高精度・低消費電力地震波観測装置 一式",
+        "papers_count": 0
+      },
+      {
+        "row_key": "GORb3gpXyQCP0UeCjJ3b::GORb3gpXyQCP0UeCjJ3b",
+        "doc_id": "GORb3gpXyQCP0UeCjJ3b",
+        "equipment_id": "GORb3gpXyQCP0UeCjJ3b",
+        "name": "[318]細胞特異的災害ストレス解析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SQ1FHs30l2FhkAQpZV23::SQ1FHs30l2FhkAQpZV23",
+        "doc_id": "SQ1FHs30l2FhkAQpZV23",
+        "equipment_id": "SQ1FHs30l2FhkAQpZV23",
+        "name": "[333]レーザー加熱式熱衝撃疲労試験機〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OdZaJRqjs8e0LFsGodoP::OdZaJRqjs8e0LFsGodoP",
+        "doc_id": "OdZaJRqjs8e0LFsGodoP",
+        "equipment_id": "OdZaJRqjs8e0LFsGodoP",
+        "name": "[334]ダイナミック微小硬度計〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "maTvXkywWS0sBeFljfqH::maTvXkywWS0sBeFljfqH",
+        "doc_id": "maTvXkywWS0sBeFljfqH",
+        "equipment_id": "maTvXkywWS0sBeFljfqH",
+        "name": "[338]ベクトルマグネット回転システム〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oCnbWKXrh76yhtcpN1SZ::oCnbWKXrh76yhtcpN1SZ",
+        "doc_id": "oCnbWKXrh76yhtcpN1SZ",
+        "equipment_id": "oCnbWKXrh76yhtcpN1SZ",
+        "name": "[341]MOCVD装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "GcNviuyud9KEqNQx01mi::GcNviuyud9KEqNQx01mi",
+        "doc_id": "GcNviuyud9KEqNQx01mi",
+        "equipment_id": "GcNviuyud9KEqNQx01mi",
+        "name": "[343]サーフェイスプレナー〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Jc8IqCyVSu2OSe6OD6Gf::Jc8IqCyVSu2OSe6OD6Gf",
+        "doc_id": "Jc8IqCyVSu2OSe6OD6Gf",
+        "equipment_id": "Jc8IqCyVSu2OSe6OD6Gf",
+        "name": "[346]超音波顕微鏡〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "kT6AHEFXnMNsGvC221V2::kT6AHEFXnMNsGvC221V2",
+        "doc_id": "kT6AHEFXnMNsGvC221V2",
+        "equipment_id": "kT6AHEFXnMNsGvC221V2",
+        "name": "[347]ブラシスクラバ〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "kphJlipRCud2tMUgsiem::kphJlipRCud2tMUgsiem",
+        "doc_id": "kphJlipRCud2tMUgsiem",
+        "equipment_id": "kphJlipRCud2tMUgsiem",
+        "name": "[348]デジタル顕微鏡〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "mLGvo8dg0cmt12gzLpAW::mLGvo8dg0cmt12gzLpAW",
+        "doc_id": "mLGvo8dg0cmt12gzLpAW",
+        "equipment_id": "mLGvo8dg0cmt12gzLpAW",
+        "name": "[356]災害解析用計算機システム 一式",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eD4ukFp0AzE37R7Co5lc::eD4ukFp0AzE37R7Co5lc",
+        "doc_id": "eD4ukFp0AzE37R7Co5lc",
+        "equipment_id": "eD4ukFp0AzE37R7Co5lc",
+        "name": "[360]両面マスクアライナ〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "phthSV2tMR1qPbvgGOnD::phthSV2tMR1qPbvgGOnD",
+        "doc_id": "phthSV2tMR1qPbvgGOnD",
+        "equipment_id": "phthSV2tMR1qPbvgGOnD",
+        "name": "[361]多元材料原子層堆積（ALD）装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6tBr0SBFaTn6vPkqzJls::6tBr0SBFaTn6vPkqzJls",
+        "doc_id": "6tBr0SBFaTn6vPkqzJls",
+        "equipment_id": "6tBr0SBFaTn6vPkqzJls",
+        "name": "[364]芝浦スパッタ装置（冷却形）〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wtPWknCbmzxkDpBpCqNM::wtPWknCbmzxkDpBpCqNM",
+        "doc_id": "wtPWknCbmzxkDpBpCqNM",
+        "equipment_id": "wtPWknCbmzxkDpBpCqNM",
+        "name": "[368]マクロトライボロジー試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "VIyKYs0D5Rg3IW7x6F1v::VIyKYs0D5Rg3IW7x6F1v",
+        "doc_id": "VIyKYs0D5Rg3IW7x6F1v",
+        "equipment_id": "VIyKYs0D5Rg3IW7x6F1v",
+        "name": "[369]顕微赤外分光装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "w3kzjmvDN3vh0T5SXS5q::w3kzjmvDN3vh0T5SXS5q",
+        "doc_id": "w3kzjmvDN3vh0T5SXS5q",
+        "equipment_id": "w3kzjmvDN3vh0T5SXS5q",
+        "name": "[370]マイクロビッカース硬度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "yfQA3NOcflLJfBw53lUa::yfQA3NOcflLJfBw53lUa",
+        "doc_id": "yfQA3NOcflLJfBw53lUa",
+        "equipment_id": "yfQA3NOcflLJfBw53lUa",
+        "name": "[371]表面粗さ測定機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Wdo5yyRHWzsT7C9cfRUQ::Wdo5yyRHWzsT7C9cfRUQ",
+        "doc_id": "Wdo5yyRHWzsT7C9cfRUQ",
+        "equipment_id": "Wdo5yyRHWzsT7C9cfRUQ",
+        "name": "[373]ハイブリッドフーリエ変換質量分析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "idj15XAJIQ9luG9KJECX::idj15XAJIQ9luG9KJECX",
+        "doc_id": "idj15XAJIQ9luG9KJECX",
+        "equipment_id": "idj15XAJIQ9luG9KJECX",
+        "name": "[374]四重極-フーリエ変換質量分析装置①",
+        "papers_count": 0
+      },
+      {
+        "row_key": "4HbW0fjaoa9d48VA02Op::4HbW0fjaoa9d48VA02Op",
+        "doc_id": "4HbW0fjaoa9d48VA02Op",
+        "equipment_id": "4HbW0fjaoa9d48VA02Op",
+        "name": "[375]四重極-フーリエ変換質量分析装置②",
+        "papers_count": 0
+      },
+      {
+        "row_key": "K3zKDusxOjbW7z1P78Sf::K3zKDusxOjbW7z1P78Sf",
+        "doc_id": "K3zKDusxOjbW7z1P78Sf",
+        "equipment_id": "K3zKDusxOjbW7z1P78Sf",
+        "name": "[381]超伝導量子干渉型振動試料磁力計 1式",
+        "papers_count": 0
+      },
+      {
+        "row_key": "qnAN1QdriYwvkEDwiWBR::qnAN1QdriYwvkEDwiWBR",
+        "doc_id": "qnAN1QdriYwvkEDwiWBR",
+        "equipment_id": "qnAN1QdriYwvkEDwiWBR",
+        "name": "[382]高温度領域粉末微小磁化測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "kMwFkp5KkXdcGHbQ0L2X::kMwFkp5KkXdcGHbQ0L2X",
+        "doc_id": "kMwFkp5KkXdcGHbQ0L2X",
+        "equipment_id": "kMwFkp5KkXdcGHbQ0L2X",
+        "name": "[383]物理特性測定システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2vvBQlXjY4Jkc07vFHyk::2vvBQlXjY4Jkc07vFHyk",
+        "doc_id": "2vvBQlXjY4Jkc07vFHyk",
+        "equipment_id": "2vvBQlXjY4Jkc07vFHyk",
+        "name": "[389]SSP3000 スパッタ装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XHNNEJ5e988ovkN07YMK::XHNNEJ5e988ovkN07YMK",
+        "doc_id": "XHNNEJ5e988ovkN07YMK",
+        "equipment_id": "XHNNEJ5e988ovkN07YMK",
+        "name": "[400]バルク試料用磁気異方性トルク磁力計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "UaBEVSvVTGNJoglbrKMY::UaBEVSvVTGNJoglbrKMY",
+        "doc_id": "UaBEVSvVTGNJoglbrKMY",
+        "equipment_id": "UaBEVSvVTGNJoglbrKMY",
+        "name": "[406]超高周波透磁率測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5KYp3qdSkrF0QAKGck2y::5KYp3qdSkrF0QAKGck2y",
+        "doc_id": "5KYp3qdSkrF0QAKGck2y",
+        "equipment_id": "5KYp3qdSkrF0QAKGck2y",
+        "name": "[418]熱分析装置 一式",
+        "papers_count": 0
+      },
+      {
+        "row_key": "WVgqn1KhdHevbLWXCg5Q::WVgqn1KhdHevbLWXCg5Q",
+        "doc_id": "WVgqn1KhdHevbLWXCg5Q",
+        "equipment_id": "WVgqn1KhdHevbLWXCg5Q",
+        "name": "[420]エッチングチャンバー〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TXugVrw2lf0ZVQ178peE::TXugVrw2lf0ZVQ178peE",
+        "doc_id": "TXugVrw2lf0ZVQ178peE",
+        "equipment_id": "TXugVrw2lf0ZVQ178peE",
+        "name": "[421]リン酸槽〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "USy35wdB5VcvZI9raJig::USy35wdB5VcvZI9raJig",
+        "doc_id": "USy35wdB5VcvZI9raJig",
+        "equipment_id": "USy35wdB5VcvZI9raJig",
+        "name": "[422]イナートオーブン（シンター炉）〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OHB8ISEKkkWjt7nCgN8s::OHB8ISEKkkWjt7nCgN8s",
+        "doc_id": "OHB8ISEKkkWjt7nCgN8s",
+        "equipment_id": "OHB8ISEKkkWjt7nCgN8s",
+        "name": "[423]真空オーブン〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "NEzoFgFHMKOKCPKxGGeo::NEzoFgFHMKOKCPKxGGeo",
+        "doc_id": "NEzoFgFHMKOKCPKxGGeo",
+        "equipment_id": "NEzoFgFHMKOKCPKxGGeo",
+        "name": "[424]スピン乾燥機〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "HrcHbOG2FHpE5yMlKiOI::HrcHbOG2FHpE5yMlKiOI",
+        "doc_id": "HrcHbOG2FHpE5yMlKiOI",
+        "equipment_id": "HrcHbOG2FHpE5yMlKiOI",
+        "name": "[425]有機ドラフトチャンバー〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OnSwqMU8RPnb6cRLongO::OnSwqMU8RPnb6cRLongO",
+        "doc_id": "OnSwqMU8RPnb6cRLongO",
+        "equipment_id": "OnSwqMU8RPnb6cRLongO",
+        "name": "[426]4″スピン乾燥機〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "AIiwKO9KZmMQXnEiwZG1::AIiwKO9KZmMQXnEiwZG1",
+        "doc_id": "AIiwKO9KZmMQXnEiwZG1",
+        "equipment_id": "AIiwKO9KZmMQXnEiwZG1",
+        "name": "[427]6″スピン乾燥機〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nbUWf6U0mWUYS9s0sGSu::nbUWf6U0mWUYS9s0sGSu",
+        "doc_id": "nbUWf6U0mWUYS9s0sGSu",
+        "equipment_id": "nbUWf6U0mWUYS9s0sGSu",
+        "name": "[429]スピンコータ〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aTAah9IdOZHWBxIeHwx6::aTAah9IdOZHWBxIeHwx6",
+        "doc_id": "aTAah9IdOZHWBxIeHwx6",
+        "equipment_id": "aTAah9IdOZHWBxIeHwx6",
+        "name": "[430]クリーンオーブン〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oAiJsgeXsCWicZGg6VLb::oAiJsgeXsCWicZGg6VLb",
+        "doc_id": "oAiJsgeXsCWicZGg6VLb",
+        "equipment_id": "oAiJsgeXsCWicZGg6VLb",
+        "name": "[431]ポリイミドキュア炉〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "bsI1jtd6YZ4O05pZfTri::bsI1jtd6YZ4O05pZfTri",
+        "doc_id": "bsI1jtd6YZ4O05pZfTri",
+        "equipment_id": "bsI1jtd6YZ4O05pZfTri",
+        "name": "[434]現像ドラフト〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "yxlW35WoarZFpVrvR22k::yxlW35WoarZFpVrvR22k",
+        "doc_id": "yxlW35WoarZFpVrvR22k",
+        "equipment_id": "yxlW35WoarZFpVrvR22k",
+        "name": "[436]スピンコータ〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oLCdBEVR9QEnw8Sd2RFq::oLCdBEVR9QEnw8Sd2RFq",
+        "doc_id": "oLCdBEVR9QEnw8Sd2RFq",
+        "equipment_id": "oLCdBEVR9QEnw8Sd2RFq",
+        "name": "[437]スプレー現像装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "RPbHCy5uCmiU4krXiikW::RPbHCy5uCmiU4krXiikW",
+        "doc_id": "RPbHCy5uCmiU4krXiikW",
+        "equipment_id": "RPbHCy5uCmiU4krXiikW",
+        "name": "[438]レーザ描画装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "vjCSIg79NDaPf1dhqKCa::vjCSIg79NDaPf1dhqKCa",
+        "doc_id": "vjCSIg79NDaPf1dhqKCa",
+        "equipment_id": "vjCSIg79NDaPf1dhqKCa",
+        "name": "[439]球面露光装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7RTQRBzhEBjrnYUGMSiZ::7RTQRBzhEBjrnYUGMSiZ",
+        "doc_id": "7RTQRBzhEBjrnYUGMSiZ",
+        "equipment_id": "7RTQRBzhEBjrnYUGMSiZ",
+        "name": "[440]酸化炉（半導体用）〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MBulWVwfpC0KFqwXLkZV::MBulWVwfpC0KFqwXLkZV",
+        "doc_id": "MBulWVwfpC0KFqwXLkZV",
+        "equipment_id": "MBulWVwfpC0KFqwXLkZV",
+        "name": "[446]アニール炉〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gtNQt2gv5lrTOqf8rXx9::gtNQt2gv5lrTOqf8rXx9",
+        "doc_id": "gtNQt2gv5lrTOqf8rXx9",
+        "equipment_id": "gtNQt2gv5lrTOqf8rXx9",
+        "name": "[447]中電流イオン注入装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "r4LQC7YGXEPAarUAyyor::r4LQC7YGXEPAarUAyyor",
+        "doc_id": "r4LQC7YGXEPAarUAyyor",
+        "equipment_id": "r4LQC7YGXEPAarUAyyor",
+        "name": "[449]ランプアニール装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "usQ54NcUNK1enTKY39bD::usQ54NcUNK1enTKY39bD",
+        "doc_id": "usQ54NcUNK1enTKY39bD",
+        "equipment_id": "usQ54NcUNK1enTKY39bD",
+        "name": "[450]メタル拡散炉〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZX3I5VtfRXM6ioRNdaRG::ZX3I5VtfRXM6ioRNdaRG",
+        "doc_id": "ZX3I5VtfRXM6ioRNdaRG",
+        "equipment_id": "ZX3I5VtfRXM6ioRNdaRG",
+        "name": "[455]アネルバ スパッタ装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "a2N2nSOoY5MJMC7s1VrH::a2N2nSOoY5MJMC7s1VrH",
+        "doc_id": "a2N2nSOoY5MJMC7s1VrH",
+        "equipment_id": "a2N2nSOoY5MJMC7s1VrH",
+        "name": "[456]電子ビーム蒸着装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ST214YxmJ5RfZZrkF19W::ST214YxmJ5RfZZrkF19W",
+        "doc_id": "ST214YxmJ5RfZZrkF19W",
+        "equipment_id": "ST214YxmJ5RfZZrkF19W",
+        "name": "[457]ゾルゲル自動成膜装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7zHRduhnvgOqLxbyz8P8::7zHRduhnvgOqLxbyz8P8",
+        "doc_id": "7zHRduhnvgOqLxbyz8P8",
+        "equipment_id": "7zHRduhnvgOqLxbyz8P8",
+        "name": "[458]めっき装置〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "QXESX0TZZ4viJvRi3EhG::QXESX0TZZ4viJvRi3EhG",
+        "doc_id": "QXESX0TZZ4viJvRi3EhG",
+        "equipment_id": "QXESX0TZZ4viJvRi3EhG",
+        "name": "[459]JPEL PECVD〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "UEQntajdH7aqegAGlhjn::UEQntajdH7aqegAGlhjn",
+        "doc_id": "UEQntajdH7aqegAGlhjn",
+        "equipment_id": "UEQntajdH7aqegAGlhjn",
+        "name": "[460]住友 TEOS PECVD〔リンク〕",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Yo92Xq8m2rwigRube9bE::Yo92Xq8m2rwigRube9bE",
+        "doc_id": "Yo92Xq8m2rwigRube9bE",
+        "equipment_id": "Yo92Xq8m2rwigRube9bE",
+        "name": "[461]自動搬送 芝浦スパッタ装置〔リンク〕",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T06:19:23.038528+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:23.097146+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:23.734949+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:26.358867+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:28.909843+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:31.456905+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:34.117712+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:36.691325+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:39.285587+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:41.828544+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:44.318841+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:19:46.826804+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T06:20:20.060415+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

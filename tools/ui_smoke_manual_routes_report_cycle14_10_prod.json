@@ -1,0 +1,148 @@
+{
+  "url": "https://kikidoko.web.app/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-3604/10.1007%2Fs10029-025-03516-3",
+    "paper_space_hash": "#/paper/eqnet-3604/10.1007%2Fs10029-025-03516-3",
+    "beginner_enter_hash": "#/beginner/eqnet-3604",
+    "beginner_space_hash": "#/beginner/eqnet-3604"
+  },
+  "desktop_cases": [
+    {
+      "row_name": "\"小型環境試験機(SH241) \"",
+      "summary_len": 252,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 5,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3605/10.1111%2Faen.70036",
+      "beginner_hash": "#/beginner/eqnet-3605",
+      "paper_link_href": "https://doi.org/10.1111/aen.70036",
+      "case_no": 1
+    },
+    {
+      "row_name": "\"小型高温チャンバー(ST 110)\"",
+      "summary_len": 267,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 6,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3603/10.1007%2Fs10029-025-03516-3",
+      "beginner_hash": "#/beginner/eqnet-3603",
+      "paper_link_href": "https://doi.org/10.1007/s10029-025-03516-3",
+      "case_no": 2
+    },
+    {
+      "row_name": "\"小型高温チャンバー(ST 120)\"",
+      "summary_len": 265,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 6,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3604/10.1007%2Fs10029-025-03516-3",
+      "beginner_hash": "#/beginner/eqnet-3604",
+      "paper_link_href": "https://doi.org/10.1007/s10029-025-03516-3",
+      "case_no": 3
+    },
+    {
+      "row_name": "\"精密切断(FINECUT)\"",
+      "summary_len": 253,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 6,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3616/10.1590%2Fs1678-3921.pab2023.v58.03118",
+      "beginner_hash": "#/beginner/eqnet-3616",
+      "paper_link_href": "https://doi.org/10.1590/s1678-3921.pab2023.v58.03118",
+      "case_no": 4
+    },
+    {
+      "row_name": "(ARIM)10kV計測システム",
+      "summary_len": 316,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 6,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/TuboPNQzIgSF8xjg9JWi/10.1016%2Fj.epsr.2025.112070",
+      "beginner_hash": "#/beginner/TuboPNQzIgSF8xjg9JWi",
+      "paper_link_href": "https://doi.org/10.1016/j.epsr.2025.112070",
+      "case_no": 5
+    },
+    {
+      "row_name": "(ARIM)IRエミッション顕微鏡 THEMOS-1000",
+      "summary_len": 297,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 9,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/4iwAsYwkc0RrKXpxEoiP/10.1038%2Fs41598-025-32314-1",
+      "beginner_hash": "#/beginner/4iwAsYwkc0RrKXpxEoiP",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-32314-1",
+      "case_no": 6
+    },
+    {
+      "row_name": "(ARIM)[委託] FIB－SEM Helios Nanolab 600i",
+      "summary_len": 341,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 9,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/B9iIiFOdCcARZXssno7H/10.19139%2Fsoic-2310-5070-3032",
+      "beginner_hash": "#/beginner/B9iIiFOdCcARZXssno7H",
+      "paper_link_href": "https://doi.org/10.19139/soic-2310-5070-3032",
+      "case_no": 7
+    },
+    {
+      "row_name": "(ARIM)イオンミリング装置",
+      "summary_len": 298,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 11,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/WWLwJA9jk0TGNsNIJQJ9/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/WWLwJA9jk0TGNsNIJQJ9",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 8
+    },
+    {
+      "row_name": "(ARIM)インクジェットパターン生成装置",
+      "summary_len": 340,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 10,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/yhcts1QaREU60vCMOL7X/10.1016%2Fj.jeurceramsoc.2025.118089",
+      "beginner_hash": "#/beginner/yhcts1QaREU60vCMOL7X",
+      "paper_link_href": "https://doi.org/10.1016/j.jeurceramsoc.2025.118089",
+      "case_no": 9
+    },
+    {
+      "row_name": "(ARIM)ウェーハーダイシングマシン DAD322",
+      "summary_len": 267,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 13,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KuMXfMtAqaZr4ooiMuVf/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/KuMXfMtAqaZr4ooiMuVf",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 10
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

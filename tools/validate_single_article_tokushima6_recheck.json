@@ -1,0 +1,12 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-02T11:24:57.342565+00:00",
+  "doc_id": "TOKUSHIMA-6",
+  "equipment_id": "TOKUSHIMA-6",
+  "name": "3Dプリンタ",
+  "beginner_non_ws_chars": 1454,
+  "elapsed_sec": 183,
+  "issues": [
+    "invalid_beginner_min_chars"
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "generated_at": "2026-03-20T14:14:44.740492+00:00",
+  "batch_id": "BATCH-20260320-CYCLE0042-CANDIDATE100",
+  "doc_to_source": {
+    "Btdf28D2fmzC0u7EmD5h": {
+      "family": "single-crystal-xray-system",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "single-crystal-xray-system",
+      "name": "[068]多目的X線結晶構造解析システム"
+    },
+    "JkDR3WwXmcpgoZsKwiMz": {
+      "family": "ftir-microscope",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "ftir-microscope-eqnet-409",
+      "name": "顕微FT-IRスペクトル装置"
+    },
+    "eqnet-1317": {
+      "family": "slide-scanner",
+      "seed_file": "manual_cycle0017_family_articles.json",
+      "seed_key": "slide-scanner",
+      "name": "バーチャルスライド顕微鏡(Olympus・VS120)"
+    },
+    "eqnet-5104": {
+      "family": "liquid-chromatography",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "liquid-chromatography",
+      "name": "高速液体クロマトグラフィー(RI/UV-vis) 島津製作所 LC-20AD"
+    },
+    "eqnet-5133": {
+      "family": "fermenter",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fermenter",
+      "name": "ファーメンター (10L) ミツワフロンテック NBC-10000(10L) ➀"
+    },
+    "eqnet-3573": {
+      "family": "shape-measurement",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "shape-measurement",
+      "name": "超深度カラー 3D 形状測定顕微鏡(VK-9500,9510)"
+    },
+    "eqnet-567": {
+      "family": "solidstate-nmr-600",
+      "seed_file": "manual_cycle0017_family_articles.json",
+      "seed_key": "solidstate-nmr-600",
+      "name": "固体核磁気共鳴装置(Varian・600PS)"
+    },
+    "eqnet-72": {
+      "family": "esr-general",
+      "seed_file": "manual_cycle0022_family_articles.json",
+      "seed_key": "esr-general",
+      "name": "EMX 8/2.7 ESR装置(ブルカー)"
+    },
+    "eqnet-4097": {
+      "family": "thermal-imager",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "多波長画像解析装置 フリアーシステムズ(SC4000-YMR)"
+    },
+    "eqnet-4418": {
+      "family": "gcms",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "gcms-eqnet-3376",
+      "name": "GC-MS/MS Shimadzu TQ-8040NX/AOC-6000/TD-30R"
+    },
+    "eqnet-2634": {
+      "family": "ultracentrifuge",
+      "seed_file": "manual_cycle0017_family_articles.json",
+      "seed_key": "ultracentrifuge",
+      "name": "超遠心機(Beckman Coulter・Optima L-90K)"
+    },
+    "eqnet-2139": {
+      "family": "sequencer-abi3130",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "sequencer-abi3130",
+      "name": "DNAシーケンサー(アプライドバイオシステムス)"
+    },
+    "eqnet-1088": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡(BRUKER MultiMode8)"
+    },
+    "RKqr5dbl5tgK6McpKmEP": {
+      "family": "single-crystal-xray-system",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "single-crystal-xray-system",
+      "name": "[069]多目的X線結晶構造解析システム"
+    },
+    "PjJy4umKnc5A6Fwlb1Od": {
+      "family": "ftir-general",
+      "seed_file": "manual_cycle0021_family_articles.json",
+      "seed_key": "ftir",
+      "name": "高速応答FT-IR"
+    },
+    "eqnet-2438": {
+      "family": "fluorescence-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "ボックス型蛍光撮影装置 (オリンパス・FSX100)"
+    },
+    "eqnet-4491": {
+      "family": "fermenter",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fermenter",
+      "name": "ファーメンター (500m×8) Mitsuwa Frontech MBS 8x500mL"
+    },
+    "eqnet-2061": {
+      "family": "laser-source",
+      "seed_file": "manual_cycle0018_family_articles.json",
+      "seed_key": "uv-pulse-laser",
+      "name": "超短パルスレーザ発振機(LUMERA LASER GMBH・Hyper RAPID 1064)"
+    },
+    "eqnet-2766": {
+      "family": "nmr-500-jeol",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "nmr-500-jeol",
+      "name": "日本電子・JNM-ECA 500MHz"
+    },
+    "eqnet-5203": {
+      "family": "oxygen-analyzer",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "FLASH Smart 酸素分析装置 (Thermo Fisher Scientific)"
+    },
+    "eqnet-4935": {
+      "family": "lumino-imager",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "lumino-imager",
+      "name": "核酸撮影装置(1)(アトー株式会社 AE-6911CX)"
+    },
+    "eqnet-21": {
+      "family": "gcms",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "gcms-eqnet-3376",
+      "name": "GC型質量分析装置 (島津製作所・QP-2010型)"
+    },
+    "eqnet-1964": {
+      "family": "ultracentrifuge",
+      "seed_file": "manual_cycle0017_family_articles.json",
+      "seed_key": "ultracentrifuge",
+      "name": "超遠心機(分離用超遠心機) 日立CP80α"
+    },
+    "eqnet-2309": {
+      "family": "sequencer-fragment",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "sequencer-fragment-plate",
+      "name": "DNAシーケンサー(フラグメント)"
+    },
+    "eqnet-3382": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡(E-SWEEP)"
+    },
+    "2y022rpDZ8SFpcIn3312": {
+      "family": "laser-profiler-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "laser-profiler-microscope",
+      "name": "[096]3D測定レーザー顕微鏡"
+    },
+    "eqnet-4315": {
+      "family": "raman-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "raman-microscope",
+      "name": "3D顕微レーザーラマン分光システム 東京インスツルメンツ社 Nanofinder30 NF30-G2-AFM-NUV/VIS-SI01"
+    },
+    "eqnet-2027": {
+      "family": "advanced-fluorescence-imaging",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "マルチフォトンレーザー共焦点顕微鏡システム(ニコン・A1RMP)"
+    },
+    "eqnet-4489": {
+      "family": "fermenter",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fermenter",
+      "name": "ファーメンター(5L×4) Marubishi MDL500-5L(MDIAC-S5)"
+    },
+    "eqnet-3505": {
+      "family": "electrochem-analyzer",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "電気化学測定 (東陽テクニカ Solartron Analytical 1280C)"
+    },
+    "eqnet-346": {
+      "family": "nmr-400-solution",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "nmr-400-jeol",
+      "name": "核磁気共鳴スペクトル装置(バリアンINOVA400型)"
+    },
+    "eqnet-393": {
+      "family": "atomic-absorption",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "atomic-absorption",
+      "name": "HITACHI Z-5000 フレーム、フレームレス原子吸光装置"
+    },
+    "eqnet-4936": {
+      "family": "lumino-imager",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "lumino-imager",
+      "name": "核酸撮影装置(2)(アトー株式会社 AE-6911CX)"
+    },
+    "eqnet-4334": {
+      "family": "gcms",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "gcms-eqnet-3376",
+      "name": "HS対応ガスクロマトグラフ質量分析計(島津 GCMS-QP2010Ultra HS-20)"
+    },
+    "eqnet-5151": {
+      "family": "centrifuge",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "centrifuge",
+      "name": "遠心分離機 himac CT15E"
+    },
+    "eqnet-2312": {
+      "family": "sequencer-abi3500",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "sequencer-abi3500",
+      "name": "DNAシーケンサー3500"
+    },
+    "eqnet-3347": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡(SPM)E-sweep(日立ハイテクサイエンス(E-sweep) )"
+    },
+    "rR6CvaAlXMYrAyYtOksw": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "[1006]AFM"
+    },
+    "eqnet-1186": {
+      "family": "ftir-general",
+      "seed_file": "manual_cycle0021_family_articles.json",
+      "seed_key": "ftir",
+      "name": "フーリエ変換赤外分光光度計(日本分光製・FT/IR 6200、IRT-5000)"
+    },
+    "eqnet-1337": {
+      "family": "advanced-fluorescence-imaging",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "細胞イメージアナライザー(Thermo Fisher・VTI-HCS)"
+    },
+    "eqnet-5137": {
+      "family": "fermenter",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fermenter",
+      "name": "ファーメンター(濃縮装置付10L) ミツワフロンテック M0821(濃縮装置付10L)"
+    },
+    "eqnet-3715": {
+      "family": "mercury-analyzer",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "高性能液体試料中水銀測定装置(京都電子工業・MD-700B)"
+    },
+    "eqnet-2247": {
+      "family": "nmr-600-solution",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "nmr-600",
+      "name": "核磁気共鳴分光装置(Bruker Biospin AVANCE III 600)"
+    },
+    "eqnet-3389": {
+      "family": "icp-ms",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "online-elemental-ms",
+      "name": "ICP-MS(7700X)"
+    },
+    "eqnet-2219": {
+      "family": "thermal-imager",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "熱画像解析装置(ニコンサーマルビジョン LAIRD 3ASH)"
+    },
+    "eqnet-5015": {
+      "family": "icp-ms",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "online-elemental-ms",
+      "name": "ICP質量分析計(Thermo Fisher Scientific・ iCAP Q ICP-MS)"
+    },
+    "eqnet-5150": {
+      "family": "centrifuge",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "centrifuge",
+      "name": "遠心分離機 日立工機 CT6D"
+    },
+    "Li9vX5y5XBfaaxQlBZVt": {
+      "family": "dna-rna-quant",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "DNA・RNA定量装置"
+    },
+    "eqnet-851": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡(アサイラム Cypher)"
+    },
+    "MjEf7veUrzJJloz9S91H": {
+      "family": "xrf-general",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "xrf-general",
+      "name": "[1011]微小部蛍光X線分析装置"
+    },
+    "eqnet-4393": {
+      "family": "raman-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "raman-microscope",
+      "name": "レーザラマン分光光度計(日本分光・NRS-5500)"
+    },
+    "eqnet-1360": {
+      "family": "fluorescence-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "蛍光顕微鏡(Olympus・IX73)"
+    },
+    "eqnet-4425": {
+      "family": "incubator-shaker",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "incubator-shaker",
+      "name": "恒温培養振盪機 #1 Titech BR23FP MR"
+    },
+    "eqnet-2128": {
+      "family": "shape-measurement",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "shape-measurement",
+      "name": "高精度3次元測定レーザ顕微鏡(オリンパス LEXT OLS4000)"
+    },
+    "eqnet-2248": {
+      "family": "nmr-800-solution",
+      "seed_file": "manual_cycle0021_family_articles.json",
+      "seed_key": "nmr-800",
+      "name": "核磁気共鳴分光装置(Bruker Biospin AVANCE III 800)"
+    },
+    "eqnet-3873": {
+      "family": "icp-oes",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "icp-oes-eqnet-1005",
+      "name": "ICP発光分光分析装置 エスエスアイ・ナノテクノロジー株式会社:SPS3500"
+    },
+    "eqnet-4823": {
+      "family": "lumino-imager",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "lumino-imager",
+      "name": "発光イメージングシステム PerkinElmer SPBL-BM-T2"
+    },
+    "eqnet-4436": {
+      "family": "mass-spectrometry-general",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "mass-spectrometry-general",
+      "name": "LC-MS Waters e2695/QDa/PDA/RI/RF"
+    },
+    "eqnet-4602": {
+      "family": "centrifuge",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "centrifuge",
+      "name": "遠心分離機(KUBOTA 8900) KUBOTA(8900)"
+    },
+    "eqnet-3146-052bdc3b": {
+      "family": "dna-rna-quant",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "DNA・RNA定量装置 Q33217"
+    },
+    "eqnet-2125": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡(エスアイアイ・ナノテクノロジー NanoNavi2/E-Sweep)"
+    },
+    "SJgdbwSCb6Rh7FKjCtem": {
+      "family": "xrf-general",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "xrf-general",
+      "name": "[1018]蛍光X線分析装置(XRF)"
+    },
+    "eqnet-3808": {
+      "family": "raman-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "raman-microscope",
+      "name": "レーザーラマン分光光度計 (JASCO・NRS-4500)"
+    },
+    "eqnet-3614": {
+      "family": "image-analysis-software",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "image-analysis-software",
+      "name": "\"デジタルマイクロスコープ(VHX-600)\""
+    },
+    "eqnet-4426": {
+      "family": "incubator-shaker",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "incubator-shaker",
+      "name": "恒温培養振盪機 #2 Titech BR23FP MR"
+    },
+    "iMaZVEAk4W8QmimQ3thi": {
+      "family": "fluorescence-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "PRECISION ION POLISHING SYSTEM"
+    },
+    "eqnet-2995": {
+      "family": "fluorescence-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "核磁気共鳴分光計(ブルカ― AVANCE III HD400)"
+    },
+    "eqnet-2168": {
+      "family": "icp-oes",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "icp-oes-eqnet-1005",
+      "name": "ICP発光分光分析装置 卓上型 (パーキンエルマー・OPTIMA4300DV CYCRON )"
+    },
+    "eqnet-3150": {
+      "family": "image-analysis-software",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "image-analysis-software",
+      "name": "顕微鏡画像解析装置 (Oxford Instruments, Imaris 9.3)"
+    },
+    "eqnet-4435": {
+      "family": "orbitrap-ms",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "orbitrap-ms",
+      "name": "LC-MS/MS Thermo Fisher Orbitrap Exploris 120"
+    },
+    "eqnet-4601": {
+      "family": "centrifuge",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "centrifuge",
+      "name": "遠心分離機(himac CF7D2) himac(CF7D2)"
+    },
+    "eqnet-313": {
+      "family": "sequencer-abi3130",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "sequencer-abi3130",
+      "name": "DNA塩基配列解析装置(Applied Biosystems・ABI Prism 3100-Avant Genetic Analyzer)"
+    },
+    "eqnet-2568": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡システム"
+    },
+    "17Z4ydqRJK2Xt3ht83jC": {
+      "family": "solidstate-nmr-400wb",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "solidstate-nmr-400wb",
+      "name": "[1041]ﾅﾉｲｵﾝﾀﾞｲﾅﾐｸｽ AV400WB"
+    },
+    "eqnet-1185": {
+      "family": "digital-polarimeter",
+      "seed_file": "manual_cycle0021_family_articles.json",
+      "seed_key": "digital-polarimeter",
+      "name": "旋光計(日本分光製・P-2200)"
+    },
+    "eqnet-728": {
+      "family": "advanced-fluorescence-imaging",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "(霞)共焦点レーザー顕微鏡 (1)(オリンパス・FV1000-D)"
+    },
+    "eqnet-5304": {
+      "family": "incubator-shaker",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "incubator-shaker",
+      "name": "恒温培養振盪機 #4 Titech M・BR-032P"
+    },
+    "n6vRkclV9tLV0RNO0TRp": {
+      "family": "ultrasonic-disc-cutter",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "ULTRASONIC DISC CUTTER"
+    },
+    "eqnet-2607": {
+      "family": "nmr-600-solution",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "nmr-600",
+      "name": "核磁気共鳴装置"
+    },
+    "eqnet-5241": {
+      "family": "icp-oes",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "icp-oes-eqnet-1005",
+      "name": "ICP発光分光分析装置(ICP-OES)(Agilent 5800 ICP-OES)"
+    },
+    "eqnet-3747": {
+      "family": "lumino-imager",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "lumino-imager",
+      "name": "高感度イメージングシステム バイオラッドChemiDocMP"
+    },
+    "eqnet-5084": {
+      "family": "orbitrap-ms",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "orbitrap-ms",
+      "name": "LC-四重極/電場型FT-MS(Thermo Fisher・Orbitrap Exploris 120)"
+    },
+    "eqnet-4420": {
+      "family": "centrifugal-concentrator",
+      "seed_file": "manual_cycle0018_family_articles.json",
+      "seed_key": "centrifugal-concentrator",
+      "name": "遠心濃縮機 Titech VC-96N"
+    },
+    "eqnet-2343": {
+      "family": "gene-mapper",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "image-analysis-software",
+      "name": "DNA多形解析ソフト ジーンマッパー"
+    },
+    "eqnet-4121": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡システム 日立ハイテクサイエンス(エスアイアイ・ナノテクノロジー)(NanoNaviReal)"
+    },
+    "mtjHhZvd08ZeWQIP1BBs": {
+      "family": "tractor",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "[1058]トラクター MF165-3(60PS)"
+    },
+    "eqnet-626": {
+      "family": "ftir-general",
+      "seed_file": "manual_cycle0021_family_articles.json",
+      "seed_key": "ftir",
+      "name": "紫外可視赤外分光光度計(日本分光・V-670+ARMN-735 )"
+    },
+    "Qi3wB3OZw9L9yTJ1fynB": {
+      "family": "advanced-fluorescence-imaging",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "3D-SIM超解像度イメージングシステム(故障中) (ライカ DeltaVision OMX)"
+    },
+    "eqnet-2339": {
+      "family": "incubator-shaker",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "incubator-shaker",
+      "name": "振とう培養器 TA-20R-FF"
+    },
+    "eqnet-4670": {
+      "family": "topography-neuroscan",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "トポグラフィ装置(Neuroscan)"
+    },
+    "eqnet-943": {
+      "family": "nmr-400-bruker",
+      "seed_file": "manual_cycle0020_family_articles.json",
+      "seed_key": "nmr-400-bruker",
+      "name": "核磁気共鳴装置 (Bruker biospin・AVANCE II 400B型)"
+    },
+    "eqnet-2777": {
+      "family": "icp-oes",
+      "seed_file": "manual_cycle0041_family_articles.json",
+      "seed_key": "icp-oes-eqnet-1005",
+      "name": "ICP発光分光分析装置(PerkinElmer・Avio 500)"
+    },
+    "UgLBYoGNAayZIy5ogk3d": {
+      "family": "lumino-imager",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "lumino-imager",
+      "name": "ChemiDoc Touch MP イメージングシステム"
+    },
+    "eqnet-2810": {
+      "family": "maldi-ms",
+      "seed_file": "manual_cycle0017_family_articles.json",
+      "seed_key": "maldi-ms",
+      "name": "NR-505:MALDI専用飛行時間型質量分析計(Bruker autoflex II)"
+    },
+    "eqnet-4768": {
+      "family": "centrifuge",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "centrifuge",
+      "name": "高速遠心機 Beckman Avanti J-26S XP Beckman Coulter(Avanti J-26S XP)"
+    },
+    "eqnet-5025": {
+      "family": "electroporation",
+      "seed_file": "manual_cycle0018_family_articles.json",
+      "seed_key": "gene-delivery-electroporation",
+      "name": "Electroporation装置 (ネッパジーン NEPA21)"
+    },
+    "eqnet-2212": {
+      "family": "probe-microscope",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "probe-microscope",
+      "name": "走査型プローブ顕微鏡システム(日立ハイテクサイエンス AFM5400L, AFM5300E)"
+    },
+    "ij0YPner8yx6FAyCjZwU": {
+      "family": "tractor",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "[1060]トラクター MF265(66PS)"
+    },
+    "eqnet-1379": {
+      "family": "dna-rna-quant",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "蛍光分光計(Life Technology、Qbit2.0)"
+    },
+    "eqnet-2500": {
+      "family": "advanced-fluorescence-imaging",
+      "seed_file": "manual_cycle0040_family_articles.json",
+      "seed_key": "fluorescence-microscope",
+      "name": "インキュベータ蛍光顕微鏡"
+    }
+  }
+}

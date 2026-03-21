@@ -1,0 +1,167 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0007-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T10:30:15.411132+00:00",
+  "updated_at": "2026-03-07T10:44:41.456774+00:00",
+  "closed_at": "2026-03-07T10:44:41.456774+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0007_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0007-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "3ae789967a2f72f7a28dea431a818a3c49588e4fd53a782348d22f1949cdc993",
+    "queue_sha256_at_start": "55e80415c539e80dc33a37a0b25ac38ba5080df41eb9ae0966550eef9721c055",
+    "queue_row_keys_sha256": "6fa8fa904d42718247c2beacb8e3690e6ffc2754b389ec5b7ab99f8e2e2b6801"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "n8KsCALgOq9rNk6K1yah::KUMAMOTO-list3f-08",
+      "iN4iv68nHnLH63Rbw2tD::KUMAMOTO-list3f-05",
+      "SvQRc4JuKTgLcTu1rsJh::KUMAMOTO-list3f-07",
+      "gr3Vcqj6vgJw9QXBkJHH::KUMAMOTO-list3f-01",
+      "KUMAMOTO-list3f-08::KUMAMOTO-list3f-08",
+      "KUMAMOTO-list3f-04::KUMAMOTO-list3f-04",
+      "KUMAMOTO-list3f-03::KUMAMOTO-list3f-03",
+      "KUMAMOTO-list3f-06::KUMAMOTO-list3f-06",
+      "KUMAMOTO-list3f-02::KUMAMOTO-list3f-02",
+      "KUMAMOTO-list3f-05::KUMAMOTO-list3f-05"
+    ],
+    "target_rows": [
+      {
+        "row_key": "n8KsCALgOq9rNk6K1yah::KUMAMOTO-list3f-08",
+        "doc_id": "n8KsCALgOq9rNk6K1yah",
+        "equipment_id": "KUMAMOTO-list3f-08",
+        "name": "ユニバーサルズーム顕微鏡 株式会社ニコンインステック MULTIZOOM AZ100",
+        "papers_count": 0
+      },
+      {
+        "row_key": "iN4iv68nHnLH63Rbw2tD::KUMAMOTO-list3f-05",
+        "doc_id": "iN4iv68nHnLH63Rbw2tD",
+        "equipment_id": "KUMAMOTO-list3f-05",
+        "name": "精密切断機 ビューラー アイソメット",
+        "papers_count": 1
+      },
+      {
+        "row_key": "SvQRc4JuKTgLcTu1rsJh::KUMAMOTO-list3f-07",
+        "doc_id": "SvQRc4JuKTgLcTu1rsJh",
+        "equipment_id": "KUMAMOTO-list3f-07",
+        "name": "金スパッタリング・カーボン蒸着装置 株式会社日立ハイテクノロジーズ E-1010",
+        "papers_count": 1
+      },
+      {
+        "row_key": "gr3Vcqj6vgJw9QXBkJHH::KUMAMOTO-list3f-01",
+        "doc_id": "gr3Vcqj6vgJw9QXBkJHH",
+        "equipment_id": "KUMAMOTO-list3f-01",
+        "name": "電子線マイクロアナライザ 株式会社島津製作所 EPMA-1720H",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-08::KUMAMOTO-list3f-08",
+        "doc_id": "KUMAMOTO-list3f-08",
+        "equipment_id": "KUMAMOTO-list3f-08",
+        "name": "ユニバーサルズーム顕微鏡 株式会社ニコンインステック MULTIZOOM AZ100",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-04::KUMAMOTO-list3f-04",
+        "doc_id": "KUMAMOTO-list3f-04",
+        "equipment_id": "KUMAMOTO-list3f-04",
+        "name": "自動研磨装置 ビューラー メタザーブ250 + ベクトルLC250",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-03::KUMAMOTO-list3f-03",
+        "doc_id": "KUMAMOTO-list3f-03",
+        "equipment_id": "KUMAMOTO-list3f-03",
+        "name": "実体顕微鏡 ライカマイクロシステムズ M205C",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-06::KUMAMOTO-list3f-06",
+        "doc_id": "KUMAMOTO-list3f-06",
+        "equipment_id": "KUMAMOTO-list3f-06",
+        "name": "プラズマクリーナー YHS-R",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-02::KUMAMOTO-list3f-02",
+        "doc_id": "KUMAMOTO-list3f-02",
+        "equipment_id": "KUMAMOTO-list3f-02",
+        "name": "断面イオンミリング 株式会社日立ハイテクノロジーズ E-3500",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-05::KUMAMOTO-list3f-05",
+        "doc_id": "KUMAMOTO-list3f-05",
+        "equipment_id": "KUMAMOTO-list3f-05",
+        "name": "精密切断機 ビューラー アイソメット",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 4,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T10:30:15.411132+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-07T10:30:15.569149+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T10:30:47.713218+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T10:33:28.715998+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T10:35:48.658311+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T10:44:41.456774+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 4,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

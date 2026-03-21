@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-112",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T10:51:36.529896+00:00",
+  "updated_at": "2026-03-01T10:52:33.615408+00:00",
+  "closed_at": "2026-03-01T10:52:33.615408+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch112.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-112.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "ab048da3633ec85916a0273fd7d4ff1b16efd67780c8f753edb17acedb254f56",
+    "queue_sha256_at_start": "b7e072133e8574d6678a1b5f17c6cf5e50699b3f4000534a56ba2b7c9c524cd1",
+    "queue_row_keys_sha256": "c39227eb66ae77320985d5330dcac37e2b1a23edd1d1144239abab5f0bf5f4db"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "eqnet-2059::eqnet-2059",
+      "eqnet-3876::eqnet-3876",
+      "eqnet-1673::eqnet-1673",
+      "eqnet-1674::eqnet-1674",
+      "eqnet-1708::eqnet-1708",
+      "eqnet-1709::eqnet-1709",
+      "eqnet-1710::eqnet-1710",
+      "eqnet-4389::eqnet-4389",
+      "eqnet-3534::eqnet-3534",
+      "eqnet-870::eqnet-870",
+      "eqnet-5216::eqnet-5216",
+      "eqnet-4103::eqnet-4103",
+      "eqnet-5217::eqnet-5217",
+      "eqnet-5014::eqnet-5014",
+      "eqnet-1724::eqnet-1724",
+      "eqnet-5305::eqnet-5305",
+      "eqnet-3725::eqnet-3725",
+      "eqnet-4091::eqnet-4091",
+      "eqnet-4614::eqnet-4614",
+      "eqnet-2080::eqnet-2080",
+      "eqnet-5048::eqnet-5048",
+      "eqnet-5354::eqnet-5354",
+      "eqnet-5218::eqnet-5218",
+      "eqnet-3066::eqnet-3066",
+      "eqnet-2141::eqnet-2141",
+      "MnnY2QpPyKj5HsbHZAqS::MnnY2QpPyKj5HsbHZAqS",
+      "SaYjWnVjCSNH7MG0ZCTI::SaYjWnVjCSNH7MG0ZCTI",
+      "eqnet-5057::eqnet-5057",
+      "eqnet-5045::eqnet-5045",
+      "eqnet-2142::eqnet-2142",
+      "eqnet-2060::eqnet-2060",
+      "eqnet-4092::eqnet-4092",
+      "eqnet-2052::eqnet-2052",
+      "eqnet-4388::eqnet-4388",
+      "fpYQlHfFKY5x5lmMwPza::fpYQlHfFKY5x5lmMwPza",
+      "eqnet-681::eqnet-681",
+      "wBpW4Hg21CKBmzRemKYB::wBpW4Hg21CKBmzRemKYB",
+      "eqnet-3400::eqnet-3400",
+      "eqnet-2262::eqnet-2262",
+      "eqnet-2169::eqnet-2169",
+      "yySF4cumwPJG0hYrHBBo::yySF4cumwPJG0hYrHBBo",
+      "eqnet-2482::eqnet-2482",
+      "eqnet-2993::eqnet-2993",
+      "eqnet-2768::eqnet-2768",
+      "JpEV6NFZoaJ7yOv3XOfu::JpEV6NFZoaJ7yOv3XOfu",
+      "NxbvF4pOev5AcBnv2MPM::NxbvF4pOev5AcBnv2MPM",
+      "eqnet-2062::eqnet-2062",
+      "eqnet-3022::eqnet-3022",
+      "eqnet-4245::eqnet-4245",
+      "eqnet-5016::eqnet-5016",
+      "eqnet-3732::eqnet-3732",
+      "Xs6QklmXrWZrk4NMjxLr::Xs6QklmXrWZrk4NMjxLr",
+      "eqnet-2736::eqnet-2736",
+      "KDAkp6UfdnH10hAMkH5R::KDAkp6UfdnH10hAMkH5R",
+      "eqnet-2290::eqnet-2290",
+      "eqnet-3729::eqnet-3729",
+      "eqnet-4246::eqnet-4246",
+      "eqnet-2612::eqnet-2612",
+      "eqnet-2788::eqnet-2788",
+      "eqnet-4284::eqnet-4284",
+      "eqnet-1049::eqnet-1049",
+      "eqnet-2473::eqnet-2473",
+      "eqnet-4822::eqnet-4822",
+      "eqnet-1668::eqnet-1668",
+      "eqnet-1667::eqnet-1667",
+      "eqnet-2723::eqnet-2723",
+      "FkSkSrXwDSUJQynjuX9j::FkSkSrXwDSUJQynjuX9j",
+      "eqnet-3401::eqnet-3401",
+      "eqnet-1719::eqnet-1719",
+      "eqnet-3891::eqnet-3891",
+      "TOKUSHIMA-49::TOKUSHIMA-49",
+      "TOKUSHIMA-43::TOKUSHIMA-43",
+      "TOKUSHIMA-44::TOKUSHIMA-44",
+      "VgieZqLPaKuxwhBKGS0H::VgieZqLPaKuxwhBKGS0H",
+      "TOKUSHIMA-46::TOKUSHIMA-46",
+      "TOKUSHIMA-73::TOKUSHIMA-73",
+      "TOKUSHIMA-74::TOKUSHIMA-74",
+      "TOKUSHIMA-10::TOKUSHIMA-10",
+      "mQ8l8tPbTkWv54xRvoDb::mQ8l8tPbTkWv54xRvoDb",
+      "TOKUSHIMA-47::TOKUSHIMA-47",
+      "TOKUSHIMA-9::TOKUSHIMA-9",
+      "zRhp6yrjVvqiIG4Ktfuj::zRhp6yrjVvqiIG4Ktfuj",
+      "TOKUSHIMA-41::TOKUSHIMA-41",
+      "TOKUSHIMA-35::TOKUSHIMA-35",
+      "TOKUSHIMA-38::TOKUSHIMA-38",
+      "TOKUSHIMA-37::TOKUSHIMA-37",
+      "TOKUSHIMA-42::TOKUSHIMA-42",
+      "TOKUSHIMA-39::TOKUSHIMA-39",
+      "TOKUSHIMA-7::TOKUSHIMA-7",
+      "wGCEDoSCJrJJWYDRbw0n::wGCEDoSCJrJJWYDRbw0n",
+      "TOKUSHIMA-48::TOKUSHIMA-48",
+      "TOKUSHIMA-45::TOKUSHIMA-45",
+      "szo761OSaKRbec8uNuMo::szo761OSaKRbec8uNuMo",
+      "TOKUSHIMA-36::TOKUSHIMA-36",
+      "uDy5A14aQX2Os3ji1u3J::uDy5A14aQX2Os3ji1u3J",
+      "TOKUSHIMA-50::TOKUSHIMA-50",
+      "jd1F4wFSipZxQeMrgO7a::jd1F4wFSipZxQeMrgO7a",
+      "YAMANASHI-DEKTAK-DEKTAK150::YAMANASHI-DEKTAK-DEKTAK150",
+      "qsjhYtVrfcpGhaUzqCqC::qsjhYtVrfcpGhaUzqCqC",
+      "YAMANASHI-SPM-DIMENSION-ICON::YAMANASHI-SPM-DIMENSION-ICON"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-2059::eqnet-2059",
+        "doc_id": "eqnet-2059",
+        "equipment_id": "eqnet-2059",
+        "name": "クリーンドラフト(オリエンタル技研工業(株))",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3876::eqnet-3876",
+        "doc_id": "eqnet-3876",
+        "equipment_id": "eqnet-3876",
+        "name": "クリーンルーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1673::eqnet-1673",
+        "doc_id": "eqnet-1673",
+        "equipment_id": "eqnet-1673",
+        "name": "サル一時飼育室 ((株)島津理化製 NCSR 2列×1段 外)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1674::eqnet-1674",
+        "doc_id": "eqnet-1674",
+        "equipment_id": "eqnet-1674",
+        "name": "サル用乾燥室 ((株)ワカイダ・エンジニアリング製 WINDY2000 外)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1708::eqnet-1708",
+        "doc_id": "eqnet-1708",
+        "equipment_id": "eqnet-1708",
+        "name": "シームレス地球・惑星物質観察分析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1709::eqnet-1709",
+        "doc_id": "eqnet-1709",
+        "equipment_id": "eqnet-1709",
+        "name": "シームレス地球・惑星物質観察分析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1710::eqnet-1710",
+        "doc_id": "eqnet-1710",
+        "equipment_id": "eqnet-1710",
+        "name": "シームレス地球・惑星物質観察分析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4389::eqnet-4389",
+        "doc_id": "eqnet-4389",
+        "equipment_id": "eqnet-4389",
+        "name": "シールドルーム(リケン環境システム)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3534::eqnet-3534",
+        "doc_id": "eqnet-3534",
+        "equipment_id": "eqnet-3534",
+        "name": "バイオハザード対策用キャビネット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-870::eqnet-870",
+        "doc_id": "eqnet-870",
+        "equipment_id": "eqnet-870",
+        "name": "バイオリソース研究施設",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5216::eqnet-5216",
+        "doc_id": "eqnet-5216",
+        "equipment_id": "eqnet-5216",
+        "name": "マウスの行動テストバッテリー 小原医科産業",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4103::eqnet-4103",
+        "doc_id": "eqnet-4103",
+        "equipment_id": "eqnet-4103",
+        "name": "マウス・ラット自動飼育装置システム(KIS-160WTU)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5217::eqnet-5217",
+        "doc_id": "eqnet-5217",
+        "equipment_id": "eqnet-5217",
+        "name": "マウス行動解析システム 室町機械",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5014::eqnet-5014",
+        "doc_id": "eqnet-5014",
+        "equipment_id": "eqnet-5014",
+        "name": "個別換気ケージシステム(テクニプラスト BOX100SFPT)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1724::eqnet-1724",
+        "doc_id": "eqnet-1724",
+        "equipment_id": "eqnet-1724",
+        "name": "地球惑星物質濃度測定システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5305::eqnet-5305",
+        "doc_id": "eqnet-5305",
+        "equipment_id": "eqnet-5305",
+        "name": "小型低騒音風洞 三菱重工業",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3725::eqnet-3725",
+        "doc_id": "eqnet-3725",
+        "equipment_id": "eqnet-3725",
+        "name": "液体窒素製造装置(ULVAC, EMP-14A)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4091::eqnet-4091",
+        "doc_id": "eqnet-4091",
+        "equipment_id": "eqnet-4091",
+        "name": "無響室 日本音響エンジニアリング",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4614::eqnet-4614",
+        "doc_id": "eqnet-4614",
+        "equipment_id": "eqnet-4614",
+        "name": "特型エアロゾルチャンバー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2080::eqnet-2080",
+        "doc_id": "eqnet-2080",
+        "equipment_id": "eqnet-2080",
+        "name": "発生工学実験システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5048::eqnet-5048",
+        "doc_id": "eqnet-5048",
+        "equipment_id": "eqnet-5048",
+        "name": "研磨機 マイクログラインダーMG4000(EXAKT)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5354::eqnet-5354",
+        "doc_id": "eqnet-5354",
+        "equipment_id": "eqnet-5354",
+        "name": "細胞培養実験室",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5218::eqnet-5218",
+        "doc_id": "eqnet-5218",
+        "equipment_id": "eqnet-5218",
+        "name": "脳定位固定装置及び注入装置 室町機械",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3066::eqnet-3066",
+        "doc_id": "eqnet-3066",
+        "equipment_id": "eqnet-3066",
+        "name": "蒸留水 GlassStill8型",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2141::eqnet-2141",
+        "doc_id": "eqnet-2141",
+        "equipment_id": "eqnet-2141",
+        "name": "蒸留水製造装置(アドバンテック東洋 RFD240NA)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MnnY2QpPyKj5HsbHZAqS::MnnY2QpPyKj5HsbHZAqS",
+        "doc_id": "MnnY2QpPyKj5HsbHZAqS",
+        "equipment_id": "MnnY2QpPyKj5HsbHZAqS",
+        "name": "製氷機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SaYjWnVjCSNH7MG0ZCTI::SaYjWnVjCSNH7MG0ZCTI",
+        "doc_id": "SaYjWnVjCSNH7MG0ZCTI",
+        "equipment_id": "SaYjWnVjCSNH7MG0ZCTI",
+        "name": "試料調製システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5057::eqnet-5057",
+        "doc_id": "eqnet-5057",
+        "equipment_id": "eqnet-5057",
+        "name": "超低温槽 ULT-1790-5(朝日ライフサイエンス)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5045::eqnet-5045",
+        "doc_id": "eqnet-5045",
+        "equipment_id": "eqnet-5045",
+        "name": "超低温槽 ULT-390(REVCO/朝日ライフサイエンス)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2142::eqnet-2142",
+        "doc_id": "eqnet-2142",
+        "equipment_id": "eqnet-2142",
+        "name": "超純水製造装置(アドバンテック東洋 RFU685DA)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2060::eqnet-2060",
+        "doc_id": "eqnet-2060",
+        "equipment_id": "eqnet-2060",
+        "name": "超純水製造装置(小松電子(株)・うるぴゅあ KE0126)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4092::eqnet-4092",
+        "doc_id": "eqnet-4092",
+        "equipment_id": "eqnet-4092",
+        "name": "防音シールド室 日本音響エンジニアリング",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2052::eqnet-2052",
+        "doc_id": "eqnet-2052",
+        "equipment_id": "eqnet-2052",
+        "name": "隔離安全性試験設備(特注)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4388::eqnet-4388",
+        "doc_id": "eqnet-4388",
+        "equipment_id": "eqnet-4388",
+        "name": "電波暗室(リケン環境システム・5面電波暗室)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "fpYQlHfFKY5x5lmMwPza::fpYQlHfFKY5x5lmMwPza",
+        "doc_id": "fpYQlHfFKY5x5lmMwPza",
+        "equipment_id": "fpYQlHfFKY5x5lmMwPza",
+        "name": "電波望遠鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-681::eqnet-681",
+        "doc_id": "eqnet-681",
+        "equipment_id": "eqnet-681",
+        "name": "3次元表面構造解析装置(Zygo・NewView ・7300)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wBpW4Hg21CKBmzRemKYB::wBpW4Hg21CKBmzRemKYB",
+        "doc_id": "wBpW4Hg21CKBmzRemKYB",
+        "equipment_id": "wBpW4Hg21CKBmzRemKYB",
+        "name": "[650]感圧塗料計測システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3400::eqnet-3400",
+        "doc_id": "eqnet-3400",
+        "equipment_id": "eqnet-3400",
+        "name": "γ線測定装置(LEPS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2262::eqnet-2262",
+        "doc_id": "eqnet-2262",
+        "equipment_id": "eqnet-2262",
+        "name": "アルミブロック高水槽(CTU-N)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2169::eqnet-2169",
+        "doc_id": "eqnet-2169",
+        "equipment_id": "eqnet-2169",
+        "name": "ガンマ線スペクトル分析装置(仁木工芸・GWL120-15)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "yySF4cumwPJG0hYrHBBo::yySF4cumwPJG0hYrHBBo",
+        "doc_id": "yySF4cumwPJG0hYrHBBo",
+        "equipment_id": "yySF4cumwPJG0hYrHBBo",
+        "name": "ガンマ線照射装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2482::eqnet-2482",
+        "doc_id": "eqnet-2482",
+        "equipment_id": "eqnet-2482",
+        "name": "タンパク質スポット切り出し装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2993::eqnet-2993",
+        "doc_id": "eqnet-2993",
+        "equipment_id": "eqnet-2993",
+        "name": "テンシロン万能試験機(エー・アンド・デイ製 RTF-1350)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2768::eqnet-2768",
+        "doc_id": "eqnet-2768",
+        "equipment_id": "eqnet-2768",
+        "name": "トランスバレストレイン試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JpEV6NFZoaJ7yOv3XOfu::JpEV6NFZoaJ7yOv3XOfu",
+        "doc_id": "JpEV6NFZoaJ7yOv3XOfu",
+        "equipment_id": "JpEV6NFZoaJ7yOv3XOfu",
+        "name": "ナノインデンター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "NxbvF4pOev5AcBnv2MPM::NxbvF4pOev5AcBnv2MPM",
+        "doc_id": "NxbvF4pOev5AcBnv2MPM",
+        "equipment_id": "NxbvF4pOev5AcBnv2MPM",
+        "name": "パワーサプライ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2062::eqnet-2062",
+        "doc_id": "eqnet-2062",
+        "equipment_id": "eqnet-2062",
+        "name": "ビームプロファイラー(特注(コヒレントジャパン(株) 他)・特注)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3022::eqnet-3022",
+        "doc_id": "eqnet-3022",
+        "equipment_id": "eqnet-3022",
+        "name": "ペンタピクノメーター(Quantachrome・PPYC-KU)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4245::eqnet-4245",
+        "doc_id": "eqnet-4245",
+        "equipment_id": "eqnet-4245",
+        "name": "ボール・オン・リング型 摩擦試験機 Phenix Tripology(TE54)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5016::eqnet-5016",
+        "doc_id": "eqnet-5016",
+        "equipment_id": "eqnet-5016",
+        "name": "ワンショット型非接触3次元測定解析装置キーエンスVR6200",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3732::eqnet-3732",
+        "doc_id": "eqnet-3732",
+        "equipment_id": "eqnet-3732",
+        "name": "三次元電動マイクロマニピュレーション",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Xs6QklmXrWZrk4NMjxLr::Xs6QklmXrWZrk4NMjxLr",
+        "doc_id": "Xs6QklmXrWZrk4NMjxLr",
+        "equipment_id": "Xs6QklmXrWZrk4NMjxLr",
+        "name": "全有機体炭素計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2736::eqnet-2736",
+        "doc_id": "eqnet-2736",
+        "equipment_id": "eqnet-2736",
+        "name": "同軸型ゲルマニウム半導体検出器(キャンベラ・GC2020)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KDAkp6UfdnH10hAMkH5R::KDAkp6UfdnH10hAMkH5R",
+        "doc_id": "KDAkp6UfdnH10hAMkH5R",
+        "equipment_id": "KDAkp6UfdnH10hAMkH5R",
+        "name": "密着強度測定機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2290::eqnet-2290",
+        "doc_id": "eqnet-2290",
+        "equipment_id": "eqnet-2290",
+        "name": "小型遠心機DISKBOY",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3729::eqnet-3729",
+        "doc_id": "eqnet-3729",
+        "equipment_id": "eqnet-3729",
+        "name": "慢性実験テレメトリー自動計測システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4246::eqnet-4246",
+        "doc_id": "eqnet-4246",
+        "equipment_id": "eqnet-4246",
+        "name": "摩擦磨耗試験機 スター精機(UED08-3)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2612::eqnet-2612",
+        "doc_id": "eqnet-2612",
+        "equipment_id": "eqnet-2612",
+        "name": "数値解析シミュレータシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2788::eqnet-2788",
+        "doc_id": "eqnet-2788",
+        "equipment_id": "eqnet-2788",
+        "name": "比表面積/細孔分布測定装置(QUANTACHROME INSTRUMENTS・NOVA Touch 1LX)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4284::eqnet-4284",
+        "doc_id": "eqnet-4284",
+        "equipment_id": "eqnet-4284",
+        "name": "比表面積・細孔分布測定装置 Quantachrome Instruments(QUADRASORB EVO4)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1049::eqnet-1049",
+        "doc_id": "eqnet-1049",
+        "equipment_id": "eqnet-1049",
+        "name": "水銀ポロシメーター(島津・オートポアIV9500)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2473::eqnet-2473",
+        "doc_id": "eqnet-2473",
+        "equipment_id": "eqnet-2473",
+        "name": "細胞外フラックスアナライザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4822::eqnet-4822",
+        "doc_id": "eqnet-4822",
+        "equipment_id": "eqnet-4822",
+        "name": "脳波・心拍変動解析一式 インタークロス ミニチュアDAQターミナル intrcross-415 他",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1668::eqnet-1668",
+        "doc_id": "eqnet-1668",
+        "equipment_id": "eqnet-1668",
+        "name": "自動生化学分析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1667::eqnet-1667",
+        "doc_id": "eqnet-1667",
+        "equipment_id": "eqnet-1667",
+        "name": "自動血球計数器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2723::eqnet-2723",
+        "doc_id": "eqnet-2723",
+        "equipment_id": "eqnet-2723",
+        "name": "触式膜厚測定器(膜厚計)(BURUKER・DektakXT)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "FkSkSrXwDSUJQynjuX9j::FkSkSrXwDSUJQynjuX9j",
+        "doc_id": "FkSkSrXwDSUJQynjuX9j",
+        "equipment_id": "FkSkSrXwDSUJQynjuX9j",
+        "name": "電子天秤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3401::eqnet-3401",
+        "doc_id": "eqnet-3401",
+        "equipment_id": "eqnet-3401",
+        "name": "電気化学測定装置(BAS621E)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1719::eqnet-1719",
+        "doc_id": "eqnet-1719",
+        "equipment_id": "eqnet-1719",
+        "name": "高出力ピコ秒LD励起Nd:YAGレーザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3891::eqnet-3891",
+        "doc_id": "eqnet-3891",
+        "equipment_id": "eqnet-3891",
+        "name": "高性能ゾーンアラナライザー・コロニーカウンター( (株)セントラル科学貿易製・CN0202)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-49::TOKUSHIMA-49",
+        "doc_id": "TOKUSHIMA-49",
+        "equipment_id": "TOKUSHIMA-49",
+        "name": "TIG溶接機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-43::TOKUSHIMA-43",
+        "doc_id": "TOKUSHIMA-43",
+        "equipment_id": "TOKUSHIMA-43",
+        "name": "コンターマシン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-44::TOKUSHIMA-44",
+        "doc_id": "TOKUSHIMA-44",
+        "equipment_id": "TOKUSHIMA-44",
+        "name": "バンドソー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "VgieZqLPaKuxwhBKGS0H::VgieZqLPaKuxwhBKGS0H",
+        "doc_id": "VgieZqLPaKuxwhBKGS0H",
+        "equipment_id": "VgieZqLPaKuxwhBKGS0H",
+        "name": "バンドソー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-46::TOKUSHIMA-46",
+        "doc_id": "TOKUSHIMA-46",
+        "equipment_id": "TOKUSHIMA-46",
+        "name": "メカニカルシャー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-73::TOKUSHIMA-73",
+        "doc_id": "TOKUSHIMA-73",
+        "equipment_id": "TOKUSHIMA-73",
+        "name": "メタルソー切断機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-74::TOKUSHIMA-74",
+        "doc_id": "TOKUSHIMA-74",
+        "equipment_id": "TOKUSHIMA-74",
+        "name": "モバイル型表面粗さ測定器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-10::TOKUSHIMA-10",
+        "doc_id": "TOKUSHIMA-10",
+        "equipment_id": "TOKUSHIMA-10",
+        "name": "レーザー加工システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "mQ8l8tPbTkWv54xRvoDb::mQ8l8tPbTkWv54xRvoDb",
+        "doc_id": "mQ8l8tPbTkWv54xRvoDb",
+        "equipment_id": "mQ8l8tPbTkWv54xRvoDb",
+        "name": "レーザー加工システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-47::TOKUSHIMA-47",
+        "doc_id": "TOKUSHIMA-47",
+        "equipment_id": "TOKUSHIMA-47",
+        "name": "ワイヤ放電加工機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-9::TOKUSHIMA-9",
+        "doc_id": "TOKUSHIMA-9",
+        "equipment_id": "TOKUSHIMA-9",
+        "name": "ワイヤ放電加工機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zRhp6yrjVvqiIG4Ktfuj::zRhp6yrjVvqiIG4Ktfuj",
+        "doc_id": "zRhp6yrjVvqiIG4Ktfuj",
+        "equipment_id": "zRhp6yrjVvqiIG4Ktfuj",
+        "name": "ワイヤ放電加工機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-41::TOKUSHIMA-41",
+        "doc_id": "TOKUSHIMA-41",
+        "equipment_id": "TOKUSHIMA-41",
+        "name": "汎用万能フライス盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-35::TOKUSHIMA-35",
+        "doc_id": "TOKUSHIMA-35",
+        "equipment_id": "TOKUSHIMA-35",
+        "name": "汎用旋盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-38::TOKUSHIMA-38",
+        "doc_id": "TOKUSHIMA-38",
+        "equipment_id": "TOKUSHIMA-38",
+        "name": "汎用旋盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-37::TOKUSHIMA-37",
+        "doc_id": "TOKUSHIMA-37",
+        "equipment_id": "TOKUSHIMA-37",
+        "name": "汎用立形フライス盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-42::TOKUSHIMA-42",
+        "doc_id": "TOKUSHIMA-42",
+        "equipment_id": "TOKUSHIMA-42",
+        "name": "汎用立形フライス盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-39::TOKUSHIMA-39",
+        "doc_id": "TOKUSHIMA-39",
+        "equipment_id": "TOKUSHIMA-39",
+        "name": "立形マシニングセンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-7::TOKUSHIMA-7",
+        "doc_id": "TOKUSHIMA-7",
+        "equipment_id": "TOKUSHIMA-7",
+        "name": "立形マシニングセンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wGCEDoSCJrJJWYDRbw0n::wGCEDoSCJrJJWYDRbw0n",
+        "doc_id": "wGCEDoSCJrJJWYDRbw0n",
+        "equipment_id": "wGCEDoSCJrJJWYDRbw0n",
+        "name": "立形マシニングセンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-48::TOKUSHIMA-48",
+        "doc_id": "TOKUSHIMA-48",
+        "equipment_id": "TOKUSHIMA-48",
+        "name": "精密卓上ボール盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-45::TOKUSHIMA-45",
+        "doc_id": "TOKUSHIMA-45",
+        "equipment_id": "TOKUSHIMA-45",
+        "name": "精密平面研削盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "szo761OSaKRbec8uNuMo::szo761OSaKRbec8uNuMo",
+        "doc_id": "szo761OSaKRbec8uNuMo",
+        "equipment_id": "szo761OSaKRbec8uNuMo",
+        "name": "精密平面研削盤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-36::TOKUSHIMA-36",
+        "doc_id": "TOKUSHIMA-36",
+        "equipment_id": "TOKUSHIMA-36",
+        "name": "精密旋盤装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "uDy5A14aQX2Os3ji1u3J::uDy5A14aQX2Os3ji1u3J",
+        "doc_id": "uDy5A14aQX2Os3ji1u3J",
+        "equipment_id": "uDy5A14aQX2Os3ji1u3J",
+        "name": "精密旋盤装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-50::TOKUSHIMA-50",
+        "doc_id": "TOKUSHIMA-50",
+        "equipment_id": "TOKUSHIMA-50",
+        "name": "被覆アーク溶接機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "jd1F4wFSipZxQeMrgO7a::jd1F4wFSipZxQeMrgO7a",
+        "doc_id": "jd1F4wFSipZxQeMrgO7a",
+        "equipment_id": "jd1F4wFSipZxQeMrgO7a",
+        "name": "被覆アーク溶接機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-DEKTAK-DEKTAK150::YAMANASHI-DEKTAK-DEKTAK150",
+        "doc_id": "YAMANASHI-DEKTAK-DEKTAK150",
+        "equipment_id": "YAMANASHI-DEKTAK-DEKTAK150",
+        "name": "触針式表面形状測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "qsjhYtVrfcpGhaUzqCqC::qsjhYtVrfcpGhaUzqCqC",
+        "doc_id": "qsjhYtVrfcpGhaUzqCqC",
+        "equipment_id": "qsjhYtVrfcpGhaUzqCqC",
+        "name": "触針式表面形状測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-SPM-DIMENSION-ICON::YAMANASHI-SPM-DIMENSION-ICON",
+        "doc_id": "YAMANASHI-SPM-DIMENSION-ICON",
+        "equipment_id": "YAMANASHI-SPM-DIMENSION-ICON",
+        "name": "走査型プローブ顕微鏡",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T10:51:36.529896+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:36.586836+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:37.213847+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:39.947441+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:42.516598+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:45.101191+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:47.693661+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:50.265131+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:52.843295+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:55.446499+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:51:58.051445+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:52:00.626388+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:52:33.615408+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

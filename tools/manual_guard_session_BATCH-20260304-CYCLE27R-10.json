@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE27R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T03:51:56.324531+00:00",
+  "updated_at": "2026-03-04T03:56:18.733574+00:00",
+  "closed_at": "2026-03-04T03:56:18.733574+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle27r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE27R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "baab1216546506e7910ad1ce24e56636dc35b847b3d2213bcb9ca28b3d771597",
+    "queue_sha256_at_start": "55900a9693d3300c88ae60d84f7c19aaa486d48c3795d88fe8018be8832e2482",
+    "queue_row_keys_sha256": "90cdc002744737ccf6dd8924b2dba3da285d5f674f997dbe71f4828603899647"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "c9gaihz6SYJTTJ6XeWFp::c9gaihz6SYJTTJ6XeWFp",
+      "aTW9idJZmVRdBSNIxexC::aTW9idJZmVRdBSNIxexC",
+      "Q9ti2E1KI8LB53OxYTkS::Q9ti2E1KI8LB53OxYTkS",
+      "VUqUgidsddSaNDguuSwm::VUqUgidsddSaNDguuSwm",
+      "dS6nWcDJzCDNHxK4HdXW::dS6nWcDJzCDNHxK4HdXW",
+      "5aLFNd3z8RcehNGdNfuf::5aLFNd3z8RcehNGdNfuf",
+      "RlgswOOZhyXgUan0fXZU::RlgswOOZhyXgUan0fXZU",
+      "vTfVJbBYlvIobtuyzXjX::vTfVJbBYlvIobtuyzXjX",
+      "tL9iNOnRQY8H2hyxVWgB::tL9iNOnRQY8H2hyxVWgB",
+      "sBMDkmKaSIJ2PNXDpWbp::sBMDkmKaSIJ2PNXDpWbp"
+    ],
+    "target_rows": [
+      {
+        "row_key": "c9gaihz6SYJTTJ6XeWFp::c9gaihz6SYJTTJ6XeWFp",
+        "doc_id": "c9gaihz6SYJTTJ6XeWFp",
+        "equipment_id": "c9gaihz6SYJTTJ6XeWFp",
+        "name": "超低温フリーザー_09 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "aTW9idJZmVRdBSNIxexC::aTW9idJZmVRdBSNIxexC",
+        "doc_id": "aTW9idJZmVRdBSNIxexC",
+        "equipment_id": "aTW9idJZmVRdBSNIxexC",
+        "name": "マルチカラーデータ解析ソフトウェア(2)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Q9ti2E1KI8LB53OxYTkS::Q9ti2E1KI8LB53OxYTkS",
+        "doc_id": "Q9ti2E1KI8LB53OxYTkS",
+        "equipment_id": "Q9ti2E1KI8LB53OxYTkS",
+        "name": "遠心濃縮機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "VUqUgidsddSaNDguuSwm::VUqUgidsddSaNDguuSwm",
+        "doc_id": "VUqUgidsddSaNDguuSwm",
+        "equipment_id": "VUqUgidsddSaNDguuSwm",
+        "name": "質量分析試料調整システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "dS6nWcDJzCDNHxK4HdXW::dS6nWcDJzCDNHxK4HdXW",
+        "doc_id": "dS6nWcDJzCDNHxK4HdXW",
+        "equipment_id": "dS6nWcDJzCDNHxK4HdXW",
+        "name": "純水製造装置Elix Essential3/UV",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5aLFNd3z8RcehNGdNfuf::5aLFNd3z8RcehNGdNfuf",
+        "doc_id": "5aLFNd3z8RcehNGdNfuf",
+        "equipment_id": "5aLFNd3z8RcehNGdNfuf",
+        "name": "超純水製造装置Simplicity UV",
+        "papers_count": 2
+      },
+      {
+        "row_key": "RlgswOOZhyXgUan0fXZU::RlgswOOZhyXgUan0fXZU",
+        "doc_id": "RlgswOOZhyXgUan0fXZU",
+        "equipment_id": "RlgswOOZhyXgUan0fXZU",
+        "name": "穀粒判別器 RGQI20A",
+        "papers_count": 1
+      },
+      {
+        "row_key": "vTfVJbBYlvIobtuyzXjX::vTfVJbBYlvIobtuyzXjX",
+        "doc_id": "vTfVJbBYlvIobtuyzXjX",
+        "equipment_id": "vTfVJbBYlvIobtuyzXjX",
+        "name": "味認識装置 TS-500ZU",
+        "papers_count": 2
+      },
+      {
+        "row_key": "tL9iNOnRQY8H2hyxVWgB::tL9iNOnRQY8H2hyxVWgB",
+        "doc_id": "tL9iNOnRQY8H2hyxVWgB",
+        "equipment_id": "tL9iNOnRQY8H2hyxVWgB",
+        "name": "物性測定器 一式 ﾃﾝｼﾌﾟﾚｯｻｰ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sBMDkmKaSIJ2PNXDpWbp::sBMDkmKaSIJ2PNXDpWbp",
+        "doc_id": "sBMDkmKaSIJ2PNXDpWbp",
+        "equipment_id": "sBMDkmKaSIJ2PNXDpWbp",
+        "name": "ハンドパレットトラック",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T03:51:56.324531+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T03:51:56.741823+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:06.560304+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:12.286676+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:18.109386+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:23.972865+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:29.696420+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:35.316976+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:40.860095+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:46.289071+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:51.670270+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:52:56.968364+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:53:15.664705+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:56:18.733574+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

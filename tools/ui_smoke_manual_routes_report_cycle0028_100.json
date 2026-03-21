@@ -1,0 +1,208 @@
+{
+  "url": "https://kikidoko.web.app/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/2cLWDy0mMN4LEBAoqoqJ/10.1016/j.jhin.2013.12.012",
+    "paper_space_hash": "#/paper/2cLWDy0mMN4LEBAoqoqJ/10.1016/j.jhin.2013.12.012",
+    "beginner_enter_hash": "#/beginner/2cLWDy0mMN4LEBAoqoqJ",
+    "beginner_space_hash": "#/beginner/2cLWDy0mMN4LEBAoqoqJ"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "クリーンブース（クリーンルーム本体）",
+      "summary_len": 238,
+      "sample_count": 4,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/2cLWDy0mMN4LEBAoqoqJ/10.1016/j.jhin.2013.12.012",
+      "beginner_hash": "#/beginner/2cLWDy0mMN4LEBAoqoqJ",
+      "paper_link_href": "https://doi.org/10.1016/j.jhin.2013.12.012",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "クリーンベンチ",
+      "summary_len": 236,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/Qn6wDxn7B3ZvuVfAOxxU/10.1016/j.jhin.2012.10.001",
+      "beginner_hash": "#/beginner/Qn6wDxn7B3ZvuVfAOxxU",
+      "paper_link_href": "https://doi.org/10.1016/j.jhin.2012.10.001",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "クリーンベンチ PAU1600CG",
+      "summary_len": 256,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/l1yiK5rXVvoXhjfnAd8L/10.1016/j.jhin.2012.10.001",
+      "beginner_hash": "#/beginner/l1yiK5rXVvoXhjfnAd8L",
+      "paper_link_href": "https://doi.org/10.1016/j.jhin.2012.10.001",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "クリーンベンチ SANYO MCV-13BSS",
+      "summary_len": 274,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/CqOeDLgEn9EvCzLj1GMa/10.1016/j.jhin.2012.10.001",
+      "beginner_hash": "#/beginner/CqOeDLgEn9EvCzLj1GMa",
+      "paper_link_href": "https://doi.org/10.1016/j.jhin.2012.10.001",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "クリーンベンチ TPV-790AG（8台）",
+      "summary_len": 268,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/OByMk3FpEeOi9mRGdvVf/10.1016/j.jhin.2012.10.001",
+      "beginner_hash": "#/beginner/OByMk3FpEeOi9mRGdvVf",
+      "paper_link_href": "https://doi.org/10.1016/j.jhin.2012.10.001",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "クリーンベンチ VST-700",
+      "summary_len": 250,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eGGKNSWUv7VkAeFq3e8Q/10.1016/j.jhin.2012.10.001",
+      "beginner_hash": "#/beginner/eGGKNSWUv7VkAeFq3e8Q",
+      "paper_link_href": "https://doi.org/10.1016/j.jhin.2012.10.001",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "グローブボックス",
+      "summary_len": 208,
+      "sample_count": 4,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/uc0RgupmsYy6irEL39vM/10.1002/anie.201915762",
+      "beginner_hash": "#/beginner/uc0RgupmsYy6irEL39vM",
+      "paper_link_href": "https://doi.org/10.1002/anie.201915762",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "ゲノムDNA抽出機 QuickGene-Auto240L",
+      "summary_len": 200,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/oaC68uaMB2GvR0uWx9xS/10.1080/2162402x.2025.2606497",
+      "beginner_hash": "#/beginner/oaC68uaMB2GvR0uWx9xS",
+      "paper_link_href": "https://doi.org/10.1080/2162402X.2025.2606497",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "ゲート金属スパッタ成膜装置（スパッタ装置Ａ室）",
+      "summary_len": 187,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/AQC680cRlhRyTgw8KGnO/10.1002/jemt.1060070302",
+      "beginner_hash": "#/beginner/AQC680cRlhRyTgw8KGnO",
+      "paper_link_href": "https://doi.org/10.1002/jemt.1060070302",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "コバルト60ガンマ線照射装置",
+      "summary_len": 210,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/UMgsp6IXfinCuohovWZA/10.1016/j.radphyschem.2018.11.010",
+      "beginner_hash": "#/beginner/UMgsp6IXfinCuohovWZA",
+      "paper_link_href": "https://doi.org/10.1016/j.radphyschem.2018.11.010",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

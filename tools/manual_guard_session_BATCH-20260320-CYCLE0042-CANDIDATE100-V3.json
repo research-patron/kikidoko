@@ -1,0 +1,841 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260320-CYCLE0042-CANDIDATE100",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-20T13:47:39.591985+00:00",
+  "updated_at": "2026-03-20T13:47:39.591985+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0042_candidate100.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260320-CYCLE0042-CANDIDATE100-V3.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "baa1a133d4215859298d7dde758b3dd0fc4c08650c428561693b590a80dd58f7",
+    "queue_sha256_at_start": "250b5c6c117bac7741ca68096b1065a97097d873506286a1fe9896d20b2d892e",
+    "queue_row_keys_sha256": "22de4a7dca37ad2520f351c2b596794f1156fbe9f556d651053bf9c29c5f199e"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "2tQSyysW5GzUbZBLqC9k::2tQSyysW5GzUbZBLqC9k",
+      "YOyGKvBvvqYAzXGWjO8R::YOyGKvBvvqYAzXGWjO8R",
+      "jbyanFAconRcEQs5BUum::jbyanFAconRcEQs5BUum",
+      "aTW9idJZmVRdBSNIxexC::aTW9idJZmVRdBSNIxexC",
+      "d1chcYWvdrO4bm83FPKp::HOKUDAI-AP-902075",
+      "CFKLjdt7bBNhhuj46CYo::HOKUDAI-AP-901644",
+      "oaUTVMdanLnLc1uUt27D::HOKUDAI-AP-902055",
+      "gxfaLAr20S9LwRakDRzc::HOKUDAI-AP-902236",
+      "gZeEGAkFfLj6IRwIbdeg::HOKUDAI-AP-901627",
+      "sTc9rJ3kNCA3SrnOtXPl::HOKUDAI-AP-901485",
+      "0wPvV4sE549HP2A0CGQi::HOKUDAI-AP-901568",
+      "Q8hv21ObThh5Ox9xD6nv::HOKUDAI-AP-901318",
+      "0oCPE6OM2sepzymC53jP::HOKUDAI-AP-902273",
+      "jhL2dKXgSVqRwPJScp3J::HOKUDAI-AP-901400",
+      "U9o44JmxD0A28rIiGd9o::HOKUDAI-AP-901878",
+      "oS18SubETZHneJECR8L3::HOKUDAI-AP-902122",
+      "Y1LulhjOTkzON0YgRcq0::HOKUDAI-AP-902049",
+      "updbhZrsYpfbyZ2BboZK::HOKUDAI-AP-901725",
+      "fqF4o786MQZXX9pLai48::HOKUDAI-AP-901724",
+      "9KJRfkwX5fJJfZazgT9F::HOKUDAI-AP-901845",
+      "GU42zBLN13FyLm2U7uIV::HOKUDAI-AP-901846",
+      "JwJyGOjMer7yx7klDiDH::HOKUDAI-AP-901847",
+      "y7ovcCb3FFRJO6DkWELg::HOKUDAI-AP-902013",
+      "t7qYKOrb5sNnZYt1Dzo4::HOKUDAI-AP-901525",
+      "wx4XcpqHnPUNb1OfQamY::HOKUDAI-AP-901853",
+      "4n9Po5xSy9civmgV0SGB::HOKUDAI-AP-902068",
+      "994GI8a6UI0jjqm59sdJ::HOKUDAI-AP-901696",
+      "L4iyzvJhhkOoblwQloxl::HOKUDAI-AP-901284",
+      "PFlT5Nx26hKZkuKvzX0H::HOKUDAI-AP-901303",
+      "k1dANottBfAJaQjumZvl::HOKUDAI-AP-901530",
+      "cT4ozbkA24syBSOKPNGu::HOKUDAI-AP-901709",
+      "7f2Fq119LrB804SdIZwD::HOKUDAI-AP-902253",
+      "9Rf9YKvTphoBxZAd21hF::HOKUDAI-AP-902275",
+      "TTsniSxaqTbJEIvgrQFf::HOKUDAI-AP-901875",
+      "5kXWWRHm2iEEzlPzLD1G::HOKUDAI-AP-902024",
+      "Z0xXQ2BMtLGWfU4UdRqY::HOKUDAI-AP-902074",
+      "mLWWSqXJgOhU8jSULq84::HOKUDAI-AP-901291",
+      "5ZqaZgbw7Mi7zmMvYzh7::HOKUDAI-AP-901535",
+      "wnXMGCYujJiwQ71xe6PO::HOKUDAI-AP-901864",
+      "GEcoTxyohqR0RugLhL8p::HOKUDAI-AP-902077",
+      "u4BxON0qWop3B43tXY1h::HOKUDAI-AP-901719",
+      "7rIIpRT6yQegnW4ubTm9::HOKUDAI-AP-900841",
+      "Bn4oCeH5EeLQOo24pjvY::HOKUDAI-AP-902269",
+      "xWp0X3wNQa437vQfmxCY::HOKUDAI-AP-901534",
+      "E5U9V1w6yQ8x6WGNhZeO::HOKUDAI-AP-901482",
+      "6ilQO3qucW8hBEU3eiai::HOKUDAI-AP-902268",
+      "S2yIQ9SK7WSkR9QcA7BI::HOKUDAI-AP-902056",
+      "udtp2xAx5asB5GN4zNLi::HOKUDAI-AP-902048",
+      "zIfAZK4KWMvZJPsI7SLl::HOKUDAI-AP-900819",
+      "Em63tQqRohYgpYW9369Z::HOKUDAI-AP-901834",
+      "0Gio1BFAcJaq5B1sIY6E::HOKUDAI-AP-902147",
+      "9MzJifTbYw2XVdDA1Y2n::HOKUDAI-AP-901894",
+      "cMlNdbroAX0RvzCilUJK::HOKUDAI-AP-901939",
+      "L9kCQiiUZk0JrTWILcli::HOKUDAI-AP-902067",
+      "6klvSUtxrci2SsUzzIkY::HOKUDAI-AP-901521",
+      "rzu5rgxVMJFZbU2TQky3::HOKUDAI-AP-901962",
+      "BQIrr3tMYKpfh1OGyueh::HOKUDAI-AP-901735",
+      "5xMoDMQHkXK7BFKEvMCD::HOKUDAI-AP-901628",
+      "RUfrAzlD58zqlDOJsiJc::HOKUDAI-AP-901433",
+      "JZboyxQHFZVosyWoQNiO::HOKUDAI-AP-901537",
+      "B4YoGffaSvo1gE1LSgik::HOKUDAI-AP-901553",
+      "gF5dwkcwd2ina1Jk7dbu::HOKUDAI-AP-901408",
+      "7xdbGiBo9cejdpbj5xCo::HOKUDAI-AP-901895",
+      "2hiQINmPgYxHckSZA6Fx::HOKUDAI-AP-902076",
+      "SRuk7mP0GiVM5br71pUI::HOKUDAI-AP-902071",
+      "h3Ajp03deF06l3dyNJ9B::HOKUDAI-AP-901459",
+      "lK2Ey2PzW3AfTXkQ1k5D::HOKUDAI-AP-901884",
+      "rSCGpJNpvdXr8rkRnhcO::HOKUDAI-AP-901816",
+      "OIuudscVIHvvjWKzCW3Y::HOKUDAI-AP-901629",
+      "0jYW9aNpzyBm2ctRcvLL::HOKUDAI-AP-901383",
+      "l7un2zGF0WSCrhk6PTu6::HOKUDAI-AP-902053",
+      "uMNFmrc0ZQ0uaJqbGAPZ::HOKUDAI-AP-902136",
+      "tY51oRQfMlrfLU2FPHWm::HOKUDAI-AP-902146",
+      "dJAJOiqEpDXJM5IDjiZo::HOKUDAI-AP-901426",
+      "lccem771VoWfOcXECyxK::HOKUDAI-AP-902149",
+      "gEpy2mBGRkOMeTZFKs4c::HOKUDAI-AP-900799",
+      "NL94MRczHmVNyDf0sAnG::HOKUDAI-AP-901866",
+      "zQWBxFqkveCh6VHPWVvv::HOKUDAI-AP-902094",
+      "ajDy1U5ihX1uIp1sHtx8::HOKUDAI-AP-902210",
+      "SomVfqjb2m6mCjNneKcQ::HOKUDAI-AP-902251",
+      "ezNx3B1x0LU1Hg5AGCPh::HOKUDAI-AP-901387",
+      "npAYH64UOqHILqCx2G3m::HOKUDAI-AP-901414",
+      "sPtdtGPjsvBdu1x3mMd8::HOKUDAI-AP-901472",
+      "lMpzk5RSdrFMhdHbqFJj::HOKUDAI-AP-901877",
+      "fukb2BLFrRWUEfyQBq3v::HOKUDAI-AP-902262",
+      "Y8iywebIFaNUU0LW4pu6::HOKUDAI-AP-901343",
+      "3GvxZ0Yaf9SWCnBUKhmT::HOKUDAI-AP-901970",
+      "INrylppPk7dFTWGaGqzf::HOKUDAI-AP-901643",
+      "o3qXKDNek93ZhIeBZgLN::HOKUDAI-AP-901306",
+      "Hm75fejzHVr8y9drJOaj::HOKUDAI-AP-901556",
+      "uhEm1ceIBG9sTAelbcis::HOKUDAI-AP-901849",
+      "kaCqQghDpWN2HX7Tsf2u::HOKUDAI-AP-901567",
+      "RgQiKbV0b2sbQAh4zERq::HOKUDAI-AP-901810",
+      "wpAZVF1xpXf3PzbBrK1a::HOKUDAI-AP-902070",
+      "9S0QTnyoOQYohSmvCdFQ::HOKUDAI-AP-902078",
+      "pZmE0qaYymNpug5a161v::HOKUDAI-AP-902079",
+      "eqnet-4122::eqnet-4122",
+      "eqnet-4196::eqnet-4196",
+      "eqnet-4123::eqnet-4123",
+      "eqnet-4834::eqnet-4834"
+    ],
+    "target_rows": [
+      {
+        "row_key": "2tQSyysW5GzUbZBLqC9k::2tQSyysW5GzUbZBLqC9k",
+        "doc_id": "2tQSyysW5GzUbZBLqC9k",
+        "equipment_id": "2tQSyysW5GzUbZBLqC9k",
+        "name": "超低温フリーザー_03 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "YOyGKvBvvqYAzXGWjO8R::YOyGKvBvvqYAzXGWjO8R",
+        "doc_id": "YOyGKvBvvqYAzXGWjO8R",
+        "equipment_id": "YOyGKvBvvqYAzXGWjO8R",
+        "name": "旭町ラボ オープンラボスペース 202実験室(C)-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "jbyanFAconRcEQs5BUum::jbyanFAconRcEQs5BUum",
+        "doc_id": "jbyanFAconRcEQs5BUum",
+        "equipment_id": "jbyanFAconRcEQs5BUum",
+        "name": "旭町ラボ オープンラボスペース 202実験室(C)-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aTW9idJZmVRdBSNIxexC::aTW9idJZmVRdBSNIxexC",
+        "doc_id": "aTW9idJZmVRdBSNIxexC",
+        "equipment_id": "aTW9idJZmVRdBSNIxexC",
+        "name": "マルチカラーデータ解析ソフトウェア(2)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "d1chcYWvdrO4bm83FPKp::HOKUDAI-AP-902075",
+        "doc_id": "d1chcYWvdrO4bm83FPKp",
+        "equipment_id": "HOKUDAI-AP-902075",
+        "name": "マイクロロガー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "CFKLjdt7bBNhhuj46CYo::HOKUDAI-AP-901644",
+        "doc_id": "CFKLjdt7bBNhhuj46CYo",
+        "equipment_id": "HOKUDAI-AP-901644",
+        "name": "マウス・ラットB.B.H.ユニット架台",
+        "papers_count": 3
+      },
+      {
+        "row_key": "oaUTVMdanLnLc1uUt27D::HOKUDAI-AP-902055",
+        "doc_id": "oaUTVMdanLnLc1uUt27D",
+        "equipment_id": "HOKUDAI-AP-902055",
+        "name": "マルチスペクトラルカメラ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "gxfaLAr20S9LwRakDRzc::HOKUDAI-AP-902236",
+        "doc_id": "gxfaLAr20S9LwRakDRzc",
+        "equipment_id": "HOKUDAI-AP-902236",
+        "name": "マルチラベルリーダー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "gZeEGAkFfLj6IRwIbdeg::HOKUDAI-AP-901627",
+        "doc_id": "gZeEGAkFfLj6IRwIbdeg",
+        "equipment_id": "HOKUDAI-AP-901627",
+        "name": "マルチ周波数体組成計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sTc9rJ3kNCA3SrnOtXPl::HOKUDAI-AP-901485",
+        "doc_id": "sTc9rJ3kNCA3SrnOtXPl",
+        "equipment_id": "HOKUDAI-AP-901485",
+        "name": "ミキサーミル",
+        "papers_count": 3
+      },
+      {
+        "row_key": "0wPvV4sE549HP2A0CGQi::HOKUDAI-AP-901568",
+        "doc_id": "0wPvV4sE549HP2A0CGQi",
+        "equipment_id": "HOKUDAI-AP-901568",
+        "name": "ラボ用コロナ分極装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Q8hv21ObThh5Ox9xD6nv::HOKUDAI-AP-901318",
+        "doc_id": "Q8hv21ObThh5Ox9xD6nv",
+        "equipment_id": "HOKUDAI-AP-901318",
+        "name": "リークディテクタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "0oCPE6OM2sepzymC53jP::HOKUDAI-AP-902273",
+        "doc_id": "0oCPE6OM2sepzymC53jP",
+        "equipment_id": "HOKUDAI-AP-902273",
+        "name": "ルミノ・イメージアナライザー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "jhL2dKXgSVqRwPJScp3J::HOKUDAI-AP-901400",
+        "doc_id": "jhL2dKXgSVqRwPJScp3J",
+        "equipment_id": "HOKUDAI-AP-901400",
+        "name": "レーザー加工機 HAJIMECL1PLUS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "U9o44JmxD0A28rIiGd9o::HOKUDAI-AP-901878",
+        "doc_id": "U9o44JmxD0A28rIiGd9o",
+        "equipment_id": "HOKUDAI-AP-901878",
+        "name": "ロバスト温室向け太陽熱利用システム機器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "oS18SubETZHneJECR8L3::HOKUDAI-AP-902122",
+        "doc_id": "oS18SubETZHneJECR8L3",
+        "equipment_id": "HOKUDAI-AP-902122",
+        "name": "ロータリーエバポ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Y1LulhjOTkzON0YgRcq0::HOKUDAI-AP-902049",
+        "doc_id": "Y1LulhjOTkzON0YgRcq0",
+        "equipment_id": "HOKUDAI-AP-902049",
+        "name": "ワイパー式メモリー水温塩分計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "updbhZrsYpfbyZ2BboZK::HOKUDAI-AP-901725",
+        "doc_id": "updbhZrsYpfbyZ2BboZK",
+        "equipment_id": "HOKUDAI-AP-901725",
+        "name": "一酸化窒素ガス分析装置 NIOX VERO",
+        "papers_count": 3
+      },
+      {
+        "row_key": "fqF4o786MQZXX9pLai48::HOKUDAI-AP-901724",
+        "doc_id": "fqF4o786MQZXX9pLai48",
+        "equipment_id": "HOKUDAI-AP-901724",
+        "name": "一酸化窒素ガス分析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "9KJRfkwX5fJJfZazgT9F::HOKUDAI-AP-901845",
+        "doc_id": "9KJRfkwX5fJJfZazgT9F",
+        "equipment_id": "HOKUDAI-AP-901845",
+        "name": "中性子マルチピンホールコリメーター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "GU42zBLN13FyLm2U7uIV::HOKUDAI-AP-901846",
+        "doc_id": "GU42zBLN13FyLm2U7uIV",
+        "equipment_id": "HOKUDAI-AP-901846",
+        "name": "中性子温度イメージング昇温チャンバ ー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "JwJyGOjMer7yx7klDiDH::HOKUDAI-AP-901847",
+        "doc_id": "JwJyGOjMer7yx7klDiDH",
+        "equipment_id": "HOKUDAI-AP-901847",
+        "name": "中性子発生ターゲットステーション",
+        "papers_count": 3
+      },
+      {
+        "row_key": "y7ovcCb3FFRJO6DkWELg::HOKUDAI-AP-902013",
+        "doc_id": "y7ovcCb3FFRJO6DkWELg",
+        "equipment_id": "HOKUDAI-AP-902013",
+        "name": "人工気象器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "t7qYKOrb5sNnZYt1Dzo4::HOKUDAI-AP-901525",
+        "doc_id": "t7qYKOrb5sNnZYt1Dzo4",
+        "equipment_id": "HOKUDAI-AP-901525",
+        "name": "低周波共振音響ミキサー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wx4XcpqHnPUNb1OfQamY::HOKUDAI-AP-901853",
+        "doc_id": "wx4XcpqHnPUNb1OfQamY",
+        "equipment_id": "HOKUDAI-AP-901853",
+        "name": "低速精密切断機",
+        "papers_count": 3
+      },
+      {
+        "row_key": "4n9Po5xSy9civmgV0SGB::HOKUDAI-AP-902068",
+        "doc_id": "4n9Po5xSy9civmgV0SGB",
+        "equipment_id": "HOKUDAI-AP-902068",
+        "name": "係留式CTD計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "994GI8a6UI0jjqm59sdJ::HOKUDAI-AP-901696",
+        "doc_id": "994GI8a6UI0jjqm59sdJ",
+        "equipment_id": "HOKUDAI-AP-901696",
+        "name": "個別換気式飼育システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "L4iyzvJhhkOoblwQloxl::HOKUDAI-AP-901284",
+        "doc_id": "L4iyzvJhhkOoblwQloxl",
+        "equipment_id": "HOKUDAI-AP-901284",
+        "name": "光ファイバースイッチ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "PFlT5Nx26hKZkuKvzX0H::HOKUDAI-AP-901303",
+        "doc_id": "PFlT5Nx26hKZkuKvzX0H",
+        "equipment_id": "HOKUDAI-AP-901303",
+        "name": "光反応用装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "k1dANottBfAJaQjumZvl::HOKUDAI-AP-901530",
+        "doc_id": "k1dANottBfAJaQjumZvl",
+        "equipment_id": "HOKUDAI-AP-901530",
+        "name": "光学用液体窒素クライオスタット",
+        "papers_count": 3
+      },
+      {
+        "row_key": "cT4ozbkA24syBSOKPNGu::HOKUDAI-AP-901709",
+        "doc_id": "cT4ozbkA24syBSOKPNGu",
+        "equipment_id": "HOKUDAI-AP-901709",
+        "name": "光学視管",
+        "papers_count": 3
+      },
+      {
+        "row_key": "7f2Fq119LrB804SdIZwD::HOKUDAI-AP-902253",
+        "doc_id": "7f2Fq119LrB804SdIZwD",
+        "equipment_id": "HOKUDAI-AP-902253",
+        "name": "全自動ウェスタンシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "9Rf9YKvTphoBxZAd21hF::HOKUDAI-AP-902275",
+        "doc_id": "9Rf9YKvTphoBxZAd21hF",
+        "equipment_id": "HOKUDAI-AP-902275",
+        "name": "全自動ハイスループット電気泳動システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "TTsniSxaqTbJEIvgrQFf::HOKUDAI-AP-901875",
+        "doc_id": "TTsniSxaqTbJEIvgrQFf",
+        "equipment_id": "HOKUDAI-AP-901875",
+        "name": "冷・温水システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5kXWWRHm2iEEzlPzLD1G::HOKUDAI-AP-902024",
+        "doc_id": "5kXWWRHm2iEEzlPzLD1G",
+        "equipment_id": "HOKUDAI-AP-902024",
+        "name": "加熱冷却ユニット",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Z0xXQ2BMtLGWfU4UdRqY::HOKUDAI-AP-902074",
+        "doc_id": "Z0xXQ2BMtLGWfU4UdRqY",
+        "equipment_id": "HOKUDAI-AP-902074",
+        "name": "加速度計付き間隙水圧計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "mLWWSqXJgOhU8jSULq84::HOKUDAI-AP-901291",
+        "doc_id": "mLWWSqXJgOhU8jSULq84",
+        "equipment_id": "HOKUDAI-AP-901291",
+        "name": "励起用CWグリーンレーザー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "5ZqaZgbw7Mi7zmMvYzh7::HOKUDAI-AP-901535",
+        "doc_id": "5ZqaZgbw7Mi7zmMvYzh7",
+        "equipment_id": "HOKUDAI-AP-901535",
+        "name": "卓上型自動分注装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wnXMGCYujJiwQ71xe6PO::HOKUDAI-AP-901864",
+        "doc_id": "wnXMGCYujJiwQ71xe6PO",
+        "equipment_id": "HOKUDAI-AP-901864",
+        "name": "呼気CO2/O2アナライザー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "GEcoTxyohqR0RugLhL8p::HOKUDAI-AP-902077",
+        "doc_id": "GEcoTxyohqR0RugLhL8p",
+        "equipment_id": "HOKUDAI-AP-902077",
+        "name": "地中レーダ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "u4BxON0qWop3B43tXY1h::HOKUDAI-AP-901719",
+        "doc_id": "u4BxON0qWop3B43tXY1h",
+        "equipment_id": "HOKUDAI-AP-901719",
+        "name": "多用途測定記録装置 PolymateⅡ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "7rIIpRT6yQegnW4ubTm9::HOKUDAI-AP-900841",
+        "doc_id": "7rIIpRT6yQegnW4ubTm9",
+        "equipment_id": "HOKUDAI-AP-900841",
+        "name": "大面積FPD動体追跡試験装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Bn4oCeH5EeLQOo24pjvY::HOKUDAI-AP-902269",
+        "doc_id": "Bn4oCeH5EeLQOo24pjvY",
+        "equipment_id": "HOKUDAI-AP-902269",
+        "name": "実験動物用呼吸・肺機能評価システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "xWp0X3wNQa437vQfmxCY::HOKUDAI-AP-901534",
+        "doc_id": "xWp0X3wNQa437vQfmxCY",
+        "equipment_id": "HOKUDAI-AP-901534",
+        "name": "実験用粉砕機",
+        "papers_count": 3
+      },
+      {
+        "row_key": "E5U9V1w6yQ8x6WGNhZeO::HOKUDAI-AP-901482",
+        "doc_id": "E5U9V1w6yQ8x6WGNhZeO",
+        "equipment_id": "HOKUDAI-AP-901482",
+        "name": "密閉型超臨界反応容器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "6ilQO3qucW8hBEU3eiai::HOKUDAI-AP-902268",
+        "doc_id": "6ilQO3qucW8hBEU3eiai",
+        "equipment_id": "HOKUDAI-AP-902268",
+        "name": "小動物用パルスオキシメーターシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "S2yIQ9SK7WSkR9QcA7BI::HOKUDAI-AP-902056",
+        "doc_id": "S2yIQ9SK7WSkR9QcA7BI",
+        "equipment_id": "HOKUDAI-AP-902056",
+        "name": "小型CTDセンサ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "udtp2xAx5asB5GN4zNLi::HOKUDAI-AP-902048",
+        "doc_id": "udtp2xAx5asB5GN4zNLi",
+        "equipment_id": "HOKUDAI-AP-902048",
+        "name": "小径プローブDO計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zIfAZK4KWMvZJPsI7SLl::HOKUDAI-AP-900819",
+        "doc_id": "zIfAZK4KWMvZJPsI7SLl",
+        "equipment_id": "HOKUDAI-AP-900819",
+        "name": "小規模アレイ解析装置システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Em63tQqRohYgpYW9369Z::HOKUDAI-AP-901834",
+        "doc_id": "Em63tQqRohYgpYW9369Z",
+        "equipment_id": "HOKUDAI-AP-901834",
+        "name": "工業用顕微鏡",
+        "papers_count": 3
+      },
+      {
+        "row_key": "0Gio1BFAcJaq5B1sIY6E::HOKUDAI-AP-902147",
+        "doc_id": "0Gio1BFAcJaq5B1sIY6E",
+        "equipment_id": "HOKUDAI-AP-902147",
+        "name": "床置式オイルミストコレクター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "9MzJifTbYw2XVdDA1Y2n::HOKUDAI-AP-901894",
+        "doc_id": "9MzJifTbYw2XVdDA1Y2n",
+        "equipment_id": "HOKUDAI-AP-901894",
+        "name": "建研式接着力試験器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "cMlNdbroAX0RvzCilUJK::HOKUDAI-AP-901939",
+        "doc_id": "cMlNdbroAX0RvzCilUJK",
+        "equipment_id": "HOKUDAI-AP-901939",
+        "name": "微小重力環境細胞培養装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "L9kCQiiUZk0JrTWILcli::HOKUDAI-AP-902067",
+        "doc_id": "L9kCQiiUZk0JrTWILcli",
+        "equipment_id": "HOKUDAI-AP-902067",
+        "name": "振動子",
+        "papers_count": 3
+      },
+      {
+        "row_key": "6klvSUtxrci2SsUzzIkY::HOKUDAI-AP-901521",
+        "doc_id": "6klvSUtxrci2SsUzzIkY",
+        "equipment_id": "HOKUDAI-AP-901521",
+        "name": "有機溶媒精製装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "rzu5rgxVMJFZbU2TQky3::HOKUDAI-AP-901962",
+        "doc_id": "rzu5rgxVMJFZbU2TQky3",
+        "equipment_id": "HOKUDAI-AP-901962",
+        "name": "有機電解合成装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "BQIrr3tMYKpfh1OGyueh::HOKUDAI-AP-901735",
+        "doc_id": "BQIrr3tMYKpfh1OGyueh",
+        "equipment_id": "HOKUDAI-AP-901735",
+        "name": "核酸自動分離装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5xMoDMQHkXK7BFKEvMCD::HOKUDAI-AP-901628",
+        "doc_id": "5xMoDMQHkXK7BFKEvMCD",
+        "equipment_id": "HOKUDAI-AP-901628",
+        "name": "検体バーコードシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "RUfrAzlD58zqlDOJsiJc::HOKUDAI-AP-901433",
+        "doc_id": "RUfrAzlD58zqlDOJsiJc",
+        "equipment_id": "HOKUDAI-AP-901433",
+        "name": "極低温反応機 UCリアクター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JZboyxQHFZVosyWoQNiO::HOKUDAI-AP-901537",
+        "doc_id": "JZboyxQHFZVosyWoQNiO",
+        "equipment_id": "HOKUDAI-AP-901537",
+        "name": "極低温反応機 UCRリアクター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "B4YoGffaSvo1gE1LSgik::HOKUDAI-AP-901553",
+        "doc_id": "B4YoGffaSvo1gE1LSgik",
+        "equipment_id": "HOKUDAI-AP-901553",
+        "name": "極低温反応機",
+        "papers_count": 3
+      },
+      {
+        "row_key": "gF5dwkcwd2ina1Jk7dbu::HOKUDAI-AP-901408",
+        "doc_id": "gF5dwkcwd2ina1Jk7dbu",
+        "equipment_id": "HOKUDAI-AP-901408",
+        "name": "3次元カラープリントセット POLYGONALmeister Editor academic+ダヴィンチColor 3FC1XXJPZNG",
+        "papers_count": 3
+      },
+      {
+        "row_key": "7xdbGiBo9cejdpbj5xCo::HOKUDAI-AP-901895",
+        "doc_id": "7xdbGiBo9cejdpbj5xCo",
+        "equipment_id": "HOKUDAI-AP-901895",
+        "name": "3次元動作分析システム エントリーパッケージ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "2hiQINmPgYxHckSZA6Fx::HOKUDAI-AP-902076",
+        "doc_id": "2hiQINmPgYxHckSZA6Fx",
+        "equipment_id": "HOKUDAI-AP-902076",
+        "name": "気象観測装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "SRuk7mP0GiVM5br71pUI::HOKUDAI-AP-902071",
+        "doc_id": "SRuk7mP0GiVM5br71pUI",
+        "equipment_id": "HOKUDAI-AP-902071",
+        "name": "水中ドローン",
+        "papers_count": 3
+      },
+      {
+        "row_key": "h3Ajp03deF06l3dyNJ9B::HOKUDAI-AP-901459",
+        "doc_id": "h3Ajp03deF06l3dyNJ9B",
+        "equipment_id": "HOKUDAI-AP-901459",
+        "name": "水素発生装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "lK2Ey2PzW3AfTXkQ1k5D::HOKUDAI-AP-901884",
+        "doc_id": "lK2Ey2PzW3AfTXkQ1k5D",
+        "equipment_id": "HOKUDAI-AP-901884",
+        "name": "水道直結型超純水装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "rSCGpJNpvdXr8rkRnhcO::HOKUDAI-AP-901816",
+        "doc_id": "rSCGpJNpvdXr8rkRnhcO",
+        "equipment_id": "HOKUDAI-AP-901816",
+        "name": "河川用電磁流速計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "OIuudscVIHvvjWKzCW3Y::HOKUDAI-AP-901629",
+        "doc_id": "OIuudscVIHvvjWKzCW3Y",
+        "equipment_id": "HOKUDAI-AP-901629",
+        "name": "生体信号計測解析システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "0jYW9aNpzyBm2ctRcvLL::HOKUDAI-AP-901383",
+        "doc_id": "0jYW9aNpzyBm2ctRcvLL",
+        "equipment_id": "HOKUDAI-AP-901383",
+        "name": "画像解析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "l7un2zGF0WSCrhk6PTu6::HOKUDAI-AP-902053",
+        "doc_id": "l7un2zGF0WSCrhk6PTu6",
+        "equipment_id": "HOKUDAI-AP-902053",
+        "name": "直読式総合水質計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "uMNFmrc0ZQ0uaJqbGAPZ::HOKUDAI-AP-902136",
+        "doc_id": "uMNFmrc0ZQ0uaJqbGAPZ",
+        "equipment_id": "HOKUDAI-AP-902136",
+        "name": "眼球運動測定装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "tY51oRQfMlrfLU2FPHWm::HOKUDAI-AP-902146",
+        "doc_id": "tY51oRQfMlrfLU2FPHWm",
+        "equipment_id": "HOKUDAI-AP-902146",
+        "name": "磁気式3次元位置計測装置 PATRIOTシステム Polhemus",
+        "papers_count": 0
+      },
+      {
+        "row_key": "dJAJOiqEpDXJM5IDjiZo::HOKUDAI-AP-901426",
+        "doc_id": "dJAJOiqEpDXJM5IDjiZo",
+        "equipment_id": "HOKUDAI-AP-901426",
+        "name": "示差走査熱量計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "lccem771VoWfOcXECyxK::HOKUDAI-AP-902149",
+        "doc_id": "lccem771VoWfOcXECyxK",
+        "equipment_id": "HOKUDAI-AP-902149",
+        "name": "立型マシニングセンタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "gEpy2mBGRkOMeTZFKs4c::HOKUDAI-AP-900799",
+        "doc_id": "gEpy2mBGRkOMeTZFKs4c",
+        "equipment_id": "HOKUDAI-AP-900799",
+        "name": "簡易薄膜解析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "NL94MRczHmVNyDf0sAnG::HOKUDAI-AP-901866",
+        "doc_id": "NL94MRczHmVNyDf0sAnG",
+        "equipment_id": "HOKUDAI-AP-901866",
+        "name": "肺運動負荷モニタリングシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "zQWBxFqkveCh6VHPWVvv::HOKUDAI-AP-902094",
+        "doc_id": "zQWBxFqkveCh6VHPWVvv",
+        "equipment_id": "HOKUDAI-AP-902094",
+        "name": "背負い式エレクトロフィッシャー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ajDy1U5ihX1uIp1sHtx8::HOKUDAI-AP-902210",
+        "doc_id": "ajDy1U5ihX1uIp1sHtx8",
+        "equipment_id": "HOKUDAI-AP-902210",
+        "name": "自動マイクロ波固相ペプチド合成装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "SomVfqjb2m6mCjNneKcQ::HOKUDAI-AP-902251",
+        "doc_id": "SomVfqjb2m6mCjNneKcQ",
+        "equipment_id": "HOKUDAI-AP-902251",
+        "name": "蛍光測定装置 Qubit Flex Fluorometer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ezNx3B1x0LU1Hg5AGCPh::HOKUDAI-AP-901387",
+        "doc_id": "ezNx3B1x0LU1Hg5AGCPh",
+        "equipment_id": "HOKUDAI-AP-901387",
+        "name": "超音波発生器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "npAYH64UOqHILqCx2G3m::HOKUDAI-AP-901414",
+        "doc_id": "npAYH64UOqHILqCx2G3m",
+        "equipment_id": "HOKUDAI-AP-901414",
+        "name": "遊星ボールミル",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sPtdtGPjsvBdu1x3mMd8::HOKUDAI-AP-901472",
+        "doc_id": "sPtdtGPjsvBdu1x3mMd8",
+        "equipment_id": "HOKUDAI-AP-901472",
+        "name": "遺伝子導入装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "lMpzk5RSdrFMhdHbqFJj::HOKUDAI-AP-901877",
+        "doc_id": "lMpzk5RSdrFMhdHbqFJj",
+        "equipment_id": "HOKUDAI-AP-901877",
+        "name": "酸素ファイター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "fukb2BLFrRWUEfyQBq3v::HOKUDAI-AP-902262",
+        "doc_id": "fukb2BLFrRWUEfyQBq3v",
+        "equipment_id": "HOKUDAI-AP-902262",
+        "name": "電動マイクロインジェクター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Y8iywebIFaNUU0LW4pu6::HOKUDAI-AP-901343",
+        "doc_id": "Y8iywebIFaNUU0LW4pu6",
+        "equipment_id": "HOKUDAI-AP-901343",
+        "name": "電場観測装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "3GvxZ0Yaf9SWCnBUKhmT::HOKUDAI-AP-901970",
+        "doc_id": "3GvxZ0Yaf9SWCnBUKhmT",
+        "equipment_id": "HOKUDAI-AP-901970",
+        "name": "電子ビーム型真空蒸着装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "INrylppPk7dFTWGaGqzf::HOKUDAI-AP-901643",
+        "doc_id": "INrylppPk7dFTWGaGqzf",
+        "equipment_id": "HOKUDAI-AP-901643",
+        "name": "電気刺激装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "o3qXKDNek93ZhIeBZgLN::HOKUDAI-AP-901306",
+        "doc_id": "o3qXKDNek93ZhIeBZgLN",
+        "equipment_id": "HOKUDAI-AP-901306",
+        "name": "電界計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Hm75fejzHVr8y9drJOaj::HOKUDAI-AP-901556",
+        "doc_id": "Hm75fejzHVr8y9drJOaj",
+        "equipment_id": "HOKUDAI-AP-901556",
+        "name": "電解合成装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "uhEm1ceIBG9sTAelbcis::HOKUDAI-AP-901849",
+        "doc_id": "uhEm1ceIBG9sTAelbcis",
+        "equipment_id": "HOKUDAI-AP-901849",
+        "name": "静電容量型6軸力覚センサ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "kaCqQghDpWN2HX7Tsf2u::HOKUDAI-AP-901567",
+        "doc_id": "kaCqQghDpWN2HX7Tsf2u",
+        "equipment_id": "HOKUDAI-AP-901567",
+        "name": "高圧顕微鏡セル35361",
+        "papers_count": 3
+      },
+      {
+        "row_key": "RgQiKbV0b2sbQAh4zERq::HOKUDAI-AP-901810",
+        "doc_id": "RgQiKbV0b2sbQAh4zERq",
+        "equipment_id": "HOKUDAI-AP-901810",
+        "name": "高速度カメラ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wpAZVF1xpXf3PzbBrK1a::HOKUDAI-AP-902070",
+        "doc_id": "wpAZVF1xpXf3PzbBrK1a",
+        "equipment_id": "HOKUDAI-AP-902070",
+        "name": "高速応答DOセンサー搭載メモリーCTD RINKO-Profiler",
+        "papers_count": 0
+      },
+      {
+        "row_key": "9S0QTnyoOQYohSmvCdFQ::HOKUDAI-AP-902078",
+        "doc_id": "9S0QTnyoOQYohSmvCdFQ",
+        "equipment_id": "HOKUDAI-AP-902078",
+        "name": "高速溶媒抽出装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "pZmE0qaYymNpug5a161v::HOKUDAI-AP-902079",
+        "doc_id": "pZmE0qaYymNpug5a161v",
+        "equipment_id": "HOKUDAI-AP-902079",
+        "name": "高速高圧抽出装置システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-4122::eqnet-4122",
+        "doc_id": "eqnet-4122",
+        "equipment_id": "eqnet-4122",
+        "name": "1000kN万能試験機 前川試験機製作所(MRA-100-F2)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-4196::eqnet-4196",
+        "doc_id": "eqnet-4196",
+        "equipment_id": "eqnet-4196",
+        "name": "1000kN油圧万能試験機 東京試験機(YU-1000SIV)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-4123::eqnet-4123",
+        "doc_id": "eqnet-4123",
+        "equipment_id": "eqnet-4123",
+        "name": "2000kN圧縮試験機 前川試験機製作所(ACA-200A-F1)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4834::eqnet-4834",
+        "doc_id": "eqnet-4834",
+        "equipment_id": "eqnet-4834",
+        "name": "3D画像処理ソフトウェア マックスネット Dragonfly",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 0,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-20T13:47:39.591985+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    }
+  ]
+}

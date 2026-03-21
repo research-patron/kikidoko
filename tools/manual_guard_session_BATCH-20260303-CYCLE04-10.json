@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260303-CYCLE04-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T13:48:04.591063+00:00",
+  "updated_at": "2026-03-03T14:19:23.166125+00:00",
+  "closed_at": "2026-03-03T14:19:23.166125+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle04_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-CYCLE04-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "452d3ca8e7f2be664551b18d5ac6e05e8f7f81921bc3a51c0697a990e7240868",
+    "queue_sha256_at_start": "9964583baef0cee01a77a82f7e34f3a51746f5ac6de735fc7c59441276e949d5",
+    "queue_row_keys_sha256": "6c90b1a72d8245d175e1cedef3387350ed5200b8d8b0e9996a20fd0b10113ee4"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "97TYuvni2G36owVbyBbJ::97TYuvni2G36owVbyBbJ",
+      "lp1iM0WBqAGsoJnCxQcR::lp1iM0WBqAGsoJnCxQcR",
+      "6fHWKVh135PUjyakV7dH::6fHWKVh135PUjyakV7dH",
+      "gW774Do5dk0ltS6FauDl::gW774Do5dk0ltS6FauDl",
+      "5jdQ6eyopZQbVuX4yT5H::5jdQ6eyopZQbVuX4yT5H",
+      "BrZPVvl0UqqxL9KPk2N7::BrZPVvl0UqqxL9KPk2N7",
+      "0euDBH9nI8Bti49KS5Oj::0euDBH9nI8Bti49KS5Oj",
+      "2If47ehM8XMa9D1Pjjjg::2If47ehM8XMa9D1Pjjjg",
+      "6950iLYUv1k9cXAB1LCY::6950iLYUv1k9cXAB1LCY",
+      "bqrVjlXXzdoIILRnjS5e::bqrVjlXXzdoIILRnjS5e"
+    ],
+    "target_rows": [
+      {
+        "row_key": "97TYuvni2G36owVbyBbJ::97TYuvni2G36owVbyBbJ",
+        "doc_id": "97TYuvni2G36owVbyBbJ",
+        "equipment_id": "97TYuvni2G36owVbyBbJ",
+        "name": "Benchwork Automation System",
+        "papers_count": 3
+      },
+      {
+        "row_key": "lp1iM0WBqAGsoJnCxQcR::lp1iM0WBqAGsoJnCxQcR",
+        "doc_id": "lp1iM0WBqAGsoJnCxQcR",
+        "equipment_id": "lp1iM0WBqAGsoJnCxQcR",
+        "name": "Typhoon FLA9500",
+        "papers_count": 3
+      },
+      {
+        "row_key": "6fHWKVh135PUjyakV7dH::6fHWKVh135PUjyakV7dH",
+        "doc_id": "6fHWKVh135PUjyakV7dH",
+        "equipment_id": "6fHWKVh135PUjyakV7dH",
+        "name": "Laboratory Automation System",
+        "papers_count": 3
+      },
+      {
+        "row_key": "gW774Do5dk0ltS6FauDl::gW774Do5dk0ltS6FauDl",
+        "doc_id": "gW774Do5dk0ltS6FauDl",
+        "equipment_id": "gW774Do5dk0ltS6FauDl",
+        "name": "サーマルサイクラー (BioRad C1000)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "5jdQ6eyopZQbVuX4yT5H::5jdQ6eyopZQbVuX4yT5H",
+        "doc_id": "5jdQ6eyopZQbVuX4yT5H",
+        "equipment_id": "5jdQ6eyopZQbVuX4yT5H",
+        "name": "DNA/RNA抽出受託サービス",
+        "papers_count": 2
+      },
+      {
+        "row_key": "BrZPVvl0UqqxL9KPk2N7::BrZPVvl0UqqxL9KPk2N7",
+        "doc_id": "BrZPVvl0UqqxL9KPk2N7",
+        "equipment_id": "BrZPVvl0UqqxL9KPk2N7",
+        "name": "DNAシークエンサー (Thermo Fisher Scientific SeqStudio Genetic Analyzer)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0euDBH9nI8Bti49KS5Oj::0euDBH9nI8Bti49KS5Oj",
+        "doc_id": "0euDBH9nI8Bti49KS5Oj",
+        "equipment_id": "0euDBH9nI8Bti49KS5Oj",
+        "name": "PromethION 解析PC (Arcbrain SXQ2000SLNT)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "2If47ehM8XMa9D1Pjjjg::2If47ehM8XMa9D1Pjjjg",
+        "doc_id": "2If47ehM8XMa9D1Pjjjg",
+        "equipment_id": "2If47ehM8XMa9D1Pjjjg",
+        "name": "ピッピンパルス (sage science PippinPulse)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "6950iLYUv1k9cXAB1LCY::6950iLYUv1k9cXAB1LCY",
+        "doc_id": "6950iLYUv1k9cXAB1LCY",
+        "equipment_id": "6950iLYUv1k9cXAB1LCY",
+        "name": "マイクロアレイ (ThermoFisher GeneChip)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "bqrVjlXXzdoIILRnjS5e::bqrVjlXXzdoIILRnjS5e",
+        "doc_id": "bqrVjlXXzdoIILRnjS5e",
+        "equipment_id": "bqrVjlXXzdoIILRnjS5e",
+        "name": "マイクロチップ電気泳動装置 (島津 MultiNA)",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T13:48:04.591063+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T13:48:45.095977+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T14:14:55.241492+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T14:19:23.166125+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

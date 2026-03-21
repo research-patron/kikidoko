@@ -1,0 +1,36 @@
+{
+  "completed_batches": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "final_totals": {
+    "approved": 9700,
+    "pending": 898,
+    "rejected": 0,
+    "missing": 0,
+    "total": 10598
+  },
+  "final_ui_report": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_batch109_final.json",
+  "global_gate_after109": {
+    "label": "after109",
+    "approved_count": 9700,
+    "reviewer_mismatch": 0,
+    "validation_issue_total": 0,
+    "forbidden_pattern_hit": 0,
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.0004123711340206186,
+    "pitfall2_same_ratio": 0.0007216494845360825,
+    "reviewed_at_unique_count": 9700
+  }
+}

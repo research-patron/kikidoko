@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE06-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T15:27:54.688666+00:00",
+  "updated_at": "2026-03-03T15:46:06.292089+00:00",
+  "closed_at": "2026-03-03T15:46:06.292089+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle06_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE06-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "1cdb31311e1785d5ac94f36a4a204a3f92a088cfd5bb64101d32902bce5cf3bc",
+    "queue_sha256_at_start": "2d8edb04640300c636c28a624f692ec136bfa20290d0bba3387653a611b717df",
+    "queue_row_keys_sha256": "5ce1fe020b828239d576b69a65afc5150de8ef041346a9da032111fea7638008"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "sB39y0rUJPD869tg6Xrh::sB39y0rUJPD869tg6Xrh",
+      "x9OT6J1fcUiKChF8Ipxr::x9OT6J1fcUiKChF8Ipxr",
+      "TCWmCCONs9PJMj7iDPms::TCWmCCONs9PJMj7iDPms",
+      "oaC68uaMB2GvR0uWx9xS::oaC68uaMB2GvR0uWx9xS",
+      "MUGIOGQ0fn1X3LiDvotO::MUGIOGQ0fn1X3LiDvotO",
+      "d0YlZJJgT5DUFj5bIS5P::d0YlZJJgT5DUFj5bIS5P",
+      "h43nRgLfolak6qyOFZAN::h43nRgLfolak6qyOFZAN",
+      "Qg21JozKGQxRQpzE9ql1::Qg21JozKGQxRQpzE9ql1",
+      "ZT31rwQVJuPms0qL6qvL::ZT31rwQVJuPms0qL6qvL",
+      "2hHKwQeaVXDiwQWs42sQ::KUMAMOTO-list3f-04"
+    ],
+    "target_rows": [
+      {
+        "row_key": "sB39y0rUJPD869tg6Xrh::sB39y0rUJPD869tg6Xrh",
+        "doc_id": "sB39y0rUJPD869tg6Xrh",
+        "equipment_id": "sB39y0rUJPD869tg6Xrh",
+        "name": "次世代シーケンサーNextSeq2000",
+        "papers_count": 3
+      },
+      {
+        "row_key": "x9OT6J1fcUiKChF8Ipxr::x9OT6J1fcUiKChF8Ipxr",
+        "doc_id": "x9OT6J1fcUiKChF8Ipxr",
+        "equipment_id": "x9OT6J1fcUiKChF8Ipxr",
+        "name": "次世代シーケンサーPromethION 24",
+        "papers_count": 3
+      },
+      {
+        "row_key": "TCWmCCONs9PJMj7iDPms::TCWmCCONs9PJMj7iDPms",
+        "doc_id": "TCWmCCONs9PJMj7iDPms",
+        "equipment_id": "TCWmCCONs9PJMj7iDPms",
+        "name": "大腸菌振とう培養器（バイオシェーカー）タイテックBR-43FL-MR",
+        "papers_count": 2
+      },
+      {
+        "row_key": "oaC68uaMB2GvR0uWx9xS::oaC68uaMB2GvR0uWx9xS",
+        "doc_id": "oaC68uaMB2GvR0uWx9xS",
+        "equipment_id": "oaC68uaMB2GvR0uWx9xS",
+        "name": "ゲノムDNA抽出機 QuickGene-Auto240L",
+        "papers_count": 3
+      },
+      {
+        "row_key": "MUGIOGQ0fn1X3LiDvotO::MUGIOGQ0fn1X3LiDvotO",
+        "doc_id": "MUGIOGQ0fn1X3LiDvotO",
+        "equipment_id": "MUGIOGQ0fn1X3LiDvotO",
+        "name": "次世代シーケンサーNextSeq500",
+        "papers_count": 2
+      },
+      {
+        "row_key": "d0YlZJJgT5DUFj5bIS5P::d0YlZJJgT5DUFj5bIS5P",
+        "doc_id": "d0YlZJJgT5DUFj5bIS5P",
+        "equipment_id": "d0YlZJJgT5DUFj5bIS5P",
+        "name": "リアルタイムPCRシステム QuantStudio7",
+        "papers_count": 0
+      },
+      {
+        "row_key": "h43nRgLfolak6qyOFZAN::h43nRgLfolak6qyOFZAN",
+        "doc_id": "h43nRgLfolak6qyOFZAN",
+        "equipment_id": "h43nRgLfolak6qyOFZAN",
+        "name": "全自動ハイスループット電気泳動システム4200 TapeStation",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Qg21JozKGQxRQpzE9ql1::Qg21JozKGQxRQpzE9ql1",
+        "doc_id": "Qg21JozKGQxRQpzE9ql1",
+        "equipment_id": "Qg21JozKGQxRQpzE9ql1",
+        "name": "次世代シーケンサーMiSeq",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ZT31rwQVJuPms0qL6qvL::ZT31rwQVJuPms0qL6qvL",
+        "doc_id": "ZT31rwQVJuPms0qL6qvL",
+        "equipment_id": "ZT31rwQVJuPms0qL6qvL",
+        "name": "次世代シーケンサーシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "2hHKwQeaVXDiwQWs42sQ::KUMAMOTO-list3f-04",
+        "doc_id": "2hHKwQeaVXDiwQWs42sQ",
+        "equipment_id": "KUMAMOTO-list3f-04",
+        "name": "自動研磨装置 ビューラー メタザーブ250 + ベクトルLC250",
+        "papers_count": 1
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T15:27:54.688666+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T15:27:54.783810+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T15:40:48.080368+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T15:46:06.292089+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

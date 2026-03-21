@@ -1,0 +1,113 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260312-CYCLE0019-REPAIR-FINAL7",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-12T00:02:15.689556+00:00",
+  "updated_at": "2026-03-12T00:03:17.497900+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0019_repair_final7.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0019-REPAIR-FINAL7.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "d813b0b0d758bacca4341d286645f8556420b635ca6c93ef4ee938486838197d",
+    "queue_sha256_at_start": "1b1b10eef7d7526ef4cb7f80e06d7fa1cb59a42b52ce3d93bb271bd4913db2fb",
+    "queue_row_keys_sha256": "e51f8d898ccc4fc2fefccac387b5effdf13b71ea0a1c66affa446cadfe577297"
+  },
+  "queue": {
+    "target_count": 7,
+    "target_row_keys": [
+      "MIE-equipment4::MIE-equipment4",
+      "KUMAMOTO-list5f-04::KUMAMOTO-list5f-04",
+      "MIE-equipment9::MIE-equipment9",
+      "MIE-equipment5::MIE-equipment5",
+      "KUMAMOTO-list5f-06::KUMAMOTO-list5f-06",
+      "KUMAMOTO-list5f-03::KUMAMOTO-list5f-03",
+      "KUMAMOTO-list3f-10::KUMAMOTO-list3f-10"
+    ],
+    "target_rows": [
+      {
+        "row_key": "MIE-equipment4::MIE-equipment4",
+        "doc_id": "MIE-equipment4",
+        "equipment_id": "MIE-equipment4",
+        "name": "X線界面構造解析装置（XRR）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list5f-04::KUMAMOTO-list5f-04",
+        "doc_id": "KUMAMOTO-list5f-04",
+        "equipment_id": "KUMAMOTO-list5f-04",
+        "name": "イオン分光装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MIE-equipment9::MIE-equipment9",
+        "doc_id": "MIE-equipment9",
+        "equipment_id": "MIE-equipment9",
+        "name": "光電子分光分析装置（ESCA）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MIE-equipment5::MIE-equipment5",
+        "doc_id": "MIE-equipment5",
+        "equipment_id": "MIE-equipment5",
+        "name": "単結晶X線構造解析装置（SC-XRD）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list5f-06::KUMAMOTO-list5f-06",
+        "doc_id": "KUMAMOTO-list5f-06",
+        "equipment_id": "KUMAMOTO-list5f-06",
+        "name": "超高真空エッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list5f-03::KUMAMOTO-list5f-03",
+        "doc_id": "KUMAMOTO-list5f-03",
+        "equipment_id": "KUMAMOTO-list5f-03",
+        "name": "電子損失分光装置 HREELS",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-10::KUMAMOTO-list3f-10",
+        "doc_id": "KUMAMOTO-list3f-10",
+        "equipment_id": "KUMAMOTO-list3f-10",
+        "name": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600F",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-12T00:02:15.689556+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 7
+      }
+    },
+    {
+      "at": "2026-03-12T00:02:16.344282+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-12T00:03:17.497900+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

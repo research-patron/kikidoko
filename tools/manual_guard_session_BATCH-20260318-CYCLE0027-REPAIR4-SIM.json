@@ -1,0 +1,111 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260318-CYCLE0027-REPAIR4-SIM",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-17T22:23:57.182367+00:00",
+  "updated_at": "2026-03-17T22:30:38.664524+00:00",
+  "closed_at": "2026-03-17T22:30:38.664524+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0027_repair4_similarity.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260318-CYCLE0027-REPAIR4-SIM.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "881414456946de3a16b1b94b9eb3dc8753b377a450cab66c0e529fbb23313c9d",
+    "queue_sha256_at_start": "bb2843a871ee1406e2e7da75735e6d74936fa95d58ddc5074adf5de54802561e",
+    "queue_row_keys_sha256": "3ccf019eb038a164ec820b61f6f518fbfab9808aaff16da26dca88756286a8c3"
+  },
+  "queue": {
+    "target_count": 4,
+    "target_row_keys": [
+      "6gYvmotIilCkDzCoazNd::6gYvmotIilCkDzCoazNd",
+      "W8F1EJB9RfmLb53Kr4VE::W8F1EJB9RfmLb53Kr4VE",
+      "4bdeB49BlNRyCkhE3KGp::4bdeB49BlNRyCkhE3KGp",
+      "I2EoqGndscKRyNBWbyFS::I2EoqGndscKRyNBWbyFS"
+    ],
+    "target_rows": [
+      {
+        "row_key": "6gYvmotIilCkDzCoazNd::6gYvmotIilCkDzCoazNd",
+        "doc_id": "6gYvmotIilCkDzCoazNd",
+        "equipment_id": "6gYvmotIilCkDzCoazNd",
+        "name": "DNAシーケンサー3130xl-L",
+        "papers_count": 0
+      },
+      {
+        "row_key": "W8F1EJB9RfmLb53Kr4VE::W8F1EJB9RfmLb53Kr4VE",
+        "doc_id": "W8F1EJB9RfmLb53Kr4VE",
+        "equipment_id": "W8F1EJB9RfmLb53Kr4VE",
+        "name": "DNAシーケンサー3130xl-R",
+        "papers_count": 0
+      },
+      {
+        "row_key": "4bdeB49BlNRyCkhE3KGp::4bdeB49BlNRyCkhE3KGp",
+        "doc_id": "4bdeB49BlNRyCkhE3KGp",
+        "equipment_id": "4bdeB49BlNRyCkhE3KGp",
+        "name": "DNAシーケンサー3500xL",
+        "papers_count": 0
+      },
+      {
+        "row_key": "I2EoqGndscKRyNBWbyFS::I2EoqGndscKRyNBWbyFS",
+        "doc_id": "I2EoqGndscKRyNBWbyFS",
+        "equipment_id": "I2EoqGndscKRyNBWbyFS",
+        "name": "DNAシーケンサー（セルフラン） (ABI 3130xl)",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-17T22:23:57.182367+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 4
+      }
+    },
+    {
+      "at": "2026-03-17T22:24:11.660645+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-17T22:24:22.852744+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-17T22:24:42.211896+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-17T22:30:38.664524+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

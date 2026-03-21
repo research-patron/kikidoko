@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE30R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T04:17:42.092314+00:00",
+  "updated_at": "2026-03-04T04:23:07.681357+00:00",
+  "closed_at": "2026-03-04T04:23:07.681357+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle30r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE30R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "9c655a250a23ecf91f2856b00561a2858149b8af01a57491f8b4989cfcaf38b1",
+    "queue_sha256_at_start": "190e0dea3c3b9fc6144e44a4ea26c81927051e3f669c189e96acde4d2ffe4889",
+    "queue_row_keys_sha256": "f540dd161daba984119c8b0528a0f57b1f953208d70db433ee8beeab7837a80f"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "LVSA2Dfw3IEBgWrF6oye::HOKUDAI-AP-902245",
+      "fugu07L4UeWGxoWiVEes::HOKUDAI-AP-902229",
+      "tG21yZZDhF45lZhQEzGZ::HOKUDAI-AP-901112",
+      "yxF6BVAZ1CAlFxJbsj1n::HOKUDAI-AP-901304",
+      "i0Pq9CwZdxKZHYuQ1NMb::HOKUDAI-AP-900822",
+      "bHdRTjgTZ7eWrQA00Ejd::HOKUDAI-AP-901854",
+      "UqiLftdnDAReIQLVyxd1::HOKUDAI-AP-901345",
+      "l9JimqYJwMgYKO7SL8Es::HOKUDAI-AP-902230",
+      "OAKDtGP8660BvXJUMMcH::HOKUDAI-AP-902057",
+      "N5gd4MWiGNawYM6fUTHE::HOKUDAI-AP-902276"
+    ],
+    "target_rows": [
+      {
+        "row_key": "LVSA2Dfw3IEBgWrF6oye::HOKUDAI-AP-902245",
+        "doc_id": "LVSA2Dfw3IEBgWrF6oye",
+        "equipment_id": "HOKUDAI-AP-902245",
+        "name": "ImmunoSpot S6 MACRO Analyzer",
+        "papers_count": 1
+      },
+      {
+        "row_key": "fugu07L4UeWGxoWiVEes::HOKUDAI-AP-902229",
+        "doc_id": "fugu07L4UeWGxoWiVEes",
+        "equipment_id": "HOKUDAI-AP-902229",
+        "name": "In Vitro & In Vivo 遺伝子導入装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "tG21yZZDhF45lZhQEzGZ::HOKUDAI-AP-901112",
+        "doc_id": "tG21yZZDhF45lZhQEzGZ",
+        "equipment_id": "HOKUDAI-AP-901112",
+        "name": "INVIVO2 低酸素ワークステーション 300",
+        "papers_count": 2
+      },
+      {
+        "row_key": "yxF6BVAZ1CAlFxJbsj1n::HOKUDAI-AP-901304",
+        "doc_id": "yxF6BVAZ1CAlFxJbsj1n",
+        "equipment_id": "HOKUDAI-AP-901304",
+        "name": "LED光照射装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "i0Pq9CwZdxKZHYuQ1NMb::HOKUDAI-AP-900822",
+        "doc_id": "i0Pq9CwZdxKZHYuQ1NMb",
+        "equipment_id": "HOKUDAI-AP-900822",
+        "name": "MBR実験装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "bHdRTjgTZ7eWrQA00Ejd::HOKUDAI-AP-901854",
+        "doc_id": "bHdRTjgTZ7eWrQA00Ejd",
+        "equipment_id": "HOKUDAI-AP-901854",
+        "name": "MEX方式3Dプリンタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "UqiLftdnDAReIQLVyxd1::HOKUDAI-AP-901345",
+        "doc_id": "UqiLftdnDAReIQLVyxd1",
+        "equipment_id": "HOKUDAI-AP-901345",
+        "name": "MT観測装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "l9JimqYJwMgYKO7SL8Es::HOKUDAI-AP-902230",
+        "doc_id": "l9JimqYJwMgYKO7SL8Es",
+        "equipment_id": "HOKUDAI-AP-902230",
+        "name": "Nucleofector(TM) 2b Device",
+        "papers_count": 3
+      },
+      {
+        "row_key": "OAKDtGP8660BvXJUMMcH::HOKUDAI-AP-902057",
+        "doc_id": "OAKDtGP8660BvXJUMMcH",
+        "equipment_id": "HOKUDAI-AP-902057",
+        "name": "PAM-2500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "N5gd4MWiGNawYM6fUTHE::HOKUDAI-AP-902276",
+        "doc_id": "N5gd4MWiGNawYM6fUTHE",
+        "equipment_id": "HOKUDAI-AP-902276",
+        "name": "Promethion P2 solo CapEX",
+        "papers_count": 1
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T04:17:42.092314+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T04:17:42.195818+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:03.582254+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:08.971028+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:14.351469+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:19.705271+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:25.104113+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:30.736872+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:36.786228+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:44.155287+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:49.686988+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:18:55.336163+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:19:58.990262+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:23:07.681357+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1311 @@
+{
+  "generated_at": "2026-03-08T07:32:21.921882+00:00",
+  "batch_id": "BATCH-20260308-CYCLE0010-100",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 100,
+  "family_count": 100,
+  "groups": [
+    {
+      "family_id": "その他|RI実験施設|線測定装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lgqfltWh9RKzCft2MqJE",
+          "equipment_id": "KOCHI-e323d2c223",
+          "name": "γ線測定装置",
+          "category_general": "その他",
+          "category_detail": "RI実験施設"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線照射装置 (X-ray Irradiation System)|線照射装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "iSeZdknwDLJctBEUcDmY",
+          "equipment_id": "HOKUDAI-AP-100116",
+          "name": "X線照射装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線照射装置 (X-ray Irradiation System)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / その他のX線関連装置 (Other X-ray Related Equipment)|ラウエ結晶方位決定システム|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "E0IZ6GddoG9E8xp1Uhsn",
+          "equipment_id": "HOKUDAI-AP-100290",
+          "name": "ラウエ結晶方位決定システム",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / その他のX線関連装置 (Other X-ray Related Equipment)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / 蛍光X線分析装置(XRF) (X-ray Fluorescence Spectrometer (XRF))|エネルギー分散型蛍光-線分析装置-xrf|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "tHap2YZLiRgZauLUnmAX",
+          "equipment_id": "HOKUDAI-AP-100269",
+          "name": "エネルギー分散型蛍光X線分析装置(XRF)",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / 蛍光X線分析装置(XRF) (X-ray Fluorescence Spectrometer (XRF))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|エネルギー分散型蛍光-線分析装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HJdOsSwTSWoWCTVTUVXs",
+          "equipment_id": "HOKUDAI-AP-901301",
+          "name": "エネルギー分散型蛍光Ｘ線分析装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|デスクトップ-線回折装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "DwFZW91ZLTmi96j7X21Y",
+          "equipment_id": "HOKUDAI-AP-901943",
+          "name": "デスクトップX線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|単結晶-線構造解析システム|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5e2IJuPoCDpztMqfNHFa",
+          "equipment_id": "HOKUDAI-AP-902228",
+          "name": "単結晶X線構造解析システム",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|日立-線照射装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RAa1Z8TvRuK91faJxrnB",
+          "equipment_id": "HOKUDAI-AP-901105",
+          "name": "日立X線照射装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|溶液フリーマウント用自動吸引冷却格納装置|xray|liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "r0fJJk3dC5Zi3FRu1Hxw",
+          "equipment_id": "HOKUDAI-AP-901379",
+          "name": "溶液フリーマウント用自動吸引冷却格納装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|線検査装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "I1C7FFFSY4ShBqLWYtMC",
+          "equipment_id": "HOKUDAI-AP-900794",
+          "name": "X線検査装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置_HU (X-ray Related Equipment) / None|走査電子顕微鏡システム及び粒子解析システム|sem_tem|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "T1HyPeqRixFBGMReRyXM",
+          "equipment_id": "HOKUDAI-AP-902089",
+          "name": "走査電子顕微鏡システム及び粒子解析システム",
+          "category_general": "その他",
+          "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置|試料水平型多目的-線回折測定装置-xrd|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Hh91Qi646KaUQ0imZzHL",
+          "equipment_id": "MIE-equipment3",
+          "name": "試料水平型多目的X線回折測定装置（XRD）",
+          "category_general": "その他",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置|走査型-線光電子分光分析装置-多モードトポ解析システム-xps|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Bnlyh5Lz5UQhB2LsYHRz",
+          "equipment_id": "MIE-equipment10",
+          "name": "走査型X線光電子分光分析装置 （多モードトポ解析システム/XPS）",
+          "category_general": "その他",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置|電子線マイクロアナライザ-多モードトポ解析システム-epma|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JKJelUiKor4fkn6WYRYB",
+          "equipment_id": "MIE-equipment11",
+          "name": "電子線マイクロアナライザ （多モードトポ解析システム/EPMA)",
+          "category_general": "その他",
+          "category_detail": "X線関連装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 (Others) / その他_ (Others)|レーザーアブレーション---レーザー誘起ブレークダウン分光-誘導結合プラズマ質量分析装置|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "BXrqEOb2zFpIEAm7J7ty",
+          "equipment_id": "HOKUDAI-AP-100408",
+          "name": "レーザーアブレーション-レーザー誘起ブレークダウン分光-誘導結合プラズマ質量分析装置",
+          "category_general": "その他",
+          "category_detail": "その他 (Others) / その他_ (Others)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / - / -|物理特性測定システム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5R9ZyIGax9YgQrR6szFA",
+          "equipment_id": "5R9ZyIGax9YgQrR6szFA",
+          "name": "物理特性測定システム",
+          "category_general": "その他",
+          "category_detail": "その他 / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / - / -|移動式集塵機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Rmj07jyIRebIomXmvrsj",
+          "equipment_id": "Rmj07jyIRebIomXmvrsj",
+          "name": "移動式集塵機",
+          "category_general": "その他",
+          "category_detail": "その他 / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / - / -|超音波発生機-トミー精工-ud-201|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GLcjahOYdUXA1kKPr3Ky",
+          "equipment_id": "GLcjahOYdUXA1kKPr3Ky",
+          "name": "超音波発生機 トミー精工UD-201",
+          "category_general": "その他",
+          "category_detail": "その他 / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / FACS|フローサイトメーター-facscalibur-hg|flow|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "G3YKY3YDI8vRloTzaVGB",
+          "equipment_id": "G3YKY3YDI8vRloTzaVGB",
+          "name": "フローサイトメーター FACSCalibur HG",
+          "category_general": "その他",
+          "category_detail": "その他 / FACS"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / IT / -|f-7000-蛍光分光光度計-pc-バージョンアップ|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "oWwNqeOg32Ug3AT0xbXH",
+          "equipment_id": "oWwNqeOg32Ug3AT0xbXH",
+          "name": "F-7000蛍光分光光度計PCバージョンアップ",
+          "category_general": "その他",
+          "category_detail": "その他 / IT / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / IT / -|パソコン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "DUyQbxhoZYVkEmIeJblc",
+          "equipment_id": "DUyQbxhoZYVkEmIeJblc",
+          "name": "パソコン",
+          "category_general": "その他",
+          "category_detail": "その他 / IT / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / その他主要機器|脳波-心拍変動解析一式|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "muzVlAUntiAXayMbGZHv",
+          "equipment_id": "YAMAGUCHI-etc88",
+          "name": "脳波・心拍変動解析一式",
+          "category_general": "その他",
+          "category_detail": "その他 / その他主要機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / オートクレーブ|オートクレーブ-hv-50|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2iIwkv0b1SHE7eHj3DZU",
+          "equipment_id": "2iIwkv0b1SHE7eHj3DZU",
+          "name": "オートクレーブB HV-50",
+          "category_general": "その他",
+          "category_detail": "その他 / オートクレーブ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / オートクレーブ|オートクレーブ-lbs-325|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zZ7vWDPnwnlXdeF5uhMz",
+          "equipment_id": "zZ7vWDPnwnlXdeF5uhMz",
+          "name": "オートクレーブA LBS-325",
+          "category_general": "その他",
+          "category_detail": "その他 / オートクレーブ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / オープンラボ|農学部オープンラボスペース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y9PNw3EA4spYQnZKBzIr",
+          "equipment_id": "y9PNw3EA4spYQnZKBzIr",
+          "name": "農学部オープンラボスペース",
+          "category_general": "その他",
+          "category_detail": "その他 / オープンラボ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|pau1600cg-クリーンベンチ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l1yiK5rXVvoXhjfnAd8L",
+          "equipment_id": "l1yiK5rXVvoXhjfnAd8L",
+          "name": "クリーンベンチ PAU1600CG",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|クリーンベンチ-sanyo-mcv-13bss|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "CqOeDLgEn9EvCzLj1GMa",
+          "equipment_id": "CqOeDLgEn9EvCzLj1GMa",
+          "name": "クリーンベンチ SANYO MCV-13BSS",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|クリーンベンチ-tpv-790ag-台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OByMk3FpEeOi9mRGdvVf",
+          "equipment_id": "OByMk3FpEeOi9mRGdvVf",
+          "name": "クリーンベンチ TPV-790AG（8台）",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|クリーンベンチ-vst-700|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "eGGKNSWUv7VkAeFq3e8Q",
+          "equipment_id": "eGGKNSWUv7VkAeFq3e8Q",
+          "name": "クリーンベンチ VST-700",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / サポート|facs-機器作業サポート等料金|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "88YPpg3uba96ejqV9Rmv",
+          "equipment_id": "88YPpg3uba96ejqV9Rmv",
+          "name": "FACS機器作業サポート等料金",
+          "category_general": "その他",
+          "category_detail": "その他 / サポート"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / サポート|医学科共通機器利用支援および技術支援|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VNpy7aRdbbzQqbBPs78P",
+          "equipment_id": "VNpy7aRdbbzQqbBPs78P",
+          "name": "医学科共通機器利用支援および技術支援",
+          "category_general": "その他",
+          "category_detail": "その他 / サポート"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / サポート料金|医学科研究推進センター機器利用サポート|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "c8ENZYZhz5LogffGJ7Eu",
+          "equipment_id": "c8ENZYZhz5LogffGJ7Eu",
+          "name": "医学科研究推進センター機器利用サポート",
+          "category_general": "その他",
+          "category_detail": "その他 / サポート料金"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / スパッター|マグネトロンスパッター-真空デバイス-msp-10|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Oz8vtpZqaekZ6HznxFjL",
+          "equipment_id": "Oz8vtpZqaekZ6HznxFjL",
+          "name": "マグネトロンスパッター 真空デバイス, MSP-10",
+          "category_general": "その他",
+          "category_detail": "その他 / スパッター"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / テスト|テスト設備|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wcKDyZZYZEx4vjArKEhw",
+          "equipment_id": "wcKDyZZYZEx4vjArKEhw",
+          "name": "テスト設備",
+          "category_general": "その他",
+          "category_detail": "その他 / テスト"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / ドラフト|ドラフトチャンバー-as-1500c|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VST7RYVnupLQmH7UJkGs",
+          "equipment_id": "VST7RYVnupLQmH7UJkGs",
+          "name": "ドラフトチャンバー AS-1500C・S",
+          "category_general": "その他",
+          "category_detail": "その他 / ドラフト"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / ドラフト|旭町ラボ-オープンラボスペース-実験室ドラフト-az9-few|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pSxynG4D6yy8cerM8kH5",
+          "equipment_id": "pSxynG4D6yy8cerM8kH5",
+          "name": "旭町ラボ オープンラボスペース 202実験室ドラフト AZ9-FEW",
+          "category_general": "その他",
+          "category_detail": "その他 / ドラフト"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / ビデオカメラ|vx992m-4k-ビデオカメラ-パナソニック|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HKENdrx8BER42Am1ELWx",
+          "equipment_id": "HKENdrx8BER42Am1ELWx",
+          "name": "4Kビデオカメラ ﾊﾟﾅｿﾆｯｸVX992M",
+          "category_general": "その他",
+          "category_detail": "その他 / ビデオカメラ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|オートクレーブ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lnRPcRNKcSc9eDRVvdSu",
+          "equipment_id": "YAMAGUCHI-ipn223",
+          "name": "オートクレーブ",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|ガスクロマトグラフィー|chromatography|gas|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l3J3wALoa0T62coN0VRF",
+          "equipment_id": "YAMAGUCHI-ipn170-2",
+          "name": "ガスクロマトグラフィー",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|凍結乾燥機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "FudAkHXJbJLxuaARBL9P",
+          "equipment_id": "YAMAGUCHI-ipn150",
+          "name": "凍結乾燥機",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|細胞破砕装置|other|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VUpFxtxb8tGOGZxByhQC",
+          "equipment_id": "YAMAGUCHI-ipn225",
+          "name": "細胞破砕装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 一般全学共用機器|遠心分離機|other|other|separation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AQ2o3gfG0qbxGLic0v8p",
+          "equipment_id": "YAMAGUCHI-ipn220",
+          "name": "遠心分離機",
+          "category_general": "その他",
+          "category_detail": "その他 / 一般全学共用機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 会議室|旭町-209b-ミーティングルーム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ZoA4sTrZk99lwLHa30Y0",
+          "equipment_id": "ZoA4sTrZk99lwLHa30Y0",
+          "name": "旭町 209bミーティングルーム",
+          "category_general": "その他",
+          "category_detail": "その他 / 会議室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2DJ72rThxEOT6G0DdgVQ",
+          "equipment_id": "2DJ72rThxEOT6G0DdgVQ",
+          "name": "超低温フリーザー_01 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 凍結切片作製|cm1860-凍結切片作成装置-leica|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2Q10JLabV8BTvcMHiVWK",
+          "equipment_id": "2Q10JLabV8BTvcMHiVWK",
+          "name": "凍結切片作成装置 Leica CM1860",
+          "category_general": "その他",
+          "category_detail": "その他 / 凍結切片作製"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 動物実験|マウス用クリーンラック|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SLdbPUTdj7OfvOPHxWCT",
+          "equipment_id": "SLdbPUTdj7OfvOPHxWCT",
+          "name": "マウス用クリーンラック",
+          "category_general": "その他",
+          "category_detail": "その他 / 動物実験"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|20kn-疲労試験機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6CkEqgiTIYOYniOomBvZ",
+          "equipment_id": "6CkEqgiTIYOYniOomBvZ",
+          "name": "20KN疲労試験機",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|多自由度大変位実験システム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Sdfg41GH5LfDu86nPtlt",
+          "equipment_id": "Sdfg41GH5LfDu86nPtlt",
+          "name": "多自由度大変位実験システム",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|大変位-次元振動台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "iDvPQVB8f0FmD8367c2f",
+          "equipment_id": "iDvPQVB8f0FmD8367c2f",
+          "name": "大変位2次元振動台",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|油圧式万能試験機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1eEN9KtZzwfWNVFej9el",
+          "equipment_id": "1eEN9KtZzwfWNVFej9el",
+          "name": "油圧式万能試験機",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|温度可変型高剛性材料試験機|other|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "btrvHxRzUrNiHEY9dLuc",
+          "equipment_id": "btrvHxRzUrNiHEY9dLuc",
+          "name": "温度可変型高剛性材料試験機",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|衝撃的高速度破壊実験装置-一式|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nPquo0FulBtgcezO4HLL",
+          "equipment_id": "nPquo0FulBtgcezO4HLL",
+          "name": "衝撃的高速度破壊実験装置 一式",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|鉛ビスマス循環装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gPpjcQMpkxxLTOhWKuE7",
+          "equipment_id": "gPpjcQMpkxxLTOhWKuE7",
+          "name": "鉛ビスマス循環装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|静的サーボコントローラシステム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "DLmwqYZHFbRmJHhKyalg",
+          "equipment_id": "DLmwqYZHFbRmJHhKyalg",
+          "name": "静的サーボコントローラシステム",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|高歪み速度載荷試験装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "q7laZZWFnkJNfoOdj1kX",
+          "equipment_id": "q7laZZWFnkJNfoOdj1kX",
+          "name": "高歪み速度載荷試験装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pyEuKbqSbE0S3hMxRjfI",
+          "equipment_id": "pyEuKbqSbE0S3hMxRjfI",
+          "name": "旭町ラボ オープンラボスペース 202実験室(A)-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6qGUOzsMxI3VWmmH538u",
+          "equipment_id": "6qGUOzsMxI3VWmmH538u",
+          "name": "旭町ラボ オープンラボスペース 202実験室(A)-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|フリーザー--80|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "im9E6v5jJ5x0ZORMs5wb",
+          "equipment_id": "im9E6v5jJ5x0ZORMs5wb",
+          "name": "フリーザー－80℃",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|冷却水循環装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pcDLm6RhtXx6HJRjLZBb",
+          "equipment_id": "pcDLm6RhtXx6HJRjLZBb",
+          "name": "冷却水循環装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|定温恒温乾燥器|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6ZCYUhmxSts7kcREJQvl",
+          "equipment_id": "6ZCYUhmxSts7kcREJQvl",
+          "name": "定温恒温乾燥器",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|薬用冷蔵ショーケース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "miPx7EkVYWQ78f5x68R7",
+          "equipment_id": "miPx7EkVYWQ78f5x68R7",
+          "name": "薬用冷蔵ショーケース",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|超低温フリーザー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l2HJN64fqQChnWfoaTJG",
+          "equipment_id": "l2HJN64fqQChnWfoaTJG",
+          "name": "超低温フリーザー",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|防爆冷蔵庫-冷凍冷蔵庫|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9eSY5IK3fbCmWeQla3fa",
+          "equipment_id": "9eSY5IK3fbCmWeQla3fa",
+          "name": "防爆冷蔵庫・冷凍冷蔵庫",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室|グローブボックス|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "uc0RgupmsYy6irEL39vM",
+          "equipment_id": "uc0RgupmsYy6irEL39vM",
+          "name": "グローブボックス",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室|低温室|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wwYQXEdh4ar4GR6rbLS5",
+          "equipment_id": "wwYQXEdh4ar4GR6rbLS5",
+          "name": "低温室",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンブース-クリーンルーム本体|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2cLWDy0mMN4LEBAoqoqJ",
+          "equipment_id": "2cLWDy0mMN4LEBAoqoqJ",
+          "name": "クリーンブース（クリーンルーム本体）",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンブース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "j9bpd8SFpW0QNCPpvuij",
+          "equipment_id": "j9bpd8SFpW0QNCPpvuij",
+          "name": "クリーンブース",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|クリーンベンチ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Qn6wDxn7B3ZvuVfAOxxU",
+          "equipment_id": "Qn6wDxn7B3ZvuVfAOxxU",
+          "name": "クリーンベンチ",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|コバルト-ガンマ線照射装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "UMgsp6IXfinCuohovWZA",
+          "equipment_id": "UMgsp6IXfinCuohovWZA",
+          "name": "コバルト60ガンマ線照射装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフト-台-酸用-有機用|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9P6tRQHSQyboPBuxePzz",
+          "equipment_id": "9P6tRQHSQyboPBuxePzz",
+          "name": "ドラフト（2台 酸用・有機用）",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフト-台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "c6NARmD1NCVOnFzeHmQX",
+          "equipment_id": "c6NARmD1NCVOnFzeHmQX",
+          "name": "ドラフト（2台）",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフトチャンバー-rfx-183sz-y|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fwdHj6VfJAJUbssH0965",
+          "equipment_id": "fwdHj6VfJAJUbssH0965",
+          "name": "ドラフトチャンバーRFX-183SZ-Y",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ドラフトチャンバー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RQNge6kTz1x0Kz7x8Uro",
+          "equipment_id": "RQNge6kTz1x0Kz7x8Uro",
+          "name": "ドラフトチャンバー",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|バイオハザードキャビネット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "oBZbRVTjPgqVBtH9NUwD",
+          "equipment_id": "oBZbRVTjPgqVBtH9NUwD",
+          "name": "バイオハザードキャビネット",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ピペット超音波洗浄機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NIXVE2g6NsEaSAirdnBF",
+          "equipment_id": "NIXVE2g6NsEaSAirdnBF",
+          "name": "ピペット超音波洗浄機",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|全自動洗浄機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OapC5q5mbHDbYUTzaf4u",
+          "equipment_id": "OapC5q5mbHDbYUTzaf4u",
+          "name": "全自動洗浄機",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|凍結乾燥機-fdu-1200|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "saCVGNeywsGMt4LcqaYs",
+          "equipment_id": "saCVGNeywsGMt4LcqaYs",
+          "name": "凍結乾燥機 FDU-1200",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|凍結乾燥機-pfr-1000|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "cPF0rHf33sWcvm8BhA9H",
+          "equipment_id": "cPF0rHf33sWcvm8BhA9H",
+          "name": "凍結乾燥機 PFR-1000",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|安全キャビネット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "xOPobDM1Lev73TkjrzXj",
+          "equipment_id": "xOPobDM1Lev73TkjrzXj",
+          "name": "安全キャビネット",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|横置スクラバー装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "aV2IeHdgtEXZpinjH0ub",
+          "equipment_id": "aV2IeHdgtEXZpinjH0ub",
+          "name": "横置スクラバー装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|薬品庫|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wdIGcQr1s8TYS4eE4nfV",
+          "equipment_id": "wdIGcQr1s8TYS4eE4nfV",
+          "name": "薬品庫",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|製氷機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ILOnTH0Q1D1pgmFCYWoZ",
+          "equipment_id": "ILOnTH0Q1D1pgmFCYWoZ",
+          "name": "製氷機",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|酸-有機兼用ドラフトチャンバー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gb8wikSyOv8Tp767llH3",
+          "equipment_id": "gb8wikSyOv8Tp767llH3",
+          "name": "酸・有機兼用ドラフトチャンバー",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温・高温・低温装置|astec-社-低酸素インキュベーター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1dFofostq7qUgoDK2gzm",
+          "equipment_id": "1dFofostq7qUgoDK2gzm",
+          "name": "ASTEC社 低酸素インキュベーター",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温・高温・低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温培養器|tva660db-恒温培養器|other|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SYO14bklmPweiq8HoBoz",
+          "equipment_id": "SYO14bklmPweiq8HoBoz",
+          "name": "恒温培養器 TVA660DB",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温培養器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温装置(低・中・高温)|co2-インキュベーター-mco-20aic|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lzw8BUj1NiadHnAoLzQI",
+          "equipment_id": "lzw8BUj1NiadHnAoLzQI",
+          "name": "CO2インキュベーター MCO-20AIC",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温装置(低・中・高温)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温装置|u333-バイオメディカルフリーザー-mdf-u333|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6QZhJ88BTtN3VzFN90HE",
+          "equipment_id": "6QZhJ88BTtN3VzFN90HE",
+          "name": "バイオメディカルフリーザーMDF-U333",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温装置|インキュベーター-mir-262-台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "x5aNSPm5bpozvg7OZrCg",
+          "equipment_id": "x5aNSPm5bpozvg7OZrCg",
+          "name": "インキュベーター MIR-262（2台）",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|イネゲノム構造機能解析システム-1-1-バイオハザード対応グロースキャビネット-コイトトロン-sbh-3024a-特殊型|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1QXJatzkjW4hOgzXRl7K",
+          "equipment_id": "1QXJatzkjW4hOgzXRl7K",
+          "name": "イネゲノム構造機能解析システム1-1 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|イネゲノム構造機能解析システム-1-2-バイオハザード対応グロースキャビネット-コイトトロン-sbh-3024a-特殊型|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GYOrhmKFI2ZityM66zys",
+          "equipment_id": "GYOrhmKFI2ZityM66zys",
+          "name": "イネゲノム構造機能解析システム1-2 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|イネゲノム構造機能解析システム-1-3-バイオハザード対応グロースキャビネット-コイトトロン-sbh-3024a-特殊型|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "elHxPjvqmkS3UrCL5IHd",
+          "equipment_id": "elHxPjvqmkS3UrCL5IHd",
+          "name": "イネゲノム構造機能解析システム1-3 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|イネゲノム構造機能解析システム-1-4-バイオハザード対応グロースキャビネット-コイトトロン-sbh-3024a-特殊型|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6sBrz0PgwqFdba3IPykg",
+          "equipment_id": "6sBrz0PgwqFdba3IPykg",
+          "name": "イネゲノム構造機能解析システム1-4 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "F0loATbhRDO5cZAiAq9d",
+          "equipment_id": "F0loATbhRDO5cZAiAq9d",
+          "name": "バイオトロンA棟-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5nRHro98oP0JF44e52HM",
+          "equipment_id": "5nRHro98oP0JF44e52HM",
+          "name": "バイオトロンA棟-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--3|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "paSvOtj2RFKf65MA9n3n",
+          "equipment_id": "paSvOtj2RFKf65MA9n3n",
+          "name": "バイオトロンA棟-3",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|バイオトロン-棟--4|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "PttufmLVMRYkyMAScrl7",
+          "equipment_id": "PttufmLVMRYkyMAScrl7",
+          "name": "バイオトロンA棟-4",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 無酸素実験|coy-社-嫌気性チャンバー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7zBARSvOwqxKdjLlHzWG",
+          "equipment_id": "7zBARSvOwqxKdjLlHzWG",
+          "name": "COY社 嫌気性チャンバー",
+          "category_general": "その他",
+          "category_detail": "その他 / 無酸素実験"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 熱分析|toyo-water-bath-ws-165|thermal|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gyUTbGP9DPl8Jytw8zCy",
+          "equipment_id": "gyUTbGP9DPl8Jytw8zCy",
+          "name": "TOYO WATER BATH WS-165",
+          "category_general": "その他",
+          "category_detail": "その他 / 熱分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 熱分析|示差熱---熱重量同時測定装置-tg-dta|thermal|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ztROas4xDsRqkdtXf66x",
+          "equipment_id": "ztROas4xDsRqkdtXf66x",
+          "name": "示差熱-熱重量同時測定装置(TG_DTA)",
+          "category_general": "その他",
+          "category_detail": "その他 / 熱分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 熱分析|試料観察示差走査熱量計-dscvesta|thermal|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fyr7zeUIdzDXC9pc5FjC",
+          "equipment_id": "fyr7zeUIdzDXC9pc5FjC",
+          "name": "試料観察示差走査熱量計(DSCvesta)",
+          "category_general": "その他",
+          "category_detail": "その他 / 熱分析"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9556
+}

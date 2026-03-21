@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-03-07T11:29:22.102382+00:00",
+  "batch_id": "BATCH-20260307-CYCLE0008-100",
+  "queue_sha256": "32377a921b39608ac6096d87a017b2afeab9a6dc06ca70b4b88d06d499254ab3",
+  "target_count": 100,
+  "selected_count": 100,
+  "eligible_count": 10528,
+  "category_count": 0,
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "include_reviewed": true,
+  "ignore_papers_filter": false,
+  "min_beginner_chars": 2000,
+  "char_count_mode": "non_whitespace",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0008_100.jsonl",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "reviewer_default": "codex-manual",
+  "family_map_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_family_map_cycle0008_100.json",
+  "family_groups_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_family_groups_cycle0008_100.json",
+  "eligible_family_count": 9755
+}

@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE18-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T00:05:40.466688+00:00",
+  "updated_at": "2026-03-04T00:33:18.436630+00:00",
+  "closed_at": "2026-03-04T00:33:18.436630+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle18_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE18-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "b4c17e88dcd6f369522faa9a47909fc214a52b4e993d73409c29ea8bb4dd7439",
+    "queue_sha256_at_start": "22edfb9b8813db369a93fd7fc2514fa8082993fdad7bafbd53b40380cf2c3a0c",
+    "queue_row_keys_sha256": "1ed5fb8e8e16f3d13e5e685abbf5335932e362e42cf4d932f036f1679aa7ae04"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "88YPpg3uba96ejqV9Rmv::88YPpg3uba96ejqV9Rmv",
+      "VNpy7aRdbbzQqbBPs78P::VNpy7aRdbbzQqbBPs78P",
+      "c8ENZYZhz5LogffGJ7Eu::c8ENZYZhz5LogffGJ7Eu",
+      "Oz8vtpZqaekZ6HznxFjL::Oz8vtpZqaekZ6HznxFjL",
+      "wcKDyZZYZEx4vjArKEhw::wcKDyZZYZEx4vjArKEhw",
+      "VST7RYVnupLQmH7UJkGs::VST7RYVnupLQmH7UJkGs",
+      "pSxynG4D6yy8cerM8kH5::pSxynG4D6yy8cerM8kH5",
+      "lnRPcRNKcSc9eDRVvdSu::YAMAGUCHI-ipn223",
+      "l3J3wALoa0T62coN0VRF::YAMAGUCHI-ipn170-2",
+      "FudAkHXJbJLxuaARBL9P::YAMAGUCHI-ipn150"
+    ],
+    "target_rows": [
+      {
+        "row_key": "88YPpg3uba96ejqV9Rmv::88YPpg3uba96ejqV9Rmv",
+        "doc_id": "88YPpg3uba96ejqV9Rmv",
+        "equipment_id": "88YPpg3uba96ejqV9Rmv",
+        "name": "FACS機器作業サポート等料金",
+        "papers_count": 2
+      },
+      {
+        "row_key": "VNpy7aRdbbzQqbBPs78P::VNpy7aRdbbzQqbBPs78P",
+        "doc_id": "VNpy7aRdbbzQqbBPs78P",
+        "equipment_id": "VNpy7aRdbbzQqbBPs78P",
+        "name": "医学科共通機器利用支援および技術支援",
+        "papers_count": 0
+      },
+      {
+        "row_key": "c8ENZYZhz5LogffGJ7Eu::c8ENZYZhz5LogffGJ7Eu",
+        "doc_id": "c8ENZYZhz5LogffGJ7Eu",
+        "equipment_id": "c8ENZYZhz5LogffGJ7Eu",
+        "name": "医学科研究推進センター機器利用サポート",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Oz8vtpZqaekZ6HznxFjL::Oz8vtpZqaekZ6HznxFjL",
+        "doc_id": "Oz8vtpZqaekZ6HznxFjL",
+        "equipment_id": "Oz8vtpZqaekZ6HznxFjL",
+        "name": "マグネトロンスパッター 真空デバイス, MSP-10",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wcKDyZZYZEx4vjArKEhw::wcKDyZZYZEx4vjArKEhw",
+        "doc_id": "wcKDyZZYZEx4vjArKEhw",
+        "equipment_id": "wcKDyZZYZEx4vjArKEhw",
+        "name": "テスト設備",
+        "papers_count": 0
+      },
+      {
+        "row_key": "VST7RYVnupLQmH7UJkGs::VST7RYVnupLQmH7UJkGs",
+        "doc_id": "VST7RYVnupLQmH7UJkGs",
+        "equipment_id": "VST7RYVnupLQmH7UJkGs",
+        "name": "ドラフトチャンバー AS-1500C・S",
+        "papers_count": 3
+      },
+      {
+        "row_key": "pSxynG4D6yy8cerM8kH5::pSxynG4D6yy8cerM8kH5",
+        "doc_id": "pSxynG4D6yy8cerM8kH5",
+        "equipment_id": "pSxynG4D6yy8cerM8kH5",
+        "name": "旭町ラボ オープンラボスペース 202実験室ドラフト AZ9-FEW",
+        "papers_count": 0
+      },
+      {
+        "row_key": "lnRPcRNKcSc9eDRVvdSu::YAMAGUCHI-ipn223",
+        "doc_id": "lnRPcRNKcSc9eDRVvdSu",
+        "equipment_id": "YAMAGUCHI-ipn223",
+        "name": "オートクレーブ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "l3J3wALoa0T62coN0VRF::YAMAGUCHI-ipn170-2",
+        "doc_id": "l3J3wALoa0T62coN0VRF",
+        "equipment_id": "YAMAGUCHI-ipn170-2",
+        "name": "ガスクロマトグラフィー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "FudAkHXJbJLxuaARBL9P::YAMAGUCHI-ipn150",
+        "doc_id": "FudAkHXJbJLxuaARBL9P",
+        "equipment_id": "YAMAGUCHI-ipn150",
+        "name": "凍結乾燥機",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T00:05:40.466688+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T00:05:40.665523+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T00:28:46.680280+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T00:33:18.436630+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

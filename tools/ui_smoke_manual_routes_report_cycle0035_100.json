@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/vieiUkG0CMYeiZrZIfnw/10.1186/s42400-025-00414-0",
+    "paper_space_hash": "#/paper/vieiUkG0CMYeiZrZIfnw/10.1186/s42400-025-00414-0",
+    "beginner_enter_hash": "#/beginner/vieiUkG0CMYeiZrZIfnw",
+    "beginner_space_hash": "#/beginner/vieiUkG0CMYeiZrZIfnw"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "熱重量・熱量同時測定装置（TG-DTA/DSC）",
+      "summary_len": 258,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/vieiUkG0CMYeiZrZIfnw/10.1186/s42400-025-00414-0",
+      "beginner_hash": "#/beginner/vieiUkG0CMYeiZrZIfnw",
+      "paper_link_href": "https://doi.org/10.1186/s42400-025-00414-0",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "熱重量・示差熱分析装置(Thermo plus EVO2 TG-DTA/H-SL)",
+      "summary_len": 266,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3395/10.1038/s41598-026-35828-4",
+      "beginner_hash": "#/beginner/eqnet-3395",
+      "paper_link_href": "https://doi.org/10.1038/s41598-026-35828-4",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "熱重量・示差熱分析装置(リガクThermo Plus EvoII)",
+      "summary_len": 261,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1204/10.1038/s41598-026-35828-4",
+      "beginner_hash": "#/beginner/eqnet-1204",
+      "paper_link_href": "https://doi.org/10.1038/s41598-026-35828-4",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "熱電放出型走査電子顕微鏡（SEM）",
+      "summary_len": 135,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/tmlqi7J1w3ULrWSoRnPe/10.19139/soic-2310-5070-3032",
+      "beginner_hash": "#/beginner/tmlqi7J1w3ULrWSoRnPe",
+      "paper_link_href": "https://doi.org/10.19139/soic-2310-5070-3032",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "燃料電池性能試験装置(Solartron・12528PBI)",
+      "summary_len": 177,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2065/10.1149/10808.0003ecst",
+      "beginner_hash": "#/beginner/eqnet-2065",
+      "paper_link_href": "https://doi.org/10.1149/10808.0003ecst",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "燃研式自動ボンベ熱量計(CA-4AJ)",
+      "summary_len": 149,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3390/10.1007/s10973-012-2290-3",
+      "beginner_hash": "#/beginner/eqnet-3390",
+      "paper_link_href": "https://doi.org/10.1007/s10973-012-2290-3",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "物理特性測定システム",
+      "summary_len": 211,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/5R9ZyIGax9YgQrR6szFA/10.1063/1.1148180",
+      "beginner_hash": "#/beginner/5R9ZyIGax9YgQrR6szFA",
+      "paper_link_href": "https://doi.org/10.1063/1.1148180",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "生体分子精製装置AKTAexplorer10S",
+      "summary_len": 201,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/u4a3a0lcL4d7JBXLv7Kw/10.1038/s41598-026-35024-4",
+      "beginner_hash": "#/beginner/u4a3a0lcL4d7JBXLv7Kw",
+      "paper_link_href": "https://doi.org/10.1038/s41598-026-35024-4",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "生体分子間相互作用解析(BLItz/Octet N1) Pall ForteBio(BLItz/Octet N1)",
+      "summary_len": 187,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4562/10.1016/s0958-1669(98)80091-8",
+      "beginner_hash": "#/beginner/eqnet-4562",
+      "paper_link_href": "https://doi.org/10.1016/S0958-1669(98)80091-8",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "生体分子間相互作用解析装置(Biacore T200 外) GE Healthcare Life Sciences(Biacore T200)",
+      "summary_len": 194,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4018/10.1016/s0958-1669(98)80091-8",
+      "beginner_hash": "#/beginner/eqnet-4018",
+      "paper_link_href": "https://doi.org/10.1016/S0958-1669(98)80091-8",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

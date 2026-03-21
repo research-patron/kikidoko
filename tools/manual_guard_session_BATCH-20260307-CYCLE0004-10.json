@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0004-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-06T23:43:41.611914+00:00",
+  "updated_at": "2026-03-07T02:58:51.075531+00:00",
+  "closed_at": "2026-03-07T02:58:51.075531+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0004_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0004-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "74c92281abcf66210c171b85a502076b5bf5cd4e7630c62e165fd9a51c2ae38f",
+    "queue_sha256_at_start": "87031b31a0c7c693f3ffaf3c9ab78c6821f46c74df05e9c8c27c8fd3c3be7a51",
+    "queue_row_keys_sha256": "85905199c833e44223848ef0be5913dae333eeffd8fa8d48ff9434f9cdbd490f"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "482ergQpZB21JJEsNXxy::482ergQpZB21JJEsNXxy",
+      "IaeeL2CR9ANNkremST1r::YAMAGATA-U-YG-006",
+      "qhoCPKqqubZ0uyaZfJFq::YAMAGATA-U-YG-602",
+      "btZV71dZqxlT7EdpZgvB::YAMAGATA-U-YG-010-2",
+      "StSWpT4DU2TT1LQYrDTl::YAMAGATA-U-YG-010-3",
+      "pKbqSe700ZzWohdFw65n::YAMAGATA-U-YG-001",
+      "hb2ImDBNe5CySX9C0jzB::YAMAGATA-U-YG-010-6",
+      "XD46EBq84YbOLZUUTh4h::YAMAGATA-U-YG-010-7",
+      "nfopABr8c9sNHOLntSgz::YAMAGATA-U-YG-005",
+      "Wuxo4lwVUyE1kkptyL2g::YAMAGATA-U-YG-007"
+    ],
+    "target_rows": [
+      {
+        "row_key": "482ergQpZB21JJEsNXxy::482ergQpZB21JJEsNXxy",
+        "doc_id": "482ergQpZB21JJEsNXxy",
+        "equipment_id": "482ergQpZB21JJEsNXxy",
+        "name": "卓上タンパク質合成システム－型式：Protemist DT",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IaeeL2CR9ANNkremST1r::YAMAGATA-U-YG-006",
+        "doc_id": "IaeeL2CR9ANNkremST1r",
+        "equipment_id": "YAMAGATA-U-YG-006",
+        "name": "513層多層押出成形装置(YG-006)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "qhoCPKqqubZ0uyaZfJFq::YAMAGATA-U-YG-602",
+        "doc_id": "qhoCPKqqubZ0uyaZfJFq",
+        "equipment_id": "YAMAGATA-U-YG-602",
+        "name": "X線非破壊検査装置(YG-602)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "btZV71dZqxlT7EdpZgvB::YAMAGATA-U-YG-010-2",
+        "doc_id": "btZV71dZqxlT7EdpZgvB",
+        "equipment_id": "YAMAGATA-U-YG-010-2",
+        "name": "アイゾッド/シャルピー衝撃試験機(YG-010-2)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "StSWpT4DU2TT1LQYrDTl::YAMAGATA-U-YG-010-3",
+        "doc_id": "StSWpT4DU2TT1LQYrDTl",
+        "equipment_id": "YAMAGATA-U-YG-010-3",
+        "name": "エルメンドルフ・引裂試験機(YG-010-3)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "pKbqSe700ZzWohdFw65n::YAMAGATA-U-YG-001",
+        "doc_id": "pKbqSe700ZzWohdFw65n",
+        "equipment_id": "YAMAGATA-U-YG-001",
+        "name": "ツインドライブ型レオメータ(YG-001)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "hb2ImDBNe5CySX9C0jzB::YAMAGATA-U-YG-010-6",
+        "doc_id": "hb2ImDBNe5CySX9C0jzB",
+        "equipment_id": "YAMAGATA-U-YG-010-6",
+        "name": "デジタルマイクロスコープ(YG-010-6)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XD46EBq84YbOLZUUTh4h::YAMAGATA-U-YG-010-7",
+        "doc_id": "XD46EBq84YbOLZUUTh4h",
+        "equipment_id": "YAMAGATA-U-YG-010-7",
+        "name": "デジタルマイクロスコープ・超深度マルチアングルレンズ(YG-010-7)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nfopABr8c9sNHOLntSgz::YAMAGATA-U-YG-005",
+        "doc_id": "nfopABr8c9sNHOLntSgz",
+        "equipment_id": "YAMAGATA-U-YG-005",
+        "name": "フィルム加工性その場可視化システム装置群(YG-005)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Wuxo4lwVUyE1kkptyL2g::YAMAGATA-U-YG-007",
+        "doc_id": "Wuxo4lwVUyE1kkptyL2g",
+        "equipment_id": "YAMAGATA-U-YG-007",
+        "name": "ポータブルリアクター(YG-007)",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-06T23:43:41.611914+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-06T23:45:12.659549+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T02:42:05.149091+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T02:58:51.075531+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

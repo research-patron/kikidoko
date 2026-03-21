@@ -1,0 +1,159 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE13-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T22:00:17.570367+00:00",
+  "updated_at": "2026-03-03T22:16:56.395964+00:00",
+  "closed_at": "2026-03-03T22:16:56.395964+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle13_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE13-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "c90545eff900922e87093d1832db7272d6425032f2cb4b89a533a4313e7ee5c6",
+    "queue_sha256_at_start": "319f36a4726a15627fd481d71ac8c88fa0ea0af272df30d42d6f90191b2b2ea0",
+    "queue_row_keys_sha256": "663b73ffb901904c5760e9887a317a824773e9609da6ec0bf3ecc6f60d18eb9b"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "JXaJxuHPXjMdxiwAMpKo::JXaJxuHPXjMdxiwAMpKo",
+      "CHQ7APRp1yaSzcf1irqS::CHQ7APRp1yaSzcf1irqS",
+      "LtFo5qfrrSd4xsSsCPxS::LtFo5qfrrSd4xsSsCPxS",
+      "ocfQZdpKQFLDsdEf0Da6::ocfQZdpKQFLDsdEf0Da6",
+      "VS0PjRFOQZgnZP776ZFO::VS0PjRFOQZgnZP776ZFO",
+      "SNYfjhDDgOYFKk4VrcmX::SNYfjhDDgOYFKk4VrcmX",
+      "yd98KDvfbCqqSShy6xbC::yd98KDvfbCqqSShy6xbC",
+      "gdRtY1NyEvYoNcAwLftZ::gdRtY1NyEvYoNcAwLftZ",
+      "RPWPXdN7VLjoW6gOTSgl::RPWPXdN7VLjoW6gOTSgl",
+      "sl04lBsPRZ3Agrm0EUk4::HOKUDAI-AP-100397"
+    ],
+    "target_rows": [
+      {
+        "row_key": "JXaJxuHPXjMdxiwAMpKo::JXaJxuHPXjMdxiwAMpKo",
+        "doc_id": "JXaJxuHPXjMdxiwAMpKo",
+        "equipment_id": "JXaJxuHPXjMdxiwAMpKo",
+        "name": "（休止中 復旧の見込みは立っていません ）X線照射装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "CHQ7APRp1yaSzcf1irqS::CHQ7APRp1yaSzcf1irqS",
+        "doc_id": "CHQ7APRp1yaSzcf1irqS",
+        "equipment_id": "CHQ7APRp1yaSzcf1irqS",
+        "name": "波長分散型蛍光X線分析装置（WDX-XRF）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "LtFo5qfrrSd4xsSsCPxS::LtFo5qfrrSd4xsSsCPxS",
+        "doc_id": "LtFo5qfrrSd4xsSsCPxS",
+        "equipment_id": "LtFo5qfrrSd4xsSsCPxS",
+        "name": "生体高分子X線構造解析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ocfQZdpKQFLDsdEf0Da6::ocfQZdpKQFLDsdEf0Da6",
+        "doc_id": "ocfQZdpKQFLDsdEf0Da6",
+        "equipment_id": "ocfQZdpKQFLDsdEf0Da6",
+        "name": "粉末X線回折装置（XRD）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "VS0PjRFOQZgnZP776ZFO::VS0PjRFOQZgnZP776ZFO",
+        "doc_id": "VS0PjRFOQZgnZP776ZFO",
+        "equipment_id": "VS0PjRFOQZgnZP776ZFO",
+        "name": "X線照射装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "SNYfjhDDgOYFKk4VrcmX::SNYfjhDDgOYFKk4VrcmX",
+        "doc_id": "SNYfjhDDgOYFKk4VrcmX",
+        "equipment_id": "SNYfjhDDgOYFKk4VrcmX",
+        "name": "CMOS搭載高輝度単結晶 X線構造解析装置 （Bruker）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "yd98KDvfbCqqSShy6xbC::yd98KDvfbCqqSShy6xbC",
+        "doc_id": "yd98KDvfbCqqSShy6xbC",
+        "equipment_id": "yd98KDvfbCqqSShy6xbC",
+        "name": "ラウエ ／低温4軸回折X線装置 （RU-200）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "gdRtY1NyEvYoNcAwLftZ::gdRtY1NyEvYoNcAwLftZ",
+        "doc_id": "gdRtY1NyEvYoNcAwLftZ",
+        "equipment_id": "gdRtY1NyEvYoNcAwLftZ",
+        "name": "単結晶X線解析装置 /RAXIS-RAPIDII （リガク）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "RPWPXdN7VLjoW6gOTSgl::RPWPXdN7VLjoW6gOTSgl",
+        "doc_id": "RPWPXdN7VLjoW6gOTSgl",
+        "equipment_id": "RPWPXdN7VLjoW6gOTSgl",
+        "name": "粉末X線解析装置 /UltimaIV （リガク）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sl04lBsPRZ3Agrm0EUk4::HOKUDAI-AP-100397",
+        "doc_id": "sl04lBsPRZ3Agrm0EUk4",
+        "equipment_id": "HOKUDAI-AP-100397",
+        "name": "デスクトップ3DマイクロX線CT",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T22:00:17.570367+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T22:00:37.171600+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:13:13.369280+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:13:28.592562+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:16:56.395964+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

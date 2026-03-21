@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260303-BEGINNER-03",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T10:13:14.855587+00:00",
+  "updated_at": "2026-03-03T10:21:26.048612+00:00",
+  "closed_at": "2026-03-03T10:21:26.048612+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch03.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-03.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "bfb7849a0292e6ef1ad1df700f157df25f1b54418f0da98c11338a932afbb0bf",
+    "queue_sha256_at_start": "0b8999f2f2bc9e51660a0f8fddd0b407a417fe163e43d67e0540447c232ded2a",
+    "queue_row_keys_sha256": "96265d91a972017718f16eea2a2a354fd22c539f9a029323737d25f794c6664f"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "4lXD0orJFeZGgwm7v65X::OKAYAMA-715",
+      "cRS03Juk7CDWOJ6GSgCn::OKAYAMA-714",
+      "xHJnfJ0Eh4bS8JPIR7k0::NAIST-NR-102",
+      "G1kOQJjsT5B25IAhXlJK::TUAT-NMR-400",
+      "NHLaaPEydCkeCJnVqNe0::NHLaaPEydCkeCJnVqNe0",
+      "PsC6xs3LHMxae5uBkZiJ::NIMS-1-NF0043",
+      "406hTn9an7xHflPGS0nC::406hTn9an7xHflPGS0nC",
+      "FKJH26dohbrcjnGbSklE::FKJH26dohbrcjnGbSklE",
+      "mghDktEQsZxIiUc25V1X::OSAKA-346",
+      "YfbRKAqTrnsCYHxvOk2c::OSAKA-345",
+      "1pdd02OXQZ2cTdjj8AGH::HOKUDAI-AP-900825",
+      "ATV35QZJ4PBedchcjwB3::OBIHIRO-142",
+      "HKENdrx8BER42Am1ELWx::HKENdrx8BER42Am1ELWx",
+      "qHRGLqQrTthZctYyALVY::HOKUDAI-AP-901319",
+      "sX7Nb2SKsjTsT4BGhoSz::sX7Nb2SKsjTsT4BGhoSz",
+      "wNrtjssN8PyAFrrTVKlz::UTOKYO-401",
+      "YPPA0U5JxHDX7tYRTf1H::OSAKA-704",
+      "1dSXz2kL4aJH5D3QdUEV::NAIST-NR-101",
+      "ReKobpoSNBSWa5UMxqgV::ReKobpoSNBSWa5UMxqgV",
+      "ZBRzA5KPh5D0PJoNW2jg::HOKUDAI-AP-100089",
+      "wy4WNIYy6NTExawii4VZ::HOKUDAI-AP-100223",
+      "RhUhC5MvYjbgqoT9YS0w::RhUhC5MvYjbgqoT9YS0w",
+      "n9gDoXdJeyhNslIsdyf4::NIMS-2-NF0002",
+      "HaUd5hXNzPr6PNAO74F8::NIMS-3-NF0001",
+      "f0Rwsio3ZSOVtqAhX0wI::f0Rwsio3ZSOVtqAhX0wI",
+      "Xk5uVLweYvC08GxzL9cd::Xk5uVLweYvC08GxzL9cd",
+      "T7GstGlDjDjkanfpw9jW::KYUTECH-NMR-1",
+      "TEYKXbIF6Ln60kikPDR9::NIMS-182-NF0127",
+      "GFmwWvh0ZDHiC8amIlAT::GFmwWvh0ZDHiC8amIlAT",
+      "CbG43hZWcj7Ga7yNPHgo::CbG43hZWcj7Ga7yNPHgo",
+      "PvyQYlm39ud7XFFVl1Xw::NAIST-NR-103",
+      "2ykLMLP65qZt7FecyKtB::2ykLMLP65qZt7FecyKtB",
+      "FcmxgU8g4sUYO2lRELA2::HOKUDAI-AP-100222",
+      "akRpV7IJexq7mrpFtamx::HOKUDAI-AP-100183",
+      "EDqLXR5EI80UiV6jpwit::HOKUDAI-AP-100265",
+      "IalSifcOcRYdskua0uPC::OKAYAMA-639",
+      "tCSPvZsXeOdRXZGatSkK::OSAKA-702",
+      "rVxiQk8NhVIF910Mlvef::OKAYAMA-362",
+      "P5eMbuAqWVyFqSoleoW2::HOKUDAI-AP-100134",
+      "RmpCQ6kKHVD5oVDCQuw5::RmpCQ6kKHVD5oVDCQuw5",
+      "G8TVMRISj8JC4jJJaqEW::HOKUDAI-AP-100282",
+      "Al7Orfwe4wEme47P9Ml7::OSAKA-344",
+      "eqnet-1671::eqnet-1671",
+      "d37DIZLJcamNS4UyFJos::OSAKA-706",
+      "gbzQTwGlD3frLvr8yeKY::gbzQTwGlD3frLvr8yeKY",
+      "jVu2fkggRqrEJtBYvBN7::NIMS-186-NF0134",
+      "WnTf94TtQpab4SQ0MauL::HOKUDAI-AP-901841",
+      "UcKxvV88P05yJOZilBly::UcKxvV88P05yJOZilBly",
+      "P0yOxJqhZTyegxmBxmU9::AIST-MEMS019",
+      "oJwN5jfplCiNYBh0P73p::HOKUDAI-AP-100264",
+      "3qOpg6nYj8QD7MjuWk9d::HOKUDAI-AP-100263",
+      "oAGRwLd0wr2PjNC0E7xF::NIMS-5-NF0004",
+      "DM6MAH8xD9UZot2L7Qfx::UTOKYO-261",
+      "znV7liv6heSITqaxX1jQ::HOKUDAI-AP-901732",
+      "c26csHzaFGc6rM2nS4zB::c26csHzaFGc6rM2nS4zB",
+      "G5FTj1jIrNHRP4V2Ubgg::G5FTj1jIrNHRP4V2Ubgg",
+      "bwsF5SJi8M4g02o56Kt8::bwsF5SJi8M4g02o56Kt8",
+      "aOqsRUWNYIdEy2NA8bQ8::HOKUDAI-AP-901921",
+      "pRSwVB58L24qci3h333T::HOKUDAI-AP-900808",
+      "n8C3ouP58gbVeSeNqVGi::n8C3ouP58gbVeSeNqVGi",
+      "rOF6XvCOzFlTzeqiLbdY::HOKUDAI-AP-901309",
+      "5sWGzxyhJYycolpi0zSG::5sWGzxyhJYycolpi0zSG",
+      "pkzb2saTlO4IwO0hP7sj::HOKUDAI-AP-902217",
+      "iWX78K4VyzjcsSM1LcXe::HOKUDAI-AP-100311",
+      "O6VlTQWLFobGF4bcMbR5::HOKUDAI-AP-100340",
+      "5GQWk0KWVKd2dU2Leray::NAGASAKI-227",
+      "nwZn18177BCQ72fiGX8e::NAGASAKI-278",
+      "pqtKmcXbCged9dfj4qfN::HOKUDAI-AP-901394",
+      "LfQ5eNi6C8EzyzSmEA3g::HOKUDAI-AP-901999",
+      "7RWMcayAYaF8XVPcArug::7RWMcayAYaF8XVPcArug",
+      "78M1gzNGkeDXr7VEBGdW::78M1gzNGkeDXr7VEBGdW",
+      "Kc3W0sx8A85LJcjIkkzP::Kc3W0sx8A85LJcjIkkzP",
+      "rOLkX14fp4qpGkU8WFbu::rOLkX14fp4qpGkU8WFbu",
+      "T2JLeaGFMX0o5whDVNFR::T2JLeaGFMX0o5whDVNFR",
+      "H7SYGfhZ1ej00NOsbubk::H7SYGfhZ1ej00NOsbubk",
+      "YSjlhnuxeaWYFPZZHq5r::YSjlhnuxeaWYFPZZHq5r",
+      "0HPeIyJls2Pk3uku3v5m::0HPeIyJls2Pk3uku3v5m",
+      "0GGo2oV9YxDZFO2bNoNb::0GGo2oV9YxDZFO2bNoNb",
+      "F6OO1z5Gt6xwbFfFSFzk::F6OO1z5Gt6xwbFfFSFzk",
+      "sSNrlEfxQmVOQySHmVSu::sSNrlEfxQmVOQySHmVSu",
+      "S9mncEtWKTwSPbKeCkBH::NAGASAKI-228",
+      "ebbkyu2UpbnyWto5EE3u::HOKUDAI-AP-902000",
+      "1dFofostq7qUgoDK2gzm::1dFofostq7qUgoDK2gzm",
+      "wSVlVw8n9DbViNGic2cU::wSVlVw8n9DbViNGic2cU",
+      "K5itvk4ebdgMwqF3xixS::K5itvk4ebdgMwqF3xixS",
+      "Aqyv2DjE3gu3pZcK9JSc::YAMAGUCHI-ipn106",
+      "xv5YkoNRLbxwagwCzo1B::HOKUDAI-AP-902166",
+      "WF0I8drPxChTLIvteZs3::HOKUDAI-AP-902257",
+      "N0iDMhuuxqOvTT31FGjI::OSAKA-711",
+      "Mo87oYBNyjrwFRPxMpdw::AIST-L01-104",
+      "a3jQyTHUy3NM2TsM2SON::AIST-L01-103",
+      "2Tedq1g4clVkE8VNa9mK::UTOKYO-88",
+      "CHfCCdd17k06ISEndXDm::HOKUDAI-AP-100345",
+      "cELkFdlPg3MJK5XBwL1Y::cELkFdlPg3MJK5XBwL1Y",
+      "vrwQviE14zvZpPF70v1j::vrwQviE14zvZpPF70v1j",
+      "Tp56FduDlb81wXRtcwCJ::NAGASAKI-41",
+      "EMLsPGzUlonPHQVNObMP::HOKUDAI-AP-901762",
+      "Fam8TGaD654P27MS4vPz::Fam8TGaD654P27MS4vPz",
+      "8sUeZZ9gVIQWbui8yzD0::8sUeZZ9gVIQWbui8yzD0",
+      "IhIDkcJ44uZX3TeAJRuq::IhIDkcJ44uZX3TeAJRuq"
+    ],
+    "target_rows": [
+      {
+        "row_key": "4lXD0orJFeZGgwm7v65X::OKAYAMA-715",
+        "doc_id": "4lXD0orJFeZGgwm7v65X",
+        "equipment_id": "OKAYAMA-715",
+        "name": "400MHz NMR装置 (北)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "cRS03Juk7CDWOJ6GSgCn::OKAYAMA-714",
+        "doc_id": "cRS03Juk7CDWOJ6GSgCn",
+        "equipment_id": "OKAYAMA-714",
+        "name": "400MHz NMR装置 (南)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "xHJnfJ0Eh4bS8JPIR7k0::NAIST-NR-102",
+        "doc_id": "xHJnfJ0Eh4bS8JPIR7k0",
+        "equipment_id": "NAIST-NR-102",
+        "name": "400MHz 固体・溶液NMR",
+        "papers_count": 2
+      },
+      {
+        "row_key": "G1kOQJjsT5B25IAhXlJK::TUAT-NMR-400",
+        "doc_id": "G1kOQJjsT5B25IAhXlJK",
+        "equipment_id": "TUAT-NMR-400",
+        "name": "400MHz 核磁気共鳴装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "NHLaaPEydCkeCJnVqNe0::NHLaaPEydCkeCJnVqNe0",
+        "doc_id": "NHLaaPEydCkeCJnVqNe0",
+        "equipment_id": "NHLaaPEydCkeCJnVqNe0",
+        "name": "400MHz 核磁気共鳴装置（NMR-400）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "PsC6xs3LHMxae5uBkZiJ::NIMS-1-NF0043",
+        "doc_id": "PsC6xs3LHMxae5uBkZiJ",
+        "equipment_id": "NIMS-1-NF0043",
+        "name": "400MHz 溶液NMR",
+        "papers_count": 3
+      },
+      {
+        "row_key": "406hTn9an7xHflPGS0nC::406hTn9an7xHflPGS0nC",
+        "doc_id": "406hTn9an7xHflPGS0nC",
+        "equipment_id": "406hTn9an7xHflPGS0nC",
+        "name": "400MHz核磁気共鳴装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "FKJH26dohbrcjnGbSklE::FKJH26dohbrcjnGbSklE",
+        "doc_id": "FKJH26dohbrcjnGbSklE",
+        "equipment_id": "FKJH26dohbrcjnGbSklE",
+        "name": "400MHz核磁気共鳴装置 (バリアン 400MR)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "mghDktEQsZxIiUc25V1X::OSAKA-346",
+        "doc_id": "mghDktEQsZxIiUc25V1X",
+        "equipment_id": "OSAKA-346",
+        "name": "400MHz核磁気共鳴装置（Bruker）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "YfbRKAqTrnsCYHxvOk2c::OSAKA-345",
+        "doc_id": "YfbRKAqTrnsCYHxvOk2c",
+        "equipment_id": "OSAKA-345",
+        "name": "400MHz核磁気共鳴装置（JEOL)①",
+        "papers_count": 2
+      },
+      {
+        "row_key": "1pdd02OXQZ2cTdjj8AGH::HOKUDAI-AP-900825",
+        "doc_id": "1pdd02OXQZ2cTdjj8AGH",
+        "equipment_id": "HOKUDAI-AP-900825",
+        "name": "4CH燃焼解析ユニット",
+        "papers_count": 1
+      },
+      {
+        "row_key": "ATV35QZJ4PBedchcjwB3::OBIHIRO-142",
+        "doc_id": "ATV35QZJ4PBedchcjwB3",
+        "equipment_id": "OBIHIRO-142",
+        "name": "4D-Nucleofectorシステム（レンタル専用機器）(2014015)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "HKENdrx8BER42Am1ELWx::HKENdrx8BER42Am1ELWx",
+        "doc_id": "HKENdrx8BER42Am1ELWx",
+        "equipment_id": "HKENdrx8BER42Am1ELWx",
+        "name": "4Kビデオカメラ ﾊﾟﾅｿﾆｯｸVX992M",
+        "papers_count": 1
+      },
+      {
+        "row_key": "qHRGLqQrTthZctYyALVY::HOKUDAI-AP-901319",
+        "doc_id": "qHRGLqQrTthZctYyALVY",
+        "equipment_id": "HOKUDAI-AP-901319",
+        "name": "4chマルチJOB FFTアナライザ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sX7Nb2SKsjTsT4BGhoSz::sX7Nb2SKsjTsT4BGhoSz",
+        "doc_id": "sX7Nb2SKsjTsT4BGhoSz",
+        "equipment_id": "sX7Nb2SKsjTsT4BGhoSz",
+        "name": "4点曲げプローバ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wNrtjssN8PyAFrrTVKlz::UTOKYO-401",
+        "doc_id": "wNrtjssN8PyAFrrTVKlz",
+        "equipment_id": "UTOKYO-401",
+        "name": "500 MHz 核磁気共鳴装置（1H-15N-13C三重共鳴プローブ付） UnityINOVA 500",
+        "papers_count": 2
+      },
+      {
+        "row_key": "YPPA0U5JxHDX7tYRTf1H::OSAKA-704",
+        "doc_id": "YPPA0U5JxHDX7tYRTf1H",
+        "equipment_id": "OSAKA-704",
+        "name": "5000トン超高圧発生装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "1dSXz2kL4aJH5D3QdUEV::NAIST-NR-101",
+        "doc_id": "1dSXz2kL4aJH5D3QdUEV",
+        "equipment_id": "NAIST-NR-101",
+        "name": "500MHz NMR",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ReKobpoSNBSWa5UMxqgV::ReKobpoSNBSWa5UMxqgV",
+        "doc_id": "ReKobpoSNBSWa5UMxqgV",
+        "equipment_id": "ReKobpoSNBSWa5UMxqgV",
+        "name": "500MHz NMR Spectrometer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ZBRzA5KPh5D0PJoNW2jg::HOKUDAI-AP-100089",
+        "doc_id": "ZBRzA5KPh5D0PJoNW2jg",
+        "equipment_id": "HOKUDAI-AP-100089",
+        "name": "500MHz NMR測定装置(cancer)(液体試料専用)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "wy4WNIYy6NTExawii4VZ::HOKUDAI-AP-100223",
+        "doc_id": "wy4WNIYy6NTExawii4VZ",
+        "equipment_id": "HOKUDAI-AP-100223",
+        "name": "500MHz NMR測定装置(scorpio)(液体試料専用)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "RhUhC5MvYjbgqoT9YS0w::RhUhC5MvYjbgqoT9YS0w",
+        "doc_id": "RhUhC5MvYjbgqoT9YS0w",
+        "equipment_id": "RhUhC5MvYjbgqoT9YS0w",
+        "name": "500MHz 核磁気共鳴装置（NMR-500）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "n9gDoXdJeyhNslIsdyf4::NIMS-2-NF0002",
+        "doc_id": "n9gDoXdJeyhNslIsdyf4",
+        "equipment_id": "NIMS-2-NF0002",
+        "name": "500MHz固体汎用NMRシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "HaUd5hXNzPr6PNAO74F8::NIMS-3-NF0001",
+        "doc_id": "HaUd5hXNzPr6PNAO74F8",
+        "equipment_id": "NIMS-3-NF0001",
+        "name": "500MHz固体高分解能NMRシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "f0Rwsio3ZSOVtqAhX0wI::f0Rwsio3ZSOVtqAhX0wI",
+        "doc_id": "f0Rwsio3ZSOVtqAhX0wI",
+        "equipment_id": "f0Rwsio3ZSOVtqAhX0wI",
+        "name": "500MHz核磁気共鳴装置 (Bruker Avance III HD500)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Xk5uVLweYvC08GxzL9cd::Xk5uVLweYvC08GxzL9cd",
+        "doc_id": "Xk5uVLweYvC08GxzL9cd",
+        "equipment_id": "Xk5uVLweYvC08GxzL9cd",
+        "name": "500MHz核磁気共鳴装置 (バリアン system500)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "T7GstGlDjDjkanfpw9jW::KYUTECH-NMR-1",
+        "doc_id": "T7GstGlDjDjkanfpw9jW",
+        "equipment_id": "KYUTECH-NMR-1",
+        "name": "500MHz核磁気共鳴装置：(500M-NMR)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "TEYKXbIF6Ln60kikPDR9::NIMS-182-NF0127",
+        "doc_id": "TEYKXbIF6Ln60kikPDR9",
+        "equipment_id": "NIMS-182-NF0127",
+        "name": "5kg高周波誘導真空溶解設備",
+        "papers_count": 1
+      },
+      {
+        "row_key": "GFmwWvh0ZDHiC8amIlAT::GFmwWvh0ZDHiC8amIlAT",
+        "doc_id": "GFmwWvh0ZDHiC8amIlAT",
+        "equipment_id": "GFmwWvh0ZDHiC8amIlAT",
+        "name": "5軸マシニングセンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "CbG43hZWcj7Ga7yNPHgo::CbG43hZWcj7Ga7yNPHgo",
+        "doc_id": "CbG43hZWcj7Ga7yNPHgo",
+        "equipment_id": "CbG43hZWcj7Ga7yNPHgo",
+        "name": "5軸立形マシニングセンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "PvyQYlm39ud7XFFVl1Xw::NAIST-NR-103",
+        "doc_id": "PvyQYlm39ud7XFFVl1Xw",
+        "equipment_id": "NAIST-NR-103",
+        "name": "600MHz NMR",
+        "papers_count": 3
+      },
+      {
+        "row_key": "2ykLMLP65qZt7FecyKtB::2ykLMLP65qZt7FecyKtB",
+        "doc_id": "2ykLMLP65qZt7FecyKtB",
+        "equipment_id": "2ykLMLP65qZt7FecyKtB",
+        "name": "600MHz NMR Spectrometer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "FcmxgU8g4sUYO2lRELA2::HOKUDAI-AP-100222",
+        "doc_id": "FcmxgU8g4sUYO2lRELA2",
+        "equipment_id": "HOKUDAI-AP-100222",
+        "name": "600MHz NMR測定装置(libra)(液体試料専用)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "akRpV7IJexq7mrpFtamx::HOKUDAI-AP-100183",
+        "doc_id": "akRpV7IJexq7mrpFtamx",
+        "equipment_id": "HOKUDAI-AP-100183",
+        "name": "600MHz NMR測定装置(pegasus)(液体試料専用)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "EDqLXR5EI80UiV6jpwit::HOKUDAI-AP-100265",
+        "doc_id": "EDqLXR5EI80UiV6jpwit",
+        "equipment_id": "HOKUDAI-AP-100265",
+        "name": "600MHz NMR測定装置(taurus)(液体試料専用)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "IalSifcOcRYdskua0uPC::OKAYAMA-639",
+        "doc_id": "IalSifcOcRYdskua0uPC",
+        "equipment_id": "OKAYAMA-639",
+        "name": "600MHz NMR装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "tCSPvZsXeOdRXZGatSkK::OSAKA-702",
+        "doc_id": "tCSPvZsXeOdRXZGatSkK",
+        "equipment_id": "OSAKA-702",
+        "name": "600MHz NMR装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "rVxiQk8NhVIF910Mlvef::OKAYAMA-362",
+        "doc_id": "rVxiQk8NhVIF910Mlvef",
+        "equipment_id": "OKAYAMA-362",
+        "name": "600MHz NMR装置 (Varian NMR System PS600)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "P5eMbuAqWVyFqSoleoW2::HOKUDAI-AP-100134",
+        "doc_id": "P5eMbuAqWVyFqSoleoW2",
+        "equipment_id": "HOKUDAI-AP-100134",
+        "name": "600MHz 固体高分解能核磁気共鳴装置(固体試料専用)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "RmpCQ6kKHVD5oVDCQuw5::RmpCQ6kKHVD5oVDCQuw5",
+        "doc_id": "RmpCQ6kKHVD5oVDCQuw5",
+        "equipment_id": "RmpCQ6kKHVD5oVDCQuw5",
+        "name": "600MHz 核磁気共鳴分光分析装置（NMR）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "G8TVMRISj8JC4jJJaqEW::HOKUDAI-AP-100282",
+        "doc_id": "G8TVMRISj8JC4jJJaqEW",
+        "equipment_id": "HOKUDAI-AP-100282",
+        "name": "600MHz 溶液NMR測定装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Al7Orfwe4wEme47P9Ml7::OSAKA-344",
+        "doc_id": "Al7Orfwe4wEme47P9Ml7",
+        "equipment_id": "OSAKA-344",
+        "name": "600MHz核磁気共鳴装置（Bruker）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-1671::eqnet-1671",
+        "doc_id": "eqnet-1671",
+        "equipment_id": "eqnet-1671",
+        "name": "64Cu分離精製装置(住友重機械工業(株)製)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "d37DIZLJcamNS4UyFJos::OSAKA-706",
+        "doc_id": "d37DIZLJcamNS4UyFJos",
+        "equipment_id": "OSAKA-706",
+        "name": "6軸加圧装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gbzQTwGlD3frLvr8yeKY::gbzQTwGlD3frLvr8yeKY",
+        "doc_id": "gbzQTwGlD3frLvr8yeKY",
+        "equipment_id": "gbzQTwGlD3frLvr8yeKY",
+        "name": "700MHz核磁気共鳴装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "jVu2fkggRqrEJtBYvBN7::NIMS-186-NF0134",
+        "doc_id": "jVu2fkggRqrEJtBYvBN7",
+        "equipment_id": "NIMS-186-NF0134",
+        "name": "70ton大型スウェージングマシーン",
+        "papers_count": 1
+      },
+      {
+        "row_key": "WnTf94TtQpab4SQ0MauL::HOKUDAI-AP-901841",
+        "doc_id": "WnTf94TtQpab4SQ0MauL",
+        "equipment_id": "HOKUDAI-AP-901841",
+        "name": "750kNピン型二分力計",
+        "papers_count": 2
+      },
+      {
+        "row_key": "UcKxvV88P05yJOZilBly::UcKxvV88P05yJOZilBly",
+        "doc_id": "UcKxvV88P05yJOZilBly",
+        "equipment_id": "UcKxvV88P05yJOZilBly",
+        "name": "7ch電気化学測定システム BioLogicScience",
+        "papers_count": 2
+      },
+      {
+        "row_key": "P0yOxJqhZTyegxmBxmU9::AIST-MEMS019",
+        "doc_id": "P0yOxJqhZTyegxmBxmU9",
+        "equipment_id": "AIST-MEMS019",
+        "name": "8\"Si 深掘ドライエッチング装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "oJwN5jfplCiNYBh0P73p::HOKUDAI-AP-100264",
+        "doc_id": "oJwN5jfplCiNYBh0P73p",
+        "equipment_id": "HOKUDAI-AP-100264",
+        "name": "800MHz NMR測定装置(hidari)(液体試料専用)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "3qOpg6nYj8QD7MjuWk9d::HOKUDAI-AP-100263",
+        "doc_id": "3qOpg6nYj8QD7MjuWk9d",
+        "equipment_id": "HOKUDAI-AP-100263",
+        "name": "800MHz NMR測定装置(migi)(液体試料専用)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "oAGRwLd0wr2PjNC0E7xF::NIMS-5-NF0004",
+        "doc_id": "oAGRwLd0wr2PjNC0E7xF",
+        "equipment_id": "NIMS-5-NF0004",
+        "name": "800MHzナローボア固体高分解能NMRシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "DM6MAH8xD9UZot2L7Qfx::UTOKYO-261",
+        "doc_id": "DM6MAH8xD9UZot2L7Qfx",
+        "equipment_id": "UTOKYO-261",
+        "name": "80列CT装置 Aquilion PRIME",
+        "papers_count": 3
+      },
+      {
+        "row_key": "znV7liv6heSITqaxX1jQ::HOKUDAI-AP-901732",
+        "doc_id": "znV7liv6heSITqaxX1jQ",
+        "equipment_id": "HOKUDAI-AP-901732",
+        "name": "8ch列処理マイクロウェルプレートウォッシャー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "c26csHzaFGc6rM2nS4zB::c26csHzaFGc6rM2nS4zB",
+        "doc_id": "c26csHzaFGc6rM2nS4zB",
+        "equipment_id": "c26csHzaFGc6rM2nS4zB",
+        "name": "9T PPMS 可変温度抵抗システム",
+        "papers_count": 1
+      },
+      {
+        "row_key": "G5FTj1jIrNHRP4V2Ubgg::G5FTj1jIrNHRP4V2Ubgg",
+        "doc_id": "G5FTj1jIrNHRP4V2Ubgg",
+        "equipment_id": "G5FTj1jIrNHRP4V2Ubgg",
+        "name": "ABS樹脂3Dプリンター（熱溶解積層法造形）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "bwsF5SJi8M4g02o56Kt8::bwsF5SJi8M4g02o56Kt8",
+        "doc_id": "bwsF5SJi8M4g02o56Kt8",
+        "equipment_id": "bwsF5SJi8M4g02o56Kt8",
+        "name": "AC-Hall測定装置 Resitest 8300",
+        "papers_count": 3
+      },
+      {
+        "row_key": "aOqsRUWNYIdEy2NA8bQ8::HOKUDAI-AP-901921",
+        "doc_id": "aOqsRUWNYIdEy2NA8bQ8",
+        "equipment_id": "HOKUDAI-AP-901921",
+        "name": "AC/DC増幅器",
+        "papers_count": 2
+      },
+      {
+        "row_key": "pRSwVB58L24qci3h333T::HOKUDAI-AP-900808",
+        "doc_id": "pRSwVB58L24qci3h333T",
+        "equipment_id": "HOKUDAI-AP-900808",
+        "name": "ACQUITY UPLC M-Class",
+        "papers_count": 1
+      },
+      {
+        "row_key": "n8C3ouP58gbVeSeNqVGi::n8C3ouP58gbVeSeNqVGi",
+        "doc_id": "n8C3ouP58gbVeSeNqVGi",
+        "equipment_id": "n8C3ouP58gbVeSeNqVGi",
+        "name": "ACTA explorer",
+        "papers_count": 2
+      },
+      {
+        "row_key": "rOF6XvCOzFlTzeqiLbdY::HOKUDAI-AP-901309",
+        "doc_id": "rOF6XvCOzFlTzeqiLbdY",
+        "equipment_id": "HOKUDAI-AP-901309",
+        "name": "ACレジスタンスブリッジ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "5sWGzxyhJYycolpi0zSG::5sWGzxyhJYycolpi0zSG",
+        "doc_id": "5sWGzxyhJYycolpi0zSG",
+        "equipment_id": "5sWGzxyhJYycolpi0zSG",
+        "name": "ADC",
+        "papers_count": 1
+      },
+      {
+        "row_key": "pkzb2saTlO4IwO0hP7sj::HOKUDAI-AP-902217",
+        "doc_id": "pkzb2saTlO4IwO0hP7sj",
+        "equipment_id": "HOKUDAI-AP-902217",
+        "name": "AFC qEVオートマチックフラクションコレクター",
+        "papers_count": 2
+      },
+      {
+        "row_key": "iWX78K4VyzjcsSM1LcXe::HOKUDAI-AP-100311",
+        "doc_id": "iWX78K4VyzjcsSM1LcXe",
+        "equipment_id": "HOKUDAI-AP-100311",
+        "name": "AI画像解析システム AIVIA",
+        "papers_count": 3
+      },
+      {
+        "row_key": "O6VlTQWLFobGF4bcMbR5::HOKUDAI-AP-100340",
+        "doc_id": "O6VlTQWLFobGF4bcMbR5",
+        "equipment_id": "HOKUDAI-AP-100340",
+        "name": "AI画像解析装置 Aivia",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5GQWk0KWVKd2dU2Leray::NAGASAKI-227",
+        "doc_id": "5GQWk0KWVKd2dU2Leray",
+        "equipment_id": "NAGASAKI-227",
+        "name": "AKTA",
+        "papers_count": 2
+      },
+      {
+        "row_key": "nwZn18177BCQ72fiGX8e::NAGASAKI-278",
+        "doc_id": "nwZn18177BCQ72fiGX8e",
+        "equipment_id": "NAGASAKI-278",
+        "name": "AKTA pure 25M1 液体クロマトグラフィ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "pqtKmcXbCged9dfj4qfN::HOKUDAI-AP-901394",
+        "doc_id": "pqtKmcXbCged9dfj4qfN",
+        "equipment_id": "HOKUDAI-AP-901394",
+        "name": "AKTA start",
+        "papers_count": 3
+      },
+      {
+        "row_key": "LfQ5eNi6C8EzyzSmEA3g::HOKUDAI-AP-901999",
+        "doc_id": "LfQ5eNi6C8EzyzSmEA3g",
+        "equipment_id": "HOKUDAI-AP-901999",
+        "name": "AKTA start本体及びFrac30",
+        "papers_count": 3
+      },
+      {
+        "row_key": "7RWMcayAYaF8XVPcArug::7RWMcayAYaF8XVPcArug",
+        "doc_id": "7RWMcayAYaF8XVPcArug",
+        "equipment_id": "7RWMcayAYaF8XVPcArug",
+        "name": "ALD装置(Al2O3用)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "78M1gzNGkeDXr7VEBGdW::78M1gzNGkeDXr7VEBGdW",
+        "doc_id": "78M1gzNGkeDXr7VEBGdW",
+        "equipment_id": "78M1gzNGkeDXr7VEBGdW",
+        "name": "APOE遺伝型決定",
+        "papers_count": 1
+      },
+      {
+        "row_key": "Kc3W0sx8A85LJcjIkkzP::Kc3W0sx8A85LJcjIkkzP",
+        "doc_id": "Kc3W0sx8A85LJcjIkkzP",
+        "equipment_id": "Kc3W0sx8A85LJcjIkkzP",
+        "name": "AR-NE1A X-Ray Diffraction and Mössbauer Spectroscopy at High Pressure",
+        "papers_count": 2
+      },
+      {
+        "row_key": "rOLkX14fp4qpGkU8WFbu::rOLkX14fp4qpGkU8WFbu",
+        "doc_id": "rOLkX14fp4qpGkU8WFbu",
+        "equipment_id": "rOLkX14fp4qpGkU8WFbu",
+        "name": "AR-NE3A Macromolecular Crystallography for Drug Design",
+        "papers_count": 2
+      },
+      {
+        "row_key": "T2JLeaGFMX0o5whDVNFR::T2JLeaGFMX0o5whDVNFR",
+        "doc_id": "T2JLeaGFMX0o5whDVNFR",
+        "equipment_id": "T2JLeaGFMX0o5whDVNFR",
+        "name": "AR-NE5C High-pressure and High-temperature X-ray Diffraction (MAX-80)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "H7SYGfhZ1ej00NOsbubk::H7SYGfhZ1ej00NOsbubk",
+        "doc_id": "H7SYGfhZ1ej00NOsbubk",
+        "equipment_id": "H7SYGfhZ1ej00NOsbubk",
+        "name": "AR-NE7A X-ray Imaging and X-ray Diffraction Experiments at High Pressure",
+        "papers_count": 2
+      },
+      {
+        "row_key": "YSjlhnuxeaWYFPZZHq5r::YSjlhnuxeaWYFPZZHq5r",
+        "doc_id": "YSjlhnuxeaWYFPZZHq5r",
+        "equipment_id": "YSjlhnuxeaWYFPZZHq5r",
+        "name": "AR-NW10A High-energy XAFS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0HPeIyJls2Pk3uku3v5m::0HPeIyJls2Pk3uku3v5m",
+        "doc_id": "0HPeIyJls2Pk3uku3v5m",
+        "equipment_id": "0HPeIyJls2Pk3uku3v5m",
+        "name": "AR-NW12A Macromolecular Crystallography",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0GGo2oV9YxDZFO2bNoNb::0GGo2oV9YxDZFO2bNoNb",
+        "doc_id": "0GGo2oV9YxDZFO2bNoNb",
+        "equipment_id": "0GGo2oV9YxDZFO2bNoNb",
+        "name": "AR-NW14A Time-resolved Diffraction and Scattering",
+        "papers_count": 2
+      },
+      {
+        "row_key": "F6OO1z5Gt6xwbFfFSFzk::F6OO1z5Gt6xwbFfFSFzk",
+        "doc_id": "F6OO1z5Gt6xwbFfFSFzk",
+        "equipment_id": "F6OO1z5Gt6xwbFfFSFzk",
+        "name": "AR-NW2A Time-resolved XAFS, X-ray Microscopy",
+        "papers_count": 2
+      },
+      {
+        "row_key": "sSNrlEfxQmVOQySHmVSu::sSNrlEfxQmVOQySHmVSu",
+        "doc_id": "sSNrlEfxQmVOQySHmVSu",
+        "equipment_id": "sSNrlEfxQmVOQySHmVSu",
+        "name": "AR-SE2A Test Beam Line (in Japanese)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "S9mncEtWKTwSPbKeCkBH::NAGASAKI-228",
+        "doc_id": "S9mncEtWKTwSPbKeCkBH",
+        "equipment_id": "NAGASAKI-228",
+        "name": "ARVO 1420 マルチプレートリーダー",
+        "papers_count": 1
+      },
+      {
+        "row_key": "ebbkyu2UpbnyWto5EE3u::HOKUDAI-AP-902000",
+        "doc_id": "ebbkyu2UpbnyWto5EE3u",
+        "equipment_id": "HOKUDAI-AP-902000",
+        "name": "ARVO X4 システム 2030-0040J",
+        "papers_count": 2
+      },
+      {
+        "row_key": "1dFofostq7qUgoDK2gzm::1dFofostq7qUgoDK2gzm",
+        "doc_id": "1dFofostq7qUgoDK2gzm",
+        "equipment_id": "1dFofostq7qUgoDK2gzm",
+        "name": "ASTEC社 低酸素インキュベーター",
+        "papers_count": 1
+      },
+      {
+        "row_key": "wSVlVw8n9DbViNGic2cU::wSVlVw8n9DbViNGic2cU",
+        "doc_id": "wSVlVw8n9DbViNGic2cU",
+        "equipment_id": "wSVlVw8n9DbViNGic2cU",
+        "name": "AVANCE 700MHzデジタルNMR装置 (BRUKER AV700)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "K5itvk4ebdgMwqF3xixS::K5itvk4ebdgMwqF3xixS",
+        "doc_id": "K5itvk4ebdgMwqF3xixS",
+        "equipment_id": "K5itvk4ebdgMwqF3xixS",
+        "name": "Agilent社2100バイオアナライザー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Aqyv2DjE3gu3pZcK9JSc::YAMAGUCHI-ipn106",
+        "doc_id": "Aqyv2DjE3gu3pZcK9JSc",
+        "equipment_id": "YAMAGUCHI-ipn106",
+        "name": "Alphaテクノロジー測定機器",
+        "papers_count": 3
+      },
+      {
+        "row_key": "xv5YkoNRLbxwagwCzo1B::HOKUDAI-AP-902166",
+        "doc_id": "xv5YkoNRLbxwagwCzo1B",
+        "equipment_id": "HOKUDAI-AP-902166",
+        "name": "Alveo U200 アクセラレータカード",
+        "papers_count": 2
+      },
+      {
+        "row_key": "WF0I8drPxChTLIvteZs3::HOKUDAI-AP-902257",
+        "doc_id": "WF0I8drPxChTLIvteZs3",
+        "equipment_id": "HOKUDAI-AP-902257",
+        "name": "Amersham ImageQuant 800 Fluorシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "N0iDMhuuxqOvTT31FGjI::OSAKA-711",
+        "doc_id": "N0iDMhuuxqOvTT31FGjI",
+        "equipment_id": "OSAKA-711",
+        "name": "AquaPlasmaクリーナー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Mo87oYBNyjrwFRPxMpdw::AIST-L01-104",
+        "doc_id": "Mo87oYBNyjrwFRPxMpdw",
+        "equipment_id": "AIST-L01-104",
+        "name": "ArF液浸レジスト塗布現像装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "a3jQyTHUy3NM2TsM2SON::AIST-L01-103",
+        "doc_id": "a3jQyTHUy3NM2TsM2SON",
+        "equipment_id": "AIST-L01-103",
+        "name": "ArF液浸露光装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "2Tedq1g4clVkE8VNa9mK::UTOKYO-88",
+        "doc_id": "2Tedq1g4clVkE8VNa9mK",
+        "equipment_id": "UTOKYO-88",
+        "name": "ArrayScan 細胞イメージアナライザー VTI HCS Reader",
+        "papers_count": 0
+      },
+      {
+        "row_key": "CHfCCdd17k06ISEndXDm::HOKUDAI-AP-100345",
+        "doc_id": "CHfCCdd17k06ISEndXDm",
+        "equipment_id": "HOKUDAI-AP-100345",
+        "name": "Arイオン研磨装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "cELkFdlPg3MJK5XBwL1Y::cELkFdlPg3MJK5XBwL1Y",
+        "doc_id": "cELkFdlPg3MJK5XBwL1Y",
+        "equipment_id": "cELkFdlPg3MJK5XBwL1Y",
+        "name": "Automated Peptide Synthesizer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "vrwQviE14zvZpPF70v1j::vrwQviE14zvZpPF70v1j",
+        "doc_id": "vrwQviE14zvZpPF70v1j",
+        "equipment_id": "vrwQviE14zvZpPF70v1j",
+        "name": "AxoPatch system",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Tp56FduDlb81wXRtcwCJ::NAGASAKI-41",
+        "doc_id": "Tp56FduDlb81wXRtcwCJ",
+        "equipment_id": "NAGASAKI-41",
+        "name": "B-Hアナライザ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "EMLsPGzUlonPHQVNObMP::HOKUDAI-AP-901762",
+        "doc_id": "EMLsPGzUlonPHQVNObMP",
+        "equipment_id": "HOKUDAI-AP-901762",
+        "name": "BD FACS Aria Ⅱ セルソーター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Fam8TGaD654P27MS4vPz::Fam8TGaD654P27MS4vPz",
+        "doc_id": "Fam8TGaD654P27MS4vPz",
+        "equipment_id": "Fam8TGaD654P27MS4vPz",
+        "name": "BD FACSAria Fusion",
+        "papers_count": 3
+      },
+      {
+        "row_key": "8sUeZZ9gVIQWbui8yzD0::8sUeZZ9gVIQWbui8yzD0",
+        "doc_id": "8sUeZZ9gVIQWbui8yzD0",
+        "equipment_id": "8sUeZZ9gVIQWbui8yzD0",
+        "name": "BD FACSAriaIII",
+        "papers_count": 3
+      },
+      {
+        "row_key": "IhIDkcJ44uZX3TeAJRuq::IhIDkcJ44uZX3TeAJRuq",
+        "doc_id": "IhIDkcJ44uZX3TeAJRuq",
+        "equipment_id": "IhIDkcJ44uZX3TeAJRuq",
+        "name": "BD FACSCanto II",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T10:13:14.855587+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-03T10:13:14.963539+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:12.151671+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:15.116628+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:18.088134+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:21.354584+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:24.382241+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:27.321881+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:30.360210+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:33.333259+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:36.242429+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:18:39.310812+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T10:21:26.048612+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,702 @@
+[
+  {
+    "doc_id": "0SPJ41WAdBX1LsVxqKW7",
+    "name": "3D/4D蛍光画像解析ソフトウェア",
+    "family": "imaging_software",
+    "chars": 2075,
+    "papers": 3
+  },
+  {
+    "doc_id": "wM6YBoDSsYc6OPRNzMHi",
+    "name": "電子天びん（UW620H)",
+    "family": "balance",
+    "chars": 2078,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-4724",
+    "name": "セルアナライザー BD FACS CantoII Becton Dickinson(FACSCanto II)",
+    "family": "cell_analyzer",
+    "chars": 2003,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-3776",
+    "name": "AppliedBiosystems・433A Peptide Synthesizer",
+    "family": "peptide_synthesizer",
+    "chars": 2074,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1995",
+    "name": "超低温フリーザー (-85°C)三洋電機株式会社 MDF-U384",
+    "family": "freezer",
+    "chars": 2006,
+    "papers": 2
+  },
+  {
+    "doc_id": "qh1aCaDcFKMLNMBCxXlh",
+    "name": "ICP発光分光分析装置",
+    "family": "icp",
+    "chars": 2033,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-872",
+    "name": "GC/FT-IR",
+    "family": "gc_ftir",
+    "chars": 2104,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-5179",
+    "name": "オールインワン蛍光顕微鏡 (KEYENCE BZ X-700)",
+    "family": "fluorescence_microscope",
+    "chars": 2127,
+    "papers": 3
+  },
+  {
+    "doc_id": "fhdS4rNbL8KWEYpQx0x2",
+    "name": "マイクロプレート吸光度リーダー（Plate Reader）",
+    "family": "plate_reader",
+    "chars": 2098,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-876",
+    "name": "分子間相互作用解析装置/GEヘルスケア Biacore J System",
+    "family": "biacore",
+    "chars": 2051,
+    "papers": 2
+  },
+  {
+    "doc_id": "dJYEUEjwOIHj5km1W0Gy",
+    "name": "真空紫外分光分析装置 (VM502)",
+    "family": "vuv",
+    "chars": 2036,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-742",
+    "name": "HPLC装置(有機酸)(島津製作所・LC20AD)",
+    "family": "hplc",
+    "chars": 2064,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4046",
+    "name": "粒子加速装置(医用小型サイクロトロン) 住友重機械工業(CYPRIS-HM12)",
+    "family": "cyclotron",
+    "chars": 2014,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-4227",
+    "name": "SiO2加工ドライエッチング(Si室) アネルバ",
+    "family": "dry_etch",
+    "chars": 2020,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-4270",
+    "name": "30kN万能材料試験機 Instron(5900R)",
+    "family": "mechanical_test",
+    "chars": 2044,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1997",
+    "name": "CO2インキュベーター(170L) MCO-18M三洋電機株式会社 MCO-18M",
+    "family": "co2_incubator",
+    "chars": 2040,
+    "papers": 1
+  },
+  {
+    "doc_id": "pKEnxERsRCilyVScolS7",
+    "name": "極低温ミリ波電子スピン共鳴(ESR)測定装置",
+    "family": "esr",
+    "chars": 2128,
+    "papers": 3
+  },
+  {
+    "doc_id": "Lik23FM2LHgNqIZhAfuz",
+    "name": "質量分析装置 (日本電子製) JMS-700V型",
+    "family": "mass_spec",
+    "chars": 2129,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-5222",
+    "name": "製氷機 IM-230DWL-1-STCR",
+    "family": "ice_machine",
+    "chars": 2108,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-2294",
+    "name": "CO2インキュベーター",
+    "family": "co2_incubator",
+    "chars": 2048,
+    "papers": 1
+  },
+  {
+    "doc_id": "YQ0eSIUB764Yr5gSYRAk",
+    "name": "走査透過型電子顕微鏡",
+    "family": "stem",
+    "chars": 2003,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-2057",
+    "name": "めっき装置(日立協和エンジニアリング(株)・特注)",
+    "family": "plating",
+    "chars": 2011,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-468",
+    "name": "400 MHz 核磁気共鳴装置 (Bruker社製・AVANCE III)",
+    "family": "nmr",
+    "chars": 2067,
+    "papers": 3
+  },
+  {
+    "doc_id": "po4BfhdL0ziKPXrGTOdg",
+    "name": "核磁気共鳴装置・電子スピン共鳴装置 (ECZ400S)",
+    "family": "esr",
+    "chars": 2072,
+    "papers": 3
+  },
+  {
+    "doc_id": "ypGuptBOyQRZg0CnTSeu",
+    "name": "赤外顕微鏡(FTIRに付属)",
+    "family": "ir_microscope",
+    "chars": 2070,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-2907",
+    "name": "X線分析顕微鏡(XGT-7200)",
+    "family": "xray_microanalyzer",
+    "chars": 2123,
+    "papers": 1
+  },
+  {
+    "doc_id": "XEMHpRENDSKgA8nKliWG",
+    "name": "原子吸光分析装置（液体）（AAS）",
+    "family": "aas",
+    "chars": 2019,
+    "papers": 1
+  },
+  {
+    "doc_id": "vWCkUtWl0JQ1Gpr6QPbJ",
+    "name": "質量分析装置 (JMS-T100TD) (DARTあるいはESIを用いたTOF)",
+    "family": "mass_spec",
+    "chars": 2014,
+    "papers": 1
+  },
+  {
+    "doc_id": "v8wAydZUYNLyhqoqxDGP",
+    "name": "蛍光X線分析装置(XRF)",
+    "family": "xrf",
+    "chars": 2054,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3390",
+    "name": "燃研式自動ボンベ熱量計(CA-4AJ)",
+    "family": "calorimeter",
+    "chars": 2058,
+    "papers": 2
+  },
+  {
+    "doc_id": "jFqAMzI1VXqTVZAnd0Us",
+    "name": "熱分析システム（DSC）",
+    "family": "dsc",
+    "chars": 2041,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1220",
+    "name": "ゼータ電位・粒径測定システム ELS-Z2Plus",
+    "family": "zeta",
+    "chars": 2014,
+    "papers": 1
+  },
+  {
+    "doc_id": "YAMANASHI-LCR-MODEL-6440B",
+    "name": "LCRメータ",
+    "family": "lcr_meter",
+    "chars": 2047,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3294",
+    "name": "3DマイクロX線CT CT Lab GX 130",
+    "family": "xray_ct",
+    "chars": 2094,
+    "papers": 2
+  },
+  {
+    "doc_id": "MIYAZAKI-1131",
+    "name": "高周波CT I-125-2HF",
+    "family": "generic",
+    "chars": 2115,
+    "papers": 3
+  },
+  {
+    "doc_id": "jYNmihmMnT7weejrrWfQ",
+    "name": "二重収束質量分析計（DI-MS）",
+    "family": "di_ms",
+    "chars": 2122,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-5438",
+    "name": "MALDI-TOF-MS(日本電子・JMS-S3000)",
+    "family": "maldi",
+    "chars": 2131,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-5053",
+    "name": "ビーズ式ホモジナイザー Precellys Evolution(エムエス機器)",
+    "family": "homogenizer",
+    "chars": 2111,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-5250",
+    "name": "MINION MK1C(Oxford Nanopore・MinION Mk1C)",
+    "family": "nanopore",
+    "chars": 2009,
+    "papers": 1
+  },
+  {
+    "doc_id": "tmlqi7J1w3ULrWSoRnPe",
+    "name": "熱電放出型走査電子顕微鏡（SEM）",
+    "family": "sem",
+    "chars": 2011,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5297",
+    "name": "AFM ParkSystems(NX10-T2)",
+    "family": "afm",
+    "chars": 2031,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4752",
+    "name": "バイオアナライザ Agilent 2100 (DNA用) Agilent(2100 Bioanalyzer)",
+    "family": "bioanalyzer",
+    "chars": 2035,
+    "papers": 2
+  },
+  {
+    "doc_id": "YAMANASHI-TMP-JEE-420T",
+    "name": "真空蒸着装置(TMP)",
+    "family": "vacuum_deposition",
+    "chars": 2042,
+    "papers": 1
+  },
+  {
+    "doc_id": "nqIATlWlNoeCMRDZG4sV",
+    "name": "ICDD検索システム PDF-4 +2016",
+    "family": "generic",
+    "chars": 2118,
+    "papers": 3
+  },
+  {
+    "doc_id": "aEzhtOGBl9pesVnWk96N",
+    "name": "3DマイクロX線CT",
+    "family": "generic",
+    "chars": 2013,
+    "papers": 3
+  },
+  {
+    "doc_id": "goTm6UyRF83VmQ7DK2Ee",
+    "name": "ｘＣＥＬＬigence",
+    "family": "xcelligence",
+    "chars": 2037,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-4725",
+    "name": "セルアナライザー BD LSR Fortessa Becton Dickinson(LSRFortessa)",
+    "family": "cell_analyzer",
+    "chars": 2004,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-853",
+    "name": "ペプチドシーケンサー(島津制作所製・PPSQ-33A)",
+    "family": "peptide_sequencer",
+    "chars": 2092,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4636",
+    "name": "凍結乾燥機(EYALA FDU-2200)(No.1~4)",
+    "family": "freeze_dryer",
+    "chars": 2123,
+    "papers": 2
+  },
+  {
+    "doc_id": "qFK82tR2HQOutQj1lW5a",
+    "name": "X線光電子分光装置",
+    "family": "xps",
+    "chars": 2115,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-75",
+    "name": "MCD磁気円二色性分散計 (日本分光(株)・MCD-414型+LD-403型)",
+    "family": "mcd",
+    "chars": 2131,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5182",
+    "name": "オールインワン蛍光顕微鏡 (KEYENCE BZ-8000)",
+    "family": "fluorescence_microscope",
+    "chars": 2106,
+    "papers": 3
+  },
+  {
+    "doc_id": "MIE-equipment23",
+    "name": "紫外可視分光光度計（UV-Vis）",
+    "family": "uvvis",
+    "chars": 2022,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4562",
+    "name": "生体分子間相互作用解析(BLItz/Octet N1) Pall ForteBio(BLItz/Octet N1)",
+    "family": "bli",
+    "chars": 2083,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-743",
+    "name": "HPLC装置(糖)(島津製作所・LC20AD)",
+    "family": "hplc",
+    "chars": 2020,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5012",
+    "name": "静電加速器システム(National Electrostatics Corporation 5SDH-2)",
+    "family": "accelerator",
+    "chars": 2072,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-4057",
+    "name": "コータデベロッパ 東京エレクトロン(Mark8)",
+    "family": "developer_coater",
+    "chars": 2136,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-3521",
+    "name": "AFM(原子間力顕微鏡)",
+    "family": "afm",
+    "chars": 2038,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1998",
+    "name": "CO2インキュベーター(170L) MCO-19AIC三洋電機株式会社 MCO-19AIC(UV)",
+    "family": "co2_incubator",
+    "chars": 2160,
+    "papers": 1
+  },
+  {
+    "doc_id": "hSxynWQkElVJAfalFyKF",
+    "name": "フーリエ変換核磁気共鳴装置 (Bruker製) AV NEO 500",
+    "family": "nmr",
+    "chars": 2008,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-5051",
+    "name": "超純水装置 Direct-Q UV5(MERCK)",
+    "family": "pure_water",
+    "chars": 2040,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-3708",
+    "name": "Fe-57メスバウア分光測定装置(WissEl社)",
+    "family": "mossbauer",
+    "chars": 2043,
+    "papers": 2
+  },
+  {
+    "doc_id": "YAMANASHI-FE-TEM-TECNAI-OSIRIS",
+    "name": "電界放射型透過電子顕微鏡",
+    "family": "tem",
+    "chars": 2042,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1434",
+    "name": "イオンコータ(Au用)-I(EIKO・IB-2)",
+    "family": "ion_coater",
+    "chars": 2042,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-454",
+    "name": "400MHZ 核磁気共鳴装置 (日本電子(株)・JNM−ECS型)",
+    "family": "nmr",
+    "chars": 2037,
+    "papers": 3
+  },
+  {
+    "doc_id": "XtYz6PNeCNUV47I0kQhL",
+    "name": "核磁気共鳴装置・電子スピン共鳴装置 (JNM-ECZL500)",
+    "family": "esr",
+    "chars": 2141,
+    "papers": 3
+  },
+  {
+    "doc_id": "YAMANASHI-EBSD-VELOCITY-PRO",
+    "name": "EBSD検出器 (SEMに付属)",
+    "family": "ebsd",
+    "chars": 2107,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1423",
+    "name": "X線分析顕微鏡(堀場製作所・XGT-5000)",
+    "family": "xray_microanalyzer",
+    "chars": 2124,
+    "papers": 1
+  },
+  {
+    "doc_id": "upfJP1vxKJzHMsy5qXrk",
+    "name": "波長分散型蛍光X線元素分析装置 （XRF）",
+    "family": "xrf",
+    "chars": 2079,
+    "papers": 2
+  },
+  {
+    "doc_id": "KANAZAWA-2",
+    "name": "質量分析装置(JMS-700)",
+    "family": "mass_spec",
+    "chars": 2012,
+    "papers": 1
+  },
+  {
+    "doc_id": "QROFiVTEfixA1mrWKahi",
+    "name": "真空蒸着装置 真空デバイスVE-2030",
+    "family": "vacuum_deposition",
+    "chars": 2059,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-1752",
+    "name": "示差熱天秤(リガク・TG8120)",
+    "family": "tg_dta",
+    "chars": 2017,
+    "papers": 2
+  },
+  {
+    "doc_id": "MIE-equipment8",
+    "name": "熱分析システム（TG-DTA）",
+    "family": "tg_dta",
+    "chars": 2119,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-5293",
+    "name": "データ記録システム 東京測器研究所(TDS-530(データロガー)・IHW-50H(スイッチボックス),SDP-300(変位計))",
+    "family": "data_logger",
+    "chars": 2085,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4785",
+    "name": "X線CT 日立アロカ Latheta LCT200 日立アロカ(Latheta LCT-200)",
+    "family": "xray_ct",
+    "chars": 2105,
+    "papers": 2
+  },
+  {
+    "doc_id": "yjNc7trJgXFtcRuDIKE3",
+    "name": "電気サーボモーター式引張･圧縮･曲げ試験装置(500kN)",
+    "family": "mechanical_test",
+    "chars": 2109,
+    "papers": 2
+  },
+  {
+    "doc_id": "UCZebETkxrck737kiGni",
+    "name": "質量分析装置 (GCMS-QP2010)",
+    "family": "gcms",
+    "chars": 2056,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-1032",
+    "name": "MALDI-TOF-Mass ( Bruker Autoflex )",
+    "family": "maldi",
+    "chars": 2039,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-2970",
+    "name": "卓上型超遠心機(ベックマンコールター・Optima MAX-XP)",
+    "family": "ultracentrifuge",
+    "chars": 2031,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-3718",
+    "name": "QUANTSTUDIO 3DデジタルPCRシステム",
+    "family": "digital_pcr",
+    "chars": 2057,
+    "papers": 1
+  },
+  {
+    "doc_id": "YMi4BJToT9V1L9yNWKkF",
+    "name": "走査型電子顕微鏡（SEM）",
+    "family": "sem",
+    "chars": 2069,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4162",
+    "name": "AFM アサイラム テクノロジー",
+    "family": "afm",
+    "chars": 2077,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4754",
+    "name": "バイオアナライザ Agilent 2100 (RNA用) Agilent(2100 Bioanalyzer)",
+    "family": "bioanalyzer",
+    "chars": 2035,
+    "papers": 2
+  },
+  {
+    "doc_id": "YAMANASHI-b855933b34",
+    "name": "真空蒸着装置(TEM試料室)",
+    "family": "vacuum_deposition",
+    "chars": 2084,
+    "papers": 1
+  },
+  {
+    "doc_id": "KUMAMOTO-list4f-01",
+    "name": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusII",
+    "family": "xrf_scan",
+    "chars": 2102,
+    "papers": 2
+  },
+  {
+    "doc_id": "dI6L4tVB3fbOBm41pFzj",
+    "name": "3D解析ソフト(オプション;欠陥・介在物モジュール)",
+    "family": "analysis_software",
+    "chars": 2074,
+    "papers": 2
+  },
+  {
+    "doc_id": "MtY3ky4z0ELvKYPVxcBh",
+    "name": "電子天びん（AUX-320)",
+    "family": "balance",
+    "chars": 2100,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-1198",
+    "name": "セルソーター (ベックマンコールター・MoFlo Astrios)",
+    "family": "cell_sorter",
+    "chars": 2016,
+    "papers": 3
+  },
+  {
+    "doc_id": "eqnet-478",
+    "name": "ペプチドシーケンサー(島津製作所製・PPSQ-31A型)",
+    "family": "peptide_sequencer",
+    "chars": 2102,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4637",
+    "name": "凍結乾燥機(EYALA FDU-2200)(No.5-8)",
+    "family": "freeze_dryer",
+    "chars": 2127,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-588",
+    "name": "Raman分光測定システムLab RAM ARAMIS((株)堀場製作所)",
+    "family": "raman",
+    "chars": 2090,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3670",
+    "name": "オールインワン蛍光顕微鏡 (KEYENCE・BZ-X800)",
+    "family": "fluorescence_microscope",
+    "chars": 2124,
+    "papers": 3
+  },
+  {
+    "doc_id": "MIE-equipment24",
+    "name": "超微量紫外可視分光光度計（NanoDrop）",
+    "family": "nanodrop",
+    "chars": 2133,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4018",
+    "name": "生体分子間相互作用解析装置(Biacore T200 外) GE Healthcare Life Sciences(Biacore T200)",
+    "family": "biacore",
+    "chars": 2061,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-739",
+    "name": "HPLC装置(色素)(島津製作所・LC20AD)",
+    "family": "hplc",
+    "chars": 2039,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4045",
+    "name": "高速イオン・中性子ビーム照射装置(サポートあり) (最高ビームエネルギー:陽子・中性子70MeV及び重イオンビーム)",
+    "family": "accelerator",
+    "chars": 2092,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-3569",
+    "name": "ゴールドボールボンダ(4524 D)",
+    "family": "gold_bonder",
+    "chars": 2022,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-3803",
+    "name": "DSC",
+    "family": "dsc",
+    "chars": 2095,
+    "papers": 2
+  },
+  {
+    "doc_id": "eqnet-4582",
+    "name": "CO2インキュベーター(MCO-19AIC) SANYO(MCO-19AIC)",
+    "family": "co2_incubator",
+    "chars": 2019,
+    "papers": 1
+  },
+  {
+    "doc_id": "eqnet-4592",
+    "name": "超純水装置(Direct-Q UV 3) MERCK(Direct-Q UV3)",
+    "family": "pure_water",
+    "chars": 2137,
+    "papers": 3
+  }
+]

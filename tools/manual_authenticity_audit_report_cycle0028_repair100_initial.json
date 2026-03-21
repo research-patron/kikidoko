@@ -1,0 +1,104 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-17T22:56:53.804838+00:00",
+  "batch_id": "BATCH-20260318-CYCLE0028-REPAIR100",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0028_repair100.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0028_repair100.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260318-CYCLE0028-REPAIR100.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.02,
+    "pitfall1_dup_rate": 0.02,
+    "step2_same_ratio": 0.03,
+    "pitfall2_same_ratio": 0.03,
+    "reviewed_at_unique_count": 100,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 0,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "auto_template_marker_hits": 0,
+    "beginner_char_min": 2000,
+    "beginner_char_max": 2722,
+    "beginner_char_avg": 2236.49,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 8,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 100
+  },
+  "threshold_failures": [
+    "step1_dup_rate_not_zero",
+    "pitfall1_dup_rate_not_zero",
+    "guide_high_similarity_detected"
+  ],
+  "offending_doc_ids": [],
+  "issue_counts": {
+    "step1_dup_rate_not_zero": 1,
+    "pitfall1_dup_rate_not_zero": 1,
+    "guide_high_similarity_detected": 1
+  },
+  "issues": [],
+  "near_duplicate_pairs": [
+    {
+      "i": 10,
+      "j": 11,
+      "ratio": 0.9681528662420382
+    },
+    {
+      "i": 34,
+      "j": 35,
+      "ratio": 0.9780594831789371
+    },
+    {
+      "i": 42,
+      "j": 43,
+      "ratio": 0.9452421513750304
+    },
+    {
+      "i": 44,
+      "j": 46,
+      "ratio": 0.9554224883566201
+    },
+    {
+      "i": 44,
+      "j": 47,
+      "ratio": 0.9219199292191993
+    },
+    {
+      "i": 46,
+      "j": 47,
+      "ratio": 0.935164340387213
+    },
+    {
+      "i": 50,
+      "j": 56,
+      "ratio": 0.9670599803343166
+    },
+    {
+      "i": 60,
+      "j": 62,
+      "ratio": 0.9342681858019282
+    }
+  ],
+  "checkpoint_snapshot": {
+    "updated_at": "2026-03-17T22:55:48.038377+00:00",
+    "done": 0,
+    "remaining": 100,
+    "batch_size": 10,
+    "process_all": false,
+    "reviewer_default": "codex-manual",
+    "enforce_beginner_min_chars": 2000,
+    "enforce_beginner_max_chars": 3000,
+    "char_count_mode": "non_whitespace",
+    "forbid_internal_id": true,
+    "forbid_placeholder_doi": true,
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0028_repair100.jsonl",
+    "post_audit_status": "PENDING"
+  }
+}

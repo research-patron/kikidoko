@@ -1,0 +1,353 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260312-CYCLE0018-REPAIR-SIM33",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-11T23:20:05.520834+00:00",
+  "updated_at": "2026-03-11T23:21:19.212502+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0018_repair_similarity33.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0018-REPAIR-SIM33.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "9c469f8eda02c8e9735fe3ab995f0462ffad2981d9fd8549e3eb87454af66764",
+    "queue_sha256_at_start": "e3d1269f9ce41fc210f1561122d8fc434a736f523371204ea28c312b46f07604",
+    "queue_row_keys_sha256": "982248fe21c1b5636dd910429a17fe908faa5ca1a0bab240a73849ce935e399b"
+  },
+  "queue": {
+    "target_count": 33,
+    "target_row_keys": [
+      "A7MWtDQpwHGFTUhqtnjb::HOKUDAI-AP-901896",
+      "v1gUy1dPMKKA1NNuS18X::HOKUDAI-AP-901952",
+      "sbIeozQzj7byGmx7Fjnp::HOKUDAI-AP-901973",
+      "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131",
+      "TkaHlzgtz6JO4HUisJfF::TkaHlzgtz6JO4HUisJfF",
+      "rno2y95IN10lMAJEsg10::rno2y95IN10lMAJEsg10",
+      "i2c5gUsYfb1IsbNjnSJL::HOKUDAI-AP-901881",
+      "gja8bj3mwQz0W0FlsL8u::HOKUDAI-AP-902087",
+      "fugu07L4UeWGxoWiVEes::HOKUDAI-AP-902229",
+      "O4K1kikpm0ixFTDp6X7r::HOKUDAI-AP-901938",
+      "nvZYEjPbZg1VQlrZQuJU::HOKUDAI-AP-902085",
+      "7fNEKtajWVbSHWjeE4WB::7fNEKtajWVbSHWjeE4WB",
+      "8cx0KgvpyiNCzCYNeCAO::HOKUDAI-AP-902047",
+      "dmkh3juDOR7NLusxuc8H::dmkh3juDOR7NLusxuc8H",
+      "zbY4qgZK4bjNMYHGepyh::HOKUDAI-AP-902155",
+      "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+      "sBMDkmKaSIJ2PNXDpWbp::sBMDkmKaSIJ2PNXDpWbp",
+      "y8Ui46jeOMsXNX7ANJvd::y8Ui46jeOMsXNX7ANJvd",
+      "DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127",
+      "lLja7HkKKqtRvFUj5wuZ::HOKUDAI-AP-902164",
+      "wNEN1InjRracqmlcnCmq::HOKUDAI-AP-901802",
+      "TTfvAtX3TovSCl7xp6BY::TTfvAtX3TovSCl7xp6BY",
+      "JhuK5uDKutHxsgXGBdfu::JhuK5uDKutHxsgXGBdfu",
+      "bHdRTjgTZ7eWrQA00Ejd::HOKUDAI-AP-901854",
+      "OAKDtGP8660BvXJUMMcH::HOKUDAI-AP-902057",
+      "l9JimqYJwMgYKO7SL8Es::HOKUDAI-AP-902230",
+      "MJFAPUitdwYTyEGtctmX::MJFAPUitdwYTyEGtctmX",
+      "nDr8L3kPFoycGvDgbvr6::nDr8L3kPFoycGvDgbvr6",
+      "zKWIZRWSV82Gi9ehIFxw::HOKUDAI-AP-901905",
+      "sD7awrsVJpNHKyknxOEi::HOKUDAI-AP-901342",
+      "IRnByvdV59MYot6s6khR::HOKUDAI-AP-900796",
+      "TnIpRpbhRmgyLHWElK1H::HOKUDAI-AP-901850",
+      "F4pSHEFYIXBfjPNRoDhd::HOKUDAI-AP-901558"
+    ],
+    "target_rows": [
+      {
+        "row_key": "A7MWtDQpwHGFTUhqtnjb::HOKUDAI-AP-901896",
+        "doc_id": "A7MWtDQpwHGFTUhqtnjb",
+        "equipment_id": "HOKUDAI-AP-901896",
+        "name": "コンクリート用4点曲げ試験治具",
+        "papers_count": 0
+      },
+      {
+        "row_key": "v1gUy1dPMKKA1NNuS18X::HOKUDAI-AP-901952",
+        "doc_id": "v1gUy1dPMKKA1NNuS18X",
+        "equipment_id": "HOKUDAI-AP-901952",
+        "name": "3Dスキャナー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sbIeozQzj7byGmx7Fjnp::HOKUDAI-AP-901973",
+        "doc_id": "sbIeozQzj7byGmx7Fjnp",
+        "equipment_id": "HOKUDAI-AP-901973",
+        "name": "3Dスキャナ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131",
+        "doc_id": "X5irZ5FTgTb6cDkhoQza",
+        "equipment_id": "HOKUDAI-AP-902131",
+        "name": "アイトラッカー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TkaHlzgtz6JO4HUisJfF::TkaHlzgtz6JO4HUisJfF",
+        "doc_id": "TkaHlzgtz6JO4HUisJfF",
+        "equipment_id": "TkaHlzgtz6JO4HUisJfF",
+        "name": "簡易型クレーン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "rno2y95IN10lMAJEsg10::rno2y95IN10lMAJEsg10",
+        "doc_id": "rno2y95IN10lMAJEsg10",
+        "equipment_id": "rno2y95IN10lMAJEsg10",
+        "name": "バイオトロンB棟-4",
+        "papers_count": 0
+      },
+      {
+        "row_key": "i2c5gUsYfb1IsbNjnSJL::HOKUDAI-AP-901881",
+        "doc_id": "i2c5gUsYfb1IsbNjnSJL",
+        "equipment_id": "HOKUDAI-AP-901881",
+        "name": "コンクリート曲げ試験治具",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gja8bj3mwQz0W0FlsL8u::HOKUDAI-AP-902087",
+        "doc_id": "gja8bj3mwQz0W0FlsL8u",
+        "equipment_id": "HOKUDAI-AP-902087",
+        "name": "ハイボリウムエアサンプラー HV-RW 粉じんセット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "fugu07L4UeWGxoWiVEes::HOKUDAI-AP-902229",
+        "doc_id": "fugu07L4UeWGxoWiVEes",
+        "equipment_id": "HOKUDAI-AP-902229",
+        "name": "In Vitro & In Vivo 遺伝子導入装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "O4K1kikpm0ixFTDp6X7r::HOKUDAI-AP-901938",
+        "doc_id": "O4K1kikpm0ixFTDp6X7r",
+        "equipment_id": "HOKUDAI-AP-901938",
+        "name": "エアーサンプラー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nvZYEjPbZg1VQlrZQuJU::HOKUDAI-AP-902085",
+        "doc_id": "nvZYEjPbZg1VQlrZQuJU",
+        "equipment_id": "HOKUDAI-AP-902085",
+        "name": "ハイボリウムサンプラ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7fNEKtajWVbSHWjeE4WB::7fNEKtajWVbSHWjeE4WB",
+        "doc_id": "7fNEKtajWVbSHWjeE4WB",
+        "equipment_id": "7fNEKtajWVbSHWjeE4WB",
+        "name": "バイオトロンB棟-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "8cx0KgvpyiNCzCYNeCAO::HOKUDAI-AP-902047",
+        "doc_id": "8cx0KgvpyiNCzCYNeCAO",
+        "equipment_id": "HOKUDAI-AP-902047",
+        "name": "クロロフィル測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "dmkh3juDOR7NLusxuc8H::dmkh3juDOR7NLusxuc8H",
+        "doc_id": "dmkh3juDOR7NLusxuc8H",
+        "equipment_id": "dmkh3juDOR7NLusxuc8H",
+        "name": "バイオトロンB棟-3",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zbY4qgZK4bjNMYHGepyh::HOKUDAI-AP-902155",
+        "doc_id": "zbY4qgZK4bjNMYHGepyh",
+        "equipment_id": "HOKUDAI-AP-902155",
+        "name": "3Dプリンタ Form3",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+        "doc_id": "IICo0TdRSYRiGhj2Gssa",
+        "equipment_id": "HOKUDAI-AP-902265",
+        "name": "Thermal Cycler SimpliAmp",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sBMDkmKaSIJ2PNXDpWbp::sBMDkmKaSIJ2PNXDpWbp",
+        "doc_id": "sBMDkmKaSIJ2PNXDpWbp",
+        "equipment_id": "sBMDkmKaSIJ2PNXDpWbp",
+        "name": "ハンドパレットトラック",
+        "papers_count": 0
+      },
+      {
+        "row_key": "y8Ui46jeOMsXNX7ANJvd::y8Ui46jeOMsXNX7ANJvd",
+        "doc_id": "y8Ui46jeOMsXNX7ANJvd",
+        "equipment_id": "y8Ui46jeOMsXNX7ANJvd",
+        "name": "旭町ラボ オープンラボスペース 202実験室(B)-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127",
+        "doc_id": "DgVXXYqm3xzRF5sqJN1i",
+        "equipment_id": "HOKUDAI-AP-902127",
+        "name": "1852138JA S1000 WITH 384WELL",
+        "papers_count": 0
+      },
+      {
+        "row_key": "lLja7HkKKqtRvFUj5wuZ::HOKUDAI-AP-902164",
+        "doc_id": "lLja7HkKKqtRvFUj5wuZ",
+        "equipment_id": "HOKUDAI-AP-902164",
+        "name": "3Dプリンター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wNEN1InjRracqmlcnCmq::HOKUDAI-AP-901802",
+        "doc_id": "wNEN1InjRracqmlcnCmq",
+        "equipment_id": "HOKUDAI-AP-901802",
+        "name": "Tobii Proフュージョン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TTfvAtX3TovSCl7xp6BY::TTfvAtX3TovSCl7xp6BY",
+        "doc_id": "TTfvAtX3TovSCl7xp6BY",
+        "equipment_id": "TTfvAtX3TovSCl7xp6BY",
+        "name": "ハンドリフター（コゾウリフター）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JhuK5uDKutHxsgXGBdfu::JhuK5uDKutHxsgXGBdfu",
+        "doc_id": "JhuK5uDKutHxsgXGBdfu",
+        "equipment_id": "JhuK5uDKutHxsgXGBdfu",
+        "name": "旭町ラボ オープンラボスペース 202実験室(B)-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "bHdRTjgTZ7eWrQA00Ejd::HOKUDAI-AP-901854",
+        "doc_id": "bHdRTjgTZ7eWrQA00Ejd",
+        "equipment_id": "HOKUDAI-AP-901854",
+        "name": "MEX方式3Dプリンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OAKDtGP8660BvXJUMMcH::HOKUDAI-AP-902057",
+        "doc_id": "OAKDtGP8660BvXJUMMcH",
+        "equipment_id": "HOKUDAI-AP-902057",
+        "name": "PAM-2500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "l9JimqYJwMgYKO7SL8Es::HOKUDAI-AP-902230",
+        "doc_id": "l9JimqYJwMgYKO7SL8Es",
+        "equipment_id": "HOKUDAI-AP-902230",
+        "name": "Nucleofector(TM) 2b Device",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MJFAPUitdwYTyEGtctmX::MJFAPUitdwYTyEGtctmX",
+        "doc_id": "MJFAPUitdwYTyEGtctmX",
+        "equipment_id": "MJFAPUitdwYTyEGtctmX",
+        "name": "バイオトロンB棟-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nDr8L3kPFoycGvDgbvr6::nDr8L3kPFoycGvDgbvr6",
+        "doc_id": "nDr8L3kPFoycGvDgbvr6",
+        "equipment_id": "nDr8L3kPFoycGvDgbvr6",
+        "name": "吊りフック･アーム付きリフター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zKWIZRWSV82Gi9ehIFxw::HOKUDAI-AP-901905",
+        "doc_id": "zKWIZRWSV82Gi9ehIFxw",
+        "equipment_id": "HOKUDAI-AP-901905",
+        "name": "プログラマブル・ダイヤモンドソー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sD7awrsVJpNHKyknxOEi::HOKUDAI-AP-901342",
+        "doc_id": "sD7awrsVJpNHKyknxOEi",
+        "equipment_id": "HOKUDAI-AP-901342",
+        "name": "フラッシュ自動精製システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IRnByvdV59MYot6s6khR::HOKUDAI-AP-900796",
+        "doc_id": "IRnByvdV59MYot6s6khR",
+        "equipment_id": "HOKUDAI-AP-900796",
+        "name": "クリスタルカッターNeoPro",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TnIpRpbhRmgyLHWElK1H::HOKUDAI-AP-901850",
+        "doc_id": "TnIpRpbhRmgyLHWElK1H",
+        "equipment_id": "HOKUDAI-AP-901850",
+        "name": "SLA光造形3Dプリンター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "F4pSHEFYIXBfjPNRoDhd::HOKUDAI-AP-901558",
+        "doc_id": "F4pSHEFYIXBfjPNRoDhd",
+        "equipment_id": "HOKUDAI-AP-901558",
+        "name": "フラッシュ自動精製装置",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 6,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-11T23:20:05.520834+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 33
+      }
+    },
+    {
+      "at": "2026-03-11T23:20:14.173520+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:20:36.879207+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:20:45.638531+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:20:53.466782+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:21:01.141013+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-11T23:21:19.212502+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

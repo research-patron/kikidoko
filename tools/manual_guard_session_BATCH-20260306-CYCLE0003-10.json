@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260306-CYCLE0003-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-06T14:33:00.890462+00:00",
+  "updated_at": "2026-03-06T23:37:30.011654+00:00",
+  "closed_at": "2026-03-06T23:37:30.011654+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0003_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260306-CYCLE0003-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "6733757eb871edc01b80b15008440bff93c2f263a24d1f43e82debc2983614bc",
+    "queue_sha256_at_start": "85cc271be279a2b8a7874cd8cb99d2c34a609e647f4e899060809c019470800d",
+    "queue_row_keys_sha256": "ef71649c266975cbd1d2e9196c4f81550e5f161723eaea109da169186e5a27a4"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+      "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+      "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+      "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+      "mvHeWRPnzgxqa2wHKaqo::TOKUSHIMA-6",
+      "TOKUSHIMA-6::TOKUSHIMA-6",
+      "TOKUSHIMA-72::TOKUSHIMA-72",
+      "vLxG7JK9l1a27ArfGbY1::vLxG7JK9l1a27ArfGbY1",
+      "GsgCedK7rtQUoIzvlFnK::GsgCedK7rtQUoIzvlFnK",
+      "YgBfgj2Glg50OMudGFzi::YgBfgj2Glg50OMudGFzi"
+    ],
+    "target_rows": [
+      {
+        "row_key": "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+        "doc_id": "VRY5cXiT090GLPf9fhAt",
+        "equipment_id": "VRY5cXiT090GLPf9fhAt",
+        "name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+        "doc_id": "ZpEsD1VJ5uJdSfwLOx3z",
+        "equipment_id": "ZpEsD1VJ5uJdSfwLOx3z",
+        "name": "粒子径・分子量測定装置－型式：ZETASIZER Nano-S",
+        "papers_count": 0
+      },
+      {
+        "row_key": "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+        "doc_id": "acudKLs6rShQtvQwF6tA",
+        "equipment_id": "acudKLs6rShQtvQwF6tA",
+        "name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+        "papers_count": 0
+      },
+      {
+        "row_key": "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+        "doc_id": "WA5NfqWUHxVa97Pgyojx",
+        "equipment_id": "WA5NfqWUHxVa97Pgyojx",
+        "name": "蛍光分光光度計(FL)－型式：F-2500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "mvHeWRPnzgxqa2wHKaqo::TOKUSHIMA-6",
+        "doc_id": "mvHeWRPnzgxqa2wHKaqo",
+        "equipment_id": "TOKUSHIMA-6",
+        "name": "3Dプリンタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "TOKUSHIMA-6::TOKUSHIMA-6",
+        "doc_id": "TOKUSHIMA-6",
+        "equipment_id": "TOKUSHIMA-6",
+        "name": "3Dプリンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-72::TOKUSHIMA-72",
+        "doc_id": "TOKUSHIMA-72",
+        "equipment_id": "TOKUSHIMA-72",
+        "name": "光造形3Dプリンタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "vLxG7JK9l1a27ArfGbY1::vLxG7JK9l1a27ArfGbY1",
+        "doc_id": "vLxG7JK9l1a27ArfGbY1",
+        "equipment_id": "vLxG7JK9l1a27ArfGbY1",
+        "name": "全自動タンパク質合成システム－型式：GenDecorder",
+        "papers_count": 2
+      },
+      {
+        "row_key": "GsgCedK7rtQUoIzvlFnK::GsgCedK7rtQUoIzvlFnK",
+        "doc_id": "GsgCedK7rtQUoIzvlFnK",
+        "equipment_id": "GsgCedK7rtQUoIzvlFnK",
+        "name": "卓上タンパク質合成システム－型式：Protemist DT",
+        "papers_count": 3
+      },
+      {
+        "row_key": "YgBfgj2Glg50OMudGFzi::YgBfgj2Glg50OMudGFzi",
+        "doc_id": "YgBfgj2Glg50OMudGFzi",
+        "equipment_id": "YgBfgj2Glg50OMudGFzi",
+        "name": "全自動タンパク質合成システム－型式：GenDecorder",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-06T14:33:00.890462+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-06T14:33:01.611657+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-06T14:33:52.386840+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-06T23:37:30.011654+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

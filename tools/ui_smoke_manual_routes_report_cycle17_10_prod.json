@@ -1,0 +1,148 @@
+{
+  "url": "https://kikidoko.web.app/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/yhcts1QaREU60vCMOL7X/10.1016%2Fj.jeurceramsoc.2025.118089",
+    "paper_space_hash": "#/paper/KuMXfMtAqaZr4ooiMuVf/10.13138%2F2039-2362%2F4082",
+    "beginner_enter_hash": "#/beginner/KuMXfMtAqaZr4ooiMuVf",
+    "beginner_space_hash": "#/beginner/KuMXfMtAqaZr4ooiMuVf"
+  },
+  "desktop_cases": [
+    {
+      "row_name": "(ARIM)[委託] FIB－SEM Helios Nanolab 600i",
+      "summary_len": 341,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 12,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/B9iIiFOdCcARZXssno7H/10.19139%2Fsoic-2310-5070-3032",
+      "beginner_hash": "#/beginner/B9iIiFOdCcARZXssno7H",
+      "paper_link_href": "https://doi.org/10.19139/soic-2310-5070-3032",
+      "case_no": 1
+    },
+    {
+      "row_name": "(ARIM)イオンミリング装置",
+      "summary_len": 298,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 12,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/WWLwJA9jk0TGNsNIJQJ9/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/WWLwJA9jk0TGNsNIJQJ9",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 2
+    },
+    {
+      "row_name": "(ARIM)インクジェットパターン生成装置",
+      "summary_len": 340,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 11,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/yhcts1QaREU60vCMOL7X/10.1016%2Fj.jeurceramsoc.2025.118089",
+      "beginner_hash": "#/beginner/yhcts1QaREU60vCMOL7X",
+      "paper_link_href": "https://doi.org/10.1016/j.jeurceramsoc.2025.118089",
+      "case_no": 3
+    },
+    {
+      "row_name": "(ARIM)ウェーハーダイシングマシン DAD322",
+      "summary_len": 267,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 12,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/KuMXfMtAqaZr4ooiMuVf/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/KuMXfMtAqaZr4ooiMuVf",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 4
+    },
+    {
+      "row_name": "(ARIM)スパッタリング装置 CFS-4EP-LL",
+      "summary_len": 338,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 12,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/BwmrMWcbiANDPGliYJcN/10.1186%2Fs12967-025-07507-x",
+      "beginner_hash": "#/beginner/BwmrMWcbiANDPGliYJcN",
+      "paper_link_href": "https://doi.org/10.1186/s12967-025-07507-x",
+      "case_no": 5
+    },
+    {
+      "row_name": "(ARIM)デバイスシミュレーター",
+      "summary_len": 237,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 12,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/Ph3Mz9oBmy0H8vpbnhlu/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/Ph3Mz9oBmy0H8vpbnhlu",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 6
+    },
+    {
+      "row_name": "(ARIM)データ解析用PC",
+      "summary_len": 298,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 14,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/BLClIkY4tEpN6XpJsndC/10.1177%2F08258597221136733",
+      "beginner_hash": "#/beginner/BLClIkY4tEpN6XpJsndC",
+      "paper_link_href": "https://doi.org/10.1177/08258597221136733",
+      "case_no": 7
+    },
+    {
+      "row_name": "(ARIM)パターン投影リソグラフィシステム",
+      "summary_len": 340,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 13,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/8Wu7jpQiqKCQa9TvXQbA/10.1038%2Fs41598-025-32287-1",
+      "beginner_hash": "#/beginner/8Wu7jpQiqKCQa9TvXQbA",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-32287-1",
+      "case_no": 8
+    },
+    {
+      "row_name": "(ARIM)パッケージング (ワイヤ・エポキシダイボンダ)",
+      "summary_len": 265,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 14,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/mu4QmdADIyODE2UYpzNC/10.1016%2Fj.jeurceramsoc.2025.118089",
+      "beginner_hash": "#/beginner/mu4QmdADIyODE2UYpzNC",
+      "paper_link_href": "https://doi.org/10.1016/j.jeurceramsoc.2025.118089",
+      "case_no": 9
+    },
+    {
+      "row_name": "(ARIM)パワーデバイス特性評価装置 B1505A",
+      "summary_len": 314,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 17,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/5Kyned0pvZHotK87qrkp/10.13138%2F2039-2362%2F4082",
+      "beginner_hash": "#/beginner/5Kyned0pvZHotK87qrkp",
+      "paper_link_href": "https://doi.org/10.13138/2039-2362/4082",
+      "case_no": 10
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

@@ -1,0 +1,223 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE21-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T01:29:56.134151+00:00",
+  "updated_at": "2026-03-04T01:43:07.108067+00:00",
+  "closed_at": "2026-03-04T01:43:07.108067+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle21_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE21-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "bb7dbabd61118671f03fcaf8c20effd6131d57a207866f5a14c930a052371255",
+    "queue_sha256_at_start": "365c0ebe00d75fb14f9fd30d5a999fe4b3f58290df6565da6785d36790a0c973",
+    "queue_row_keys_sha256": "167f3b29d3f7b5a61074f5a57ee61e45c73c66ae30448b37a904a310d4a8db4d"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "2tQSyysW5GzUbZBLqC9k::2tQSyysW5GzUbZBLqC9k",
+      "y8Ui46jeOMsXNX7ANJvd::y8Ui46jeOMsXNX7ANJvd",
+      "JhuK5uDKutHxsgXGBdfu::JhuK5uDKutHxsgXGBdfu",
+      "miPx7EkVYWQ78f5x68R7::miPx7EkVYWQ78f5x68R7",
+      "l2HJN64fqQChnWfoaTJG::l2HJN64fqQChnWfoaTJG",
+      "9eSY5IK3fbCmWeQla3fa::9eSY5IK3fbCmWeQla3fa",
+      "uc0RgupmsYy6irEL39vM::uc0RgupmsYy6irEL39vM",
+      "wwYQXEdh4ar4GR6rbLS5::wwYQXEdh4ar4GR6rbLS5",
+      "2cLWDy0mMN4LEBAoqoqJ::2cLWDy0mMN4LEBAoqoqJ",
+      "j9bpd8SFpW0QNCPpvuij::j9bpd8SFpW0QNCPpvuij"
+    ],
+    "target_rows": [
+      {
+        "row_key": "2tQSyysW5GzUbZBLqC9k::2tQSyysW5GzUbZBLqC9k",
+        "doc_id": "2tQSyysW5GzUbZBLqC9k",
+        "equipment_id": "2tQSyysW5GzUbZBLqC9k",
+        "name": "超低温フリーザー_03 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "y8Ui46jeOMsXNX7ANJvd::y8Ui46jeOMsXNX7ANJvd",
+        "doc_id": "y8Ui46jeOMsXNX7ANJvd",
+        "equipment_id": "y8Ui46jeOMsXNX7ANJvd",
+        "name": "旭町ラボ オープンラボスペース 202実験室(B)-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JhuK5uDKutHxsgXGBdfu::JhuK5uDKutHxsgXGBdfu",
+        "doc_id": "JhuK5uDKutHxsgXGBdfu",
+        "equipment_id": "JhuK5uDKutHxsgXGBdfu",
+        "name": "旭町ラボ オープンラボスペース 202実験室(B)-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "miPx7EkVYWQ78f5x68R7::miPx7EkVYWQ78f5x68R7",
+        "doc_id": "miPx7EkVYWQ78f5x68R7",
+        "equipment_id": "miPx7EkVYWQ78f5x68R7",
+        "name": "薬用冷蔵ショーケース",
+        "papers_count": 0
+      },
+      {
+        "row_key": "l2HJN64fqQChnWfoaTJG::l2HJN64fqQChnWfoaTJG",
+        "doc_id": "l2HJN64fqQChnWfoaTJG",
+        "equipment_id": "l2HJN64fqQChnWfoaTJG",
+        "name": "超低温フリーザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "9eSY5IK3fbCmWeQla3fa::9eSY5IK3fbCmWeQla3fa",
+        "doc_id": "9eSY5IK3fbCmWeQla3fa",
+        "equipment_id": "9eSY5IK3fbCmWeQla3fa",
+        "name": "防爆冷蔵庫・冷凍冷蔵庫",
+        "papers_count": 0
+      },
+      {
+        "row_key": "uc0RgupmsYy6irEL39vM::uc0RgupmsYy6irEL39vM",
+        "doc_id": "uc0RgupmsYy6irEL39vM",
+        "equipment_id": "uc0RgupmsYy6irEL39vM",
+        "name": "グローブボックス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wwYQXEdh4ar4GR6rbLS5::wwYQXEdh4ar4GR6rbLS5",
+        "doc_id": "wwYQXEdh4ar4GR6rbLS5",
+        "equipment_id": "wwYQXEdh4ar4GR6rbLS5",
+        "name": "低温室",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2cLWDy0mMN4LEBAoqoqJ::2cLWDy0mMN4LEBAoqoqJ",
+        "doc_id": "2cLWDy0mMN4LEBAoqoqJ",
+        "equipment_id": "2cLWDy0mMN4LEBAoqoqJ",
+        "name": "クリーンブース（クリーンルーム本体）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "j9bpd8SFpW0QNCPpvuij::j9bpd8SFpW0QNCPpvuij",
+        "doc_id": "j9bpd8SFpW0QNCPpvuij",
+        "equipment_id": "j9bpd8SFpW0QNCPpvuij",
+        "name": "クリーンブース",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T01:29:56.134151+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T01:30:09.773734+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:29.889510+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:32.774886+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:35.516459+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:38.252489+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:41.053704+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:43.852703+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:46.573545+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:49.312760+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:52.050559+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:38:54.879106+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:43:07.108067+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

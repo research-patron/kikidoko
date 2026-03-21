@@ -1,0 +1,1311 @@
+{
+  "generated_at": "2026-03-08T01:02:23.151313+00:00",
+  "batch_id": "BATCH-20260308-CYCLE0009-100",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 100,
+  "family_count": 100,
+  "groups": [
+    {
+      "family_id": "その他|DNA関連分析|リアルタイム-pcr-quantstudio7|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "d0YlZJJgT5DUFj5bIS5P",
+          "equipment_id": "d0YlZJJgT5DUFj5bIS5P",
+          "name": "リアルタイムPCRシステム QuantStudio7",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNA関連分析|全自動ハイスループット電気泳動システム-tapestation|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "h43nRgLfolak6qyOFZAN",
+          "equipment_id": "h43nRgLfolak6qyOFZAN",
+          "name": "全自動ハイスループット電気泳動システム4200 TapeStation",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNA関連分析|次世代シーケンサー-miseq|sequencer|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Qg21JozKGQxRQpzE9ql1",
+          "equipment_id": "Qg21JozKGQxRQpzE9ql1",
+          "name": "次世代シーケンサーMiSeq",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNA関連分析|次世代シーケンサーシステム|sequencer|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ZT31rwQVJuPms0qL6qvL",
+          "equipment_id": "ZT31rwQVJuPms0qL6qvL",
+          "name": "次世代シーケンサーシステム",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|EPMA室・試料作製室|lc250-自動研磨装置-ビューラー-メタザーブ-ベクトル|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2hHKwQeaVXDiwQWs42sQ",
+          "equipment_id": "KUMAMOTO-list3f-04",
+          "name": "自動研磨装置 ビューラー メタザーブ250 + ベクトルLC250",
+          "category_general": "その他",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|EPMA室・試料作製室|m205c-実体顕微鏡-ライカマイクロシステムズ|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HGWdqjb3WazEwlOprX50",
+          "equipment_id": "KUMAMOTO-list3f-03",
+          "name": "実体顕微鏡 ライカマイクロシステムズ M205C",
+          "category_general": "その他",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|EPMA室・試料作製室|断面イオンミリング-株式会社日立ハイテクノロジーズ-e-3500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "3yDYWbTLF2OQCFYCDD6X",
+          "equipment_id": "KUMAMOTO-list3f-02",
+          "name": "断面イオンミリング 株式会社日立ハイテクノロジーズ E-3500",
+          "category_general": "その他",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-muse|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lPelbvABYw31k0iiS2qT",
+          "equipment_id": "lPelbvABYw31k0iiS2qT",
+          "name": "Cell Analyzer (Muse)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter-biosorter|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "xo3yRXGfgRZZgvJiVIE3",
+          "equipment_id": "xo3yRXGfgRZZgvJiVIE3",
+          "name": "Cell Sorter (Biosorter)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter-facsaria-ii|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5unn0TopwdTDkFw3FlKi",
+          "equipment_id": "5unn0TopwdTDkFw3FlKi",
+          "name": "Cell Sorter (FACSAria II)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter-on-chip-sort|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GjOFBfhS5lhZhnAlBXnh",
+          "equipment_id": "GjOFBfhS5lhZhnAlBXnh",
+          "name": "Cell Sorter (On-Chip Sort)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5WmLFliJMWSGb18QI8GC",
+          "equipment_id": "5WmLFliJMWSGb18QI8GC",
+          "name": "Cell Sorter",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Ius0ae3zUqpOrJdMaTVi",
+          "equipment_id": "Ius0ae3zUqpOrJdMaTVi",
+          "name": "Cell Analyzer",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|mass-cytometer|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "FaWmwuZDbzoo6dF9GeuC",
+          "equipment_id": "FaWmwuZDbzoo6dF9GeuC",
+          "name": "Mass Cytometer",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIパッケージ組立装置|arim-パッケージング-ワイヤ-エポキシダイボンダ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "mu4QmdADIyODE2UYpzNC",
+          "equipment_id": "TSUKUBA-297",
+          "name": "(ARIM)パッケージング (ワイヤ・エポキシダイボンダ)",
+          "category_general": "その他",
+          "category_detail": "LSIパッケージ組立装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIパッケージ組立装置|dad322-arim-ウェーハーダイシングマシン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KuMXfMtAqaZr4ooiMuVf",
+          "equipment_id": "TSUKUBA-293",
+          "name": "(ARIM)ウェーハーダイシングマシン DAD322",
+          "category_general": "その他",
+          "category_detail": "LSIパッケージ組立装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|arim-インクジェットパターン生成装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yhcts1QaREU60vCMOL7X",
+          "equipment_id": "TSUKUBA-292",
+          "name": "(ARIM)インクジェットパターン生成装置",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|arim-スパッタリング装置-cfs-4ep-ll|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "BwmrMWcbiANDPGliYJcN",
+          "equipment_id": "TSUKUBA-294",
+          "name": "(ARIM)スパッタリング装置 CFS-4EP-LL",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|arim-パターン投影リソグラフィシステム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "8Wu7jpQiqKCQa9TvXQbA",
+          "equipment_id": "TSUKUBA-296",
+          "name": "(ARIM)パターン投影リソグラフィシステム",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|arim-マスクアライナー-2001ct|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ZmZoYm4Bm8wwdio8MFyi",
+          "equipment_id": "TSUKUBA-299",
+          "name": "(ARIM)マスクアライナー Q 2001CT",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|arim-反応性エッチング装置-rie-10nr|other|other|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "mm8V3BGMxbgdMZnF66f1",
+          "equipment_id": "TSUKUBA-307",
+          "name": "(ARIM)反応性エッチング装置 RIE-10NR",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|arim-委託-fib-sem-helios-nanolab-600i|sem_tem|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "B9iIiFOdCcARZXssno7H",
+          "equipment_id": "TSUKUBA-309",
+          "name": "(ARIM)[委託] FIB－SEM Helios Nanolab 600i",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|arim-電子線蒸着装置-eb-540t|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "m3K2sSXLaZfF4sLBqmaV",
+          "equipment_id": "TSUKUBA-304",
+          "name": "(ARIM)電子線蒸着装置 EB-540T",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|sr1800ts-arim-超高温炉|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "0DB6BGf9U2jma6dj1Fze",
+          "equipment_id": "TSUKUBA-574",
+          "name": "(ARIM)超高温炉 SR1800TS",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSIプロセス装置|パワエレ共用-ドライエッチングシステム-cde-7-4|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "BA2gljE8vgIHUyf0UttN",
+          "equipment_id": "TSUKUBA-209",
+          "name": "(パワエレ共用)ドライエッチングシステム CDE-7-4",
+          "category_general": "その他",
+          "category_detail": "LSIプロセス装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|LSI微細加工露光装置|arim-電子線描画装置-els-750ex|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "FJh2TqdgSJlgeYAu1XZA",
+          "equipment_id": "TSUKUBA-305",
+          "name": "(ARIM)電子線描画装置 ELS-750EX",
+          "category_general": "その他",
+          "category_detail": "LSI微細加工露光装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|MRI装置|磁気共鳴画像装置-mri|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7FuRqBil7MrQI3S8vLoH",
+          "equipment_id": "AIST-BIT-001",
+          "name": "磁気共鳴画像装置（MRI）",
+          "category_general": "その他",
+          "category_detail": "MRI装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-exactive-hf|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "hEe725TvPdjOJQXlSfSO",
+          "equipment_id": "hEe725TvPdjOJQXlSfSO",
+          "name": "Mass Spectrometer (Q Exactive HF)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-exactive-plus|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RO0lSDV4wKsjIeOhe0c6",
+          "equipment_id": "RO0lSDV4wKsjIeOhe0c6",
+          "name": "Mass Spectrometer (Q Exactive Plus)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-hr-icp-ms-element2|mass|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yPVas32s7hBVNJr9WUST",
+          "equipment_id": "yPVas32s7hBVNJr9WUST",
+          "name": "Mass Spectrometer (HR ICP-MS Element2)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-ltq-orbitrap|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OUAjpVYTpHk1m9HehTd8",
+          "equipment_id": "OUAjpVYTpHk1m9HehTd8",
+          "name": "Mass Spectrometer (LTQ Orbitrap)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-pegasus-4d-gcxgc|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "MwbedcPWddVfcp5uJ782",
+          "equipment_id": "MwbedcPWddVfcp5uJ782",
+          "name": "Mass Spectrometer (Pegasus 4D GCxGC)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-synapt-g2-s|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "x0OcXFytFQRfzM6IyJf7",
+          "equipment_id": "x0OcXFytFQRfzM6IyJf7",
+          "name": "Mass Spectrometer (SYNAPT G2-S)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-timstof|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Ijdmlp0wB91P0T1HbUey",
+          "equipment_id": "Ijdmlp0wB91P0T1HbUey",
+          "name": "Mass Spectrometer (timsTOF)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Yc2w1VqfNN4YRJQoC2T4",
+          "equipment_id": "Yc2w1VqfNN4YRJQoC2T4",
+          "name": "Mass Spectrometer",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|NMR Spectroscopy|400mhz-nmr-spectrometer|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1xq3sXBHvNyNzpsW3hQt",
+          "equipment_id": "1xq3sXBHvNyNzpsW3hQt",
+          "name": "400MHz NMR Spectrometer",
+          "category_general": "その他",
+          "category_detail": "NMR Spectroscopy"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|NMR Spectroscopy|500mhz-nmr-spectrometer|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ReKobpoSNBSWa5UMxqgV",
+          "equipment_id": "ReKobpoSNBSWa5UMxqgV",
+          "name": "500MHz NMR Spectrometer",
+          "category_general": "その他",
+          "category_detail": "NMR Spectroscopy"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|NMR Spectroscopy|600mhz-nmr-spectrometer|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2ykLMLP65qZt7FecyKtB",
+          "equipment_id": "2ykLMLP65qZt7FecyKtB",
+          "name": "600MHz NMR Spectrometer",
+          "category_general": "その他",
+          "category_detail": "NMR Spectroscopy"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|NMR Spectroscopy|electron-spin-resonance-spectrometer|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "rHDcOoscNCcuwZE3MIxT",
+          "equipment_id": "rHDcOoscNCcuwZE3MIxT",
+          "name": "Electron Spin Resonance Spectrometer",
+          "category_general": "その他",
+          "category_detail": "NMR Spectroscopy"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|NMR分析装置|固体-nmr-ssnmr|other|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WCFkxHRRYlm1CAdUuzpp",
+          "equipment_id": "AIST-ANCF018",
+          "name": "固体NMR装置 (SSNMR)",
+          "category_general": "その他",
+          "category_detail": "NMR分析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|biacore|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XpzDlez2GqOBbzD1ddr1",
+          "equipment_id": "XpzDlez2GqOBbzD1ddr1",
+          "name": "Biacore",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|dsc|thermal|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "PmIoo8A1VznSILtpTCH9",
+          "equipment_id": "PmIoo8A1VznSILtpTCH9",
+          "name": "DSC",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|exter-analytical-ce-440|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JezOyHSKxBhYVbWvZHw2",
+          "equipment_id": "JezOyHSKxBhYVbWvZHw2",
+          "name": "Exter Analytical CE-440",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|fluorescence-spectrophotometer|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "05nx1uFTnyHG9WfLfLOd",
+          "equipment_id": "05nx1uFTnyHG9WfLfLOd",
+          "name": "Fluorescence Spectrophotometer",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|ion-chromatography|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wGH4GfUR1dJvTPPkWF4c",
+          "equipment_id": "wGH4GfUR1dJvTPPkWF4c",
+          "name": "Ion Chromatography",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|microplate-reader|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fJzHtIlhfUheuqXVtyra",
+          "equipment_id": "fJzHtIlhfUheuqXVtyra",
+          "name": "Microplate Reader",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|microscale-thermophoresis|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "djzjIJ32oecLJk0MKRPp",
+          "equipment_id": "djzjIJ32oecLJk0MKRPp",
+          "name": "Microscale Thermophoresis System",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|peaq-itc|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zJIsSav7Uac0OOwqLSc2",
+          "equipment_id": "zJIsSav7Uac0OOwqLSc2",
+          "name": "PEAQ-ITC",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|spectropolarimeter|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "B6BldDtd77RZvAirOwuV",
+          "equipment_id": "B6BldDtd77RZvAirOwuV",
+          "name": "Spectropolarimeter",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|tg-dta|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LH77h5aEVKnCHnx8aVGM",
+          "equipment_id": "LH77h5aEVKnCHnx8aVGM",
+          "name": "TG-DTA",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|uv-vis-spectrophotometer|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "UYcKQgTkCKJFyx6V7ulL",
+          "equipment_id": "UYcKQgTkCKJFyx6V7ulL",
+          "name": "UV-Vis Spectrophotometer",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Other Analytical Instrument|vp-dsc|thermal|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "4SxXNAVyBzdJaNtTtfXn",
+          "equipment_id": "4SxXNAVyBzdJaNtTtfXn",
+          "name": "VP-DSC",
+          "category_general": "その他",
+          "category_detail": "Other Analytical Instrument"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|RI実験室の設置機器|マイクロプレートシンチレーション-ルミネッセンスカウンター---型式-topcount-nxt|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AKe01kSAVYjDCOFi2AG0",
+          "equipment_id": "AKe01kSAVYjDCOFi2AG0",
+          "name": "ﾏｲｸﾛﾌﾟﾚｰﾄｼﾝﾁﾚｰｼｮﾝ・ﾙﾐﾈｯｾﾝｽｶｳﾝﾀｰ－型式：TopCount NXT",
+          "category_general": "その他",
+          "category_detail": "RI実験室の設置機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|RI実験室の設置機器|液体シンチレーションカウンター---型式-accuflex-lsc-8000|other|liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1HM0TVXyYopXAmOIK2di",
+          "equipment_id": "1HM0TVXyYopXAmOIK2di",
+          "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：AccuFLEX LSC-8000",
+          "category_general": "その他",
+          "category_detail": "RI実験室の設置機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|RI実験施設|イメージングアナライザー|other|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "cEzc1ip1uyktZe0hSDEh",
+          "equipment_id": "KOCHI-1b3d9523da",
+          "name": "イメージングアナライザー",
+          "category_general": "その他",
+          "category_detail": "RI実験施設"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|RI実験施設|線測定装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "qSF3ReBHemepOK6GudAj",
+          "equipment_id": "KOCHI-8cfcd50ada",
+          "name": "β線測定装置",
+          "category_general": "その他",
+          "category_detail": "RI実験施設"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|SEM室|凍結乾燥装置-日本電子株式会社-jfd-300|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "0lcLwMuStZ676K1Mzp9p",
+          "equipment_id": "KUMAMOTO-list4f-07",
+          "name": "凍結乾燥装置 日本電子株式会社 JFD-300",
+          "category_general": "その他",
+          "category_detail": "SEM室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|SEM室|走査型電子顕微鏡-日本電子株式会社-jsm-6390lv|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "0pBWvk4yD9M6MGBtHvw4",
+          "equipment_id": "KUMAMOTO-list4f-06",
+          "name": "走査型電子顕微鏡 日本電子株式会社 JSM-6390LV",
+          "category_general": "その他",
+          "category_detail": "SEM室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|ULSIプロセス実験室およびULSIプロセス評価室|ulsi-バーチャルファクトリー|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "4Z63GGs2VVI2vybnvK5R",
+          "equipment_id": "KUMAMOTO-list5f-01",
+          "name": "ULSIバーチャルファクトリー",
+          "category_general": "その他",
+          "category_detail": "ULSIプロセス実験室およびULSIプロセス評価室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|ULSIプロセス実験室およびULSIプロセス評価室|レーザー共焦点顕微鏡|sem_tem|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GiO2ROwrnUpAVZiESKKi",
+          "equipment_id": "KUMAMOTO-list5f-05",
+          "name": "レーザー共焦点顕微鏡",
+          "category_general": "その他",
+          "category_detail": "ULSIプロセス実験室およびULSIプロセス評価室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線マイクロCTスキャン (X-ray micro CT)|scan1172-gu-東陽テクニカ-skyscan1172-gu|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "K3jD2iI2kcSTjDaXmwb4",
+          "equipment_id": "K3jD2iI2kcSTjDaXmwb4",
+          "name": "東陽テクニカ SKYSCAN1172-GU",
+          "category_general": "その他",
+          "category_detail": "X線マイクロCTスキャン (X-ray micro CT)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / CT|研究用ヒト実験動物用型-3d-エックス線-ct-東芝メディカルシステムズ-東芝スキャナ|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "eBeXtuZMSRdluJwRMM99",
+          "equipment_id": "eBeXtuZMSRdluJwRMM99",
+          "name": "研究用ヒト実験動物用型３Dエックス線CT装置 東芝メディカルシステムズ 東芝ｽｷｬﾅAlexion/2.0M",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / CT"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / EPMA|epma1610-島津|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "n9bW7p5SDcp78cx6d8Qa",
+          "equipment_id": "n9bW7p5SDcp78cx6d8Qa",
+          "name": "島津EPMA1610",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / EPMA"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / EPMA|epma1720ht-島津|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "EzFXvpKzjlE2NL3dklGH",
+          "equipment_id": "EzFXvpKzjlE2NL3dklGH",
+          "name": "島津EPMA1720HT",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / EPMA"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XPS|xps-データ解析-pc|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dFWPz7zDzlICADHdG59B",
+          "equipment_id": "dFWPz7zDzlICADHdG59B",
+          "name": "XPSデータ解析PC",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XPS"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XPS|線光電子分光装置-phi-genesis|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "X6P3A6pcLb6qqLpuM4cW",
+          "equipment_id": "X6P3A6pcLb6qqLpuM4cW",
+          "name": "X線光電子分光装置 Phi GENESIS",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XPS"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XRD|卓上型単結晶-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y2eHOwASIxSMiV8bEY9L",
+          "equipment_id": "y2eHOwASIxSMiV8bEY9L",
+          "name": "卓上型単結晶XRD",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XRD"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XRD|卓上型粉末-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HXzfAgDwVLx1yzcqwTzQ",
+          "equipment_id": "HXzfAgDwVLx1yzcqwTzQ",
+          "name": "卓上型粉末XRD",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XRD"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XRD|線回折装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XYaxvxkGbz6gQEFEIQXS",
+          "equipment_id": "XYaxvxkGbz6gQEFEIQXS",
+          "name": "Ｘ線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XRD"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / 生体高分子用X線回折装置|生体高分子用-線回折装置|xray|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lWtaA1bwpICi6EMCyM67",
+          "equipment_id": "lWtaA1bwpICi6EMCyM67",
+          "name": "生体高分子用X線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / 生体高分子用X線回折装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析装置|超伝導蛍光収量-線吸収微細構造分析装置-sc--xafs|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nS7UNQeumXvy7sr145Vm",
+          "equipment_id": "AIST-ANCF002",
+          "name": "超伝導蛍光収量Ｘ線吸収微細構造分析装置(SC- XAFS)",
+          "category_general": "その他",
+          "category_detail": "X線分析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回折装置(XRD)|rigaku-fr-e-superbright-超高輝度-線回折装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "uzsATRTrZpIEQme4D8sv",
+          "equipment_id": "uzsATRTrZpIEQme4D8sv",
+          "name": "Rigaku FR-E SuperBright（超高輝度X線回折装置）",
+          "category_general": "その他",
+          "category_detail": "X線回折装置(XRD)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回折装置(XRD)|粉末-線回折装置-rigaku-smartlab-se|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VCHatB2ixk4KFzv21uMT",
+          "equipment_id": "VCHatB2ixk4KFzv21uMT",
+          "name": "粉末Ｘ線回折装置 (Rigaku SmartLab SE)",
+          "category_general": "その他",
+          "category_detail": "X線回折装置(XRD)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回折装置(XRD)|粉末-線回折装置|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "J3sLqH3wcYemxXz7v1bJ",
+          "equipment_id": "J3sLqH3wcYemxXz7v1bJ",
+          "name": "粉末X線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線回折装置(XRD)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線回析室|走査型蛍光-線分析装置-株式会社リガク-zsx-primusii|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AEHm8pXjYj4MuE7NABaW",
+          "equipment_id": "KUMAMOTO-list4f-01",
+          "name": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusII",
+          "category_general": "その他",
+          "category_detail": "X線回析室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線装置|単結晶-線構造解析装置|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "QZNIK0MMGBJF2m7hJCEU",
+          "equipment_id": "TOKUSHIMA-64",
+          "name": "単結晶X線構造解析装置",
+          "category_general": "その他",
+          "category_detail": "X線装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線装置|線光電子分光装置-xps|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9if09B6QjGxScVonWIgl",
+          "equipment_id": "TOKUSHIMA-59",
+          "name": "X線光電子分光装置（XPS）",
+          "category_general": "その他",
+          "category_detail": "X線装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線装置|高出力試料水平型多目的-線回折装置-xrd|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SF2P1TcsucnQByReEbFS",
+          "equipment_id": "TOKUSHIMA-77",
+          "name": "高出力試料水平型多目的X線回折装置（XRD）",
+          "category_general": "その他",
+          "category_detail": "X線装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|ip-単結晶自動-線構造解析装置|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9YrAgxOtFQsHaEW3z4jO",
+          "equipment_id": "9YrAgxOtFQsHaEW3z4jO",
+          "name": "IP単結晶自動X線構造解析装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|休止中-復旧の見込みは立っていません-線照射装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JXaJxuHPXjMdxiwAMpKo",
+          "equipment_id": "JXaJxuHPXjMdxiwAMpKo",
+          "name": "（休止中 復旧の見込みは立っていません ）X線照射装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|波長分散型蛍光-線分析装置-wdx-xrf|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "CHQ7APRp1yaSzcf1irqS",
+          "equipment_id": "CHQ7APRp1yaSzcf1irqS",
+          "name": "波長分散型蛍光X線分析装置（WDX-XRF）",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|生体高分子-線構造解析装置|xray|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LtFo5qfrrSd4xsSsCPxS",
+          "equipment_id": "LtFo5qfrrSd4xsSsCPxS",
+          "name": "生体高分子X線構造解析装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|粉末-線回折装置-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ocfQZdpKQFLDsdEf0Da6",
+          "equipment_id": "ocfQZdpKQFLDsdEf0Da6",
+          "name": "粉末X線回折装置（XRD）",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|線照射装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VS0PjRFOQZgnZP776ZFO",
+          "equipment_id": "VS0PjRFOQZgnZP776ZFO",
+          "name": "X線照射装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|cmos-搭載高輝度単結晶-線構造解析装置-bruker|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SNYfjhDDgOYFKk4VrcmX",
+          "equipment_id": "SNYfjhDDgOYFKk4VrcmX",
+          "name": "CMOS搭載高輝度単結晶 X線構造解析装置 （Bruker）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|ラウエ-低温-軸回折-線装置-ru-200|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yd98KDvfbCqqSShy6xbC",
+          "equipment_id": "yd98KDvfbCqqSShy6xbC",
+          "name": "ラウエ ／低温4軸回折X線装置 （RU-200）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|単結晶-線解析装置-raxis-rapidii-リガク|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gdRtY1NyEvYoNcAwLftZ",
+          "equipment_id": "gdRtY1NyEvYoNcAwLftZ",
+          "name": "単結晶X線解析装置 /RAXIS-RAPIDII （リガク）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|粉末-線解析装置-ultimaiv-リガク|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RPWPXdN7VLjoW6gOTSgl",
+          "equipment_id": "RPWPXdN7VLjoW6gOTSgl",
+          "name": "粉末X線解析装置 /UltimaIV （リガク）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))|デスクトップ-3d-マイクロ-線-ct|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sl04lBsPRZ3Agrm0EUk4",
+          "equipment_id": "HOKUDAI-AP-100397",
+          "name": "デスクトップ3DマイクロX線CT",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))|小動物用-pet-spect-ct|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "UCTHaThZOYpb2FIZasnh",
+          "equipment_id": "HOKUDAI-AP-100241",
+          "name": "小動物用PET・SPECT・CT装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))|小動物用-線-ct|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6dv4RbZVKlPdV1jdg7aL",
+          "equipment_id": "HOKUDAI-AP-100093",
+          "name": "小動物用X線CT装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))|小動物用ベンチトップマイクロ-ct|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9qEXz9HIgreGPViETWUe",
+          "equipment_id": "HOKUDAI-AP-100380",
+          "name": "小動物用ベンチトップマイクロCT",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))|ナノスケール-線構造解析装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5IHbc7QCSdX9xIbNuHje",
+          "equipment_id": "HOKUDAI-AP-100054",
+          "name": "ナノスケールX線構造解析装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))|小角-広角-線散乱装置-saxs-waxs|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ImkrSXKN1wyA7ICH0F4c",
+          "equipment_id": "HOKUDAI-AP-100366",
+          "name": "小角・広角X線散乱装置（SAXS／WAXS）",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))|極低温-線-軸型回折計|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Znwq3VEGbfDPaFdCCFf4",
+          "equipment_id": "HOKUDAI-AP-100135",
+          "name": "極低温X線４軸型回折計",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))|粉末-線回折装置|xray|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "S2WQ3MLgZZ8huN9F7K23",
+          "equipment_id": "HOKUDAI-AP-100149",
+          "name": "粉末X線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))|線回折装置-試料吹付低温装置付|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ArCvukHXsl2yKDbrJsvK",
+          "equipment_id": "HOKUDAI-AP-100388",
+          "name": "X線回折装置(試料吹付低温装置付)",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))|線回折装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "CFyNpZifkxufDQQeo6F2",
+          "equipment_id": "HOKUDAI-AP-100139",
+          "name": "X線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線回折装置 (X-ray Diffractometer (XRD))"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線照射装置 (X-ray Irradiation System)|マイクロフォーカス-線透視装置|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KRDirUdP41OB80PqTLy8",
+          "equipment_id": "HOKUDAI-AP-100391",
+          "name": "マイクロフォーカスX線透視装置",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線照射装置 (X-ray Irradiation System)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線照射装置 (X-ray Irradiation System)|放射線治療装置リニアック|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9AAhlu6GrGiLxfCKhSL2",
+          "equipment_id": "HOKUDAI-AP-100259",
+          "name": "放射線治療装置リニアック",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線照射装置 (X-ray Irradiation System)"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9655
+}

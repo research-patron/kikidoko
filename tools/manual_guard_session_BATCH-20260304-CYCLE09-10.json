@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE09-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T16:35:47.257448+00:00",
+  "updated_at": "2026-03-03T16:52:50.274311+00:00",
+  "closed_at": "2026-03-03T16:52:50.274311+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle09_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE09-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "8934b559ef178ef635dda3ee1e54049a924a5695c3ae5eb6572f3672034d1da1",
+    "queue_sha256_at_start": "fc345e689e6d3864edba5878202721c54511db69a94a7fc4a5f6a51f0304d5e3",
+    "queue_row_keys_sha256": "b34a9071c90ab215a5108c03476dee959dc0972a94c67bff807152f49a74f979"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "XpzDlez2GqOBbzD1ddr1::XpzDlez2GqOBbzD1ddr1",
+      "PmIoo8A1VznSILtpTCH9::PmIoo8A1VznSILtpTCH9",
+      "JezOyHSKxBhYVbWvZHw2::JezOyHSKxBhYVbWvZHw2",
+      "05nx1uFTnyHG9WfLfLOd::05nx1uFTnyHG9WfLfLOd",
+      "wGH4GfUR1dJvTPPkWF4c::wGH4GfUR1dJvTPPkWF4c",
+      "fJzHtIlhfUheuqXVtyra::fJzHtIlhfUheuqXVtyra",
+      "djzjIJ32oecLJk0MKRPp::djzjIJ32oecLJk0MKRPp",
+      "zJIsSav7Uac0OOwqLSc2::zJIsSav7Uac0OOwqLSc2",
+      "B6BldDtd77RZvAirOwuV::B6BldDtd77RZvAirOwuV",
+      "LH77h5aEVKnCHnx8aVGM::LH77h5aEVKnCHnx8aVGM"
+    ],
+    "target_rows": [
+      {
+        "row_key": "XpzDlez2GqOBbzD1ddr1::XpzDlez2GqOBbzD1ddr1",
+        "doc_id": "XpzDlez2GqOBbzD1ddr1",
+        "equipment_id": "XpzDlez2GqOBbzD1ddr1",
+        "name": "Biacore",
+        "papers_count": 3
+      },
+      {
+        "row_key": "PmIoo8A1VznSILtpTCH9::PmIoo8A1VznSILtpTCH9",
+        "doc_id": "PmIoo8A1VznSILtpTCH9",
+        "equipment_id": "PmIoo8A1VznSILtpTCH9",
+        "name": "DSC",
+        "papers_count": 3
+      },
+      {
+        "row_key": "JezOyHSKxBhYVbWvZHw2::JezOyHSKxBhYVbWvZHw2",
+        "doc_id": "JezOyHSKxBhYVbWvZHw2",
+        "equipment_id": "JezOyHSKxBhYVbWvZHw2",
+        "name": "Exter Analytical CE-440",
+        "papers_count": 2
+      },
+      {
+        "row_key": "05nx1uFTnyHG9WfLfLOd::05nx1uFTnyHG9WfLfLOd",
+        "doc_id": "05nx1uFTnyHG9WfLfLOd",
+        "equipment_id": "05nx1uFTnyHG9WfLfLOd",
+        "name": "Fluorescence Spectrophotometer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wGH4GfUR1dJvTPPkWF4c::wGH4GfUR1dJvTPPkWF4c",
+        "doc_id": "wGH4GfUR1dJvTPPkWF4c",
+        "equipment_id": "wGH4GfUR1dJvTPPkWF4c",
+        "name": "Ion Chromatography",
+        "papers_count": 2
+      },
+      {
+        "row_key": "fJzHtIlhfUheuqXVtyra::fJzHtIlhfUheuqXVtyra",
+        "doc_id": "fJzHtIlhfUheuqXVtyra",
+        "equipment_id": "fJzHtIlhfUheuqXVtyra",
+        "name": "Microplate Reader",
+        "papers_count": 3
+      },
+      {
+        "row_key": "djzjIJ32oecLJk0MKRPp::djzjIJ32oecLJk0MKRPp",
+        "doc_id": "djzjIJ32oecLJk0MKRPp",
+        "equipment_id": "djzjIJ32oecLJk0MKRPp",
+        "name": "Microscale Thermophoresis System",
+        "papers_count": 1
+      },
+      {
+        "row_key": "zJIsSav7Uac0OOwqLSc2::zJIsSav7Uac0OOwqLSc2",
+        "doc_id": "zJIsSav7Uac0OOwqLSc2",
+        "equipment_id": "zJIsSav7Uac0OOwqLSc2",
+        "name": "PEAQ-ITC",
+        "papers_count": 2
+      },
+      {
+        "row_key": "B6BldDtd77RZvAirOwuV::B6BldDtd77RZvAirOwuV",
+        "doc_id": "B6BldDtd77RZvAirOwuV",
+        "equipment_id": "B6BldDtd77RZvAirOwuV",
+        "name": "Spectropolarimeter",
+        "papers_count": 3
+      },
+      {
+        "row_key": "LH77h5aEVKnCHnx8aVGM::LH77h5aEVKnCHnx8aVGM",
+        "doc_id": "LH77h5aEVKnCHnx8aVGM",
+        "equipment_id": "LH77h5aEVKnCHnx8aVGM",
+        "name": "TG-DTA",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T16:35:47.257448+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T16:35:47.347028+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T16:50:33.558013+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T16:52:50.274311+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

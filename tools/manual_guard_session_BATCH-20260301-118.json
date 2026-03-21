@@ -1,0 +1,927 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-118",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T10:57:37.263387+00:00",
+  "updated_at": "2026-03-01T10:58:34.985699+00:00",
+  "closed_at": "2026-03-01T10:58:34.985699+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch118.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-118.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "f9cd360ce921da852c7c071c0ad68c8f58145189c7748abbd64961f71e9f311a",
+    "queue_sha256_at_start": "a6293dda708f4c2056d31511d5a38375351692b2d5db74579e8ee894f7efccca",
+    "queue_row_keys_sha256": "4670cd98c27da477ed03b0d388af87068d4615fc3191630efa3a25d5904ef909"
+  },
+  "queue": {
+    "target_count": 98,
+    "target_row_keys": [
+      "eqnet-5226::eqnet-5226",
+      "eqnet-2493::eqnet-2493",
+      "eqnet-3305::eqnet-3305",
+      "eqnet-3306::eqnet-3306",
+      "eqnet-3895::eqnet-3895",
+      "eqnet-3896::eqnet-3896",
+      "eqnet-2440::eqnet-2440",
+      "eqnet-1376::eqnet-1376",
+      "eqnet-1377::eqnet-1377",
+      "eqnet-3538::eqnet-3538",
+      "aoZu9XVRgCZmJ5Mt0yiu::aoZu9XVRgCZmJ5Mt0yiu",
+      "eqnet-1182::eqnet-1182",
+      "eqnet-3541::eqnet-3541",
+      "TOKUSHIMA-16::TOKUSHIMA-16",
+      "wQRogBnLGWIXLYKI6WaV::wQRogBnLGWIXLYKI6WaV",
+      "TOKUSHIMA-63::TOKUSHIMA-63",
+      "0WJvQLevC6tCQyLh0Jr8::0WJvQLevC6tCQyLh0Jr8",
+      "QjYTxaTTice0kmA6DVuL::QjYTxaTTice0kmA6DVuL",
+      "z3lhVMlnDGSSwK3ncSGW::z3lhVMlnDGSSwK3ncSGW",
+      "TOKUSHIMA-58::TOKUSHIMA-58",
+      "22jwl3bL7lRq3EsS8bO3::22jwl3bL7lRq3EsS8bO3",
+      "YJXskvPXCoW9XwFKq821::YJXskvPXCoW9XwFKq821",
+      "TOKUSHIMA-17::TOKUSHIMA-17",
+      "TOKUSHIMA-56::TOKUSHIMA-56",
+      "eqnet-762::eqnet-762",
+      "eqnet-1735::eqnet-1735",
+      "eqnet-3345::eqnet-3345",
+      "eqnet-3480::eqnet-3480",
+      "eqnet-5242::eqnet-5242",
+      "eqnet-2041::eqnet-2041",
+      "R5Q6APGDWoDckzRIur37::R5Q6APGDWoDckzRIur37",
+      "ToYSMV4D13jW4sZzXi6d::ToYSMV4D13jW4sZzXi6d",
+      "XZsNAVPfJTtnThFrhAqV::XZsNAVPfJTtnThFrhAqV",
+      "i0Fmxz0ACJm4TdJQYssc::i0Fmxz0ACJm4TdJQYssc",
+      "uezBxpjI1P7qsJfQ0RNN::uezBxpjI1P7qsJfQ0RNN",
+      "N6JdvrdbCa0WfWB0l3DD::N6JdvrdbCa0WfWB0l3DD",
+      "kGWVbEJXVCpYhq9OTB2I::kGWVbEJXVCpYhq9OTB2I",
+      "orwgUCVLcezq5vIN63IW::orwgUCVLcezq5vIN63IW",
+      "pCZzpWC60MjjW3e2ET6P::pCZzpWC60MjjW3e2ET6P",
+      "eqnet-3564::eqnet-3564",
+      "eqnet-4073::eqnet-4073",
+      "eqnet-893::eqnet-893",
+      "eqnet-3482::eqnet-3482",
+      "eqnet-2209::eqnet-2209",
+      "eqnet-4635::eqnet-4635",
+      "Hf4GH8Xhm8SLuv4Seao2::Hf4GH8Xhm8SLuv4Seao2",
+      "eqnet-859::eqnet-859",
+      "eqnet-1022::eqnet-1022",
+      "eqnet-2360::eqnet-2360",
+      "eqnet-3698::eqnet-3698",
+      "eqnet-2675::eqnet-2675",
+      "eqnet-3615::eqnet-3615",
+      "eqnet-4509::eqnet-4509",
+      "eqnet-858::eqnet-858",
+      "N4ElqkRt0F27L2hpDzGw::N4ElqkRt0F27L2hpDzGw",
+      "aCVVPWrsKza7v8KKOljN::aCVVPWrsKza7v8KKOljN",
+      "jfKPbzM4o7DoQw0lUxee::jfKPbzM4o7DoQw0lUxee",
+      "6C8imRweN3CcenQn4Tk8::6C8imRweN3CcenQn4Tk8",
+      "eqnet-2132::eqnet-2132",
+      "eqnet-2487::eqnet-2487",
+      "eqnet-4797::eqnet-4797",
+      "eqnet-2480::eqnet-2480",
+      "eqnet-3525::eqnet-3525",
+      "eqnet-2479::eqnet-2479",
+      "YAMANASHI-b102330d1a::YAMANASHI-b102330d1a",
+      "hZhcfbfLAmjiBmr7lp9Q::hZhcfbfLAmjiBmr7lp9Q",
+      "YAMANASHI-79de17ffee::YAMANASHI-79de17ffee",
+      "mdkxmz2EzalCuX7o8n2K::mdkxmz2EzalCuX7o8n2K",
+      "YAMANASHI-c4a335bd3e::YAMANASHI-c4a335bd3e",
+      "wDN6I88Sq3U4a8GLrXZH::wDN6I88Sq3U4a8GLrXZH",
+      "YAMANASHI-36f1101ab7::YAMANASHI-36f1101ab7",
+      "YAMANASHI-CP-IB-09010CP::YAMANASHI-CP-IB-09010CP",
+      "f77o6CSJSqzIHVTvu4Zp::f77o6CSJSqzIHVTvu4Zp",
+      "YAMANASHI-869cbe5ba2::YAMANASHI-869cbe5ba2",
+      "YAMANASHI-a7e894b69b::YAMANASHI-a7e894b69b",
+      "YAMANASHI-2a6f79fcfe::YAMANASHI-2a6f79fcfe",
+      "xDYwaKbaRLh7DZCY2yz4::xDYwaKbaRLh7DZCY2yz4",
+      "YAMANASHI-ad4a208771::YAMANASHI-ad4a208771",
+      "YAMANASHI-e0aa8e55c4::YAMANASHI-e0aa8e55c4",
+      "YAMANASHI-7b25448de0::YAMANASHI-7b25448de0",
+      "YAMANASHI-9e2b7b105c::YAMANASHI-9e2b7b105c",
+      "YAMANASHI-7c5b21bd9a::YAMANASHI-7c5b21bd9a",
+      "cN58l5vnUnhgkn8dWiTr::cN58l5vnUnhgkn8dWiTr",
+      "YAMANASHI-207222c974::YAMANASHI-207222c974",
+      "rUKQAzV5tIEWa6HieWyM::rUKQAzV5tIEWa6HieWyM",
+      "YAMANASHI-3994b066f4::YAMANASHI-3994b066f4",
+      "YAMANASHI-d6d57136ad::YAMANASHI-d6d57136ad",
+      "asQNtwq51mVwkXPambnQ::asQNtwq51mVwkXPambnQ",
+      "YAMANASHI-48cd514755::YAMANASHI-48cd514755",
+      "gIMahZG6WHewk7hmHxRy::gIMahZG6WHewk7hmHxRy",
+      "YAMANASHI-FIB-FB-2100A::YAMANASHI-FIB-FB-2100A",
+      "lGIUegtZnYlGGVxE8Kzu::lGIUegtZnYlGGVxE8Kzu",
+      "YAMANASHI-4b8f064d70::YAMANASHI-4b8f064d70",
+      "TOKUSHIMA-15::TOKUSHIMA-15",
+      "zC9UURs6SyIlI62V25E1::zC9UURs6SyIlI62V25E1",
+      "KUMAMOTO-list4f-04::KUMAMOTO-list4f-04",
+      "KUMAMOTO-list4f-03::KUMAMOTO-list4f-03",
+      "KUMAMOTO-list4f-02::KUMAMOTO-list4f-02"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-5226::eqnet-5226",
+        "doc_id": "eqnet-5226",
+        "equipment_id": "eqnet-5226",
+        "name": "リアルタイムシークエンス装置 PyroMarkQ48",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2493::eqnet-2493",
+        "doc_id": "eqnet-2493",
+        "equipment_id": "eqnet-2493",
+        "name": "核酸サイズセレクション自動化装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3305::eqnet-3305",
+        "doc_id": "eqnet-3305",
+        "equipment_id": "eqnet-3305",
+        "name": "次世代シーケンサー Illumina MiSeq ランのみ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3306::eqnet-3306",
+        "doc_id": "eqnet-3306",
+        "equipment_id": "eqnet-3306",
+        "name": "次世代シーケンサー Illumina NextSeq ランのみ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3895::eqnet-3895",
+        "doc_id": "eqnet-3895",
+        "equipment_id": "eqnet-3895",
+        "name": "次世代シーケンサー(illumina NextSeq500)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3896::eqnet-3896",
+        "doc_id": "eqnet-3896",
+        "equipment_id": "eqnet-3896",
+        "name": "次世代シーケンサー(illumina NovaSeq6000)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2440::eqnet-2440",
+        "doc_id": "eqnet-2440",
+        "equipment_id": "eqnet-2440",
+        "name": "次世代シーケンサー(illumina・MiniSeq)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1376::eqnet-1376",
+        "doc_id": "eqnet-1376",
+        "equipment_id": "eqnet-1376",
+        "name": "次世代シーケンサー解析システム(CLC、CLC genome workbench)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1377::eqnet-1377",
+        "doc_id": "eqnet-1377",
+        "equipment_id": "eqnet-1377",
+        "name": "次世代シーケンサー解析システム(CLC、CLC genome workbench)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3538::eqnet-3538",
+        "doc_id": "eqnet-3538",
+        "equipment_id": "eqnet-3538",
+        "name": "短鎖核酸解読装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aoZu9XVRgCZmJ5Mt0yiu::aoZu9XVRgCZmJ5Mt0yiu",
+        "doc_id": "aoZu9XVRgCZmJ5Mt0yiu",
+        "equipment_id": "aoZu9XVRgCZmJ5Mt0yiu",
+        "name": "遺伝子導入装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1182::eqnet-1182",
+        "doc_id": "eqnet-1182",
+        "equipment_id": "eqnet-1182",
+        "name": "遺伝子導入装置 Nucleofectoe",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3541::eqnet-3541",
+        "doc_id": "eqnet-3541",
+        "equipment_id": "eqnet-3541",
+        "name": "長鎖核酸解読装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-16::TOKUSHIMA-16",
+        "doc_id": "TOKUSHIMA-16",
+        "equipment_id": "TOKUSHIMA-16",
+        "name": "微細構造観察装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wQRogBnLGWIXLYKI6WaV::wQRogBnLGWIXLYKI6WaV",
+        "doc_id": "wQRogBnLGWIXLYKI6WaV",
+        "equipment_id": "wQRogBnLGWIXLYKI6WaV",
+        "name": "微細構造観察装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-63::TOKUSHIMA-63",
+        "doc_id": "TOKUSHIMA-63",
+        "equipment_id": "TOKUSHIMA-63",
+        "name": "熱電放出型走査電子顕微鏡（SEM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "0WJvQLevC6tCQyLh0Jr8::0WJvQLevC6tCQyLh0Jr8",
+        "doc_id": "0WJvQLevC6tCQyLh0Jr8",
+        "equipment_id": "0WJvQLevC6tCQyLh0Jr8",
+        "name": "走査型電子顕微鏡（SEM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "QjYTxaTTice0kmA6DVuL::QjYTxaTTice0kmA6DVuL",
+        "doc_id": "QjYTxaTTice0kmA6DVuL",
+        "equipment_id": "QjYTxaTTice0kmA6DVuL",
+        "name": "透過型電子顕微鏡（TEM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "z3lhVMlnDGSSwK3ncSGW::z3lhVMlnDGSSwK3ncSGW",
+        "doc_id": "z3lhVMlnDGSSwK3ncSGW",
+        "equipment_id": "z3lhVMlnDGSSwK3ncSGW",
+        "name": "電子顕微鏡／表面加工関連装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-58::TOKUSHIMA-58",
+        "doc_id": "TOKUSHIMA-58",
+        "equipment_id": "TOKUSHIMA-58",
+        "name": "電界放出型走査電子顕微鏡（FE-SEM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "22jwl3bL7lRq3EsS8bO3::22jwl3bL7lRq3EsS8bO3",
+        "doc_id": "22jwl3bL7lRq3EsS8bO3",
+        "equipment_id": "22jwl3bL7lRq3EsS8bO3",
+        "name": "電界放射型走査型電子顕微鏡（FE-SEM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YJXskvPXCoW9XwFKq821::YJXskvPXCoW9XwFKq821",
+        "doc_id": "YJXskvPXCoW9XwFKq821",
+        "equipment_id": "YJXskvPXCoW9XwFKq821",
+        "name": "電界放射型透過電子顕微鏡（FE-TEM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-17::TOKUSHIMA-17",
+        "doc_id": "TOKUSHIMA-17",
+        "equipment_id": "TOKUSHIMA-17",
+        "name": "顕微加工観測装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-56::TOKUSHIMA-56",
+        "doc_id": "TOKUSHIMA-56",
+        "equipment_id": "TOKUSHIMA-56",
+        "name": "高分解能透過電子顕微鏡（FE-TEM）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-762::eqnet-762",
+        "doc_id": "eqnet-762",
+        "equipment_id": "eqnet-762",
+        "name": "イオンスライサ(日本電子 EM-09100IS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1735::eqnet-1735",
+        "doc_id": "eqnet-1735",
+        "equipment_id": "eqnet-1735",
+        "name": "イオンスライサ(日本電子・EM-09100IS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3345::eqnet-3345",
+        "doc_id": "eqnet-3345",
+        "equipment_id": "eqnet-3345",
+        "name": "イオンスライサ(日本電子・EM-09100IS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3480::eqnet-3480",
+        "doc_id": "eqnet-3480",
+        "equipment_id": "eqnet-3480",
+        "name": "イオンスライサー (日本電子 EM-09100 IS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5242::eqnet-5242",
+        "doc_id": "eqnet-5242",
+        "equipment_id": "eqnet-5242",
+        "name": "イオンビームミリング装置 伯東 4IBE-YMGU/2048GH-WS VP3",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2041::eqnet-2041",
+        "doc_id": "eqnet-2041",
+        "equipment_id": "eqnet-2041",
+        "name": "イオンビーム加工・表面分析装置(エスアイアイ・ナノテクノロジー(株)・Xversion200TB)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "R5Q6APGDWoDckzRIur37::R5Q6APGDWoDckzRIur37",
+        "doc_id": "R5Q6APGDWoDckzRIur37",
+        "equipment_id": "R5Q6APGDWoDckzRIur37",
+        "name": "ウルトラミクロトーム EM UC7",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ToYSMV4D13jW4sZzXi6d::ToYSMV4D13jW4sZzXi6d",
+        "doc_id": "ToYSMV4D13jW4sZzXi6d",
+        "equipment_id": "ToYSMV4D13jW4sZzXi6d",
+        "name": "ウルトラミクロトーム EM UC7",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XZsNAVPfJTtnThFrhAqV::XZsNAVPfJTtnThFrhAqV",
+        "doc_id": "XZsNAVPfJTtnThFrhAqV",
+        "equipment_id": "XZsNAVPfJTtnThFrhAqV",
+        "name": "ウルトラミクロトーム EM UC7",
+        "papers_count": 0
+      },
+      {
+        "row_key": "i0Fmxz0ACJm4TdJQYssc::i0Fmxz0ACJm4TdJQYssc",
+        "doc_id": "i0Fmxz0ACJm4TdJQYssc",
+        "equipment_id": "i0Fmxz0ACJm4TdJQYssc",
+        "name": "ウルトラミクロトーム EM UC7",
+        "papers_count": 0
+      },
+      {
+        "row_key": "uezBxpjI1P7qsJfQ0RNN::uezBxpjI1P7qsJfQ0RNN",
+        "doc_id": "uezBxpjI1P7qsJfQ0RNN",
+        "equipment_id": "uezBxpjI1P7qsJfQ0RNN",
+        "name": "ウルトラミクロトーム EM UC7",
+        "papers_count": 0
+      },
+      {
+        "row_key": "N6JdvrdbCa0WfWB0l3DD::N6JdvrdbCa0WfWB0l3DD",
+        "doc_id": "N6JdvrdbCa0WfWB0l3DD",
+        "equipment_id": "N6JdvrdbCa0WfWB0l3DD",
+        "name": "オスミウムコータ(Tennant20)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "kGWVbEJXVCpYhq9OTB2I::kGWVbEJXVCpYhq9OTB2I",
+        "doc_id": "kGWVbEJXVCpYhq9OTB2I",
+        "equipment_id": "kGWVbEJXVCpYhq9OTB2I",
+        "name": "オスミウムコータ(Tennant20)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "orwgUCVLcezq5vIN63IW::orwgUCVLcezq5vIN63IW",
+        "doc_id": "orwgUCVLcezq5vIN63IW",
+        "equipment_id": "orwgUCVLcezq5vIN63IW",
+        "name": "オスミウムコータ(Tennant20)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "pCZzpWC60MjjW3e2ET6P::pCZzpWC60MjjW3e2ET6P",
+        "doc_id": "pCZzpWC60MjjW3e2ET6P",
+        "equipment_id": "pCZzpWC60MjjW3e2ET6P",
+        "name": "オスミウムコータ(Tennant20)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3564::eqnet-3564",
+        "doc_id": "eqnet-3564",
+        "equipment_id": "eqnet-3564",
+        "name": "ガラスナイフメーカー(ライカマイクロシステムズ・EM KMR3)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4073::eqnet-4073",
+        "doc_id": "eqnet-4073",
+        "equipment_id": "eqnet-4073",
+        "name": "クラスタスパッタ装置 和泉テック(IZU-2500H)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-893::eqnet-893",
+        "doc_id": "eqnet-893",
+        "equipment_id": "eqnet-893",
+        "name": "クリオスタット(ライカマイクロシステムズ社製 CM1950)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3482::eqnet-3482",
+        "doc_id": "eqnet-3482",
+        "equipment_id": "eqnet-3482",
+        "name": "ソフトエッチング (メイワフォーシス SEDE-GE)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2209::eqnet-2209",
+        "doc_id": "eqnet-2209",
+        "equipment_id": "eqnet-2209",
+        "name": "ダイヤモンドワイヤーソー(メイワフォーシス DWS3242)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4635::eqnet-4635",
+        "doc_id": "eqnet-4635",
+        "equipment_id": "eqnet-4635",
+        "name": "ネオオスミウムコーター(MEIWAFOSIS Neoc-ST)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Hf4GH8Xhm8SLuv4Seao2::Hf4GH8Xhm8SLuv4Seao2",
+        "doc_id": "Hf4GH8Xhm8SLuv4Seao2",
+        "equipment_id": "Hf4GH8Xhm8SLuv4Seao2",
+        "name": "ラッピングマシーン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-859::eqnet-859",
+        "doc_id": "eqnet-859",
+        "equipment_id": "eqnet-859",
+        "name": "凍結割断レプリカ作製装置 (日本電子・EM-19500 JFDII)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1022::eqnet-1022",
+        "doc_id": "eqnet-1022",
+        "equipment_id": "eqnet-1022",
+        "name": "反応性イオンエッチング装置/立山マシン TEP-Xd",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2360::eqnet-2360",
+        "doc_id": "eqnet-2360",
+        "equipment_id": "eqnet-2360",
+        "name": "収束イオンビーム加工装置(日立ハイテク・MI4050)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3698::eqnet-3698",
+        "doc_id": "eqnet-3698",
+        "equipment_id": "eqnet-3698",
+        "name": "埋込機(ビューラー・SimpliMet 2)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2675::eqnet-2675",
+        "doc_id": "eqnet-2675",
+        "equipment_id": "eqnet-2675",
+        "name": "特型表面ナノ構造形成装置(ULVAC 特型)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3615::eqnet-3615",
+        "doc_id": "eqnet-3615",
+        "equipment_id": "eqnet-3615",
+        "name": "研磨機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4509::eqnet-4509",
+        "doc_id": "eqnet-4509",
+        "equipment_id": "eqnet-4509",
+        "name": "精密切断機(IsoMet1000)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-858::eqnet-858",
+        "doc_id": "eqnet-858",
+        "equipment_id": "eqnet-858",
+        "name": "薄膜・断面試料作製装置 (日本電子・EM-09100 IS イオンスライサー)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "N4ElqkRt0F27L2hpDzGw::N4ElqkRt0F27L2hpDzGw",
+        "doc_id": "N4ElqkRt0F27L2hpDzGw",
+        "equipment_id": "N4ElqkRt0F27L2hpDzGw",
+        "name": "走査型プローブ顕微鏡 SPM9600",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aCVVPWrsKza7v8KKOljN::aCVVPWrsKza7v8KKOljN",
+        "doc_id": "aCVVPWrsKza7v8KKOljN",
+        "equipment_id": "aCVVPWrsKza7v8KKOljN",
+        "name": "走査型プローブ顕微鏡 SPM9600",
+        "papers_count": 0
+      },
+      {
+        "row_key": "jfKPbzM4o7DoQw0lUxee::jfKPbzM4o7DoQw0lUxee",
+        "doc_id": "jfKPbzM4o7DoQw0lUxee",
+        "equipment_id": "jfKPbzM4o7DoQw0lUxee",
+        "name": "透過型分析電子顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6C8imRweN3CcenQn4Tk8::6C8imRweN3CcenQn4Tk8",
+        "doc_id": "6C8imRweN3CcenQn4Tk8",
+        "equipment_id": "6C8imRweN3CcenQn4Tk8",
+        "name": "高圧凍結装置 (Leica-EM ICE)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2132::eqnet-2132",
+        "doc_id": "eqnet-2132",
+        "equipment_id": "eqnet-2132",
+        "name": "キャピラリー電気泳動装置(アジレント・テクノロジー株式会社 Agilent7100)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2487::eqnet-2487",
+        "doc_id": "eqnet-2487",
+        "equipment_id": "eqnet-2487",
+        "name": "バイオアナライザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4797::eqnet-4797",
+        "doc_id": "eqnet-4797",
+        "equipment_id": "eqnet-4797",
+        "name": "ピッピンパルス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2480::eqnet-2480",
+        "doc_id": "eqnet-2480",
+        "equipment_id": "eqnet-2480",
+        "name": "二次元ゲル電気泳動装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3525::eqnet-3525",
+        "doc_id": "eqnet-3525",
+        "equipment_id": "eqnet-3525",
+        "name": "微量電気泳動システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2479::eqnet-2479",
+        "doc_id": "eqnet-2479",
+        "equipment_id": "eqnet-2479",
+        "name": "自動二次元電気泳動装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-b102330d1a::YAMANASHI-b102330d1a",
+        "doc_id": "YAMANASHI-b102330d1a",
+        "equipment_id": "YAMANASHI-b102330d1a",
+        "name": "イオンエッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "hZhcfbfLAmjiBmr7lp9Q::hZhcfbfLAmjiBmr7lp9Q",
+        "doc_id": "hZhcfbfLAmjiBmr7lp9Q",
+        "equipment_id": "hZhcfbfLAmjiBmr7lp9Q",
+        "name": "イオンエッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-79de17ffee::YAMANASHI-79de17ffee",
+        "doc_id": "YAMANASHI-79de17ffee",
+        "equipment_id": "YAMANASHI-79de17ffee",
+        "name": "イオンスパッタ装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "mdkxmz2EzalCuX7o8n2K::mdkxmz2EzalCuX7o8n2K",
+        "doc_id": "mdkxmz2EzalCuX7o8n2K",
+        "equipment_id": "mdkxmz2EzalCuX7o8n2K",
+        "name": "イオンスパッタ装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-c4a335bd3e::YAMANASHI-c4a335bd3e",
+        "doc_id": "YAMANASHI-c4a335bd3e",
+        "equipment_id": "YAMANASHI-c4a335bd3e",
+        "name": "ウルトラクライオミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wDN6I88Sq3U4a8GLrXZH::wDN6I88Sq3U4a8GLrXZH",
+        "doc_id": "wDN6I88Sq3U4a8GLrXZH",
+        "equipment_id": "wDN6I88Sq3U4a8GLrXZH",
+        "name": "ウルトラクライオミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-36f1101ab7::YAMANASHI-36f1101ab7",
+        "doc_id": "YAMANASHI-36f1101ab7",
+        "equipment_id": "YAMANASHI-36f1101ab7",
+        "name": "オスミウムコーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-CP-IB-09010CP::YAMANASHI-CP-IB-09010CP",
+        "doc_id": "YAMANASHI-CP-IB-09010CP",
+        "equipment_id": "YAMANASHI-CP-IB-09010CP",
+        "name": "クロスセクションポリッシャ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "f77o6CSJSqzIHVTvu4Zp::f77o6CSJSqzIHVTvu4Zp",
+        "doc_id": "f77o6CSJSqzIHVTvu4Zp",
+        "equipment_id": "f77o6CSJSqzIHVTvu4Zp",
+        "name": "クロスセクションポリッシャ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-869cbe5ba2::YAMANASHI-869cbe5ba2",
+        "doc_id": "YAMANASHI-869cbe5ba2",
+        "equipment_id": "YAMANASHI-869cbe5ba2",
+        "name": "ソフトプラズマエッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-a7e894b69b::YAMANASHI-a7e894b69b",
+        "doc_id": "YAMANASHI-a7e894b69b",
+        "equipment_id": "YAMANASHI-a7e894b69b",
+        "name": "ディンプルグラインダー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-2a6f79fcfe::YAMANASHI-2a6f79fcfe",
+        "doc_id": "YAMANASHI-2a6f79fcfe",
+        "equipment_id": "YAMANASHI-2a6f79fcfe",
+        "name": "プラズマクリーナー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "xDYwaKbaRLh7DZCY2yz4::xDYwaKbaRLh7DZCY2yz4",
+        "doc_id": "xDYwaKbaRLh7DZCY2yz4",
+        "equipment_id": "xDYwaKbaRLh7DZCY2yz4",
+        "name": "プラズマクリーナー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-ad4a208771::YAMANASHI-ad4a208771",
+        "doc_id": "YAMANASHI-ad4a208771",
+        "equipment_id": "YAMANASHI-ad4a208771",
+        "name": "マイクロソー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-e0aa8e55c4::YAMANASHI-e0aa8e55c4",
+        "doc_id": "YAMANASHI-e0aa8e55c4",
+        "equipment_id": "YAMANASHI-e0aa8e55c4",
+        "name": "マニピュレーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-7b25448de0::YAMANASHI-7b25448de0",
+        "doc_id": "YAMANASHI-7b25448de0",
+        "equipment_id": "YAMANASHI-7b25448de0",
+        "name": "ミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-9e2b7b105c::YAMANASHI-9e2b7b105c",
+        "doc_id": "YAMANASHI-9e2b7b105c",
+        "equipment_id": "YAMANASHI-9e2b7b105c",
+        "name": "低角イオンミリング",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-7c5b21bd9a::YAMANASHI-7c5b21bd9a",
+        "doc_id": "YAMANASHI-7c5b21bd9a",
+        "equipment_id": "YAMANASHI-7c5b21bd9a",
+        "name": "機械研磨装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "cN58l5vnUnhgkn8dWiTr::cN58l5vnUnhgkn8dWiTr",
+        "doc_id": "cN58l5vnUnhgkn8dWiTr",
+        "equipment_id": "cN58l5vnUnhgkn8dWiTr",
+        "name": "機械研磨装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-207222c974::YAMANASHI-207222c974",
+        "doc_id": "YAMANASHI-207222c974",
+        "equipment_id": "YAMANASHI-207222c974",
+        "name": "硬質材料用​研磨装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "rUKQAzV5tIEWa6HieWyM::rUKQAzV5tIEWa6HieWyM",
+        "doc_id": "rUKQAzV5tIEWa6HieWyM",
+        "equipment_id": "rUKQAzV5tIEWa6HieWyM",
+        "name": "硬質材料用​研磨装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-3994b066f4::YAMANASHI-3994b066f4",
+        "doc_id": "YAMANASHI-3994b066f4",
+        "equipment_id": "YAMANASHI-3994b066f4",
+        "name": "試料トリミング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-d6d57136ad::YAMANASHI-d6d57136ad",
+        "doc_id": "YAMANASHI-d6d57136ad",
+        "equipment_id": "YAMANASHI-d6d57136ad",
+        "name": "試料包埋機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "asQNtwq51mVwkXPambnQ::asQNtwq51mVwkXPambnQ",
+        "doc_id": "asQNtwq51mVwkXPambnQ",
+        "equipment_id": "asQNtwq51mVwkXPambnQ",
+        "name": "試料包埋機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-48cd514755::YAMANASHI-48cd514755",
+        "doc_id": "YAMANASHI-48cd514755",
+        "equipment_id": "YAMANASHI-48cd514755",
+        "name": "試料研磨システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gIMahZG6WHewk7hmHxRy::gIMahZG6WHewk7hmHxRy",
+        "doc_id": "gIMahZG6WHewk7hmHxRy",
+        "equipment_id": "gIMahZG6WHewk7hmHxRy",
+        "name": "試料研磨システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-FIB-FB-2100A::YAMANASHI-FIB-FB-2100A",
+        "doc_id": "YAMANASHI-FIB-FB-2100A",
+        "equipment_id": "YAMANASHI-FIB-FB-2100A",
+        "name": "集束イオンビーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "lGIUegtZnYlGGVxE8Kzu::lGIUegtZnYlGGVxE8Kzu",
+        "doc_id": "lGIUegtZnYlGGVxE8Kzu",
+        "equipment_id": "lGIUegtZnYlGGVxE8Kzu",
+        "name": "集束イオンビーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YAMANASHI-4b8f064d70::YAMANASHI-4b8f064d70",
+        "doc_id": "YAMANASHI-4b8f064d70",
+        "equipment_id": "YAMANASHI-4b8f064d70",
+        "name": "電解研磨装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-15::TOKUSHIMA-15",
+        "doc_id": "TOKUSHIMA-15",
+        "equipment_id": "TOKUSHIMA-15",
+        "name": "レーザー顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zC9UURs6SyIlI62V25E1::zC9UURs6SyIlI62V25E1",
+        "doc_id": "zC9UURs6SyIlI62V25E1",
+        "equipment_id": "zC9UURs6SyIlI62V25E1",
+        "name": "レーザー顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list4f-04::KUMAMOTO-list4f-04",
+        "doc_id": "KUMAMOTO-list4f-04",
+        "equipment_id": "KUMAMOTO-list4f-04",
+        "name": "ICDD検索システム PDF-4 +2016",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list4f-03::KUMAMOTO-list4f-03",
+        "doc_id": "KUMAMOTO-list4f-03",
+        "equipment_id": "KUMAMOTO-list4f-03",
+        "name": "微小・薄膜X線回折装置 株式会社リガク SmartLab",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list4f-02::KUMAMOTO-list4f-02",
+        "doc_id": "KUMAMOTO-list4f-02",
+        "equipment_id": "KUMAMOTO-list4f-02",
+        "name": "粉末Ｘ線回析装置 株式会社リガク Ultima IV",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T10:57:37.263387+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 98
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:37.319601+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:37.930877+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:40.651706+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:43.425211+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:46.163087+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:48.796953+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:51.443041+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:54.046228+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:56.723590+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:57:59.311901+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:58:01.900515+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:58:34.985699+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

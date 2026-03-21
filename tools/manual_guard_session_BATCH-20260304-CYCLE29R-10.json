@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE29R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T04:04:59.854267+00:00",
+  "updated_at": "2026-03-04T04:09:35.771404+00:00",
+  "closed_at": "2026-03-04T04:09:35.771404+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle29r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE29R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "52fcba567b0f7419f36af9383340ee73d3bfb0c3f85daf0fc6dda16c9265a864",
+    "queue_sha256_at_start": "14b2bfaf3048e074f75ab02923347c1e66a74860b1f492f06bd15be59e5d9a35",
+    "queue_row_keys_sha256": "b9178e85641f018cc3096c3405b9bcb85754cd76a409a973fac974b9c85ab782"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "WQv9kl899kdeFuqg1T9d::WQv9kl899kdeFuqg1T9d",
+      "u1X1PfdnEn6EYDy2rMsD::HOKUDAI-AP-901959",
+      "XdtRp0hMQ2TLRFrt9kpj::HOKUDAI-AP-902092",
+      "cQx30VZh8S81qhrf6pe3::HOKUDAI-AP-902208",
+      "NjB7opC6bLVbtfSpr3va::HOKUDAI-AP-901407",
+      "dF4X33bQz6u5tujtN80e::HOKUDAI-AP-901416",
+      "yj2gwRmayjw5mWJE6fiX::HOKUDAI-AP-901115",
+      "x59nHhvgVk019h2lw4AH::HOKUDAI-AP-902073",
+      "994NDw7YqPbh9HXid1DP::HOKUDAI-AP-901710",
+      "gxftWapiwcn80fSYda2z::HOKUDAI-AP-901296"
+    ],
+    "target_rows": [
+      {
+        "row_key": "WQv9kl899kdeFuqg1T9d::WQv9kl899kdeFuqg1T9d",
+        "doc_id": "WQv9kl899kdeFuqg1T9d",
+        "equipment_id": "WQv9kl899kdeFuqg1T9d",
+        "name": "マルチカラーデータ解析ソフトウェア(4)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "u1X1PfdnEn6EYDy2rMsD::HOKUDAI-AP-901959",
+        "doc_id": "u1X1PfdnEn6EYDy2rMsD",
+        "equipment_id": "HOKUDAI-AP-901959",
+        "name": "D-Hand Type A3H-M1-3J",
+        "papers_count": 3
+      },
+      {
+        "row_key": "XdtRp0hMQ2TLRFrt9kpj::HOKUDAI-AP-902092",
+        "doc_id": "XdtRp0hMQ2TLRFrt9kpj",
+        "equipment_id": "HOKUDAI-AP-902092",
+        "name": "DNA/RNA分析用マイクロチップ電気泳動装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "cQx30VZh8S81qhrf6pe3::HOKUDAI-AP-902208",
+        "doc_id": "cQx30VZh8S81qhrf6pe3",
+        "equipment_id": "HOKUDAI-AP-902208",
+        "name": "DNA/RNA合成機",
+        "papers_count": 3
+      },
+      {
+        "row_key": "NjB7opC6bLVbtfSpr3va::HOKUDAI-AP-901407",
+        "doc_id": "NjB7opC6bLVbtfSpr3va",
+        "equipment_id": "HOKUDAI-AP-901407",
+        "name": "GKR蒸留ガラスチューブオーブン 100V",
+        "papers_count": 0
+      },
+      {
+        "row_key": "dF4X33bQz6u5tujtN80e::HOKUDAI-AP-901416",
+        "doc_id": "dF4X33bQz6u5tujtN80e",
+        "equipment_id": "HOKUDAI-AP-901416",
+        "name": "GlassContour 有機溶媒精製装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "yj2gwRmayjw5mWJE6fiX::HOKUDAI-AP-901115",
+        "doc_id": "yj2gwRmayjw5mWJE6fiX",
+        "equipment_id": "HOKUDAI-AP-901115",
+        "name": "GNSS・グロナスRTK&スタティック受信機",
+        "papers_count": 1
+      },
+      {
+        "row_key": "x59nHhvgVk019h2lw4AH::HOKUDAI-AP-902073",
+        "doc_id": "x59nHhvgVk019h2lw4AH",
+        "equipment_id": "HOKUDAI-AP-902073",
+        "name": "GNSS受信観測装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "994NDw7YqPbh9HXid1DP::HOKUDAI-AP-901710",
+        "doc_id": "994NDw7YqPbh9HXid1DP",
+        "equipment_id": "HOKUDAI-AP-901710",
+        "name": "HDカメラシステム",
+        "papers_count": 1
+      },
+      {
+        "row_key": "gxftWapiwcn80fSYda2z::HOKUDAI-AP-901296",
+        "doc_id": "gxftWapiwcn80fSYda2z",
+        "equipment_id": "HOKUDAI-AP-901296",
+        "name": "High Powerキセノン光源",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T04:04:59.854267+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:00.154897+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:13.212363+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:24.310733+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:30.024354+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:35.833693+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:41.477282+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:47.028744+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:52.445985+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:05:57.848856+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:06:03.181344+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:06:08.427249+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:06:28.265592+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T04:09:35.771404+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

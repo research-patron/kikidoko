@@ -1,0 +1,802 @@
+[
+  {
+    "doc_id": "Mzmlv9w24hD0Ln8CqOcY",
+    "name": "BrukerNMR400MHz",
+    "family": "nmr-400-bruker",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "磁気共鳴分析 (NMR, ESRなど) / NMR"
+  },
+  {
+    "doc_id": "eqnet-2494",
+    "name": "セルソーター",
+    "family": "cell-sorter",
+    "reuse_existing_article": true,
+    "category_general": "フローサイトメトリー(FCM)/細胞分離",
+    "category_detail": "セルソーター"
+  },
+  {
+    "doc_id": "eqnet-3674",
+    "name": "分光蛍光光度計 日立 F−2500",
+    "family": "fluorescence-spectrophotometer",
+    "reuse_existing_article": true,
+    "category_general": "光分析装置",
+    "category_detail": "蛍光分光装置(FL)"
+  },
+  {
+    "doc_id": "eqnet-2236",
+    "name": "テラヘルツ分光走査型顕微鏡(オザワ THz-TDS)",
+    "family": "terahertz-microscope",
+    "reuse_existing_article": true,
+    "category_general": "光学顕微鏡/病理",
+    "category_detail": "光学顕微鏡(Optical Microscope)"
+  },
+  {
+    "doc_id": "eqnet-3467",
+    "name": "ガスクロマトグラフ GC-2014",
+    "family": "gas-chromatograph",
+    "reuse_existing_article": true,
+    "category_general": "分離分析装置",
+    "category_detail": "ガスクロマトグラフ(GC)"
+  },
+  {
+    "doc_id": "eqnet-4211",
+    "name": "ホットプレート(U13 HHP-230SQ) アズワン(HHP-230SQ)",
+    "family": "hotplate-lab",
+    "reuse_existing_article": true,
+    "category_general": "半導体製造関連装置",
+    "category_detail": "半導体製造関連装置"
+  },
+  {
+    "doc_id": "eqnet-5238",
+    "name": "小型粉砕機(シュトルツ・スカッターSX-110)",
+    "family": "sample-mill",
+    "reuse_existing_article": true,
+    "category_general": "土木・建築・工学関連装置",
+    "category_detail": "土木・建築・工学関連装置"
+  },
+  {
+    "doc_id": "eqnet-4730",
+    "name": "ミニCO2インキュベータ ASAHI 4020(顕微鏡用) 朝日ライフサイエンス(4020 CO2 Incubator)",
+    "family": "co2-incubator",
+    "reuse_existing_article": true,
+    "category_general": "培養/恒温恒湿度器/滅菌機機",
+    "category_detail": "CO2/O2インキュベーター"
+  },
+  {
+    "doc_id": "eqnet-3580",
+    "name": "\"卓上形精密万能試験機(AGS X/10kN)\"",
+    "family": "tensile-tester",
+    "reuse_existing_article": true,
+    "category_general": "専用測定装置",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-3596",
+    "name": "\"ロードロック式室付スパッタ装置(QAM-4C-SL)\"",
+    "family": "rf-sputter",
+    "reuse_existing_article": true,
+    "category_general": "成膜・蒸着・膜厚測定",
+    "category_detail": "真空蒸着・スパッタ(vac. coater・Sputter)"
+  },
+  {
+    "doc_id": "eqnet-806",
+    "name": "600MHz 核磁気共鳴装置 (ブルカー(株)・Avance III HD)",
+    "family": "nmr-600",
+    "reuse_existing_article": true,
+    "category_general": "核磁気共鳴装置(NMR)",
+    "category_detail": "600MHz NMR装置"
+  },
+  {
+    "doc_id": "eqnet-2905",
+    "name": "波長分散型蛍光X線分析装置(ZSX PrimusII)",
+    "family": "wdxrf",
+    "reuse_existing_article": true,
+    "category_general": "構造解析/元素分析",
+    "category_detail": "蛍光X線装置"
+  },
+  {
+    "doc_id": "eqnet-1091",
+    "name": "示差熱重量/熱機械分析装置(SII (現 HITACHI) TG/DTA6200 + TMA6100)",
+    "family": "thermal",
+    "reuse_existing_article": true,
+    "category_general": "熱分析・熱測定装置",
+    "category_detail": "熱分析・熱測定装置"
+  },
+  {
+    "doc_id": "eqnet-2161",
+    "name": "振動型磁力計(VSM) (Lake Shore・MicroMag3900)",
+    "family": "vsm",
+    "reuse_existing_article": true,
+    "category_general": "物性計測/成分分析",
+    "category_detail": "磁気特性測定装置(SQUID, VSM)"
+  },
+  {
+    "doc_id": "eqnet-2042",
+    "name": "三次元ナノ組織可視化装置(東芝ITコントロールシステム(株)・TOSMICRON-SH6160nIN)",
+    "family": "nanostructure-visualizer",
+    "reuse_existing_article": true,
+    "category_general": "画像撮影/解析",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-4013",
+    "name": "安定同位体比質量分析システム(高速液体クロマトグラフィー) Gilson",
+    "family": "irms-hplc",
+    "reuse_existing_article": true,
+    "category_general": "質量分析装置(MS)",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-5100",
+    "name": "多本架冷却遠心機(トミー精工 AX-501)",
+    "family": "centrifuge",
+    "reuse_existing_article": true,
+    "category_general": "遠心/粉砕/加熱機器",
+    "category_detail": "遠心分離機"
+  },
+  {
+    "doc_id": "eqnet-3032",
+    "name": "遺伝子増幅装置(ThermoFisherScientific・MiniAmp Plus)",
+    "family": "thermal-cycler",
+    "reuse_existing_article": true,
+    "category_general": "遺伝子・ゲノム",
+    "category_detail": "サーマルサイクラー(PCR)"
+  },
+  {
+    "doc_id": "eqnet-3555",
+    "name": "原子間力顕微鏡(Bruker MultiMode 8)",
+    "family": "probe-microscope",
+    "reuse_existing_article": true,
+    "category_general": "電子顕微鏡および関連機器",
+    "category_detail": "走査型プローブ顕微鏡 (SPM, STM, AFM)"
+  },
+  {
+    "doc_id": "5tdhmWXXPzD98RRUmlpZ",
+    "name": "BrukerNMR700MHz",
+    "family": "nmr-700-bruker",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "磁気共鳴分析 (NMR, ESRなど) / NMR"
+  },
+  {
+    "doc_id": "eqnet-871",
+    "name": "セルソーター",
+    "family": "cell-sorter",
+    "reuse_existing_article": true,
+    "category_general": "フローサイトメトリー(FCM)/細胞分離",
+    "category_detail": "セルソーター"
+  },
+  {
+    "doc_id": "eqnet-5107",
+    "name": "吸光度プレートリーダー Agilent(BIOTEK) EPOCH2 NS-SN",
+    "family": "plate-reader",
+    "reuse_existing_article": true,
+    "category_general": "光分析装置",
+    "category_detail": "吸光プレートリーダー"
+  },
+  {
+    "doc_id": "eqnet-2502",
+    "name": "ディスク走査型顕微鏡",
+    "family": "imaging-cytometer",
+    "reuse_existing_article": true,
+    "category_general": "光学顕微鏡/病理",
+    "category_detail": "共焦点顕微鏡(Confocal microscopy)"
+  },
+  {
+    "doc_id": "eqnet-3076",
+    "name": "ガスクロマトグラフ GC-2014AF",
+    "family": "gas-chromatograph",
+    "reuse_existing_article": true,
+    "category_general": "分離分析装置",
+    "category_detail": "ガスクロマトグラフ(GC)"
+  },
+  {
+    "doc_id": "eqnet-4230",
+    "name": "ボンダー(A408) WEST・BOND(7476D)",
+    "family": "manual-bonder",
+    "reuse_existing_article": true,
+    "category_general": "半導体製造関連装置",
+    "category_detail": "半導体製造関連装置"
+  },
+  {
+    "doc_id": "eqnet-2064",
+    "name": "燃料電池自動評価装置((株)ケミックス・FCE-M10)",
+    "family": "fuel-cell-evaluator",
+    "reuse_existing_article": true,
+    "category_general": "土木・建築・工学関連装置",
+    "category_detail": "土木・建築・工学関連装置"
+  },
+  {
+    "doc_id": "eqnet-3063",
+    "name": "培養室(クリーンベンチ、CO2インキュベーター、細胞計数装置等)",
+    "family": "cell-culture-room",
+    "reuse_existing_article": true,
+    "category_general": "培養/恒温恒湿度器/滅菌機機",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-2283",
+    "name": "3H/14C サーベイメータ",
+    "family": "radiation-survey-meter",
+    "reuse_existing_article": true,
+    "category_general": "専用測定装置",
+    "category_detail": "放射線・RI(放射性同位体)関連"
+  },
+  {
+    "doc_id": "eqnet-2014",
+    "name": "3元RFマグネトロンスパッタ装置(MNS-200RF)",
+    "family": "multi-target-sputter",
+    "reuse_existing_article": true,
+    "category_general": "成膜・蒸着・膜厚測定",
+    "category_detail": "真空蒸着・スパッタ(vac. coater・Sputter)"
+  },
+  {
+    "doc_id": "eqnet-2898",
+    "name": "600MHz 核磁気共鳴装置(JEOL ECZL-600 固体・液体兼用)",
+    "family": "solid-liquid-nmr-600",
+    "reuse_existing_article": true,
+    "category_general": "核磁気共鳴装置(NMR)",
+    "category_detail": "600MHz NMR装置"
+  },
+  {
+    "doc_id": "eqnet-3487",
+    "name": "蛍光X線分析装置 (島津 EDX-8000)",
+    "family": "edxrf",
+    "reuse_existing_article": true,
+    "category_general": "構造解析/元素分析",
+    "category_detail": "蛍光X線装置"
+  },
+  {
+    "doc_id": "eqnet-1092",
+    "name": "示差走査熱量分析装置(SII (現 HITACHI) DSC6200)",
+    "family": "thermal",
+    "reuse_existing_article": true,
+    "category_general": "熱分析・熱測定装置",
+    "category_detail": "熱分析・熱測定装置"
+  },
+  {
+    "doc_id": "eqnet-2663",
+    "name": "振動試料型磁束計(東英工業 VSM-5)",
+    "family": "vsm",
+    "reuse_existing_article": true,
+    "category_general": "物性計測/成分分析",
+    "category_detail": "磁気特性測定装置(SQUID, VSM)"
+  },
+  {
+    "doc_id": "eqnet-4128",
+    "name": "三次元動作分析装置 本体 アニマ(MA-8000)",
+    "family": "dic-motion-3d",
+    "reuse_existing_article": true,
+    "category_general": "画像撮影/解析",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-112",
+    "name": "質量分析装置JEOLJMS−700N",
+    "family": "sector-ms",
+    "reuse_existing_article": true,
+    "category_general": "質量分析装置(MS)",
+    "category_detail": "二重収束型MS"
+  },
+  {
+    "doc_id": "eqnet-5027",
+    "name": "小型超遠心機 (HITACHI CS100FNX)",
+    "family": "ultracentrifuge",
+    "reuse_existing_article": true,
+    "category_general": "遠心/粉砕/加熱機器",
+    "category_detail": "超遠心分離機"
+  },
+  {
+    "doc_id": "eqnet-1375",
+    "name": "遺伝子導入装置(amaza、Nucleofector)",
+    "family": "gene-delivery-electroporation",
+    "reuse_existing_article": true,
+    "category_general": "遺伝子・ゲノム",
+    "category_detail": "遺伝子導入装置"
+  },
+  {
+    "doc_id": "eqnet-347",
+    "name": "原子間力顕微鏡(Digital Instruments, Nanoscope IIIa)",
+    "family": "probe-microscope",
+    "reuse_existing_article": true,
+    "category_general": "電子顕微鏡および関連機器",
+    "category_detail": "走査型プローブ顕微鏡 (SPM, STM, AFM)"
+  },
+  {
+    "doc_id": "NvsHyc6rDmCiCQ9ksEeh",
+    "name": "C-Vプロファイラ",
+    "family": "semiconductor-electrical-tester",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "半導体・MEMS加工 / 前工程装置 / -"
+  },
+  {
+    "doc_id": "eqnet-4382",
+    "name": "セルソーター (FACSAria Fusion)",
+    "family": "cell-sorter",
+    "reuse_existing_article": true,
+    "category_general": "フローサイトメトリー(FCM)/細胞分離",
+    "category_detail": "セルソーター"
+  },
+  {
+    "doc_id": "eqnet-5071",
+    "name": "旋光度計(日本分光・P-2100)",
+    "family": "digital-polarimeter",
+    "reuse_existing_article": true,
+    "category_general": "光分析装置",
+    "category_detail": "旋光計(polarimeter)"
+  },
+  {
+    "doc_id": "eqnet-5255",
+    "name": "デジタルイメージングシステム(Evident・APX100)",
+    "family": "imaging-cytometer",
+    "reuse_existing_article": true,
+    "category_general": "光学顕微鏡/病理",
+    "category_detail": "蛍光顕微鏡"
+  },
+  {
+    "doc_id": "eqnet-3468",
+    "name": "ガスクロマトグラフ GC-2014AFE",
+    "family": "gas-chromatograph",
+    "reuse_existing_article": true,
+    "category_general": "分離分析装置",
+    "category_detail": "ガスクロマトグラフ(GC)"
+  },
+  {
+    "doc_id": "eqnet-4220",
+    "name": "レーザー描画装置(DWL200) Heidelberg Instruments(DWL200)",
+    "family": "laser-pattern-writer",
+    "reuse_existing_article": true,
+    "category_general": "半導体製造関連装置",
+    "category_detail": "半導体製造関連装置"
+  },
+  {
+    "doc_id": "eqnet-5388",
+    "name": "簡易ペレタイザ CONERI",
+    "family": "pelletizer",
+    "reuse_existing_article": true,
+    "category_general": "土木・建築・工学関連装置",
+    "category_detail": "土木・建築・工学関連装置"
+  },
+  {
+    "doc_id": "eqnet-5030",
+    "name": "大型振とう培養器 (TAITEC Bio-Shaker BR-3000LF)",
+    "family": "incubator-shaker",
+    "reuse_existing_article": true,
+    "category_general": "培養/恒温恒湿度器/滅菌機機",
+    "category_detail": "回転/振とう培養器"
+  },
+  {
+    "doc_id": "eqnet-3451-fb111d82",
+    "name": "DIMPLE GRINDER Model 656(日本電子)",
+    "family": "dimple-grinder",
+    "reuse_existing_article": true,
+    "category_general": "専用測定装置",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-2058",
+    "name": "MOCVD装置(特注)",
+    "family": "mocvd",
+    "reuse_existing_article": true,
+    "category_general": "成膜・蒸着・膜厚測定",
+    "category_detail": "真空蒸着・スパッタ(vac. coater・Sputter)"
+  },
+  {
+    "doc_id": "eqnet-507",
+    "name": "600MHz核磁気共鳴分光装置(Bruker・AVANCE II 600)",
+    "family": "nmr-600",
+    "reuse_existing_article": true,
+    "category_general": "核磁気共鳴装置(NMR)",
+    "category_detail": "600MHz NMR装置"
+  },
+  {
+    "doc_id": "eqnet-549",
+    "name": "蛍光X線分析装置 理学電機 ZSX-100e",
+    "family": "wdxrf",
+    "reuse_existing_article": true,
+    "category_general": "構造解析/元素分析",
+    "category_detail": "蛍光X線装置"
+  },
+  {
+    "doc_id": "XCuKgmuwwjJcmVC4k5Fj",
+    "name": "示差走査熱量計（DSC）",
+    "family": "thermal",
+    "reuse_existing_article": true,
+    "category_general": "熱分析・熱測定装置",
+    "category_detail": "熱分析・熱測定装置"
+  },
+  {
+    "doc_id": "eqnet-3822",
+    "name": "接触角計(協和界面科学 DM-501)",
+    "family": "contact-angle",
+    "reuse_existing_article": true,
+    "category_general": "物性計測/成分分析",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-4114",
+    "name": "全身用PETシステム 島津製作所(Eminence-B(SET-3000B/X))",
+    "family": "pet-imaging",
+    "reuse_existing_article": true,
+    "category_general": "画像撮影/解析",
+    "category_detail": "核磁気共鳴イメージング(MRI), X線CT (XrayCT), PET"
+  },
+  {
+    "doc_id": "eqnet-2963",
+    "name": "高分解能二重収束型質量分析装置",
+    "family": "sector-ms",
+    "reuse_existing_article": true,
+    "category_general": "質量分析装置(MS)",
+    "category_detail": "二重収束型MS"
+  },
+  {
+    "doc_id": "eqnet-1017",
+    "name": "微量遠心機(Eppendorf・5424)",
+    "family": "centrifuge",
+    "reuse_existing_article": true,
+    "category_general": "遠心/粉砕/加熱機器",
+    "category_detail": "遠心分離機"
+  },
+  {
+    "doc_id": "eqnet-709",
+    "name": "(霞)DNAシークエンサー(ABI・PRISM 3130×1)",
+    "family": "sequencer",
+    "reuse_existing_article": true,
+    "category_general": "遺伝子・ゲノム",
+    "category_detail": "DNAシーケンサー(サンガ―法)"
+  },
+  {
+    "doc_id": "eqnet-4235",
+    "name": "原子間力顕微鏡(Veeco) Bruker(Dimension Icon)",
+    "family": "probe-microscope",
+    "reuse_existing_article": true,
+    "category_general": "電子顕微鏡および関連機器",
+    "category_detail": "走査型プローブ顕微鏡 (SPM, STM, AFM)"
+  },
+  {
+    "doc_id": "eBwIJ5JNVKnJ7GMIX8Yt",
+    "name": "CCD単結晶自動X線解析装置",
+    "family": "single-crystal-xray-system",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "研究設備 / 全学1"
+  },
+  {
+    "doc_id": "eqnet-4598",
+    "name": "セルソーター(CytoFLEX SRT) BECKMAN COULTER(CytoFLEX SRT)",
+    "family": "cell-sorter",
+    "reuse_existing_article": true,
+    "category_general": "フローサイトメトリー(FCM)/細胞分離",
+    "category_detail": "セルソーター"
+  },
+  {
+    "doc_id": "eqnet-2792",
+    "name": "旋光度計(日本分光・P-2200)",
+    "family": "digital-polarimeter",
+    "reuse_existing_article": true,
+    "category_general": "光分析装置",
+    "category_detail": "旋光計(polarimeter)"
+  },
+  {
+    "doc_id": "eqnet-3506",
+    "name": "デジタル顕微鏡 (Hirox KH-7700)",
+    "family": "digital-microscope",
+    "reuse_existing_article": true,
+    "category_general": "光学顕微鏡/病理",
+    "category_detail": "デジタルマイクロスコープ"
+  },
+  {
+    "doc_id": "eqnet-3469",
+    "name": "ガスクロマトグラフ GC-8AIF",
+    "family": "gas-chromatograph",
+    "reuse_existing_article": true,
+    "category_general": "分離分析装置",
+    "category_detail": "ガスクロマトグラフ(GC)"
+  },
+  {
+    "doc_id": "eqnet-2508",
+    "name": "レーザー直接描画装置",
+    "family": "laser-pattern-writer",
+    "reuse_existing_article": true,
+    "category_general": "半導体製造関連装置",
+    "category_detail": "半導体製造関連装置"
+  },
+  {
+    "doc_id": "eqnet-1817",
+    "name": "CVI連続炉",
+    "family": "continuous-furnace",
+    "reuse_existing_article": true,
+    "category_general": "土木・建築・工学関連装置",
+    "category_detail": "土木・建築・工学関連装置"
+  },
+  {
+    "doc_id": "eqnet-4964",
+    "name": "恒温振とう培養機(New Brunswick Scientific社 G25 )(1)",
+    "family": "incubator-shaker",
+    "reuse_existing_article": true,
+    "category_general": "培養/恒温恒湿度器/滅菌機機",
+    "category_detail": "回転/振とう培養器"
+  },
+  {
+    "doc_id": "eqnet-4786",
+    "name": "FieldFox 26.5 GHz Microwave Vector Network Analyzer キーサイト N9928A",
+    "family": "vector-network-analyzer",
+    "reuse_existing_article": true,
+    "category_general": "専用測定装置",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-2700",
+    "name": "RFスパッタ成膜装置:絶縁体成膜用(サンユー電子・SVC-700LRF)",
+    "family": "rf-sputter",
+    "reuse_existing_article": true,
+    "category_general": "成膜・蒸着・膜厚測定",
+    "category_detail": "真空蒸着・スパッタ(vac. coater・Sputter)"
+  },
+  {
+    "doc_id": "eqnet-3859",
+    "name": "600MHz核磁気共鳴分光装置(JEOL・JNM-ECZ600)",
+    "family": "nmr-600",
+    "reuse_existing_article": true,
+    "category_general": "核磁気共鳴装置(NMR)",
+    "category_detail": "600MHz NMR装置"
+  },
+  {
+    "doc_id": "eqnet-3759",
+    "name": "蛍光X線分析装置(Bruker・S2LANGER)",
+    "family": "edxrf",
+    "reuse_existing_article": true,
+    "category_general": "構造解析/元素分析",
+    "category_detail": "蛍光X線装置"
+  },
+  {
+    "doc_id": "eqnet-4728",
+    "name": "等温滴定マイクロカロリメトリー ・ MicroCal iTC200",
+    "family": "itc",
+    "reuse_existing_article": true,
+    "category_general": "熱分析・熱測定装置",
+    "category_detail": "熱分析・熱測定装置"
+  },
+  {
+    "doc_id": "eqnet-1827",
+    "name": "物理特性測定装置",
+    "family": "ppms",
+    "reuse_existing_article": true,
+    "category_general": "物性計測/成分分析",
+    "category_detail": "磁気特性測定装置(SQUID, VSM)"
+  },
+  {
+    "doc_id": "eqnet-4048",
+    "name": "小動物用PET・CT装置 島津製作所(ClairvivoPET・CT)",
+    "family": "pet-imaging",
+    "reuse_existing_article": true,
+    "category_general": "画像撮影/解析",
+    "category_detail": "核磁気共鳴イメージング(MRI), X線CT (XrayCT), PET"
+  },
+  {
+    "doc_id": "eqnet-3328",
+    "name": "高分解能二重収束質量分析装置(JEOL MS-700)",
+    "family": "sector-ms",
+    "reuse_existing_article": true,
+    "category_general": "質量分析装置(MS)",
+    "category_detail": "二重収束型MS"
+  },
+  {
+    "doc_id": "eqnet-5029",
+    "name": "微量高速冷却遠心機 (TOMY MX-105)",
+    "family": "centrifuge",
+    "reuse_existing_article": true,
+    "category_general": "遠心/粉砕/加熱機器",
+    "category_detail": "遠心分離機"
+  },
+  {
+    "doc_id": "eqnet-5441",
+    "name": "(霞)DNAシーケンサー SeqStudio 8 Flex",
+    "family": "sequencer",
+    "reuse_existing_article": true,
+    "category_general": "遺伝子・ゲノム",
+    "category_detail": "DNAシーケンサー(サンガ―法)"
+  },
+  {
+    "doc_id": "eqnet-1200",
+    "name": "原子間力顕微鏡(ビーコ NanoScope V)",
+    "family": "probe-microscope",
+    "reuse_existing_article": true,
+    "category_general": "電子顕微鏡および関連機器",
+    "category_detail": "走査型プローブ顕微鏡 (SPM, STM, AFM)"
+  },
+  {
+    "doc_id": "NMiNhaOLzcfHsdzdj9OL",
+    "name": "CCD極微小単結晶自動X線構造解析装置",
+    "family": "single-crystal-xray-system",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "分析計測分野 / 化学系 物理学系 (生物学系)"
+  },
+  {
+    "doc_id": "eqnet-4237",
+    "name": "フローサイトメーター Attune NxT Thermo Fisher Scientific(A24858)",
+    "family": "flow-cytometer",
+    "reuse_existing_article": true,
+    "category_general": "フローサイトメトリー(FCM)/細胞分離",
+    "category_detail": "セルアナライザー"
+  },
+  {
+    "doc_id": "eqnet-3814",
+    "name": "旋光計 (日本分光 P1030)",
+    "family": "digital-polarimeter",
+    "reuse_existing_article": true,
+    "category_general": "光分析装置",
+    "category_detail": "旋光分散計・円ニ色性分散計"
+  },
+  {
+    "doc_id": "eqnet-2354",
+    "name": "バイオイメージング解析システム(PerkinElmer Operetta)",
+    "family": "imaging-cytometer",
+    "reuse_existing_article": true,
+    "category_general": "光学顕微鏡/病理",
+    "category_detail": "ライブセルイメージング装置"
+  },
+  {
+    "doc_id": "eqnet-3470",
+    "name": "ガスクロマトグラフ GC-8AIT",
+    "family": "gas-chromatograph",
+    "reuse_existing_article": true,
+    "category_general": "分離分析装置",
+    "category_detail": "ガスクロマトグラフ(GC)"
+  },
+  {
+    "doc_id": "eqnet-2527",
+    "name": "多元スパッタ装置(仕様A)",
+    "family": "multi-target-sputter",
+    "reuse_existing_article": true,
+    "category_general": "半導体製造関連装置",
+    "category_detail": "半導体製造関連装置"
+  },
+  {
+    "doc_id": "eqnet-1816",
+    "name": "熱間等方加圧装置(HIP)",
+    "family": "hip",
+    "reuse_existing_article": true,
+    "category_general": "土木・建築・工学関連装置",
+    "category_detail": "土木・建築・工学関連装置"
+  },
+  {
+    "doc_id": "eqnet-4965",
+    "name": "恒温振とう培養機(New Brunswick Scientific社 G25 )(2)",
+    "family": "incubator-shaker",
+    "reuse_existing_article": true,
+    "category_general": "培養/恒温恒湿度器/滅菌機機",
+    "category_detail": "回転/振とう培養器"
+  },
+  {
+    "doc_id": "eqnet-3610",
+    "name": "IGBT、MOSFET 、パワー半導体用試験装置",
+    "family": "semiconductor-electrical-tester",
+    "reuse_existing_article": true,
+    "category_general": "専用測定装置",
+    "category_detail": "その他"
+  },
+  {
+    "doc_id": "eqnet-2699",
+    "name": "RFスパッタ成膜装置:金属成膜用(サンユー電子・SVC-700LRF)",
+    "family": "rf-sputter",
+    "reuse_existing_article": true,
+    "category_general": "成膜・蒸着・膜厚測定",
+    "category_detail": "真空蒸着・スパッタ(vac. coater・Sputter)"
+  },
+  {
+    "doc_id": "eqnet-571",
+    "name": "600MHz核磁気共鳴装置(BRUKER製・AVANCE III 600)",
+    "family": "nmr-600",
+    "reuse_existing_article": true,
+    "category_general": "核磁気共鳴装置(NMR)",
+    "category_detail": "600MHz 固体NMR装置"
+  },
+  {
+    "doc_id": "eqnet-2133",
+    "name": "蛍光X線分析装置(Philips PW2400)",
+    "family": "wdxrf",
+    "reuse_existing_article": true,
+    "category_general": "構造解析/元素分析",
+    "category_detail": "蛍光X線装置"
+  },
+  {
+    "doc_id": "eqnet-3773",
+    "name": "等温滴定型カロリメータ(MicroCal PEAQ-ITC)",
+    "family": "itc",
+    "reuse_existing_article": true,
+    "category_general": "熱分析・熱測定装置",
+    "category_detail": "熱分析・熱測定装置"
+  },
+  {
+    "doc_id": "eqnet-3780",
+    "name": "磁気特性測定装置(SQUID)XL7AC",
+    "family": "squid",
+    "reuse_existing_article": true,
+    "category_general": "物性計測/成分分析",
+    "category_detail": "磁気特性測定装置(SQUID, VSM)"
+  },
+  {
+    "doc_id": "eqnet-4126",
+    "name": "小動物用磁気共鳴イメージングシステム Bruker BioSpin(ICON 1T)",
+    "family": "mri",
+    "reuse_existing_article": true,
+    "category_general": "画像撮影/解析",
+    "category_detail": "核磁気共鳴イメージング(MRI), X線CT (XrayCT), PET"
+  },
+  {
+    "doc_id": "eqnet-1067",
+    "name": "高分解能磁場型質量分析装置(JEOL JMS-700)",
+    "family": "sector-ms",
+    "reuse_existing_article": true,
+    "category_general": "質量分析装置(MS)",
+    "category_detail": "二重収束型MS"
+  },
+  {
+    "doc_id": "eqnet-5196",
+    "name": "微量高速冷却遠心機 (TOMY MX-305)",
+    "family": "centrifuge",
+    "reuse_existing_article": true,
+    "category_general": "遠心/粉砕/加熱機器",
+    "category_detail": "遠心分離機"
+  },
+  {
+    "doc_id": "eqnet-3899",
+    "name": "(霞)DNAシーケンサー(Thermo Fisher・SeqStudio)",
+    "family": "sequencer",
+    "reuse_existing_article": true,
+    "category_general": "遺伝子・ゲノム",
+    "category_detail": "DNAシーケンサー(サンガ―法)"
+  },
+  {
+    "doc_id": "eqnet-715",
+    "name": "原子間力顕微鏡(島津製作所・SPM9600)",
+    "family": "probe-microscope",
+    "reuse_existing_article": true,
+    "category_general": "電子顕微鏡および関連機器",
+    "category_detail": "走査型プローブ顕微鏡 (SPM, STM, AFM)"
+  },
+  {
+    "doc_id": "dPxexHoiQFKWaVotFrJ7",
+    "name": "CO2 インキュベーター",
+    "family": "co2-incubator",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "周辺設備_HU (Peripheral Equipment) / None"
+  },
+  {
+    "doc_id": "eqnet-5056",
+    "name": "フローサイトメーター CyAn ADP(Beckman Coulter)",
+    "family": "flow-cytometer",
+    "reuse_existing_article": true,
+    "category_general": "フローサイトメトリー(FCM)/細胞分離",
+    "category_detail": "セルアナライザー"
+  },
+  {
+    "doc_id": "eqnet-3384",
+    "name": "旋光計(P-1010)",
+    "family": "digital-polarimeter",
+    "reuse_existing_article": true,
+    "category_general": "光分析装置",
+    "category_detail": "旋光計(polarimeter)"
+  },
+  {
+    "doc_id": "eqnet-2499",
+    "name": "リサーチ倒立顕微鏡",
+    "family": "imaging-cytometer",
+    "reuse_existing_article": true,
+    "category_general": "光学顕微鏡/病理",
+    "category_detail": "光学顕微鏡(Optical Microscope)"
+  },
+  {
+    "doc_id": "eqnet-4802",
+    "name": "ガスクロマトグラフ 水素炎イオン化検出器(GC-2010)",
+    "family": "gas-chromatograph",
+    "reuse_existing_article": true,
+    "category_general": "分離分析装置",
+    "category_detail": "ガスクロマトグラフ(GC)"
+  }
+]

@@ -1,0 +1,161 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0008-PART02-13",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T12:58:49.123831+00:00",
+  "updated_at": "2026-03-07T12:58:49.384416+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0008_part02_13.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0008-PART02-13.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "b6b874ebbd463dc671695b274bf32aff6807b5ae7ce1a3c23c4d9df3d9e3050b",
+    "queue_sha256_at_start": "aab5bebc552450de082cdd8ab67409f42a3f4e183ea32d78298de47505d04626",
+    "queue_row_keys_sha256": "5858d5b0266ecb99f2a970591ccf9da0e2ea26f486d2df7120a919ae1c9e9e28"
+  },
+  "queue": {
+    "target_count": 13,
+    "target_row_keys": [
+      "KUMAMOTO-list1f-01::KUMAMOTO-list1f-01",
+      "KUMAMOTO-list5f-02::KUMAMOTO-list5f-02",
+      "HmdbYdUSxx9uCuxhtnxF::HmdbYdUSxx9uCuxhtnxF",
+      "MIE-equipment4::MIE-equipment4",
+      "iHMAH0L2G85gA2Ap7UsD::iHMAH0L2G85gA2Ap7UsD",
+      "IsUCHcqpdLt46ZBq03sr::IsUCHcqpdLt46ZBq03sr",
+      "KzfGolRk7kXoOCpdRZ2D::KzfGolRk7kXoOCpdRZ2D",
+      "yY3azy7NRZIcFXircaTw::yY3azy7NRZIcFXircaTw",
+      "YTf2CxqQVg727AArwerN::YTf2CxqQVg727AArwerN",
+      "dfhSUjF7G7AFdBgqzF7B::dfhSUjF7G7AFdBgqzF7B",
+      "AFZ0X9Z0XX3TwLmcSCKR::AFZ0X9Z0XX3TwLmcSCKR",
+      "F6TUjy60Qz1otTHODI9x::F6TUjy60Qz1otTHODI9x",
+      "JCYT4Y9DcYVXQ8cRD47z::TOKUSHIMA-72"
+    ],
+    "target_rows": [
+      {
+        "row_key": "KUMAMOTO-list1f-01::KUMAMOTO-list1f-01",
+        "doc_id": "KUMAMOTO-list1f-01",
+        "equipment_id": "KUMAMOTO-list1f-01",
+        "name": "透過型電子顕微鏡 FEI TECNAI F20",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list5f-02::KUMAMOTO-list5f-02",
+        "doc_id": "KUMAMOTO-list5f-02",
+        "equipment_id": "KUMAMOTO-list5f-02",
+        "name": "二次イオン質量分析器 SIMS",
+        "papers_count": 0
+      },
+      {
+        "row_key": "HmdbYdUSxx9uCuxhtnxF::HmdbYdUSxx9uCuxhtnxF",
+        "doc_id": "HmdbYdUSxx9uCuxhtnxF",
+        "equipment_id": "HmdbYdUSxx9uCuxhtnxF",
+        "name": "単結晶X線回折装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MIE-equipment4::MIE-equipment4",
+        "doc_id": "MIE-equipment4",
+        "equipment_id": "MIE-equipment4",
+        "name": "X線界面構造解析装置（XRR）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "iHMAH0L2G85gA2Ap7UsD::iHMAH0L2G85gA2Ap7UsD",
+        "doc_id": "iHMAH0L2G85gA2Ap7UsD",
+        "equipment_id": "iHMAH0L2G85gA2Ap7UsD",
+        "name": "NMR(500MHz)－型式：AVANCEⅢHD 500",
+        "papers_count": 1
+      },
+      {
+        "row_key": "IsUCHcqpdLt46ZBq03sr::IsUCHcqpdLt46ZBq03sr",
+        "doc_id": "IsUCHcqpdLt46ZBq03sr",
+        "equipment_id": "IsUCHcqpdLt46ZBq03sr",
+        "name": "小型超遠心機 －型式： himac CS150GX",
+        "papers_count": 1
+      },
+      {
+        "row_key": "KzfGolRk7kXoOCpdRZ2D::KzfGolRk7kXoOCpdRZ2D",
+        "doc_id": "KzfGolRk7kXoOCpdRZ2D",
+        "equipment_id": "KzfGolRk7kXoOCpdRZ2D",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+        "papers_count": 1
+      },
+      {
+        "row_key": "yY3azy7NRZIcFXircaTw::yY3azy7NRZIcFXircaTw",
+        "doc_id": "yY3azy7NRZIcFXircaTw",
+        "equipment_id": "yY3azy7NRZIcFXircaTw",
+        "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+        "papers_count": 1
+      },
+      {
+        "row_key": "YTf2CxqQVg727AArwerN::YTf2CxqQVg727AArwerN",
+        "doc_id": "YTf2CxqQVg727AArwerN",
+        "equipment_id": "YTf2CxqQVg727AArwerN",
+        "name": "ｽｷｬﾅｰﾀｲﾌﾟ画像解析装置(FLA)－型式：Typhoon FLA 7000",
+        "papers_count": 1
+      },
+      {
+        "row_key": "dfhSUjF7G7AFdBgqzF7B::dfhSUjF7G7AFdBgqzF7B",
+        "doc_id": "dfhSUjF7G7AFdBgqzF7B",
+        "equipment_id": "dfhSUjF7G7AFdBgqzF7B",
+        "name": "ﾊﾞｲｵｲﾒｰｼﾞﾝｸﾞｱﾅﾗｲｻﾞｰ(BAS)－型式：BAS-2500",
+        "papers_count": 1
+      },
+      {
+        "row_key": "AFZ0X9Z0XX3TwLmcSCKR::AFZ0X9Z0XX3TwLmcSCKR",
+        "doc_id": "AFZ0X9Z0XX3TwLmcSCKR",
+        "equipment_id": "AFZ0X9Z0XX3TwLmcSCKR",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM7DUO",
+        "papers_count": 1
+      },
+      {
+        "row_key": "F6TUjy60Qz1otTHODI9x::F6TUjy60Qz1otTHODI9x",
+        "doc_id": "F6TUjy60Qz1otTHODI9x",
+        "equipment_id": "F6TUjy60Qz1otTHODI9x",
+        "name": "粒子径・分子量測定装置－型式：ZETASIZER Nano-S",
+        "papers_count": 1
+      },
+      {
+        "row_key": "JCYT4Y9DcYVXQ8cRD47z::TOKUSHIMA-72",
+        "doc_id": "JCYT4Y9DcYVXQ8cRD47z",
+        "equipment_id": "TOKUSHIMA-72",
+        "name": "光造形3Dプリンタ",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T12:58:49.123831+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 13
+      }
+    },
+    {
+      "at": "2026-03-07T12:58:49.248299+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T12:58:49.384416+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

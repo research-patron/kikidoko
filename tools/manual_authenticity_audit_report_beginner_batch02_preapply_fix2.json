@@ -1,0 +1,613 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-02T23:05:24.224292+00:00",
+  "batch_id": "BATCH-20260303-BEGINNER-02",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch02.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_beginner_batch02.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.02,
+    "pitfall2_same_ratio": 0.02,
+    "reviewed_at_unique_count": 100,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 10,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "beginner_char_min": 2008,
+    "beginner_char_max": 2075,
+    "beginner_char_avg": 2041.15,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 2,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 90
+  },
+  "threshold_failures": [
+    "guide_high_similarity_detected",
+    "internal_id_reference_hit"
+  ],
+  "issue_counts": {
+    "internal_id_reference_hit": 11,
+    "paper_doi_not_found_in_item": 2,
+    "guide_high_similarity_detected": 1
+  },
+  "issues": [
+    {
+      "row_key": "gF5dwkcwd2ina1Jk7dbu::HOKUDAI-AP-901408",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "eqnet-2037::eqnet-2037",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "qX9Vc5bFvyN5ryye1n1H::OKAYAMA-132",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "7xdbGiBo9cejdpbj5xCo::HOKUDAI-AP-901895",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "YKHE3wZtzUItU7kEnCO7::AIST-NPF107",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "pkcOwsmiDfFPcxsEYZsc::HOKUDAI-AP-901971",
+      "code": "paper_doi_not_found_in_item"
+    },
+    {
+      "row_key": "pkcOwsmiDfFPcxsEYZsc::HOKUDAI-AP-901971",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "Gv4Mg9DuJNg2aCeWcFrg::HOKUDAI-AP-902035",
+      "code": "paper_doi_not_found_in_item"
+    },
+    {
+      "row_key": "Gv4Mg9DuJNg2aCeWcFrg::HOKUDAI-AP-902035",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "BvzD4DexkVHj2peMC0df::HOKUDAI-AP-901513",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "1xq3sXBHvNyNzpsW3hQt::1xq3sXBHvNyNzpsW3hQt",
+      "code": "internal_id_reference_hit"
+    },
+    {
+      "row_key": "HiTw7nWEPkqXPWYpB2Ut::OKAYAMA-67a9b91e62542",
+      "code": "internal_id_reference_hit"
+    }
+  ],
+  "near_duplicate_pairs": [
+    {
+      "i": 95,
+      "j": 96,
+      "ratio": 0.9492110453648915
+    },
+    {
+      "i": 97,
+      "j": 99,
+      "ratio": 0.9401919763721388
+    }
+  ],
+  "checkpoint_snapshot": {
+    "updated_at": "2026-03-02T23:00:14.005022+00:00",
+    "defaults_added": 0,
+    "processed_rows_this_run": 10,
+    "applied_rows_this_run": 0,
+    "needs_manual_fix_this_run": 10,
+    "done": 90,
+    "remaining": 10,
+    "batch_size": 10,
+    "process_all": false,
+    "reviewer_default": "codex-manual",
+    "enforce_beginner_min_chars": 2000,
+    "enforce_beginner_max_chars": 3000,
+    "char_count_mode": "non_whitespace",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch02.jsonl",
+    "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json",
+    "guard_verify": {
+      "status": "PASS",
+      "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json",
+      "batch_id": "BATCH-20260303-BEGINNER-02",
+      "reviewer_expected": "codex-manual",
+      "issues": [],
+      "details": {
+        "agents_sha256_current": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+        "queue_sha256_current": "90466e7ec886269a91b9ea3716ff36cf57025039fbaf4e48881d1808b025ceb8",
+        "snapshot_sha256_current": "4a4eacc6a4b9861f97eac9f94a7c9a8a9821efa7cfa81836c25b74c56cf362a0",
+        "queue_rows_current": 10,
+        "queue_rows_target": 100
+      },
+      "verified_at": "2026-03-02T22:59:41.415822+00:00"
+    },
+    "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_beginner_batch02.json",
+    "post_audit_status": "FAIL",
+    "post_audit": {
+      "status": "FAIL",
+      "generated_at": "2026-03-02T23:00:13.919121+00:00",
+      "batch_id": "BATCH-20260303-BEGINNER-02",
+      "reviewer_expected": "codex-manual",
+      "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+      "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch02.jsonl",
+      "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_beginner_batch02.json",
+      "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json",
+      "inspected_count": 100,
+      "target_count": 100,
+      "metrics": {
+        "summary_dup_rate": 0.0,
+        "principle_dup_rate": 0.0,
+        "step1_dup_rate": 0.03,
+        "pitfall1_dup_rate": 0.02,
+        "step2_same_ratio": 0.02,
+        "pitfall2_same_ratio": 0.02,
+        "reviewed_at_unique_count": 100,
+        "forbidden_pattern_hits": 0,
+        "internal_id_reference_hits": 83,
+        "placeholder_doi_hits": 11,
+        "body_contains_doi_hits": 0,
+        "beginner_char_min": 2000,
+        "beginner_char_max": 2057,
+        "beginner_char_avg": 2025.7,
+        "guide_full_dup_rate": 0.0,
+        "guide_high_similarity_pairs": 0,
+        "step2_same_ratio_threshold": 0.05,
+        "pitfall2_same_ratio_threshold": 0.05,
+        "min_reviewed_at_unique": 90
+      },
+      "threshold_failures": [
+        "step1_dup_rate_not_zero",
+        "pitfall1_dup_rate_not_zero",
+        "internal_id_reference_hit",
+        "placeholder_doi_hit"
+      ],
+      "issue_counts": {
+        "internal_id_reference_hit": 84,
+        "placeholder_doi_hit": 12,
+        "step1_dup_rate_not_zero": 1,
+        "pitfall1_dup_rate_not_zero": 1
+      },
+      "issues": [
+        {
+          "row_key": "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/vry5cxit090glpf9fhat"
+        },
+        {
+          "row_key": "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/sgojyngg9tzmgeagmf2b"
+        },
+        {
+          "row_key": "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/iftzd5oxl358abdbmbfo"
+        },
+        {
+          "row_key": "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/zpesd1vj5ujdsfwlox3z"
+        },
+        {
+          "row_key": "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/acudkls6rshqtvqwf6ta"
+        },
+        {
+          "row_key": "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/wa5nfqwuhxva97pgyojx"
+        },
+        {
+          "row_key": "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/9vrmb61yzltbbakqsd2x"
+        },
+        {
+          "row_key": "K7qIIZW4s9PipEpIpOiE::AIST-MEMS042",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "K7qIIZW4s9PipEpIpOiE::AIST-MEMS042",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/k7qiizw4s9pipepipoie"
+        },
+        {
+          "row_key": "gxvyeJTxK8jiiCETnakn::UTOKYO-12",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "RDHJ6rPC6RGSg5ICbG1L::UTOKYO-108",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "cCHwRPZSem87WkeKzIfl::NIMS-257-NF0143",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-1670::eqnet-1670",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "veFXlRqduj6kWRZ36wSe::NIMS-140-NF0195",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "GeS0IMrUMDiCgyhBibUc::NIMS-187-NF0135",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "YANjNIPCjNVwuVMuXv3L::TSUKUBA-319",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-4123::eqnet-4123",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-4123::eqnet-4123",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/eqnet-4123"
+        },
+        {
+          "row_key": "JjAPdoA3qKERncC5JztO::NAIST-NR-203",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "Wqht8el3cLzCaEAPf3ri::UEC-184",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "3gygYTDWJdqXuMOB6BSt::UEC-193",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "6CkEqgiTIYOYniOomBvZ::6CkEqgiTIYOYniOomBvZ",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "6CkEqgiTIYOYniOomBvZ::6CkEqgiTIYOYniOomBvZ",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/6ckeqgitiyoynioombvz"
+        },
+        {
+          "row_key": "7dRKsL6bWy4V3U1vsh3s::7dRKsL6bWy4V3U1vsh3s",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "MOEiCTAx2hPKtaApJWAL::MOEiCTAx2hPKtaApJWAL",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "e2uflAhjuaEHVpGQIeh3::HOKUDAI-AP-900839",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "tikonmNiKgvvbksE8dkv::HOKUDAI-AP-901113",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "OHw3NU718WahzMUDSf2h::AIST-MEMS109",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "kUkNMVBdKQbXAh0VRA2m::NIMS-262-NF0144",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "0lNnz4Bb98SntDjciG8d::OSAKA-297",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "lJMnDLAIDw3THDboh8oq::NIMS-6-NF0158",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "lrYnaIhNAev4M2rq2wuN::AIST-MEMS077",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "lrYnaIhNAev4M2rq2wuN::AIST-MEMS077",
+          "code": "placeholder_doi_hit",
+          "doi": "10.0000/lrynaihnaev4m2rq2wun"
+        },
+        {
+          "row_key": "4rFlNSui7qs4YJ5JvEAY::HOKUDAI-AP-901683",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "Uy5mXiCI8FKenVJUNEtZ::HOKUDAI-AP-100350",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "gnRuHOoRbl2LNaE0UD96::TUAT-NMR-300",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "ZFgYN0hKPsQIonFk19kZ::OSAKA-347",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "sMUBxtsm2WW47TnS6Vhq::OSAKA-199",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "fnDFF5gZggk7M6cIIjuP::NIMS-183-NF0128",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "KMCgHnSgUhx3GkLMiwfn::HOKUDAI-AP-901801",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "otX6yKYsQlc2U3S97SK3::HOKUDAI-AP-902138",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "C6DUwmsTUNpywvAvEzZe::C6DUwmsTUNpywvAvEzZe",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "sbIeozQzj7byGmx7Fjnp::HOKUDAI-AP-901973",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "OCvabyFyv6mEDWyzHe2v::HOKUDAI-AP-901371",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "v1gUy1dPMKKA1NNuS18X::HOKUDAI-AP-901952",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "Z6ZYrAnlAwAsbXdjasi8::Z6ZYrAnlAwAsbXdjasi8",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "4XheR15Myymx0LbKc4iT::KITAMI-c_043",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "Geo6vL0akPwurtYcmNtB::KITAMI-c_050",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "9mHA6wcY8V1ZmRrIzMcS::KITAMI-c_053",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-3513::eqnet-3513",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "zbY4qgZK4bjNMYHGepyh::HOKUDAI-AP-902155",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "I2n30Ng9EYOUxlXc6YVh::HOKUDAI-AP-901920",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "lLja7HkKKqtRvFUj5wuZ::HOKUDAI-AP-902164",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "qFSo7q55jopLJkbFICo7::HOKUDAI-AP-901862",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-3108::eqnet-3108",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-3043::eqnet-3043",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-3042::eqnet-3042",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-3044::eqnet-3044",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-4189::eqnet-4189",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "ZmWjWhOau35Curs2jiyS::YAMAGUCHI-core12",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "aEzhtOGBl9pesVnWk96N::SAGA-2485",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "1hPqNREwTJFLlKqDt6uv::1hPqNREwTJFLlKqDt6uv",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "OkLB99IsgTU5H2OcOZqV::OkLB99IsgTU5H2OcOZqV",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "0ETtIhtHkwEHGF8wNUbD::HOKUDAI-AP-900797",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "GMT7Yur37AUA0ZWyI77o::KYUSHU-OLS4000",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "ZvP4WWIxJfA2c7Dp1R23::YAMAGUCHI-etc61",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-4834::eqnet-4834",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-3100::eqnet-3100",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "dI6L4tVB3fbOBm41pFzj::SAGA-2496",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "PCDkksnUBegNyJeA8VZC::HOKUDAI-AP-902137",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "ikqjxKuD0EPgI7kXDKk2::ikqjxKuD0EPgI7kXDKk2",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "O1qrYgdPerCSjsA62Ixy::HOKUDAI-AP-901290",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "DWQcinYveoMNuhR7F3GD::DWQcinYveoMNuhR7F3GD",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "ZIsQrVvwrLUNPiDXblKn::ZIsQrVvwrLUNPiDXblKn",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eJBnw4iecfbwIR31bA0C::eJBnw4iecfbwIR31bA0C",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "hBKd04alHXb8speJhvjR::hBKd04alHXb8speJhvjR",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "gF5dwkcwd2ina1Jk7dbu::HOKUDAI-AP-901408",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "eqnet-2037::eqnet-2037",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "qX9Vc5bFvyN5ryye1n1H::OKAYAMA-132",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "7xdbGiBo9cejdpbj5xCo::HOKUDAI-AP-901895",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "YKHE3wZtzUItU7kEnCO7::AIST-NPF107",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "pkcOwsmiDfFPcxsEYZsc::HOKUDAI-AP-901971",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "Gv4Mg9DuJNg2aCeWcFrg::HOKUDAI-AP-902035",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "BvzD4DexkVHj2peMC0df::HOKUDAI-AP-901513",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "1xq3sXBHvNyNzpsW3hQt::1xq3sXBHvNyNzpsW3hQt",
+          "code": "internal_id_reference_hit"
+        },
+        {
+          "row_key": "HiTw7nWEPkqXPWYpB2Ut::OKAYAMA-67a9b91e62542",
+          "code": "internal_id_reference_hit"
+        }
+      ],
+      "near_duplicate_pairs": [],
+      "checkpoint_snapshot": {
+        "updated_at": "2026-03-02T22:59:44.038923+00:00",
+        "defaults_added": 0,
+        "processed_rows_this_run": 10,
+        "applied_rows_this_run": 10,
+        "needs_manual_fix_this_run": 0,
+        "done": 100,
+        "remaining": 0,
+        "batch_size": 10,
+        "process_all": false,
+        "reviewer_default": "codex-manual",
+        "enforce_beginner_min_chars": 2000,
+        "enforce_beginner_max_chars": 3000,
+        "char_count_mode": "non_whitespace",
+        "timing_log_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+        "enforce_min_elapsed_sec": 0,
+        "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+        "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch02.jsonl",
+        "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json",
+        "guard_verify": {
+          "status": "PASS",
+          "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json",
+          "batch_id": "BATCH-20260303-BEGINNER-02",
+          "reviewer_expected": "codex-manual",
+          "issues": [],
+          "details": {
+            "agents_sha256_current": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+            "queue_sha256_current": "90466e7ec886269a91b9ea3716ff36cf57025039fbaf4e48881d1808b025ceb8",
+            "snapshot_sha256_current": "4a4eacc6a4b9861f97eac9f94a7c9a8a9821efa7cfa81836c25b74c56cf362a0",
+            "queue_rows_current": 10,
+            "queue_rows_target": 100
+          },
+          "verified_at": "2026-03-02T22:59:41.415822+00:00"
+        },
+        "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_beginner_batch02.json",
+        "post_audit_status": "PENDING_FINAL_BATCH"
+      }
+    },
+    "post_audit_log": "{\n  \"status\": \"FAIL\",\n  \"generated_at\": \"2026-03-02T23:00:13.919121+00:00\",\n  \"batch_id\": \"BATCH-20260303-BEGINNER-02\",\n  \"reviewer_expected\": \"codex-manual\",\n  \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n  \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch02.jsonl\",\n  \"checkpoint_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_beginner_batch02.json\",\n  \"session_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json\",\n  \"inspected_count\": 100,\n  \"target_count\": 100,\n  \"metrics\": {\n    \"summary_dup_rate\": 0.0,\n    \"principle_dup_rate\": 0.0,\n    \"step1_dup_rate\": 0.03,\n    \"pitfall1_dup_rate\": 0.02,\n    \"step2_same_ratio\": 0.02,\n    \"pitfall2_same_ratio\": 0.02,\n    \"reviewed_at_unique_count\": 100,\n    \"forbidden_pattern_hits\": 0,\n    \"internal_id_reference_hits\": 83,\n    \"placeholder_doi_hits\": 11,\n    \"body_contains_doi_hits\": 0,\n    \"beginner_char_min\": 2000,\n    \"beginner_char_max\": 2057,\n    \"beginner_char_avg\": 2025.7,\n    \"guide_full_dup_rate\": 0.0,\n    \"guide_high_similarity_pairs\": 0,\n    \"step2_same_ratio_threshold\": 0.05,\n    \"pitfall2_same_ratio_threshold\": 0.05,\n    \"min_reviewed_at_unique\": 90\n  },\n  \"threshold_failures\": [\n    \"step1_dup_rate_not_zero\",\n    \"pitfall1_dup_rate_not_zero\",\n    \"internal_id_reference_hit\",\n    \"placeholder_doi_hit\"\n  ],\n  \"issue_counts\": {\n    \"internal_id_reference_hit\": 84,\n    \"placeholder_doi_hit\": 12,\n    \"step1_dup_rate_not_zero\": 1,\n    \"pitfall1_dup_rate_not_zero\": 1\n  },\n  \"issues\": [\n    {\n      \"row_key\": \"VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/vry5cxit090glpf9fhat\"\n    },\n    {\n      \"row_key\": \"sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/sgojyngg9tzmgeagmf2b\"\n    },\n    {\n      \"row_key\": \"ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/iftzd5oxl358abdbmbfo\"\n    },\n    {\n      \"row_key\": \"ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/zpesd1vj5ujdsfwlox3z\"\n    },\n    {\n      \"row_key\": \"acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/acudkls6rshqtvqwf6ta\"\n    },\n    {\n      \"row_key\": \"WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/wa5nfqwuhxva97pgyojx\"\n    },\n    {\n      \"row_key\": \"9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/9vrmb61yzltbbakqsd2x\"\n    },\n    {\n      \"row_key\": \"K7qIIZW4s9PipEpIpOiE::AIST-MEMS042\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"K7qIIZW4s9PipEpIpOiE::AIST-MEMS042\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/k7qiizw4s9pipepipoie\"\n    },\n    {\n      \"row_key\": \"gxvyeJTxK8jiiCETnakn::UTOKYO-12\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"RDHJ6rPC6RGSg5ICbG1L::UTOKYO-108\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"cCHwRPZSem87WkeKzIfl::NIMS-257-NF0143\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-1670::eqnet-1670\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"veFXlRqduj6kWRZ36wSe::NIMS-140-NF0195\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"GeS0IMrUMDiCgyhBibUc::NIMS-187-NF0135\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"YANjNIPCjNVwuVMuXv3L::TSUKUBA-319\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-4123::eqnet-4123\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-4123::eqnet-4123\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/eqnet-4123\"\n    },\n    {\n      \"row_key\": \"JjAPdoA3qKERncC5JztO::NAIST-NR-203\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"Wqht8el3cLzCaEAPf3ri::UEC-184\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"3gygYTDWJdqXuMOB6BSt::UEC-193\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"6CkEqgiTIYOYniOomBvZ::6CkEqgiTIYOYniOomBvZ\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"6CkEqgiTIYOYniOomBvZ::6CkEqgiTIYOYniOomBvZ\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/6ckeqgitiyoynioombvz\"\n    },\n    {\n      \"row_key\": \"7dRKsL6bWy4V3U1vsh3s::7dRKsL6bWy4V3U1vsh3s\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"MOEiCTAx2hPKtaApJWAL::MOEiCTAx2hPKtaApJWAL\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"e2uflAhjuaEHVpGQIeh3::HOKUDAI-AP-900839\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"tikonmNiKgvvbksE8dkv::HOKUDAI-AP-901113\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"OHw3NU718WahzMUDSf2h::AIST-MEMS109\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"kUkNMVBdKQbXAh0VRA2m::NIMS-262-NF0144\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"0lNnz4Bb98SntDjciG8d::OSAKA-297\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"lJMnDLAIDw3THDboh8oq::NIMS-6-NF0158\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"lrYnaIhNAev4M2rq2wuN::AIST-MEMS077\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"lrYnaIhNAev4M2rq2wuN::AIST-MEMS077\",\n      \"code\": \"placeholder_doi_hit\",\n      \"doi\": \"10.0000/lrynaihnaev4m2rq2wun\"\n    },\n    {\n      \"row_key\": \"4rFlNSui7qs4YJ5JvEAY::HOKUDAI-AP-901683\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"Uy5mXiCI8FKenVJUNEtZ::HOKUDAI-AP-100350\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"gnRuHOoRbl2LNaE0UD96::TUAT-NMR-300\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"ZFgYN0hKPsQIonFk19kZ::OSAKA-347\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"sMUBxtsm2WW47TnS6Vhq::OSAKA-199\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"fnDFF5gZggk7M6cIIjuP::NIMS-183-NF0128\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"KMCgHnSgUhx3GkLMiwfn::HOKUDAI-AP-901801\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"otX6yKYsQlc2U3S97SK3::HOKUDAI-AP-902138\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"C6DUwmsTUNpywvAvEzZe::C6DUwmsTUNpywvAvEzZe\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"sbIeozQzj7byGmx7Fjnp::HOKUDAI-AP-901973\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"OCvabyFyv6mEDWyzHe2v::HOKUDAI-AP-901371\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"v1gUy1dPMKKA1NNuS18X::HOKUDAI-AP-901952\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"Z6ZYrAnlAwAsbXdjasi8::Z6ZYrAnlAwAsbXdjasi8\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"4XheR15Myymx0LbKc4iT::KITAMI-c_043\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"Geo6vL0akPwurtYcmNtB::KITAMI-c_050\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"9mHA6wcY8V1ZmRrIzMcS::KITAMI-c_053\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-3513::eqnet-3513\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"zbY4qgZK4bjNMYHGepyh::HOKUDAI-AP-902155\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"I2n30Ng9EYOUxlXc6YVh::HOKUDAI-AP-901920\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"lLja7HkKKqtRvFUj5wuZ::HOKUDAI-AP-902164\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"qFSo7q55jopLJkbFICo7::HOKUDAI-AP-901862\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-3108::eqnet-3108\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-3043::eqnet-3043\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-3042::eqnet-3042\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-3044::eqnet-3044\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-4189::eqnet-4189\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"ZmWjWhOau35Curs2jiyS::YAMAGUCHI-core12\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"aEzhtOGBl9pesVnWk96N::SAGA-2485\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"1hPqNREwTJFLlKqDt6uv::1hPqNREwTJFLlKqDt6uv\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"OkLB99IsgTU5H2OcOZqV::OkLB99IsgTU5H2OcOZqV\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"0ETtIhtHkwEHGF8wNUbD::HOKUDAI-AP-900797\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"GMT7Yur37AUA0ZWyI77o::KYUSHU-OLS4000\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"ZvP4WWIxJfA2c7Dp1R23::YAMAGUCHI-etc61\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-4834::eqnet-4834\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-3100::eqnet-3100\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"dI6L4tVB3fbOBm41pFzj::SAGA-2496\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"PCDkksnUBegNyJeA8VZC::HOKUDAI-AP-902137\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"ikqjxKuD0EPgI7kXDKk2::ikqjxKuD0EPgI7kXDKk2\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"O1qrYgdPerCSjsA62Ixy::HOKUDAI-AP-901290\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"DWQcinYveoMNuhR7F3GD::DWQcinYveoMNuhR7F3GD\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"ZIsQrVvwrLUNPiDXblKn::ZIsQrVvwrLUNPiDXblKn\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eJBnw4iecfbwIR31bA0C::eJBnw4iecfbwIR31bA0C\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"hBKd04alHXb8speJhvjR::hBKd04alHXb8speJhvjR\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"gF5dwkcwd2ina1Jk7dbu::HOKUDAI-AP-901408\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"eqnet-2037::eqnet-2037\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"qX9Vc5bFvyN5ryye1n1H::OKAYAMA-132\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"7xdbGiBo9cejdpbj5xCo::HOKUDAI-AP-901895\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"YKHE3wZtzUItU7kEnCO7::AIST-NPF107\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"pkcOwsmiDfFPcxsEYZsc::HOKUDAI-AP-901971\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"Gv4Mg9DuJNg2aCeWcFrg::HOKUDAI-AP-902035\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"BvzD4DexkVHj2peMC0df::HOKUDAI-AP-901513\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"1xq3sXBHvNyNzpsW3hQt::1xq3sXBHvNyNzpsW3hQt\",\n      \"code\": \"internal_id_reference_hit\"\n    },\n    {\n      \"row_key\": \"HiTw7nWEPkqXPWYpB2Ut::OKAYAMA-67a9b91e62542\",\n      \"code\": \"internal_id_reference_hit\"\n    }\n  ],\n  \"near_duplicate_pairs\": [],\n  \"checkpoint_snapshot\": {\n    \"updated_at\": \"2026-03-02T22:59:44.038923+00:00\",\n    \"defaults_added\": 0,\n    \"processed_rows_this_run\": 10,\n    \"applied_rows_this_run\": 10,\n    \"needs_manual_fix_this_run\": 0,\n    \"done\": 100,\n    \"remaining\": 0,\n    \"batch_size\": 10,\n    \"process_all\": false,\n    \"reviewer_default\": \"codex-manual\",\n    \"enforce_beginner_min_chars\": 2000,\n    \"enforce_beginner_max_chars\": 3000,\n    \"char_count_mode\": \"non_whitespace\",\n    \"timing_log_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl\",\n    \"enforce_min_elapsed_sec\": 0,\n    \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n    \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_beginner_batch02.jsonl\",\n    \"attestation_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json\",\n    \"guard_verify\": {\n      \"status\": \"PASS\",\n      \"session\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-BEGINNER-02.json\",\n      \"batch_id\": \"BATCH-20260303-BEGINNER-02\",\n      \"reviewer_expected\": \"codex-manual\",\n      \"issues\": [],\n      \"details\": {\n        \"agents_sha256_current\": \"5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0\",\n        \"queue_sha256_current\": \"90466e7ec886269a91b9ea3716ff36cf57025039fbaf4e48881d1808b025ceb8\",\n        \"snapshot_sha256_current\": \"4a4eacc6a4b9861f97eac9f94a7c9a8a9821efa7cfa81836c25b74c56cf362a0\",\n        \"queue_rows_current\": 10,\n        \"queue_rows_target\": 100\n      },\n      \"verified_at\": \"2026-03-02T22:59:41.415822+00:00\"\n    },\n    \"post_audit_report_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_beginner_batch02.json\",\n    \"post_audit_status\": \"PENDING_FINAL_BATCH\"\n  }\n}",
+    "reverted_rows_this_run": 10
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260320-CYCLE0038-REPAIR5-SIM",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-20T09:30:49.256770+00:00",
+  "updated_at": "2026-03-20T09:39:10.321796+00:00",
+  "closed_at": "2026-03-20T09:39:10.321796+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0038_repair5_similarity.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260320-CYCLE0038-REPAIR5-SIM.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "fb3be4171abce5c9d9e8190545f1adc79cd5b673c7dd6bc82587ce07d7e8ace6",
+    "queue_sha256_at_start": "348c41af667a82f5551fb5c7f489ee8025672c169208a69a8dda985fc610e4a8",
+    "queue_row_keys_sha256": "54b7a6bcd63235195654ff48333e5b625b22d155b4ae846dc816732216d41805"
+  },
+  "queue": {
+    "target_count": 5,
+    "target_row_keys": [
+      "AKe01kSAVYjDCOFi2AG0::AKe01kSAVYjDCOFi2AG0",
+      "0pBWvk4yD9M6MGBtHvw4::KUMAMOTO-list4f-06",
+      "gr3Vcqj6vgJw9QXBkJHH::KUMAMOTO-list3f-01",
+      "JKJelUiKor4fkn6WYRYB::MIE-equipment11",
+      "a7B5vrLrCzcl2DqCdLfU::AIST-COL017"
+    ],
+    "target_rows": [
+      {
+        "row_key": "AKe01kSAVYjDCOFi2AG0::AKe01kSAVYjDCOFi2AG0",
+        "doc_id": "AKe01kSAVYjDCOFi2AG0",
+        "equipment_id": "AKe01kSAVYjDCOFi2AG0",
+        "name": "ﾏｲｸﾛﾌﾟﾚｰﾄｼﾝﾁﾚｰｼｮﾝ・ﾙﾐﾈｯｾﾝｽｶｳﾝﾀｰ－型式：TopCount NXT",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0pBWvk4yD9M6MGBtHvw4::KUMAMOTO-list4f-06",
+        "doc_id": "0pBWvk4yD9M6MGBtHvw4",
+        "equipment_id": "KUMAMOTO-list4f-06",
+        "name": "走査型電子顕微鏡 日本電子株式会社 JSM-6390LV",
+        "papers_count": 2
+      },
+      {
+        "row_key": "gr3Vcqj6vgJw9QXBkJHH::KUMAMOTO-list3f-01",
+        "doc_id": "gr3Vcqj6vgJw9QXBkJHH",
+        "equipment_id": "KUMAMOTO-list3f-01",
+        "name": "電子線マイクロアナライザ 株式会社島津製作所 EPMA-1720H",
+        "papers_count": 1
+      },
+      {
+        "row_key": "JKJelUiKor4fkn6WYRYB::MIE-equipment11",
+        "doc_id": "JKJelUiKor4fkn6WYRYB",
+        "equipment_id": "MIE-equipment11",
+        "name": "電子線マイクロアナライザ （多モードトポ解析システム/EPMA)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "a7B5vrLrCzcl2DqCdLfU::AIST-COL017",
+        "doc_id": "a7B5vrLrCzcl2DqCdLfU",
+        "equipment_id": "AIST-COL017",
+        "name": "電子線描画装置",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-20T09:30:49.256770+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 5
+      }
+    },
+    {
+      "at": "2026-03-20T09:30:55.132337+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T09:31:02.023875+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T09:39:10.321796+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

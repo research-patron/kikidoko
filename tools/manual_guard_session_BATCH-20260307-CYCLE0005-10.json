@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0005-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T03:03:58.035399+00:00",
+  "updated_at": "2026-03-07T06:09:22.284440+00:00",
+  "closed_at": "2026-03-07T06:09:22.284440+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0005_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0005-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "6c000358dcf9a0f1d8a1d379956aaf2e31ad422b1ddabde09ca9dfe1f9b6bf5e",
+    "queue_sha256_at_start": "06d7b8de631150c87beeb4ef51c11e8babe327fbdfb1e7909869150235b346cd",
+    "queue_row_keys_sha256": "67e1d77079fc6ed42823e2b9045d4b9cb6e35d7bcd72fc1c82d053eb869e83c9"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "3OLDgm5Yo6Olt6Lr4bZV::YAMAGATA-U-YG-011-2",
+      "gt03Q7tDu6NppzwawuAq::YAMAGATA-U-YG-010-5",
+      "XZT48BmKydVEm3kTcUYu::YAMAGATA-U-YG-601",
+      "VvILmjDAV8jIqjFKkW2w::YAMAGATA-U-YG-002",
+      "NA4jpKc98ekkVVOq8HKq::YAMAGATA-U-YG-010-4",
+      "K9VDRZo46oZMdPmY6s5r::YAMAGATA-U-YG-008",
+      "m23l5I1cvJgRVfvBoa0i::YAMAGATA-U-YG-011-1",
+      "hTOFucqdg6na7Tqcjpv0::YAMAGATA-U-YG-003",
+      "zhMfgcfND2IYgLxC3zlS::YAMAGATA-U-YG-004",
+      "igWmqGuQmN0nAr7cubUs::YAMAGATA-U-YG-010-1"
+    ],
+    "target_rows": [
+      {
+        "row_key": "3OLDgm5Yo6Olt6Lr4bZV::YAMAGATA-U-YG-011-2",
+        "doc_id": "3OLDgm5Yo6Olt6Lr4bZV",
+        "equipment_id": "YAMAGATA-U-YG-011-2",
+        "name": "偏光観察用システム顕微鏡(YG-011-2)・ミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gt03Q7tDu6NppzwawuAq::YAMAGATA-U-YG-010-5",
+        "doc_id": "gt03Q7tDu6NppzwawuAq",
+        "equipment_id": "YAMAGATA-U-YG-010-5",
+        "name": "光沢計(YG-010-5)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XZT48BmKydVEm3kTcUYu::YAMAGATA-U-YG-601",
+        "doc_id": "XZT48BmKydVEm3kTcUYu",
+        "equipment_id": "YAMAGATA-U-YG-601",
+        "name": "全自動多目的X線回折装置(YG-601)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "VvILmjDAV8jIqjFKkW2w::YAMAGATA-U-YG-002",
+        "doc_id": "VvILmjDAV8jIqjFKkW2w",
+        "equipment_id": "YAMAGATA-U-YG-002",
+        "name": "共押出システム(YG-002)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "NA4jpKc98ekkVVOq8HKq::YAMAGATA-U-YG-010-4",
+        "doc_id": "NA4jpKc98ekkVVOq8HKq",
+        "equipment_id": "YAMAGATA-U-YG-010-4",
+        "name": "分光ヘーズメーター(YG-010-4)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "K9VDRZo46oZMdPmY6s5r::YAMAGATA-U-YG-008",
+        "doc_id": "K9VDRZo46oZMdPmY6s5r",
+        "equipment_id": "YAMAGATA-U-YG-008",
+        "name": "力学試験機(YG-008)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "m23l5I1cvJgRVfvBoa0i::YAMAGATA-U-YG-011-1",
+        "doc_id": "m23l5I1cvJgRVfvBoa0i",
+        "equipment_id": "YAMAGATA-U-YG-011-1",
+        "name": "小角光散乱装置|高分子相構造解析システム(YG-011-1)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "hTOFucqdg6na7Tqcjpv0::YAMAGATA-U-YG-003",
+        "doc_id": "hTOFucqdg6na7Tqcjpv0",
+        "equipment_id": "YAMAGATA-U-YG-003",
+        "name": "形状解析レーザ顕微鏡(YG-003)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zhMfgcfND2IYgLxC3zlS::YAMAGATA-U-YG-004",
+        "doc_id": "zhMfgcfND2IYgLxC3zlS",
+        "equipment_id": "YAMAGATA-U-YG-004",
+        "name": "示差走査熱量計DSC(YG-004)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "igWmqGuQmN0nAr7cubUs::YAMAGATA-U-YG-010-1",
+        "doc_id": "igWmqGuQmN0nAr7cubUs",
+        "equipment_id": "YAMAGATA-U-YG-010-1",
+        "name": "複屈折計測装置|フィルム物性測定システム(YG-010-1)",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T03:03:58.035399+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-07T03:03:58.643532+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T06:02:08.392578+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T06:09:22.284440+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

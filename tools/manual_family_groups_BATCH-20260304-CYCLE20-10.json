@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T01:04:16.715085+00:00",
+  "batch_id": "BATCH-20260304-CYCLE20-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Mhe41ZmloumTERRiZoYm",
+          "equipment_id": "Mhe41ZmloumTERRiZoYm",
+          "name": "超低温フリーザー_02 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|衝撃的高速度破壊実験装置-一式|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "nPquo0FulBtgcezO4HLL",
+          "equipment_id": "nPquo0FulBtgcezO4HLL",
+          "name": "衝撃的高速度破壊実験装置 一式",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|鉛ビスマス循環装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gPpjcQMpkxxLTOhWKuE7",
+          "equipment_id": "gPpjcQMpkxxLTOhWKuE7",
+          "name": "鉛ビスマス循環装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|静的サーボコントローラシステム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "DLmwqYZHFbRmJHhKyalg",
+          "equipment_id": "DLmwqYZHFbRmJHhKyalg",
+          "name": "静的サーボコントローラシステム",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 大型実験設備 / -|高歪み速度載荷試験装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "q7laZZWFnkJNfoOdj1kX",
+          "equipment_id": "q7laZZWFnkJNfoOdj1kX",
+          "name": "高歪み速度載荷試験装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 大型実験設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pyEuKbqSbE0S3hMxRjfI",
+          "equipment_id": "pyEuKbqSbE0S3hMxRjfI",
+          "name": "旭町ラボ オープンラボスペース 202実験室(A)-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6qGUOzsMxI3VWmmH538u",
+          "equipment_id": "6qGUOzsMxI3VWmmH538u",
+          "name": "旭町ラボ オープンラボスペース 202実験室(A)-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|フリーザー--80|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "im9E6v5jJ5x0ZORMs5wb",
+          "equipment_id": "im9E6v5jJ5x0ZORMs5wb",
+          "name": "フリーザー－80℃",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|冷却水循環装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pcDLm6RhtXx6HJRjLZBb",
+          "equipment_id": "pcDLm6RhtXx6HJRjLZBb",
+          "name": "冷却水循環装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / -|定温恒温乾燥器|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6ZCYUhmxSts7kcREJQvl",
+          "equipment_id": "6ZCYUhmxSts7kcREJQvl",
+          "name": "定温恒温乾燥器",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / -"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9272
+}

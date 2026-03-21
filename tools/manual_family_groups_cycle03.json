@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T13:21:22.524264+00:00",
+  "batch_id": "BATCH-20260303-CYCLE03-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|5,600|プラズマ絶縁膜成膜装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "tNGmjZjUMKCGtlCgb5Qz",
+          "equipment_id": "AIST-COL004",
+          "name": "プラズマ絶縁膜成膜装置",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|半導体酸化膜エッチング装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "FIzRchEw3C3MgMIBMmhu",
+          "equipment_id": "AIST-COL005",
+          "name": "半導体酸化膜エッチング装置",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|原子層堆積装置-ald|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "vW1ihfrngowvTqx7bC44",
+          "equipment_id": "AIST-COL009",
+          "name": "原子層堆積装置(ALD)",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|急速加熱装置-rta|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7At3ppPRNO3bIfDdvMFV",
+          "equipment_id": "AIST-COL016",
+          "name": "急速加熱装置(RTA)",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|等方性エッチング装置-mas-室|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6iVY8ZOMhhTn6vJKOYL7",
+          "equipment_id": "AIST-COL008",
+          "name": "等方性エッチング装置（MAS装置B室）",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|配線金属スパッタ成膜装置-スパッタ装置-室|other|solid_powder|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y1Wv9oEAHsRFnFgfAC5U",
+          "equipment_id": "AIST-COL002",
+          "name": "配線金属スパッタ成膜装置（スパッタ装置Ｂ室）",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|金属エッチング装置|other|solid_powder|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "j2HWW4UVSkBCbR44Yd4N",
+          "equipment_id": "AIST-COL006",
+          "name": "金属エッチング装置",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|6,000|レジスト塗布-現像装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YpQFpcDWeVwv3jkPXBsi",
+          "equipment_id": "AIST-COL018",
+          "name": "レジスト塗布・現像装置",
+          "category_general": "その他",
+          "category_detail": "6,000"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|6,000|自動洗浄装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "IlaJ9lHj8YPc77zBSzT2",
+          "equipment_id": "AIST-COL010",
+          "name": "自動洗浄装置",
+          "category_general": "その他",
+          "category_detail": "6,000"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|AFM|走査型プローブ顕微鏡-afm|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "3t9iIUmXonqqSHMhEMYi",
+          "equipment_id": "OSAKA-590",
+          "name": "走査型プローブ顕微鏡（AFM）",
+          "category_general": "その他",
+          "category_detail": "AFM"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9439
+}

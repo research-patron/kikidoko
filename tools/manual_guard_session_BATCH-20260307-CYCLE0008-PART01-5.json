@@ -1,0 +1,111 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0008-PART01-5",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T12:14:20.478780+00:00",
+  "updated_at": "2026-03-07T12:17:11.872964+00:00",
+  "closed_at": "2026-03-07T12:17:11.872964+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0008_part01_5.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0008-PART01-5.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "568afb922b40aada43790b1fb132d1ca0b91351f5034d430992c6900f1c2c5a6",
+    "queue_sha256_at_start": "d254a66f8601340cdef8328b7e077ef0c57cc34ca8e96b5b6ab16c0cf06117c5",
+    "queue_row_keys_sha256": "2d367190955c6d0650716684bc539ac23ea73f829c67c9ff155e8bbee2119222"
+  },
+  "queue": {
+    "target_count": 5,
+    "target_row_keys": [
+      "KUMAMOTO-list3f-07::KUMAMOTO-list3f-07",
+      "KUMAMOTO-list3f-01::KUMAMOTO-list3f-01",
+      "KUMAMOTO-list3f-09::KUMAMOTO-list3f-09",
+      "2BJbNIWamHA1K1YpVej6::2BJbNIWamHA1K1YpVej6",
+      "KUMAMOTO-list4f-08::KUMAMOTO-list4f-08"
+    ],
+    "target_rows": [
+      {
+        "row_key": "KUMAMOTO-list3f-07::KUMAMOTO-list3f-07",
+        "doc_id": "KUMAMOTO-list3f-07",
+        "equipment_id": "KUMAMOTO-list3f-07",
+        "name": "金スパッタリング・カーボン蒸着装置 株式会社日立ハイテクノロジーズ E-1010",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-01::KUMAMOTO-list3f-01",
+        "doc_id": "KUMAMOTO-list3f-01",
+        "equipment_id": "KUMAMOTO-list3f-01",
+        "name": "電子線マイクロアナライザ 株式会社島津製作所 EPMA-1720H",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list3f-09::KUMAMOTO-list3f-09",
+        "doc_id": "KUMAMOTO-list3f-09",
+        "equipment_id": "KUMAMOTO-list3f-09",
+        "name": "集束イオンビーム (Focused Ion Beam) 株式会社日立ハイテクノロジーズ NB5000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "2BJbNIWamHA1K1YpVej6::2BJbNIWamHA1K1YpVej6",
+        "doc_id": "2BJbNIWamHA1K1YpVej6",
+        "equipment_id": "2BJbNIWamHA1K1YpVej6",
+        "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：LSC-6100",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KUMAMOTO-list4f-08::KUMAMOTO-list4f-08",
+        "doc_id": "KUMAMOTO-list4f-08",
+        "equipment_id": "KUMAMOTO-list4f-08",
+        "name": "イオンスパッタリング装置 日本電子株式会社 JFC-1100E",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T12:14:20.478780+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 5
+      }
+    },
+    {
+      "at": "2026-03-07T12:14:20.577829+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T12:14:51.635268+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T12:17:11.872964+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

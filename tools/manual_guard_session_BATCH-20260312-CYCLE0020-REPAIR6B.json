@@ -1,0 +1,127 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260312-CYCLE0020-REPAIR6B",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-12T10:17:52.560952+00:00",
+  "updated_at": "2026-03-12T10:25:14.239716+00:00",
+  "closed_at": "2026-03-12T10:25:14.239716+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair6b.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR6B.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "0212f2b33ca4a2a84d017849cae586f55458abd8c873ad3eeccfe4028b857671",
+    "queue_sha256_at_start": "9c0f3d4ec461ad9a1e90df0a0a3ab1d52f4a182131b246bfeea0d98cb117a847",
+    "queue_row_keys_sha256": "66d796c19da91e42078830274e8ee2c9f0349c6b81cc8bda5ee7b55f1d8b8381"
+  },
+  "queue": {
+    "target_count": 6,
+    "target_row_keys": [
+      "eqnet-3467::eqnet-3467",
+      "eqnet-3468::eqnet-3468",
+      "eqnet-3469::eqnet-3469",
+      "eqnet-3470::eqnet-3470",
+      "eqnet-3899::eqnet-3899",
+      "eqnet-5441::eqnet-5441"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-3467::eqnet-3467",
+        "doc_id": "eqnet-3467",
+        "equipment_id": "eqnet-3467",
+        "name": "ガスクロマトグラフ GC-2014",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3468::eqnet-3468",
+        "doc_id": "eqnet-3468",
+        "equipment_id": "eqnet-3468",
+        "name": "ガスクロマトグラフ GC-2014AFE",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3469::eqnet-3469",
+        "doc_id": "eqnet-3469",
+        "equipment_id": "eqnet-3469",
+        "name": "ガスクロマトグラフ GC-8AIF",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3470::eqnet-3470",
+        "doc_id": "eqnet-3470",
+        "equipment_id": "eqnet-3470",
+        "name": "ガスクロマトグラフ GC-8AIT",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3899::eqnet-3899",
+        "doc_id": "eqnet-3899",
+        "equipment_id": "eqnet-3899",
+        "name": "(霞)DNAシーケンサー(Thermo Fisher・SeqStudio)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5441::eqnet-5441",
+        "doc_id": "eqnet-5441",
+        "equipment_id": "eqnet-5441",
+        "name": "(霞)DNAシーケンサー SeqStudio 8 Flex",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-12T10:17:52.560952+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 6
+      }
+    },
+    {
+      "at": "2026-03-12T10:17:57.432250+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-12T10:18:03.333174+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-12T10:18:23.829414+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-12T10:25:14.239716+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

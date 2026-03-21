@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-02-26T22:06:01.773822+00:00",
+  "defaults_added": 0,
+  "processed_rows_this_run": 90,
+  "applied_rows_this_run": 90,
+  "needs_manual_fix_this_run": 0,
+  "done": 100,
+  "remaining": 0,
+  "batch_size": 20,
+  "process_all": true,
+  "reviewer_default": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue.jsonl"
+}

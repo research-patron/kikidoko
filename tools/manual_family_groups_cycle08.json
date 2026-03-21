@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T16:11:37.038066+00:00",
+  "batch_id": "BATCH-20260304-CYCLE08-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-exactive-hf|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "hEe725TvPdjOJQXlSfSO",
+          "equipment_id": "hEe725TvPdjOJQXlSfSO",
+          "name": "Mass Spectrometer (Q Exactive HF)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-exactive-plus|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RO0lSDV4wKsjIeOhe0c6",
+          "equipment_id": "RO0lSDV4wKsjIeOhe0c6",
+          "name": "Mass Spectrometer (Q Exactive Plus)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-hr-icp-ms-element2|mass|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yPVas32s7hBVNJr9WUST",
+          "equipment_id": "yPVas32s7hBVNJr9WUST",
+          "name": "Mass Spectrometer (HR ICP-MS Element2)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-ltq-orbitrap|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OUAjpVYTpHk1m9HehTd8",
+          "equipment_id": "OUAjpVYTpHk1m9HehTd8",
+          "name": "Mass Spectrometer (LTQ Orbitrap)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-pegasus-4d-gcxgc|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "MwbedcPWddVfcp5uJ782",
+          "equipment_id": "MwbedcPWddVfcp5uJ782",
+          "name": "Mass Spectrometer (Pegasus 4D GCxGC)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-synapt-g2-s|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "x0OcXFytFQRfzM6IyJf7",
+          "equipment_id": "x0OcXFytFQRfzM6IyJf7",
+          "name": "Mass Spectrometer (SYNAPT G2-S)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer-timstof|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Ijdmlp0wB91P0T1HbUey",
+          "equipment_id": "Ijdmlp0wB91P0T1HbUey",
+          "name": "Mass Spectrometer (timsTOF)",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Mass Spectrometry|mass-spectrometer|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Yc2w1VqfNN4YRJQoC2T4",
+          "equipment_id": "Yc2w1VqfNN4YRJQoC2T4",
+          "name": "Mass Spectrometer",
+          "category_general": "その他",
+          "category_detail": "Mass Spectrometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|NMR Spectroscopy|electron-spin-resonance-spectrometer|nmr|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "rHDcOoscNCcuwZE3MIxT",
+          "equipment_id": "rHDcOoscNCcuwZE3MIxT",
+          "name": "Electron Spin Resonance Spectrometer",
+          "category_general": "その他",
+          "category_detail": "NMR Spectroscopy"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|NMR分析装置|固体-nmr-ssnmr|other|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WCFkxHRRYlm1CAdUuzpp",
+          "equipment_id": "AIST-ANCF018",
+          "name": "固体NMR装置 (SSNMR)",
+          "category_general": "その他",
+          "category_detail": "NMR分析装置"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9389
+}

@@ -1,0 +1,159 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE14-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T22:21:18.893238+00:00",
+  "updated_at": "2026-03-03T22:37:24.568292+00:00",
+  "closed_at": "2026-03-03T22:37:24.568292+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle14_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE14-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "38b46f610b5659ff81976b07fd9588b5c78de34d4581eba239944e723142bdd2",
+    "queue_sha256_at_start": "582af599d163fd2af5bb7645790f3b96c479bb2d6332707bfb119add01eb8c8e",
+    "queue_row_keys_sha256": "dc7fc96d24c2c3eeb2d24f6055cd1875193a6db028a16409ae987780b042c790"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "UCTHaThZOYpb2FIZasnh::HOKUDAI-AP-100241",
+      "6dv4RbZVKlPdV1jdg7aL::HOKUDAI-AP-100093",
+      "9qEXz9HIgreGPViETWUe::HOKUDAI-AP-100380",
+      "5IHbc7QCSdX9xIbNuHje::HOKUDAI-AP-100054",
+      "ImkrSXKN1wyA7ICH0F4c::HOKUDAI-AP-100366",
+      "Znwq3VEGbfDPaFdCCFf4::HOKUDAI-AP-100135",
+      "S2WQ3MLgZZ8huN9F7K23::HOKUDAI-AP-100149",
+      "ArCvukHXsl2yKDbrJsvK::HOKUDAI-AP-100388",
+      "CFyNpZifkxufDQQeo6F2::HOKUDAI-AP-100139",
+      "KRDirUdP41OB80PqTLy8::HOKUDAI-AP-100391"
+    ],
+    "target_rows": [
+      {
+        "row_key": "UCTHaThZOYpb2FIZasnh::HOKUDAI-AP-100241",
+        "doc_id": "UCTHaThZOYpb2FIZasnh",
+        "equipment_id": "HOKUDAI-AP-100241",
+        "name": "小動物用PET・SPECT・CT装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "6dv4RbZVKlPdV1jdg7aL::HOKUDAI-AP-100093",
+        "doc_id": "6dv4RbZVKlPdV1jdg7aL",
+        "equipment_id": "HOKUDAI-AP-100093",
+        "name": "小動物用X線CT装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "9qEXz9HIgreGPViETWUe::HOKUDAI-AP-100380",
+        "doc_id": "9qEXz9HIgreGPViETWUe",
+        "equipment_id": "HOKUDAI-AP-100380",
+        "name": "小動物用ベンチトップマイクロCT",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5IHbc7QCSdX9xIbNuHje::HOKUDAI-AP-100054",
+        "doc_id": "5IHbc7QCSdX9xIbNuHje",
+        "equipment_id": "HOKUDAI-AP-100054",
+        "name": "ナノスケールX線構造解析装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ImkrSXKN1wyA7ICH0F4c::HOKUDAI-AP-100366",
+        "doc_id": "ImkrSXKN1wyA7ICH0F4c",
+        "equipment_id": "HOKUDAI-AP-100366",
+        "name": "小角・広角X線散乱装置（SAXS／WAXS）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Znwq3VEGbfDPaFdCCFf4::HOKUDAI-AP-100135",
+        "doc_id": "Znwq3VEGbfDPaFdCCFf4",
+        "equipment_id": "HOKUDAI-AP-100135",
+        "name": "極低温X線４軸型回折計",
+        "papers_count": 2
+      },
+      {
+        "row_key": "S2WQ3MLgZZ8huN9F7K23::HOKUDAI-AP-100149",
+        "doc_id": "S2WQ3MLgZZ8huN9F7K23",
+        "equipment_id": "HOKUDAI-AP-100149",
+        "name": "粉末X線回折装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ArCvukHXsl2yKDbrJsvK::HOKUDAI-AP-100388",
+        "doc_id": "ArCvukHXsl2yKDbrJsvK",
+        "equipment_id": "HOKUDAI-AP-100388",
+        "name": "X線回折装置(試料吹付低温装置付)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "CFyNpZifkxufDQQeo6F2::HOKUDAI-AP-100139",
+        "doc_id": "CFyNpZifkxufDQQeo6F2",
+        "equipment_id": "HOKUDAI-AP-100139",
+        "name": "X線回折装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "KRDirUdP41OB80PqTLy8::HOKUDAI-AP-100391",
+        "doc_id": "KRDirUdP41OB80PqTLy8",
+        "equipment_id": "HOKUDAI-AP-100391",
+        "name": "マイクロフォーカスX線透視装置",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T22:21:18.893238+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T22:21:18.991415+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:34:49.093746+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:35:11.545055+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:37:24.568292+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

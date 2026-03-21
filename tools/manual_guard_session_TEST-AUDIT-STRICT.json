@@ -1,0 +1,73 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "TEST-AUDIT-STRICT",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T12:25:23.732749+00:00",
+  "updated_at": "2026-03-03T12:25:32.814638+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/_tmp_queue_family.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_TEST-AUDIT-STRICT.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "088cb491a4be064ee443a9581dd022fe1cdb1c2ab40c44fcef86d659eeff59d2",
+    "queue_sha256_at_start": "8bacdeeeaa36b4f46386bfff8b5043e6cb50a9e2625f5169dcd6008c9ea14f95",
+    "queue_row_keys_sha256": "0610510b177d744715ad761fcc3579e08f70a04ddc6b8fc37754821d0db2f97e"
+  },
+  "queue": {
+    "target_count": 3,
+    "target_row_keys": [
+      "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+      "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+      "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B"
+    ],
+    "target_rows": [
+      {
+        "row_key": "u4a3a0lcL4d7JBXLv7Kw::u4a3a0lcL4d7JBXLv7Kw",
+        "doc_id": "u4a3a0lcL4d7JBXLv7Kw",
+        "equipment_id": "u4a3a0lcL4d7JBXLv7Kw",
+        "name": "生体分子精製装置AKTAexplorer10S",
+        "papers_count": 0
+      },
+      {
+        "row_key": "t3TGtPLqzFKGKwOsBnKL::t3TGtPLqzFKGKwOsBnKL",
+        "doc_id": "t3TGtPLqzFKGKwOsBnKL",
+        "equipment_id": "t3TGtPLqzFKGKwOsBnKL",
+        "name": "フレンチプレス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "diMgSNfpWiYbHVK8qj3B::diMgSNfpWiYbHVK8qj3B",
+        "doc_id": "diMgSNfpWiYbHVK8qj3B",
+        "equipment_id": "diMgSNfpWiYbHVK8qj3B",
+        "name": "酸化炉",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 1,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T12:25:23.732749+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 3
+      }
+    },
+    {
+      "at": "2026-03-03T12:25:32.814638+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

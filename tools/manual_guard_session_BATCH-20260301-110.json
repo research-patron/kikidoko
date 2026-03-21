@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-110",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T10:49:37.062343+00:00",
+  "updated_at": "2026-03-01T10:50:35.033892+00:00",
+  "closed_at": "2026-03-01T10:50:35.033892+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch110.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-110.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "f0ef76754837c014ba37412b3962c58fc834fba490c7c0be990b14adc35ad017",
+    "queue_sha256_at_start": "d6d2908d21d8f0e1b38aa09a38d1c09670ba5ffbe889f8a6fa2a84ebfcd9db2b",
+    "queue_row_keys_sha256": "7edd9567ecc88118ddb6c93522b9f1f06b1663004319dd0a5c5dc966f0690d05"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "eqnet-2558::eqnet-2558",
+      "eqnet-2550::eqnet-2550",
+      "eqnet-2533::eqnet-2533",
+      "eqnet-2551::eqnet-2551",
+      "eqnet-2557::eqnet-2557",
+      "eqnet-2549::eqnet-2549",
+      "eqnet-4063::eqnet-4063",
+      "eqnet-2510::eqnet-2510",
+      "eqnet-2511::eqnet-2511",
+      "eqnet-2542::eqnet-2542",
+      "eqnet-2543::eqnet-2543",
+      "eqnet-2515::eqnet-2515",
+      "eqnet-2524::eqnet-2524",
+      "eqnet-4059::eqnet-4059",
+      "eqnet-4060::eqnet-4060",
+      "eqnet-2514::eqnet-2514",
+      "eqnet-2539::eqnet-2539",
+      "eqnet-2525::eqnet-2525",
+      "eqnet-4064::eqnet-4064",
+      "eqnet-2069::eqnet-2069",
+      "eqnet-2520::eqnet-2520",
+      "eqnet-2137::eqnet-2137",
+      "eqnet-2519::eqnet-2519",
+      "eqnet-2534::eqnet-2534",
+      "eqnet-4240::eqnet-4240",
+      "eqnet-2544::eqnet-2544",
+      "eqnet-4216::eqnet-4216",
+      "eqnet-2526::eqnet-2526",
+      "eqnet-2535::eqnet-2535",
+      "eqnet-2523::eqnet-2523",
+      "eqnet-2538::eqnet-2538",
+      "eqnet-2545::eqnet-2545",
+      "eqnet-2518::eqnet-2518",
+      "eqnet-2529::eqnet-2529",
+      "eqnet-2516::eqnet-2516",
+      "eqnet-2509::eqnet-2509",
+      "eqnet-2507::eqnet-2507",
+      "eqnet-713::eqnet-713",
+      "eqnet-712::eqnet-712",
+      "eqnet-4407::eqnet-4407",
+      "eqnet-4271::eqnet-4271",
+      "eqnet-3516::eqnet-3516",
+      "eqnet-3933::eqnet-3933",
+      "eqnet-3934::eqnet-3934",
+      "eqnet-1702::eqnet-1702",
+      "eqnet-3802::eqnet-3802",
+      "eqnet-1782::eqnet-1782",
+      "eqnet-3544::eqnet-3544",
+      "eqnet-3517::eqnet-3517",
+      "eqnet-3912::eqnet-3912",
+      "eqnet-4687::eqnet-4687",
+      "eqnet-3921::eqnet-3921",
+      "eqnet-4311::eqnet-4311",
+      "eqnet-1814::eqnet-1814",
+      "eqnet-3941::eqnet-3941",
+      "eqnet-4147::eqnet-4147",
+      "eqnet-1694::eqnet-1694",
+      "eqnet-5389::eqnet-5389",
+      "eqnet-1703::eqnet-1703",
+      "eqnet-3939::eqnet-3939",
+      "eqnet-3925::eqnet-3925",
+      "eqnet-3924::eqnet-3924",
+      "eqnet-4331::eqnet-4331",
+      "eqnet-1803::eqnet-1803",
+      "eqnet-1802::eqnet-1802",
+      "eqnet-4043::eqnet-4043",
+      "eqnet-4080::eqnet-4080",
+      "eqnet-4330::eqnet-4330",
+      "eqnet-2053::eqnet-2053",
+      "eqnet-3927::eqnet-3927",
+      "eqnet-3928::eqnet-3928",
+      "eqnet-3929::eqnet-3929",
+      "eqnet-3932::eqnet-3932",
+      "eqnet-3931::eqnet-3931",
+      "eqnet-3649::eqnet-3649",
+      "eqnet-3647::eqnet-3647",
+      "eqnet-3919::eqnet-3919",
+      "eqnet-3926::eqnet-3926",
+      "eqnet-3922::eqnet-3922",
+      "eqnet-3909::eqnet-3909",
+      "eqnet-3519::eqnet-3519",
+      "eqnet-3940::eqnet-3940",
+      "eqnet-5239::eqnet-5239",
+      "eqnet-3904::eqnet-3904",
+      "eqnet-1416::eqnet-1416",
+      "eqnet-3908::eqnet-3908",
+      "eqnet-4269::eqnet-4269",
+      "eqnet-3938::eqnet-3938",
+      "eqnet-4044::eqnet-4044",
+      "5mZyglEavQQXECVqZxNu::5mZyglEavQQXECVqZxNu",
+      "eqnet-3907::eqnet-3907",
+      "eqnet-3911::eqnet-3911",
+      "eqnet-4689::eqnet-4689",
+      "eqnet-4027::eqnet-4027",
+      "eqnet-3804::eqnet-3804",
+      "eqnet-3906::eqnet-3906",
+      "eqnet-3917::eqnet-3917",
+      "eqnet-3916::eqnet-3916",
+      "eqnet-4090::eqnet-4090",
+      "eqnet-4842::eqnet-4842"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-2558::eqnet-2558",
+        "doc_id": "eqnet-2558",
+        "equipment_id": "eqnet-2558",
+        "name": "ダイシング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2550::eqnet-2550",
+        "doc_id": "eqnet-2550",
+        "equipment_id": "eqnet-2550",
+        "name": "ダイボンダ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2533::eqnet-2533",
+        "doc_id": "eqnet-2533",
+        "equipment_id": "eqnet-2533",
+        "name": "ドライエッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2551::eqnet-2551",
+        "doc_id": "eqnet-2551",
+        "equipment_id": "eqnet-2551",
+        "name": "ナノインプリントシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2557::eqnet-2557",
+        "doc_id": "eqnet-2557",
+        "equipment_id": "eqnet-2557",
+        "name": "ナノインプリント装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2549::eqnet-2549",
+        "doc_id": "eqnet-2549",
+        "equipment_id": "eqnet-2549",
+        "name": "ボールワイヤボンダ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4063::eqnet-4063",
+        "doc_id": "eqnet-4063",
+        "equipment_id": "eqnet-4063",
+        "name": "マイクロ波プラズマCVD装置(SiN) 東京エレクトロン(LT-PECVD)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2510::eqnet-2510",
+        "doc_id": "eqnet-2510",
+        "equipment_id": "eqnet-2510",
+        "name": "レジスト塗布装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2511::eqnet-2511",
+        "doc_id": "eqnet-2511",
+        "equipment_id": "eqnet-2511",
+        "name": "レジスト現像装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2542::eqnet-2542",
+        "doc_id": "eqnet-2542",
+        "equipment_id": "eqnet-2542",
+        "name": "レーザアニール装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2543::eqnet-2543",
+        "doc_id": "eqnet-2543",
+        "equipment_id": "eqnet-2543",
+        "name": "レーザダイシング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2515::eqnet-2515",
+        "doc_id": "eqnet-2515",
+        "equipment_id": "eqnet-2515",
+        "name": "両面マスクアライナー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2524::eqnet-2524",
+        "doc_id": "eqnet-2524",
+        "equipment_id": "eqnet-2524",
+        "name": "両面マスクアライナ露光装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4059::eqnet-4059",
+        "doc_id": "eqnet-4059",
+        "equipment_id": "eqnet-4059",
+        "name": "中電流イオン注入装置 日新イオン機器(EXCEED2300AH)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4060::eqnet-4060",
+        "doc_id": "eqnet-4060",
+        "equipment_id": "eqnet-4060",
+        "name": "低温拡散炉、水素処理炉 東京エレクトロン(BEOL炉(α-8SE))",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2514::eqnet-2514",
+        "doc_id": "eqnet-2514",
+        "equipment_id": "eqnet-2514",
+        "name": "厚膜フォトレジスト用スピンコーティング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2539::eqnet-2539",
+        "doc_id": "eqnet-2539",
+        "equipment_id": "eqnet-2539",
+        "name": "基板接合装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2525::eqnet-2525",
+        "doc_id": "eqnet-2525",
+        "equipment_id": "eqnet-2525",
+        "name": "大面積超高精度電子線描画装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4064::eqnet-4064",
+        "doc_id": "eqnet-4064",
+        "equipment_id": "eqnet-4064",
+        "name": "常圧CVD装置 TEMPRESS(PYROX-216E)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2069::eqnet-2069",
+        "doc_id": "eqnet-2069",
+        "equipment_id": "eqnet-2069",
+        "name": "微粉末材料フッ素化装置(特注)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2520::eqnet-2520",
+        "doc_id": "eqnet-2520",
+        "equipment_id": "eqnet-2520",
+        "name": "有機現像液型レジスト現像装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2137::eqnet-2137",
+        "doc_id": "eqnet-2137",
+        "equipment_id": "eqnet-2137",
+        "name": "液体窒素供給システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2519::eqnet-2519",
+        "doc_id": "eqnet-2519",
+        "equipment_id": "eqnet-2519",
+        "name": "液滴吐出描画装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2534::eqnet-2534",
+        "doc_id": "eqnet-2534",
+        "equipment_id": "eqnet-2534",
+        "name": "深堀りドライエッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4240::eqnet-4240",
+        "doc_id": "eqnet-4240",
+        "equipment_id": "eqnet-4240",
+        "name": "熱拡散測定装置 Netzsch(LFA467)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2544::eqnet-2544",
+        "doc_id": "eqnet-2544",
+        "equipment_id": "eqnet-2544",
+        "name": "真空マウンター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4216::eqnet-4216",
+        "doc_id": "eqnet-4216",
+        "equipment_id": "eqnet-4216",
+        "name": "真空定温乾燥機(ADP300) ヤマト科学(ADP300)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2526::eqnet-2526",
+        "doc_id": "eqnet-2526",
+        "equipment_id": "eqnet-2526",
+        "name": "真空蒸着装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2535::eqnet-2535",
+        "doc_id": "eqnet-2535",
+        "equipment_id": "eqnet-2535",
+        "name": "磁気中性線放電ドライエッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2523::eqnet-2523",
+        "doc_id": "eqnet-2523",
+        "equipment_id": "eqnet-2523",
+        "name": "移動マスク紫外線露光装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2538::eqnet-2538",
+        "doc_id": "eqnet-2538",
+        "equipment_id": "eqnet-2538",
+        "name": "紫外線ナノインプリントボンドアライメント装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2545::eqnet-2545",
+        "doc_id": "eqnet-2545",
+        "equipment_id": "eqnet-2545",
+        "name": "紫外線照射装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2518::eqnet-2518",
+        "doc_id": "eqnet-2518",
+        "equipment_id": "eqnet-2518",
+        "name": "紫外線露光装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2529::eqnet-2529",
+        "doc_id": "eqnet-2529",
+        "equipment_id": "eqnet-2529",
+        "name": "電子線蒸着装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2516::eqnet-2516",
+        "doc_id": "eqnet-2516",
+        "equipment_id": "eqnet-2516",
+        "name": "露光装置(ステッパー)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2509::eqnet-2509",
+        "doc_id": "eqnet-2509",
+        "equipment_id": "eqnet-2509",
+        "name": "高速マスクレス露光装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2507::eqnet-2507",
+        "doc_id": "eqnet-2507",
+        "equipment_id": "eqnet-2507",
+        "name": "高速高精度電子ビーム描画装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-713::eqnet-713",
+        "doc_id": "eqnet-713",
+        "equipment_id": "eqnet-713",
+        "name": "(工)多目的載荷装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-712::eqnet-712",
+        "doc_id": "eqnet-712",
+        "equipment_id": "eqnet-712",
+        "name": "(工)構造物加力載荷システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4407::eqnet-4407",
+        "doc_id": "eqnet-4407",
+        "equipment_id": "eqnet-4407",
+        "name": "(工)船型試験水槽(曳航電車・造波機)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4271::eqnet-4271",
+        "doc_id": "eqnet-4271",
+        "equipment_id": "eqnet-4271",
+        "name": "2000kN圧縮試験装置 前川試験機製作所",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3516::eqnet-3516",
+        "doc_id": "eqnet-3516",
+        "equipment_id": "eqnet-3516",
+        "name": "20kN油圧式サーボパルサ(疲労試験機)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3933::eqnet-3933",
+        "doc_id": "eqnet-3933",
+        "equipment_id": "eqnet-3933",
+        "name": "650ton中型射出成形機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3934::eqnet-3934",
+        "doc_id": "eqnet-3934",
+        "equipment_id": "eqnet-3934",
+        "name": "650ton中型射出成形機金型",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1702::eqnet-1702",
+        "doc_id": "eqnet-1702",
+        "equipment_id": "eqnet-1702",
+        "name": "6軸加圧装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3802::eqnet-3802",
+        "doc_id": "eqnet-3802",
+        "equipment_id": "eqnet-3802",
+        "name": "AVIZO",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1782::eqnet-1782",
+        "doc_id": "eqnet-1782",
+        "equipment_id": "eqnet-1782",
+        "name": "ウエットブラスト式磨耗試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3544::eqnet-3544",
+        "doc_id": "eqnet-3544",
+        "equipment_id": "eqnet-3544",
+        "name": "キャピラリーレオメーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3517::eqnet-3517",
+        "doc_id": "eqnet-3517",
+        "equipment_id": "eqnet-3517",
+        "name": "クリープ試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3912::eqnet-3912",
+        "doc_id": "eqnet-3912",
+        "equipment_id": "eqnet-3912",
+        "name": "サンプル成形用マルチプレス装置システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4687::eqnet-4687",
+        "doc_id": "eqnet-4687",
+        "equipment_id": "eqnet-4687",
+        "name": "シャルピー衝撃試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3921::eqnet-3921",
+        "doc_id": "eqnet-3921",
+        "equipment_id": "eqnet-3921",
+        "name": "ダイヤモンドワイヤーソー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4311::eqnet-4311",
+        "doc_id": "eqnet-4311",
+        "equipment_id": "eqnet-4311",
+        "name": "バッチ発泡工程可視化装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1814::eqnet-1814",
+        "doc_id": "eqnet-1814",
+        "equipment_id": "eqnet-1814",
+        "name": "ホットプレス",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3941::eqnet-3941",
+        "doc_id": "eqnet-3941",
+        "equipment_id": "eqnet-3941",
+        "name": "ポリウレタン高圧注入成形システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4147::eqnet-4147",
+        "doc_id": "eqnet-4147",
+        "equipment_id": "eqnet-4147",
+        "name": "マクロトライボロジー試験機 BrukerAX(UMT3-HTRD)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1694::eqnet-1694",
+        "doc_id": "eqnet-1694",
+        "equipment_id": "eqnet-1694",
+        "name": "マグマ物性測定システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5389::eqnet-5389",
+        "doc_id": "eqnet-5389",
+        "equipment_id": "eqnet-5389",
+        "name": "メルトフローインデクサ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1703::eqnet-1703",
+        "doc_id": "eqnet-1703",
+        "equipment_id": "eqnet-1703",
+        "name": "下部マントル探査装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3939::eqnet-3939",
+        "doc_id": "eqnet-3939",
+        "equipment_id": "eqnet-3939",
+        "name": "不織布形成/解繊装置システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3925::eqnet-3925",
+        "doc_id": "eqnet-3925",
+        "equipment_id": "eqnet-3925",
+        "name": "不織布形成_可視化オープナーモデル装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3924::eqnet-3924",
+        "doc_id": "eqnet-3924",
+        "equipment_id": "eqnet-3924",
+        "name": "不織布形成_可視化ローラーカードモデル装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4331::eqnet-4331",
+        "doc_id": "eqnet-4331",
+        "equipment_id": "eqnet-4331",
+        "name": "二軸混練押出し機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1803::eqnet-1803",
+        "doc_id": "eqnet-1803",
+        "equipment_id": "eqnet-1803",
+        "name": "亜臨界水環境試験装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1802::eqnet-1802",
+        "doc_id": "eqnet-1802",
+        "equipment_id": "eqnet-1802",
+        "name": "低ひずみ速度微小強度評価システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4043::eqnet-4043",
+        "doc_id": "eqnet-4043",
+        "equipment_id": "eqnet-4043",
+        "name": "低乱熱伝達風洞 荏原製作所(単路回流型風洞)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4080::eqnet-4080",
+        "doc_id": "eqnet-4080",
+        "equipment_id": "eqnet-4080",
+        "name": "低温プローバ ナガセ電子機器(ナガセテクノエンジニアリング)(ARK-LIPS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4330::eqnet-4330",
+        "doc_id": "eqnet-4330",
+        "equipment_id": "eqnet-4330",
+        "name": "偏光顕微鏡(ホットステージ付きデジタルマイクロスコープ)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2053::eqnet-2053",
+        "doc_id": "eqnet-2053",
+        "equipment_id": "eqnet-2053",
+        "name": "充放電装置(北斗電工(株)・ハイレートサイクル部HJB0550SD8H + 大伝流印加部HJB1012SD1H + 標準サイクル部HJB0505SD8H)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3927::eqnet-3927",
+        "doc_id": "eqnet-3927",
+        "equipment_id": "eqnet-3927",
+        "name": "凍結乾燥機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3928::eqnet-3928",
+        "doc_id": "eqnet-3928",
+        "equipment_id": "eqnet-3928",
+        "name": "凍結粉砕機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3929::eqnet-3929",
+        "doc_id": "eqnet-3929",
+        "equipment_id": "eqnet-3929",
+        "name": "加圧(熱)延伸機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3932::eqnet-3932",
+        "doc_id": "eqnet-3932",
+        "equipment_id": "eqnet-3932",
+        "name": "加硫度評価",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3931::eqnet-3931",
+        "doc_id": "eqnet-3931",
+        "equipment_id": "eqnet-3931",
+        "name": "加硫機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3649::eqnet-3649",
+        "doc_id": "eqnet-3649",
+        "equipment_id": "eqnet-3649",
+        "name": "動的吸水率測定",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3647::eqnet-3647",
+        "doc_id": "eqnet-3647",
+        "equipment_id": "eqnet-3647",
+        "name": "化学吸着分析",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3919::eqnet-3919",
+        "doc_id": "eqnet-3919",
+        "equipment_id": "eqnet-3919",
+        "name": "卓上射出成形機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3926::eqnet-3926",
+        "doc_id": "eqnet-3926",
+        "equipment_id": "eqnet-3926",
+        "name": "噴霧乾燥機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3922::eqnet-3922",
+        "doc_id": "eqnet-3922",
+        "equipment_id": "eqnet-3922",
+        "name": "回転式ミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3909::eqnet-3909",
+        "doc_id": "eqnet-3909",
+        "equipment_id": "eqnet-3909",
+        "name": "回転枠付恒温器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3519::eqnet-3519",
+        "doc_id": "eqnet-3519",
+        "equipment_id": "eqnet-3519",
+        "name": "固体粘弾性測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3940::eqnet-3940",
+        "doc_id": "eqnet-3940",
+        "equipment_id": "eqnet-3940",
+        "name": "塗装ブース",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5239::eqnet-5239",
+        "doc_id": "eqnet-5239",
+        "equipment_id": "eqnet-5239",
+        "name": "大型凍結粉砕機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3904::eqnet-3904",
+        "doc_id": "eqnet-3904",
+        "equipment_id": "eqnet-3904",
+        "name": "大型恒温恒湿槽",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1416::eqnet-1416",
+        "doc_id": "eqnet-1416",
+        "equipment_id": "eqnet-1416",
+        "name": "大型複合材プレス成形システム 川崎油工(株)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3908::eqnet-3908",
+        "doc_id": "eqnet-3908",
+        "equipment_id": "eqnet-3908",
+        "name": "安全扉付恒温器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4269::eqnet-4269",
+        "doc_id": "eqnet-4269",
+        "equipment_id": "eqnet-4269",
+        "name": "実荷重多点載荷システム 三菱重工業",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3938::eqnet-3938",
+        "doc_id": "eqnet-3938",
+        "equipment_id": "eqnet-3938",
+        "name": "射出圧縮成形金型",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4044::eqnet-4044",
+        "doc_id": "eqnet-4044",
+        "equipment_id": "eqnet-4044",
+        "name": "小型低乱風洞 荏原製作所(単路回流型)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5mZyglEavQQXECVqZxNu::5mZyglEavQQXECVqZxNu",
+        "doc_id": "5mZyglEavQQXECVqZxNu",
+        "equipment_id": "5mZyglEavQQXECVqZxNu",
+        "name": "小型熱プレス機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3907::eqnet-3907",
+        "doc_id": "eqnet-3907",
+        "equipment_id": "eqnet-3907",
+        "name": "恒温恒湿槽",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3911::eqnet-3911",
+        "doc_id": "eqnet-3911",
+        "equipment_id": "eqnet-3911",
+        "name": "恒温水槽",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4689::eqnet-4689",
+        "doc_id": "eqnet-4689",
+        "equipment_id": "eqnet-4689",
+        "name": "押し出し機等用乾燥機_DX602",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4027::eqnet-4027",
+        "doc_id": "eqnet-4027",
+        "equipment_id": "eqnet-4027",
+        "name": "摩擦試験機 Bruker AXS(UNMT-1MT-WS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3804::eqnet-3804",
+        "doc_id": "eqnet-3804",
+        "equipment_id": "eqnet-3804",
+        "name": "放射率測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3906::eqnet-3906",
+        "doc_id": "eqnet-3906",
+        "equipment_id": "eqnet-3906",
+        "name": "材料制振性測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3917::eqnet-3917",
+        "doc_id": "eqnet-3917",
+        "equipment_id": "eqnet-3917",
+        "name": "材料吸音率測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3916::eqnet-3916",
+        "doc_id": "eqnet-3916",
+        "equipment_id": "eqnet-3916",
+        "name": "材料音響特性測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4090::eqnet-4090",
+        "doc_id": "eqnet-4090",
+        "equipment_id": "eqnet-4090",
+        "name": "水銀プローブ 雄山(CVmap92A)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4842::eqnet-4842",
+        "doc_id": "eqnet-4842",
+        "equipment_id": "eqnet-4842",
+        "name": "永久磁石式3次元地震波加振計測総合システム",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T10:49:37.062343+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:37.116745+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:37.681008+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:40.318069+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:42.847330+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:45.375967+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:47.906722+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:50.443653+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:53.025041+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:55.566957+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:49:58.107264+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:50:00.650307+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:50:35.033892+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

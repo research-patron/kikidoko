@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260303-CYCLE02-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T12:55:16.160073+00:00",
+  "updated_at": "2026-03-03T13:17:00.670479+00:00",
+  "closed_at": "2026-03-03T13:17:00.670479+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle02_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-CYCLE02-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "01d18a9c010d3648d2a38cb749aa7a218aaa8440800ab6daf4b2bbd386a82171",
+    "queue_sha256_at_start": "e8dc1967a806c45bd5ff80f9d73cad1a88dd047d92af0d804c9a012ead475e6a",
+    "queue_row_keys_sha256": "8483858432d10971c34644dd15db8ca7dd96bfbffb137d49eb3925339578178c"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "YTf2CxqQVg727AArwerN::YTf2CxqQVg727AArwerN",
+      "dfhSUjF7G7AFdBgqzF7B::dfhSUjF7G7AFdBgqzF7B",
+      "AFZ0X9Z0XX3TwLmcSCKR::AFZ0X9Z0XX3TwLmcSCKR",
+      "F6TUjy60Qz1otTHODI9x::F6TUjy60Qz1otTHODI9x",
+      "sHzQm2a8ILlhSMS5z1F7::AIST-COL020",
+      "JCYT4Y9DcYVXQ8cRD47z::TOKUSHIMA-72",
+      "xBbUhgNdmfD2OEmiWf0I::AIST-COL007",
+      "AQC680cRlhRyTgw8KGnO::AIST-COL001",
+      "V2iy5M6sGh9pmFnV1gvN::AIST-COL021",
+      "neOW4fbLHXDhcJMtBbjX::AIST-COL003"
+    ],
+    "target_rows": [
+      {
+        "row_key": "YTf2CxqQVg727AArwerN::YTf2CxqQVg727AArwerN",
+        "doc_id": "YTf2CxqQVg727AArwerN",
+        "equipment_id": "YTf2CxqQVg727AArwerN",
+        "name": "ｽｷｬﾅｰﾀｲﾌﾟ画像解析装置(FLA)－型式：Typhoon FLA 7000",
+        "papers_count": 3
+      },
+      {
+        "row_key": "dfhSUjF7G7AFdBgqzF7B::dfhSUjF7G7AFdBgqzF7B",
+        "doc_id": "dfhSUjF7G7AFdBgqzF7B",
+        "equipment_id": "dfhSUjF7G7AFdBgqzF7B",
+        "name": "ﾊﾞｲｵｲﾒｰｼﾞﾝｸﾞｱﾅﾗｲｻﾞｰ(BAS)－型式：BAS-2500",
+        "papers_count": 1
+      },
+      {
+        "row_key": "AFZ0X9Z0XX3TwLmcSCKR::AFZ0X9Z0XX3TwLmcSCKR",
+        "doc_id": "AFZ0X9Z0XX3TwLmcSCKR",
+        "equipment_id": "AFZ0X9Z0XX3TwLmcSCKR",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM7DUO",
+        "papers_count": 2
+      },
+      {
+        "row_key": "F6TUjy60Qz1otTHODI9x::F6TUjy60Qz1otTHODI9x",
+        "doc_id": "F6TUjy60Qz1otTHODI9x",
+        "equipment_id": "F6TUjy60Qz1otTHODI9x",
+        "name": "粒子径・分子量測定装置－型式：ZETASIZER Nano-S",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sHzQm2a8ILlhSMS5z1F7::AIST-COL020",
+        "doc_id": "sHzQm2a8ILlhSMS5z1F7",
+        "equipment_id": "AIST-COL020",
+        "name": "エピタキシャル成長装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JCYT4Y9DcYVXQ8cRD47z::TOKUSHIMA-72",
+        "doc_id": "JCYT4Y9DcYVXQ8cRD47z",
+        "equipment_id": "TOKUSHIMA-72",
+        "name": "光造形3Dプリンタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "xBbUhgNdmfD2OEmiWf0I::AIST-COL007",
+        "doc_id": "xBbUhgNdmfD2OEmiWf0I",
+        "equipment_id": "AIST-COL007",
+        "name": "アッシング装置（MAS装置A室）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "AQC680cRlhRyTgw8KGnO::AIST-COL001",
+        "doc_id": "AQC680cRlhRyTgw8KGnO",
+        "equipment_id": "AIST-COL001",
+        "name": "ゲート金属スパッタ成膜装置（スパッタ装置Ａ室）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "V2iy5M6sGh9pmFnV1gvN::AIST-COL021",
+        "doc_id": "V2iy5M6sGh9pmFnV1gvN",
+        "equipment_id": "AIST-COL021",
+        "name": "フラッシュランプアニール装置(FLA)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "neOW4fbLHXDhcJMtBbjX::AIST-COL003",
+        "doc_id": "neOW4fbLHXDhcJMtBbjX",
+        "equipment_id": "AIST-COL003",
+        "name": "プラズマポリシリコン成膜装置",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T12:55:16.160073+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T12:55:22.510565+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T13:13:02.371532+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T13:17:00.670479+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

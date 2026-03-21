@@ -1,0 +1,223 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260305-CYCLE0002-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-05T13:10:53.460004+00:00",
+  "updated_at": "2026-03-05T22:57:52.388770+00:00",
+  "closed_at": "2026-03-05T22:57:52.388770+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0002_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260305-CYCLE0002-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "d245bfa59a23eee82c95b5892f3d6099428d043769b68d6671f97135e3200dbc",
+    "queue_sha256_at_start": "2b033e2b7e87637567254564aa4014aadafa56c271f3a9d7206405be3a3224bd",
+    "queue_row_keys_sha256": "7a975fb173333ffa1fd2b3f7dbe2c538b7233e7551f3c59f9b230f569d7e2b4a"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+      "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+      "YpiYi5rGQqcX6ofJF4lt::YpiYi5rGQqcX6ofJF4lt",
+      "5X6ZriO6yzTLj79YxcNC::5X6ZriO6yzTLj79YxcNC",
+      "OC2X0czptgbbPUaWY00k::OC2X0czptgbbPUaWY00k",
+      "znbxD1h1tRk1CEbqpyFo::znbxD1h1tRk1CEbqpyFo",
+      "wi61TzbjV4NwlsUe3L1R::wi61TzbjV4NwlsUe3L1R",
+      "repVWVGli4uWJD2ZwH4R::repVWVGli4uWJD2ZwH4R",
+      "ubP9vgVGw0QLZb9Sr2Ko::ubP9vgVGw0QLZb9Sr2Ko",
+      "oNcfvHTFhIAfmMBGAXQv::oNcfvHTFhIAfmMBGAXQv"
+    ],
+    "target_rows": [
+      {
+        "row_key": "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+        "doc_id": "9VRmb61YZlTBbAkqsd2X",
+        "equipment_id": "9VRmb61YZlTBbAkqsd2X",
+        "name": "超遠心機 －型式： himac CP100WX",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+        "doc_id": "ifTzD5oXL358aBdBmbfo",
+        "equipment_id": "ifTzD5oXL358aBdBmbfo",
+        "name": "小型超遠心機 －型式： himac CS150GX",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YpiYi5rGQqcX6ofJF4lt::YpiYi5rGQqcX6ofJF4lt",
+        "doc_id": "YpiYi5rGQqcX6ofJF4lt",
+        "equipment_id": "YpiYi5rGQqcX6ofJF4lt",
+        "name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5X6ZriO6yzTLj79YxcNC::5X6ZriO6yzTLj79YxcNC",
+        "doc_id": "5X6ZriO6yzTLj79YxcNC",
+        "equipment_id": "5X6ZriO6yzTLj79YxcNC",
+        "name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OC2X0czptgbbPUaWY00k::OC2X0czptgbbPUaWY00k",
+        "doc_id": "OC2X0czptgbbPUaWY00k",
+        "equipment_id": "OC2X0czptgbbPUaWY00k",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+        "papers_count": 0
+      },
+      {
+        "row_key": "znbxD1h1tRk1CEbqpyFo::znbxD1h1tRk1CEbqpyFo",
+        "doc_id": "znbxD1h1tRk1CEbqpyFo",
+        "equipment_id": "znbxD1h1tRk1CEbqpyFo",
+        "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wi61TzbjV4NwlsUe3L1R::wi61TzbjV4NwlsUe3L1R",
+        "doc_id": "wi61TzbjV4NwlsUe3L1R",
+        "equipment_id": "wi61TzbjV4NwlsUe3L1R",
+        "name": "ｽｷｬﾅｰﾀｲﾌﾟ画像解析装置(FLA)－型式：Typhoon FLA 7000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "repVWVGli4uWJD2ZwH4R::repVWVGli4uWJD2ZwH4R",
+        "doc_id": "repVWVGli4uWJD2ZwH4R",
+        "equipment_id": "repVWVGli4uWJD2ZwH4R",
+        "name": "ﾊﾞｲｵｲﾒｰｼﾞﾝｸﾞｱﾅﾗｲｻﾞｰ(BAS)－型式：BAS-2500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ubP9vgVGw0QLZb9Sr2Ko::ubP9vgVGw0QLZb9Sr2Ko",
+        "doc_id": "ubP9vgVGw0QLZb9Sr2Ko",
+        "equipment_id": "ubP9vgVGw0QLZb9Sr2Ko",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM7DUO",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oNcfvHTFhIAfmMBGAXQv::oNcfvHTFhIAfmMBGAXQv",
+        "doc_id": "oNcfvHTFhIAfmMBGAXQv",
+        "equipment_id": "oNcfvHTFhIAfmMBGAXQv",
+        "name": "円二色性分散計（CD）－型式：J-820",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-05T13:10:53.460004+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-05T13:11:39.053375+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T13:24:27.939491+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T13:36:57.119413+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T13:46:51.116663+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T13:50:53.207274+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T13:53:50.237018+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T13:56:13.710153+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T13:58:02.105784+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T14:01:10.824005+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T22:53:50.572041+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T22:54:47.884391+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-05T22:57:52.388770+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

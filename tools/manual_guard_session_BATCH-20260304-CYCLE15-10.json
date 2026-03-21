@@ -1,0 +1,159 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE15-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T22:41:21.051219+00:00",
+  "updated_at": "2026-03-03T22:59:34.194680+00:00",
+  "closed_at": "2026-03-03T22:59:34.194680+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle15_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE15-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "8f59cea092bb530892a082f41460b63005cd22b9bf4168a99ab2de48db51d3a5",
+    "queue_sha256_at_start": "431d04f4351f5abe09e171c2fc342dd301e71753d82b3cef7fac82c317531b4b",
+    "queue_row_keys_sha256": "e381ce5d95b951e063c4392b0dea10092becda4732d059c9e7f964e79442bc23"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "9AAhlu6GrGiLxfCKhSL2::HOKUDAI-AP-100259",
+      "iSeZdknwDLJctBEUcDmY::HOKUDAI-AP-100116",
+      "E0IZ6GddoG9E8xp1Uhsn::HOKUDAI-AP-100290",
+      "tHap2YZLiRgZauLUnmAX::HOKUDAI-AP-100269",
+      "HJdOsSwTSWoWCTVTUVXs::HOKUDAI-AP-901301",
+      "DwFZW91ZLTmi96j7X21Y::HOKUDAI-AP-901943",
+      "5e2IJuPoCDpztMqfNHFa::HOKUDAI-AP-902228",
+      "RAa1Z8TvRuK91faJxrnB::HOKUDAI-AP-901105",
+      "r0fJJk3dC5Zi3FRu1Hxw::HOKUDAI-AP-901379",
+      "I1C7FFFSY4ShBqLWYtMC::HOKUDAI-AP-900794"
+    ],
+    "target_rows": [
+      {
+        "row_key": "9AAhlu6GrGiLxfCKhSL2::HOKUDAI-AP-100259",
+        "doc_id": "9AAhlu6GrGiLxfCKhSL2",
+        "equipment_id": "HOKUDAI-AP-100259",
+        "name": "放射線治療装置リニアック",
+        "papers_count": 3
+      },
+      {
+        "row_key": "iSeZdknwDLJctBEUcDmY::HOKUDAI-AP-100116",
+        "doc_id": "iSeZdknwDLJctBEUcDmY",
+        "equipment_id": "HOKUDAI-AP-100116",
+        "name": "X線照射装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "E0IZ6GddoG9E8xp1Uhsn::HOKUDAI-AP-100290",
+        "doc_id": "E0IZ6GddoG9E8xp1Uhsn",
+        "equipment_id": "HOKUDAI-AP-100290",
+        "name": "ラウエ結晶方位決定システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "tHap2YZLiRgZauLUnmAX::HOKUDAI-AP-100269",
+        "doc_id": "tHap2YZLiRgZauLUnmAX",
+        "equipment_id": "HOKUDAI-AP-100269",
+        "name": "エネルギー分散型蛍光X線分析装置(XRF)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "HJdOsSwTSWoWCTVTUVXs::HOKUDAI-AP-901301",
+        "doc_id": "HJdOsSwTSWoWCTVTUVXs",
+        "equipment_id": "HOKUDAI-AP-901301",
+        "name": "エネルギー分散型蛍光Ｘ線分析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "DwFZW91ZLTmi96j7X21Y::HOKUDAI-AP-901943",
+        "doc_id": "DwFZW91ZLTmi96j7X21Y",
+        "equipment_id": "HOKUDAI-AP-901943",
+        "name": "デスクトップX線回折装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "5e2IJuPoCDpztMqfNHFa::HOKUDAI-AP-902228",
+        "doc_id": "5e2IJuPoCDpztMqfNHFa",
+        "equipment_id": "HOKUDAI-AP-902228",
+        "name": "単結晶X線構造解析システム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "RAa1Z8TvRuK91faJxrnB::HOKUDAI-AP-901105",
+        "doc_id": "RAa1Z8TvRuK91faJxrnB",
+        "equipment_id": "HOKUDAI-AP-901105",
+        "name": "日立X線照射装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "r0fJJk3dC5Zi3FRu1Hxw::HOKUDAI-AP-901379",
+        "doc_id": "r0fJJk3dC5Zi3FRu1Hxw",
+        "equipment_id": "HOKUDAI-AP-901379",
+        "name": "溶液フリーマウント用自動吸引冷却格納装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "I1C7FFFSY4ShBqLWYtMC::HOKUDAI-AP-900794",
+        "doc_id": "I1C7FFFSY4ShBqLWYtMC",
+        "equipment_id": "HOKUDAI-AP-900794",
+        "name": "X線検査装置",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T22:41:21.051219+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T22:41:21.489967+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:56:26.620949+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:56:36.475359+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T22:59:34.194680+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

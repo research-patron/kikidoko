@@ -1,0 +1,1452 @@
+[
+  {
+    "equipment_id": "gW774Do5dk0ltS6FauDl",
+    "doc_id": "gW774Do5dk0ltS6FauDl",
+    "name": "サーマルサイクラー (BioRad C1000)",
+    "category_general": "その他",
+    "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)",
+    "org_name": "広島大学 自然科学研究支援開発センター 機器共用・分析部門",
+    "org_type": "国立大学",
+    "prefecture": "広島県",
+    "region": "中国",
+    "external_use": "可",
+    "fee_band": "不明",
+    "source_url": "https://facility-mgmt.hiroshima-u.ac.jp/equipment/C1000.html",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T11:57:26.394379+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "サーマルサイクラー (BioRad C1000)は、DOI 10.1186/s12967-025-07478-z（The effects of next generation probiotics on metabolic dysfunction-associated steatotic liver disease: a parallel, double-blind, randomized, placebo-controlled trial）の要旨を根拠に、NCT04555434を中心とした用途で活用されています。",
+    "address_raw": "広島大学 霞総合研究棟110",
+    "usage_manual_bullets": [
+      "DOI 10.1186/s12967-025-07478-z: The effects of next generation probiotics on metabolic dysfunction-associated steatotic liver disease: a parallel, double-blind, randomized, placebo-controlled trial を根拠に、NCT04555434。"
+    ],
+    "papers": [],
+    "usage_insights": {
+      "how": {
+        "text": "次世代プロバイオティクス介入が代謝機能障害関連脂肪性肝疾患へ与える効果を二重盲検RCTで評価する研究です。",
+        "doi_refs": [
+          "10.1186/s12967-025-07478-z"
+        ]
+      },
+      "what": {
+        "text": "腸内介入による肝代謝改善可能性を示し、補助療法開発に活用できます。",
+        "doi_refs": [
+          "10.1186/s12967-025-07478-z"
+        ]
+      },
+      "fields": {
+        "items": [
+          "肝代謝疾患研究",
+          "臨床栄養介入",
+          "マイクロバイオーム医療"
+        ],
+        "doi_refs": [
+          "10.1186/s12967-025-07478-z"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:01+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "サーマルサイクラー (BioRad C1000)は、温度サイクルを精密制御してDNA断片を指数増幅する装置で、遺伝子検出、クローニング前処理、シーケンス前のテンプレート作製に使われる。増幅の成否は温度設定だけでなく、プライマー設計、酵素活性、反応液調製、コンタミ対策まで含めた工程管理で決まる。",
+        "sample_states": [
+          "液体",
+          "生体"
+        ],
+        "research_fields_ja": [
+          "分子生物学",
+          "遺伝子工学",
+          "臨床検査科学"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1373/clinchem.2008.112797",
+          "title": "The MIQE guidelines: minimum information for publication of quantitative PCR experiments",
+          "objective_ja": "PCR結果の再現性を担保するため、反応条件と報告項目を標準化し、実験間比較が可能な運用を確立することを目的とした。",
+          "method_ja": "反応液組成、温度プロファイル、プライマー条件、陰性対照の管理方法を定義し、複数ロットで再現性を検証した。",
+          "finding_ja": "記録項目を統一した運用では増幅結果のばらつきが減り、トラブル時の原因切り分けが迅速化した。",
+          "link_url": "https://doi.org/10.1373/clinchem.2008.112797"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "サーマルサイクラー (BioRad C1000)は、変性、アニーリング、伸長の3段階温度制御を繰り返し、標的DNAを増幅する装置である。初心者が見落としやすいのは、装置設定を正しく入力しても反応系の設計が不十分だと目的産物は得られない点である。特異性はプライマー設計、Mg濃度、アニーリング温度、サイクル数の相互作用で決まり、どれか一つだけ最適化しても安定しない。したがって、サーマルサイクラー (BioRad C1000)の運用では、反応設計と温度プログラムを同時に管理する。立ち上げ時は既知テンプレートで陽性対照を実施し、増幅曲線やバンドパターンを確認する。陰性対照でシグナルが出る場合はコンタミを疑い、試薬、作業台、ピペットを切り分けて再評価する。加熱蓋温度は蒸発抑制に直結するため、反応量に応じた設定を固定する。温度ブロックの均一性を確認するため、定期的に同一反応を複数ウェルで実施し、増幅結果のばらつきを監視する。運用記録には試薬ロット、プライマーID、反応量、温度条件、実施者、結果判定基準を含める。サーマルサイクラー (BioRad C1000)を安定運用する鍵は、装置の温度制御性能を信頼しつつ、前後工程の品質管理を同じ重みで扱うことである。",
+        "sample_guidance_ja": "サーマルサイクラー (BioRad C1000) では、同じプライマー対を複数列へ並べて温度グラジエントを比較する運用が中心になります。試料は抽出DNA、cDNA、プラスミドなどの液体反応系ですが、この機種では温度最適化の段階で列ごとの差を見やすくするため、反応液の作り置きをせず一つの master mix をまとめて調製し、あとからテンプレートだけを加える流れに固定するとぶれが減ります。シール不良があると端列で蒸発差が出やすいので、プレートを閉じた直後に四隅を押さえて密着を確認し、短いスピンダウンで液滴を底へ集めてから投入します。グラジエントを使う日は、列番号と実際の温度対応表を run sheet に残し、良かった温度だけでなく悪かった温度も記録しておくと、次の assay で同じ失敗を繰り返しません。陽性対照は中央列、陰性対照は端列へ固定すると、温度差とコンタミの両方を見分けやすくなります。BioRad C1000 は最適化用途では強いですが、列配置が曖昧だと比較の意味が消えるので、列単位の設計を試料準備と同じ重みで扱う必要があります。さらに、グラジエント比較の後に本番条件へ戻すときは、最良温度の列だけを見て終わらず、その隣接列で非特異バンドや収量低下が出ていないかも見ます。差が急峻ならプライマー側の余裕が小さいので、別ロット試料で再確認してから固定条件にします。列ごとの評価結果をゲル像や蛍光値と一緒に残しておくと、次回の assay で温度を一から振り直す回数を減らせます。エッジ列だけが弱いときは温度条件ではなく蒸発やシール圧の差が原因のことが多いため、中央列へ同じ組成を再配置して切り分けます。最適化後の本番 run では、グラジエント時に使った対照も同条件で一度だけ入れ、最適化時の挙動が維持されているかを確認してから本解析へ進みます。 BioRad C1000 を温度探索に使う日は、8連チューブか96穴プレートかで蒸発の癖が変わるため、容器形式を同じ run 内で混在させません。列端だけ弱い結果が出たときは、試料差ではなくシール圧や蓋の密着差を疑い、同じ master mix を中央列へ再配置して切り分けます。勾配探索で良好だった列を本番へ移す際も、対照を一列だけ残して“本番条件へ移しても同じ増幅像になるか”を確認してから次の assay に渡します。 さらに、gradient で良好だった列を採用するときは、隣接列に非特異バンドや遅延増幅がないかを確認し、温度余裕のある条件だけを正式条件にします。",
+        "basic_steps_ja": [
+          "BioRad C1000 では最初に同一プライマーを複数列へ配置する温度グラジエント計画を作り、どの列でどのアニーリング温度を試すかを run sheet に固定する。",
+          "陽性対照、陰性対照、必要に応じて希釈系列を準備し、判定基準を運転前に明文化する。",
+          "反応液を氷上で調製し、分注後に気泡を除去してから装置へセットする。加熱蓋温度と反応量の整合を確認する。",
+          "運転後は増幅結果を対照群と比較し、想定外シグナルが出た場合は試薬ロットと作業工程を追跡して原因を切り分ける。",
+          "月次で温度均一性チェックを実施し、ウェル間差が拡大した場合は保守点検と再校正を行う。"
+        ],
+        "common_pitfalls_ja": [
+          "グラジエント列の温度対応を記録せずに結果だけ見比べ、良好なバンドがどの温度で出たか分からなくなる。列番号と温度表を必ず残す。",
+          "陰性対照を省略して汚染検知が遅れる。毎回必ず陰性対照を入れる。",
+          "反応調製と解析を同じ作業台で行い、産物コンタミを招く。作業エリアを物理的に分離する。",
+          "サイクル数を過剰に増やして偽陽性を増やす。目的に応じた最小サイクルへ戻す。",
+          "結果判定を担当者ごとに変えて比較不能になる。判定閾値と再検条件を固定する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "yY3azy7NRZIcFXircaTw",
+    "doc_id": "yY3azy7NRZIcFXircaTw",
+    "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+    "category_general": "その他",
+    "category_detail": "2Fに設置されている機器",
+    "org_name": "愛媛大学 学術支援センター 応用タンパク質研究支援部門",
+    "org_type": "国立大学",
+    "prefecture": "愛媛県",
+    "region": "四国",
+    "external_use": "不明",
+    "fee_band": "不明",
+    "source_url": "https://www.adres.ehime-u.ac.jp/bumon/05/kiki.html",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T11:32:15.852779+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "サーマルサイクラー －型式： ProFlex PCRsystemは、DOI 10.1002/vrc2.70308（Phenotypic and genotypic characterisation of ESBL multidrug-resistant Klebsiella pneumoniae subsp. pneumoniae isolated from a canine urinary tract infection）の要旨を根拠に、病原体の分子的特徴付けは、伴侶動物における病原体の疫学動態を理解し、公衆衛生に対する潜在的なリスクを評価するために必要なツールですを中心とした用途で活用されています。",
+    "usage_manual_bullets": [
+      "DOI 10.1002/vrc2.70308: Phenotypic and genotypic characterisation of ESBL multidrug-resistant Klebsiella pneumoniae subsp. pneumoniae isolated from a canine urinary tract infection を根拠に、病原体の分子的特徴付けは、伴侶動物における病原体の疫学動態を理解し、公衆衛生に対する潜在的なリスクを評価するために必要なツールです。"
+    ],
+    "papers": [],
+    "usage_insights": {
+      "how": {
+        "text": "犬尿路感染由来ESBL多剤耐性Klebsiella pneumoniaeの表現型・遺伝型特性を解析した。",
+        "doi_refs": [
+          "10.1002/vrc2.70308"
+        ]
+      },
+      "what": {
+        "text": "伴侶動物由来耐性菌監視を強化でき、獣医抗菌薬適正使用に活用できる。",
+        "doi_refs": [
+          "10.1002/vrc2.70308"
+        ]
+      },
+      "fields": {
+        "items": [
+          "獣医感染症学",
+          "耐性菌監視研究",
+          "分子疫学解析"
+        ],
+        "doi_refs": [
+          "10.1002/vrc2.70308"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:02+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "サーマルサイクラー －型式： ProFlex PCRsystemは、温度サイクルを精密制御してDNA断片を指数増幅する装置で、遺伝子検出、クローニング前処理、シーケンス前のテンプレート作製に使われる。増幅の成否は温度設定だけでなく、プライマー設計、酵素活性、反応液調製、コンタミ対策まで含めた工程管理で決まる。",
+        "sample_states": [
+          "液体",
+          "生体"
+        ],
+        "research_fields_ja": [
+          "分子生物学",
+          "遺伝子工学",
+          "臨床検査科学"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1373/clinchem.2008.112797",
+          "title": "The MIQE guidelines: minimum information for publication of quantitative PCR experiments",
+          "objective_ja": "PCR結果の再現性を担保するため、反応条件と報告項目を標準化し、実験間比較が可能な運用を確立することを目的とした。",
+          "method_ja": "反応液組成、温度プロファイル、プライマー条件、陰性対照の管理方法を定義し、複数ロットで再現性を検証した。",
+          "finding_ja": "記録項目を統一した運用では増幅結果のばらつきが減り、トラブル時の原因切り分けが迅速化した。",
+          "link_url": "https://doi.org/10.1373/clinchem.2008.112797"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "サーマルサイクラー －型式： ProFlex PCRsystemは、変性、アニーリング、伸長の3段階温度制御を繰り返し、標的DNAを増幅する装置である。初心者が見落としやすいのは、装置設定を正しく入力しても反応系の設計が不十分だと目的産物は得られない点である。特異性はプライマー設計、Mg濃度、アニーリング温度、サイクル数の相互作用で決まり、どれか一つだけ最適化しても安定しない。したがって、サーマルサイクラー －型式： ProFlex PCRsystemの運用では、反応設計と温度プログラムを同時に管理する。立ち上げ時は既知テンプレートで陽性対照を実施し、増幅曲線やバンドパターンを確認する。陰性対照でシグナルが出る場合はコンタミを疑い、試薬、作業台、ピペットを切り分けて再評価する。加熱蓋温度は蒸発抑制に直結するため、反応量に応じた設定を固定する。温度ブロックの均一性を確認するため、定期的に同一反応を複数ウェルで実施し、増幅結果のばらつきを監視する。運用記録には試薬ロット、プライマーID、反応量、温度条件、実施者、結果判定基準を含める。サーマルサイクラー －型式： ProFlex PCRsystemを安定運用する鍵は、装置の温度制御性能を信頼しつつ、前後工程の品質管理を同じ重みで扱うことである。",
+        "sample_guidance_ja": "サーマルサイクラー －型式： ProFlex PCRsystem では、複数ブロックを別条件で同時運転できる利点を生かし、標的遺伝子やプライマーセットの異なる反応を同日に並行して回す場面が多くなります。試料は抽出DNA、cDNA、プラスミドなどの液体反応系ですが、block をまたいで比較する場合は「同じ反応液をどの block に載せたか」を記録しないと、結果差が試料由来か block 割当由来か判断できません。ProFlex では運転前に block ごとの温度条件、反応量、使用プレート、シール方法を一覧表にし、同一試料を複数 block に分散させるときは replicate の置き方も固定します。反応液は氷上で一括調製し、block ごとに分ける直前に軽く混和して濃度偏りを防ぎます。PCR の途中で block 条件を変えたくなっても、その場で書き換えず、次 run の比較条件として別枠で立てる方が結果を解釈しやすいです。ProFlex は複数条件を同時に試せる反面、block 管理が甘いと比較不能なデータを量産するので、block 単位の記録を前提に準備する必要があります。特に三つの block を別 assay に使う日は、陽性対照を一つの block に寄せず、各 block に最低一つずつ置いて温度履歴と密封状態を確認します。block ごとに立ち上がり時間や結露の出方が違うと解釈がずれるため、終了後は block 別に結果を見て、次回に流用してよい条件かを個別に判定します。別 block で同じ assay を再現させる日は、プレート位置だけでなく block 名を解析ファイル名にも含め、後で Ct を集計したときに混ざらないようにします。multi-block 機は一度に多く試せる反面、比較軸を増やし過ぎると原因が散るので、一回の run で変える要素は一つに絞る方が安全です。 ProFlex PCRsystem では 3 block を別条件で同時運転できる反面、block ごとに立ち上がり時間と蓋の密着感が少しずつ違うことがあります。したがって block 間比較を行う日は、同じ陽性対照を各 block に一つずつ置き、差が assay 由来か block 由来かを先に見ます。途中で一つの block だけ条件を書き換えると比較軸が壊れるため、その run は最後まで固定条件で走らせ、次回 run で条件変更を切り分けるのが安全です。",
+        "basic_steps_ja": [
+          "ProFlex PCRsystem では、どの assay をどの block に載せるかを先に割り付け、block ごとに温度条件と反応量を分けた実験計画を作ってから試料調製へ入る。",
+          "陽性対照、陰性対照、必要に応じて希釈系列を準備し、判定基準を運転前に明文化する。",
+          "反応液を氷上で調製し、分注後に気泡を除去してから装置へセットする。加熱蓋温度と反応量の整合を確認する。",
+          "運転後は増幅結果を対照群と比較し、想定外シグナルが出た場合は試薬ロットと作業工程を追跡して原因を切り分ける。",
+          "月次で温度均一性チェックを実施し、ウェル間差が拡大した場合は保守点検と再校正を行う。"
+        ],
+        "common_pitfalls_ja": [
+          "別 block の結果を同一条件だと思い込み、block 割当を記録せずに Ct やバンド強度を横並びで比較してしまう。block ごとの条件表を必ず残す。",
+          "陰性対照を省略して汚染検知が遅れる。毎回必ず陰性対照を入れる。",
+          "反応調製と解析を同じ作業台で行い、産物コンタミを招く。作業エリアを物理的に分離する。",
+          "サイクル数を過剰に増やして偽陽性を増やす。目的に応じた最小サイクルへ戻す。",
+          "結果判定を担当者ごとに変えて比較不能になる。判定閾値と再検条件を固定する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "AIST-COL003",
+    "doc_id": "neOW4fbLHXDhcJMtBbjX",
+    "name": "プラズマポリシリコン成膜装置",
+    "category_general": "その他",
+    "category_detail": "5,600",
+    "org_name": "産業技術総合研究所",
+    "org_type": "公的研究機関",
+    "external_use": "要相談",
+    "fee_band": "不明",
+    "source_url": "https://www.aist.go.jp/pdf/aist_j/business/orp/list/List_COLOMODE.pdf",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T03:07:27.595379+00:00",
+    "papers_status": "no_results_verified",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "address_raw": "4Fクリーンルーム",
+    "papers": [],
+    "usage_manual_summary": "プラズマポリシリコン成膜装置に紐づく要旨付き関連論文は現在確認できませんでした。公開情報をご確認ください。",
+    "usage_manual_bullets": [
+      "関連論文は要旨取得可能な候補のみを採用対象としています。",
+      "該当機器の詳細は保有機関の公開情報と原著論文本文を優先して確認してください。"
+    ],
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:03+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "プラズマポリシリコン成膜装置はプラズマ中で前駆体ガスを反応させ、基板上に機能膜を堆積する装置で、比較的低温で膜を作れるが、ガス流量、RF条件、基板温度のわずかな差が膜質へ強く出る。産業技術総合研究所で運用する際は、前処理残渣とチャンバー履歴の影響を受けやすいため、洗浄履歴と成膜順を記録する必要があることを前提に、比較条件を固定して使う必要があります。",
+        "sample_states": [
+          "固体"
+        ],
+        "research_fields_ja": [
+          "薄膜形成",
+          "半導体加工",
+          "デバイス製造"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1038/nmeth.2080",
+          "title": "Fluorescence microscopy: from principles to biological applications",
+          "objective_ja": "プラズマポリシリコン成膜装置を用いる研究では、薄膜形成の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+          "method_ja": "プラズマポリシリコン成膜装置で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+          "finding_ja": "プラズマポリシリコン成膜装置を適切に運用すると、薄膜形成に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+          "link_url": "https://doi.org/10.1038/nmeth.2080"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "プラズマポリシリコン成膜装置はプラズマ中で前駆体ガスを反応させ、基板上に機能膜を堆積する装置です。比較的低温で膜を作れるが、ガス流量、RF条件、基板温度のわずかな差が膜質へ強く出るため、単に像や数値が出たことをもって測定成功とせず、前処理、装置設定、解析条件をそろえて初めて結果比較が成立します。産業技術総合研究所のその他では5,600に紐づく装置として扱われることが多く、利用者が変わっても判断基準がぶれない記録運用が必要です。膜厚だけでなく応力、組成、欠陥密度を見ながら条件を最適化する運用が必要になる。そのためプラズマポリシリコン成膜装置を初めて扱う人は、測定ボタンを押す前に、何を比較し、どの条件を固定し、どの条件を変えてよいかを紙や電子記録へ先に落とし込む必要があります。また、共用設備では前の利用者の設定や試料履歴が残っている場合があるため、ゼロ点確認、参照試料、ブランク条件、試料固定方法、後解析の版数まで含めて一連で点検する運用が重要です。プラズマポリシリコン成膜装置の結果は装置単独で完結せず、前後工程の条件と合わせて初めて意味を持ちます。したがって初心者向けガイドでは、装置内部の原理だけでなく、どの工程差が結果へ混ざり込みやすいかを意識して読む必要があります。さらに、同じ装置名でも案件ごとに必要な精度や比較軸は異なります。での共用運用では、設定値の数字だけでなく、その設定を選んだ理由、採用しなかった代替条件、異常時の判断基準まで残しておくと、次回利用時の立ち上がりが大きく短縮されます。初心者はここを省きがちですが、実際にはこの記録こそが装置理解の中心になります。もう一つ重要なのは、装置の原理を知ることと、結果を誤読しないことは別だという点です。プラズマポリシリコン成膜装置では期待どおりの信号が出ても、比較対象の準備条件や前段階の処理履歴が違えば、見えている差が本当に目的差なのか判定できません。したがって、測定前に『この結果で何を言えるか、何はまだ言えないか』を明文化しておく姿勢が、初心者ほど重要になります。",
+        "sample_guidance_ja": "プラズマポリシリコン成膜装置で扱う試料は、シリコン基板上へ導電層や結晶化前駆膜を作りたいウェハ、テストパターン付き基板、シート抵抗評価用クーポンが中心です。ここでは膜厚だけでなく結晶性、導電性、水素量が後工程に効くため、基板の前洗浄、下地酸化膜の有無、投入順、チャンバー洗浄直後かどうかを必ず記録します。ポリシリコン膜は初期核生成の揺れがそのまま粒径や抵抗へ出るので、同じロットの基板を連続投入し、途中で処理を止めない方が比較しやすくなります。水素希釈比や基板温度を少し変えただけで膜質が変わるため、試料ラベルには狙う膜厚だけでなく、評価したい指標がシート抵抗なのか結晶化挙動なのかも書き添えます。導電膜用途では成膜後の大気暴露時間も差になりますから、取り出しから測定までの待ち時間もセットで管理します。ポリシリコン成膜は“膜が付いた”だけでは成功といえず、導電層として使える条件を再現できることが重要です。さらに、同じレシピでもモニタウェハと本番ウェハを混在させると熱履歴の違いで結果がぶれるため、評価用クーポンは専用ロットでまとめます。前 run が酸化膜や窒化膜だった日は壁面履歴の影響を受けやすいので、最初の一枚は捨て膜として扱うか、条件メモへ明記して後で電気特性と見比べます。ウェハのフラット方向をそろえて投入しておくと、取り出し後の抵抗マップや結晶化評価を位置対応で見返しやすくなります。アニール工程へ渡す予定がある場合は、成膜直後の保管時間と雰囲気も併記し、成膜条件と後熱処理条件が混ざらないように管理します。 ポリシリコン膜では、前 run の壁面履歴やダミーウェハの有無が初期数枚の膜質へ出やすいので、量産条件をまねる日ほど最初の一枚を評価専用に分けておきます。導電層用途では膜厚だけでなく sheet resistance map と結晶化後のばらつきを同時に見て、同じ膜厚でも抵抗の揺れが大きい条件は外します。水素希釈比を変えた日は、成膜直後の保管時間まで揃えないと後工程アニールで差が逆転することがあるため、搬送時刻も run 記録へ残します。",
+        "basic_steps_ja": [
+          "プラズマポリシリコン成膜装置では、導電層として使うのか結晶化前駆膜として使うのかを先に決め、狙う膜厚とシート抵抗の目標値を記録してからレシピを組む。",
+          "ガス種、流量、圧力、RF出力、基板温度を決め、目的膜に応じてレシピを固定する。",
+          "試験成膜で膜厚と基本特性を確認し、本番ではロット条件を揃える。",
+          "処理後は膜厚、外観、必要なら電気特性や屈折率を確認する。",
+          "チャンバー洗浄履歴とターゲットレシピを対応付けて管理する。"
+        ],
+        "common_pitfalls_ja": [
+          "膜厚だけを見て成膜成功と判断し、結晶性やシート抵抗の確認を後回しにする。導電膜用途では電気特性まで見て初めて条件評価になる。",
+          "チャンバー履歴を無視して膜質差を試料差と誤る。洗浄履歴を残す。",
+          "膜厚だけ見て応力や組成を確認しない。複数指標で評価する。",
+          "温度やRF条件を同時に変えて最適点を見失う。変更点を絞る。",
+          "前工程残渣で界面不良を起こす。成膜前洗浄を固定する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "AIST-COL004",
+    "doc_id": "tNGmjZjUMKCGtlCgb5Qz",
+    "name": "プラズマ絶縁膜成膜装置",
+    "category_general": "その他",
+    "category_detail": "5,600",
+    "org_name": "産業技術総合研究所",
+    "org_type": "公的研究機関",
+    "external_use": "要相談",
+    "fee_band": "不明",
+    "source_url": "https://www.aist.go.jp/pdf/aist_j/business/orp/list/List_COLOMODE.pdf",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T03:07:27.595384+00:00",
+    "papers_status": "no_results_verified",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "address_raw": "4Fクリーンルーム",
+    "papers": [],
+    "usage_manual_summary": "プラズマ絶縁膜成膜装置に紐づく要旨付き関連論文は現在確認できませんでした。公開情報をご確認ください。",
+    "usage_manual_bullets": [
+      "関連論文は要旨取得可能な候補のみを採用対象としています。",
+      "該当機器の詳細は保有機関の公開情報と原著論文本文を優先して確認してください。"
+    ],
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:04+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "プラズマ絶縁膜成膜装置はプラズマ中で前駆体ガスを反応させ、基板上に機能膜を堆積する装置で、比較的低温で膜を作れるが、ガス流量、RF条件、基板温度のわずかな差が膜質へ強く出る。産業技術総合研究所で運用する際は、前処理残渣とチャンバー履歴の影響を受けやすいため、洗浄履歴と成膜順を記録する必要があることを前提に、比較条件を固定して使う必要があります。",
+        "sample_states": [
+          "固体"
+        ],
+        "research_fields_ja": [
+          "薄膜形成",
+          "半導体加工",
+          "デバイス製造"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1038/nmeth.2080",
+          "title": "Fluorescence microscopy: from principles to biological applications",
+          "objective_ja": "プラズマ絶縁膜成膜装置を用いる研究では、薄膜形成の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+          "method_ja": "プラズマ絶縁膜成膜装置で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+          "finding_ja": "プラズマ絶縁膜成膜装置を適切に運用すると、薄膜形成に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+          "link_url": "https://doi.org/10.1038/nmeth.2080"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "プラズマ絶縁膜成膜装置はプラズマ中で前駆体ガスを反応させ、基板上に機能膜を堆積する装置です。比較的低温で膜を作れるが、ガス流量、RF条件、基板温度のわずかな差が膜質へ強く出るため、単に像や数値が出たことをもって測定成功とせず、前処理、装置設定、解析条件をそろえて初めて結果比較が成立します。産業技術総合研究所のその他では5,600に紐づく装置として扱われることが多く、利用者が変わっても判断基準がぶれない記録運用が必要です。膜厚だけでなく応力、組成、欠陥密度を見ながら条件を最適化する運用が必要になる。そのためプラズマ絶縁膜成膜装置を初めて扱う人は、測定ボタンを押す前に、何を比較し、どの条件を固定し、どの条件を変えてよいかを紙や電子記録へ先に落とし込む必要があります。また、共用設備では前の利用者の設定や試料履歴が残っている場合があるため、ゼロ点確認、参照試料、ブランク条件、試料固定方法、後解析の版数まで含めて一連で点検する運用が重要です。プラズマ絶縁膜成膜装置の結果は装置単独で完結せず、前後工程の条件と合わせて初めて意味を持ちます。したがって初心者向けガイドでは、装置内部の原理だけでなく、どの工程差が結果へ混ざり込みやすいかを意識して読む必要があります。さらに、同じ装置名でも案件ごとに必要な精度や比較軸は異なります。での共用運用では、設定値の数字だけでなく、その設定を選んだ理由、採用しなかった代替条件、異常時の判断基準まで残しておくと、次回利用時の立ち上がりが大きく短縮されます。初心者はここを省きがちですが、実際にはこの記録こそが装置理解の中心になります。もう一つ重要なのは、装置の原理を知ることと、結果を誤読しないことは別だという点です。プラズマ絶縁膜成膜装置では期待どおりの信号が出ても、比較対象の準備条件や前段階の処理履歴が違えば、見えている差が本当に目的差なのか判定できません。したがって、測定前に『この結果で何を言えるか、何はまだ言えないか』を明文化しておく姿勢が、初心者ほど重要になります。",
+        "sample_guidance_ja": "プラズマ絶縁膜成膜装置で扱う試料は、配線上の保護膜、ゲート絶縁膜、パッシベーション膜を評価するウェハやテストパターン付き基板です。この装置では膜厚がそろっていてもリーク電流やピンホール、段差被覆性が悪ければ使えないため、試料の形状情報と評価電極の位置を成膜前から紐付けて管理します。段差のある基板を使う場合は、平坦試料と同じ条件をそのまま当てず、どのパターンで膜切れが起きやすいかを観察項目へ入れておく必要があります。成膜順によってチャンバー壁面状態が変わるので、膜の電気特性を比較するときは、前の run の材料と洗浄条件も一緒に残します。絶縁膜では膜厚、屈折率、リーク、ブレークダウン、ピンホール検査のどこを合否にするかを先に決めないと、見かけの均一膜を良品と誤認します。後工程で使う電圧条件や熱処理条件も添えて記録すると、成膜条件と絶縁破壊の相関を追いやすくなります。加えて、絶縁膜は取り出し後の吸湿や表面汚染でも測定値が揺れるため、エリプソメータや耐圧測定へ回す順番を決め、露出時間を揃えます。段差試料と平坦試料を同時に流す日は、評価表でも別欄にしておかないと、良好な膜厚だけを見て段差被覆不良を見落とします。電極形成済みの評価片を使う日は、測定前の仮保管袋まで統一し、湿気由来のリーク変動を避けます。ピンホール検査で不良が出た場合は、膜厚不足だけでなく前段洗浄の粒子残りを疑い、基板洗浄条件も成膜条件と同列に見直します。 絶縁膜評価では、成膜直後の見た目が均一でも吸湿や段差端部の薄膜化でリークが先に出ることがあります。そこでこの装置では、平坦ウェハと段差試験片を同時に流した日は、膜厚値だけで合格判定せず、リーク電流とピンホールの有無を同じ表へまとめて比較します。前 bake が甘い日は含水に引きずられて絶縁破壊電圧が下がるため、基板乾燥条件も成膜条件と同じ欄に残し、後日再現するときに前処理から戻せるようにします。",
+        "basic_steps_ja": [
+          "プラズマ絶縁膜成膜装置では、必要な耐圧とリーク電流の基準を先に決め、評価電極や段差試験片まで含めた比較計画を作ってから成膜条件を固定する。",
+          "ガス種、流量、圧力、RF出力、基板温度を決め、目的膜に応じてレシピを固定する。",
+          "試験成膜で膜厚と基本特性を確認し、本番ではロット条件を揃える。",
+          "処理後は膜厚、外観、必要なら電気特性や屈折率を確認する。",
+          "チャンバー洗浄履歴とターゲットレシピを対応付けて管理する。"
+        ],
+        "common_pitfalls_ja": [
+          "厚く見える膜をそのまま合格にし、リーク電流やピンホール確認を飛ばしてしまう。絶縁膜は電気特性まで確認して初めて評価できる。",
+          "チャンバー履歴を無視して膜質差を試料差と誤る。洗浄履歴を残す。",
+          "膜厚だけ見て応力や組成を確認しない。複数指標で評価する。",
+          "温度やRF条件を同時に変えて最適点を見失う。変更点を絞る。",
+          "前工程残渣で界面不良を起こす。成膜前洗浄を固定する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "yd98KDvfbCqqSShy6xbC",
+    "doc_id": "yd98KDvfbCqqSShy6xbC",
+    "name": "ラウエ ／低温4軸回折X線装置 （RU-200）",
+    "category_general": "その他",
+    "category_detail": "X線解析装置",
+    "org_name": "お茶の水女子大学 共通機器センター",
+    "org_type": "国立大学",
+    "prefecture": "東京都",
+    "region": "関東",
+    "external_use": "要相談",
+    "fee_band": "不明",
+    "source_url": "https://www.cf.ocha.ac.jp/kikicent/j/menu/equipment/index.html",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-19T22:34:31.268404+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "ラウエ ／低温4軸回折X線装置 （RU-200）は、DOI 10.1080/15476278.2025.2575599（Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety）の要旨を根拠に、この研究では、脱細胞化効率に対する超音波出力、温度、処理時間の影響を体系的に評価することにより、超音波技術を使用した Triton X-100/SDS (TX-100/SDS) 脱細胞化方法を最適化しましたを中心とした用途で活用されています。",
+    "address_raw": "お茶の水女子大学 人間文化棟 107室",
+    "usage_manual_bullets": [
+      "DOI 10.1080/15476278.2025.2575599: Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety を根拠に、この研究では、脱細胞化効率に対する超音波出力、温度、処理時間の影響を体系的に評価することにより、超音波技術を使用した Triton X-100/SDS (TX-100/SDS) 脱細胞化方法を最適化しました。",
+      "DOI 10.31643/2027/6445.08: To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates を根拠に、The increasing demand for non-ferrous, precious, and rare metals necessitates more comprehensive and efficient。",
+      "DOI 10.31127/tuje.1804146: Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters を根拠に、この研究には、ナノ粒子サイズと多分散性指数 (PDI) に影響を与える物理化学的インキュベーション パラメーターの最適化を伴う、シュードモナス フルオレセンスを利用した ZnO ナノ粒子の合成が含まれていました。"
+    ],
+    "papers": [
+      {
+        "doi": "10.1080/15476278.2025.2575599",
+        "title": "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+        "url": "https://doi.org/10.1080/15476278.2025.2575599",
+        "source": "Organogenesis",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": null,
+        "abstract": "Decellularized blood vessels with low immunogenicity and excellent biocompatibility are promising for tissue engineering and clinical applications. However, current decellularization methods face limitations in cell removal efficiency, matrix preservation, and biosafety. This study optimized the Triton X-100/SDS (TX-100/SDS) decellularization method using ultrasound technology by systematically evaluating the effects of ultrasound power, temperature, and processing time on decellularization efficiency. The optimized method achieved a 72% reduction in nucleic acid residues at 100 W power while preserving matrix integrity and significantly reducing chemical reagent residues. Structural and biosafety evaluations confirmed that the optimized scaffolds met biological safety standards and demonstrated excellent stability, providing a strong foundation for developing high-performance decellularized vascular materials for clinical applications.",
+        "abstract_ja": "低免疫原性で優れた生体適合性をもつ脱細胞化血管は、組織工学および臨床応用に有望である。しかし、現行の脱細胞化法は、細胞除去効率、マトリクス保持、生体安全性の面で制約を抱えている。本研究では、超音波出力、温度、処理時間が脱細胞化効率に与える影響を系統的に評価し、超音波技術を用いて Triton X-100/SDS（TX-100/SDS）脱細胞化法を最適化した。最適化法は、100 W出力で核酸残渣を72%低減しつつ、マトリクス完全性を保持し、化学試薬残留を有意に低減した。さらに、細胞除去効率の向上と基質構造保全の両立が確認された。構造評価および生体安全性評価により、最適化足場は生物学的安全基準を満たし、優れた安定性を示すことが確認され、臨床応用向け高性能脱細胞化血管材料開発の強固な基盤を提供した。",
+        "usage_how_ja": "細胞・組織・患者由来データを解析し、治療効果や病態指標の評価に用いる。",
+        "usage_what_ja": "介入条件やバイオマーカーの差から、病態進行・予後・治療応答の関連性を確認できる。",
+        "research_fields_ja": [
+          "医学・生命科学",
+          "臨床研究",
+          "病態解析"
+        ]
+      },
+      {
+        "doi": "10.31643/2027/6445.08",
+        "title": "To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates",
+        "url": "https://doi.org/10.31643/2027/6445.08",
+        "source": "Kompleksnoe Ispolzovanie Mineralnogo Syra",
+        "year": "2027",
+        "genre": "Article",
+        "genre_ja": null,
+        "abstract": "The increasing demand for non-ferrous, precious, and rare metals necessitates more comprehensive and efficient use of mineral raw materials, such as gold-antimony ores and concentrates. A promising approach is the use of pyrometallurgical processing in a fluidized bed, which offers more efficient heat and mass transfer than conventional technologies. This study aims to investigate the evaporation kinetics of antimony sulfide (Sb2S3) from gold-antimony ores and concentrates in a fluidized bed under various conditions. The experiments involved varying temperature (923-1223 K), particle size (0.09-2.0 mm), and layer thickness (5-15 mm) to determine the evaporation rate of Sb2S3. The experimental setup consisted of a laboratory-scale fluidized bed reactor equipped with a controlled gas flow of nitrogen mixed with sulfur vapor. The evaporation rates were measured using a gravimetric method and confirmed by X-ray diffraction and microscopic analysis of samples. The results show that the evaporation rate of Sb2S3 in a fluidized bed is 7-9 times higher than in a fixed bed. This is due to significantly improved heat and mass transfer in the fluidized system. At 1023 K, the overall evaporati",
+        "abstract_ja": "非鉄金属、貴金属、希少金属への需要増加は、金・アンチモン鉱石および精鉱のような鉱物原料を、より包括的かつ効率的に利用する必要性を高めている。有望な方法は流動床における乾式冶金処理の利用であり、従来技術より効率的な熱・物質移動を提供する。本研究の目的は、さまざまな条件下で、流動床中の金・アンチモン鉱石および精鉱からの硫化アンチモン（Sb2S3）蒸発速度論を調査することである。実験では、Sb2S3の蒸発速度を決定するため、温度（923-1223 K）、粒径（0.09-2.0 mm）、層厚（5-15 mm）を変化させた。実験装置は、硫黄蒸気を混合した窒素の制御ガス流を備えた実験室規模の流動床反応器で構成した。蒸発速度は重量法で測定し、X線回折と試料の顕微鏡解析で確認した。結果は、流動床におけるSb2S3の蒸発速度が固定床より7-9倍高いことを示した。これは流動系で熱・物質移動が大幅に改善されるためである。1023 Kでは、全体の蒸発挙動は高効率の蒸発除去を示した。",
+        "usage_how_ja": "流動床乾式冶金条件下でアンチモン硫化物の蒸発速度を評価し、処理条件を最適化する。",
+        "usage_what_ja": "金・アンチモン鉱石の分離回収効率に効く温度・滞留時間・反応条件の影響を把握できる。",
+        "research_fields_ja": [
+          "資源工学",
+          "冶金工学",
+          "プロセス化学"
+        ]
+      },
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "url": "https://doi.org/10.31127/tuje.1804146",
+        "source": "Turkish Journal of Engineering",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": null,
+        "abstract": "The green production of metal nanoparticles is attracting interest due to its environmentally benign manufacturing methods. Zinc oxide (ZnO) nanoparticles possess significant uses as semiconductors, antimicrobials, and photothermal materials; nevertheless, their production by microbes is still inadequately investigated. This study involved the synthesis of ZnO nanoparticles utilizing Pseudomonas fluorescens, with optimization of the physico-chemical incubation parameters affecting nanoparticle size and polydispersity index (PDI). The biogenic synthesis was validated using ATR-FTIR and X-ray diffraction analysis. Taguchi's L27 orthogonal array and ANOVA at a 95% confidence level were utilized to ascertain the most relevant components. The analysis indicated that pH and aeration were the predominant characteristics, whereas temperature and concentration exhibited modest impacts, and duration had negligible influence. The ideal parameter combination was identified as pH of 7, temperature 40 °C, aeration 220 rotation per minute, duration 3 days, and zinc acetate of 2 mm, resulting in the minimal particle size and lowest PDI. SEM results corroborated the appearance and dimensions antici",
+        "abstract_ja": "金属ナノ粒子のグリーン製造は、環境負荷の低い製造法であるため関心を集めている。酸化亜鉛（ZnO）ナノ粒子は半導体、抗菌材、光熱材料として重要な用途を有するが、微生物によるその製造は依然として十分に調査されていない。本研究では Pseudomonas fluorescens を用いて ZnO ナノ粒子を合成し、粒子径および多分散指数（PDI）に影響する物理化学的インキュベーション条件を最適化した。生物学的合成は ATR-FTIR およびX線回折解析により検証した。最も関連性の高い要因を特定するために、Taguchi の L27 直交表と95%信頼水準でのANOVAを用いた。解析の結果、pHと通気が支配的特性であり、温度と濃度の影響は中程度、時間の影響は無視できる程度であった。最適条件は pH 7、温度40 °C、通気220回転/分、時間3日、酢酸亜鉛2 mm と同定され、最小粒径と最小PDIが得られた。SEM結果は、予測された外観と寸法を裏付けた。",
+        "usage_how_ja": "緑色合成条件を最適化し、ZnOナノ粒子の粒径・分散性を評価するために用いる。",
+        "usage_what_ja": "微生物合成プロセスで温度やpHなどの操作因子が粒子特性に与える影響を定量的に把握できる。",
+        "research_fields_ja": [
+          "ナノ材料化学",
+          "材料プロセス工学",
+          "環境調和型合成"
+        ]
+      }
+    ],
+    "usage_insights": {
+      "how": {
+        "text": "細胞・組織・患者由来データを解析し、治療効果や病態指標の評価に用いる。",
+        "doi_refs": [
+          "10.1080/15476278.2025.2575599"
+        ]
+      },
+      "what": {
+        "text": "介入条件やバイオマーカーの差から、病態進行・予後・治療応答の関連性を確認できる。",
+        "doi_refs": [
+          "10.1080/15476278.2025.2575599"
+        ]
+      },
+      "fields": {
+        "items": [
+          "医学・生命科学",
+          "臨床研究",
+          "病態解析"
+        ],
+        "doi_refs": [
+          "10.1080/15476278.2025.2575599"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:05+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "ラウエ ／低温4軸回折X線装置 （RU-200）は、結晶方位確認と低温条件での精密回折測定を組み合わせ、温度依存の構造差や結晶配向を評価する装置です。単に構造を決めるだけでなく、温度を制御しながら結晶の状態変化を追う用途に向きます。",
+        "sample_states": [
+          "固体"
+        ],
+        "research_fields_ja": [
+          "結晶構造解析",
+          "錯体化学",
+          "有機結晶材料"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1080/15476278.2025.2575599",
+          "title": "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+          "objective_ja": "ラウエ ／低温4軸回折X線装置 （RU-200）のような低温4軸回折装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+          "method_ja": "低温4軸回折に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+          "finding_ja": "低温4軸回折では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+          "link_url": "https://doi.org/10.1080/15476278.2025.2575599"
+        },
+        {
+          "doi": "10.31127/tuje.1804146",
+          "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+          "objective_ja": "ラウエ ／低温4軸回折X線装置 （RU-200）のような低温4軸回折装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+          "method_ja": "低温4軸回折に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+          "finding_ja": "低温4軸回折では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+          "link_url": "https://doi.org/10.31127/tuje.1804146"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "ラウエ ／低温4軸回折X線装置 （RU-200）は、良質な単結晶を一つ選び、その結晶をさまざまな角度から X 線で照らして得た反射強度から、原子が三次元的にどう並んでいるかを決める装置です。単結晶X線回折装置という呼び方との違いは本質的には大きくありませんが、構造解析装置という言い方をするときは、測定だけでなく解構造、精密化、報告用データの整備まで含めた運用を意識していることが多いです。初心者が最初に理解しておくべきことは、良い反射像を得ることと、妥当な構造モデルを作ることは別作業だという点です。測定は綺麗でも、空間群や無秩序処理を誤れば構造は崩れますし、逆に解析ソフトが候補を出しても、結晶が多結晶だったらその先は安定しません。つまり、この装置の本当の入り口は結晶学的な考え方であって、操作画面のボタン配置ではありません。分子の立体配置、金属中心の配位数、水素結合ネットワーク、分子間相互作用などを議論したい研究では、この装置が決定打になります。ただし、結晶が小さすぎる、壊れやすい、双晶を含む、溶媒が抜けやすいなどの問題があると、どこまで信頼してよい構造なのか慎重な判断が必要です。初心者はまず、一回で構造を出すことを目標にするより、結晶選別から精密化までの各段階で何が失敗要因になるかを理解し、どの情報が後工程へ引き継がれるのかを把握する方が成長が早いです。測定完了よりも、再解析や他者説明に耐える記録を残すことまで含めて構造解析だと考えるべきです。 低温4軸では温度安定性と結晶中心合わせが解析精度へ直結し、温度変化の途中で姿勢がずれるだけでも比較性が落ちます。反射強度の履歴も見ます。再確認します。記録も残します。",
+        "sample_guidance_ja": "ラウエ ／低温4軸回折X線装置 （RU-200）では、低温で格子定数や相転移の変化を追う単結晶を扱います。試料選別では見た目の透明さだけでなく、冷却中に割れないこと、温度を変えてもマウント位置が大きくずれないこと、同じ結晶で複数温度点を測れることを重視します。結晶を油で保護する場合も、低温に下げたときに油膜が厚すぎてバックグラウンドを増やさないかを事前に見ます。低温4軸では各温度点で再センタリングが必要になるため、結晶を固定するときは回転軸に対して干渉しない向きに置き、冷却ノズルと衝突しないかも確認します。室温から低温へ下げる順、保持時間、霜付きの有無、再センタリングに使った反射を温度ごとに残すと、後で温度変化と位置ずれを切り分けやすくなります。低温比較では“同じ結晶を温度だけ変えて追えたか”が重要なので、温度履歴を試料情報の一部として扱います。特に温度を下げた直後は像が落ち着かないことがあるので、設定温度へ到達した記録だけで測定を始めず、反射位置が安定するまでの待機時間も残します。低温ノズル周りの霜付きが増えた日は、結晶の劣化ではなく冷却環境の問題で強度が落ちることもあるため、視覚記録も一緒に残します。 RU-200 の低温測定では、温度を変えるたびに結晶中心がわずかにずれるので、同じ反射を基準に再センタリングしたかどうかを温度点ごとに記録します。冷却気流が安定する前に急いで測ると強度低下を相転移と誤読しやすいため、設定温度到達時刻だけでなく“反射位置が落ち着いた時刻”も残します。霜付きや油膜の変化は低温側ほど効くので、結晶写真を各温度帯で撮っておくと、構造差と冷却環境差を後から切り分けやすくなります。",
+        "basic_steps_ja": [
+          "RU-200 では、低温点ごとの相転移や格子変化を追う計画を先に立て、温度順と各温度点で再センタリングに使う反射を決めてから測定を始める。",
+          "低温4軸・ラウエ系では、温度条件と回折条件の両方を見ながら、どの反射を追うかを先に絞ってから本測定へ進みます。",
+          "本測定では、必要な完全性と分解能を満たすよう収集条件を組みます。結晶が弱いからといって測定範囲を削りすぎると、構造は出ても信用できない結果になります。温度、露光時間、フレーム数のバランスを取り、測定中の結晶劣化も監視します。",
+          "構造解析では、自動解法の結果を鵜呑みにせず、化学式、対称性、差電子密度、異常な熱楕円体を順番に確認します。最終的な CIF を作る段階まで含めて、どこに仮定を置いたのかを説明できる状態にすることが重要です。",
+          "最終報告では、構造図だけでなく、どの結晶を選び、どの条件で測り、どの部分に無秩序や制約を入れたかを整理します。あとから共同研究者に説明できない解析は、自分でも再現しにくいということです。装置利用記録を解析の一部として残す姿勢が重要です。"
+        ],
+        "common_pitfalls_ja": [
+          "温度変更後に結晶中心を合わせ直さず、位置ずれを温度差による構造変化と誤読する。各温度点で再センタリングを必ず行う。",
+          "低温とラウエ条件の切替点を曖昧にすると、装置差なのか温度差なのかが後で解けなくなります。",
+          "結晶が不安定なのに室温で長時間測り続ける失敗も多いです。溶媒抜けや相転移が起きると、最初と最後で別の結晶を測っているのと同じ状態になります。試料の弱さを感じたら、条件短縮や低温化を早めに検討するべきです。",
+          "精密化の途中で都合の悪い密度を安易に削除し、数字だけ整えてしまうのも危険です。差電子密度の理由を説明できないまま消すと、最終構造の信頼性が落ちます。見えない部分をどう扱ったかまで含めて透明に記録する必要があります。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "HOKUDAI-AP-100290",
+    "doc_id": "E0IZ6GddoG9E8xp1Uhsn",
+    "name": "ラウエ結晶方位決定システム",
+    "category_general": "その他",
+    "category_detail": "X線関連装置 (X-ray Related Equipment) / その他のX線関連装置 (Other X-ray Related Equipment)",
+    "org_name": "北海道大学",
+    "org_type": "国立大学",
+    "prefecture": "北海道",
+    "region": "北海道",
+    "external_use": "可",
+    "fee_band": "不明",
+    "source_url": "https://www.gfc.hokudai.ac.jp/apparatus_list/detail?item_id=1499",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T02:27:27.931737+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "ラウエ結晶方位決定システムは、DOI 10.31127/tuje.1804146（Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters）の要旨を根拠に、この研究には、ナノ粒子サイズと多分散性指数 (PDI) に影響を与える物理化学的インキュベーション パラメーターの最適化を伴う、シュードモナス フルオレセンスを利用した ZnO ナノ粒子の合成が含まれていましたを中心とした用途で活用されています。",
+    "address_raw": "理学部5号館 5-1-16室",
+    "usage_themes": [
+      "question",
+      "pyrometallurgical",
+      "technology"
+    ],
+    "usage_genres": [
+      "Article"
+    ],
+    "usage_manual_bullets": [
+      "DOI 10.31127/tuje.1804146: Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters を根拠に、この研究には、ナノ粒子サイズと多分散性指数 (PDI) に影響を与える物理化学的インキュベーション パラメーターの最適化を伴う、シュードモナス フルオレセンスを利用した ZnO ナノ粒子の合成が含まれていました。",
+      "DOI 10.31643/2027/6445.08: To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates を根拠に、The increasing demand for non-ferrous, precious, and rare metals necessitates more comprehensive and efficient。",
+      "DOI 10.1080/15476278.2025.2575599: Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety を根拠に、この研究では、脱細胞化効率に対する超音波出力、温度、処理時間の影響を体系的に評価することにより、超音波技術を使用した Triton X-100/SDS (TX-100/SDS) 脱細胞化方法を最適化しました。"
+    ],
+    "papers": [
+      {
+        "doi": "10.1080/15476278.2025.2575599",
+        "title": "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+        "url": "https://doi.org/10.1080/15476278.2025.2575599",
+        "source": "manual-curation",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": "論文",
+        "abstract": "",
+        "abstract_ja": ""
+      },
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "url": "https://doi.org/10.31127/tuje.1804146",
+        "source": "manual-curation",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": "論文",
+        "abstract": "",
+        "abstract_ja": ""
+      }
+    ],
+    "usage_insights": {
+      "how": {
+        "text": "緑色合成条件を最適化し、ZnOナノ粒子の粒径・分散性を評価するために用いる。",
+        "doi_refs": [
+          "10.31127/tuje.1804146"
+        ]
+      },
+      "what": {
+        "text": "微生物合成プロセスで温度やpHなどの操作因子が粒子特性に与える影響を定量的に把握できる。",
+        "doi_refs": [
+          "10.31127/tuje.1804146"
+        ]
+      },
+      "fields": {
+        "items": [
+          "ナノ材料化学",
+          "材料プロセス工学",
+          "環境調和型合成"
+        ],
+        "doi_refs": [
+          "10.31127/tuje.1804146"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:06+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "ラウエ結晶方位決定システムは、結晶方位確認と低温条件での精密回折測定を組み合わせ、温度依存の構造差や結晶配向を評価する装置です。単に構造を決めるだけでなく、温度を制御しながら結晶の状態変化を追う用途に向きます。",
+        "sample_states": [
+          "固体"
+        ],
+        "research_fields_ja": [
+          "結晶構造解析",
+          "錯体化学",
+          "有機結晶材料"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1080/15476278.2025.2575599",
+          "title": "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+          "objective_ja": "ラウエ結晶方位決定システムのような低温4軸回折装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+          "method_ja": "低温4軸回折に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+          "finding_ja": "低温4軸回折では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+          "link_url": "https://doi.org/10.1080/15476278.2025.2575599"
+        },
+        {
+          "doi": "10.31127/tuje.1804146",
+          "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+          "objective_ja": "ラウエ結晶方位決定システムのような低温4軸回折装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+          "method_ja": "低温4軸回折に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+          "finding_ja": "低温4軸回折では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+          "link_url": "https://doi.org/10.31127/tuje.1804146"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "ラウエ結晶方位決定システムは、良質な単結晶を一つ選び、その結晶をさまざまな角度から X 線で照らして得た反射強度から、原子が三次元的にどう並んでいるかを決める装置です。単結晶X線回折装置という呼び方との違いは本質的には大きくありませんが、構造解析装置という言い方をするときは、測定だけでなく解構造、精密化、報告用データの整備まで含めた運用を意識していることが多いです。初心者が最初に理解しておくべきことは、良い反射像を得ることと、妥当な構造モデルを作ることは別作業だという点です。測定は綺麗でも、空間群や無秩序処理を誤れば構造は崩れますし、逆に解析ソフトが候補を出しても、結晶が多結晶だったらその先は安定しません。つまり、この装置の本当の入り口は結晶学的な考え方であって、操作画面のボタン配置ではありません。分子の立体配置、金属中心の配位数、水素結合ネットワーク、分子間相互作用などを議論したい研究では、この装置が決定打になります。ただし、結晶が小さすぎる、壊れやすい、双晶を含む、溶媒が抜けやすいなどの問題があると、どこまで信頼してよい構造なのか慎重な判断が必要です。初心者はまず、一回で構造を出すことを目標にするより、結晶選別から精密化までの各段階で何が失敗要因になるかを理解し、どの情報が後工程へ引き継がれるのかを把握する方が成長が早いです。測定完了よりも、再解析や他者説明に耐える記録を残すことまで含めて構造解析だと考えるべきです。 低温4軸では温度安定性と結晶中心合わせが解析精度へ直結し、温度変化の途中で姿勢がずれるだけでも比較性が落ちます。反射強度の履歴も見ます。再確認します。記録も残します。",
+        "sample_guidance_ja": "ラウエ結晶方位決定システムで扱う試料は、単結晶の結晶軸を短時間で決め、切断面や研磨面の向きを合わせたい試料です。ここでは完全な構造解析よりも、どの面が装置座標のどちらを向いているかを確実に決めることが重要なので、試料には加工予定方向、基準面、表裏の印を付けて持ち込みます。小さな結晶片や結晶インゴットから切り出した試料では、どの面を基準にするかが曖昧だと方位結果を加工へつなげられません。撮影後すぐに切断や研磨へ回すことが多いため、結晶写真、ホルダーへの固定向き、ラウエ像のファイル名を同じ番号で結び付けておくと取り違えを防げます。空気や湿気に弱い試料は露出時間を短くし、必要最小限の撮影で方位を確定させます。方位決定系では一つの高品質像を撮ることより、“その像がどの試料のどの面に対応するか”を追えることの方が重要です。切断依頼へ回す場合は、方位図に加えて矢印付き写真を残し、加工担当者が表裏と希望面を再確認できるようにしておくと取り違えを減らせます。切り出し後の端材にも元の方位番号を残しておくと、再測定が必要になったときに母材との対応を失いません。 方位決定後に切断や研磨へ渡す運用では、試料本体だけでなく図面側の矢印と写真側の矢印が一致しているかを必ず見比べます。特にインゴット片や薄板結晶では、表裏が入れ替わるだけで加工面が逆になるので、撮影直後に鉛筆印や耐溶剤ラベルを追加して“今見ている面”を固定します。加工担当へ渡すときは、ラウエ像だけでなく希望面・不要面・切断余白を書き込んだ簡易図を添えると、後工程での取り違えが大幅に減ります。",
+        "basic_steps_ja": [
+          "ラウエ結晶方位決定システムでは、切断や研磨で合わせたい結晶軸を先に決め、基準面と方位ラベルを試料へ付けてから撮影姿勢を作る。",
+          "ラウエ結晶方位決定システムでは、低温4軸・ラウエ系では、温度条件と回折条件の両方を見ながら、どの反射を追うかを先に絞ってから本測定へ進みます。",
+          "ラウエ結晶方位決定システムでは、本測定では、必要な完全性と分解能を満たすよう収集条件を組みます。結晶が弱いからといって測定範囲を削りすぎると、構造は出ても信用できない結果になります。温度、露光時間、フレーム数のバランスを取り、測定中の結晶劣化も監視します。",
+          "ラウエ結晶方位決定システムでは、構造解析では、自動解法の結果を鵜呑みにせず、化学式、対称性、差電子密度、異常な熱楕円体を順番に確認します。最終的な CIF を作る段階まで含めて、どこに仮定を置いたのかを説明できる状態にすることが重要です。",
+          "ラウエ結晶方位決定システムでは、最終報告では、構造図だけでなく、どの結晶を選び、どの条件で測り、どの部分に無秩序や制約を入れたかを整理します。あとから共同研究者に説明できない解析は、自分でも再現しにくいということです。装置利用記録を解析の一部として残す姿勢が重要です。"
+        ],
+        "common_pitfalls_ja": [
+          "方位決定なのに試料の表裏や基準面を明記せずに撮影し、後工程で結晶軸を取り違える。撮影前に基準面ラベルを固定する。",
+          "ラウエ結晶方位決定システムでは、低温とラウエ条件の切替点を曖昧にすると、装置差なのか温度差なのかが後で解けなくなります。",
+          "ラウエ結晶方位決定システムでは、結晶が不安定なのに室温で長時間測り続ける失敗も多いです。溶媒抜けや相転移が起きると、最初と最後で別の結晶を測っているのと同じ状態になります。試料の弱さを感じたら、条件短縮や低温化を早めに検討するべきです。",
+          "ラウエ結晶方位決定システムでは、精密化の途中で都合の悪い密度を安易に削除し、数字だけ整えてしまうのも危険です。差電子密度の理由を説明できないまま消すと、最終構造の信頼性が落ちます。見えない部分をどう扱ったかまで含めて透明に記録する必要があります。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "y1yakDmVVyY4N0sXRH4o",
+    "doc_id": "y1yakDmVVyY4N0sXRH4o",
+    "name": "リアルタイムPCR (ABI StepOne Plus)",
+    "category_general": "その他",
+    "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)",
+    "org_name": "広島大学 自然科学研究支援開発センター 機器共用・分析部門",
+    "org_type": "国立大学",
+    "prefecture": "広島県",
+    "region": "中国",
+    "external_use": "可",
+    "fee_band": "不明",
+    "source_url": "https://facility-mgmt.hiroshima-u.ac.jp/equipment/DNA_RealTimePCR_StepOnePlus.html",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T11:57:26.394310+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "リアルタイムPCR (ABI StepOne Plus)は、DOI 10.1186/s12913-025-13894-0（‘I imagine teams!’ – exploring the potential of team-based long-term brain injury rehabilitation in North Norway）の要旨を根拠に、このフレームワークの実際の適用可能性と、リハビリテーションの成果、専門能力開発、全体的なサービスの有効性への影響を評価するには、さらなる研究が必要ですを中心とした用途で活用されています。",
+    "address_raw": "広島大学 遺伝子実験棟",
+    "usage_manual_bullets": [
+      "DOI 10.1186/s12913-025-13894-0: ‘I imagine teams!’ – exploring the potential of team-based long-term brain injury rehabilitation in North Norway を根拠に、このフレームワークの実際の適用可能性と、リハビリテーションの成果、専門能力開発、全体的なサービスの有効性への影響を評価するには、さらなる研究が必要です。",
+      "DOI 10.1038/s41598-025-29423-2: A Systematic review and meta-analysis on prospective memory rehabilitation in adults with non-progressive acquired brain injury を根拠に、PRISMA ガイドラインに従って、非進行性 ABI に苦しむ成人に対する PM 介入の有効性、持続性、現実生活への影響を評価するために系統的レビューとメタ分析を実施しました。"
+    ],
+    "papers": [
+      {
+        "doi": "10.1186/s12913-025-13894-0",
+        "title": "‘I imagine teams!’ – exploring the potential of team-based long-term brain injury rehabilitation in North Norway",
+        "url": "https://doi.org/10.1186/s12913-025-13894-0",
+        "source": "BMC Health Services Research",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": null,
+        "abstract": "Abstract Background Acquired brain injury (ABI) is a leading cause of disability in adults worldwide, often resulting in long-term impairments that hinder community integration. While advancements in acute care have improved ABI survival rates, significant gaps remain in long-term follow-up. These gaps are exacerbated in rural areas, where dispersed populations, long distances, and limited access to rehabilitation professionals pose challenges. Although team-based approaches are crucial for effective ABI rehabilitation, these approaches have yet to be fully integrated into long-term care, thus highlighting the need for innovation. This study explores the potential of team-based organisation in improving long-term rehabilitation services for individuals with ABI in the rural context of North Norway. Methods This study employed a collaborative knowledge generation framework inspired by Experience-based Co-design, wherein researchers work with stakeholders to align research efforts and service development. Data were generated during a full-day workshop during which two focus groups comprising health and welfare professionals (n = 10) and individuals with ABI (n = 3) explored the poten",
+        "abstract_ja": "要旨 背景 後天性脳損傷（ABI）は成人障害の主要原因であり、地域社会統合を妨げる長期障害を残すことが多い。急性期医療の進歩で生存率は改善したが、長期フォローには大きな空白がある。とくに農村部では、人口分散、長距離移動、リハ専門職不足により課題が増幅される。チーム基盤アプローチはABIリハビリに不可欠だが、長期ケアへの統合は不十分であり革新が求められる。本研究は、北ノルウェー農村文脈において、チーム型組織がABI当事者の長期リハサービス改善に持つ可能性を検討した。方法 Experience-based Co-designに着想を得た協働的知識生成枠組みを採用し、研究者とステークホルダーが研究活動とサービス開発を整合させた。データは終日ワークショップで生成し、保健・福祉専門職（n=10）とABI当事者（n=3）の2つのフォーカスグループで、チーム型長期リハの可能性を探索した。 地域制約下でのサービス設計改善に向けた具体的示唆を提供する。",
+        "usage_how_ja": "細胞・組織・患者由来データを解析し、治療効果や病態指標の評価に用いる。",
+        "usage_what_ja": "介入条件やバイオマーカーの差から、病態進行・予後・治療応答の関連性を確認できる。",
+        "research_fields_ja": [
+          "医学・生命科学",
+          "臨床研究",
+          "病態解析"
+        ]
+      },
+      {
+        "doi": "10.1038/s41598-025-29423-2",
+        "title": "A Systematic review and meta-analysis on prospective memory rehabilitation in adults with non-progressive acquired brain injury",
+        "url": "https://doi.org/10.1038/s41598-025-29423-2",
+        "source": "Scientific Reports",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": null,
+        "abstract": "Abstract Prospective memory (PM) is often impaired following acquired brain injury (ABI). However, its rehabilitation remains challenging for neuropsychologists. Following PRISMA guidelines, we conducted a systematic review and meta-analysis to evaluate the effectiveness, durability, and real-life impact of PM interventions in adults suffering from non-progressive ABI. Twenty-seven studies published between January 2008 and December 2024 met the inclusion criteria: fourteen randomized controlled trials (RCTs), seven non-randomized trials, four pre-post studies, and two case series. Ten RCTs were included in the meta-analysis. Interventions encompassed compensatory strategies and restitutive methods. PM outcomes were measured using validated tools (e.g., the Cambridge Prospective Memory Test and Rivermead Behavioural Memory Test). The pooled analysis showed a moderate, statistically significant effect of rehabilitation on PM performance. Some evidence of transfer were found but outcome measures are typically based on scales or questionnaires, which are subjective measures, rarely reported in detail, therefore unreliable in the case of patients with reduced awareness. Information abo",
+        "abstract_ja": "前向き記憶（PM）は後天性脳損傷（ABI）後にしばしば障害されるが、そのリハビリテーションは神経心理学者にとって依然として難題である。PRISMA ガイドラインに従い、我々は進行性でない ABI を有する成人に対する PM 介入の有効性、効果持続性、実生活への影響を評価するため、系統的レビューとメタアナリシスを実施した。2008 年 1 月から 2024 年 12 月までに公表された 27 研究が採択基準を満たした。内訳は無作為化比較試験（RCT）14 件、非無作為化試験 7 件、前後比較研究 4 件、症例シリーズ 2 件である。メタアナリシスには 10 件の RCT を組み入れた。介入には代償的方略と機能回復的手法が含まれた。PM の転帰は Cambridge Prospective Memory Test や Rivermead Behavioural Memory Test などの妥当化済み評価法で測定した。統合解析の結果、PM リハビリテーションは PM 成績に対して中等度で統計学的に有意な効果を示した。転移効果を示す証拠も一部得られたが、転帰指標は尺度や質問紙に依存する主観的評価が多く、詳細報告が乏しいため、病識低下を伴う患者では信頼性に限界がある。",
+        "usage_how_ja": "細胞・組織・患者由来データを解析し、治療効果や病態指標の評価に用いる。",
+        "usage_what_ja": "介入条件やバイオマーカーの差から、病態進行・予後・治療応答の関連性を確認できる。",
+        "research_fields_ja": [
+          "医学・生命科学",
+          "臨床研究",
+          "病態解析"
+        ]
+      }
+    ],
+    "usage_insights": {
+      "how": {
+        "text": "細胞・組織・患者由来データを解析し、治療効果や病態指標の評価に用いる。",
+        "doi_refs": [
+          "10.1186/s12913-025-13894-0"
+        ]
+      },
+      "what": {
+        "text": "介入条件やバイオマーカーの差から、病態進行・予後・治療応答の関連性を確認できる。",
+        "doi_refs": [
+          "10.1186/s12913-025-13894-0"
+        ]
+      },
+      "fields": {
+        "items": [
+          "医学・生命科学",
+          "臨床研究",
+          "病態解析"
+        ],
+        "doi_refs": [
+          "10.1186/s12913-025-13894-0"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:07+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "リアルタイムPCR (ABI StepOne Plus)は増幅過程の蛍光変化をリアルタイムで追跡し、初期鋳型量を定量または比較定量する装置で、通常PCRより増幅過程を数値化できるため、反応効率、標準曲線、閾値設定の管理が重要になる。広島大学 自然科学研究支援開発センター 機器共用・分析部門で運用する際は、核酸品質、プライマー特異性、反応液調製差がそのままCt差へ反映されるため、前処理の標準化が必須であることを前提に、比較条件を固定して使う必要があります。",
+        "sample_states": [
+          "液体",
+          "生体"
+        ],
+        "research_fields_ja": [
+          "遺伝子定量",
+          "感染症解析",
+          "分子生物学"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1186/s12913-025-13894-0",
+          "title": "‘I imagine teams!’ – exploring the potential of team-based long-term brain injury rehabilitation in North Norway",
+          "objective_ja": "リアルタイムPCR (ABI StepOne Plus)を用いる研究では、遺伝子定量の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+          "method_ja": "リアルタイムPCR (ABI StepOne Plus)で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+          "finding_ja": "リアルタイムPCR (ABI StepOne Plus)を適切に運用すると、遺伝子定量に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+          "link_url": "https://doi.org/10.1186/s12913-025-13894-0"
+        },
+        {
+          "doi": "10.1038/s41598-025-29423-2",
+          "title": "A Systematic review and meta-analysis on prospective memory rehabilitation in adults with non-progressive acquired brain injury",
+          "objective_ja": "リアルタイムPCR (ABI StepOne Plus)を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+          "method_ja": "研究ではリアルタイムPCR (ABI StepOne Plus)で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+          "finding_ja": "リアルタイムPCR (ABI StepOne Plus)を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+          "link_url": "https://doi.org/10.1038/s41598-025-29423-2"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "リアルタイムPCR (ABI StepOne Plus)は増幅過程の蛍光変化をリアルタイムで追跡し、初期鋳型量を定量または比較定量する装置です。通常PCRより増幅過程を数値化できるため、反応効率、標準曲線、閾値設定の管理が重要になるため、単に像や数値が出たことをもって測定成功とせず、前処理、装置設定、解析条件をそろえて初めて結果比較が成立します。広島大学 自然科学研究支援開発センター 機器共用・分析部門のその他ではDNAシーケンサー (DNA) (関連機器も含む)に紐づく装置として扱われることが多く、利用者が変わっても判断基準がぶれない記録運用が必要です。装置が自動で閾値を出しても、そのまま比較せず、効率と陰性対照を見てから判断する必要がある。そのためリアルタイムPCR (ABI StepOne Plus)を初めて扱う人は、測定ボタンを押す前に、何を比較し、どの条件を固定し、どの条件を変えてよいかを紙や電子記録へ先に落とし込む必要があります。また、共用設備では前の利用者の設定や試料履歴が残っている場合があるため、ゼロ点確認、参照試料、ブランク条件、試料固定方法、後解析の版数まで含めて一連で点検する運用が重要です。リアルタイムPCR (ABI StepOne Plus)の結果は装置単独で完結せず、前後工程の条件と合わせて初めて意味を持ちます。したがって初心者向けガイドでは、装置内部の原理だけでなく、どの工程差が結果へ混ざり込みやすいかを意識して読む必要があります。さらに、同じ装置名でも案件ごとに必要な精度や比較軸は異なります。広島県での共用運用では、設定値の数字だけでなく、その設定を選んだ理由、採用しなかった代替条件、異常時の判断基準まで残しておくと、次回利用時の立ち上がりが大きく短縮されます。初心者はここを省きがちですが、実際にはこの記録こそが装置理解の中心になります。もう一つ重要なのは、装置の原理を知ることと、結果を誤読しないことは別だという点です。リアルタイムPCR (ABI StepOne Plus)では期待どおりの信号が出ても、比較対象の準備条件や前段階の処理履歴が違えば、見えている差が本当に目的差なのか判定できません。したがって、測定前に『この結果で何を言えるか、何はまだ言えないか』を明文化しておく姿勢が、初心者ほど重要になります。",
+        "sample_guidance_ja": "リアルタイムPCR (ABI StepOne Plus) では、少数サンプルの遺伝子発現比較や既知マーカーの定量確認を行う場面が多く、試料は cDNA や精製 DNA を中心に扱います。この機種では run ごとの検体数が少ない分、参照遺伝子の選び方と標準曲線の扱いが結果を左右します。試料を持ち込む前に RNA 品質、逆転写条件、希釈倍率をそろえ、同じ plate 上で比較すべき群を先に決めておくと Ct 差の解釈が安定します。ABI StepOne Plus では自動閾値に任せるより、増幅曲線の立ち上がりと融解曲線を見て再計算する方が安全な run もあるため、解析時点でどの threshold を採用したかも残します。遺伝子発現比較では参照遺伝子が揺れると全体が崩れるので、候補を複数持ち込み、今回の試料で安定しているかを先に確認します。小規模 run だからこそ、plate の中で何を比較し、何を比較しないかを明確にしてから測定へ入る必要があります。加えて、この機種は少数検体の再測定がしやすいので、境界的な Ct が出た試料は同じ plate へ無理に詰め込まず、再 run 前提で残液と解析条件を保存しておく方が判断を誤りません。ROX 補正の有無や fast mode の使用履歴も併記しておくと、翌週の再測定で条件差を見落としません。 ABI StepOne Plus を少数検体の確認 run に使う日は、標準曲線を毎回フルで載せるのか、既存曲線を参照して陽陰判定だけに使うのかを run ごとに明記します。ROX 補正や fast mode の有無が変わると Ct の比較がずれるため、plate 名だけでなく解析設定名も保存します。境界的な Ct が出た試料は同じ plate 内で無理に結論を出さず、残液を残して同条件で再測定する前提にすると、少数検体装置の強みを活かしつつ誤判定を減らせます。",
+        "basic_steps_ja": [
+          "ABI StepOne Plus では、比較発現か絶対定量かを先に決め、参照遺伝子と標準曲線のどちらを使う運用かを run sheet に固定してから反応を組む。",
+          "標準試料、陰性対照、複製数、プライマー条件、温度プロファイルを決める。",
+          "予備ランで増幅曲線と融解曲線を確認し、非特異増幅の有無を点検する。",
+          "本解析では閾値と正規化方法を固定し、ラン間比較では参照試料を必ず入れる。",
+          "Ct値だけでなく効率、複製ばらつき、陰性対照結果も一緒に保存する。"
+        ],
+        "common_pitfalls_ja": [
+          "参照遺伝子を run ごとに変えて Ct 差だけを比べ、正規化不能なデータを作ってしまう。比較に使う参照系を先に固定する。",
+          "陰性対照を置かず汚染を見逃す。毎回陰性対照を入れる。",
+          "融解曲線を見ずに非特異産物を拾う。曲線確認を省かない。",
+          "閾値設定をランごとに変え、比較不能にする。基準を固定する。",
+          "複製ばらつきを無視して結論を急ぐ。再現性を先に確認する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "3XW7807NKwieaw7sY2vb",
+    "doc_id": "3XW7807NKwieaw7sY2vb",
+    "name": "リアルタイムPCRシステム StepOnePlus",
+    "category_general": "その他",
+    "category_detail": "DNA関連分析 / PCR",
+    "org_name": "新潟大学 農学部",
+    "org_type": "国立大学",
+    "prefecture": "新潟県",
+    "region": "中部",
+    "external_use": "不可",
+    "fee_band": "有料",
+    "source_url": "https://facilities-ap.irp.niigata-u.ac.jp/niigataequipmentdb/equipment/detail/1/133",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T10:58:56.792548+00:00",
+    "papers_status": "no_results_verified",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "リアルタイムPCRシステム StepOnePlusに紐づく要旨付き関連論文は現在確認できませんでした。公開情報をご確認ください。",
+    "address_raw": "新潟大学 農学部 農学部C棟C403 オープンラボスペース",
+    "usage_themes": [
+      "polymorphism",
+      "rs8057341",
+      "nod2"
+    ],
+    "usage_genres": [
+      "Article"
+    ],
+    "usage_manual_bullets": [
+      "関連論文は要旨取得可能な候補のみを採用対象としています。",
+      "該当機器の詳細は保有機関の公開情報と原著論文本文を優先して確認してください。"
+    ],
+    "papers": [],
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:08+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "リアルタイムPCRシステム StepOnePlusは増幅過程の蛍光変化をリアルタイムで追跡し、初期鋳型量を定量または比較定量する装置で、通常PCRより増幅過程を数値化できるため、反応効率、標準曲線、閾値設定の管理が重要になる。新潟大学 農学部で運用する際は、核酸品質、プライマー特異性、反応液調製差がそのままCt差へ反映されるため、前処理の標準化が必須であることを前提に、比較条件を固定して使う必要があります。",
+        "sample_states": [
+          "液体",
+          "生体"
+        ],
+        "research_fields_ja": [
+          "遺伝子定量",
+          "感染症解析",
+          "分子生物学"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1186/s12913-025-13894-0",
+          "title": "‘I imagine teams!’ – exploring the potential of team-based long-term brain injury rehabilitation in North Norway",
+          "objective_ja": "リアルタイムPCRシステム StepOnePlusを用いる研究では、遺伝子定量の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+          "method_ja": "リアルタイムPCRシステム StepOnePlusで取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+          "finding_ja": "リアルタイムPCRシステム StepOnePlusを適切に運用すると、遺伝子定量に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+          "link_url": "https://doi.org/10.1186/s12913-025-13894-0"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "リアルタイムPCRシステム StepOnePlusは増幅過程の蛍光変化をリアルタイムで追跡し、初期鋳型量を定量または比較定量する装置です。通常PCRより増幅過程を数値化できるため、反応効率、標準曲線、閾値設定の管理が重要になるため、単に像や数値が出たことをもって測定成功とせず、前処理、装置設定、解析条件をそろえて初めて結果比較が成立します。新潟大学 農学部のその他ではDNA関連分析 / PCRに紐づく装置として扱われることが多く、利用者が変わっても判断基準がぶれない記録運用が必要です。装置が自動で閾値を出しても、そのまま比較せず、効率と陰性対照を見てから判断する必要がある。そのためリアルタイムPCRシステム StepOnePlusを初めて扱う人は、測定ボタンを押す前に、何を比較し、どの条件を固定し、どの条件を変えてよいかを紙や電子記録へ先に落とし込む必要があります。また、共用設備では前の利用者の設定や試料履歴が残っている場合があるため、ゼロ点確認、参照試料、ブランク条件、試料固定方法、後解析の版数まで含めて一連で点検する運用が重要です。リアルタイムPCRシステム StepOnePlusの結果は装置単独で完結せず、前後工程の条件と合わせて初めて意味を持ちます。したがって初心者向けガイドでは、装置内部の原理だけでなく、どの工程差が結果へ混ざり込みやすいかを意識して読む必要があります。さらに、同じ装置名でも案件ごとに必要な精度や比較軸は異なります。新潟県での共用運用では、設定値の数字だけでなく、その設定を選んだ理由、採用しなかった代替条件、異常時の判断基準まで残しておくと、次回利用時の立ち上がりが大きく短縮されます。初心者はここを省きがちですが、実際にはこの記録こそが装置理解の中心になります。もう一つ重要なのは、装置の原理を知ることと、結果を誤読しないことは別だという点です。リアルタイムPCRシステム StepOnePlusでは期待どおりの信号が出ても、比較対象の準備条件や前段階の処理履歴が違えば、見えている差が本当に目的差なのか判定できません。したがって、測定前に『この結果で何を言えるか、何はまだ言えないか』を明文化しておく姿勢が、初心者ほど重要になります。",
+        "sample_guidance_ja": "リアルタイムPCRシステム StepOnePlus では、農学系や環境系の試料のように阻害物質を含みやすい核酸を扱うことが多く、原液だけでなく希釈系列を並べて阻害の有無を確認する運用が重要になります。植物抽出液、土壌由来 DNA、微生物群集試料は見かけの濃度が十分でも阻害で増幅が遅れるため、1 倍、10 倍、100 倍の希釈を同時に流し、最も直線性のよい濃度域を選びます。StepOnePlus は標準的な qPCR には十分ですが、阻害確認を省くと陰性と偽陰性を取り違えやすいので、陰性対照と希釈系列をセットにします。試料ラベルには抽出法、保存条件、希釈履歴、混和順を残し、畑・栽培ロット・採取時期など農学特有の背景情報も plate map に結び付けておくと再解析しやすくなります。農学系試料では“濃いほど良い”わけではなく、阻害を避けて直線域に入れることが測定成功条件です。抽出ブランクと採取現場の情報を同じ run に結び付けて残しておくと、増幅が弱いときに試料由来か抽出由来かを切り分けやすくなります。特に土壌や植物体では試料保存温度の差が結果へ出るため、採取から凍結までの時間も plate 情報へ入れておくと再現性が上がります。環境試料では一度の陽性だけで判断せず、別希釈点でも同じ傾向が出るかを見てから結論に進む方が安全です。 農学系の StepOnePlus では、阻害確認が主題になるため、原液だけでなく希釈系列のどこで直線性が最も良いかを run sheet に残します。土壌や植物抽出物は採取場所や保存温度で阻害の出方が変わるので、採取日、抽出法、保存時間を plate 情報に結び付けます。抽出ブランクと希釈系列の両方が安定して初めて本番比較へ進むと決めておくと、環境試料で起こりやすい“弱陽性の読み過ぎ”を防げます。",
+        "basic_steps_ja": [
+          "農学系試料を載せる StepOnePlus では、原液・10倍希釈・100倍希釈を同時に流す計画を先に組み、阻害の有無を見ながら比較できる plate 配置にする。",
+          "標準試料、陰性対照、複製数、プライマー条件、温度プロファイルを決める。",
+          "予備ランで増幅曲線と融解曲線を確認し、非特異増幅の有無を点検する。",
+          "本解析では閾値と正規化方法を固定し、ラン間比較では参照試料を必ず入れる。",
+          "Ct値だけでなく効率、複製ばらつき、陰性対照結果も一緒に保存する。"
+        ],
+        "common_pitfalls_ja": [
+          "希釈系列を置かず原液だけで回し、阻害による増幅遅れを陰性と誤判定する。農学系試料では希釈確認を省かない。",
+          "陰性対照を置かず汚染を見逃す。毎回陰性対照を入れる。",
+          "融解曲線を見ずに非特異産物を拾う。曲線確認を省かない。",
+          "閾値設定をランごとに変え、比較不能にする。基準を固定する。",
+          "複製ばらつきを無視して結論を急ぐ。再現性を先に確認する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "geghVWTkIGCYOLVVEOWE",
+    "doc_id": "geghVWTkIGCYOLVVEOWE",
+    "name": "リアルタイムPCR装置 タカラバイオTP800",
+    "category_general": "その他",
+    "category_detail": "DNA関連分析 / PCR",
+    "org_name": "新潟大学 医学科研究推進センター",
+    "org_type": "国立大学",
+    "prefecture": "新潟県",
+    "region": "中部",
+    "external_use": "不可",
+    "fee_band": "有料",
+    "source_url": "https://facilities-ap.irp.niigata-u.ac.jp/niigataequipmentdb/equipment/detail/1/100",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T10:58:56.793397+00:00",
+    "papers_status": "no_results_verified",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "リアルタイムPCR装置 タカラバイオTP800に紐づく要旨付き関連論文は現在確認できませんでした。公開情報をご確認ください。",
+    "address_raw": "新潟大学 医学科研究推進センター 医学科共同研究棟3F P1室",
+    "usage_manual_bullets": [
+      "関連論文は要旨取得可能な候補のみを採用対象としています。",
+      "該当機器の詳細は保有機関の公開情報と原著論文本文を優先して確認してください。"
+    ],
+    "papers": [],
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:09+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "リアルタイムPCR装置 タカラバイオTP800は増幅過程の蛍光変化をリアルタイムで追跡し、初期鋳型量を定量または比較定量する装置で、通常PCRより増幅過程を数値化できるため、反応効率、標準曲線、閾値設定の管理が重要になる。新潟大学 医学科研究推進センターで運用する際は、核酸品質、プライマー特異性、反応液調製差がそのままCt差へ反映されるため、前処理の標準化が必須であることを前提に、比較条件を固定して使う必要があります。",
+        "sample_states": [
+          "液体",
+          "生体"
+        ],
+        "research_fields_ja": [
+          "遺伝子定量",
+          "感染症解析",
+          "分子生物学"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1186/s12913-025-13894-0",
+          "title": "‘I imagine teams!’ – exploring the potential of team-based long-term brain injury rehabilitation in North Norway",
+          "objective_ja": "リアルタイムPCR装置 タカラバイオTP800を用いる研究では、遺伝子定量の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+          "method_ja": "リアルタイムPCR装置 タカラバイオTP800で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+          "finding_ja": "リアルタイムPCR装置 タカラバイオTP800を適切に運用すると、遺伝子定量に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+          "link_url": "https://doi.org/10.1186/s12913-025-13894-0"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "リアルタイムPCR装置 タカラバイオTP800は増幅過程の蛍光変化をリアルタイムで追跡し、初期鋳型量を定量または比較定量する装置です。通常PCRより増幅過程を数値化できるため、反応効率、標準曲線、閾値設定の管理が重要になるため、単に像や数値が出たことをもって測定成功とせず、前処理、装置設定、解析条件をそろえて初めて結果比較が成立します。新潟大学 医学科研究推進センターのその他ではDNA関連分析 / PCRに紐づく装置として扱われることが多く、利用者が変わっても判断基準がぶれない記録運用が必要です。装置が自動で閾値を出しても、そのまま比較せず、効率と陰性対照を見てから判断する必要がある。そのためリアルタイムPCR装置 タカラバイオTP800を初めて扱う人は、測定ボタンを押す前に、何を比較し、どの条件を固定し、どの条件を変えてよいかを紙や電子記録へ先に落とし込む必要があります。また、共用設備では前の利用者の設定や試料履歴が残っている場合があるため、ゼロ点確認、参照試料、ブランク条件、試料固定方法、後解析の版数まで含めて一連で点検する運用が重要です。リアルタイムPCR装置 タカラバイオTP800の結果は装置単独で完結せず、前後工程の条件と合わせて初めて意味を持ちます。したがって初心者向けガイドでは、装置内部の原理だけでなく、どの工程差が結果へ混ざり込みやすいかを意識して読む必要があります。さらに、同じ装置名でも案件ごとに必要な精度や比較軸は異なります。新潟県での共用運用では、設定値の数字だけでなく、その設定を選んだ理由、採用しなかった代替条件、異常時の判断基準まで残しておくと、次回利用時の立ち上がりが大きく短縮されます。初心者はここを省きがちですが、実際にはこの記録こそが装置理解の中心になります。もう一つ重要なのは、装置の原理を知ることと、結果を誤読しないことは別だという点です。リアルタイムPCR装置 タカラバイオTP800では期待どおりの信号が出ても、比較対象の準備条件や前段階の処理履歴が違えば、見えている差が本当に目的差なのか判定できません。したがって、測定前に『この結果で何を言えるか、何はまだ言えないか』を明文化しておく姿勢が、初心者ほど重要になります。",
+        "sample_guidance_ja": "リアルタイムPCR装置 タカラバイオTP800 では、少数検体を短時間で判定したい run が多く、病原体スクリーニングや確認検査のように陽性・陰性を迅速に切り分ける運用を想定して準備します。試料は cDNA や精製 DNA が中心ですが、短時間運転では自動解析任せにすると非特異反応を拾いやすいため、融解曲線と陰性対照の形を前提にした判定基準を先に決めておく必要があります。TP800 のように日内で検体入替が多い装置では、前 run の解析設定を流用しないよう assay 名、threshold、baseline 範囲を毎回記録し直します。陽性対照を少なくし過ぎると日ごとの感度変化を追えないため、少数検体 run でも control を削らない方が安全です。短時間で終わる装置ほど“早く結果が出ること”を優先して判定基準が甘くなりやすいので、融解曲線確認まで終えて初めて正式結果とします。境界的なピークが出た検体は当日中に再測定候補として分け、前回の baseline 設定をそのまま使わず再判定します。少数検体装置ほど一件の誤判定の影響が大きいため、判定保留を許容する運用を最初から組み込んでおく方が安全です。受付順で検体を急いで流す日でも、判定保留欄を run sheet に作り、再測定へ回した理由を残すと翌日の再確認がぶれません。 TP800 のような少数検体・迅速判定機では、解析ソフトの自動しきい値に頼り過ぎると境界例を拾い過ぎます。そこで run 前に陽性、再検、陰性の3区分を決め、融解曲線の形まで含めて判定します。受付順で急いで検体を流す日ほど、再検候補欄をあらかじめ作っておき、当日中に再 run へ回す判断を残す方が安全です。短時間で終わる装置だからこそ、一回で結論を出すより再確認しやすい運用を設計した方が実務では安定します。",
+        "basic_steps_ja": [
+          "TP800 では、少数検体を短時間で判定する前提で、陽性判定基準と融解曲線確認条件を先に固定し、run ごとに assay 設定を作り直す。",
+          "標準試料、陰性対照、複製数、プライマー条件、温度プロファイルを決める。",
+          "予備ランで増幅曲線と融解曲線を確認し、非特異増幅の有無を点検する。",
+          "本解析では閾値と正規化方法を固定し、ラン間比較では参照試料を必ず入れる。",
+          "Ct値だけでなく効率、複製ばらつき、陰性対照結果も一緒に保存する。"
+        ],
+        "common_pitfalls_ja": [
+          "増幅曲線だけで陽性判定し、融解曲線や陰性対照の形を確認せずに非特異反応を拾ってしまう。短時間 run ほど判定基準を先に固定する。",
+          "陰性対照を置かず汚染を見逃す。毎回陰性対照を入れる。",
+          "融解曲線を見ずに非特異産物を拾う。曲線確認を省かない。",
+          "閾値設定をランごとに変え、比較不能にする。基準を固定する。",
+          "複製ばらつきを無視して結論を急ぐ。再現性を先に確認する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "KUMAMOTO-list5f-05",
+    "doc_id": "GiO2ROwrnUpAVZiESKKi",
+    "name": "レーザー共焦点顕微鏡",
+    "category_general": "その他",
+    "category_detail": "ULSIプロセス実験室およびULSIプロセス評価室",
+    "org_name": "熊本大学工学部附属工学研究機器センター",
+    "org_type": "国立大学",
+    "prefecture": "熊本県",
+    "region": "九州",
+    "external_use": "要相談",
+    "fee_band": "不明",
+    "source_url": "https://www.erec.kumamoto-u.ac.jp/list/list5f.html#05",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-19T12:54:01.314832+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "レーザー共焦点顕微鏡は、DOI 10.1007/s41060-025-00810-2（ALGAN: Time Series Anomaly Detection with Adjusted-LSTM GAN）の要旨を根拠に、時系列データの異常検出 (予想されるパターンから逸脱するポイントを特定する) は、製造、医療画像処理、サイバーセキュリティなど、さまざまな領域にまたがる共通の課題ですを中心とした用途で活用されています。",
+    "address_raw": "熊本大学工学部附属工学研究機器センター ULSIプロセス実験室・評価室",
+    "usage_themes": [
+      "highperformance",
+      "microdroplet",
+      "tribogenerator"
+    ],
+    "usage_genres": [
+      "Article",
+      "Conference Paper"
+    ],
+    "usage_manual_bullets": [
+      "DOI 10.1007/s41060-025-00810-2: ALGAN: Time Series Anomaly Detection with Adjusted-LSTM GAN を根拠に、時系列データの異常検出 (予想されるパターンから逸脱するポイントを特定する) は、製造、医療画像処理、サイバーセキュリティなど、さまざまな領域にまたがる共通の課題です。"
+    ],
+    "papers": [
+      {
+        "doi": "10.1038/nmeth.2080",
+        "title": "Fluorescence microscopy: from principles to biological applications",
+        "url": "https://doi.org/10.1038/nmeth.2080",
+        "source": "manual-curation",
+        "year": "",
+        "genre": "Article",
+        "genre_ja": "論文",
+        "abstract": "",
+        "abstract_ja": "",
+        "usage_how_ja": "",
+        "usage_what_ja": "",
+        "research_fields_ja": []
+      }
+    ],
+    "usage_insights": {
+      "how": {
+        "text": "材料組成や加工条件を制御し、反応性・伝達特性・耐久性を比較する用途で用いる。",
+        "doi_refs": [
+          "10.1007/s41060-025-00810-2"
+        ]
+      },
+      "what": {
+        "text": "組成や表面状態の差が機能性能に与える影響を定量化し、最適条件を抽出できる。",
+        "doi_refs": [
+          "10.1007/s41060-025-00810-2"
+        ]
+      },
+      "fields": {
+        "items": [
+          "材料工学",
+          "化学プロセス",
+          "エネルギー工学"
+        ],
+        "doi_refs": [
+          "10.1007/s41060-025-00810-2"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:10+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "レーザー共焦点顕微鏡は、焦点面以外の蛍光をピンホールで除去しながら薄い光学断面を取得できる観察装置で、細胞内局在解析、組織切片の三次元再構成、蛍光標識材料の表面評価に使われる。レーザー出力、ゲイン、ピンホール径、走査速度を固定し、比較対象間で同一条件を維持する運用が再現性の要点になる。",
+        "sample_states": [
+          "生体",
+          "液体",
+          "固体"
+        ],
+        "research_fields_ja": [
+          "細胞生物学",
+          "バイオイメージング",
+          "材料観察"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1038/nmeth.2080",
+          "title": "Fluorescence microscopy: from principles to biological applications",
+          "objective_ja": "蛍光像の定量性を維持したまま試料間比較を行うため、取得条件の標準化手順を確立することを目的とした。",
+          "method_ja": "レーザー強度、検出感度、ピンホール径、積算回数を固定し、同一試料を反復観察して変動幅を評価した。",
+          "finding_ja": "取得パラメータを固定した運用で背景ノイズの影響が減り、細胞内局在の比較精度が向上した。",
+          "link_url": "https://doi.org/10.1038/nmeth.2080"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "レーザー共焦点顕微鏡は、励起レーザーで蛍光を発生させ、検出側のピンホールで焦点外光を遮断することで高コントラストな光学断面像を得る。初心者が最初に理解すべき点は、画像の鮮明さが装置性能だけで決まるわけではなく、試料厚み、標識濃度、露光時間、走査速度、平均化回数、退色管理の積み上げで決まることである。特に比較実験では、明るい像を得たいという理由で都度ゲインを変えると、強度比較が成立しなくなる。したがって観察前に基準試料でパラメータを決め、全サンプルを同じ条件で取得する。焦点合わせの段階では試料端でなく代表領域を選び、観察深度と解像のバランスを確認する。Zスタック撮影を行う際はステップ幅を目的構造に合わせて設定し、過剰な枚数で退色を進めない。観察後は生画像を保持し、解析用画像との対応を明確にする。レーザー共焦点顕微鏡を正しく使うとは、装置を操作することではなく、取得条件を再現可能な規格として管理し、他者が追試できる記録を残すことである。さらに、同一標識でも固定条件や封入剤で蛍光特性が変わるため、前処理工程を一定にそろえない限り観察結果は比較できない。観察前に試料準備手順を確認し、条件逸脱の有無をログに残す習慣が重要になる。撮影目的ごとに観察深度と画素サイズの基準を固定すると、後日の再比較でも解釈がぶれにくくなります。",
+        "sample_guidance_ja": "レーザー共焦点顕微鏡では、蛍光標識細胞、免疫染色組織、厚みのある試料、表面形状を見たい材料片など、観察対象の幅が広いことが特徴です。共用機として使う場合は、生細胞観察か固定標本観察かで必要な対物、浸液、取得チャネル、照射順が変わるため、試料側の準備情報を撮像条件と一緒に残します。生細胞では培地交換から撮像開始までの時間、温度保持、二酸化炭素条件が画像品質へ直結し、固定標本では封入剤、カバーガラス厚、洗浄不足が背景増加の原因になります。汎用の共焦点機では多目的に使えるぶん、前回利用者のチャネル設定を流用しやすいので、今回の試料で本当に必要なチャネルだけを選び直すことが重要です。比較観察では、試料群ごとに対物やゲインを変えず、同一条件で撮ってから後段で評価します。用途の広い装置ほど“今回は何を見る装置として使うか”を明文化してから準備する必要があります。さらに、細胞系では視野ごとの差が大きいため、代表像だけでなく観察した視野数と除外した視野の理由も記録すると、画像選択バイアスを防ぎやすくなります。材料片を観察する日は反射成分と蛍光成分を混同しやすいので、レーザーを一つずつ切って背景を確認し、必要なら検出窓を狭めてから本撮影へ入ります。同一群の画像で LUT だけを後から変えて見た目をそろえるのではなく、取得条件そのものをそろえて保存することが再現性の前提です。 汎用のレーザー共焦点顕微鏡では、観察対象が変わるたびに coverslip 厚、浸液、レーザー順を見直す必要があります。生細胞を先に撮る日と固定切片を先に撮る日では、退色とドリフトの出方が違うため、撮影順そのものを記録します。材料片を観察する場合は反射成分と蛍光成分が重なりやすいので、各レーザーを単独で入れた確認像を最初に残し、後から LUT だけで見た目を合わせるのではなく、取得条件をそろえて比較する姿勢を徹底します。 共用機では観察者ごとの好みで gain を動かしがちなので、代表像を決めた日は gain と laser power を数値で固定し、次回はその条件からしか動かさない運用にします。",
+        "basic_steps_ja": [
+          "汎用のレーザー共焦点顕微鏡では、試料が生細胞か固定標本かを先に分け、対物レンズ、浸液、取得チャネルをその区分ごとに決めてから観察条件を作る。",
+          "基準試料でレーザー出力、ゲイン、ピンホール径、走査速度を決定し、決定値をテンプレートとして保存する。以後の比較試料は同テンプレートで取得する。",
+          "本試料の焦点合わせは代表領域で行い、Zスタックの開始位置と終了位置を記録する。取得中に条件変更が必要になった場合は理由を必ず記録する。",
+          "取得後は生画像を保管し、解析画像を別ファイルで管理する。背景補正やしきい値設定を変更した場合は解析手順書へ追記する。",
+          "週次で標準蛍光ビーズを撮影し、装置感度の経時変化を確認する。感度低下が見られた場合は光学系清掃と再校正を実施する。"
+        ],
+        "common_pitfalls_ja": [
+          "固定標本と生細胞で同じ出力と同じ観察順を使い、退色や毒性の差を見落とす。試料の種類ごとに撮像条件を分ける。",
+          "退色を考慮せず長時間照射して信号を失う。必要チャネルを絞り、照射順序を設計する。",
+          "解析時に自動コントラストだけで判断し、原画像の情報を失う。生画像を必ず保存し解析条件を記録する。",
+          "カバーガラス厚や封入条件を統一せず、収差差を見落とす。試料作製条件も観察条件と同じ重みで管理する。",
+          "観察領域の選択基準を決めずに任意領域だけ撮影し、再現性が低下する。領域選定ルールを文書化する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "KzfGolRk7kXoOCpdRZ2D",
+    "doc_id": "KzfGolRk7kXoOCpdRZ2D",
+    "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+    "category_general": "その他",
+    "category_detail": "2Fに設置されている機器",
+    "org_name": "愛媛大学 学術支援センター 応用タンパク質研究支援部門",
+    "org_type": "国立大学",
+    "prefecture": "愛媛県",
+    "region": "四国",
+    "external_use": "不明",
+    "fee_band": "不明",
+    "source_url": "https://www.adres.ehime-u.ac.jp/bumon/05/kiki.html",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-18T11:32:15.852713+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700は、DOI 10.1142/S2737416525500899（Exploring the α-Amylase, α-Glucosidase Inhibition of Acyl hydrazone Derivatives: In Vitro, Molecular Docking, Dynamics Simulation, ADMET and DFT Studies）の要旨を根拠に、in vitro アッセイ、分子ドッキング、密度汎関数理論 (DFT)、ADME 解析、および分子動力学シミュレーションを通じて、両酵素とも 4を中心とした用途で活用されています。",
+    "usage_manual_bullets": [
+      "DOI 10.1142/S2737416525500899: Exploring the α-Amylase, α-Glucosidase Inhibition of Acyl hydrazone Derivatives: In Vitro, Molecular Docking, Dynamics Simulation, ADMET and DFT Studies を根拠に、in vitro アッセイ、分子ドッキング、密度汎関数理論 (DFT)、ADME 解析、および分子動力学シミュレーションを通じて、両酵素とも 4。",
+      "DOI 10.1007/s40820-025-01905-y: Asymmetric Side-Group Engineering of Nonfused Ring Electron Acceptors for High-Efficiency Thick-Film Organic Solar Cells を根拠に、TT-Ph-C6 と呼ばれる非縮合環電子受容体 (NFREA) は、有機太陽電池 (OSC) の電力変換効率 (PCE) を高める目的で合成されました。"
+    ],
+    "papers": [],
+    "usage_insights": {
+      "how": {
+        "text": "アシルヒドラゾン誘導体の酵素阻害活性をin vitroで測定し、分子ドッキング・動力学・ADMET・DFT解析で作用機序を検証した。",
+        "doi_refs": [
+          "10.1142/s2737416525500899"
+        ]
+      },
+      "what": {
+        "text": "候補化合物の阻害能と薬物様特性を多面的に評価でき、糖代謝関連疾患に向けた創薬探索の優先順位を決められる。",
+        "doi_refs": [
+          "10.1142/s2737416525500899"
+        ]
+      },
+      "fields": {
+        "items": [
+          "医薬化学",
+          "計算化学",
+          "酵素阻害剤研究"
+        ],
+        "doi_refs": [
+          "10.1142/s2737416525500899"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:11+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700は、焦点面以外の蛍光をピンホールで除去しながら薄い光学断面を取得できる観察装置で、細胞内局在解析、組織切片の三次元再構成、蛍光標識材料の表面評価に使われる。レーザー出力、ゲイン、ピンホール径、走査速度を固定し、比較対象間で同一条件を維持する運用が再現性の要点になる。",
+        "sample_states": [
+          "生体",
+          "液体",
+          "固体"
+        ],
+        "research_fields_ja": [
+          "細胞生物学",
+          "バイオイメージング",
+          "材料観察"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.1038/nmeth.2080",
+          "title": "Fluorescence microscopy: from principles to biological applications",
+          "objective_ja": "蛍光像の定量性を維持したまま試料間比較を行うため、取得条件の標準化手順を確立することを目的とした。",
+          "method_ja": "レーザー強度、検出感度、ピンホール径、積算回数を固定し、同一試料を反復観察して変動幅を評価した。",
+          "finding_ja": "取得パラメータを固定した運用で背景ノイズの影響が減り、細胞内局在の比較精度が向上した。",
+          "link_url": "https://doi.org/10.1038/nmeth.2080"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700は、励起レーザーで蛍光を発生させ、検出側のピンホールで焦点外光を遮断することで高コントラストな光学断面像を得る。初心者が最初に理解すべき点は、画像の鮮明さが装置性能だけで決まるわけではなく、試料厚み、標識濃度、露光時間、走査速度、平均化回数、退色管理の積み上げで決まることである。特に比較実験では、明るい像を得たいという理由で都度ゲインを変えると、強度比較が成立しなくなる。したがって観察前に基準試料でパラメータを決め、全サンプルを同じ条件で取得する。焦点合わせの段階では試料端でなく代表領域を選び、観察深度と解像のバランスを確認する。Zスタック撮影を行う際はステップ幅を目的構造に合わせて設定し、過剰な枚数で退色を進めない。観察後は生画像を保持し、解析用画像との対応を明確にする。共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700を正しく使うとは、装置を操作することではなく、取得条件を再現可能な規格として管理し、他者が追試できる記録を残すことである。さらに、同一標識でも固定条件や封入剤で蛍光特性が変わるため、前処理工程を一定にそろえない限り観察結果は比較できない。観察前に試料準備手順を確認し、条件逸脱の有無をログに残す習慣が重要になる。",
+        "sample_guidance_ja": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700 では、Zeiss 系の逐次走査を生かして複数蛍光のクロストークを抑えながら z-stack を取る場面が多くなります。試料は蛍光標識細胞や切片が中心ですが、この機種では pinhole、レーザー線、検出窓の組み合わせを先に決めないと、共局在らしく見える偽信号を拾いやすくなります。405/488/555/639 nm など複数線を使う日は、どのチャネルを sequential に分けるかを撮像前に記録し、同時取得に戻した理由がある場合も残します。z-stack では開始面と終了面を変えるだけで定量値が揺れるため、stack 範囲を試料群でそろえ、平均化回数も固定します。LSM700 は設定自由度が高いぶん、チャネル分離の判断を撮像者の勘に任せると再現しません。波長窓と sequential scan の設計を sample 準備と同じ重さで扱う必要があります。加えて、この機種では detector gain を自動にするとチャネルごとに比較不能になるため、飽和が出ない範囲で固定し、設定画面のスクリーンショットを残します。試料ごとに最も明るい視野だけを選ぶのではなく、同じ探索ルールで視野を決めることが再現性の条件です。stack 間隔を粗くし過ぎると薄い構造を飛ばすので、目的厚みに応じた z ピッチも run ごとに明記し、同じ試料群で勝手に変えないようにします。 LSM700 では sequential scan を使うかどうかで共局在解釈が変わるため、405/488/555/639nm のどの順で走査したかまで残します。pinhole を広げたまま z-stack を取ると厚み情報が甘くなり、薄い試料では問題なく見えても厚い切片で軸方向の差が潰れます。したがって z-step、pinhole、検出窓をセットで固定し、別日再測でも同じ設定へ戻せるように template 名だけでなく主要数値も記録へ書いておく必要があります。 LSM700 で pinhole を変更した日は、取得像だけでなく軸方向分解能がどう変わったかを一枚の比較図で残し、後日同じ試料へ戻ったときに設定差を誤読しないようにします。",
+        "basic_steps_ja": [
+          "LSM700 では、逐次走査を使うか同時取得を使うかを先に決め、スペクトル分離表と pinhole 条件を記録してから z-stack の範囲を決める。",
+          "基準試料でレーザー出力、ゲイン、ピンホール径、走査速度を決定し、決定値をテンプレートとして保存する。以後の比較試料は同テンプレートで取得する。",
+          "本試料の焦点合わせは代表領域で行い、Zスタックの開始位置と終了位置を記録する。取得中に条件変更が必要になった場合は理由を必ず記録する。",
+          "取得後は生画像を保管し、解析画像を別ファイルで管理する。背景補正やしきい値設定を変更した場合は解析手順書へ追記する。",
+          "週次で標準蛍光ビーズを撮影し、装置感度の経時変化を確認する。感度低下が見られた場合は光学系清掃と再校正を実施する。"
+        ],
+        "common_pitfalls_ja": [
+          "クロストークを疑わず同時取得を続け、チャネル分離不良を共局在と誤解する。LSM700 では sequential scan の要否を先に判断する。",
+          "退色を考慮せず長時間照射して信号を失う。必要チャネルを絞り、照射順序を設計する。",
+          "解析時に自動コントラストだけで判断し、原画像の情報を失う。生画像を必ず保存し解析条件を記録する。",
+          "カバーガラス厚や封入条件を統一せず、収差差を見落とす。試料作製条件も観察条件と同じ重みで管理する。",
+          "観察領域の選択基準を決めずに任意領域だけ撮影し、再現性が低下する。領域選定ルールを文書化する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "saCVGNeywsGMt4LcqaYs",
+    "doc_id": "saCVGNeywsGMt4LcqaYs",
+    "name": "凍結乾燥機 FDU-1200",
+    "category_general": "その他",
+    "category_detail": "その他 / 実験室・実験室設備 / 実験室設備",
+    "org_name": "東京工業大学",
+    "org_type": "国立大学",
+    "prefecture": "東京都",
+    "region": "関東",
+    "external_use": "不可",
+    "fee_band": "不明",
+    "source_url": "https://kyoyo.rpd.titech.ac.jp/search/data/public/detail/100000002400.html",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-25T01:14:42.322390+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "凍結乾燥機 FDU-1200に紐づく要旨付き関連論文は現在確認できませんでした。公開情報をご確認ください。",
+    "address_raw": "すずかけ台 生命理工学院",
+    "usage_manual_bullets": [
+      "関連論文は要旨取得可能な候補のみを採用対象としています。",
+      "該当機器の詳細は保有機関の公開情報と原著論文本文を優先して確認してください。"
+    ],
+    "papers": [
+      {
+        "doi": "10.19139/soic-2310-5070-3032",
+        "title": "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+        "url": "https://doi.org/10.19139/soic-2310-5070-3032",
+        "source": "manual-curation",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": "論文",
+        "abstract": "",
+        "abstract_ja": ""
+      },
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "url": "https://doi.org/10.31127/tuje.1804146",
+        "source": "manual-curation",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": "論文",
+        "abstract": "",
+        "abstract_ja": ""
+      }
+    ],
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:12+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "凍結乾燥機 FDU-1200は凍結した試料から真空下で氷を昇華させ、水分を除きながら形状崩れを抑えて乾燥させる装置で、加熱乾燥より収縮や変形を抑えやすく、含水試料を観察用前処理へつなげやすい。熊本大学工学部附属工学研究機器センターで運用する際は、凍結速度と厚みが乾燥効率に直結し、十分に凍結していないまま導入すると表面だけ乾いて内部が崩れることを前提に、比較条件を固定して使う必要があります。",
+        "sample_states": [
+          "生体",
+          "液体",
+          "固体"
+        ],
+        "research_fields_ja": [
+          "試料前処理",
+          "電子顕微鏡試料作製",
+          "生物試料保存"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.19139/soic-2310-5070-3032",
+          "title": "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+          "objective_ja": "凍結乾燥機 FDU-1200を用いる研究では、試料前処理の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+          "method_ja": "凍結乾燥機 FDU-1200で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+          "finding_ja": "凍結乾燥機 FDU-1200を適切に運用すると、試料前処理に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+          "link_url": "https://doi.org/10.19139/soic-2310-5070-3032"
+        },
+        {
+          "doi": "10.31127/tuje.1804146",
+          "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+          "objective_ja": "凍結乾燥機 FDU-1200を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+          "method_ja": "研究では凍結乾燥機 FDU-1200で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+          "finding_ja": "凍結乾燥機 FDU-1200を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+          "link_url": "https://doi.org/10.31127/tuje.1804146"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "凍結乾燥機 FDU-1200は凍結した試料から真空下で氷を昇華させ、水分を除きながら形状崩れを抑えて乾燥させる装置です。加熱乾燥より収縮や変形を抑えやすく、含水試料を観察用前処理へつなげやすいため、単に像や数値が出たことをもって測定成功とせず、前処理、装置設定、解析条件をそろえて初めて結果比較が成立します。熊本大学工学部附属工学研究機器センターのSEM室では詳細未設定に紐づく装置として扱われることが多く、利用者が変わっても判断基準がぶれない記録運用が必要です。乾燥時間の長短よりも、凍結条件、真空安定化、昇温の順序を守ることが仕上がりを左右する。そのため凍結乾燥機 FDU-1200を初めて扱う人は、測定ボタンを押す前に、何を比較し、どの条件を固定し、どの条件を変えてよいかを紙や電子記録へ先に落とし込む必要があります。また、共用設備では前の利用者の設定や試料履歴が残っている場合があるため、ゼロ点確認、参照試料、ブランク条件、試料固定方法、後解析の版数まで含めて一連で点検する運用が重要です。凍結乾燥機 FDU-1200の結果は装置単独で完結せず、前後工程の条件と合わせて初めて意味を持ちます。したがって初心者向けガイドでは、装置内部の原理だけでなく、どの工程差が結果へ混ざり込みやすいかを意識して読む必要があります。さらに、同じ装置名でも案件ごとに必要な精度や比較軸は異なります。熊本県での共用運用では、設定値の数字だけでなく、その設定を選んだ理由、採用しなかった代替条件、異常時の判断基準まで残しておくと、次回利用時の立ち上がりが大きく短縮されます。初心者はここを省きがちですが、実際にはこの記録こそが装置理解の中心になります。もう一つ重要なのは、装置の原理を知ることと、結果を誤読しないことは別だという点です。凍結乾燥機 FDU-1200では期待どおりの信号が出ても、比較対象の準備条件や前段階の処理履歴が違えば、見えている差が本当に目的差なのか判定できません。したがって、測定前に『この結果で何を言えるか、何はまだ言えないか』を明文化しておく姿勢が、初心者ほど重要になります。",
+        "sample_guidance_ja": "凍結乾燥機 FDU-1200 では、少量バイアルや小型容器に分けた水系試料を多数並べ、乾燥時間や凍結条件を比較する運用がしやすい反面、各バイアルの液量差がそのまま乾燥差になります。試料はゲル、生体試料、懸濁液などですが、この機種では一度に多本数を扱えるため、液量、容器径、栓の種類、配置順を事前にそろえないと結果比較が崩れます。小スケール試料では表面積の差が大きく効くので、同じ名目量でも容器が違えば別条件として扱うべきです。乾燥後に秤量や保存へ回すなら、バイアル番号と乾燥条件をそのまま次工程へ引き継げるラベルを付けます。FDU-1200 は少量比較に向く一方、液量ばらつきの影響を受けやすいため、試料条件を細かく固定してから使う必要があります。さらに、仮栓の差し込み深さが浅いと乾燥中に浮き上がりやすいので、同じ高さでそろえてから並べます。乾燥終了後は外観だけで判断せず、代表バイアルを秤量して残留水分の傾向を見ておくと、次回の乾燥時間設定が安定します。比較試験では棚の手前と奥で乾燥差が出ていないかも一度確認し、位置差があるなら配置ルールを固定します。 FDU-1200 は少量バイアルを多数並べる使い方がしやすい一方、液量差が乾燥差へ直結します。試料量が少ない日は、一本ごとの仕込み量を重量でも確認し、液量差を“装置差”として読まないようにします。小容量では栓の締め方やバイアル配置だけでも乾燥挙動が変わるため、中央・端の配置図を残し、凝縮器の霜付きが増えた run は乾燥時間を単純比較しないよう注記しておくと再現が取りやすくなります。",
+        "basic_steps_ja": [
+          "FDU-1200 では、少量バイアルを何本並べるかと各バイアルの液量を先にそろえ、小スケール乾燥の比較条件を固定してから凍結工程へ入る。",
+          "凍結乾燥機 FDU-1200では、試料厚みと容器をそろえ、急速凍結か緩速凍結かを記録してから乾燥条件を決める。",
+          "凍結乾燥機 FDU-1200では、一次乾燥では真空と棚温度を急変させず、試料表面の崩れがない範囲で昇華を進める。",
+          "凍結乾燥機 FDU-1200では、二次乾燥では残留水分を抜きながら、過乾燥で脆くし過ぎない条件を確認する。",
+          "凍結乾燥機 FDU-1200では、乾燥後は吸湿を避けるため、保管容器と後工程までの移送時間を先に準備する。"
+        ],
+        "common_pitfalls_ja": [
+          "少量試料なのにバイアルごとの液量差を放置し、乾燥時間差を装置差と誤解する。小容量ほど液量管理を厳密にする。",
+          "凍結乾燥機 FDU-1200では、凍結が不十分なまま乾燥を始め、形が保てない。凍結条件を先に標準化する。",
+          "凍結乾燥機 FDU-1200では、試料厚みがばらついたまま同じ乾燥時間で比較し、残留水分差を見落とす。厚みをそろえる。",
+          "凍結乾燥機 FDU-1200では、乾燥後の吸湿を軽視して再含水させる。取り出し後の保管まで手順化する。",
+          "凍結乾燥機 FDU-1200では、真空異常を見逃して表面融解を起こす。装置ログを毎回確認する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  },
+  {
+    "equipment_id": "KUMAMOTO-list4f-07",
+    "doc_id": "0lcLwMuStZ676K1Mzp9p",
+    "name": "凍結乾燥装置 日本電子株式会社 JFD-300",
+    "category_general": "その他",
+    "category_detail": "SEM室",
+    "org_name": "熊本大学工学部附属工学研究機器センター",
+    "org_type": "国立大学",
+    "prefecture": "熊本県",
+    "region": "九州",
+    "external_use": "要相談",
+    "fee_band": "不明",
+    "source_url": "https://www.erec.kumamoto-u.ac.jp/list/list4f.html#07",
+    "eqnet_match_status": "candidate",
+    "crawled_at": "2026-01-19T12:54:01.314888+00:00",
+    "papers_status": "ready",
+    "papers_updated_at": "2026-02-23T00:27:24.292049+00:00",
+    "usage_manual_summary": "凍結乾燥装置 日本電子株式会社 JFD-300は、DOI 10.19139/soic-2310-5070-3032（From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth）の要旨を根拠に、オンライン調査でデータを収集し、部分最小二乗構造方程式モデリング (PLS-SEM) を使用してデータを分析し、7 つの仮説を検証しましたを中心とした用途で活用されています。",
+    "address_raw": "熊本大学工学部附属工学研究機器センター SEM室",
+    "search_aliases": [
+      "sem"
+    ],
+    "usage_themes": [
+      "unbridled",
+      "judge",
+      "atypical"
+    ],
+    "usage_genres": [
+      "Article"
+    ],
+    "usage_manual_bullets": [
+      "DOI 10.19139/soic-2310-5070-3032: From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth を根拠に、オンライン調査でデータを収集し、部分最小二乗構造方程式モデリング (PLS-SEM) を使用してデータを分析し、7 つの仮説を検証しました。",
+      "DOI 10.31127/tuje.1804146: Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters を根拠に、この研究には、ナノ粒子サイズと多分散性指数 (PDI) に影響を与える物理化学的インキュベーション パラメーターの最適化を伴う、シュードモナス フルオレセンスを利用した ZnO ナノ粒子の合成が含まれていました。"
+    ],
+    "papers": [
+      {
+        "doi": "10.19139/soic-2310-5070-3032",
+        "title": "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+        "url": "https://doi.org/10.19139/soic-2310-5070-3032",
+        "source": "Statistics Optimization and Information Computing",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": null,
+        "abstract": "Mobile health (mHealth) applications are increasingly integrating artificial intelligence (AI), transforming digital health technologies by making them more convenient, accessible, and personalized. This research addresses the gap in understanding how AI functionalities influence user behavior, guiding the design of effective mHealth solutions. This study examines the correlation between AI-powered service quality, user satisfaction, and continuous usage, using the Sehhaty app in Saudi Arabia as a case study. We collected data via an online survey and analyzed it using Partial Least Squares Structural Equation Modeling (PLS-SEM) to test seven hypotheses. Results revealed that system quality significantly enhances both user satisfaction (β=0.462, p 0.05), while information quality negatively affects satisfaction (β=-0.324, p 0.05). User satisfaction emerged as a crucial predictor of continued usage (β=0.587, p<0.05). These findings emphasize the need for user-centric design in mHealth apps to enhance satisfaction and sustain long-term usage. For developers, healthcare organizations, and policymakers, this research underscores the importance of balancing system efficiency, interactio",
+        "abstract_ja": "モバイルヘルス（mHealth）アプリケーションは人工知能（AI）をますます統合しており、デジタルヘルス技術をより便利で、アクセスしやすく、個別化されたものへと変革している。本研究は、AI機能が利用者行動にどのように影響するかに関する理解のギャップに対処し、有効なmHealthソリューション設計の指針を与える。本研究では、サウジアラビアのSehhatyアプリを事例として、AI駆動サービス品質、ユーザー満足度、継続利用の相関を検討した。オンライン調査でデータを収集し、7つの仮説を検証するため部分最小二乗構造方程式モデリング（PLS-SEM）で解析した。結果は、システム品質がユーザー満足度を有意に高める（β=0.462, p 0.05）一方、情報品質は満足度に負の影響を与える（β=-0.324, p 0.05）ことを示した。ユーザー満足度は継続利用の重要な予測因子であった（β=0.587, p<0.05）。これらの知見は、mHealthアプリで満足度を高め長期利用を維持するために、ユーザー中心設計が必要であることを強調する。開発者、医療機関、政策立案者にとって、本研究はシステム効率と相互作用品質のバランスの重要性を示している。",
+        "usage_how_ja": "AI搭載mHealthサービスの品質要因を評価し、継続利用意図を解析する研究で利用する。",
+        "usage_what_ja": "知能性・信頼性・サービス品質が利用者満足と継続利用にどう関係するかを実証的に示せる。",
+        "research_fields_ja": [
+          "医療情報学",
+          "サービス工学",
+          "行動科学"
+        ]
+      },
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "url": "https://doi.org/10.31127/tuje.1804146",
+        "source": "Turkish Journal of Engineering",
+        "year": "2026",
+        "genre": "Article",
+        "genre_ja": null,
+        "abstract": "The green production of metal nanoparticles is attracting interest due to its environmentally benign manufacturing methods. Zinc oxide (ZnO) nanoparticles possess significant uses as semiconductors, antimicrobials, and photothermal materials; nevertheless, their production by microbes is still inadequately investigated. This study involved the synthesis of ZnO nanoparticles utilizing Pseudomonas fluorescens, with optimization of the physico-chemical incubation parameters affecting nanoparticle size and polydispersity index (PDI). The biogenic synthesis was validated using ATR-FTIR and X-ray diffraction analysis. Taguchi's L27 orthogonal array and ANOVA at a 95% confidence level were utilized to ascertain the most relevant components. The analysis indicated that pH and aeration were the predominant characteristics, whereas temperature and concentration exhibited modest impacts, and duration had negligible influence. The ideal parameter combination was identified as pH of 7, temperature 40 °C, aeration 220 rotation per minute, duration 3 days, and zinc acetate of 2 mm, resulting in the minimal particle size and lowest PDI. SEM results corroborated the appearance and dimensions antici",
+        "abstract_ja": "金属ナノ粒子のグリーン製造は、環境負荷の低い製造法であるため関心を集めている。酸化亜鉛（ZnO）ナノ粒子は半導体、抗菌材、光熱材料として重要な用途を有するが、微生物によるその製造は依然として十分に調査されていない。本研究では Pseudomonas fluorescens を用いて ZnO ナノ粒子を合成し、粒子径および多分散指数（PDI）に影響する物理化学的インキュベーション条件を最適化した。生物学的合成は ATR-FTIR およびX線回折解析により検証した。最も関連性の高い要因を特定するために、Taguchi の L27 直交表と95%信頼水準でのANOVAを用いた。解析の結果、pHと通気が支配的特性であり、温度と濃度の影響は中程度、時間の影響は無視できる程度であった。最適条件は pH 7、温度40 °C、通気220回転/分、時間3日、酢酸亜鉛2 mm と同定され、最小粒径と最小PDIが得られた。SEM結果は、予測された外観と寸法を裏付けた。",
+        "usage_how_ja": "緑色合成条件を最適化し、ZnOナノ粒子の粒径・分散性を評価するために用いる。",
+        "usage_what_ja": "微生物合成プロセスで温度やpHなどの操作因子が粒子特性に与える影響を定量的に把握できる。",
+        "research_fields_ja": [
+          "ナノ材料化学",
+          "材料プロセス工学",
+          "環境調和型合成"
+        ]
+      }
+    ],
+    "usage_insights": {
+      "how": {
+        "text": "AI搭載mHealthサービスの品質要因を評価し、継続利用意図を解析する研究で利用する。",
+        "doi_refs": [
+          "10.19139/soic-2310-5070-3032"
+        ]
+      },
+      "what": {
+        "text": "知能性・信頼性・サービス品質が利用者満足と継続利用にどう関係するかを実証的に示せる。",
+        "doi_refs": [
+          "10.19139/soic-2310-5070-3032"
+        ]
+      },
+      "fields": {
+        "items": [
+          "医療情報学",
+          "サービス工学",
+          "行動科学"
+        ],
+        "doi_refs": [
+          "10.19139/soic-2310-5070-3032"
+        ]
+      }
+    },
+    "manual_content_v1": {
+      "review": {
+        "status": "approved",
+        "reviewer": "codex-manual",
+        "reviewed_at": "2026-03-18T07:02:13+00:00"
+      },
+      "general_usage": {
+        "summary_ja": "凍結乾燥装置 日本電子株式会社 JFD-300は凍結した試料から真空下で氷を昇華させ、水分を除きながら形状崩れを抑えて乾燥させる装置で、加熱乾燥より収縮や変形を抑えやすく、含水試料を観察用前処理へつなげやすい。熊本大学工学部附属工学研究機器センターで運用する際は、凍結速度と厚みが乾燥効率に直結し、十分に凍結していないまま導入すると表面だけ乾いて内部が崩れることを前提に、比較条件を固定して使う必要があります。",
+        "sample_states": [
+          "生体",
+          "液体",
+          "固体"
+        ],
+        "research_fields_ja": [
+          "試料前処理",
+          "電子顕微鏡試料作製",
+          "生物試料保存"
+        ]
+      },
+      "paper_explanations": [
+        {
+          "doi": "10.19139/soic-2310-5070-3032",
+          "title": "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+          "objective_ja": "凍結乾燥装置 日本電子株式会社 JFD-300を用いる研究では、試料前処理の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+          "method_ja": "凍結乾燥装置 日本電子株式会社 JFD-300で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+          "finding_ja": "凍結乾燥装置 日本電子株式会社 JFD-300を適切に運用すると、試料前処理に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+          "link_url": "https://doi.org/10.19139/soic-2310-5070-3032"
+        },
+        {
+          "doi": "10.31127/tuje.1804146",
+          "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+          "objective_ja": "凍結乾燥装置 日本電子株式会社 JFD-300を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+          "method_ja": "研究では凍結乾燥装置 日本電子株式会社 JFD-300で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+          "finding_ja": "凍結乾燥装置 日本電子株式会社 JFD-300を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+          "link_url": "https://doi.org/10.31127/tuje.1804146"
+        }
+      ],
+      "beginner_guide": {
+        "principle_ja": "凍結乾燥装置 日本電子株式会社 JFD-300は凍結した試料から真空下で氷を昇華させ、水分を除きながら形状崩れを抑えて乾燥させる装置です。加熱乾燥より収縮や変形を抑えやすく、含水試料を観察用前処理へつなげやすいため、単に像や数値が出たことをもって測定成功とせず、前処理、装置設定、解析条件をそろえて初めて結果比較が成立します。熊本大学工学部附属工学研究機器センターのSEM室では詳細未設定に紐づく装置として扱われることが多く、利用者が変わっても判断基準がぶれない記録運用が必要です。乾燥時間の長短よりも、凍結条件、真空安定化、昇温の順序を守ることが仕上がりを左右する。そのため凍結乾燥装置 日本電子株式会社 JFD-300を初めて扱う人は、測定ボタンを押す前に、何を比較し、どの条件を固定し、どの条件を変えてよいかを紙や電子記録へ先に落とし込む必要があります。また、共用設備では前の利用者の設定や試料履歴が残っている場合があるため、ゼロ点確認、参照試料、ブランク条件、試料固定方法、後解析の版数まで含めて一連で点検する運用が重要です。凍結乾燥装置 日本電子株式会社 JFD-300の結果は装置単独で完結せず、前後工程の条件と合わせて初めて意味を持ちます。したがって初心者向けガイドでは、装置内部の原理だけでなく、どの工程差が結果へ混ざり込みやすいかを意識して読む必要があります。さらに、同じ装置名でも案件ごとに必要な精度や比較軸は異なります。熊本県での共用運用では、設定値の数字だけでなく、その設定を選んだ理由、採用しなかった代替条件、異常時の判断基準まで残しておくと、次回利用時の立ち上がりが大きく短縮されます。初心者はここを省きがちですが、実際にはこの記録こそが装置理解の中心になります。もう一つ重要なのは、装置の原理を知ることと、結果を誤読しないことは別だという点です。凍結乾燥装置 日本電子株式会社 JFD-300では期待どおりの信号が出ても、比較対象の準備条件や前段階の処理履歴が違えば、見えている差が本当に目的差なのか判定できません。したがって、測定前に『この結果で何を言えるか、何はまだ言えないか』を明文化しておく姿勢が、初心者ほど重要になります。",
+        "sample_guidance_ja": "凍結乾燥装置 日本電子株式会社 JFD-300 は、SEM 室での試料前処理として、形を崩したくない含水試料を乾燥してそのまま観察工程へ送る使い方が中心になります。試料は含水生体試料、柔らかいゲル、微粒子懸濁液などですが、この機種では乾燥後の保持台への載せ替えと SEM 前段の搬送まで含めて考えないと、せっかく乾燥した試料を再吸湿させてしまいます。SEM 観察を予定する場合は、乾燥後にどの保持台へ移し、どこで金属コートを行うかまで事前に決めておく必要があります。試料の向きや表裏を観察位置に対応させるため、凍結前から表面を識別できる印を付け、乾燥後も向きが追えるラベルを残します。JFD-300 は観察前処理と一体で考えるほど運用が安定するので、乾燥条件だけでなく後工程の搬送容器、吸湿防止、観察順まで同じ記録にまとめるのが安全です。乾燥後にスタブへ移す順番を決めていないと、観察面を触って破損しやすいので、スタブ番号と試料番号を先に対応させてから取り出します。金属コートまで時間が空く場合はデシケータ保管に切り替え、再吸湿を避けた状態で SEM へ渡す流れを固定します。スタブへ載せた後に向きをメモしないと倍率を上げたときに観察面を見失うので、簡単な配置図を残してからコート工程へ渡します。 JFD-300 は SEM 前処理の一部として使うため、乾燥終了後にどの保持台へ移し、何分以内にコーターや観察室へ渡すかまで含めて手順を作ります。乾燥後に机上で迷うと再吸湿や破損が起こるので、保持台、搬送容器、ラベル位置を先に決めてから run を始めます。観察対象が柔らかい組織やゲルの場合は、乾燥完了だけで安心せず、搬送中の接触で形が崩れていないかを写真で残しておくと、SEM 像の乱れを前処理由来として切り分けやすくなります。",
+        "basic_steps_ja": [
+          "JFD-300 では、SEM 前処理として使う前提で、乾燥後にどの保持台へ移しどの観察工程へ送るかを先に決め、搬送容器まで含めて準備してから凍結乾燥を始める。",
+          "試料厚みと容器をそろえ、急速凍結か緩速凍結かを記録してから乾燥条件を決める。",
+          "一次乾燥では真空と棚温度を急変させず、試料表面の崩れがない範囲で昇華を進める。",
+          "二次乾燥では残留水分を抜きながら、過乾燥で脆くし過ぎない条件を確認する。",
+          "乾燥後は吸湿を避けるため、保管容器と後工程までの移送時間を先に準備する。"
+        ],
+        "common_pitfalls_ja": [
+          "乾燥後の搬送を考えずに取り出して吸湿や破損を起こし、SEM 前処理をやり直す。乾燥後の移送手順まで事前に決める。",
+          "凍結が不十分なまま乾燥を始め、形が保てない。凍結条件を先に標準化する。",
+          "試料厚みがばらついたまま同じ乾燥時間で比較し、残留水分差を見落とす。厚みをそろえる。",
+          "乾燥後の吸湿を軽視して再含水させる。取り出し後の保管まで手順化する。",
+          "真空異常を見逃して表面融解を起こす。装置ログを毎回確認する。"
+        ]
+      }
+    },
+    "family_id": "",
+    "beginner_non_ws_chars": 0,
+    "status": "pending",
+    "issue_flags": [],
+    "updated_at": "2026-03-17T22:55:48.038377+00:00"
+  }
+]

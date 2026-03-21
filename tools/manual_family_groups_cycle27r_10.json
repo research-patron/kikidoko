@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T03:51:55.801077+00:00",
+  "batch_id": "BATCH-20260304-CYCLE27R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "c9gaihz6SYJTTJ6XeWFp",
+          "equipment_id": "c9gaihz6SYJTTJ6XeWFp",
+          "name": "超低温フリーザー_09 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 解析用ソフトウェア|マルチカラーデータ解析ソフトウェア|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "aTW9idJZmVRdBSNIxexC",
+          "equipment_id": "aTW9idJZmVRdBSNIxexC",
+          "name": "マルチカラーデータ解析ソフトウェア(2)",
+          "category_general": "その他",
+          "category_detail": "その他 / 解析用ソフトウェア"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 質量分析前処理|遠心濃縮機|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Q9ti2E1KI8LB53OxYTkS",
+          "equipment_id": "Q9ti2E1KI8LB53OxYTkS",
+          "name": "遠心濃縮機",
+          "category_general": "その他",
+          "category_detail": "その他 / 質量分析前処理"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 質量分析試料調整|質量分析試料調整システム|mass|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VUqUgidsddSaNDguuSwm",
+          "equipment_id": "VUqUgidsddSaNDguuSwm",
+          "name": "質量分析試料調整システム",
+          "category_general": "その他",
+          "category_detail": "その他 / 質量分析試料調整"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 超純水装置|純水製造装置-elix-essential3-uv|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dS6nWcDJzCDNHxK4HdXW",
+          "equipment_id": "dS6nWcDJzCDNHxK4HdXW",
+          "name": "純水製造装置Elix Essential3/UV",
+          "category_general": "その他",
+          "category_detail": "その他 / 超純水装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 超純水装置|超純水製造装置-simplicity-uv|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5aLFNd3z8RcehNGdNfuf",
+          "equipment_id": "5aLFNd3z8RcehNGdNfuf",
+          "name": "超純水製造装置Simplicity UV",
+          "category_general": "その他",
+          "category_detail": "その他 / 超純水装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 農業・食品関連分析(品質・物性・外観)|rgqi20a-穀粒判別器|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RlgswOOZhyXgUan0fXZU",
+          "equipment_id": "RlgswOOZhyXgUan0fXZU",
+          "name": "穀粒判別器 RGQI20A",
+          "category_general": "その他",
+          "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 農業・食品関連分析(品質・物性・外観)|味認識装置-ts-500zu|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "vTfVJbBYlvIobtuyzXjX",
+          "equipment_id": "vTfVJbBYlvIobtuyzXjX",
+          "name": "味認識装置 TS-500ZU",
+          "category_general": "その他",
+          "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 農業・食品関連分析(品質・物性・外観)|物性測定器-一式-テンシプレッサー|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "tL9iNOnRQY8H2hyxVWgB",
+          "equipment_id": "tL9iNOnRQY8H2hyxVWgB",
+          "name": "物性測定器 一式 ﾃﾝｼﾌﾟﾚｯｻｰ",
+          "category_general": "その他",
+          "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 運搬 / -|ハンドパレットトラック|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sBMDkmKaSIJ2PNXDpWbp",
+          "equipment_id": "sBMDkmKaSIJ2PNXDpWbp",
+          "name": "ハンドパレットトラック",
+          "category_general": "その他",
+          "category_detail": "その他 / 運搬 / -"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9222
+}

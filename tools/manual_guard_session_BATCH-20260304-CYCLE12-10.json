@@ -1,0 +1,175 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE12-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T21:44:07.771504+00:00",
+  "updated_at": "2026-03-03T21:55:05.158379+00:00",
+  "closed_at": "2026-03-03T21:55:05.158379+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle12_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE12-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "5a4f17b52e7b737799c9d1d4d3f7d53d4967b2c49e6f33795e9d5ae2376d8943",
+    "queue_sha256_at_start": "7462f515a87920ed99b98191702465c05c476d55a37b6db57fc2992a339befc1",
+    "queue_row_keys_sha256": "9159f399ce21a167b29a99b2dfa735d125c55d2af8dcff841f5c1d7666396850"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "lWtaA1bwpICi6EMCyM67::lWtaA1bwpICi6EMCyM67",
+      "nS7UNQeumXvy7sr145Vm::AIST-ANCF002",
+      "uzsATRTrZpIEQme4D8sv::uzsATRTrZpIEQme4D8sv",
+      "VCHatB2ixk4KFzv21uMT::VCHatB2ixk4KFzv21uMT",
+      "J3sLqH3wcYemxXz7v1bJ::J3sLqH3wcYemxXz7v1bJ",
+      "AEHm8pXjYj4MuE7NABaW::KUMAMOTO-list4f-01",
+      "QZNIK0MMGBJF2m7hJCEU::TOKUSHIMA-64",
+      "9if09B6QjGxScVonWIgl::TOKUSHIMA-59",
+      "SF2P1TcsucnQByReEbFS::TOKUSHIMA-77",
+      "9YrAgxOtFQsHaEW3z4jO::9YrAgxOtFQsHaEW3z4jO"
+    ],
+    "target_rows": [
+      {
+        "row_key": "lWtaA1bwpICi6EMCyM67::lWtaA1bwpICi6EMCyM67",
+        "doc_id": "lWtaA1bwpICi6EMCyM67",
+        "equipment_id": "lWtaA1bwpICi6EMCyM67",
+        "name": "生体高分子用X線回折装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "nS7UNQeumXvy7sr145Vm::AIST-ANCF002",
+        "doc_id": "nS7UNQeumXvy7sr145Vm",
+        "equipment_id": "AIST-ANCF002",
+        "name": "超伝導蛍光収量Ｘ線吸収微細構造分析装置(SC- XAFS)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "uzsATRTrZpIEQme4D8sv::uzsATRTrZpIEQme4D8sv",
+        "doc_id": "uzsATRTrZpIEQme4D8sv",
+        "equipment_id": "uzsATRTrZpIEQme4D8sv",
+        "name": "Rigaku FR-E SuperBright（超高輝度X線回折装置）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "VCHatB2ixk4KFzv21uMT::VCHatB2ixk4KFzv21uMT",
+        "doc_id": "VCHatB2ixk4KFzv21uMT",
+        "equipment_id": "VCHatB2ixk4KFzv21uMT",
+        "name": "粉末Ｘ線回折装置 (Rigaku SmartLab SE)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "J3sLqH3wcYemxXz7v1bJ::J3sLqH3wcYemxXz7v1bJ",
+        "doc_id": "J3sLqH3wcYemxXz7v1bJ",
+        "equipment_id": "J3sLqH3wcYemxXz7v1bJ",
+        "name": "粉末X線回折装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "AEHm8pXjYj4MuE7NABaW::KUMAMOTO-list4f-01",
+        "doc_id": "AEHm8pXjYj4MuE7NABaW",
+        "equipment_id": "KUMAMOTO-list4f-01",
+        "name": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusII",
+        "papers_count": 3
+      },
+      {
+        "row_key": "QZNIK0MMGBJF2m7hJCEU::TOKUSHIMA-64",
+        "doc_id": "QZNIK0MMGBJF2m7hJCEU",
+        "equipment_id": "TOKUSHIMA-64",
+        "name": "単結晶X線構造解析装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "9if09B6QjGxScVonWIgl::TOKUSHIMA-59",
+        "doc_id": "9if09B6QjGxScVonWIgl",
+        "equipment_id": "TOKUSHIMA-59",
+        "name": "X線光電子分光装置（XPS）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "SF2P1TcsucnQByReEbFS::TOKUSHIMA-77",
+        "doc_id": "SF2P1TcsucnQByReEbFS",
+        "equipment_id": "TOKUSHIMA-77",
+        "name": "高出力試料水平型多目的X線回折装置（XRD）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "9YrAgxOtFQsHaEW3z4jO::9YrAgxOtFQsHaEW3z4jO",
+        "doc_id": "9YrAgxOtFQsHaEW3z4jO",
+        "equipment_id": "9YrAgxOtFQsHaEW3z4jO",
+        "name": "IP単結晶自動X線構造解析装置",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 5,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T21:44:07.771504+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T21:44:07.872428+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:49:35.948030+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:49:51.119959+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:50:49.813812+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:50:58.867802+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:55:05.158379+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 5,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

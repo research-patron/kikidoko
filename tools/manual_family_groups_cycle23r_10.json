@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T02:02:55.593132+00:00",
+  "batch_id": "BATCH-20260304-CYCLE23R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lx0ke05c7OkqxjFJbrhv",
+          "equipment_id": "lx0ke05c7OkqxjFJbrhv",
+          "name": "超低温フリーザー_05 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "glCGKU54H7c5Cyf0zBrx",
+          "equipment_id": "glCGKU54H7c5Cyf0zBrx",
+          "name": "旭町ラボ オープンラボスペース 202実験室(D)-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--2|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WlA0bmbv47X9mJB2Gwxu",
+          "equipment_id": "WlA0bmbv47X9mJB2Gwxu",
+          "name": "旭町ラボ オープンラボスペース 202実験室(D)-2",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|バイオハザードキャビネット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "oBZbRVTjPgqVBtH9NUwD",
+          "equipment_id": "oBZbRVTjPgqVBtH9NUwD",
+          "name": "バイオハザードキャビネット",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|ピペット超音波洗浄機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NIXVE2g6NsEaSAirdnBF",
+          "equipment_id": "NIXVE2g6NsEaSAirdnBF",
+          "name": "ピペット超音波洗浄機",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|全自動洗浄機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OapC5q5mbHDbYUTzaf4u",
+          "equipment_id": "OapC5q5mbHDbYUTzaf4u",
+          "name": "全自動洗浄機",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|凍結乾燥機-fdu-1200|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "saCVGNeywsGMt4LcqaYs",
+          "equipment_id": "saCVGNeywsGMt4LcqaYs",
+          "name": "凍結乾燥機 FDU-1200",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|凍結乾燥機-pfr-1000|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "cPF0rHf33sWcvm8BhA9H",
+          "equipment_id": "cPF0rHf33sWcvm8BhA9H",
+          "name": "凍結乾燥機 PFR-1000",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|安全キャビネット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "xOPobDM1Lev73TkjrzXj",
+          "equipment_id": "xOPobDM1Lev73TkjrzXj",
+          "name": "安全キャビネット",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|横置スクラバー装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "aV2IeHdgtEXZpinjH0ub",
+          "equipment_id": "aV2IeHdgtEXZpinjH0ub",
+          "name": "横置スクラバー装置",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9252
+}

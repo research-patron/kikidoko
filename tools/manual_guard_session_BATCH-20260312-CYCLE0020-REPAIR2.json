@@ -1,0 +1,73 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260312-CYCLE0020-REPAIR2",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-12T09:18:59.460894+00:00",
+  "updated_at": "2026-03-12T09:19:03.658959+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair2.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR2.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "aab08ce2a119cb89d2dd3a994781a70a6b2354f8e80321a7e1455518e6aef630",
+    "queue_sha256_at_start": "13169c6fb91b949c31979ae60aeacb6edf775fb7df4f00b199a7095c0ffd36d3",
+    "queue_row_keys_sha256": "39c95b87f3a95752ad207159c33a291f7cbc7f75dc7f4e96bc7958a4631b1607"
+  },
+  "queue": {
+    "target_count": 2,
+    "target_row_keys": [
+      "eqnet-1816::eqnet-1816",
+      "eqnet-4965::eqnet-4965"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-1816::eqnet-1816",
+        "doc_id": "eqnet-1816",
+        "equipment_id": "eqnet-1816",
+        "name": "熱間等方加圧装置(HIP)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "eqnet-4965::eqnet-4965",
+        "doc_id": "eqnet-4965",
+        "equipment_id": "eqnet-4965",
+        "name": "恒温振とう培養機(New Brunswick Scientific社 G25 )(2)",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-12T09:18:59.460894+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 2
+      }
+    },
+    {
+      "at": "2026-03-12T09:18:59.580099+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-12T09:19:03.658959+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

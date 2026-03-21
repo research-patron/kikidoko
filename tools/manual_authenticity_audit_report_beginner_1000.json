@@ -1,0 +1,97 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-04T09:29:58.928714+00:00",
+  "batch_id": "BATCH-20260304-CYCLE31R-10",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle31r_10.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle31r_10.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE31R-10.json",
+  "inspected_count": 10,
+  "target_count": 10,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.1,
+    "pitfall2_same_ratio": 0.1,
+    "reviewed_at_unique_count": 10,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 0,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "beginner_char_min": 2416,
+    "beginner_char_max": 2663,
+    "beginner_char_avg": 2531.4,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 1,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 90
+  },
+  "threshold_failures": [
+    "step2_same_ratio_gt_0_05",
+    "pitfall2_same_ratio_gt_0_05",
+    "reviewed_at_unique_lt_90",
+    "guide_high_similarity_detected"
+  ],
+  "offending_doc_ids": [],
+  "issue_counts": {
+    "step2_same_ratio_gt_0_05": 1,
+    "pitfall2_same_ratio_gt_0_05": 1,
+    "reviewed_at_unique_lt_90": 1,
+    "guide_high_similarity_detected": 1
+  },
+  "issues": [],
+  "near_duplicate_pairs": [
+    {
+      "i": 1,
+      "j": 7,
+      "ratio": 0.9256455057270433
+    }
+  ],
+  "checkpoint_snapshot": {
+    "updated_at": "2026-03-04T09:29:57.872884+00:00",
+    "defaults_added": 0,
+    "processed_rows_this_run": 1,
+    "applied_rows_this_run": 1,
+    "needs_manual_fix_this_run": 0,
+    "done": 10,
+    "remaining": 0,
+    "batch_size": 1,
+    "process_all": false,
+    "reviewer_default": "codex-manual",
+    "enforce_beginner_min_chars": 2000,
+    "enforce_beginner_max_chars": 3000,
+    "char_count_mode": "non_whitespace",
+    "forbid_internal_id": true,
+    "forbid_placeholder_doi": true,
+    "timing_log_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+    "enforce_min_elapsed_sec": 180,
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle31r_10.jsonl",
+    "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE31R-10.json",
+    "guard_verify": {
+      "status": "PASS",
+      "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE31R-10.json",
+      "batch_id": "BATCH-20260304-CYCLE31R-10",
+      "reviewer_expected": "codex-manual",
+      "issues": [],
+      "details": {
+        "agents_sha256_current": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+        "queue_sha256_current": "694363dc10c52bf8c16da17ca37c129b4ed9064f1298e22308532794b08006de",
+        "snapshot_sha256_current": "94c307ebe74e533ba03494f6150bbb0e7304abb18c9e4f374ad3fdbf04bcf7f6",
+        "queue_rows_current": 1,
+        "queue_rows_target": 10
+      },
+      "verified_at": "2026-03-04T09:29:55.004681+00:00"
+    },
+    "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_beginner_1000.json",
+    "post_audit_step2_same_ratio_threshold": 0.05,
+    "post_audit_pitfall2_same_ratio_threshold": 0.05,
+    "post_audit_min_reviewed_at_unique": 90,
+    "post_audit_similarity_threshold": 0.92,
+    "post_audit_status": "PENDING_FINAL_BATCH"
+  }
+}

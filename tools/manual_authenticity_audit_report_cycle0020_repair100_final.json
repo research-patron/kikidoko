@@ -1,0 +1,652 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-12T09:35:51.632935+00:00",
+  "batch_id": "BATCH-20260312-CYCLE0020-REPAIR100",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_repair100.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.01,
+    "pitfall1_dup_rate": 0.01,
+    "step2_same_ratio": 0.01,
+    "pitfall2_same_ratio": 0.01,
+    "reviewed_at_unique_count": 100,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 0,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "auto_template_marker_hits": 0,
+    "beginner_char_min": 2003,
+    "beginner_char_max": 2991,
+    "beginner_char_avg": 2518.61,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 47,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 90
+  },
+  "threshold_failures": [
+    "step1_dup_rate_not_zero",
+    "pitfall1_dup_rate_not_zero",
+    "guide_high_similarity_detected"
+  ],
+  "offending_doc_ids": [],
+  "issue_counts": {
+    "step1_dup_rate_not_zero": 1,
+    "pitfall1_dup_rate_not_zero": 1,
+    "guide_high_similarity_detected": 1
+  },
+  "issues": [],
+  "near_duplicate_pairs": [
+    {
+      "i": 1,
+      "j": 20,
+      "ratio": 0.9775767112509834
+    },
+    {
+      "i": 1,
+      "j": 39,
+      "ratio": 0.9587709062621548
+    },
+    {
+      "i": 4,
+      "j": 23,
+      "ratio": 0.9296720663769261
+    },
+    {
+      "i": 4,
+      "j": 42,
+      "ratio": 0.9896139525769155
+    },
+    {
+      "i": 4,
+      "j": 61,
+      "ratio": 0.9726840855106889
+    },
+    {
+      "i": 4,
+      "j": 80,
+      "ratio": 0.9726840855106889
+    },
+    {
+      "i": 10,
+      "j": 48,
+      "ratio": 0.9429710521754203
+    },
+    {
+      "i": 10,
+      "j": 86,
+      "ratio": 0.932467088391178
+    },
+    {
+      "i": 11,
+      "j": 49,
+      "ratio": 0.9401771191035605
+    },
+    {
+      "i": 11,
+      "j": 87,
+      "ratio": 0.9446792868957912
+    },
+    {
+      "i": 12,
+      "j": 31,
+      "ratio": 0.9717391304347827
+    },
+    {
+      "i": 16,
+      "j": 54,
+      "ratio": 0.9342276877212595
+    },
+    {
+      "i": 16,
+      "j": 73,
+      "ratio": 0.9249908525429931
+    },
+    {
+      "i": 16,
+      "j": 92,
+      "ratio": 0.9216323582520766
+    },
+    {
+      "i": 20,
+      "j": 39,
+      "ratio": 0.9477124183006536
+    },
+    {
+      "i": 23,
+      "j": 42,
+      "ratio": 0.9336984158028555
+    },
+    {
+      "i": 28,
+      "j": 81,
+      "ratio": 0.9245987308697275
+    },
+    {
+      "i": 31,
+      "j": 50,
+      "ratio": 0.9220539342445512
+    },
+    {
+      "i": 34,
+      "j": 91,
+      "ratio": 0.9308755760368663
+    },
+    {
+      "i": 37,
+      "j": 75,
+      "ratio": 0.9233644859813084
+    },
+    {
+      "i": 39,
+      "j": 58,
+      "ratio": 0.9205946337926033
+    },
+    {
+      "i": 40,
+      "j": 59,
+      "ratio": 0.9657483246463142
+    },
+    {
+      "i": 40,
+      "j": 78,
+      "ratio": 0.9420022164758035
+    },
+    {
+      "i": 40,
+      "j": 97,
+      "ratio": 0.9522376833396013
+    },
+    {
+      "i": 42,
+      "j": 61,
+      "ratio": 0.9762884577699392
+    },
+    {
+      "i": 42,
+      "j": 80,
+      "ratio": 0.9696257103664511
+    },
+    {
+      "i": 48,
+      "j": 67,
+      "ratio": 0.9580879806027017
+    },
+    {
+      "i": 48,
+      "j": 86,
+      "ratio": 0.973994452149792
+    },
+    {
+      "i": 49,
+      "j": 87,
+      "ratio": 0.9368151935719503
+    },
+    {
+      "i": 52,
+      "j": 71,
+      "ratio": 0.9211169284467714
+    },
+    {
+      "i": 54,
+      "j": 73,
+      "ratio": 0.934047663033438
+    },
+    {
+      "i": 54,
+      "j": 92,
+      "ratio": 0.9217866909753875
+    },
+    {
+      "i": 55,
+      "j": 74,
+      "ratio": 0.9546752319771592
+    },
+    {
+      "i": 55,
+      "j": 93,
+      "ratio": 0.9477031802120142
+    },
+    {
+      "i": 56,
+      "j": 75,
+      "ratio": 0.9265283230510376
+    },
+    {
+      "i": 57,
+      "j": 76,
+      "ratio": 0.94209065679926
+    },
+    {
+      "i": 59,
+      "j": 78,
+      "ratio": 0.9355547418528012
+    },
+    {
+      "i": 59,
+      "j": 97,
+      "ratio": 0.9500559075661573
+    },
+    {
+      "i": 61,
+      "j": 80,
+      "ratio": 0.9928741092636579
+    },
+    {
+      "i": 64,
+      "j": 83,
+      "ratio": 0.9683746997598078
+    },
+    {
+      "i": 66,
+      "j": 85,
+      "ratio": 0.9822485207100592
+    },
+    {
+      "i": 67,
+      "j": 86,
+      "ratio": 0.9415784079262043
+    },
+    {
+      "i": 72,
+      "j": 91,
+      "ratio": 0.9278423090461105
+    },
+    {
+      "i": 73,
+      "j": 92,
+      "ratio": 0.9541547277936963
+    },
+    {
+      "i": 74,
+      "j": 93,
+      "ratio": 0.9773290825363089
+    },
+    {
+      "i": 75,
+      "j": 94,
+      "ratio": 0.9417401303181295
+    },
+    {
+      "i": 78,
+      "j": 97,
+      "ratio": 0.9504437869822485
+    }
+  ],
+  "checkpoint_snapshot": {
+    "updated_at": "2026-03-12T09:35:20.626016+00:00",
+    "defaults_added": 0,
+    "processed_rows_this_run": 1,
+    "applied_rows_this_run": 0,
+    "needs_manual_fix_this_run": 1,
+    "done": 99,
+    "remaining": 1,
+    "batch_size": 10,
+    "process_all": false,
+    "reviewer_default": "codex-manual",
+    "enforce_beginner_min_chars": 2000,
+    "enforce_beginner_max_chars": 3000,
+    "char_count_mode": "non_whitespace",
+    "forbid_internal_id": true,
+    "forbid_placeholder_doi": true,
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100.jsonl",
+    "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json",
+    "guard_verify": {
+      "status": "PASS",
+      "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json",
+      "batch_id": "BATCH-20260312-CYCLE0020-REPAIR100",
+      "reviewer_expected": "codex-manual",
+      "issues": [],
+      "details": {
+        "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+        "queue_sha256_current": "35cff57bce5bf1425db78070243e95df2a016575d4cc3b6d92ba992956ea13a3",
+        "snapshot_sha256_current": "17e003a4e4b132864f6225d35554d36224e58b0596ec646a272d8d9628f8786c",
+        "queue_rows_current": 1,
+        "queue_rows_target": 100
+      },
+      "verified_at": "2026-03-12T09:33:45.152681+00:00"
+    },
+    "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+    "post_audit_step2_same_ratio_threshold": 0.05,
+    "post_audit_pitfall2_same_ratio_threshold": 0.05,
+    "post_audit_min_reviewed_at_unique": 90,
+    "post_audit_similarity_threshold": 0.92,
+    "post_audit_status": "FAIL",
+    "post_audit": {
+      "status": "FAIL",
+      "generated_at": "2026-03-12T09:35:20.456132+00:00",
+      "batch_id": "BATCH-20260312-CYCLE0020-REPAIR100",
+      "reviewer_expected": "codex-manual",
+      "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+      "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100.jsonl",
+      "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_repair100.json",
+      "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json",
+      "inspected_count": 100,
+      "target_count": 100,
+      "metrics": {
+        "summary_dup_rate": 0.0,
+        "principle_dup_rate": 0.0,
+        "step1_dup_rate": 0.01,
+        "pitfall1_dup_rate": 0.01,
+        "step2_same_ratio": 0.01,
+        "pitfall2_same_ratio": 0.01,
+        "reviewed_at_unique_count": 100,
+        "forbidden_pattern_hits": 0,
+        "internal_id_reference_hits": 0,
+        "placeholder_doi_hits": 0,
+        "body_contains_doi_hits": 0,
+        "auto_template_marker_hits": 0,
+        "beginner_char_min": 2003,
+        "beginner_char_max": 2991,
+        "beginner_char_avg": 2518.61,
+        "guide_full_dup_rate": 0.0,
+        "guide_high_similarity_pairs": 47,
+        "step2_same_ratio_threshold": 0.05,
+        "pitfall2_same_ratio_threshold": 0.05,
+        "min_reviewed_at_unique": 90
+      },
+      "threshold_failures": [
+        "step1_dup_rate_not_zero",
+        "pitfall1_dup_rate_not_zero",
+        "guide_high_similarity_detected"
+      ],
+      "offending_doc_ids": [],
+      "issue_counts": {
+        "step1_dup_rate_not_zero": 1,
+        "pitfall1_dup_rate_not_zero": 1,
+        "guide_high_similarity_detected": 1
+      },
+      "issues": [],
+      "near_duplicate_pairs": [
+        {
+          "i": 1,
+          "j": 20,
+          "ratio": 0.9775767112509834
+        },
+        {
+          "i": 1,
+          "j": 39,
+          "ratio": 0.9587709062621548
+        },
+        {
+          "i": 4,
+          "j": 23,
+          "ratio": 0.9296720663769261
+        },
+        {
+          "i": 4,
+          "j": 42,
+          "ratio": 0.9896139525769155
+        },
+        {
+          "i": 4,
+          "j": 61,
+          "ratio": 0.9726840855106889
+        },
+        {
+          "i": 4,
+          "j": 80,
+          "ratio": 0.9726840855106889
+        },
+        {
+          "i": 10,
+          "j": 48,
+          "ratio": 0.9429710521754203
+        },
+        {
+          "i": 10,
+          "j": 86,
+          "ratio": 0.932467088391178
+        },
+        {
+          "i": 11,
+          "j": 49,
+          "ratio": 0.9401771191035605
+        },
+        {
+          "i": 11,
+          "j": 87,
+          "ratio": 0.9446792868957912
+        },
+        {
+          "i": 12,
+          "j": 31,
+          "ratio": 0.9717391304347827
+        },
+        {
+          "i": 16,
+          "j": 54,
+          "ratio": 0.9342276877212595
+        },
+        {
+          "i": 16,
+          "j": 73,
+          "ratio": 0.9249908525429931
+        },
+        {
+          "i": 16,
+          "j": 92,
+          "ratio": 0.9216323582520766
+        },
+        {
+          "i": 20,
+          "j": 39,
+          "ratio": 0.9477124183006536
+        },
+        {
+          "i": 23,
+          "j": 42,
+          "ratio": 0.9336984158028555
+        },
+        {
+          "i": 28,
+          "j": 81,
+          "ratio": 0.9245987308697275
+        },
+        {
+          "i": 31,
+          "j": 50,
+          "ratio": 0.9220539342445512
+        },
+        {
+          "i": 34,
+          "j": 91,
+          "ratio": 0.9308755760368663
+        },
+        {
+          "i": 37,
+          "j": 75,
+          "ratio": 0.9233644859813084
+        },
+        {
+          "i": 39,
+          "j": 58,
+          "ratio": 0.9205946337926033
+        },
+        {
+          "i": 40,
+          "j": 59,
+          "ratio": 0.9657483246463142
+        },
+        {
+          "i": 40,
+          "j": 78,
+          "ratio": 0.9420022164758035
+        },
+        {
+          "i": 40,
+          "j": 97,
+          "ratio": 0.9522376833396013
+        },
+        {
+          "i": 42,
+          "j": 61,
+          "ratio": 0.9762884577699392
+        },
+        {
+          "i": 42,
+          "j": 80,
+          "ratio": 0.9696257103664511
+        },
+        {
+          "i": 48,
+          "j": 67,
+          "ratio": 0.9580879806027017
+        },
+        {
+          "i": 48,
+          "j": 86,
+          "ratio": 0.973994452149792
+        },
+        {
+          "i": 49,
+          "j": 87,
+          "ratio": 0.9368151935719503
+        },
+        {
+          "i": 52,
+          "j": 71,
+          "ratio": 0.9211169284467714
+        },
+        {
+          "i": 54,
+          "j": 73,
+          "ratio": 0.934047663033438
+        },
+        {
+          "i": 54,
+          "j": 92,
+          "ratio": 0.9217866909753875
+        },
+        {
+          "i": 55,
+          "j": 74,
+          "ratio": 0.9546752319771592
+        },
+        {
+          "i": 55,
+          "j": 93,
+          "ratio": 0.9477031802120142
+        },
+        {
+          "i": 56,
+          "j": 75,
+          "ratio": 0.9265283230510376
+        },
+        {
+          "i": 57,
+          "j": 76,
+          "ratio": 0.94209065679926
+        },
+        {
+          "i": 59,
+          "j": 78,
+          "ratio": 0.9355547418528012
+        },
+        {
+          "i": 59,
+          "j": 97,
+          "ratio": 0.9500559075661573
+        },
+        {
+          "i": 61,
+          "j": 80,
+          "ratio": 0.9928741092636579
+        },
+        {
+          "i": 64,
+          "j": 83,
+          "ratio": 0.9683746997598078
+        },
+        {
+          "i": 66,
+          "j": 85,
+          "ratio": 0.9822485207100592
+        },
+        {
+          "i": 67,
+          "j": 86,
+          "ratio": 0.9415784079262043
+        },
+        {
+          "i": 72,
+          "j": 91,
+          "ratio": 0.9278423090461105
+        },
+        {
+          "i": 73,
+          "j": 92,
+          "ratio": 0.9541547277936963
+        },
+        {
+          "i": 74,
+          "j": 93,
+          "ratio": 0.9773290825363089
+        },
+        {
+          "i": 75,
+          "j": 94,
+          "ratio": 0.9417401303181295
+        },
+        {
+          "i": 78,
+          "j": 97,
+          "ratio": 0.9504437869822485
+        }
+      ],
+      "checkpoint_snapshot": {
+        "updated_at": "2026-03-12T09:33:49.455676+00:00",
+        "defaults_added": 0,
+        "processed_rows_this_run": 1,
+        "applied_rows_this_run": 1,
+        "needs_manual_fix_this_run": 0,
+        "done": 100,
+        "remaining": 0,
+        "batch_size": 10,
+        "process_all": false,
+        "reviewer_default": "codex-manual",
+        "enforce_beginner_min_chars": 2000,
+        "enforce_beginner_max_chars": 3000,
+        "char_count_mode": "non_whitespace",
+        "forbid_internal_id": true,
+        "forbid_placeholder_doi": true,
+        "timing_log_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+        "enforce_min_elapsed_sec": 0,
+        "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+        "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100.jsonl",
+        "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json",
+        "guard_verify": {
+          "status": "PASS",
+          "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json",
+          "batch_id": "BATCH-20260312-CYCLE0020-REPAIR100",
+          "reviewer_expected": "codex-manual",
+          "issues": [],
+          "details": {
+            "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+            "queue_sha256_current": "35cff57bce5bf1425db78070243e95df2a016575d4cc3b6d92ba992956ea13a3",
+            "snapshot_sha256_current": "17e003a4e4b132864f6225d35554d36224e58b0596ec646a272d8d9628f8786c",
+            "queue_rows_current": 1,
+            "queue_rows_target": 100
+          },
+          "verified_at": "2026-03-12T09:33:45.152681+00:00"
+        },
+        "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+        "post_audit_step2_same_ratio_threshold": 0.05,
+        "post_audit_pitfall2_same_ratio_threshold": 0.05,
+        "post_audit_min_reviewed_at_unique": 90,
+        "post_audit_similarity_threshold": 0.92,
+        "post_audit_status": "PENDING_FINAL_BATCH"
+      }
+    },
+    "post_audit_log": "{\n  \"status\": \"FAIL\",\n  \"generated_at\": \"2026-03-12T09:35:20.456132+00:00\",\n  \"batch_id\": \"BATCH-20260312-CYCLE0020-REPAIR100\",\n  \"reviewer_expected\": \"codex-manual\",\n  \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n  \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100.jsonl\",\n  \"checkpoint_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_repair100.json\",\n  \"session_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json\",\n  \"inspected_count\": 100,\n  \"target_count\": 100,\n  \"metrics\": {\n    \"summary_dup_rate\": 0.0,\n    \"principle_dup_rate\": 0.0,\n    \"step1_dup_rate\": 0.01,\n    \"pitfall1_dup_rate\": 0.01,\n    \"step2_same_ratio\": 0.01,\n    \"pitfall2_same_ratio\": 0.01,\n    \"reviewed_at_unique_count\": 100,\n    \"forbidden_pattern_hits\": 0,\n    \"internal_id_reference_hits\": 0,\n    \"placeholder_doi_hits\": 0,\n    \"body_contains_doi_hits\": 0,\n    \"auto_template_marker_hits\": 0,\n    \"beginner_char_min\": 2003,\n    \"beginner_char_max\": 2991,\n    \"beginner_char_avg\": 2518.61,\n    \"guide_full_dup_rate\": 0.0,\n    \"guide_high_similarity_pairs\": 47,\n    \"step2_same_ratio_threshold\": 0.05,\n    \"pitfall2_same_ratio_threshold\": 0.05,\n    \"min_reviewed_at_unique\": 90\n  },\n  \"threshold_failures\": [\n    \"step1_dup_rate_not_zero\",\n    \"pitfall1_dup_rate_not_zero\",\n    \"guide_high_similarity_detected\"\n  ],\n  \"offending_doc_ids\": [],\n  \"issue_counts\": {\n    \"step1_dup_rate_not_zero\": 1,\n    \"pitfall1_dup_rate_not_zero\": 1,\n    \"guide_high_similarity_detected\": 1\n  },\n  \"issues\": [],\n  \"near_duplicate_pairs\": [\n    {\n      \"i\": 1,\n      \"j\": 20,\n      \"ratio\": 0.9775767112509834\n    },\n    {\n      \"i\": 1,\n      \"j\": 39,\n      \"ratio\": 0.9587709062621548\n    },\n    {\n      \"i\": 4,\n      \"j\": 23,\n      \"ratio\": 0.9296720663769261\n    },\n    {\n      \"i\": 4,\n      \"j\": 42,\n      \"ratio\": 0.9896139525769155\n    },\n    {\n      \"i\": 4,\n      \"j\": 61,\n      \"ratio\": 0.9726840855106889\n    },\n    {\n      \"i\": 4,\n      \"j\": 80,\n      \"ratio\": 0.9726840855106889\n    },\n    {\n      \"i\": 10,\n      \"j\": 48,\n      \"ratio\": 0.9429710521754203\n    },\n    {\n      \"i\": 10,\n      \"j\": 86,\n      \"ratio\": 0.932467088391178\n    },\n    {\n      \"i\": 11,\n      \"j\": 49,\n      \"ratio\": 0.9401771191035605\n    },\n    {\n      \"i\": 11,\n      \"j\": 87,\n      \"ratio\": 0.9446792868957912\n    },\n    {\n      \"i\": 12,\n      \"j\": 31,\n      \"ratio\": 0.9717391304347827\n    },\n    {\n      \"i\": 16,\n      \"j\": 54,\n      \"ratio\": 0.9342276877212595\n    },\n    {\n      \"i\": 16,\n      \"j\": 73,\n      \"ratio\": 0.9249908525429931\n    },\n    {\n      \"i\": 16,\n      \"j\": 92,\n      \"ratio\": 0.9216323582520766\n    },\n    {\n      \"i\": 20,\n      \"j\": 39,\n      \"ratio\": 0.9477124183006536\n    },\n    {\n      \"i\": 23,\n      \"j\": 42,\n      \"ratio\": 0.9336984158028555\n    },\n    {\n      \"i\": 28,\n      \"j\": 81,\n      \"ratio\": 0.9245987308697275\n    },\n    {\n      \"i\": 31,\n      \"j\": 50,\n      \"ratio\": 0.9220539342445512\n    },\n    {\n      \"i\": 34,\n      \"j\": 91,\n      \"ratio\": 0.9308755760368663\n    },\n    {\n      \"i\": 37,\n      \"j\": 75,\n      \"ratio\": 0.9233644859813084\n    },\n    {\n      \"i\": 39,\n      \"j\": 58,\n      \"ratio\": 0.9205946337926033\n    },\n    {\n      \"i\": 40,\n      \"j\": 59,\n      \"ratio\": 0.9657483246463142\n    },\n    {\n      \"i\": 40,\n      \"j\": 78,\n      \"ratio\": 0.9420022164758035\n    },\n    {\n      \"i\": 40,\n      \"j\": 97,\n      \"ratio\": 0.9522376833396013\n    },\n    {\n      \"i\": 42,\n      \"j\": 61,\n      \"ratio\": 0.9762884577699392\n    },\n    {\n      \"i\": 42,\n      \"j\": 80,\n      \"ratio\": 0.9696257103664511\n    },\n    {\n      \"i\": 48,\n      \"j\": 67,\n      \"ratio\": 0.9580879806027017\n    },\n    {\n      \"i\": 48,\n      \"j\": 86,\n      \"ratio\": 0.973994452149792\n    },\n    {\n      \"i\": 49,\n      \"j\": 87,\n      \"ratio\": 0.9368151935719503\n    },\n    {\n      \"i\": 52,\n      \"j\": 71,\n      \"ratio\": 0.9211169284467714\n    },\n    {\n      \"i\": 54,\n      \"j\": 73,\n      \"ratio\": 0.934047663033438\n    },\n    {\n      \"i\": 54,\n      \"j\": 92,\n      \"ratio\": 0.9217866909753875\n    },\n    {\n      \"i\": 55,\n      \"j\": 74,\n      \"ratio\": 0.9546752319771592\n    },\n    {\n      \"i\": 55,\n      \"j\": 93,\n      \"ratio\": 0.9477031802120142\n    },\n    {\n      \"i\": 56,\n      \"j\": 75,\n      \"ratio\": 0.9265283230510376\n    },\n    {\n      \"i\": 57,\n      \"j\": 76,\n      \"ratio\": 0.94209065679926\n    },\n    {\n      \"i\": 59,\n      \"j\": 78,\n      \"ratio\": 0.9355547418528012\n    },\n    {\n      \"i\": 59,\n      \"j\": 97,\n      \"ratio\": 0.9500559075661573\n    },\n    {\n      \"i\": 61,\n      \"j\": 80,\n      \"ratio\": 0.9928741092636579\n    },\n    {\n      \"i\": 64,\n      \"j\": 83,\n      \"ratio\": 0.9683746997598078\n    },\n    {\n      \"i\": 66,\n      \"j\": 85,\n      \"ratio\": 0.9822485207100592\n    },\n    {\n      \"i\": 67,\n      \"j\": 86,\n      \"ratio\": 0.9415784079262043\n    },\n    {\n      \"i\": 72,\n      \"j\": 91,\n      \"ratio\": 0.9278423090461105\n    },\n    {\n      \"i\": 73,\n      \"j\": 92,\n      \"ratio\": 0.9541547277936963\n    },\n    {\n      \"i\": 74,\n      \"j\": 93,\n      \"ratio\": 0.9773290825363089\n    },\n    {\n      \"i\": 75,\n      \"j\": 94,\n      \"ratio\": 0.9417401303181295\n    },\n    {\n      \"i\": 78,\n      \"j\": 97,\n      \"ratio\": 0.9504437869822485\n    }\n  ],\n  \"checkpoint_snapshot\": {\n    \"updated_at\": \"2026-03-12T09:33:49.455676+00:00\",\n    \"defaults_added\": 0,\n    \"processed_rows_this_run\": 1,\n    \"applied_rows_this_run\": 1,\n    \"needs_manual_fix_this_run\": 0,\n    \"done\": 100,\n    \"remaining\": 0,\n    \"batch_size\": 10,\n    \"process_all\": false,\n    \"reviewer_default\": \"codex-manual\",\n    \"enforce_beginner_min_chars\": 2000,\n    \"enforce_beginner_max_chars\": 3000,\n    \"char_count_mode\": \"non_whitespace\",\n    \"forbid_internal_id\": true,\n    \"forbid_placeholder_doi\": true,\n    \"timing_log_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl\",\n    \"enforce_min_elapsed_sec\": 0,\n    \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n    \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100.jsonl\",\n    \"attestation_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json\",\n    \"guard_verify\": {\n      \"status\": \"PASS\",\n      \"session\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100.json\",\n      \"batch_id\": \"BATCH-20260312-CYCLE0020-REPAIR100\",\n      \"reviewer_expected\": \"codex-manual\",\n      \"issues\": [],\n      \"details\": {\n        \"agents_sha256_current\": \"f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df\",\n        \"queue_sha256_current\": \"35cff57bce5bf1425db78070243e95df2a016575d4cc3b6d92ba992956ea13a3\",\n        \"snapshot_sha256_current\": \"17e003a4e4b132864f6225d35554d36224e58b0596ec646a272d8d9628f8786c\",\n        \"queue_rows_current\": 1,\n        \"queue_rows_target\": 100\n      },\n      \"verified_at\": \"2026-03-12T09:33:45.152681+00:00\"\n    },\n    \"post_audit_report_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json\",\n    \"post_audit_step2_same_ratio_threshold\": 0.05,\n    \"post_audit_pitfall2_same_ratio_threshold\": 0.05,\n    \"post_audit_min_reviewed_at_unique\": 90,\n    \"post_audit_similarity_threshold\": 0.92,\n    \"post_audit_status\": \"PENDING_FINAL_BATCH\"\n  }\n}",
+    "reverted_rows_this_run": 1
+  }
+}

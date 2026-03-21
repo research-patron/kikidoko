@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/K7qIIZW4s9PipEpIpOiE/10.1038%2Fs41598-019-40050-4",
+    "paper_space_hash": "#/paper/K7qIIZW4s9PipEpIpOiE/10.1038%2Fs41598-019-40050-4",
+    "beginner_enter_hash": "#/beginner/K7qIIZW4s9PipEpIpOiE",
+    "beginner_space_hash": "#/beginner/K7qIIZW4s9PipEpIpOiE"
+  },
+  "desktop_cases": [],
+  "mobile": {},
+  "status": "FAIL",
+  "error": "sample states missing"
+}

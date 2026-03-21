@@ -1,0 +1,802 @@
+[
+  {
+    "doc_id": "y8Ui46jeOMsXNX7ANJvd",
+    "name": "旭町ラボ オープンラボスペース 202実験室(B)-1",
+    "family": "open-lab-space-asahimachi-202b",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 実験室"
+  },
+  {
+    "doc_id": "JhuK5uDKutHxsgXGBdfu",
+    "name": "旭町ラボ オープンラボスペース 202実験室(B)-2",
+    "family": "open-lab-space-asahimachi-202b",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 実験室"
+  },
+  {
+    "doc_id": "i899HgeDZoCECFD20YU0",
+    "name": "クリーンブース１",
+    "family": "clean-booth-1",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+  },
+  {
+    "doc_id": "7fNEKtajWVbSHWjeE4WB",
+    "name": "バイオトロンB棟-1",
+    "family": "biotron-b-building",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 温室群"
+  },
+  {
+    "doc_id": "MJFAPUitdwYTyEGtctmX",
+    "name": "バイオトロンB棟-2",
+    "family": "biotron-b-building",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 温室群"
+  },
+  {
+    "doc_id": "dmkh3juDOR7NLusxuc8H",
+    "name": "バイオトロンB棟-3",
+    "family": "biotron-b-building",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 温室群"
+  },
+  {
+    "doc_id": "rno2y95IN10lMAJEsg10",
+    "name": "バイオトロンB棟-4",
+    "family": "biotron-b-building",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 温室群"
+  },
+  {
+    "doc_id": "sBMDkmKaSIJ2PNXDpWbp",
+    "name": "ハンドパレットトラック",
+    "family": "material-handling-lab",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 運搬 / -"
+  },
+  {
+    "doc_id": "TTfvAtX3TovSCl7xp6BY",
+    "name": "ハンドリフター（コゾウリフター）",
+    "family": "material-handling-lab",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 運搬 / -"
+  },
+  {
+    "doc_id": "nDr8L3kPFoycGvDgbvr6",
+    "name": "吊りフック･アーム付きリフター",
+    "family": "material-handling-lab",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 運搬 / -"
+  },
+  {
+    "doc_id": "TkaHlzgtz6JO4HUisJfF",
+    "name": "簡易型クレーン",
+    "family": "material-handling-lab",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 運搬 / -"
+  },
+  {
+    "doc_id": "Mhe41ZmloumTERRiZoYm",
+    "name": "超低温フリーザー_02 パナソニックヘルスケア MDF-DC500-VX-PJ",
+    "family": "ultralow-freezer-mdf-dc500-vx-pj",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 低温装置"
+  },
+  {
+    "doc_id": "dS6nWcDJzCDNHxK4HdXW",
+    "name": "純水製造装置Elix Essential3/UV",
+    "family": "pure-water-elix-essential3uv",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 超純水装置"
+  },
+  {
+    "doc_id": "5aLFNd3z8RcehNGdNfuf",
+    "name": "超純水製造装置Simplicity UV",
+    "family": "pure-water-simplicity-uv",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 超純水装置"
+  },
+  {
+    "doc_id": "8FflyCOgaGKLMkTC6Zq8",
+    "name": "全自動アミノ酸分析機 JLC-500/V",
+    "family": "amino-acid-analyzer-jlc500v",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 生体分子合成解析"
+  },
+  {
+    "doc_id": "TNx5M9qMHWHXuW5E3F8F",
+    "name": "ミクロ天秤 ザルトリウス ME5",
+    "family": "microbalance-me5",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 電子天秤"
+  },
+  {
+    "doc_id": "lswL7geq85x4aKux9VCC",
+    "name": "単結晶Ｘ線構造解析システム",
+    "family": "single-crystal-xray-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "X線関連装置_HU (X-ray Related Equipment) / None"
+  },
+  {
+    "doc_id": "sbIeozQzj7byGmx7Fjnp",
+    "name": "3Dスキャナ",
+    "family": "three-d-scanner",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "v1gUy1dPMKKA1NNuS18X",
+    "name": "3Dスキャナー",
+    "family": "three-d-scanner",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "zbY4qgZK4bjNMYHGepyh",
+    "name": "3Dプリンタ Form3",
+    "family": "three-d-printer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "lLja7HkKKqtRvFUj5wuZ",
+    "name": "3Dプリンター",
+    "family": "three-d-printer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "Q9ti2E1KI8LB53OxYTkS",
+    "name": "遠心濃縮機",
+    "family": "centrifugal-concentrator",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 質量分析前処理"
+  },
+  {
+    "doc_id": "VUqUgidsddSaNDguuSwm",
+    "name": "質量分析試料調整システム",
+    "family": "mass-spec-sample-prep",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 質量分析試料調整"
+  },
+  {
+    "doc_id": "WF0I8drPxChTLIvteZs3",
+    "name": "Amersham ImageQuant 800 Fluorシステム",
+    "family": "imagequant-800-fluor",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "XdtRp0hMQ2TLRFrt9kpj",
+    "name": "DNA/RNA分析用マイクロチップ電気泳動装置",
+    "family": "bioanalyzer",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "XiFUbtyUkn9sFM0FzDIY",
+    "name": "マルチカラーデータ解析ソフトウェア(1)",
+    "family": "multicolor-analysis-software",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 解析用ソフトウェア"
+  },
+  {
+    "doc_id": "JiTLAwT88xw9ez3r1Swe",
+    "name": "マルチファンクションジェネレーター",
+    "family": "multifunction-generator",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 評価装置"
+  },
+  {
+    "doc_id": "RlgswOOZhyXgUan0fXZU",
+    "name": "穀粒判別器 RGQI20A",
+    "family": "grain-analyzer-rgqi20a",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+  },
+  {
+    "doc_id": "vTfVJbBYlvIobtuyzXjX",
+    "name": "味認識装置 TS-500ZU",
+    "family": "taste-sensor-ts500zu",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+  },
+  {
+    "doc_id": "tL9iNOnRQY8H2hyxVWgB",
+    "name": "物性測定器 一式 ﾃﾝｼﾌﾟﾚｯｻｰ",
+    "family": "tensipresser-texture-analyzer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 農業・食品関連分析(品質・物性・外観)"
+  },
+  {
+    "doc_id": "78M1gzNGkeDXr7VEBGdW",
+    "name": "APOE遺伝型決定",
+    "family": "apoe-genotyping",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他 / 遺伝子解析"
+  },
+  {
+    "doc_id": "KMCgHnSgUhx3GkLMiwfn",
+    "name": "32ch actiCHamp",
+    "family": "actichamp-32ch",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "otX6yKYsQlc2U3S97SK3",
+    "name": "3D DIC&モーション計測",
+    "family": "dic-motion-3d",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "WnTf94TtQpab4SQ0MauL",
+    "name": "750kNピン型二分力計",
+    "family": "pin-biaxial-loadcell-750kn",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "YE1HADGkfaHby26B14BD",
+    "name": "CO2インキュベーター",
+    "family": "co2-incubator",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "7FOHzKMAnUB6JyouCkVD",
+    "name": "CNCヒザ形NCフライス盤",
+    "family": "cnc-knee-mill",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "o3TDvehQ1gPp3P9DF5aH",
+    "name": "CNC普通旋盤",
+    "family": "cnc-lathe",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "Vlcul0AalGd01n6H0jiC",
+    "name": "Bragg edge用中性子ターゲット",
+    "family": "bragg-edge-neutron-target",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "cQx30VZh8S81qhrf6pe3",
+    "name": "DNA/RNA合成機",
+    "family": "dna-rna-synthesizer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "dF4X33bQz6u5tujtN80e",
+    "name": "GlassContour 有機溶媒精製装置",
+    "family": "glasscontour-solvent-purifier",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "yj2gwRmayjw5mWJE6fiX",
+    "name": "GNSS・グロナスRTK&スタティック受信機",
+    "family": "gnss-observation-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "x59nHhvgVk019h2lw4AH",
+    "name": "GNSS受信観測装置",
+    "family": "gnss-observation-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "u1X1PfdnEn6EYDy2rMsD",
+    "name": "D-Hand Type A3H-M1-3J",
+    "family": "d-hand-force-measurement",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "NjB7opC6bLVbtfSpr3va",
+    "name": "GKR蒸留ガラスチューブオーブン 100V",
+    "family": "glass-tube-distillation-oven",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "gxftWapiwcn80fSYda2z",
+    "name": "High Powerキセノン光源",
+    "family": "high-power-xenon-light-source",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "LVSA2Dfw3IEBgWrF6oye",
+    "name": "ImmunoSpot S6 MACRO Analyzer",
+    "family": "immunospot-s6-macro",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "fugu07L4UeWGxoWiVEes",
+    "name": "In Vitro & In Vivo 遺伝子導入装置",
+    "family": "gene-delivery-electroporation",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "l9JimqYJwMgYKO7SL8Es",
+    "name": "Nucleofector(TM) 2b Device",
+    "family": "gene-delivery-electroporation",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "tG21yZZDhF45lZhQEzGZ",
+    "name": "INVIVO2 低酸素ワークステーション 300",
+    "family": "hypoxia-workstation",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "yxF6BVAZ1CAlFxJbsj1n",
+    "name": "LED光照射装置",
+    "family": "led-light-irradiator",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "i0Pq9CwZdxKZHYuQ1NMb",
+    "name": "MBR実験装置",
+    "family": "mbr-experimental-reactor",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "bHdRTjgTZ7eWrQA00Ejd",
+    "name": "MEX方式3Dプリンタ",
+    "family": "three-d-printer",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "UqiLftdnDAReIQLVyxd1",
+    "name": "MT観測装置",
+    "family": "mt-observation-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "OAKDtGP8660BvXJUMMcH",
+    "name": "PAM-2500",
+    "family": "chlorophyll-fluorometer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "bFpZiGKFhwYwtccYOqL2",
+    "name": "RC Xanadu Storage 12bays",
+    "family": "storage-server",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "DgVXXYqm3xzRF5sqJN1i",
+    "name": "1852138JA S1000 WITH 384WELL",
+    "family": "thermal-cycler",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "IICo0TdRSYRiGhj2Gssa",
+    "name": "Thermal Cycler SimpliAmp",
+    "family": "thermal-cycler",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "wNEN1InjRracqmlcnCmq",
+    "name": "Tobii Proフュージョン",
+    "family": "eye-tracker",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "X5irZ5FTgTb6cDkhoQza",
+    "name": "アイトラッカー",
+    "family": "eye-tracker",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "LNFpzFIYnDoDpHhxw7Xu",
+    "name": "イメージングサイトメーター",
+    "family": "imaging-cytometer",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "AFwa2DBKrz00HF5iR4Vo",
+    "name": "ガラスナイフメーカー",
+    "family": "glass-knife-maker",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "NuKtVtILqfLhdljeDWuM",
+    "name": "ビーズ式ホモジナイザー",
+    "family": "bead-homogenizer",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "nM8BJB8t4TN2H9mebGe4",
+    "name": "デジタルマイクロスコープ",
+    "family": "digital-microscope",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "N5gd4MWiGNawYM6fUTHE",
+    "name": "Promethion P2 solo CapEX",
+    "family": "sequencer",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "TnIpRpbhRmgyLHWElK1H",
+    "name": "SLA光造形3Dプリンター",
+    "family": "three-d-printer",
+    "reuse_existing_article": true,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "994NDw7YqPbh9HXid1DP",
+    "name": "HDカメラシステム",
+    "family": "hd-camera-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "c9vMWBGnx4JkALDEfwI4",
+    "name": "UCリアクター",
+    "family": "uc-reactor",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "fWAmfteVgJTZGLkkswfa",
+    "name": "UV-LED照射器スポット型",
+    "family": "uv-led-spot-irradiator",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "Z94A7RIggvNqKgoGBl66",
+    "name": "UVパルスレーザーシステム",
+    "family": "uv-pulse-laser",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "wvwD0irPfETQNr389Kkq",
+    "name": "アドワンファーム水耕栽培装置",
+    "family": "hydroponics-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "vaZuoq4EiUyNX8sKfYXJ",
+    "name": "インクジェット式ナノリットルスポッター BioSpot-3",
+    "family": "nanoliter-spotter",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "a8IP0Rdr9PuEt4HtAmX1",
+    "name": "ウルトラファインバブル発生装置",
+    "family": "ultrafine-bubble-generator",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "v1wrRcMztVKOg7sg9gnp",
+    "name": "エネルギー弁別・位置検出型α線計測装置",
+    "family": "alpha-particle-detector",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "Vp0AuCbHBOnIJrzbMcB4",
+    "name": "ガンマ線スペクトロメータ",
+    "family": "gamma-spectrometer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "i2c5gUsYfb1IsbNjnSJL",
+    "name": "コンクリート曲げ試験治具",
+    "family": "concrete-bending-fixtures",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "A7MWtDQpwHGFTUhqtnjb",
+    "name": "コンクリート用4点曲げ試験治具",
+    "family": "concrete-bending-fixtures",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "O4K1kikpm0ixFTDp6X7r",
+    "name": "エアーサンプラー",
+    "family": "air-sampling-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "gja8bj3mwQz0W0FlsL8u",
+    "name": "ハイボリウムエアサンプラー HV-RW 粉じんセット",
+    "family": "air-sampling-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "nvZYEjPbZg1VQlrZQuJU",
+    "name": "ハイボリウムサンプラ",
+    "family": "air-sampling-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "onijciodR9Vbnkc8cxl5",
+    "name": "カールフィッシャー水分計",
+    "family": "karl-fischer-moisture-meter",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "IRnByvdV59MYot6s6khR",
+    "name": "クリスタルカッターNeoPro",
+    "family": "crystal-cutting-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "zKWIZRWSV82Gi9ehIFxw",
+    "name": "プログラマブル・ダイヤモンドソー",
+    "family": "crystal-cutting-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "8cx0KgvpyiNCzCYNeCAO",
+    "name": "クロロフィル測定装置",
+    "family": "chlorophyll-fluorometer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "3wTkQ6yZUDN5Xv7kUWTi",
+    "name": "コンピュータベースレーザー血流計 FLO-Lab2ch",
+    "family": "laser-blood-flow-meter",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "dZ9cU7Xj04tMeM6yYyfp",
+    "name": "サーミスタチェーン",
+    "family": "thermistor-chain",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "NszDSEr9igpZXJFzBlIu",
+    "name": "シングルモノクロメータ",
+    "family": "single-monochromator",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "umrWdC35NEeqTyIMmqHg",
+    "name": "デジタルオシロスコープ",
+    "family": "digital-oscilloscope",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "KFyF4KsusCOLKjNJMlwS",
+    "name": "デジタルサイドスキャンソナー",
+    "family": "side-scan-sonar",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "0UdVbsC9nh64iXRUFZW7",
+    "name": "デジタル旋光計",
+    "family": "digital-polarimeter",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "p1Ec0iv8Qvxy0jPJCqlk",
+    "name": "ヒュームコレクター",
+    "family": "fume-collector",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "zqMIPZukPhnebNuXgYdq",
+    "name": "ヒラヤマ高圧蒸気滅菌器",
+    "family": "autoclave-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "Cl8B299SWQ5qwShXrRWX",
+    "name": "ファイバー縫い付け機",
+    "family": "fiber-sewing-machine",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "sD7awrsVJpNHKyknxOEi",
+    "name": "フラッシュ自動精製システム",
+    "family": "flash-purification-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "F4pSHEFYIXBfjPNRoDhd",
+    "name": "フラッシュ自動精製装置",
+    "family": "flash-purification-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "dSA9D7hR3GfZjAEFP6BY",
+    "name": "フレークアイスメーカー",
+    "family": "flake-ice-maker",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "uATFODGJwdWfYfAiARNY",
+    "name": "フロー式光反応システム",
+    "family": "flow-photoreaction-system",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "HD13mEXT6x4rwc9AFS5A",
+    "name": "プラント･キャノピー･アナライザー",
+    "family": "plant-canopy-analyzer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "cmgog5p6MNwQ989SvxZd",
+    "name": "プレートリーダー解析ソフトシステム",
+    "family": "plate-reader-analysis-software",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "XoKD5GU4Fl2zghPqzs0v",
+    "name": "マイクロウェーブ合成装置",
+    "family": "microwave-synthesizer",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  },
+  {
+    "doc_id": "4D0s3XJZpE8QDzasu8rR",
+    "name": "マイクロピペットプラー",
+    "family": "micropipette-puller",
+    "reuse_existing_article": false,
+    "category_general": "その他",
+    "category_detail": "その他_HU (Others) / None"
+  }
+]

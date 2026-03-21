@@ -1,0 +1,65 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260302-BEGINNER-1000-ITEM-008",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T09:28:54.099117+00:00",
+  "updated_at": "2026-03-04T09:28:54.203560+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle31r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE31R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "16cc520f7aec997c0b0fea826d54cdc116f571acafccc90c93a98ac4de1186a1",
+    "queue_sha256_at_start": "c04ffb6c7277219834334b2ab9f11ddc2ba975f396986ea20ea9c3fb92af4497",
+    "queue_row_keys_sha256": "ebeb0def4d1e121f3a34698c87688858d90bfdfb11488b86337c0f4a39719ef1"
+  },
+  "queue": {
+    "target_count": 1,
+    "target_row_keys": [
+      "bFpZiGKFhwYwtccYOqL2::HOKUDAI-AP-902167",
+      "TnIpRpbhRmgyLHWElK1H::HOKUDAI-AP-901850",
+      "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+      "wNEN1InjRracqmlcnCmq::HOKUDAI-AP-901802",
+      "c9vMWBGnx4JkALDEfwI4::HOKUDAI-AP-901551",
+      "fWAmfteVgJTZGLkkswfa::HOKUDAI-AP-901562",
+      "Z94A7RIggvNqKgoGBl66::HOKUDAI-AP-901085",
+      "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131",
+      "wvwD0irPfETQNr389Kkq::HOKUDAI-AP-901874",
+      "LNFpzFIYnDoDpHhxw7Xu::HOKUDAI-AP-902252"
+    ],
+    "target_rows": [
+      {
+        "doc_id": "X5irZ5FTgTb6cDkhoQza",
+        "equipment_id": "HOKUDAI-AP-902131",
+        "papers_count": 3,
+        "row_key": "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131"
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 1,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T09:28:54.099117+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T09:28:54.203560+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

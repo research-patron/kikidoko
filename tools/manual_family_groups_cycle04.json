@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T13:47:59.862765+00:00",
+  "batch_id": "BATCH-20260303-CYCLE04-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|Bio Sample Preparation Tool|benchwork-automation|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "97TYuvni2G36owVbyBbJ",
+          "equipment_id": "97TYuvni2G36owVbyBbJ",
+          "name": "Benchwork Automation System",
+          "category_general": "その他",
+          "category_detail": "Bio Sample Preparation Tool"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Bio Sample Preparation Tool|fla9500-typhoon|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lp1iM0WBqAGsoJnCxQcR",
+          "equipment_id": "lp1iM0WBqAGsoJnCxQcR",
+          "name": "Typhoon FLA9500",
+          "category_general": "その他",
+          "category_detail": "Bio Sample Preparation Tool"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Bio Sample Preparation Tool|laboratory-automation|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6fHWKVh135PUjyakV7dH",
+          "equipment_id": "6fHWKVh135PUjyakV7dH",
+          "name": "Laboratory Automation System",
+          "category_general": "その他",
+          "category_detail": "Bio Sample Preparation Tool"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|c1000-サーマルサイクラー-biorad|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gW774Do5dk0ltS6FauDl",
+          "equipment_id": "gW774Do5dk0ltS6FauDl",
+          "name": "サーマルサイクラー (BioRad C1000)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|dna-rna-抽出受託サービス|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5jdQ6eyopZQbVuX4yT5H",
+          "equipment_id": "5jdQ6eyopZQbVuX4yT5H",
+          "name": "DNA/RNA抽出受託サービス",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|dna-シークエンサー-thermo-fisher-scientific-seqstudio|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "BrZPVvl0UqqxL9KPk2N7",
+          "equipment_id": "BrZPVvl0UqqxL9KPk2N7",
+          "name": "DNAシークエンサー (Thermo Fisher Scientific SeqStudio Genetic Analyzer)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|sxq2000slnt-promethion-解析-pc-arcbrain|sequencer|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "0euDBH9nI8Bti49KS5Oj",
+          "equipment_id": "0euDBH9nI8Bti49KS5Oj",
+          "name": "PromethION 解析PC (Arcbrain SXQ2000SLNT)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|ピッピンパルス-sage-science-pippinpulse|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2If47ehM8XMa9D1Pjjjg",
+          "equipment_id": "2If47ehM8XMa9D1Pjjjg",
+          "name": "ピッピンパルス (sage science PippinPulse)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|マイクロアレイ-thermofisher-genechip|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6950iLYUv1k9cXAB1LCY",
+          "equipment_id": "6950iLYUv1k9cXAB1LCY",
+          "name": "マイクロアレイ (ThermoFisher GeneChip)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|マイクロチップ電気泳動装置-島津-multina|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "bqrVjlXXzdoIILRnjS5e",
+          "equipment_id": "bqrVjlXXzdoIILRnjS5e",
+          "name": "マイクロチップ電気泳動装置 (島津 MultiNA)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9429
+}

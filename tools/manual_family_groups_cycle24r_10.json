@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T03:32:07.808901+00:00",
+  "batch_id": "BATCH-20260304-CYCLE24R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 低温装置|dc500-vx-pj-超低温フリーザー-パナソニックヘルスケア-mdf-dc500-vx-pj|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "kIdJ2BmyGxF6X1YzD4RN",
+          "equipment_id": "kIdJ2BmyGxF6X1YzD4RN",
+          "name": "超低温フリーザー_06 パナソニックヘルスケア MDF-DC500-VX-PJ",
+          "category_general": "その他",
+          "category_detail": "その他 / 低温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室|旭町ラボ-オープンラボスペース-実験室--1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "s0umSEEzZByWxqTItxm2",
+          "equipment_id": "s0umSEEzZByWxqTItxm2",
+          "name": "旭町ラボ オープンラボスペース 202実験室(E)-1",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|薬品庫|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wdIGcQr1s8TYS4eE4nfV",
+          "equipment_id": "wdIGcQr1s8TYS4eE4nfV",
+          "name": "薬品庫",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|製氷機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ILOnTH0Q1D1pgmFCYWoZ",
+          "equipment_id": "ILOnTH0Q1D1pgmFCYWoZ",
+          "name": "製氷機",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 実験室・実験室設備 / 実験室設備|酸-有機兼用ドラフトチャンバー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gb8wikSyOv8Tp767llH3",
+          "equipment_id": "gb8wikSyOv8Tp767llH3",
+          "name": "酸・有機兼用ドラフトチャンバー",
+          "category_general": "その他",
+          "category_detail": "その他 / 実験室・実験室設備 / 実験室設備"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温培養器|tva660db-恒温培養器|other|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SYO14bklmPweiq8HoBoz",
+          "equipment_id": "SYO14bklmPweiq8HoBoz",
+          "name": "恒温培養器 TVA660DB",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温培養器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温装置(低・中・高温)|co2-インキュベーター-mco-20aic|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lzw8BUj1NiadHnAoLzQI",
+          "equipment_id": "lzw8BUj1NiadHnAoLzQI",
+          "name": "CO2インキュベーター MCO-20AIC",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温装置(低・中・高温)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温装置|u333-バイオメディカルフリーザー-mdf-u333|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "6QZhJ88BTtN3VzFN90HE",
+          "equipment_id": "6QZhJ88BTtN3VzFN90HE",
+          "name": "バイオメディカルフリーザーMDF-U333",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 恒温装置|インキュベーター-mir-262-台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "x5aNSPm5bpozvg7OZrCg",
+          "equipment_id": "x5aNSPm5bpozvg7OZrCg",
+          "name": "インキュベーター MIR-262（2台）",
+          "category_general": "その他",
+          "category_detail": "その他 / 恒温装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / 温室群|イネゲノム構造機能解析システム-1-1-バイオハザード対応グロースキャビネット-コイトトロン-sbh-3024a-特殊型|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "1QXJatzkjW4hOgzXRl7K",
+          "equipment_id": "1QXJatzkjW4hOgzXRl7K",
+          "name": "イネゲノム構造機能解析システム1-1 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+          "category_general": "その他",
+          "category_detail": "その他 / 温室群"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9244
+}

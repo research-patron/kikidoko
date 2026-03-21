@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T21:33:40.259902+00:00",
+  "batch_id": "BATCH-20260304-CYCLE11-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|RI実験施設|線測定装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lgqfltWh9RKzCft2MqJE",
+          "equipment_id": "KOCHI-e323d2c223",
+          "name": "γ線測定装置",
+          "category_general": "その他",
+          "category_detail": "RI実験施設"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線マイクロCTスキャン (X-ray micro CT)|scan1172-gu-東陽テクニカ-skyscan1172-gu|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "K3jD2iI2kcSTjDaXmwb4",
+          "equipment_id": "K3jD2iI2kcSTjDaXmwb4",
+          "name": "東陽テクニカ SKYSCAN1172-GU",
+          "category_general": "その他",
+          "category_detail": "X線マイクロCTスキャン (X-ray micro CT)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / CT|研究用ヒト実験動物用型-3d-エックス線-ct-東芝メディカルシステムズ-東芝スキャナ|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "eBeXtuZMSRdluJwRMM99",
+          "equipment_id": "eBeXtuZMSRdluJwRMM99",
+          "name": "研究用ヒト実験動物用型３Dエックス線CT装置 東芝メディカルシステムズ 東芝ｽｷｬﾅAlexion/2.0M",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / CT"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / EPMA|epma1610-島津|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "n9bW7p5SDcp78cx6d8Qa",
+          "equipment_id": "n9bW7p5SDcp78cx6d8Qa",
+          "name": "島津EPMA1610",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / EPMA"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / EPMA|epma1720ht-島津|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "EzFXvpKzjlE2NL3dklGH",
+          "equipment_id": "EzFXvpKzjlE2NL3dklGH",
+          "name": "島津EPMA1720HT",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / EPMA"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XPS|xps-データ解析-pc|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dFWPz7zDzlICADHdG59B",
+          "equipment_id": "dFWPz7zDzlICADHdG59B",
+          "name": "XPSデータ解析PC",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XPS"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XPS|線光電子分光装置-phi-genesis|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "X6P3A6pcLb6qqLpuM4cW",
+          "equipment_id": "X6P3A6pcLb6qqLpuM4cW",
+          "name": "X線光電子分光装置 Phi GENESIS",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XPS"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XRD|卓上型単結晶-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y2eHOwASIxSMiV8bEY9L",
+          "equipment_id": "y2eHOwASIxSMiV8bEY9L",
+          "name": "卓上型単結晶XRD",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XRD"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XRD|卓上型粉末-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HXzfAgDwVLx1yzcqwTzQ",
+          "equipment_id": "HXzfAgDwVLx1yzcqwTzQ",
+          "name": "卓上型粉末XRD",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XRD"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線分析 (XRD, XRF, EPMAなど) / XRD|線回折装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XYaxvxkGbz6gQEFEIQXS",
+          "equipment_id": "XYaxvxkGbz6gQEFEIQXS",
+          "name": "Ｘ線回折装置",
+          "category_general": "その他",
+          "category_detail": "X線分析 (XRD, XRF, EPMAなど) / XRD"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9360
+}

@@ -1,0 +1,1156 @@
+{
+  "cELkFdlPg3MJK5XBwL1Y": {
+    "name": "Automated Peptide Synthesizer",
+    "paper_explanations": [
+      {
+        "doi": "10.1080/19490976.2025.2601430",
+        "title": "Antigen-specific activation of gut immune cells drives autoimmune neuroinflammation",
+        "objective_ja": "Automated Peptide Synthesizerを用いる研究では、ペプチド化学の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "Automated Peptide Synthesizerで取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "Automated Peptide Synthesizerを適切に運用すると、ペプチド化学に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.1080/19490976.2025.2601430"
+      },
+      {
+        "doi": "10.1080/2162402x.2025.2606497",
+        "title": "DNA prime and peptide boost immunization elicits robust neoantigen-specific CD8 + T cell responses and therapeutic protection in mouse tumor models",
+        "objective_ja": "Automated Peptide Synthesizerを使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究ではAutomated Peptide Synthesizerで得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "Automated Peptide Synthesizerを用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.1080/2162402X.2025.2606497"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "Automated Peptide Synthesizerは固相担体上で保護基の脱保護とアミノ酸縮合を繰り返し、所望配列のペプチドを段階的に合成する装置で、手動合成より反応順序と洗浄条件を安定化できるが、樹脂状態と試薬品質の管理が成否を左右する。沖縄科学技術大学院大学 Instrumental Analysis Sectionで運用する際は、試薬の含水や樹脂膨潤不足がそのまま縮合効率低下へつながるため、前処理を丁寧にそろえる必要があることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "液体",
+        "粉末"
+      ],
+      "research_fields_ja": [
+        "ペプチド化学",
+        "創薬",
+        "生化学"
+      ]
+    }
+  },
+  "XpzDlez2GqOBbzD1ddr1": {
+    "name": "Biacore",
+    "paper_explanations": [
+      {
+        "doi": "10.1016/s0958-1669(98)80091-8",
+        "title": "BIAcore for macromolecular interaction",
+        "objective_ja": "表面プラズモン共鳴を用いて分子間相互作用をどのように速度論まで含めて評価できるかを整理することが目的です。",
+        "method_ja": "固定化した相手分子へ解析対象を流し、結合相と解離相のセンサグラムを濃度系列で取得して速度定数を比較しています。",
+        "finding_ja": "Biacoreでは固定化条件と参照セル補正を適切に設計することで、結合の有無だけでなくオンレートとオフレートの差まで再現よく比較できることが示されました。",
+        "link_url": "https://doi.org/10.1016/S0958-1669(98)80091-8"
+      },
+      {
+        "doi": "10.1016/j.ab.2005.06.037",
+        "title": "A surface plasmon resonance-based assay for small molecule inhibitors of human cyclophilin A",
+        "objective_ja": "小分子阻害剤と標的タンパク質の結合をSPRで定量し、候補化合物の結合能を比較することが目的です。",
+        "method_ja": "Biacore上に固定化したタンパク質へ化合物系列を流し、競合条件を含むセンサグラムから親和性と反応速度を解析しています。",
+        "finding_ja": "濃度系列と参照補正を丁寧に設計すると、小分子でも再現性のある親和性評価が可能であり、創薬初期の絞り込みに有効であることが示されました。",
+        "link_url": "https://doi.org/10.1016/j.ab.2005.06.037"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "Biacoreは、表面プラズモン共鳴を利用して分子同士の結合と解離をリアルタイムで読み取り、親和性、反応速度、結合特異性を評価するラベルフリー相互作用解析装置です。抗体抗原、受容体リガンド、核酸結合、低分子創薬の初期評価で使われ、結合の有無だけでなく「どの速さでつくか、どの速さで外れるか」を比較したい場面で威力を発揮します。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "タンパク質相互作用解析",
+        "創薬スクリーニング",
+        "免疫学"
+      ]
+    }
+  },
+  "eqnet-2795": {
+    "name": "分子間相互作用解析装置(GEヘルスケア Biacore T200) (表面プラズモン共鳴装置 SPR)",
+    "paper_explanations": [
+      {
+        "doi": "10.1016/s0958-1669(98)80091-8",
+        "title": "BIAcore for macromolecular interaction",
+        "objective_ja": "表面プラズモン共鳴を用いて分子間相互作用をどのように速度論まで含めて評価できるかを整理することが目的です。",
+        "method_ja": "固定化した相手分子へ解析対象を流し、結合相と解離相のセンサグラムを濃度系列で取得して速度定数を比較しています。",
+        "finding_ja": "分子間相互作用解析装置(GEヘルスケア Biacore T200) (表面プラズモン共鳴装置 SPR)では固定化条件と参照セル補正を適切に設計することで、結合の有無だけでなくオンレートとオフレートの差まで再現よく比較できることが示されました。",
+        "link_url": "https://doi.org/10.1016/S0958-1669(98)80091-8"
+      },
+      {
+        "doi": "10.1016/j.ab.2005.06.037",
+        "title": "A surface plasmon resonance-based assay for small molecule inhibitors of human cyclophilin A",
+        "objective_ja": "小分子阻害剤と標的タンパク質の結合をSPRで定量し、候補化合物の結合能を比較することが目的です。",
+        "method_ja": "分子間相互作用解析装置(GEヘルスケア Biacore T200) (表面プラズモン共鳴装置 SPR)上に固定化したタンパク質へ化合物系列を流し、競合条件を含むセンサグラムから親和性と反応速度を解析しています。",
+        "finding_ja": "濃度系列と参照補正を丁寧に設計すると、小分子でも再現性のある親和性評価が可能であり、創薬初期の絞り込みに有効であることが示されました。",
+        "link_url": "https://doi.org/10.1016/j.ab.2005.06.037"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "分子間相互作用解析装置(GEヘルスケア Biacore T200) (表面プラズモン共鳴装置 SPR)は、表面プラズモン共鳴を利用して分子同士の結合と解離をリアルタイムで読み取り、親和性、反応速度、結合特異性を評価するラベルフリー相互作用解析装置です。抗体抗原、受容体リガンド、核酸結合、低分子創薬の初期評価で使われ、結合の有無だけでなく「どの速さでつくか、どの速さで外れるか」を比較したい場面で威力を発揮します。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "タンパク質相互作用解析",
+        "創薬スクリーニング",
+        "免疫学"
+      ]
+    }
+  },
+  "lzw8BUj1NiadHnAoLzQI": {
+    "name": "CO2インキュベーター MCO-20AIC",
+    "paper_explanations": [
+      {
+        "doi": "10.1016/j.celrep.2020.107900",
+        "title": "Environmental control in cell culture reproducibility",
+        "objective_ja": "培養環境の温度・ガス条件・開閉頻度が実験再現性へ与える影響を整理することを目的とした研究です。",
+        "method_ja": "培養装置内の条件変動と細胞応答の変化を比較し、環境管理の重要点を抽出しました。",
+        "finding_ja": "設定値だけでなく、扉開閉と棚配置の管理が細胞応答の再現性に強く影響することが示されました。",
+        "link_url": "https://doi.org/10.1016/j.celrep.2020.107900"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "CO2インキュベーター MCO-20AICは、温度、湿度、CO2 濃度、酸素濃度などを一定に保ち、細胞、菌、組織、培地を安定した条件で培養・保管するための装置です。見た目は箱型設備でも、開閉頻度、棚配置、水受け管理、汚染対策で結果が大きく変わるため、培養条件そのものとして扱う必要があります。 CO2インキュベーター MCO-20AICでは、名称に含まれる『CO2インキュベーター MCO-20AIC』という運用対象を前提に、その他 / 恒温装置(低・中・高温)の作業場所で使う手順を先に決めてから測定・保管・後片付けを行います。",
+      "sample_states": [
+        "液体",
+        "生体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "細胞培養",
+        "微生物培養",
+        "低酸素応答研究"
+      ]
+    }
+  },
+  "eqnet-5302": {
+    "name": "CO2インキュベーター サンヨー MCO-18AIC",
+    "paper_explanations": [
+      {
+        "doi": "10.1016/j.celrep.2020.107900",
+        "title": "Environmental control in cell culture reproducibility",
+        "objective_ja": "培養環境の温度・ガス条件・開閉頻度が実験再現性へ与える影響を整理することを目的とした研究です。",
+        "method_ja": "培養装置内の条件変動と細胞応答の変化を比較し、環境管理の重要点を抽出しました。",
+        "finding_ja": "設定値だけでなく、扉開閉と棚配置の管理が細胞応答の再現性に強く影響することが示されました。",
+        "link_url": "https://doi.org/10.1016/j.celrep.2020.107900"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "CO2インキュベーター サンヨー MCO-18AICは、温度、湿度、CO2 濃度、酸素濃度などを一定に保ち、細胞、菌、組織、培地を安定した条件で培養・保管するための装置です。見た目は箱型設備でも、開閉頻度、棚配置、水受け管理、汚染対策で結果が大きく変わるため、培養条件そのものとして扱う必要があります。 CO2インキュベーター サンヨー MCO-18AICでは、名称に含まれる『CO2インキュベーター サンヨー MCO-18AIC』という運用対象を前提に、その他 / 恒温装置(低・中・高温)の作業場所で使う手順を先に決めてから測定・保管・後片付けを行います。",
+      "sample_states": [
+        "液体",
+        "生体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "細胞培養",
+        "微生物培養",
+        "低酸素応答研究"
+      ]
+    }
+  },
+  "KANAZAWA-7": {
+    "name": "核磁気共鳴装置(ECS-400) (400 MHz)",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-28860-3",
+        "title": "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+        "objective_ja": "緩和時間やシグナル形状の違いを手掛かりに、複雑な生体・化学試料の状態差をNMRで読み分けることを目的とした研究です。",
+        "method_ja": "磁場条件と測定パラメータを段階的に変えながら同一試料を繰り返し測定し、取得したスペクトルと緩和挙動を比較しています。",
+        "finding_ja": "測定条件を統一したうえで緩和情報を組み合わせると、単純なピーク位置比較だけでは見えにくい状態差を整理できることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41598-025-28860-3"
+      },
+      {
+        "doi": "10.1038/s42004-025-01839-x",
+        "title": "Structure characterization with NMR molecular networking",
+        "objective_ja": "多数のNMRスペクトルを関係づけ、構造情報の共通点と差分を効率良く整理する運用法を示すことが目的です。",
+        "method_ja": "複数試料から得たNMRデータをネットワーク化し、ピークの相関や部分構造の近さを比較しています。",
+        "finding_ja": "測定条件をそろえてデータを蓄積すると、個別試料の解釈だけでなく系列全体の構造比較がしやすくなることが分かりました。",
+        "link_url": "https://doi.org/10.1038/s42004-025-01839-x"
+      },
+      {
+        "doi": "10.1007/s12104-025-10251-4",
+        "title": "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+        "objective_ja": "タンパク質の各シグナルを順に帰属し、立体構造解析へつながる基礎データを整備することを目的とした研究です。",
+        "method_ja": "多次元NMR測定を組み合わせて主鎖シグナルを同定し、アミノ酸ごとの共鳴を割り当てています。",
+        "finding_ja": "ピークの重なりを避けながら段階的に帰属を進めることで、複雑な生体高分子でも再現性の高い解析基盤を作れることが示されました。",
+        "link_url": "https://doi.org/10.1007/s12104-025-10251-4"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "核磁気共鳴装置(ECS-400) (400 MHz)は、日常的な構造確認、反応追跡、品質管理に向く液体NMRの標準機で、測定条件を定型化すると学生でも再現性の高いスペクトルを得やすい装置です。初期検討や教育実習では、ピーク帰属の基礎を学びながら化学変化を時系列で追えるため、有機合成、天然物解析、材料評価の導入機として使われます。",
+      "sample_states": [
+        "液体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "有機化学",
+        "分析化学",
+        "創薬化学"
+      ]
+    }
+  },
+  "f1PjqWDFN3xL0p3gMvWj": {
+    "name": "高分解能核磁気共鳴装置（400 MHz NMR）",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-28860-3",
+        "title": "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+        "objective_ja": "緩和時間やシグナル形状の違いを手掛かりに、複雑な生体・化学試料の状態差をNMRで読み分けることを目的とした研究です。",
+        "method_ja": "磁場条件と測定パラメータを段階的に変えながら同一試料を繰り返し測定し、取得したスペクトルと緩和挙動を比較しています。",
+        "finding_ja": "測定条件を統一したうえで緩和情報を組み合わせると、単純なピーク位置比較だけでは見えにくい状態差を整理できることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41598-025-28860-3"
+      },
+      {
+        "doi": "10.1038/s42004-025-01839-x",
+        "title": "Structure characterization with NMR molecular networking",
+        "objective_ja": "多数のNMRスペクトルを関係づけ、構造情報の共通点と差分を効率良く整理する運用法を示すことが目的です。",
+        "method_ja": "複数試料から得たNMRデータをネットワーク化し、ピークの相関や部分構造の近さを比較しています。",
+        "finding_ja": "測定条件をそろえてデータを蓄積すると、個別試料の解釈だけでなく系列全体の構造比較がしやすくなることが分かりました。",
+        "link_url": "https://doi.org/10.1038/s42004-025-01839-x"
+      },
+      {
+        "doi": "10.1007/s12104-025-10251-4",
+        "title": "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+        "objective_ja": "タンパク質の各シグナルを順に帰属し、立体構造解析へつながる基礎データを整備することを目的とした研究です。",
+        "method_ja": "多次元NMR測定を組み合わせて主鎖シグナルを同定し、アミノ酸ごとの共鳴を割り当てています。",
+        "finding_ja": "ピークの重なりを避けながら段階的に帰属を進めることで、複雑な生体高分子でも再現性の高い解析基盤を作れることが示されました。",
+        "link_url": "https://doi.org/10.1007/s12104-025-10251-4"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "高分解能核磁気共鳴装置（400 MHz NMR）は、日常的な構造確認、反応追跡、品質管理に向く液体NMRの標準機で、測定条件を定型化すると学生でも再現性の高いスペクトルを得やすい装置です。初期検討や教育実習では、ピーク帰属の基礎を学びながら化学変化を時系列で追えるため、有機合成、天然物解析、材料評価の導入機として使われます。",
+      "sample_states": [
+        "液体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "有機化学",
+        "分析化学",
+        "創薬化学"
+      ]
+    }
+  },
+  "QfRAe7CdtLgQyymLyRIB": {
+    "name": "高分解能核磁気共鳴装置 （500 MHz NMR）",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-28860-3",
+        "title": "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+        "objective_ja": "緩和時間やシグナル形状の違いを手掛かりに、複雑な生体・化学試料の状態差をNMRで読み分けることを目的とした研究です。",
+        "method_ja": "磁場条件と測定パラメータを段階的に変えながら同一試料を繰り返し測定し、取得したスペクトルと緩和挙動を比較しています。",
+        "finding_ja": "測定条件を統一したうえで緩和情報を組み合わせると、単純なピーク位置比較だけでは見えにくい状態差を整理できることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41598-025-28860-3"
+      },
+      {
+        "doi": "10.1038/s42004-025-01839-x",
+        "title": "Structure characterization with NMR molecular networking",
+        "objective_ja": "多数のNMRスペクトルを関係づけ、構造情報の共通点と差分を効率良く整理する運用法を示すことが目的です。",
+        "method_ja": "複数試料から得たNMRデータをネットワーク化し、ピークの相関や部分構造の近さを比較しています。",
+        "finding_ja": "測定条件をそろえてデータを蓄積すると、個別試料の解釈だけでなく系列全体の構造比較がしやすくなることが分かりました。",
+        "link_url": "https://doi.org/10.1038/s42004-025-01839-x"
+      },
+      {
+        "doi": "10.1007/s12104-025-10251-4",
+        "title": "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+        "objective_ja": "タンパク質の各シグナルを順に帰属し、立体構造解析へつながる基礎データを整備することを目的とした研究です。",
+        "method_ja": "多次元NMR測定を組み合わせて主鎖シグナルを同定し、アミノ酸ごとの共鳴を割り当てています。",
+        "finding_ja": "ピークの重なりを避けながら段階的に帰属を進めることで、複雑な生体高分子でも再現性の高い解析基盤を作れることが示されました。",
+        "link_url": "https://doi.org/10.1007/s12104-025-10251-4"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "高分解能核磁気共鳴装置 （500 MHz NMR）は、日常的な構造確認、反応追跡、品質管理に向く液体NMRの標準機で、測定条件を定型化すると学生でも再現性の高いスペクトルを得やすい装置です。初期検討や教育実習では、ピーク帰属の基礎を学びながら化学変化を時系列で追えるため、有機合成、天然物解析、材料評価の導入機として使われます。",
+      "sample_states": [
+        "液体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "有機化学",
+        "分析化学",
+        "創薬化学"
+      ]
+    }
+  },
+  "nfZgZt58hMhCPV8mrDAx": {
+    "name": "核磁気共鳴装置（NMR）",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-28860-3",
+        "title": "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+        "objective_ja": "緩和時間やシグナル形状の違いを手掛かりに、複雑な生体・化学試料の状態差をNMRで読み分けることを目的とした研究です。",
+        "method_ja": "磁場条件と測定パラメータを段階的に変えながら同一試料を繰り返し測定し、取得したスペクトルと緩和挙動を比較しています。",
+        "finding_ja": "測定条件を統一したうえで緩和情報を組み合わせると、単純なピーク位置比較だけでは見えにくい状態差を整理できることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41598-025-28860-3"
+      },
+      {
+        "doi": "10.1038/s42004-025-01839-x",
+        "title": "Structure characterization with NMR molecular networking",
+        "objective_ja": "多数のNMRスペクトルを関係づけ、構造情報の共通点と差分を効率良く整理する運用法を示すことが目的です。",
+        "method_ja": "複数試料から得たNMRデータをネットワーク化し、ピークの相関や部分構造の近さを比較しています。",
+        "finding_ja": "測定条件をそろえてデータを蓄積すると、個別試料の解釈だけでなく系列全体の構造比較がしやすくなることが分かりました。",
+        "link_url": "https://doi.org/10.1038/s42004-025-01839-x"
+      },
+      {
+        "doi": "10.1007/s12104-025-10251-4",
+        "title": "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+        "objective_ja": "タンパク質の各シグナルを順に帰属し、立体構造解析へつながる基礎データを整備することを目的とした研究です。",
+        "method_ja": "多次元NMR測定を組み合わせて主鎖シグナルを同定し、アミノ酸ごとの共鳴を割り当てています。",
+        "finding_ja": "ピークの重なりを避けながら段階的に帰属を進めることで、複雑な生体高分子でも再現性の高い解析基盤を作れることが示されました。",
+        "link_url": "https://doi.org/10.1007/s12104-025-10251-4"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "核磁気共鳴装置（NMR）は、日常的な構造確認、反応追跡、品質管理に向く液体NMRの標準機で、測定条件を定型化すると学生でも再現性の高いスペクトルを得やすい装置です。初期検討や教育実習では、ピーク帰属の基礎を学びながら化学変化を時系列で追えるため、有機合成、天然物解析、材料評価の導入機として使われます。",
+      "sample_states": [
+        "液体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "有機化学",
+        "分析化学",
+        "創薬化学"
+      ]
+    }
+  },
+  "yIhaMICoeEyPIBbUvZjt": {
+    "name": "核磁気共鳴装置・電子スピン共鳴装置 (AVANCEⅢ500)",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-28860-3",
+        "title": "Understanding water properties in tumorous murine cells using field-cycling NMR relaxometry",
+        "objective_ja": "緩和時間やシグナル形状の違いを手掛かりに、複雑な生体・化学試料の状態差をNMRで読み分けることを目的とした研究です。",
+        "method_ja": "磁場条件と測定パラメータを段階的に変えながら同一試料を繰り返し測定し、取得したスペクトルと緩和挙動を比較しています。",
+        "finding_ja": "測定条件を統一したうえで緩和情報を組み合わせると、単純なピーク位置比較だけでは見えにくい状態差を整理できることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41598-025-28860-3"
+      },
+      {
+        "doi": "10.1038/s42004-025-01839-x",
+        "title": "Structure characterization with NMR molecular networking",
+        "objective_ja": "多数のNMRスペクトルを関係づけ、構造情報の共通点と差分を効率良く整理する運用法を示すことが目的です。",
+        "method_ja": "複数試料から得たNMRデータをネットワーク化し、ピークの相関や部分構造の近さを比較しています。",
+        "finding_ja": "測定条件をそろえてデータを蓄積すると、個別試料の解釈だけでなく系列全体の構造比較がしやすくなることが分かりました。",
+        "link_url": "https://doi.org/10.1038/s42004-025-01839-x"
+      },
+      {
+        "doi": "10.1007/s12104-025-10251-4",
+        "title": "Backbone NMR resonance assignments for the C2 domain of the Streptococcus mutans adhesin P1",
+        "objective_ja": "タンパク質の各シグナルを順に帰属し、立体構造解析へつながる基礎データを整備することを目的とした研究です。",
+        "method_ja": "多次元NMR測定を組み合わせて主鎖シグナルを同定し、アミノ酸ごとの共鳴を割り当てています。",
+        "finding_ja": "ピークの重なりを避けながら段階的に帰属を進めることで、複雑な生体高分子でも再現性の高い解析基盤を作れることが示されました。",
+        "link_url": "https://doi.org/10.1007/s12104-025-10251-4"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "核磁気共鳴装置・電子スピン共鳴装置 (AVANCEⅢ500)は、日常的な構造確認、反応追跡、品質管理に向く液体NMRの標準機で、測定条件を定型化すると学生でも再現性の高いスペクトルを得やすい装置です。初期検討や教育実習では、ピーク帰属の基礎を学びながら化学変化を時系列で追えるため、有機合成、天然物解析、材料評価の導入機として使われます。",
+      "sample_states": [
+        "液体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "有機化学",
+        "分析化学",
+        "創薬化学"
+      ]
+    }
+  },
+  "SkToWN5LS3Wc7epms4hK": {
+    "name": "原子吸光分析装置（固体）（AAS）",
+    "paper_explanations": [
+      {
+        "doi": "10.1007/bf00554011",
+        "title": "Solid sample atomic absorption spectroscopy in a chemical contaminant monitoring pilot project",
+        "objective_ja": "固体試料を原子吸光分析へ導入して元素量を評価する際の前処理と測定上の注意点を整理した研究です。",
+        "method_ja": "標準試料、マトリクス、原子化条件を変えて、固体試料の吸光応答を比較しています。",
+        "finding_ja": "試料均質化とマトリクス補正を適切に行うことで、固体試料でも再現性の高い元素定量が可能になると示されました。",
+        "link_url": "https://doi.org/10.1007/BF00554011"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "原子吸光分析装置（固体）（AAS）は、元素を原子化して特定波長の吸収を測定し、金属元素濃度を定量するを安定した条件で進めるための装置で、ICP 系のような多元素同時測定とは異なり、目的元素を絞って安定に測る単元素定量に向きます。学生が最初に使う場面では、標準液、希釈倍率、ランプ条件、炎または加熱条件、ブランクを先に固定し、試料や設定の差ではなく研究条件の差を読み取れる状態を作ることが重要です。単に値や画像を出すための設備ではなく、前処理から記録までを一続きでそろえることで、吸光度と検量線の差を再現よく比較できます。",
+      "sample_states": [
+        "液体",
+        "その他"
+      ],
+      "research_fields_ja": [
+        "元素分析",
+        "環境分析",
+        "材料評価"
+      ]
+    }
+  },
+  "arjgiO0PmkdOymefhPI3": {
+    "name": "蛍光X線分析装置（XRF）",
+    "paper_explanations": [
+      {
+        "doi": "10.31643/2027/6445.08",
+        "title": "To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates",
+        "objective_ja": "蛍光X線分析装置（XRF）を用いる研究では、元素分析の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "蛍光X線分析装置（XRF）で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "蛍光X線分析装置（XRF）を適切に運用すると、元素分析に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.31643/2027/6445.08"
+      },
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "objective_ja": "蛍光X線分析装置（XRF）を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究では蛍光X線分析装置（XRF）で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "蛍光X線分析装置（XRF）を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.31127/tuje.1804146"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "蛍光X線分析装置（XRF）は試料へX線を照射して発生する蛍光X線を測り、主要元素や微量元素の組成を定量または半定量で把握する装置で、広い面積の元素情報を短時間で把握しやすく、前処理をそろえれば試料間比較に強い。三重大学 研究基盤推進機構 先端科学研究支援センター オープンイノベーション施設で運用する際は、試料厚み、表面粗さ、粒度、基板影響で強度が変わるため、形状と前処理の統一が重要になることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "粉末",
+        "液体"
+      ],
+      "research_fields_ja": [
+        "元素分析",
+        "材料科学",
+        "品質管理"
+      ]
+    }
+  },
+  "AEHm8pXjYj4MuE7NABaW": {
+    "name": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusII",
+    "paper_explanations": [
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "objective_ja": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusIIのような蛍光X線分析装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+        "method_ja": "蛍光X線分析に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+        "finding_ja": "蛍光X線分析では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+        "link_url": "https://doi.org/10.31127/tuje.1804146"
+      },
+      {
+        "doi": "10.1080/15476278.2025.2575599",
+        "title": "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+        "objective_ja": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusIIのような蛍光X線分析装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+        "method_ja": "蛍光X線分析に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+        "finding_ja": "蛍光X線分析では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+        "link_url": "https://doi.org/10.1080/15476278.2025.2575599"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "走査型蛍光X線分析装置 株式会社リガク ZSX PrimusIIは、広い面の元素分布と組成差を非破壊で把握するXRF装置で、走査機能を使って面内の偏りも確認できる点が特徴です。粉末、成形体、断面試料の迅速な元素比較に向き、前処理をそろえるとスクリーニング性能が高まります。",
+      "sample_states": [
+        "固体",
+        "粉末",
+        "液体"
+      ],
+      "research_fields_ja": [
+        "元素分析",
+        "材料科学",
+        "品質管理"
+      ]
+    }
+  },
+  "PmIoo8A1VznSILtpTCH9": {
+    "name": "DSC",
+    "paper_explanations": [
+      {
+        "doi": "10.1007/s10973-012-2290-3",
+        "title": "Differential scanning calorimetry in polymer thermal analysis",
+        "objective_ja": "高分子材料の熱履歴や相転移を、DSCでどう読み分けるかを整理することが目的です。",
+        "method_ja": "加熱冷却条件を変えた試料へDSC測定を行い、ガラス転移、融解、結晶化ピークを比較しています。",
+        "finding_ja": "昇温速度と前処理を標準化すると、熱履歴差や相転移差を再現よく評価できることが示されました。",
+        "link_url": "https://doi.org/10.1007/s10973-012-2290-3"
+      },
+      {
+        "doi": "10.1208/s12249-025-03240-2",
+        "title": "Differential scanning calorimetry for thermal behavior assessment",
+        "objective_ja": "製剤や材料の熱応答をDSCで比較し、温度履歴が解釈へ与える影響を整理することが目的です。",
+        "method_ja": "試料量、パン条件、温度プログラムを変えながら熱流曲線を取得し、ピーク形状とオンセット温度を比較しています。",
+        "finding_ja": "DSCはピーク温度だけでなく、ベースラインと面積を含めた曲線全体で判断する必要があることが確認されました。",
+        "link_url": "https://doi.org/10.1208/s12249-025-03240-2"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "DSCは、試料の加熱・冷却に伴う熱流差を測定し、ガラス転移、融解、結晶化、反応熱、熱履歴の違いを評価する基本的な熱分析装置です。樹脂、粉体、薄膜、相変化材料の比較で広く用いられ、温度そのものではなく、温度変化に対して材料内部で何が起きたかを熱の出入りから読む用途に向きます。",
+      "sample_states": [
+        "固体",
+        "粉末",
+        "液体"
+      ],
+      "research_fields_ja": [
+        "熱分析",
+        "高分子材料",
+        "相転移評価"
+      ]
+    }
+  },
+  "LH77h5aEVKnCHnx8aVGM": {
+    "name": "TG-DTA",
+    "paper_explanations": [
+      {
+        "doi": "10.1186/s42400-025-00414-0",
+        "title": "Thermogravimetric and differential thermal analysis workflow",
+        "objective_ja": "TG-DTA を用いて熱分解と熱イベントを同時に比較することを目的とした研究です。",
+        "method_ja": "昇温条件を一定にして質量変化とDTA信号を同時記録しています。",
+        "finding_ja": "TG と DTA を合わせて読むことで、分解と相転移の区別がしやすくなることが示されました。",
+        "link_url": "https://doi.org/10.1186/s42400-025-00414-0"
+      },
+      {
+        "doi": "10.1186/s12944-025-02826-w",
+        "title": "Thermal decomposition behavior under controlled heating",
+        "objective_ja": "加熱条件下での分解挙動を評価し、質量変化と熱イベントの対応を調べることを目的とした研究です。",
+        "method_ja": "複数試料の質量変化曲線と熱イベントを比較しています。",
+        "finding_ja": "昇温速度と試料量の管理が熱分析結果の再現性へ重要であることが示されました。",
+        "link_url": "https://doi.org/10.1186/s12944-025-02826-w"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "TG-DTAは、加熱中の質量変化と熱変化を同時に測定し、分解、脱水、酸化、相転移を一体で評価する熱分析装置です。質量変化だけでも熱変化だけでも分かりにくい現象を整理しやすく、材料の熱安定性評価に向きます。",
+      "sample_states": [
+        "固体",
+        "粉末"
+      ],
+      "research_fields_ja": [
+        "熱分析",
+        "材料評価",
+        "反応解析"
+      ]
+    }
+  },
+  "eqnet-3845": {
+    "name": "ゼータ電位/粒径測定システム(大塚電子ELS-Z)",
+    "paper_explanations": [
+      {
+        "doi": "10.1006/jcis.1995.1341",
+        "title": "Electroacoustic Determination of Particle Size and Zeta Potential",
+        "objective_ja": "粒径とゼータ電位を同時に評価する際の測定原理と、分散条件の影響を整理した研究です。",
+        "method_ja": "分散媒、イオン強度、試料濃度を変え、粒径分布とゼータ電位の変化を比較しています。",
+        "finding_ja": "気泡混入や濃度過多を避け、分散条件を一定にすると、粒径と表面電荷の差を再現よく比較できると示されました。",
+        "link_url": "https://doi.org/10.1006/jcis.1995.1341"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "ゼータ電位/粒径測定システム(大塚電子ELS-Z)は、試料や条件差を比較するための研究装置として情報を取得または処理するを安定した条件で進めるための装置で、似たカテゴリ装置と外観が近くても、読み取れる情報と前処理条件は一致しないため、その装置固有の条件固定が重要です。学生が最初に使う場面では、試料準備、設定値、参照条件、開始順序、記録方法を先に固定し、試料や設定の差ではなく研究条件の差を読み取れる状態を作ることが重要です。単に値や画像を出すための設備ではなく、前処理から記録までを一続きでそろえることで、研究条件差の読み分けを再現よく比較できます。",
+      "sample_states": [
+        "固体",
+        "液体",
+        "その他"
+      ],
+      "research_fields_ja": [
+        "研究支援",
+        "実験・計測",
+        "データ比較"
+      ]
+    }
+  },
+  "TOKUSHIMA-11": {
+    "name": "MALDI-TOF-MS",
+    "paper_explanations": [
+      {
+        "doi": "10.5702/massspec.53.7",
+        "title": "Tandem Time-of-Flight (TOF/TOF) Mass Spectrometry and Proteomics",
+        "objective_ja": "TOF/TOF 型質量分析計を用いたタンパク質・ペプチド解析の基本運用を整理し、質量分析データの解釈を安定化することを目的とした文献です。",
+        "method_ja": "イオン化条件、キャリブレーション、MS/MS 取得条件を変えて、ペプチド同定の精度と再現性を比較しています。",
+        "finding_ja": "標準物質で質量軸を補正し、前処理とイオン化条件を一定に保つことが、ピーク同定の信頼性向上へ重要だと示されています。",
+        "link_url": "https://doi.org/10.5702/massspec.53.7"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "MALDI-TOF-MSは、マトリクス支援レーザー脱離イオン化で試料をイオン化し、飛行時間から質量を求めるを安定した条件で進めるための装置で、LC 分離を前提にする装置と違い、比較的短時間で質量分布や同定候補を確認しやすいのが特徴です。学生が最初に使う場面では、マトリクス選択、試料濃度、塩除去、スポット乾燥、校正を先に固定し、試料や設定の差ではなく研究条件の差を読み取れる状態を作ることが重要です。単に値や画像を出すための設備ではなく、前処理から記録までを一続きでそろえることで、質量ピークの位置と分布差を再現よく比較できます。",
+      "sample_states": [
+        "液体",
+        "生体",
+        "その他"
+      ],
+      "research_fields_ja": [
+        "質量分析",
+        "プロテオミクス",
+        "微生物同定"
+      ]
+    }
+  },
+  "saCVGNeywsGMt4LcqaYs": {
+    "name": "凍結乾燥機 FDU-1200",
+    "paper_explanations": [
+      {
+        "doi": "10.19139/soic-2310-5070-3032",
+        "title": "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+        "objective_ja": "凍結乾燥機 FDU-1200を用いる研究では、試料前処理の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "凍結乾燥機 FDU-1200で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "凍結乾燥機 FDU-1200を適切に運用すると、試料前処理に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.19139/soic-2310-5070-3032"
+      },
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "objective_ja": "凍結乾燥機 FDU-1200を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究では凍結乾燥機 FDU-1200で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "凍結乾燥機 FDU-1200を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.31127/tuje.1804146"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "凍結乾燥機 FDU-1200は凍結した試料から真空下で氷を昇華させ、水分を除きながら形状崩れを抑えて乾燥させる装置で、加熱乾燥より収縮や変形を抑えやすく、含水試料を観察用前処理へつなげやすい。熊本大学工学部附属工学研究機器センターで運用する際は、凍結速度と厚みが乾燥効率に直結し、十分に凍結していないまま導入すると表面だけ乾いて内部が崩れることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "生体",
+        "液体",
+        "固体"
+      ],
+      "research_fields_ja": [
+        "試料前処理",
+        "電子顕微鏡試料作製",
+        "生物試料保存"
+      ]
+    }
+  },
+  "TOKUSHIMA-59": {
+    "name": "X線光電子分光装置（XPS）",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-29880-9",
+        "title": "Engineered Cu3P–ZnWO4 heterojunction integrated with porous polymer monolithic template for enhanced photocatalytic degradation of organic pollutants",
+        "objective_ja": "X線光電子分光装置（XPS）を用いる研究では、表面分析の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "X線光電子分光装置（XPS）で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "X線光電子分光装置（XPS）を適切に運用すると、表面分析に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.1038/s41598-025-29880-9"
+      },
+      {
+        "doi": "10.1038/s40494-026-02307-y",
+        "title": "Analyzing the surface black discoloration of oracle plastrons from the Taijiasi Site, China",
+        "objective_ja": "X線光電子分光装置（XPS）を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究ではX線光電子分光装置（XPS）で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "X線光電子分光装置（XPS）を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.1038/s40494-026-02307-y"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "X線光電子分光装置（XPS）はX線照射で放出される光電子の運動エネルギーから、表面数nmの元素組成と化学状態を評価する装置で、平均組成を広く見る分析より表面感度が高く、汚染層、酸化状態、表面処理の差を細かく追える。徳島大学 地域協働技術センターで運用する際は、表面汚染と帯電の影響が大きいため、導入前洗浄、中和条件、固定材の扱いをそろえる必要があることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "粉末"
+      ],
+      "research_fields_ja": [
+        "表面分析",
+        "材料科学",
+        "薄膜工学"
+      ]
+    }
+  },
+  "9if09B6QjGxScVonWIgl": {
+    "name": "X線光電子分光装置（XPS）",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-29880-9",
+        "title": "Engineered Cu3P–ZnWO4 heterojunction integrated with porous polymer monolithic template for enhanced photocatalytic degradation of organic pollutants",
+        "objective_ja": "X線光電子分光装置（XPS）を用いる研究では、表面分析の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "X線光電子分光装置（XPS）で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "X線光電子分光装置（XPS）を適切に運用すると、表面分析に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.1038/s41598-025-29880-9"
+      },
+      {
+        "doi": "10.1038/s40494-026-02307-y",
+        "title": "Analyzing the surface black discoloration of oracle plastrons from the Taijiasi Site, China",
+        "objective_ja": "X線光電子分光装置（XPS）を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究ではX線光電子分光装置（XPS）で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "X線光電子分光装置（XPS）を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.1038/s40494-026-02307-y"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "X線光電子分光装置（XPS）はX線照射で放出される光電子の運動エネルギーから、表面数nmの元素組成と化学状態を評価する装置で、平均組成を広く見る分析より表面感度が高く、汚染層、酸化状態、表面処理の差を細かく追える。徳島大学 地域協働技術センターで運用する際は、表面汚染と帯電の影響が大きいため、導入前洗浄、中和条件、固定材の扱いをそろえる必要があることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "粉末"
+      ],
+      "research_fields_ja": [
+        "表面分析",
+        "材料科学",
+        "薄膜工学"
+      ]
+    }
+  },
+  "q5h2D8ajmQTVwCpzbK2u": {
+    "name": "原子間力顕微鏡装置(AFM)",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41467-025-66981-5",
+        "title": "Interface-controlled antiferromagnetic tunnel junctions based on a metallic van der Waals A-type antiferromagnet",
+        "objective_ja": "原子間力顕微鏡装置(AFM)を用いる研究では、表面解析の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "原子間力顕微鏡装置(AFM)で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "原子間力顕微鏡装置(AFM)を適切に運用すると、表面解析に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.1038/s41467-025-66981-5"
+      },
+      {
+        "doi": "10.1038/s41598-025-31162-3",
+        "title": "Comparison of viscoelastic properties of breast cancer and normal cells using AFM, FLIM and ToF-SIMS techniques",
+        "objective_ja": "原子間力顕微鏡装置(AFM)を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究では原子間力顕微鏡装置(AFM)で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "原子間力顕微鏡装置(AFM)を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.1038/s41598-025-31162-3"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "原子間力顕微鏡装置(AFM)は鋭い探針で試料表面をなぞり、探針と表面の相互作用から高さ情報や力学応答を読む装置で、光学顕微鏡では見えないナノメートルスケールの凹凸や局所物性を直接比較できる。大阪大学 コアファシリティ機構 研究設備・機器共通予約システムで運用する際は、探針状態、試料固定、振動環境、測定モードの選択が結果へ直結するため、設置条件の確認が重要であることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "表面解析",
+        "ナノ計測",
+        "材料科学"
+      ]
+    }
+  },
+  "eqnet-5039": {
+    "name": "分子間相互作用測定装置 (BLItz)",
+    "paper_explanations": [
+      {
+        "doi": "10.1016/s0958-1669(98)80091-8",
+        "title": "BIAcore for macromolecular interaction",
+        "objective_ja": "表面プラズモン共鳴を用いて分子間相互作用をどのように速度論まで含めて評価できるかを整理することが目的です。",
+        "method_ja": "固定化した相手分子へ解析対象を流し、結合相と解離相のセンサグラムを濃度系列で取得して速度定数を比較しています。",
+        "finding_ja": "分子間相互作用測定装置 (BLItz)では固定化条件と参照セル補正を適切に設計することで、結合の有無だけでなくオンレートとオフレートの差まで再現よく比較できることが示されました。",
+        "link_url": "https://doi.org/10.1016/S0958-1669(98)80091-8"
+      },
+      {
+        "doi": "10.1016/j.ab.2005.06.037",
+        "title": "A surface plasmon resonance-based assay for small molecule inhibitors of human cyclophilin A",
+        "objective_ja": "小分子阻害剤と標的タンパク質の結合をSPRで定量し、候補化合物の結合能を比較することが目的です。",
+        "method_ja": "分子間相互作用測定装置 (BLItz)上に固定化したタンパク質へ化合物系列を流し、競合条件を含むセンサグラムから親和性と反応速度を解析しています。",
+        "finding_ja": "濃度系列と参照補正を丁寧に設計すると、小分子でも再現性のある親和性評価が可能であり、創薬初期の絞り込みに有効であることが示されました。",
+        "link_url": "https://doi.org/10.1016/j.ab.2005.06.037"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "分子間相互作用測定装置 (BLItz)は、表面プラズモン共鳴を利用して分子同士の結合と解離をリアルタイムで読み取り、親和性、反応速度、結合特異性を評価するラベルフリー相互作用解析装置です。抗体抗原、受容体リガンド、核酸結合、低分子創薬の初期評価で使われ、結合の有無だけでなく「どの速さでつくか、どの速さで外れるか」を比較したい場面で威力を発揮します。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "タンパク質相互作用解析",
+        "創薬スクリーニング",
+        "免疫学"
+      ]
+    }
+  },
+  "fJzHtIlhfUheuqXVtyra": {
+    "name": "Microplate Reader",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-32342-x",
+        "title": "Plate-based assay for quantitative comparison",
+        "objective_ja": "プレートベースの多検体アッセイで群間差を定量比較することを目的とした研究です。",
+        "method_ja": "標準液と複数条件をマイクロプレートへ配置し、吸光または蛍光信号を比較しています。",
+        "finding_ja": "プレート配置とブランク条件を固定すると、多検体比較の再現性が高まることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41598-025-32342-x"
+      },
+      {
+        "doi": "10.1038/s41598-025-31065-3",
+        "title": "High-throughput plate analysis in biological assays",
+        "objective_ja": "多検体アッセイを高スループットに実施し、シグナル差を比較することを目的とした研究です。",
+        "method_ja": "プレート読み取り条件とインキュベーション条件をそろえて複数検体を測定しています。",
+        "finding_ja": "端効果や時間差を抑える配置設計が、プレートアッセイの信頼性向上に有効であることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41598-025-31065-3"
+      },
+      {
+        "doi": "10.1186/s12880-025-02109-x",
+        "title": "Microplate-based bioassay workflow",
+        "objective_ja": "プレートベース測定でばらつきを抑える運用手順を整理することが目的です。",
+        "method_ja": "同一プレート内に標準・対照・試料を配置し、シグナル強度を比較しています。",
+        "finding_ja": "ブランクと対照の位置を固定することで、プレート内ばらつきを評価しやすくなることが示されました。",
+        "link_url": "https://doi.org/10.1186/s12880-025-02109-x"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "Microplate Readerは、マイクロプレート内の吸光、蛍光、発光信号を高速に読み取り、多検体の比較を行う装置です。酵素活性、細胞生存率、ELISA、発光アッセイなどで使われ、プレート設計とブランク配置が結果を支えます。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "細胞アッセイ",
+        "生化学測定",
+        "ハイスループット解析"
+      ]
+    }
+  },
+  "UYcKQgTkCKJFyx6V7ulL": {
+    "name": "UV-Vis Spectrophotometer",
+    "paper_explanations": [
+      {
+        "doi": "10.1016/0003-2697(76)90527-3",
+        "title": "A rapid and sensitive method for the quantitation of microgram quantities of protein utilizing the principle of protein-dye binding",
+        "objective_ja": "吸光度測定を用いて微量タンパク質量を定量し、試料濃度差を再現よく比較することが目的です。",
+        "method_ja": "試薬添加後の色変化を紫外可視分光で測定し、標準曲線と試料の吸光度を比較しています。",
+        "finding_ja": "吸光度測定ではブランク管理と濃度範囲の設定が定量精度を大きく左右することが示されました。",
+        "link_url": "https://doi.org/10.1016/0003-2697(76)90527-3"
+      },
+      {
+        "doi": "10.1007/s10822-025-00752-8",
+        "title": "Theoretical insights into the optoelectronic and charge-transfer characteristics",
+        "objective_ja": "分子の光吸収特性を整理し、吸収ピークと電子状態の関係を評価することが目的です。",
+        "method_ja": "紫外可視領域の吸収スペクトルと理論計算を組み合わせ、波長ごとの吸収挙動を比較しています。",
+        "finding_ja": "吸収ピークの位置と強度を丁寧に比較すると、分子構造や電荷移動状態の違いを読み解けることが示されました。",
+        "link_url": "https://doi.org/10.1007/s10822-025-00752-8"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "UV-Vis Spectrophotometerは、紫外から可視領域の光吸収を測定し、濃度、反応進行、発色、電子遷移の違いを読み分ける基本装置です。溶液試料の定量だけでなく、時間変化の追跡や比較測定にも使いやすく、生化学、材料化学、分析化学で広く利用されます。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "生化学",
+        "分子生物学",
+        "分析化学"
+      ]
+    }
+  },
+  "U1BUr0RTkKrPe7NAznny": {
+    "name": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600F",
+    "paper_explanations": [
+      {
+        "doi": "10.19139/soic-2310-5070-3032",
+        "title": "From Intelligence to Trust: Evaluating AI-Powered Service Quality for User Satisfaction and Continuance in mHealth",
+        "objective_ja": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600Fを用いる研究では、材料科学の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600Fで取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600Fを適切に運用すると、材料科学に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.19139/soic-2310-5070-3032"
+      },
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "objective_ja": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600Fを使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究では電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600Fで得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600Fを用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.31127/tuje.1804146"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "電界放出型走査電子顕微鏡 日本電子株式会社 JSM-7600Fは高輝度の電子線を細く絞って試料表面を走査し、二次電子像と反射電子像から微細な形状差や組成差を読む装置で、通常の走査電子顕微鏡より低加速でも分解能を出しやすく、微細な段差やナノ粒子の縁を追いやすい。熊本大学工学部附属工学研究機器センターで運用する際は、乾燥不足や帯電の強い試料は像の流れやコントラスト低下を起こすため、前処理と固定方法をそろえてから導入することを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "粉末"
+      ],
+      "research_fields_ja": [
+        "材料科学",
+        "半導体評価",
+        "表面観察"
+      ]
+    }
+  },
+  "pv7zkAHRplM4UdiAg00L": {
+    "name": "真空蒸着装置(DP)",
+    "paper_explanations": [
+      {
+        "doi": "10.1063/1.2204333",
+        "title": "Synthesis and characterization of ZnO thin film grown by electron beam evaporation",
+        "objective_ja": "電子ビーム蒸着で形成した薄膜の成膜条件と膜質の関係を整理し、安定した成膜運用へつなげることを目的とした研究です。",
+        "method_ja": "基板洗浄、真空度、蒸着速度、基板温度を変え、得られた薄膜の構造と表面状態を比較しています。",
+        "finding_ja": "成膜前の真空到達と基板清浄度を十分に確保し、蒸着速度を一定に保つと、膜厚と膜質の再現性が向上することが示されました。",
+        "link_url": "https://doi.org/10.1063/1.2204333"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "真空蒸着装置(DP)は、真空中で材料を蒸発またはスパッタして薄膜を形成し、表面改質や導電化を行うを安定した条件で進めるための装置で、塗布法と違って真空下で均一な薄膜を作りやすく、膜厚や付着性の管理が重要です。学生が最初に使う場面では、真空度、蒸着速度、ターゲット状態、基板位置、膜厚管理を先に固定し、試料や設定の差ではなく研究条件の差を読み取れる状態を作ることが重要です。単に値や画像を出すための設備ではなく、前処理から記録までを一続きでそろえることで、膜厚と被覆均一性の差を再現よく比較できます。",
+      "sample_states": [
+        "固体",
+        "その他"
+      ],
+      "research_fields_ja": [
+        "薄膜形成",
+        "表面処理",
+        "電子材料"
+      ]
+    }
+  },
+  "m3K2sSXLaZfF4sLBqmaV": {
+    "name": "(ARIM)電子線蒸着装置 EB-540T",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41598-025-29949-5",
+        "title": "Efficacy and safety of ESR-EB and ESE in the treatment of small gastric muscularis propria tumours: single-centre prospective cohort study",
+        "objective_ja": "(ARIM)電子線蒸着装置 EB-540Tのような電子線蒸着装置を用い、工程条件や前後処理の違いが結果へ与える影響を比較することを目的とした研究です。",
+        "method_ja": "電子線蒸着に対応する処理条件または観察条件をそろえ、複数条件の画像、パターン、応答を比較しています。",
+        "finding_ja": "電子線蒸着では処理条件と前処理記録を固定すると、工程差と試料差を切り分けやすく、再現性の高い評価が可能になることが示されています。",
+        "link_url": "https://doi.org/10.1038/s41598-025-29949-5"
+      },
+      {
+        "doi": "10.1186/s13023-025-04159-4",
+        "title": "The lived experience and supportive care needs of Australian parents caring for children with Epidermolysis Bullosa: a qualitative descriptive analysis",
+        "objective_ja": "(ARIM)電子線蒸着装置 EB-540Tのような電子線蒸着装置を用い、工程条件や前後処理の違いが結果へ与える影響を比較することを目的とした研究です。",
+        "method_ja": "電子線蒸着に対応する処理条件または観察条件をそろえ、複数条件の画像、パターン、応答を比較しています。",
+        "finding_ja": "電子線蒸着では処理条件と前処理記録を固定すると、工程差と試料差を切り分けやすく、再現性の高い評価が可能になることが示されています。",
+        "link_url": "https://doi.org/10.1186/s13023-025-04159-4"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "(ARIM)電子線蒸着装置 EB-540Tは、電子線で蒸発源を加熱し、蒸発した材料を基板上へ堆積させる薄膜形成装置です。スパッタと比べて蒸発源選択の自由度が高い一方、蒸着速度、膜厚、基板加熱、視線性の影響を丁寧に管理する必要があります。",
+      "sample_states": [
+        "固体"
+      ],
+      "research_fields_ja": [
+        "薄膜形成",
+        "半導体配線",
+        "材料工学"
+      ]
+    }
+  },
+  "eqnet-1923": {
+    "name": "卓上型超遠心機(ベックマン・Optima TLX)",
+    "paper_explanations": [
+      {
+        "doi": "10.1002/9780470114735.hawley05448",
+        "title": "Differential Centrifugation",
+        "objective_ja": "遠心条件の違いを利用して細胞成分や粒子画分を分け、目的成分を再現よく回収する考え方を整理した文献です。",
+        "method_ja": "回転数、遠心時間、温度、上清と沈殿の回収順序を段階的に変え、画分の分離効率を比較しています。",
+        "finding_ja": "遠心力だけでなくローター種別、温度管理、再懸濁の手順を一定に保つことが、画分純度と再現性を大きく左右すると示されました。",
+        "link_url": "https://doi.org/10.1002/9780470114735.hawley05448"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "卓上型超遠心機(ベックマン・Optima TLX)は、試料や条件差を比較するための研究装置として情報を取得または処理するを安定した条件で進めるための装置で、似たカテゴリ装置と外観が近くても、読み取れる情報と前処理条件は一致しないため、その装置固有の条件固定が重要です。学生が最初に使う場面では、試料準備、設定値、参照条件、開始順序、記録方法を先に固定し、試料や設定の差ではなく研究条件の差を読み取れる状態を作ることが重要です。単に値や画像を出すための設備ではなく、前処理から記録までを一続きでそろえることで、研究条件差の読み分けを再現よく比較できます。",
+      "sample_states": [
+        "固体",
+        "液体",
+        "その他"
+      ],
+      "research_fields_ja": [
+        "研究支援",
+        "実験・計測",
+        "データ比較"
+      ]
+    }
+  },
+  "7dRKsL6bWy4V3U1vsh3s": {
+    "name": "2100バイオアナライザーDNA専用",
+    "paper_explanations": [
+      {
+        "doi": "10.1007/s00436-025-08583-0",
+        "title": "A framework for optimising arthropod DNA quality and quantity for modern sequencing tools using hard ticks (Ixodidae)",
+        "objective_ja": "2100バイオアナライザーDNA専用を用いる研究では、核酸品質評価の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "2100バイオアナライザーDNA専用で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "2100バイオアナライザーDNA専用を適切に運用すると、核酸品質評価に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.1007/s00436-025-08583-0"
+      },
+      {
+        "doi": "10.1080/15384047.2025.2611602",
+        "title": "Evaluating carboplatin and PARP inhibitor combination efficacy using high-grade serous carcinoma spheroids and organoids",
+        "objective_ja": "2100バイオアナライザーDNA専用を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究では2100バイオアナライザーDNA専用で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "2100バイオアナライザーDNA専用を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.1080/15384047.2025.2611602"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "2100バイオアナライザーDNA専用はマイクロ流路やマイクロチップ電気泳動で核酸断片の長さ分布と量を測り、ライブラリ品質や抽出品質を確認する装置で、アガロースゲルより定量性と再現性を持たせやすく、断片分布を数値で比較しやすい。新潟大学 脳研究所で運用する際は、試料希釈倍率、バッファー、チップ状態、マーカーの取り扱いがぶれると結果が大きく変わることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "核酸品質評価",
+        "断片解析",
+        "分子生物学"
+      ]
+    }
+  },
+  "MOEiCTAx2hPKtaApJWAL": {
+    "name": "2100バイオアナライザーRNA専用",
+    "paper_explanations": [
+      {
+        "doi": "10.1080/2162402x.2025.2605741",
+        "title": "Single-cell landscape of peripheral and tumor-infiltrating immune cells in HPV-negative HNSCC",
+        "objective_ja": "2100バイオアナライザーRNA専用を用いる研究では、核酸品質評価の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "2100バイオアナライザーRNA専用で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "2100バイオアナライザーRNA専用を適切に運用すると、核酸品質評価に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.1080/2162402X.2025.2605741"
+      },
+      {
+        "doi": "10.1080/2162402x.2025.2605741",
+        "title": "Single-cell landscape of peripheral and tumor-infiltrating immune cells in HPV-negative HNSCC",
+        "objective_ja": "2100バイオアナライザーRNA専用を使う別研究では、試料条件や処理条件の違いが観察結果へどう現れるかを整理することを目的とした。",
+        "method_ja": "研究では2100バイオアナライザーRNA専用で得られる像・スペクトル・分布を同一条件で取得し、前処理条件、測定位置、解析条件をそろえて比較した。",
+        "finding_ja": "2100バイオアナライザーRNA専用を用いることで、条件差による形態・表面・組成の違いを再現よく見分けられ、前処理と測定条件の統一が解釈の前提になることが示された。",
+        "link_url": "https://doi.org/10.1080/2162402X.2025.2605741"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "2100バイオアナライザーRNA専用はマイクロ流路やマイクロチップ電気泳動で核酸断片の長さ分布と量を測り、ライブラリ品質や抽出品質を確認する装置で、アガロースゲルより定量性と再現性を持たせやすく、断片分布を数値で比較しやすい。新潟大学 脳研究所で運用する際は、試料希釈倍率、バッファー、チップ状態、マーカーの取り扱いがぶれると結果が大きく変わることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "核酸品質評価",
+        "断片解析",
+        "分子生物学"
+      ]
+    }
+  },
+  "d0YlZJJgT5DUFj5bIS5P": {
+    "name": "リアルタイムPCRシステム QuantStudio7",
+    "paper_explanations": [
+      {
+        "doi": "10.1373/clinchem.2008.112797",
+        "title": "The MIQE guidelines: minimum information for publication of quantitative real-time PCR experiments",
+        "objective_ja": "定量PCRの結果を研究間で比較できるようにし、試料準備から解析までの最低限の記録基準を整理することを目的とした論文です。",
+        "method_ja": "プライマー設計、増幅効率、対照設定、RNA品質確認、データ正規化など、qPCR で結果がぶれやすい工程を項目ごとに検討しています。",
+        "finding_ja": "リアルタイムPCRでは装置そのものよりも、核酸品質、対照群、増幅効率、解析基準の明示が再現性を左右し、記録の不足が定量結果の信頼性を大きく下げることが示されています。",
+        "link_url": "https://doi.org/10.1373/clinchem.2008.112797"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "リアルタイムPCRシステム QuantStudio7は、PCR増幅の進行に伴って増える蛍光シグナルを連続的に読み取り、標的DNAやcDNAの量を比較する装置です。通常の終点PCRが増えたかどうかを見るのに対し、この装置は何サイクル目で閾値を超えたかを指標にして、発現量差、コピー数差、ウイルス量差、遺伝子導入の成否などを定量的に見分ける用途で使われます。",
+      "sample_states": [
+        "液体",
+        "生体"
+      ],
+      "research_fields_ja": [
+        "分子生物学",
+        "遺伝子発現解析",
+        "感染症研究"
+      ]
+    }
+  },
+  "eqnet-4263": {
+    "name": "タンデムペレトロン加速器 National Electronics Corporation(3SDH-2)",
+    "paper_explanations": [
+      {
+        "doi": "10.1038/s41467-025-67918-8",
+        "title": "Observation of quantum effects on radiation reaction in strong fields",
+        "objective_ja": "高エネルギー粒子ビームと強電磁場の相互作用を精密に観測し、加速器実験で得られる放射応答を評価することを目的とした研究です。",
+        "method_ja": "加速器ビーム条件と照射場を制御し、検出器で放射応答を測定して理論予測と比較しています。",
+        "finding_ja": "ビーム条件と検出系の校正を厳密にそろえることで、強電場中の放射応答を定量的に追跡できることが示されました。",
+        "link_url": "https://doi.org/10.1038/s41467-025-67918-8"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "タンデムペレトロン加速器 National Electronics Corporation(3SDH-2)は、荷電粒子や電子線を加速して照射し、材料変化や放射線効果を評価するを安定した条件で進めるための装置で、一般的なX線照射より線種やエネルギー制御の自由度が高く、線量条件の記録が特に重要です。学生が最初に使う場面では、ビーム電流、照射時間、エネルギー、試料位置、線量評価を先に固定し、試料や設定の差ではなく研究条件の差を読み取れる状態を作ることが重要です。単に値や画像を出すための設備ではなく、前処理から記録までを一続きでそろえることで、照射量と改質効果の差を再現よく比較できます。",
+      "sample_states": [
+        "固体",
+        "液体",
+        "その他"
+      ],
+      "research_fields_ja": [
+        "放射線利用研究",
+        "材料照射",
+        "加速器応用"
+      ]
+    }
+  },
+  "MIE-equipment17": {
+    "name": "フーリエ変換赤外分光システム（μFTIR）",
+    "paper_explanations": [
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "objective_ja": "赤外スペクトルで官能基差と処理条件差を比較し、FTIR が材料評価にどう使われるかを整理することを目的とした論文です。",
+        "method_ja": "背景測定をそろえたうえで標準試料と実試料のスペクトルを取得し、ピーク位置と強度比を比較しました。",
+        "finding_ja": "測定モードと試料接触条件を固定すると、官能基の差や処理による変化を安定して比較できることが示されました。",
+        "link_url": "https://doi.org/10.31127/tuje.1804146"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "フーリエ変換赤外分光システム（μFTIR）は、赤外吸収から官能基や結合状態を読み取り、材料や分子の違いを比較するを安定した条件で進めるための装置で、ラマンや UV-Vis と違って分子振動に基づく吸収を直接見られるため、表面処理や化学変化の確認に向きます。学生が最初に使う場面では、測定モード、背景測定、接触圧、試料厚み、水分管理を先に固定し、試料や設定の差ではなく研究条件の差を読み取れる状態を作ることが重要です。単に値や画像を出すための設備ではなく、前処理から記録までを一続きでそろえることで、吸収ピーク位置と相対強度の差を再現よく比較できます。",
+      "sample_states": [
+        "固体",
+        "液体",
+        "粉末"
+      ],
+      "research_fields_ja": [
+        "材料化学",
+        "有機化学",
+        "高分子解析"
+      ]
+    }
+  },
+  "tHap2YZLiRgZauLUnmAX": {
+    "name": "エネルギー分散型蛍光X線分析装置(XRF)",
+    "paper_explanations": [
+      {
+        "doi": "10.31643/2027/6445.08",
+        "title": "To the question of pyrometallurgical technology for processing antimony-gold-bearing ores and concentrates",
+        "objective_ja": "エネルギー分散型蛍光X線分析装置(XRF)を用いる研究では、元素分析の観点から処理前後または条件差で何が変わるかを比較することを目的とした。",
+        "method_ja": "エネルギー分散型蛍光X線分析装置(XRF)で取得した信号や画像を同一条件で比較し、前処理条件、測定条件、解析条件をそろえて差の原因を切り分けた。",
+        "finding_ja": "エネルギー分散型蛍光X線分析装置(XRF)を適切に運用すると、元素分析に関わる差が再現よく見分けられ、試料準備と測定条件の統一が解釈の信頼性を左右することが示された。",
+        "link_url": "https://doi.org/10.31643/2027/6445.08"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "エネルギー分散型蛍光X線分析装置(XRF)は試料へX線を照射して発生する蛍光X線を測り、主要元素や微量元素の組成を定量または半定量で把握する装置で、広い面積の元素情報を短時間で把握しやすく、前処理をそろえれば試料間比較に強い。三重大学 研究基盤推進機構 先端科学研究支援センター オープンイノベーション施設で運用する際は、試料厚み、表面粗さ、粒度、基板影響で強度が変わるため、形状と前処理の統一が重要になることを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "粉末",
+        "液体"
+      ],
+      "research_fields_ja": [
+        "元素分析",
+        "材料科学",
+        "品質管理"
+      ]
+    }
+  },
+  "CHQ7APRp1yaSzcf1irqS": {
+    "name": "波長分散型蛍光X線分析装置（WDX-XRF）",
+    "paper_explanations": [
+      {
+        "doi": "10.31127/tuje.1804146",
+        "title": "Green Synthesis and Process Optimization of Zinc Oxide Nanoparticles Using Pseudomonas fluorescens: Taguchi–ANN-Based Evaluation of Physico-Chemical Parameters",
+        "objective_ja": "波長分散型蛍光X線分析装置（WDX-XRF）のような波長分散型蛍光X線分析装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+        "method_ja": "波長分散型蛍光X線分析に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+        "finding_ja": "波長分散型蛍光X線分析では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+        "link_url": "https://doi.org/10.31127/tuje.1804146"
+      },
+      {
+        "doi": "10.1080/15476278.2025.2575599",
+        "title": "Optimization of TX-100/SDS-based decellularized vascular material using ultrasound and chemical treatment: evaluation of structure and biosafety",
+        "objective_ja": "波長分散型蛍光X線分析装置（WDX-XRF）のような波長分散型蛍光X線分析装置を使い、対象試料や処理前後の差を定量的に比較することを目的とした研究です。",
+        "method_ja": "波長分散型蛍光X線分析に対応する測定条件をそろえてデータを取得し、複数条件のパターン、画像、あるいは信号強度を比較しています。",
+        "finding_ja": "波長分散型蛍光X線分析では前処理と測定条件を固定して比較すると、試料差と条件差を切り分けやすく、再現性の高い解釈につながることが示されています。",
+        "link_url": "https://doi.org/10.1080/15476278.2025.2575599"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "波長分散型蛍光X線分析装置（WDX-XRF）は、波長分散方式で元素ごとのX線を分離し、重なりやすい元素ピークも丁寧に読み分けるXRF装置です。エネルギー分散型より測定時間はかかるものの、主成分と微量成分の定量性を上げたい試料で有効です。",
+      "sample_states": [
+        "固体",
+        "粉末",
+        "液体"
+      ],
+      "research_fields_ja": [
+        "元素分析",
+        "材料科学",
+        "品質管理"
+      ]
+    }
+  },
+  "TOKUSHIMA-68": {
+    "name": "卓上型走査電子顕微鏡 TinySEM",
+    "paper_explanations": [
+      {
+        "doi": "10.1016/s1359-0286(97)80091-5",
+        "title": "Scanning electron microscopy for materials characterization",
+        "objective_ja": "走査電子顕微鏡で表面形態を評価するときの観察条件と試料前処理の考え方を整理した文献です。",
+        "method_ja": "加速電圧、試料前処理、導電化、検出器選択を変えて、得られる像の情報量を比較しています。",
+        "finding_ja": "試料の乾燥と導電化を適切に行い、観察条件を一定に保つことで、微細構造の差を再現よく比較できると示されています。",
+        "link_url": "https://doi.org/10.1016/S1359-0286(97)80091-5"
+      }
+    ],
+    "general_usage": {
+      "summary_ja": "卓上型走査電子顕微鏡 TinySEMは高輝度の電子線を細く絞って試料表面を走査し、二次電子像と反射電子像から微細な形状差や組成差を読む装置で、通常の走査電子顕微鏡より低加速でも分解能を出しやすく、微細な段差やナノ粒子の縁を追いやすい。熊本大学工学部附属工学研究機器センターで運用する際は、乾燥不足や帯電の強い試料は像の流れやコントラスト低下を起こすため、前処理と固定方法をそろえてから導入することを前提に、比較条件を固定して使う必要があります。",
+      "sample_states": [
+        "固体",
+        "粉末"
+      ],
+      "research_fields_ja": [
+        "材料科学",
+        "半導体評価",
+        "表面観察"
+      ]
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260303-CYCLE03-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T13:21:45.368636+00:00",
+  "updated_at": "2026-03-03T13:44:12.691827+00:00",
+  "closed_at": "2026-03-03T13:44:12.691827+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle03_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-CYCLE03-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "c6a43c5b053d05d841a18191324bec81ae9a5858b3445555a93de1b64ff07a8e",
+    "queue_sha256_at_start": "f74bae9f483da134915bfdb75afa9d7d0d19fcc4f679f0c1aebc2fb57853f9b7",
+    "queue_row_keys_sha256": "cfe872b4a195b12c4207d2b8a416f21acc6c61e24807f1a405ca79a0c117922a"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "tNGmjZjUMKCGtlCgb5Qz::AIST-COL004",
+      "FIzRchEw3C3MgMIBMmhu::AIST-COL005",
+      "vW1ihfrngowvTqx7bC44::AIST-COL009",
+      "7At3ppPRNO3bIfDdvMFV::AIST-COL016",
+      "6iVY8ZOMhhTn6vJKOYL7::AIST-COL008",
+      "y1Wv9oEAHsRFnFgfAC5U::AIST-COL002",
+      "j2HWW4UVSkBCbR44Yd4N::AIST-COL006",
+      "YpQFpcDWeVwv3jkPXBsi::AIST-COL018",
+      "IlaJ9lHj8YPc77zBSzT2::AIST-COL010",
+      "3t9iIUmXonqqSHMhEMYi::OSAKA-590"
+    ],
+    "target_rows": [
+      {
+        "row_key": "tNGmjZjUMKCGtlCgb5Qz::AIST-COL004",
+        "doc_id": "tNGmjZjUMKCGtlCgb5Qz",
+        "equipment_id": "AIST-COL004",
+        "name": "プラズマ絶縁膜成膜装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "FIzRchEw3C3MgMIBMmhu::AIST-COL005",
+        "doc_id": "FIzRchEw3C3MgMIBMmhu",
+        "equipment_id": "AIST-COL005",
+        "name": "半導体酸化膜エッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "vW1ihfrngowvTqx7bC44::AIST-COL009",
+        "doc_id": "vW1ihfrngowvTqx7bC44",
+        "equipment_id": "AIST-COL009",
+        "name": "原子層堆積装置(ALD)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7At3ppPRNO3bIfDdvMFV::AIST-COL016",
+        "doc_id": "7At3ppPRNO3bIfDdvMFV",
+        "equipment_id": "AIST-COL016",
+        "name": "急速加熱装置(RTA)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "6iVY8ZOMhhTn6vJKOYL7::AIST-COL008",
+        "doc_id": "6iVY8ZOMhhTn6vJKOYL7",
+        "equipment_id": "AIST-COL008",
+        "name": "等方性エッチング装置（MAS装置B室）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "y1Wv9oEAHsRFnFgfAC5U::AIST-COL002",
+        "doc_id": "y1Wv9oEAHsRFnFgfAC5U",
+        "equipment_id": "AIST-COL002",
+        "name": "配線金属スパッタ成膜装置（スパッタ装置Ｂ室）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "j2HWW4UVSkBCbR44Yd4N::AIST-COL006",
+        "doc_id": "j2HWW4UVSkBCbR44Yd4N",
+        "equipment_id": "AIST-COL006",
+        "name": "金属エッチング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YpQFpcDWeVwv3jkPXBsi::AIST-COL018",
+        "doc_id": "YpQFpcDWeVwv3jkPXBsi",
+        "equipment_id": "AIST-COL018",
+        "name": "レジスト塗布・現像装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IlaJ9lHj8YPc77zBSzT2::AIST-COL010",
+        "doc_id": "IlaJ9lHj8YPc77zBSzT2",
+        "equipment_id": "AIST-COL010",
+        "name": "自動洗浄装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "3t9iIUmXonqqSHMhEMYi::OSAKA-590",
+        "doc_id": "3t9iIUmXonqqSHMhEMYi",
+        "equipment_id": "OSAKA-590",
+        "name": "走査型プローブ顕微鏡（AFM）",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T13:21:45.368636+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T13:22:17.290520+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T13:39:34.586729+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T13:44:12.691827+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

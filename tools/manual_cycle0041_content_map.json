@@ -1,0 +1,402 @@
+{
+  "eqnet-4175": {
+    "family_id": "xray-phase-scanner-eqnet-4175",
+    "source_doc_id": "eqnet-4175"
+  },
+  "eqnet-409": {
+    "family_id": "ftir-microscope-eqnet-409",
+    "source_doc_id": "eqnet-409"
+  },
+  "eqnet-3362": {
+    "family_id": "fluorescence-microscope-eqnet-3362",
+    "source_doc_id": "eqnet-3362"
+  },
+  "eqnet-3566": {
+    "family_id": "ion-chromatograph-eqnet-3566",
+    "source_doc_id": "eqnet-3566"
+  },
+  "eqnet-4962": {
+    "family_id": "incubator-shaker-br300lf-1",
+    "source_doc_id": "eqnet-4962"
+  },
+  "eqnet-4931": {
+    "family_id": "scintillation-counter-eqnet-4931",
+    "source_doc_id": "eqnet-4931"
+  },
+  "eqnet-4711": {
+    "family_id": "solidstate-nmr-600-bruker-avanceiii600",
+    "source_doc_id": "eqnet-4711"
+  },
+  "eqnet-1005": {
+    "family_id": "icp-oes-eqnet-1005",
+    "source_doc_id": "eqnet-1005"
+  },
+  "eqnet-2382": {
+    "family_id": "karl-fischer-eqnet-2382",
+    "source_doc_id": "eqnet-2382"
+  },
+  "eqnet-2624": {
+    "family_id": "in-vivo-imager-eqnet-2624",
+    "source_doc_id": "eqnet-2624"
+  },
+  "eqnet-3375": {
+    "family_id": "orbitrap-ms-eqnet-3375",
+    "source_doc_id": "eqnet-3375"
+  },
+  "eqnet-4675": {
+    "family_id": "homogenizer-eqnet-4675",
+    "source_doc_id": "eqnet-4675"
+  },
+  "eqnet-653": {
+    "family_id": "sequencer-abi3130",
+    "source_doc_id": "eqnet-653"
+  },
+  "eqnet-3491": {
+    "family_id": "probe-keyence-vn8010",
+    "source_doc_id": "eqnet-3491"
+  },
+  "l1nDcHtAePXXCBNwBDYb": {
+    "family_id": "pcvm-processing-l1ndchtaepxxcbnwbdyb",
+    "source_doc_id": "l1nDcHtAePXXCBNwBDYb"
+  },
+  "eqnet-4148": {
+    "family_id": "ftir-microscope-eqnet-4148",
+    "source_doc_id": "eqnet-4148"
+  },
+  "eqnet-5185": {
+    "family_id": "cryostat-eqnet-5185",
+    "source_doc_id": "eqnet-5185"
+  },
+  "eqnet-5103": {
+    "family_id": "gas-chromatography-eqnet-5103",
+    "source_doc_id": "eqnet-5103"
+  },
+  "eqnet-4963": {
+    "family_id": "incubator-shaker-br300lf-2",
+    "source_doc_id": "eqnet-4963"
+  },
+  "eqnet-2300": {
+    "family_id": "scintillation-counter-eqnet-2300",
+    "source_doc_id": "eqnet-2300"
+  },
+  "eqnet-2184": {
+    "family_id": "solidstate-nmr-500-jeol-eca500",
+    "source_doc_id": "eqnet-2184"
+  },
+  "eqnet-4800": {
+    "family_id": "xrd-image-plate-eqnet-4800",
+    "source_doc_id": "eqnet-4800"
+  },
+  "eqnet-5332": {
+    "family_id": "particle-size-analyzer-eqnet-5332",
+    "source_doc_id": "eqnet-5332"
+  },
+  "eqnet-5265": {
+    "family_id": "in-vivo-imager-eqnet-5265",
+    "source_doc_id": "eqnet-5265"
+  },
+  "eqnet-3376": {
+    "family_id": "gcms-eqnet-3376",
+    "source_doc_id": "eqnet-3376"
+  },
+  "eqnet-3304": {
+    "family_id": "centrifuge-eqnet-3304",
+    "source_doc_id": "eqnet-3304"
+  },
+  "eqnet-652": {
+    "family_id": "sequencer-abi3500",
+    "source_doc_id": "eqnet-652"
+  },
+  "eqnet-3492": {
+    "family_id": "probe-jeol-jspm5200",
+    "source_doc_id": "eqnet-3492"
+  },
+  "BocUHn1psjh0RAhcRaeZ": {
+    "family_id": "xray-analysis-system-bocuhn1psjh0rahcraez",
+    "source_doc_id": "BocUHn1psjh0RAhcRaeZ"
+  },
+  "eqnet-3622": {
+    "family_id": "raman-microscope-eqnet-3622",
+    "source_doc_id": "eqnet-3622"
+  },
+  "eqnet-4733": {
+    "family_id": "fluorescence-microscope-eqnet-4733",
+    "source_doc_id": "eqnet-4733"
+  },
+  "eqnet-5416": {
+    "family_id": "liquid-chromatography-eqnet-5416",
+    "source_doc_id": "eqnet-5416"
+  },
+  "eqnet-4946": {
+    "family_id": "biosafety-cabinet-eqnet-4946",
+    "source_doc_id": "eqnet-4946"
+  },
+  "eqnet-4267": {
+    "family_id": "scintillation-counter-eqnet-4267",
+    "source_doc_id": "eqnet-4267"
+  },
+  "eqnet-2185": {
+    "family_id": "nmr-600-jeol-eca600",
+    "source_doc_id": "eqnet-2185"
+  },
+  "eqnet-3332": {
+    "family_id": "single-crystal-xray-system-eqnet-3332",
+    "source_doc_id": "eqnet-3332"
+  },
+  "eqnet-4546": {
+    "family_id": "in-vivo-imager-eqnet-4546",
+    "source_doc_id": "eqnet-4546"
+  },
+  "eqnet-3653": {
+    "family_id": "orbitrap-ms-eqnet-3653",
+    "source_doc_id": "eqnet-3653"
+  },
+  "eqnet-2635": {
+    "family_id": "centrifuge-eqnet-2635",
+    "source_doc_id": "eqnet-2635"
+  },
+  "eqnet-2163": {
+    "family_id": "sequencer-seqstudio-ga",
+    "source_doc_id": "eqnet-2163"
+  },
+  "eqnet-3490": {
+    "family_id": "probe-hitachi-afm5000ii",
+    "source_doc_id": "eqnet-3490"
+  },
+  "T4rJvyKHQfCOY7loFE94": {
+    "family_id": "xrd-image-plate-t4rjvykhqfcoy7lofe94",
+    "source_doc_id": "T4rJvyKHQfCOY7loFE94"
+  },
+  "ln5W4lfWKTgYCrNs6vnv": {
+    "family_id": "ftir-ln5w4lfwktgycrns6vnv",
+    "source_doc_id": "ln5W4lfWKTgYCrNs6vnv"
+  },
+  "eqnet-2338": {
+    "family_id": "stereo-microscope-eqnet-2338",
+    "source_doc_id": "eqnet-2338"
+  },
+  "eqnet-5383": {
+    "family_id": "akta-chromatography-eqnet-5383",
+    "source_doc_id": "eqnet-5383"
+  },
+  "eqnet-4947": {
+    "family_id": "autoclave-eqnet-4947",
+    "source_doc_id": "eqnet-4947"
+  },
+  "eqnet-5197": {
+    "family_id": "multi-electrode-array-eqnet-5197",
+    "source_doc_id": "eqnet-5197"
+  },
+  "eqnet-2183": {
+    "family_id": "nmr-400-jeol-eqnet-2183",
+    "source_doc_id": "eqnet-2183"
+  },
+  "eqnet-1933": {
+    "family_id": "single-crystal-xray-system-eqnet-1933",
+    "source_doc_id": "eqnet-1933"
+  },
+  "eqnet-2972": {
+    "family_id": "lumino-imager-eqnet-2972",
+    "source_doc_id": "eqnet-2972"
+  },
+  "eqnet-3652": {
+    "family_id": "qtof-lcms-eqnet-3652",
+    "source_doc_id": "eqnet-3652"
+  },
+  "eqnet-3335": {
+    "family_id": "homogenizer-eqnet-3335",
+    "source_doc_id": "eqnet-3335"
+  },
+  "eqnet-2310": {
+    "family_id": "sequencer-fragment-plate",
+    "source_doc_id": "eqnet-2310"
+  },
+  "eqnet-3750": {
+    "family_id": "probe-microscope-eqnet-3750",
+    "source_doc_id": "eqnet-3750"
+  },
+  "OWIMEeauVizftQPodqbY": {
+    "family_id": "xray-solution-scattering-owimeeauvizftqpodqby",
+    "source_doc_id": "OWIMEeauVizftQPodqbY"
+  },
+  "AOn1OjBSZM7t3yuRgBxG": {
+    "family_id": "uv-vis-aon1ojbszm7t3yurgbxg",
+    "source_doc_id": "AOn1OjBSZM7t3yuRgBxG"
+  },
+  "eqnet-4735": {
+    "family_id": "fluorescence-microscope-eqnet-4735",
+    "source_doc_id": "eqnet-4735"
+  },
+  "eqnet-2146": {
+    "family_id": "liquid-chromatography-eqnet-2146",
+    "source_doc_id": "eqnet-2146"
+  },
+  "eqnet-4898": {
+    "family_id": "incubator-mir253-1",
+    "source_doc_id": "eqnet-4898"
+  },
+  "eqnet-2608": {
+    "family_id": "free-electron-laser-eqnet-2608",
+    "source_doc_id": "eqnet-2608"
+  },
+  "eqnet-2129": {
+    "family_id": "nmr-500-jeol-eqnet-2129",
+    "source_doc_id": "eqnet-2129"
+  },
+  "eqnet-607": {
+    "family_id": "single-crystal-xray-system-eqnet-607",
+    "source_doc_id": "eqnet-607"
+  },
+  "eqnet-3081": {
+    "family_id": "lumino-imager-eqnet-3081",
+    "source_doc_id": "eqnet-3081"
+  },
+  "eqnet-2761": {
+    "family_id": "orbitrap-ms-eqnet-2761",
+    "source_doc_id": "eqnet-2761"
+  },
+  "eqnet-2340": {
+    "family_id": "homogenizer-eqnet-2340",
+    "source_doc_id": "eqnet-2340"
+  },
+  "eqnet-2311": {
+    "family_id": "sequencer-prep-service",
+    "source_doc_id": "eqnet-2311"
+  },
+  "eqnet-4427": {
+    "family_id": "probe-shimadzu-spm9700",
+    "source_doc_id": "eqnet-4427"
+  },
+  "fo3mWSnrEzGCIT4NE9jx": {
+    "family_id": "xray-irradiator-fo3mwsnrezgcit4ne9jx",
+    "source_doc_id": "fo3mWSnrEzGCIT4NE9jx"
+  },
+  "82NHaPA7MbCnQteSBolK": {
+    "family_id": "ftir-82nhapa7mbcnqtesbolk",
+    "source_doc_id": "82NHaPA7MbCnQteSBolK"
+  },
+  "eqnet-4112": {
+    "family_id": "fluorescence-microscope-eqnet-4112",
+    "source_doc_id": "eqnet-4112"
+  },
+  "eqnet-2145": {
+    "family_id": "liquid-chromatography-eqnet-2145",
+    "source_doc_id": "eqnet-2145"
+  },
+  "eqnet-4899": {
+    "family_id": "incubator-mir253-2",
+    "source_doc_id": "eqnet-4899"
+  },
+  "eqnet-4150": {
+    "family_id": "shape-measurement-eqnet-4150",
+    "source_doc_id": "eqnet-4150"
+  },
+  "eqnet-383": {
+    "family_id": "solidstate-nmr-300-eqnet-383",
+    "source_doc_id": "eqnet-383"
+  },
+  "eqnet-1082": {
+    "family_id": "single-crystal-xray-system-eqnet-1082",
+    "source_doc_id": "eqnet-1082"
+  },
+  "eqnet-4424": {
+    "family_id": "lumino-imager-eqnet-4424",
+    "source_doc_id": "eqnet-4424"
+  },
+  "eqnet-4456": {
+    "family_id": "lcms-iontrap-eqnet-4456",
+    "source_doc_id": "eqnet-4456"
+  },
+  "eqnet-4769": {
+    "family_id": "centrifuge-eqnet-4769",
+    "source_doc_id": "eqnet-4769"
+  },
+  "eqnet-2308": {
+    "family_id": "sequencer-run-service",
+    "source_doc_id": "eqnet-2308"
+  },
+  "eqnet-4632": {
+    "family_id": "probe-shimadzu-spm9700ht",
+    "source_doc_id": "eqnet-4632"
+  },
+  "RoGVMMsno6oi9uDIpOcp": {
+    "family_id": "xrf-general-rogvmmsno6oi9udipocp",
+    "source_doc_id": "RoGVMMsno6oi9uDIpOcp"
+  },
+  "f0bLbieIXnEMmNVZlYWL": {
+    "family_id": "ftir-f0blbieixnemmnvzlywl",
+    "source_doc_id": "f0bLbieIXnEMmNVZlYWL"
+  },
+  "eqnet-1116": {
+    "family_id": "fluorescence-microscope-eqnet-1116",
+    "source_doc_id": "eqnet-1116"
+  },
+  "eqnet-5415": {
+    "family_id": "liquid-chromatography-eqnet-5415",
+    "source_doc_id": "eqnet-5415"
+  },
+  "eqnet-4897": {
+    "family_id": "fermenter-eqnet-4897",
+    "source_doc_id": "eqnet-4897"
+  },
+  "eqnet-352": {
+    "family_id": "shape-measurement-eqnet-352",
+    "source_doc_id": "eqnet-352"
+  },
+  "eqnet-1746": {
+    "family_id": "solidstate-nmr-600-jeol-eca600ii",
+    "source_doc_id": "eqnet-1746"
+  },
+  "eqnet-3805": {
+    "family_id": "xrd-image-plate-eqnet-3805",
+    "source_doc_id": "eqnet-3805"
+  },
+  "eqnet-4680-90921ce8": {
+    "family_id": "lumino-imager-eqnet-4680-90921ce8",
+    "source_doc_id": "eqnet-4680-90921ce8"
+  },
+  "eqnet-3365": {
+    "family_id": "mass-spectrometry-general-eqnet-3365",
+    "source_doc_id": "eqnet-3365"
+  },
+  "eqnet-4767": {
+    "family_id": "centrifuge-eqnet-4767",
+    "source_doc_id": "eqnet-4767"
+  },
+  "eqnet-3898": {
+    "family_id": "sequencer-seqstudio",
+    "source_doc_id": "eqnet-3898"
+  },
+  "eqnet-2715": {
+    "family_id": "probe-hitachi-afm5000-afm5300e",
+    "source_doc_id": "eqnet-2715"
+  },
+  "yHmAwbufUxZk9gSmKGeK": {
+    "family_id": "xrf-general-yhmawbufuxzk9gsmkgek",
+    "source_doc_id": "yHmAwbufUxZk9gSmKGeK"
+  },
+  "a8cpMgP5oieNssr9nMKv": {
+    "family_id": "ftir-microscope-a8cpmgp5oienssr9nmkv",
+    "source_doc_id": "a8cpMgP5oieNssr9nMKv"
+  },
+  "eqnet-1190": {
+    "family_id": "superres-analysis-system-eqnet-1190",
+    "source_doc_id": "eqnet-1190"
+  },
+  "eqnet-5382": {
+    "family_id": "liquid-chromatography-eqnet-5382",
+    "source_doc_id": "eqnet-5382"
+  },
+  "eqnet-5132": {
+    "family_id": "fermenter-eqnet-5132",
+    "source_doc_id": "eqnet-5132"
+  },
+  "eqnet-1123": {
+    "family_id": "xps-general-eqnet-1123",
+    "source_doc_id": "eqnet-1123"
+  },
+  "eqnet-373": {
+    "family_id": "solidstate-nmr-400-jeol-eca400",
+    "source_doc_id": "eqnet-373"
+  }
+}

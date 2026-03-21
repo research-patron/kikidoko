@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T23:39:37.672272+00:00",
+  "batch_id": "BATCH-20260304-CYCLE17-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / IT / -|f-7000-蛍光分光光度計-pc-バージョンアップ|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "oWwNqeOg32Ug3AT0xbXH",
+          "equipment_id": "oWwNqeOg32Ug3AT0xbXH",
+          "name": "F-7000蛍光分光光度計PCバージョンアップ",
+          "category_general": "その他",
+          "category_detail": "その他 / IT / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / IT / -|パソコン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "DUyQbxhoZYVkEmIeJblc",
+          "equipment_id": "DUyQbxhoZYVkEmIeJblc",
+          "name": "パソコン",
+          "category_general": "その他",
+          "category_detail": "その他 / IT / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / その他主要機器|脳波-心拍変動解析一式|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "muzVlAUntiAXayMbGZHv",
+          "equipment_id": "YAMAGUCHI-etc88",
+          "name": "脳波・心拍変動解析一式",
+          "category_general": "その他",
+          "category_detail": "その他 / その他主要機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / オートクレーブ|オートクレーブ-hv-50|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "2iIwkv0b1SHE7eHj3DZU",
+          "equipment_id": "2iIwkv0b1SHE7eHj3DZU",
+          "name": "オートクレーブB HV-50",
+          "category_general": "その他",
+          "category_detail": "その他 / オートクレーブ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / オートクレーブ|オートクレーブ-lbs-325|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zZ7vWDPnwnlXdeF5uhMz",
+          "equipment_id": "zZ7vWDPnwnlXdeF5uhMz",
+          "name": "オートクレーブA LBS-325",
+          "category_general": "その他",
+          "category_detail": "その他 / オートクレーブ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / オープンラボ|農学部オープンラボスペース|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y9PNw3EA4spYQnZKBzIr",
+          "equipment_id": "y9PNw3EA4spYQnZKBzIr",
+          "name": "農学部オープンラボスペース",
+          "category_general": "その他",
+          "category_detail": "その他 / オープンラボ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|pau1600cg-クリーンベンチ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "l1yiK5rXVvoXhjfnAd8L",
+          "equipment_id": "l1yiK5rXVvoXhjfnAd8L",
+          "name": "クリーンベンチ PAU1600CG",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|クリーンベンチ-sanyo-mcv-13bss|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "CqOeDLgEn9EvCzLj1GMa",
+          "equipment_id": "CqOeDLgEn9EvCzLj1GMa",
+          "name": "クリーンベンチ SANYO MCV-13BSS",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|クリーンベンチ-tpv-790ag-台|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "OByMk3FpEeOi9mRGdvVf",
+          "equipment_id": "OByMk3FpEeOi9mRGdvVf",
+          "name": "クリーンベンチ TPV-790AG（8台）",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他 / クリーンベンチ|クリーンベンチ-vst-700|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "eGGKNSWUv7VkAeFq3e8Q",
+          "equipment_id": "eGGKNSWUv7VkAeFq3e8Q",
+          "name": "クリーンベンチ VST-700",
+          "category_general": "その他",
+          "category_detail": "その他 / クリーンベンチ"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9301
+}

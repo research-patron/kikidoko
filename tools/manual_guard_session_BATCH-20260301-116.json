@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-116",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T10:55:37.383561+00:00",
+  "updated_at": "2026-03-01T10:56:34.852386+00:00",
+  "closed_at": "2026-03-01T10:56:34.852386+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_batch116.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-116.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "80304368c5fd450a965b606691f9bc2a12bd01ab9c09ec80e75e4f4318be5ed4",
+    "queue_sha256_at_start": "1646d96c47e4854ec2f291421b92d116bbf0f091431730f9ed46b4dc02a5a6d5",
+    "queue_row_keys_sha256": "c0ced38f98c966b88a73f28d2eebeab898200ecb53747eccaa85ac2d52a81749"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "SHIMANE-m9::SHIMANE-m9",
+      "SHINSHU-BD-FACSAria-III-5::SHINSHU-BD-FACSAria-III-5",
+      "SHIMANE-m52::SHIMANE-m52",
+      "SHIMANE-m74::SHIMANE-m74",
+      "SHIMANE-m33::SHIMANE-m33",
+      "SHIMANE-m20::SHIMANE-m20",
+      "SHIMANE-m64::SHIMANE-m64",
+      "jBWtAXWcdqKxRba8x56y::jBWtAXWcdqKxRba8x56y",
+      "SHIMANE-m89::SHIMANE-m89",
+      "SHIMANE-m92::SHIMANE-m92",
+      "SHIMANE-m72::SHIMANE-m72",
+      "SHIMANE-m30::SHIMANE-m30",
+      "SHIMANE-m31::SHIMANE-m31",
+      "GmklwRCoBUaWt7dlzkyP::GmklwRCoBUaWt7dlzkyP",
+      "SHIMANE-m97::SHIMANE-m97",
+      "SHIMANE-m105::SHIMANE-m105",
+      "SHIMANE-m80::SHIMANE-m80",
+      "mpE6mgC1mGVVJ6PdoVwK::mpE6mgC1mGVVJ6PdoVwK",
+      "SHIMANE-m95::SHIMANE-m95",
+      "SHIMANE-m91::SHIMANE-m91",
+      "SHIMANE-15e82443b71ed1667b0f5c2d4aee98939e474f4a::SHIMANE-15e82443b71ed1667b0f5c2d4aee98939e474f4a",
+      "SHIMANE-4dd2fa41157a1641043471ba970ce93ed2221cc6::SHIMANE-4dd2fa41157a1641043471ba970ce93ed2221cc6",
+      "SHIMANE-m35::SHIMANE-m35",
+      "SHIMANE-m8::SHIMANE-m8",
+      "SHIMANE-m57::SHIMANE-m57",
+      "SHIMANE-m108::SHIMANE-m108",
+      "SHIMANE-m90::SHIMANE-m90",
+      "SHIMANE-m103::SHIMANE-m103",
+      "SHIMANE-m47::SHIMANE-m47",
+      "SHIMANE-m34::SHIMANE-m34",
+      "SHINSHU-Zeiss-LSM-880-with-Airyscan-4::SHINSHU-Zeiss-LSM-880-with-Airyscan-4",
+      "XPmZNtUF4w650ImOFWA0::XPmZNtUF4w650ImOFWA0",
+      "SHIMANE-m28::SHIMANE-m28",
+      "SHIMANE-m14::SHIMANE-m14",
+      "SHIMANE-m22::SHIMANE-m22",
+      "SHIMANE-m27::SHIMANE-m27",
+      "SHIMANE-m36::SHIMANE-m36",
+      "SHIMANE-m73::SHIMANE-m73",
+      "SHIMANE-m32::SHIMANE-m32",
+      "SHIMANE-m69::SHIMANE-m69",
+      "SHINSHU-Leica-EM-HPM100-3::SHINSHU-Leica-EM-HPM100-3",
+      "SHIMANE-m77::SHIMANE-m77",
+      "SHIMANE-m16::SHIMANE-m16",
+      "SHIMANE-m100::SHIMANE-m100",
+      "SHIMANE-m15::SHIMANE-m15",
+      "SHIMANE-m71::SHIMANE-m71",
+      "SHIMANE-m107::SHIMANE-m107",
+      "SHIMANE-m99::SHIMANE-m99",
+      "SHIMANE-m96::SHIMANE-m96",
+      "Y6YvRn37fUj0P0cOmn4J::Y6YvRn37fUj0P0cOmn4J",
+      "SHIMANE-m101::SHIMANE-m101",
+      "SHIMANE-m2::SHIMANE-m2",
+      "SHIMANE-m104::SHIMANE-m104",
+      "SHIMANE-m59::SHIMANE-m59",
+      "SHIMANE-m58::SHIMANE-m58",
+      "SHIMANE-m6::SHIMANE-m6",
+      "SHIMANE-m7::SHIMANE-m7",
+      "SHIMANE-m4::SHIMANE-m4",
+      "CBQYDJVh9zzW4ygy2SSk::CBQYDJVh9zzW4ygy2SSk",
+      "SHIMANE-m88::SHIMANE-m88",
+      "SHINSHU-JEM-1400-HC-1::SHINSHU-JEM-1400-HC-1",
+      "SHIMANE-m203::SHIMANE-m203",
+      "SHIMANE-m10::SHIMANE-m10",
+      "SHIMANE-m11::SHIMANE-m11",
+      "SHIMANE-m62::SHIMANE-m62",
+      "SHINSHU-10x-Genomics-Visium-CytAssist-6::SHINSHU-10x-Genomics-Visium-CytAssist-6",
+      "SHIMANE-m76::SHIMANE-m76",
+      "SHINSHU-Beckman-Multisizer-4-8::SHINSHU-Beckman-Multisizer-4-8",
+      "SHIMANE-m66::SHIMANE-m66",
+      "SHIMANE-m85::SHIMANE-m85",
+      "SHIMANE-m19::SHIMANE-m19",
+      "SHIMANE-m65::SHIMANE-m65",
+      "SHIMANE-m86::SHIMANE-m86",
+      "naDKbDjxM95ajtFDgp9E::naDKbDjxM95ajtFDgp9E",
+      "SHIMANE-m68::SHIMANE-m68",
+      "rnWZN0X8l8oXFazqK06F::rnWZN0X8l8oXFazqK06F",
+      "SHIMANE-m12::SHIMANE-m12",
+      "hiAmMLhAlkJVRwHFE2rm::hiAmMLhAlkJVRwHFE2rm",
+      "V6R1SSyBW85fm50skh2p::V6R1SSyBW85fm50skh2p",
+      "SHINSHU-JSM-7600F-2::SHINSHU-JSM-7600F-2",
+      "SHIMANE-m102::SHIMANE-m102",
+      "SHIMANE-m63::SHIMANE-m63",
+      "SHIMANE-m67::SHIMANE-m67",
+      "SHIMANE-m17::SHIMANE-m17",
+      "SHIMANE-m23::SHIMANE-m23",
+      "SHIMANE-m24::SHIMANE-m24",
+      "SHIMANE-m40::SHIMANE-m40",
+      "SHIMANE-m41::SHIMANE-m41",
+      "SHIMANE-m42::SHIMANE-m42",
+      "SHIMANE-m78::SHIMANE-m78",
+      "SHIMANE-m81::SHIMANE-m81",
+      "SHIMANE-m83::SHIMANE-m83",
+      "SHIMANE-m84::SHIMANE-m84",
+      "SHIMANE-m82::SHIMANE-m82",
+      "SHIMANE-m50::SHIMANE-m50",
+      "SHIMANE-m18::SHIMANE-m18",
+      "nkVElAL384VV8V8UVRBG::nkVElAL384VV8V8UVRBG",
+      "SHIMANE-m13::SHIMANE-m13",
+      "MIYAZAKI-832::MIYAZAKI-832",
+      "dFELh5Y0CjBGxfWBCfPt::dFELh5Y0CjBGxfWBCfPt"
+    ],
+    "target_rows": [
+      {
+        "row_key": "SHIMANE-m9::SHIMANE-m9",
+        "doc_id": "SHIMANE-m9",
+        "equipment_id": "SHIMANE-m9",
+        "name": "ジャーファーメンター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHINSHU-BD-FACSAria-III-5::SHINSHU-BD-FACSAria-III-5",
+        "doc_id": "SHINSHU-BD-FACSAria-III-5",
+        "equipment_id": "SHINSHU-BD-FACSAria-III-5",
+        "name": "セルソータ－",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m52::SHIMANE-m52",
+        "doc_id": "SHIMANE-m52",
+        "equipment_id": "SHIMANE-m52",
+        "name": "ハイブリダイゼーションインキュベーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m74::SHIMANE-m74",
+        "doc_id": "SHIMANE-m74",
+        "equipment_id": "SHIMANE-m74",
+        "name": "バイオイメージング画像解析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m33::SHIMANE-m33",
+        "doc_id": "SHIMANE-m33",
+        "equipment_id": "SHIMANE-m33",
+        "name": "パルスフィールド電気泳動装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m20::SHIMANE-m20",
+        "doc_id": "SHIMANE-m20",
+        "equipment_id": "SHIMANE-m20",
+        "name": "ビーズ式破砕機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m64::SHIMANE-m64",
+        "doc_id": "SHIMANE-m64",
+        "equipment_id": "SHIMANE-m64",
+        "name": "フリーザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "jBWtAXWcdqKxRba8x56y::jBWtAXWcdqKxRba8x56y",
+        "doc_id": "jBWtAXWcdqKxRba8x56y",
+        "equipment_id": "jBWtAXWcdqKxRba8x56y",
+        "name": "フローサイトメーター（セルソーター・アナライザー）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m89::SHIMANE-m89",
+        "doc_id": "SHIMANE-m89",
+        "equipment_id": "SHIMANE-m89",
+        "name": "ブロッティング装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m92::SHIMANE-m92",
+        "doc_id": "SHIMANE-m92",
+        "equipment_id": "SHIMANE-m92",
+        "name": "プラントミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m72::SHIMANE-m72",
+        "doc_id": "SHIMANE-m72",
+        "equipment_id": "SHIMANE-m72",
+        "name": "マイクロアレイデーター解析",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m30::SHIMANE-m30",
+        "doc_id": "SHIMANE-m30",
+        "equipment_id": "SHIMANE-m30",
+        "name": "マイクロプレートリーダー（吸光度・蛍光・発光）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m31::SHIMANE-m31",
+        "doc_id": "SHIMANE-m31",
+        "equipment_id": "SHIMANE-m31",
+        "name": "マイクロプレートリーダー（吸光度）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "GmklwRCoBUaWt7dlzkyP::GmklwRCoBUaWt7dlzkyP",
+        "doc_id": "GmklwRCoBUaWt7dlzkyP",
+        "equipment_id": "GmklwRCoBUaWt7dlzkyP",
+        "name": "マトリクス噴霧装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m97::SHIMANE-m97",
+        "doc_id": "SHIMANE-m97",
+        "equipment_id": "SHIMANE-m97",
+        "name": "マルチガスインキュベーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m105::SHIMANE-m105",
+        "doc_id": "SHIMANE-m105",
+        "equipment_id": "SHIMANE-m105",
+        "name": "ミクロ天秤",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m80::SHIMANE-m80",
+        "doc_id": "SHIMANE-m80",
+        "equipment_id": "SHIMANE-m80",
+        "name": "ミニ恒温槽",
+        "papers_count": 0
+      },
+      {
+        "row_key": "mpE6mgC1mGVVJ6PdoVwK::mpE6mgC1mGVVJ6PdoVwK",
+        "doc_id": "mpE6mgC1mGVVJ6PdoVwK",
+        "equipment_id": "mpE6mgC1mGVVJ6PdoVwK",
+        "name": "ライブセルイメージングシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m95::SHIMANE-m95",
+        "doc_id": "SHIMANE-m95",
+        "equipment_id": "SHIMANE-m95",
+        "name": "リアルタイム定量PCR",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m91::SHIMANE-m91",
+        "doc_id": "SHIMANE-m91",
+        "equipment_id": "SHIMANE-m91",
+        "name": "リーフパンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-15e82443b71ed1667b0f5c2d4aee98939e474f4a::SHIMANE-15e82443b71ed1667b0f5c2d4aee98939e474f4a",
+        "doc_id": "SHIMANE-15e82443b71ed1667b0f5c2d4aee98939e474f4a",
+        "equipment_id": "SHIMANE-15e82443b71ed1667b0f5c2d4aee98939e474f4a",
+        "name": "ローター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-4dd2fa41157a1641043471ba970ce93ed2221cc6::SHIMANE-4dd2fa41157a1641043471ba970ce93ed2221cc6",
+        "doc_id": "SHIMANE-4dd2fa41157a1641043471ba970ce93ed2221cc6",
+        "equipment_id": "SHIMANE-4dd2fa41157a1641043471ba970ce93ed2221cc6",
+        "name": "ローター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m35::SHIMANE-m35",
+        "doc_id": "SHIMANE-m35",
+        "equipment_id": "SHIMANE-m35",
+        "name": "二次元電気泳動装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m8::SHIMANE-m8",
+        "doc_id": "SHIMANE-m8",
+        "equipment_id": "SHIMANE-m8",
+        "name": "低温培養器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m57::SHIMANE-m57",
+        "doc_id": "SHIMANE-m57",
+        "equipment_id": "SHIMANE-m57",
+        "name": "倒立顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m108::SHIMANE-m108",
+        "doc_id": "SHIMANE-m108",
+        "equipment_id": "SHIMANE-m108",
+        "name": "元素分析装置付デジタルマイクロスコープ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m90::SHIMANE-m90",
+        "doc_id": "SHIMANE-m90",
+        "equipment_id": "SHIMANE-m90",
+        "name": "光量子センサー＆ライトメーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m103::SHIMANE-m103",
+        "doc_id": "SHIMANE-m103",
+        "equipment_id": "SHIMANE-m103",
+        "name": "全自動元素分析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m47::SHIMANE-m47",
+        "doc_id": "SHIMANE-m47",
+        "equipment_id": "SHIMANE-m47",
+        "name": "全自動核酸抽出装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m34::SHIMANE-m34",
+        "doc_id": "SHIMANE-m34",
+        "equipment_id": "SHIMANE-m34",
+        "name": "全自動高速電気泳動装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHINSHU-Zeiss-LSM-880-with-Airyscan-4::SHINSHU-Zeiss-LSM-880-with-Airyscan-4",
+        "doc_id": "SHINSHU-Zeiss-LSM-880-with-Airyscan-4",
+        "equipment_id": "SHINSHU-Zeiss-LSM-880-with-Airyscan-4",
+        "name": "共焦点レーザー顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "XPmZNtUF4w650ImOFWA0::XPmZNtUF4w650ImOFWA0",
+        "doc_id": "XPmZNtUF4w650ImOFWA0",
+        "equipment_id": "XPmZNtUF4w650ImOFWA0",
+        "name": "共焦点レーザー顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m28::SHIMANE-m28",
+        "doc_id": "SHIMANE-m28",
+        "equipment_id": "SHIMANE-m28",
+        "name": "円二色性分散計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m14::SHIMANE-m14",
+        "doc_id": "SHIMANE-m14",
+        "equipment_id": "SHIMANE-m14",
+        "name": "冷却微量遠心機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m22::SHIMANE-m22",
+        "doc_id": "SHIMANE-m22",
+        "equipment_id": "SHIMANE-m22",
+        "name": "凍結乾燥機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m27::SHIMANE-m27",
+        "doc_id": "SHIMANE-m27",
+        "equipment_id": "SHIMANE-m27",
+        "name": "分光蛍光光度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m36::SHIMANE-m36",
+        "doc_id": "SHIMANE-m36",
+        "equipment_id": "SHIMANE-m36",
+        "name": "分取用等電点電気泳動",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m73::SHIMANE-m73",
+        "doc_id": "SHIMANE-m73",
+        "equipment_id": "SHIMANE-m73",
+        "name": "分子間相互作用解析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m32::SHIMANE-m32",
+        "doc_id": "SHIMANE-m32",
+        "equipment_id": "SHIMANE-m32",
+        "name": "分析用高速液体クロマトグラフ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m69::SHIMANE-m69",
+        "doc_id": "SHIMANE-m69",
+        "equipment_id": "SHIMANE-m69",
+        "name": "切片作製装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHINSHU-Leica-EM-HPM100-3::SHINSHU-Leica-EM-HPM100-3",
+        "doc_id": "SHINSHU-Leica-EM-HPM100-3",
+        "equipment_id": "SHINSHU-Leica-EM-HPM100-3",
+        "name": "加圧凍結装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m77::SHIMANE-m77",
+        "doc_id": "SHIMANE-m77",
+        "equipment_id": "SHIMANE-m77",
+        "name": "卓上プレート遠心機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m16::SHIMANE-m16",
+        "doc_id": "SHIMANE-m16",
+        "equipment_id": "SHIMANE-m16",
+        "name": "卓上冷却多本架遠心機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m100::SHIMANE-m100",
+        "doc_id": "SHIMANE-m100",
+        "equipment_id": "SHIMANE-m100",
+        "name": "卓上型紫外可視分光光度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m15::SHIMANE-m15",
+        "doc_id": "SHIMANE-m15",
+        "equipment_id": "SHIMANE-m15",
+        "name": "卓上多本架遠心機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m71::SHIMANE-m71",
+        "doc_id": "SHIMANE-m71",
+        "equipment_id": "SHIMANE-m71",
+        "name": "卓上走査型電子顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m107::SHIMANE-m107",
+        "doc_id": "SHIMANE-m107",
+        "equipment_id": "SHIMANE-m107",
+        "name": "卓上遠心機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m99::SHIMANE-m99",
+        "doc_id": "SHIMANE-m99",
+        "equipment_id": "SHIMANE-m99",
+        "name": "回転式ミクロトーム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m96::SHIMANE-m96",
+        "doc_id": "SHIMANE-m96",
+        "equipment_id": "SHIMANE-m96",
+        "name": "培養倒立顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Y6YvRn37fUj0P0cOmn4J::Y6YvRn37fUj0P0cOmn4J",
+        "doc_id": "Y6YvRn37fUj0P0cOmn4J",
+        "equipment_id": "Y6YvRn37fUj0P0cOmn4J",
+        "name": "多光子レーザー顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m101::SHIMANE-m101",
+        "doc_id": "SHIMANE-m101",
+        "equipment_id": "SHIMANE-m101",
+        "name": "多機能・試料急速凍結装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m2::SHIMANE-m2",
+        "doc_id": "SHIMANE-m2",
+        "equipment_id": "SHIMANE-m2",
+        "name": "安全キャビネット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m104::SHIMANE-m104",
+        "doc_id": "SHIMANE-m104",
+        "equipment_id": "SHIMANE-m104",
+        "name": "安定同位体比質量分析装置 （故障中・修理予定）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m59::SHIMANE-m59",
+        "doc_id": "SHIMANE-m59",
+        "equipment_id": "SHIMANE-m59",
+        "name": "実体顕微鏡（蛍光ユニット搭載）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m58::SHIMANE-m58",
+        "doc_id": "SHIMANE-m58",
+        "equipment_id": "SHIMANE-m58",
+        "name": "実習用顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m6::SHIMANE-m6",
+        "doc_id": "SHIMANE-m6",
+        "equipment_id": "SHIMANE-m6",
+        "name": "恒温器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m7::SHIMANE-m7",
+        "doc_id": "SHIMANE-m7",
+        "equipment_id": "SHIMANE-m7",
+        "name": "恒温器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m4::SHIMANE-m4",
+        "doc_id": "SHIMANE-m4",
+        "equipment_id": "SHIMANE-m4",
+        "name": "恒温振とう培養器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "CBQYDJVh9zzW4ygy2SSk::CBQYDJVh9zzW4ygy2SSk",
+        "doc_id": "CBQYDJVh9zzW4ygy2SSk",
+        "equipment_id": "CBQYDJVh9zzW4ygy2SSk",
+        "name": "感染防止対策用クライオスタット",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m88::SHIMANE-m88",
+        "doc_id": "SHIMANE-m88",
+        "equipment_id": "SHIMANE-m88",
+        "name": "次世代秒速破砕粉砕機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHINSHU-JEM-1400-HC-1::SHINSHU-JEM-1400-HC-1",
+        "doc_id": "SHINSHU-JEM-1400-HC-1",
+        "equipment_id": "SHINSHU-JEM-1400-HC-1",
+        "name": "汎用透過型電子顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m203::SHIMANE-m203",
+        "doc_id": "SHIMANE-m203",
+        "equipment_id": "SHIMANE-m203",
+        "name": "液体シンチレーションカウンター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m10::SHIMANE-m10",
+        "doc_id": "SHIMANE-m10",
+        "equipment_id": "SHIMANE-m10",
+        "name": "炭酸ガス培養器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m11::SHIMANE-m11",
+        "doc_id": "SHIMANE-m11",
+        "equipment_id": "SHIMANE-m11",
+        "name": "炭酸ガス培養器",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m62::SHIMANE-m62",
+        "doc_id": "SHIMANE-m62",
+        "equipment_id": "SHIMANE-m62",
+        "name": "発光・蛍光検出装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHINSHU-10x-Genomics-Visium-CytAssist-6::SHINSHU-10x-Genomics-Visium-CytAssist-6",
+        "doc_id": "SHINSHU-10x-Genomics-Visium-CytAssist-6",
+        "equipment_id": "SHINSHU-10x-Genomics-Visium-CytAssist-6",
+        "name": "空間的遺伝子発現解析装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m76::SHIMANE-m76",
+        "doc_id": "SHIMANE-m76",
+        "equipment_id": "SHIMANE-m76",
+        "name": "粉砕装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHINSHU-Beckman-Multisizer-4-8::SHINSHU-Beckman-Multisizer-4-8",
+        "doc_id": "SHINSHU-Beckman-Multisizer-4-8",
+        "equipment_id": "SHINSHU-Beckman-Multisizer-4-8",
+        "name": "精密粒度分布測定装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m66::SHIMANE-m66",
+        "doc_id": "SHIMANE-m66",
+        "equipment_id": "SHIMANE-m66",
+        "name": "純水製造装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m85::SHIMANE-m85",
+        "doc_id": "SHIMANE-m85",
+        "equipment_id": "SHIMANE-m85",
+        "name": "紫外可視分光光度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m19::SHIMANE-m19",
+        "doc_id": "SHIMANE-m19",
+        "equipment_id": "SHIMANE-m19",
+        "name": "細胞凍結破砕装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m65::SHIMANE-m65",
+        "doc_id": "SHIMANE-m65",
+        "equipment_id": "SHIMANE-m65",
+        "name": "薬用ショーケース",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m86::SHIMANE-m86",
+        "doc_id": "SHIMANE-m86",
+        "equipment_id": "SHIMANE-m86",
+        "name": "蛍光光度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "naDKbDjxM95ajtFDgp9E::naDKbDjxM95ajtFDgp9E",
+        "doc_id": "naDKbDjxM95ajtFDgp9E",
+        "equipment_id": "naDKbDjxM95ajtFDgp9E",
+        "name": "蛍光顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m68::SHIMANE-m68",
+        "doc_id": "SHIMANE-m68",
+        "equipment_id": "SHIMANE-m68",
+        "name": "製氷機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "rnWZN0X8l8oXFazqK06F::rnWZN0X8l8oXFazqK06F",
+        "doc_id": "rnWZN0X8l8oXFazqK06F",
+        "equipment_id": "rnWZN0X8l8oXFazqK06F",
+        "name": "試料作製の受託（病理組織標本、電子顕微鏡標本）等",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m12::SHIMANE-m12",
+        "doc_id": "SHIMANE-m12",
+        "equipment_id": "SHIMANE-m12",
+        "name": "調製用超遠心機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "hiAmMLhAlkJVRwHFE2rm::hiAmMLhAlkJVRwHFE2rm",
+        "doc_id": "hiAmMLhAlkJVRwHFE2rm",
+        "equipment_id": "hiAmMLhAlkJVRwHFE2rm",
+        "name": "質量分析装置（MALDI イメージング、DESI イメージング、LC/MS）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "V6R1SSyBW85fm50skh2p::V6R1SSyBW85fm50skh2p",
+        "doc_id": "V6R1SSyBW85fm50skh2p",
+        "equipment_id": "V6R1SSyBW85fm50skh2p",
+        "name": "質量分析計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHINSHU-JSM-7600F-2::SHINSHU-JSM-7600F-2",
+        "doc_id": "SHINSHU-JSM-7600F-2",
+        "equipment_id": "SHINSHU-JSM-7600F-2",
+        "name": "走査型分析電子顕微鏡",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m102::SHIMANE-m102",
+        "doc_id": "SHIMANE-m102",
+        "equipment_id": "SHIMANE-m102",
+        "name": "超低温フリーザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m63::SHIMANE-m63",
+        "doc_id": "SHIMANE-m63",
+        "equipment_id": "SHIMANE-m63",
+        "name": "超低温フリーザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m67::SHIMANE-m67",
+        "doc_id": "SHIMANE-m67",
+        "equipment_id": "SHIMANE-m67",
+        "name": "超純水製造装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m17::SHIMANE-m17",
+        "doc_id": "SHIMANE-m17",
+        "equipment_id": "SHIMANE-m17",
+        "name": "超音波発生機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m23::SHIMANE-m23",
+        "doc_id": "SHIMANE-m23",
+        "equipment_id": "SHIMANE-m23",
+        "name": "遠心エバポレーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m24::SHIMANE-m24",
+        "doc_id": "SHIMANE-m24",
+        "equipment_id": "SHIMANE-m24",
+        "name": "遠心濃縮機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m40::SHIMANE-m40",
+        "doc_id": "SHIMANE-m40",
+        "equipment_id": "SHIMANE-m40",
+        "name": "遺伝子増幅装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m41::SHIMANE-m41",
+        "doc_id": "SHIMANE-m41",
+        "equipment_id": "SHIMANE-m41",
+        "name": "遺伝子増幅装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m42::SHIMANE-m42",
+        "doc_id": "SHIMANE-m42",
+        "equipment_id": "SHIMANE-m42",
+        "name": "遺伝子増幅装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m78::SHIMANE-m78",
+        "doc_id": "SHIMANE-m78",
+        "equipment_id": "SHIMANE-m78",
+        "name": "遺伝子増幅装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m81::SHIMANE-m81",
+        "doc_id": "SHIMANE-m81",
+        "equipment_id": "SHIMANE-m81",
+        "name": "遺伝子増幅装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m83::SHIMANE-m83",
+        "doc_id": "SHIMANE-m83",
+        "equipment_id": "SHIMANE-m83",
+        "name": "遺伝子増幅装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m84::SHIMANE-m84",
+        "doc_id": "SHIMANE-m84",
+        "equipment_id": "SHIMANE-m84",
+        "name": "遺伝子増幅装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m82::SHIMANE-m82",
+        "doc_id": "SHIMANE-m82",
+        "equipment_id": "SHIMANE-m82",
+        "name": "遺伝子導入装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m50::SHIMANE-m50",
+        "doc_id": "SHIMANE-m50",
+        "equipment_id": "SHIMANE-m50",
+        "name": "遺伝子銃",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m18::SHIMANE-m18",
+        "doc_id": "SHIMANE-m18",
+        "equipment_id": "SHIMANE-m18",
+        "name": "電動式細胞破砕装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "nkVElAL384VV8V8UVRBG::nkVElAL384VV8V8UVRBG",
+        "doc_id": "nkVElAL384VV8V8UVRBG",
+        "equipment_id": "nkVElAL384VV8V8UVRBG",
+        "name": "電子顕微鏡（透過型・走査型）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SHIMANE-m13::SHIMANE-m13",
+        "doc_id": "SHIMANE-m13",
+        "equipment_id": "SHIMANE-m13",
+        "name": "高速冷却遠心機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MIYAZAKI-832::MIYAZAKI-832",
+        "doc_id": "MIYAZAKI-832",
+        "equipment_id": "MIYAZAKI-832",
+        "name": "デジタル筋硬度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "dFELh5Y0CjBGxfWBCfPt::dFELh5Y0CjBGxfWBCfPt",
+        "doc_id": "dFELh5Y0CjBGxfWBCfPt",
+        "equipment_id": "dFELh5Y0CjBGxfWBCfPt",
+        "name": "デジタル筋硬度計",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T10:55:37.383561+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:37.439179+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:38.027515+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:40.734202+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:43.325183+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:45.909517+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:48.522356+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:51.120893+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:53.706912+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:56.336433+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:55:58.926646+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:56:01.518283+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T10:56:34.852386+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

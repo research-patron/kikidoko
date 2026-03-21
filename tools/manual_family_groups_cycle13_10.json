@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T22:00:12.996117+00:00",
+  "batch_id": "BATCH-20260304-CYCLE13-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|X線解析・撮影・照射|休止中-復旧の見込みは立っていません-線照射装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JXaJxuHPXjMdxiwAMpKo",
+          "equipment_id": "JXaJxuHPXjMdxiwAMpKo",
+          "name": "（休止中 復旧の見込みは立っていません ）X線照射装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|波長分散型蛍光-線分析装置-wdx-xrf|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "CHQ7APRp1yaSzcf1irqS",
+          "equipment_id": "CHQ7APRp1yaSzcf1irqS",
+          "name": "波長分散型蛍光X線分析装置（WDX-XRF）",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|生体高分子-線構造解析装置|xray|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LtFo5qfrrSd4xsSsCPxS",
+          "equipment_id": "LtFo5qfrrSd4xsSsCPxS",
+          "name": "生体高分子X線構造解析装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|粉末-線回折装置-xrd|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "ocfQZdpKQFLDsdEf0Da6",
+          "equipment_id": "ocfQZdpKQFLDsdEf0Da6",
+          "name": "粉末X線回折装置（XRD）",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析・撮影・照射|線照射装置|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VS0PjRFOQZgnZP776ZFO",
+          "equipment_id": "VS0PjRFOQZgnZP776ZFO",
+          "name": "X線照射装置",
+          "category_general": "その他",
+          "category_detail": "X線解析・撮影・照射"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|cmos-搭載高輝度単結晶-線構造解析装置-bruker|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SNYfjhDDgOYFKk4VrcmX",
+          "equipment_id": "SNYfjhDDgOYFKk4VrcmX",
+          "name": "CMOS搭載高輝度単結晶 X線構造解析装置 （Bruker）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|ラウエ-低温-軸回折-線装置-ru-200|xray|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yd98KDvfbCqqSShy6xbC",
+          "equipment_id": "yd98KDvfbCqqSShy6xbC",
+          "name": "ラウエ ／低温4軸回折X線装置 （RU-200）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|単結晶-線解析装置-raxis-rapidii-リガク|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gdRtY1NyEvYoNcAwLftZ",
+          "equipment_id": "gdRtY1NyEvYoNcAwLftZ",
+          "name": "単結晶X線解析装置 /RAXIS-RAPIDII （リガク）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線解析装置|粉末-線解析装置-ultimaiv-リガク|xray|solid_powder|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "RPWPXdN7VLjoW6gOTSgl",
+          "equipment_id": "RPWPXdN7VLjoW6gOTSgl",
+          "name": "粉末X線解析装置 /UltimaIV （リガク）",
+          "category_general": "その他",
+          "category_detail": "X線解析装置"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))|デスクトップ-3d-マイクロ-線-ct|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sl04lBsPRZ3Agrm0EUk4",
+          "equipment_id": "HOKUDAI-AP-100397",
+          "name": "デスクトップ3DマイクロX線CT",
+          "category_general": "その他",
+          "category_detail": "X線関連装置 (X-ray Related Equipment) / X線CT装置 (X-ray Computed Tomography (CT))"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9340
+}

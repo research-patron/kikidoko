@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/qFK82tR2HQOutQj1lW5a/10.1038/s41598-025-29880-9",
+    "paper_space_hash": "#/paper/qFK82tR2HQOutQj1lW5a/10.1038/s41598-025-29880-9",
+    "beginner_enter_hash": "#/beginner/qFK82tR2HQOutQj1lW5a",
+    "beginner_space_hash": "#/beginner/qFK82tR2HQOutQj1lW5a"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "X線光電子分光装置",
+      "summary_len": 134,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/qFK82tR2HQOutQj1lW5a/10.1038/s41598-025-29880-9",
+      "beginner_hash": "#/beginner/qFK82tR2HQOutQj1lW5a",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-29880-9",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "X線光電子分光装置 サーモエレクトロン株式会社 SigmaProbe",
+      "summary_len": 149,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/SvUB2kN8tpwY3pFQXZWt/10.1038/s41598-025-29880-9",
+      "beginner_hash": "#/beginner/SvUB2kN8tpwY3pFQXZWt",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-29880-9",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        5
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "X線分析顕微鏡(XGT-7200)",
+      "summary_len": 120,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2907/10.31643/2027/6445.08",
+      "beginner_hash": "#/beginner/eqnet-2907",
+      "paper_link_href": "https://doi.org/10.31643/2027/6445.08",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "X線分析顕微鏡(堀場製作所・XGT-5000)",
+      "summary_len": 126,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1423/10.31643/2027/6445.08",
+      "beginner_hash": "#/beginner/eqnet-1423",
+      "paper_link_href": "https://doi.org/10.31643/2027/6445.08",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "X線分析顕微鏡(堀場製作所・XGT-7200V)",
+      "summary_len": 180,
+      "sample_count": 3,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5347/10.4185/rlcs-2027-2613",
+      "beginner_hash": "#/beginner/eqnet-5347",
+      "paper_link_href": "https://doi.org/10.4185/rlcs-2027-2613",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "X線励起蛍光X線元素分析装置 リガク(X線励起蛍光X線元素分析装置(XRF) Supermini-M)",
+      "summary_len": 210,
+      "sample_count": 3,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4022/10.4185/rlcs-2027-2613",
+      "beginner_hash": "#/beginner/eqnet-4022",
+      "paper_link_href": "https://doi.org/10.4185/rlcs-2027-2613",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "X線照射システム(日立製作所 MBR-1520R-3)",
+      "summary_len": 138,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2151/10.31127/tuje.1804146",
+      "beginner_hash": "#/beginner/eqnet-2151",
+      "paper_link_href": "https://doi.org/10.31127/tuje.1804146",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "X線照射装置(HITACHI MBR-1520R-3)",
+      "summary_len": 275,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3425/10.31127/tuje.1804146",
+      "beginner_hash": "#/beginner/eqnet-3425",
+      "paper_link_href": "https://doi.org/10.31127/tuje.1804146",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "X線顕微鏡 Carl Zeiss(Xradia 800 Ultra)",
+      "summary_len": 190,
+      "sample_count": 3,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4258/10.1007/s12104-025-10251-4",
+      "beginner_hash": "#/beginner/eqnet-4258",
+      "paper_link_href": "https://doi.org/10.1007/s12104-025-10251-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "[197]200mmウェーハ対応原子間力顕微鏡",
+      "summary_len": 175,
+      "sample_count": 2,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/uz5ybTaf2NdeXg9W16Yf/10.1186/s12916-025-04571-4",
+      "beginner_hash": "#/beginner/uz5ybTaf2NdeXg9W16Yf",
+      "paper_link_href": "https://doi.org/10.1186/s12916-025-04571-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

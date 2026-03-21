@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T04:04:59.439964+00:00",
+  "batch_id": "BATCH-20260304-CYCLE29R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他 / 解析用ソフトウェア|マルチカラーデータ解析ソフトウェア|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "WQv9kl899kdeFuqg1T9d",
+          "equipment_id": "WQv9kl899kdeFuqg1T9d",
+          "name": "マルチカラーデータ解析ソフトウェア(4)",
+          "category_general": "その他",
+          "category_detail": "その他 / 解析用ソフトウェア"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|d-hand-type-a3h-m1-3j|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "u1X1PfdnEn6EYDy2rMsD",
+          "equipment_id": "HOKUDAI-AP-901959",
+          "name": "D-Hand Type A3H-M1-3J",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|dna-rna-分析用マイクロチップ電気泳動装置|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XdtRp0hMQ2TLRFrt9kpj",
+          "equipment_id": "HOKUDAI-AP-902092",
+          "name": "DNA/RNA分析用マイクロチップ電気泳動装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|dna-rna-合成機|other|bio_liquid|synthesis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "cQx30VZh8S81qhrf6pe3",
+          "equipment_id": "HOKUDAI-AP-902208",
+          "name": "DNA/RNA合成機",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|gkr-蒸留ガラスチューブオーブン-100v|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NjB7opC6bLVbtfSpr3va",
+          "equipment_id": "HOKUDAI-AP-901407",
+          "name": "GKR蒸留ガラスチューブオーブン 100V",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|glasscontour-有機溶媒精製装置|other|liquid|separation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dF4X33bQz6u5tujtN80e",
+          "equipment_id": "HOKUDAI-AP-901416",
+          "name": "GlassContour 有機溶媒精製装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|gnss-グロナス-rtk-スタティック受信機|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "yj2gwRmayjw5mWJE6fiX",
+          "equipment_id": "HOKUDAI-AP-901115",
+          "name": "GNSS・グロナスRTK&スタティック受信機",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|gnss-受信観測装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "x59nHhvgVk019h2lw4AH",
+          "equipment_id": "HOKUDAI-AP-902073",
+          "name": "GNSS受信観測装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|hd-カメラシステム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "994NDw7YqPbh9HXid1DP",
+          "equipment_id": "HOKUDAI-AP-901710",
+          "name": "HDカメラシステム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|high-power-キセノン光源|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gxftWapiwcn80fSYda2z",
+          "equipment_id": "HOKUDAI-AP-901296",
+          "name": "High Powerキセノン光源",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9205
+}

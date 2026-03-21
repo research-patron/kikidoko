@@ -1,0 +1,606 @@
+{
+  "generated_at": "2026-03-21T00:25:19.817911+00:00",
+  "batch_id": "BATCH-20260320-CYCLE0043-CANDIDATE100",
+  "doc_to_source": {
+    "2tQSyysW5GzUbZBLqC9k": {
+      "family": "low_temp_storage",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "超低温フリーザー_03 パナソニックヘルスケア MDF-DC500-VX-PJ"
+    },
+    "YOyGKvBvvqYAzXGWjO8R": {
+      "family": "shared_lab_space",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "旭町ラボ オープンラボスペース 202実験室(C)-1"
+    },
+    "jbyanFAconRcEQs5BUum": {
+      "family": "shared_lab_space",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "旭町ラボ オープンラボスペース 202実験室(C)-2"
+    },
+    "aTW9idJZmVRdBSNIxexC": {
+      "family": "analysis_software",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "マルチカラーデータ解析ソフトウェア(2)"
+    },
+    "d1chcYWvdrO4bm83FPKp": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "マイクロロガー"
+    },
+    "CFKLjdt7bBNhhuj46CYo": {
+      "family": "animal_support",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "マウス・ラットB.B.H.ユニット架台"
+    },
+    "oaUTVMdanLnLc1uUt27D": {
+      "family": "imaging_optics",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "マルチスペクトラルカメラ"
+    },
+    "gxfaLAr20S9LwRakDRzc": {
+      "family": "bioassay_analysis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "マルチラベルリーダー"
+    },
+    "gZeEGAkFfLj6IRwIbdeg": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "マルチ周波数体組成計"
+    },
+    "sTc9rJ3kNCA3SrnOtXPl": {
+      "family": "milling_mixing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "ミキサーミル"
+    },
+    "0wPvV4sE549HP2A0CGQi": {
+      "family": "electro_process",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "ラボ用コロナ分極装置"
+    },
+    "Q8hv21ObThh5Ox9xD6nv": {
+      "family": "vacuum_extraction",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "リークディテクタ"
+    },
+    "0oCPE6OM2sepzymC53jP": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "ルミノ・イメージアナライザー"
+    },
+    "jhL2dKXgSVqRwPJScp3J": {
+      "family": "optics_laser",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "レーザー加工機 HAJIMECL1PLUS"
+    },
+    "U9o44JmxD0A28rIiGd9o": {
+      "family": "environment_control",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "ロバスト温室向け太陽熱利用システム機器"
+    },
+    "oS18SubETZHneJECR8L3": {
+      "family": "vacuum_extraction",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "ロータリーエバポ"
+    },
+    "Y1LulhjOTkzON0YgRcq0": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "ワイパー式メモリー水温塩分計"
+    },
+    "updbhZrsYpfbyZ2BboZK": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "一酸化窒素ガス分析装置 NIOX VERO"
+    },
+    "fqF4o786MQZXX9pLai48": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "一酸化窒素ガス分析装置"
+    },
+    "9KJRfkwX5fJJfZazgT9F": {
+      "family": "neutron_system",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "中性子マルチピンホールコリメーター"
+    },
+    "GU42zBLN13FyLm2U7uIV": {
+      "family": "neutron_system",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "中性子温度イメージング昇温チャンバ ー"
+    },
+    "JwJyGOjMer7yx7klDiDH": {
+      "family": "neutron_system",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "中性子発生ターゲットステーション"
+    },
+    "y7ovcCb3FFRJO6DkWELg": {
+      "family": "environment_control",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "人工気象器"
+    },
+    "t7qYKOrb5sNnZYt1Dzo4": {
+      "family": "milling_mixing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "低周波共振音響ミキサー"
+    },
+    "wx4XcpqHnPUNb1OfQamY": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "低速精密切断機"
+    },
+    "4n9Po5xSy9civmgV0SGB": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "係留式CTD計"
+    },
+    "994GI8a6UI0jjqm59sdJ": {
+      "family": "animal_support",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "個別換気式飼育システム"
+    },
+    "L4iyzvJhhkOoblwQloxl": {
+      "family": "optics_laser",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "光ファイバースイッチ"
+    },
+    "PFlT5Nx26hKZkuKvzX0H": {
+      "family": "optics_laser",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "光反応用装置"
+    },
+    "k1dANottBfAJaQjumZvl": {
+      "family": "optics_laser",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "光学用液体窒素クライオスタット"
+    },
+    "cT4ozbkA24syBSOKPNGu": {
+      "family": "optics_laser",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "光学視管"
+    },
+    "7f2Fq119LrB804SdIZwD": {
+      "family": "bioassay_analysis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "全自動ウェスタンシステム"
+    },
+    "9Rf9YKvTphoBxZAd21hF": {
+      "family": "bioassay_analysis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "全自動ハイスループット電気泳動システム"
+    },
+    "TTsniSxaqTbJEIvgrQFf": {
+      "family": "environment_control",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "冷・温水システム"
+    },
+    "5kXWWRHm2iEEzlPzLD1G": {
+      "family": "environment_control",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "加熱冷却ユニット"
+    },
+    "Z0xXQ2BMtLGWfU4UdRqY": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "加速度計付き間隙水圧計"
+    },
+    "mLWWSqXJgOhU8jSULq84": {
+      "family": "optics_laser",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "励起用CWグリーンレーザー"
+    },
+    "5ZqaZgbw7Mi7zmMvYzh7": {
+      "family": "sample_handling",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "卓上型自動分注装置"
+    },
+    "wnXMGCYujJiwQ71xe6PO": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "呼気CO2/O2アナライザー"
+    },
+    "GEcoTxyohqR0RugLhL8p": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "地中レーダ"
+    },
+    "u4BxON0qWop3B43tXY1h": {
+      "family": "physiology_motion",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "多用途測定記録装置 PolymateⅡ"
+    },
+    "7rIIpRT6yQegnW4ubTm9": {
+      "family": "physiology_motion",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "大面積FPD動体追跡試験装置"
+    },
+    "Bn4oCeH5EeLQOo24pjvY": {
+      "family": "animal_support",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "実験動物用呼吸・肺機能評価システム"
+    },
+    "xWp0X3wNQa437vQfmxCY": {
+      "family": "milling_mixing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "実験用粉砕機"
+    },
+    "E5U9V1w6yQ8x6WGNhZeO": {
+      "family": "chemical_synthesis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "密閉型超臨界反応容器"
+    },
+    "6ilQO3qucW8hBEU3eiai": {
+      "family": "animal_support",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "小動物用パルスオキシメーターシステム"
+    },
+    "S2yIQ9SK7WSkR9QcA7BI": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "小型CTDセンサ"
+    },
+    "udtp2xAx5asB5GN4zNLi": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "小径プローブDO計"
+    },
+    "zIfAZK4KWMvZJPsI7SLl": {
+      "family": "bioassay_analysis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "小規模アレイ解析装置システム"
+    },
+    "Em63tQqRohYgpYW9369Z": {
+      "family": "imaging_optics",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "工業用顕微鏡"
+    },
+    "0Gio1BFAcJaq5B1sIY6E": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "床置式オイルミストコレクター"
+    },
+    "9MzJifTbYw2XVdDA1Y2n": {
+      "family": "mechanical_testing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "建研式接着力試験器"
+    },
+    "cMlNdbroAX0RvzCilUJK": {
+      "family": "environment_control",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "微小重力環境細胞培養装置"
+    },
+    "L9kCQiiUZk0JrTWILcli": {
+      "family": "mechanical_testing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "振動子"
+    },
+    "6klvSUtxrci2SsUzzIkY": {
+      "family": "vacuum_extraction",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "有機溶媒精製装置"
+    },
+    "rzu5rgxVMJFZbU2TQky3": {
+      "family": "electro_process",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "有機電解合成装置"
+    },
+    "BQIrr3tMYKpfh1OGyueh": {
+      "family": "sample_handling",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "核酸自動分離装置"
+    },
+    "5xMoDMQHkXK7BFKEvMCD": {
+      "family": "sample_handling",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "検体バーコードシステム"
+    },
+    "RUfrAzlD58zqlDOJsiJc": {
+      "family": "chemical_synthesis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "極低温反応機 UCリアクター"
+    },
+    "JZboyxQHFZVosyWoQNiO": {
+      "family": "chemical_synthesis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "極低温反応機 UCRリアクター"
+    },
+    "B4YoGffaSvo1gE1LSgik": {
+      "family": "chemical_synthesis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "極低温反応機"
+    },
+    "gF5dwkcwd2ina1Jk7dbu": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "3次元カラープリントセット POLYGONALmeister Editor academic+ダヴィンチColor 3FC1XXJPZNG"
+    },
+    "7xdbGiBo9cejdpbj5xCo": {
+      "family": "physiology_motion",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "3次元動作分析システム エントリーパッケージ"
+    },
+    "2hiQINmPgYxHckSZA6Fx": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "気象観測装置"
+    },
+    "SRuk7mP0GiVM5br71pUI": {
+      "family": "underwater_robotics",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "水中ドローン"
+    },
+    "h3Ajp03deF06l3dyNJ9B": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "水素発生装置"
+    },
+    "lK2Ey2PzW3AfTXkQ1k5D": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "水道直結型超純水装置"
+    },
+    "rSCGpJNpvdXr8rkRnhcO": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "河川用電磁流速計"
+    },
+    "OIuudscVIHvvjWKzCW3Y": {
+      "family": "physiology_motion",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "生体信号計測解析システム"
+    },
+    "0jYW9aNpzyBm2ctRcvLL": {
+      "family": "analysis_software",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "画像解析装置"
+    },
+    "l7un2zGF0WSCrhk6PTu6": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "直読式総合水質計"
+    },
+    "uMNFmrc0ZQ0uaJqbGAPZ": {
+      "family": "physiology_motion",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "眼球運動測定装置"
+    },
+    "tY51oRQfMlrfLU2FPHWm": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "磁気式3次元位置計測装置 PATRIOTシステム Polhemus"
+    },
+    "dJAJOiqEpDXJM5IDjiZo": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "示差走査熱量計"
+    },
+    "lccem771VoWfOcXECyxK": {
+      "family": "mechanical_testing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "立型マシニングセンタ"
+    },
+    "gEpy2mBGRkOMeTZFKs4c": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "簡易薄膜解析装置"
+    },
+    "NL94MRczHmVNyDf0sAnG": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "肺運動負荷モニタリングシステム"
+    },
+    "zQWBxFqkveCh6VHPWVvv": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "背負い式エレクトロフィッシャー"
+    },
+    "ajDy1U5ihX1uIp1sHtx8": {
+      "family": "chemical_synthesis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "自動マイクロ波固相ペプチド合成装置"
+    },
+    "SomVfqjb2m6mCjNneKcQ": {
+      "family": "bioassay_analysis",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "蛍光測定装置 Qubit Flex Fluorometer"
+    },
+    "ezNx3B1x0LU1Hg5AGCPh": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "超音波発生器"
+    },
+    "npAYH64UOqHILqCx2G3m": {
+      "family": "milling_mixing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "遊星ボールミル"
+    },
+    "sPtdtGPjsvBdu1x3mMd8": {
+      "family": "sample_handling",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "遺伝子導入装置"
+    },
+    "lMpzk5RSdrFMhdHbqFJj": {
+      "family": "environment_control",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "酸素ファイター"
+    },
+    "fukb2BLFrRWUEfyQBq3v": {
+      "family": "sample_handling",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "電動マイクロインジェクター"
+    },
+    "Y8iywebIFaNUU0LW4pu6": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "電場観測装置"
+    },
+    "3GvxZ0Yaf9SWCnBUKhmT": {
+      "family": "vacuum_extraction",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "電子ビーム型真空蒸着装置"
+    },
+    "INrylppPk7dFTWGaGqzf": {
+      "family": "electro_process",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "電気刺激装置"
+    },
+    "o3qXKDNek93ZhIeBZgLN": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "電界計"
+    },
+    "Hm75fejzHVr8y9drJOaj": {
+      "family": "electro_process",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "電解合成装置"
+    },
+    "uhEm1ceIBG9sTAelbcis": {
+      "family": "mechanical_testing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "静電容量型6軸力覚センサ"
+    },
+    "kaCqQghDpWN2HX7Tsf2u": {
+      "family": "imaging_optics",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "高圧顕微鏡セル35361"
+    },
+    "RgQiKbV0b2sbQAh4zERq": {
+      "family": "imaging_optics",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "高速度カメラ"
+    },
+    "wpAZVF1xpXf3PzbBrK1a": {
+      "family": "field_monitoring",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "高速応答DOセンサー搭載メモリーCTD RINKO-Profiler"
+    },
+    "9S0QTnyoOQYohSmvCdFQ": {
+      "family": "vacuum_extraction",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "高速溶媒抽出装置"
+    },
+    "pZmE0qaYymNpug5a161v": {
+      "family": "general_instrument",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "高速高圧抽出装置システム"
+    },
+    "eqnet-4122": {
+      "family": "mechanical_testing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "1000kN万能試験機 前川試験機製作所(MRA-100-F2)"
+    },
+    "eqnet-4196": {
+      "family": "mechanical_testing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "1000kN油圧万能試験機 東京試験機(YU-1000SIV)"
+    },
+    "eqnet-4123": {
+      "family": "mechanical_testing",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "2000kN圧縮試験機 前川試験機製作所(ACA-200A-F1)"
+    },
+    "eqnet-4834": {
+      "family": "analysis_software",
+      "seed_file": "",
+      "seed_key": "",
+      "name": "3D画像処理ソフトウェア マックスネット Dragonfly"
+    }
+  }
+}

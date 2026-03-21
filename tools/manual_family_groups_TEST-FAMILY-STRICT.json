@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-03-03T12:23:56.234585+00:00",
+  "batch_id": "TEST-FAMILY-STRICT",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 3,
+  "family_count": 3,
+  "groups": [
+    {
+      "family_id": "その他|- / - / -|orer10s-生体分子精製装置-aktaexplorer10s|other|bio_liquid|separation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "u4a3a0lcL4d7JBXLv7Kw",
+          "equipment_id": "u4a3a0lcL4d7JBXLv7Kw",
+          "name": "生体分子精製装置AKTAexplorer10S",
+          "category_general": "その他",
+          "category_detail": "- / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|- / - / -|フレンチプレス|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "t3TGtPLqzFKGKwOsBnKL",
+          "equipment_id": "t3TGtPLqzFKGKwOsBnKL",
+          "name": "フレンチプレス",
+          "category_general": "その他",
+          "category_detail": "- / - / -"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|- / 半導体・MEMS加工 / 前工程装置|酸化炉|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "diMgSNfpWiYbHVK8qj3B",
+          "equipment_id": "diMgSNfpWiYbHVK8qj3B",
+          "name": "酸化炉",
+          "category_general": "その他",
+          "category_detail": "- / 半導体・MEMS加工 / 前工程装置"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9459
+}

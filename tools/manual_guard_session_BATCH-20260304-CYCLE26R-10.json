@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE26R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T03:45:50.835705+00:00",
+  "updated_at": "2026-03-04T03:49:50.288003+00:00",
+  "closed_at": "2026-03-04T03:49:50.288003+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle26r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE26R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "4a98a6cf43511ff9cd15edbacda847084bd28850692a0901a8118675315939df",
+    "queue_sha256_at_start": "f8c8c38336a638571da263c83e094947f2ed14d36457b40eef28bf7ee9135bf8",
+    "queue_row_keys_sha256": "93e0434dba15c96f59a17044a90b62af87d3d4caef221d5c350f11869a786e7e"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "ImeR5mEpwtcC4tPFVYNo::ImeR5mEpwtcC4tPFVYNo",
+      "7fNEKtajWVbSHWjeE4WB::7fNEKtajWVbSHWjeE4WB",
+      "MJFAPUitdwYTyEGtctmX::MJFAPUitdwYTyEGtctmX",
+      "dmkh3juDOR7NLusxuc8H::dmkh3juDOR7NLusxuc8H",
+      "rno2y95IN10lMAJEsg10::rno2y95IN10lMAJEsg10",
+      "ztROas4xDsRqkdtXf66x::ztROas4xDsRqkdtXf66x",
+      "fyr7zeUIdzDXC9pc5FjC::fyr7zeUIdzDXC9pc5FjC",
+      "8FflyCOgaGKLMkTC6Zq8::8FflyCOgaGKLMkTC6Zq8",
+      "XiFUbtyUkn9sFM0FzDIY::XiFUbtyUkn9sFM0FzDIY",
+      "JiTLAwT88xw9ez3r1Swe::MIYAZAKI-919"
+    ],
+    "target_rows": [
+      {
+        "row_key": "ImeR5mEpwtcC4tPFVYNo::ImeR5mEpwtcC4tPFVYNo",
+        "doc_id": "ImeR5mEpwtcC4tPFVYNo",
+        "equipment_id": "ImeR5mEpwtcC4tPFVYNo",
+        "name": "超低温フリーザー_08 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "7fNEKtajWVbSHWjeE4WB::7fNEKtajWVbSHWjeE4WB",
+        "doc_id": "7fNEKtajWVbSHWjeE4WB",
+        "equipment_id": "7fNEKtajWVbSHWjeE4WB",
+        "name": "バイオトロンB棟-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MJFAPUitdwYTyEGtctmX::MJFAPUitdwYTyEGtctmX",
+        "doc_id": "MJFAPUitdwYTyEGtctmX",
+        "equipment_id": "MJFAPUitdwYTyEGtctmX",
+        "name": "バイオトロンB棟-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "dmkh3juDOR7NLusxuc8H::dmkh3juDOR7NLusxuc8H",
+        "doc_id": "dmkh3juDOR7NLusxuc8H",
+        "equipment_id": "dmkh3juDOR7NLusxuc8H",
+        "name": "バイオトロンB棟-3",
+        "papers_count": 0
+      },
+      {
+        "row_key": "rno2y95IN10lMAJEsg10::rno2y95IN10lMAJEsg10",
+        "doc_id": "rno2y95IN10lMAJEsg10",
+        "equipment_id": "rno2y95IN10lMAJEsg10",
+        "name": "バイオトロンB棟-4",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ztROas4xDsRqkdtXf66x::ztROas4xDsRqkdtXf66x",
+        "doc_id": "ztROas4xDsRqkdtXf66x",
+        "equipment_id": "ztROas4xDsRqkdtXf66x",
+        "name": "示差熱-熱重量同時測定装置(TG_DTA)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "fyr7zeUIdzDXC9pc5FjC::fyr7zeUIdzDXC9pc5FjC",
+        "doc_id": "fyr7zeUIdzDXC9pc5FjC",
+        "equipment_id": "fyr7zeUIdzDXC9pc5FjC",
+        "name": "試料観察示差走査熱量計(DSCvesta)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "8FflyCOgaGKLMkTC6Zq8::8FflyCOgaGKLMkTC6Zq8",
+        "doc_id": "8FflyCOgaGKLMkTC6Zq8",
+        "equipment_id": "8FflyCOgaGKLMkTC6Zq8",
+        "name": "全自動アミノ酸分析機 JLC-500/V",
+        "papers_count": 3
+      },
+      {
+        "row_key": "XiFUbtyUkn9sFM0FzDIY::XiFUbtyUkn9sFM0FzDIY",
+        "doc_id": "XiFUbtyUkn9sFM0FzDIY",
+        "equipment_id": "XiFUbtyUkn9sFM0FzDIY",
+        "name": "マルチカラーデータ解析ソフトウェア(1)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JiTLAwT88xw9ez3r1Swe::MIYAZAKI-919",
+        "doc_id": "JiTLAwT88xw9ez3r1Swe",
+        "equipment_id": "MIYAZAKI-919",
+        "name": "マルチファンクションジェネレーター",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T03:45:50.835705+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T03:45:51.101091+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:02.695812+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:08.349965+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:13.971755+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:19.544920+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:25.065095+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:30.502050+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:35.829156+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:41.343816+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:46.970063+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:46:52.089573+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:47:13.363567+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:49:50.288003+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

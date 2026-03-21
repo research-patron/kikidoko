@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T14:25:56.365048+00:00",
+  "batch_id": "BATCH-20260303-CYCLE05-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|リアルタイム-pcr-abi-stepone-plus|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "y1yakDmVVyY4N0sXRH4o",
+          "equipment_id": "y1yakDmVVyY4N0sXRH4o",
+          "name": "リアルタイムPCR (ABI StepOne Plus)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|ロングリード-シーケンサー-oxford-nanopore-promethion|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7JIndth0CuPCWj5oaUwJ",
+          "equipment_id": "7JIndth0CuPCWj5oaUwJ",
+          "name": "ロングリード シーケンサー (Oxford Nanopore PromethION 24)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|次世代シーケンサー-illumina-miseq|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wt4VpGcYI3y4EcHVNcW1",
+          "equipment_id": "wt4VpGcYI3y4EcHVNcW1",
+          "name": "次世代シーケンサー (Illumina Miseq)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|次世代シーケンサー-年-月で試薬販売終了-thermo-fisher-scientific|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "p8IIrm7GtSNB2ztW5v2g",
+          "equipment_id": "p8IIrm7GtSNB2ztW5v2g",
+          "name": "次世代シーケンサー ※2023年12月で試薬販売終了 (Thermo Fisher Scientific Ion PGM)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|次世代シーケンサーデータ解析システム-データ依頼解析サービス|sequencer|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "kgMlDfMdPyjB5RPeuSiS",
+          "equipment_id": "kgMlDfMdPyjB5RPeuSiS",
+          "name": "次世代シーケンサーデータ解析システム (データ依頼解析サービス)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNAシーケンサー (DNA) (関連機器も含む)|次世代シーケンサーライブラリ作製-ライブラリ依頼作製サービス|sequencer|bio_liquid|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "9Dwp8xc4WHWIFy7D5NWi",
+          "equipment_id": "9Dwp8xc4WHWIFy7D5NWi",
+          "name": "次世代シーケンサーライブラリ作製 (ライブラリ依頼作製サービス)",
+          "category_general": "その他",
+          "category_detail": "DNAシーケンサー (DNA) (関連機器も含む)"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNA関連分析 / PCR|qx200-digitalpcr-biorad|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "29LpMyZYG8FCJ9NscNr6",
+          "equipment_id": "29LpMyZYG8FCJ9NscNr6",
+          "name": "digitalPCRシステム BIORAD QX200",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析 / PCR"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNA関連分析 / PCR|tp600-pcr-タカラバイオ|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "pVjx4km0oM5vfTxHL54m",
+          "equipment_id": "pVjx4km0oM5vfTxHL54m",
+          "name": "PCR装置 タカラバイオTP600",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析 / PCR"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNA関連分析 / PCR|tp800-リアルタイム-pcr-タカラバイオ|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "geghVWTkIGCYOLVVEOWE",
+          "equipment_id": "geghVWTkIGCYOLVVEOWE",
+          "name": "リアルタイムPCR装置 タカラバイオTP800",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析 / PCR"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|DNA関連分析 / PCR|リアルタイム-pcr-steponeplus|other|bio_liquid|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "3XW7807NKwieaw7sY2vb",
+          "equipment_id": "3XW7807NKwieaw7sY2vb",
+          "name": "リアルタイムPCRシステム StepOnePlus",
+          "category_general": "その他",
+          "category_detail": "DNA関連分析 / PCR"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9419
+}

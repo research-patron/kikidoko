@@ -1,0 +1,81 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260320-CYCLE0034-REPAIR2-SIM",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-20T08:29:23.810837+00:00",
+  "updated_at": "2026-03-20T08:30:13.810449+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0034_repair2_similarity.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260320-CYCLE0034-REPAIR2-SIM.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "1e504de6749af3b6d6b5f8c3b2594a398293380416335c9d9b32d23b7de6c4bd",
+    "queue_sha256_at_start": "16389d54586f8b0d02a8ad8354b15881fc91b5bf958c49bb272ae0ca16f63d52",
+    "queue_row_keys_sha256": "2e79ad9a95d84e5ecce20145004a22e13f1a7731c2b028285e1d6fe2e16de8a4"
+  },
+  "queue": {
+    "target_count": 2,
+    "target_row_keys": [
+      "sB39y0rUJPD869tg6Xrh::sB39y0rUJPD869tg6Xrh",
+      "MUGIOGQ0fn1X3LiDvotO::MUGIOGQ0fn1X3LiDvotO"
+    ],
+    "target_rows": [
+      {
+        "row_key": "sB39y0rUJPD869tg6Xrh::sB39y0rUJPD869tg6Xrh",
+        "doc_id": "sB39y0rUJPD869tg6Xrh",
+        "equipment_id": "sB39y0rUJPD869tg6Xrh",
+        "name": "次世代シーケンサーNextSeq2000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MUGIOGQ0fn1X3LiDvotO::MUGIOGQ0fn1X3LiDvotO",
+        "doc_id": "MUGIOGQ0fn1X3LiDvotO",
+        "equipment_id": "MUGIOGQ0fn1X3LiDvotO",
+        "name": "次世代シーケンサーNextSeq500",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-20T08:29:23.810837+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 2
+      }
+    },
+    {
+      "at": "2026-03-20T08:29:33.711332+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T08:29:39.497591+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-20T08:30:13.810449+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

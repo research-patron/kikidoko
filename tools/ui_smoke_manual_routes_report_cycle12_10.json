@@ -1,0 +1,148 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/JjvY80aHFQV53OTbQ2Nd/10.1007%2Fs44163-025-00719-6",
+    "paper_space_hash": "#/paper/JjvY80aHFQV53OTbQ2Nd/10.1007%2Fs44163-025-00719-6",
+    "beginner_enter_hash": "#/beginner/JjvY80aHFQV53OTbQ2Nd",
+    "beginner_space_hash": "#/beginner/JjvY80aHFQV53OTbQ2Nd"
+  },
+  "desktop_cases": [
+    {
+      "row_name": "(パワエレ共用)レーザー顕微鏡",
+      "summary_len": 294,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/Kbof5ywCEEJCcEdMsLww/10.1038%2Fs41467-025-67214-5",
+      "beginner_hash": "#/beginner/Kbof5ywCEEJCcEdMsLww",
+      "paper_link_href": "https://doi.org/10.1038/s41467-025-67214-5",
+      "case_no": 1
+    },
+    {
+      "row_name": "(パワエレ共用)極低温プローブステーション CMPS-308-4K-6P-20",
+      "summary_len": 313,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/JjvY80aHFQV53OTbQ2Nd/10.1007%2Fs44163-025-00719-6",
+      "beginner_hash": "#/beginner/JjvY80aHFQV53OTbQ2Nd",
+      "paper_link_href": "https://doi.org/10.1007/s44163-025-00719-6",
+      "case_no": 2
+    },
+    {
+      "row_name": "(組織・細胞用)多点電極刺激記録装置",
+      "summary_len": 225,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/0a98VbKUslonmfMjfTwL/10.1007%2Fs00384-025-05056-9",
+      "beginner_hash": "#/beginner/0a98VbKUslonmfMjfTwL",
+      "paper_link_href": "https://doi.org/10.1007/s00384-025-05056-9",
+      "case_no": 3
+    },
+    {
+      "row_name": "(薄膜特性解析G)薄膜X線回折装置",
+      "summary_len": 300,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/DrpHy38EUGtaoO5Ls3Ev/10.1186%2Fs44147-025-00847-x",
+      "beginner_hash": "#/beginner/DrpHy38EUGtaoO5Ls3Ev",
+      "paper_link_href": "https://doi.org/10.1186/s44147-025-00847-x",
+      "case_no": 4
+    },
+    {
+      "row_name": "(霞)細胞外フラックスアナライザー",
+      "summary_len": 242,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5240/10.1007%2Fs12198-026-00328-z",
+      "beginner_hash": "#/beginner/eqnet-5240",
+      "paper_link_href": "https://doi.org/10.1007/s12198-026-00328-z",
+      "case_no": 5
+    },
+    {
+      "row_name": "1.5K 無冷媒冷凍機1",
+      "summary_len": 216,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/l3yVFPLdRkXxRRCYBQJh/10.1186%2Fs12903-025-07549-z",
+      "beginner_hash": "#/beginner/l3yVFPLdRkXxRRCYBQJh",
+      "paper_link_href": "https://doi.org/10.1186/s12903-025-07549-z",
+      "case_no": 6
+    },
+    {
+      "row_name": "1000kN万能試験機 前川試験機製作所(MRA-100-F2)",
+      "summary_len": 252,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4122/10.21103%2Farticle14(4)_oa25",
+      "beginner_hash": "#/beginner/eqnet-4122",
+      "paper_link_href": "https://doi.org/10.21103/article14(4)_oa25",
+      "case_no": 7
+    },
+    {
+      "row_name": "1000kN油圧万能試験機 東京試験機(YU-1000SIV)",
+      "summary_len": 254,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4196/10.21103%2Farticle14(4)_oa25",
+      "beginner_hash": "#/beginner/eqnet-4196",
+      "paper_link_href": "https://doi.org/10.21103/article14(4)_oa25",
+      "case_no": 8
+    },
+    {
+      "row_name": "1000トン超高圧発生装置",
+      "summary_len": 242,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/hfBIjh30Tume5vAz31jF/10.1002%2Fjcph.70088",
+      "beginner_hash": "#/beginner/hfBIjh30Tume5vAz31jF",
+      "paper_link_href": "https://doi.org/10.1002/jcph.70088",
+      "case_no": 9
+    },
+    {
+      "row_name": "100kv（小型）透過型電顕",
+      "summary_len": 232,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/XwKSdyzZMwNQHWEaHfo6/10.24996%2Fijs.2025.66.11.22",
+      "beginner_hash": "#/beginner/XwKSdyzZMwNQHWEaHfo6",
+      "paper_link_href": "https://doi.org/10.24996/ijs.2025.66.11.22",
+      "case_no": 10
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

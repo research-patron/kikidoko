@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-07T09:05:29.488583+00:00",
+  "batch_id": "BATCH-20260307-CYCLE0007-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|az100-ユニバーサルズーム顕微鏡-株式会社ニコンインステック-multizoom|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "n8KsCALgOq9rNk6K1yah",
+          "equipment_id": "KUMAMOTO-list3f-08",
+          "name": "ユニバーサルズーム顕微鏡 株式会社ニコンインステック MULTIZOOM AZ100",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|精密切断機-ビューラー-アイソメット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "iN4iv68nHnLH63Rbw2tD",
+          "equipment_id": "KUMAMOTO-list3f-05",
+          "name": "精密切断機 ビューラー アイソメット",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|金スパッタリング-カーボン蒸着装置-株式会社日立ハイテクノロジーズ-e-1010|other|other|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "SvQRc4JuKTgLcTu1rsJh",
+          "equipment_id": "KUMAMOTO-list3f-07",
+          "name": "金スパッタリング・カーボン蒸着装置 株式会社日立ハイテクノロジーズ E-1010",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|EPMA室・試料作製室|電子線マイクロアナライザ-株式会社島津製作所-epma-1720h|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gr3Vcqj6vgJw9QXBkJHH",
+          "equipment_id": "KUMAMOTO-list3f-01",
+          "name": "電子線マイクロアナライザ 株式会社島津製作所 EPMA-1720H",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|az100-ユニバーサルズーム顕微鏡-株式会社ニコンインステック-multizoom|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-08",
+          "equipment_id": "KUMAMOTO-list3f-08",
+          "name": "ユニバーサルズーム顕微鏡 株式会社ニコンインステック MULTIZOOM AZ100",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|lc250-自動研磨装置-ビューラー-メタザーブ-ベクトル|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-04",
+          "equipment_id": "KUMAMOTO-list3f-04",
+          "name": "自動研磨装置 ビューラー メタザーブ250 + ベクトルLC250",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|m205c-実体顕微鏡-ライカマイクロシステムズ|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-03",
+          "equipment_id": "KUMAMOTO-list3f-03",
+          "name": "実体顕微鏡 ライカマイクロシステムズ M205C",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|プラズマクリーナー-yhs-r|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-06",
+          "equipment_id": "KUMAMOTO-list3f-06",
+          "name": "プラズマクリーナー YHS-R",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|断面イオンミリング-株式会社日立ハイテクノロジーズ-e-3500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-02",
+          "equipment_id": "KUMAMOTO-list3f-02",
+          "name": "断面イオンミリング 株式会社日立ハイテクノロジーズ E-3500",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    },
+    {
+      "family_id": "EPMA室・試料作製室|未分類|精密切断機-ビューラー-アイソメット|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "KUMAMOTO-list3f-05",
+          "equipment_id": "KUMAMOTO-list3f-05",
+          "name": "精密切断機 ビューラー アイソメット",
+          "category_general": "EPMA室・試料作製室",
+          "category_detail": ""
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9765
+}

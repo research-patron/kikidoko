@@ -1,0 +1,943 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260301-R11",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-01T02:21:29.141876+00:00",
+  "updated_at": "2026-03-01T02:22:24.459774+00:00",
+  "closed_at": "2026-03-01T02:22:24.459774+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_repair_R11.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260301-R11.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "d8b9d0201361f48981133fa70fa7ca2d0cb32acd8af3478c87506287ecfbce35",
+    "queue_sha256_at_start": "90ca32906f816b2318f812430991c2d3db1fb3c57f6331e7ecc1692b96ee9332",
+    "queue_row_keys_sha256": "c75a94ad47bdd73d65248a5e75ca89a037669b4cd078098acdf84bdf7bfd2879"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "82NHaPA7MbCnQteSBolK::82NHaPA7MbCnQteSBolK",
+      "AOn1OjBSZM7t3yuRgBxG::AOn1OjBSZM7t3yuRgBxG",
+      "BocUHn1psjh0RAhcRaeZ::HOKUDAI-AP-901890",
+      "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+      "JkDR3WwXmcpgoZsKwiMz::TOYOHASHI-FT-IR",
+      "KGYWDHYujMvLQOCdkAXi::IMS-squid-6edb29",
+      "MckdDnn6BmOyvoL5yrmX::MckdDnn6BmOyvoL5yrmX",
+      "PjJy4umKnc5A6Fwlb1Od::UEC-666",
+      "a8cpMgP5oieNssr9nMKv::a8cpMgP5oieNssr9nMKv",
+      "eqnet-1082::eqnet-1082",
+      "eqnet-1088::eqnet-1088",
+      "eqnet-1116::eqnet-1116",
+      "eqnet-1123::eqnet-1123",
+      "eqnet-1190::eqnet-1190",
+      "eqnet-1317::eqnet-1317",
+      "eqnet-1933::eqnet-1933",
+      "eqnet-2027::eqnet-2027",
+      "eqnet-21::eqnet-21",
+      "eqnet-2129::eqnet-2129",
+      "eqnet-2139::eqnet-2139",
+      "eqnet-2145::eqnet-2145",
+      "eqnet-2146::eqnet-2146",
+      "eqnet-2163::eqnet-2163",
+      "eqnet-2183::eqnet-2183",
+      "eqnet-2184::eqnet-2184",
+      "eqnet-2185::eqnet-2185",
+      "eqnet-2300::eqnet-2300",
+      "eqnet-2308::eqnet-2308",
+      "eqnet-2310::eqnet-2310",
+      "eqnet-2311::eqnet-2311",
+      "eqnet-2338::eqnet-2338",
+      "eqnet-2340::eqnet-2340",
+      "eqnet-2438::eqnet-2438",
+      "eqnet-2608::eqnet-2608",
+      "eqnet-2634::eqnet-2634",
+      "eqnet-2635::eqnet-2635",
+      "eqnet-2715::eqnet-2715",
+      "eqnet-2761::eqnet-2761",
+      "eqnet-2972::eqnet-2972",
+      "eqnet-3081::eqnet-3081",
+      "eqnet-3304::eqnet-3304",
+      "eqnet-3332::eqnet-3332",
+      "eqnet-3335::eqnet-3335",
+      "eqnet-3365::eqnet-3365",
+      "eqnet-3382::eqnet-3382",
+      "eqnet-3490::eqnet-3490",
+      "eqnet-352::eqnet-352",
+      "eqnet-3573::eqnet-3573",
+      "eqnet-3652::eqnet-3652",
+      "eqnet-3653::eqnet-3653",
+      "eqnet-3750::eqnet-3750",
+      "eqnet-3805::eqnet-3805",
+      "eqnet-383::eqnet-383",
+      "eqnet-3898::eqnet-3898",
+      "eqnet-4097::eqnet-4097",
+      "eqnet-4112::eqnet-4112",
+      "eqnet-4150::eqnet-4150",
+      "eqnet-4175::eqnet-4175",
+      "eqnet-4267::eqnet-4267",
+      "eqnet-4315::eqnet-4315",
+      "eqnet-4418::eqnet-4418",
+      "eqnet-4424::eqnet-4424",
+      "eqnet-4427::eqnet-4427",
+      "eqnet-4456::eqnet-4456",
+      "eqnet-4546::eqnet-4546",
+      "eqnet-4632::eqnet-4632",
+      "eqnet-4680-90921ce8::eqnet-4680-90921ce8",
+      "eqnet-4711::eqnet-4711",
+      "eqnet-4735::eqnet-4735",
+      "eqnet-4767::eqnet-4767",
+      "eqnet-4769::eqnet-4769",
+      "eqnet-4800::eqnet-4800",
+      "eqnet-4897::eqnet-4897",
+      "eqnet-4898::eqnet-4898",
+      "eqnet-4899::eqnet-4899",
+      "eqnet-4935::eqnet-4935",
+      "eqnet-4946::eqnet-4946",
+      "eqnet-4947::eqnet-4947",
+      "eqnet-4962::eqnet-4962",
+      "eqnet-4963::eqnet-4963",
+      "eqnet-5103::eqnet-5103",
+      "eqnet-5104::eqnet-5104",
+      "eqnet-5197::eqnet-5197",
+      "eqnet-5203::eqnet-5203",
+      "eqnet-5265::eqnet-5265",
+      "eqnet-5316::eqnet-5316",
+      "eqnet-5382::eqnet-5382",
+      "eqnet-5383::eqnet-5383",
+      "eqnet-5402::eqnet-5402",
+      "eqnet-5415::eqnet-5415",
+      "eqnet-5416::eqnet-5416",
+      "eqnet-607::eqnet-607",
+      "eqnet-652::eqnet-652",
+      "eqnet-663::eqnet-663",
+      "eqnet-72::eqnet-72",
+      "f0bLbieIXnEMmNVZlYWL::f0bLbieIXnEMmNVZlYWL",
+      "l1nDcHtAePXXCBNwBDYb::OSAKA-476",
+      "lRjwwau5AoJvFoy1Qh74::lRjwwau5AoJvFoy1Qh74",
+      "ln5W4lfWKTgYCrNs6vnv::ln5W4lfWKTgYCrNs6vnv",
+      "ruGCHpG9LbyNaU4KzR9J::IMS-squid-b5d125"
+    ],
+    "target_rows": [
+      {
+        "row_key": "82NHaPA7MbCnQteSBolK::82NHaPA7MbCnQteSBolK",
+        "doc_id": "82NHaPA7MbCnQteSBolK",
+        "equipment_id": "82NHaPA7MbCnQteSBolK",
+        "name": "フーリエ変換赤外分光光度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "AOn1OjBSZM7t3yuRgBxG::AOn1OjBSZM7t3yuRgBxG",
+        "doc_id": "AOn1OjBSZM7t3yuRgBxG",
+        "equipment_id": "AOn1OjBSZM7t3yuRgBxG",
+        "name": "パ－キンエルマー ラムダ950",
+        "papers_count": 0
+      },
+      {
+        "row_key": "BocUHn1psjh0RAhcRaeZ::HOKUDAI-AP-901890",
+        "doc_id": "BocUHn1psjh0RAhcRaeZ",
+        "equipment_id": "HOKUDAI-AP-901890",
+        "name": "X線分析システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+        "doc_id": "IICo0TdRSYRiGhj2Gssa",
+        "equipment_id": "HOKUDAI-AP-902265",
+        "name": "Thermal Cycler SimpliAmp",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JkDR3WwXmcpgoZsKwiMz::TOYOHASHI-FT-IR",
+        "doc_id": "JkDR3WwXmcpgoZsKwiMz",
+        "equipment_id": "TOYOHASHI-FT-IR",
+        "name": "顕微FT-IRスペクトル装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "KGYWDHYujMvLQOCdkAXi::IMS-squid-6edb29",
+        "doc_id": "KGYWDHYujMvLQOCdkAXi",
+        "equipment_id": "IMS-squid-6edb29",
+        "name": "Quantum Design MPMS-7",
+        "papers_count": 0
+      },
+      {
+        "row_key": "MckdDnn6BmOyvoL5yrmX::MckdDnn6BmOyvoL5yrmX",
+        "doc_id": "MckdDnn6BmOyvoL5yrmX",
+        "equipment_id": "MckdDnn6BmOyvoL5yrmX",
+        "name": "SiO2スパッタ装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "PjJy4umKnc5A6Fwlb1Od::UEC-666",
+        "doc_id": "PjJy4umKnc5A6Fwlb1Od",
+        "equipment_id": "UEC-666",
+        "name": "高速応答FT-IR",
+        "papers_count": 0
+      },
+      {
+        "row_key": "a8cpMgP5oieNssr9nMKv::a8cpMgP5oieNssr9nMKv",
+        "doc_id": "a8cpMgP5oieNssr9nMKv",
+        "equipment_id": "a8cpMgP5oieNssr9nMKv",
+        "name": "顕微FT-IR",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1082::eqnet-1082",
+        "doc_id": "eqnet-1082",
+        "equipment_id": "eqnet-1082",
+        "name": "CCD型単結晶構造解析装置(BRUKER SMART APEX)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1088::eqnet-1088",
+        "doc_id": "eqnet-1088",
+        "equipment_id": "eqnet-1088",
+        "name": "走査型プローブ顕微鏡(BRUKER MultiMode8)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1116::eqnet-1116",
+        "doc_id": "eqnet-1116",
+        "equipment_id": "eqnet-1116",
+        "name": "高速高解像共焦点レーザー顕微鏡(ライカマイクロシステムズ(株) TCS SP8)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1123::eqnet-1123",
+        "doc_id": "eqnet-1123",
+        "equipment_id": "eqnet-1123",
+        "name": "走査型オージェ電子分光顕微鏡・SAM (アルバックファイ社製 SAM670Xi)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1190::eqnet-1190",
+        "doc_id": "eqnet-1190",
+        "equipment_id": "eqnet-1190",
+        "name": "ナノバイオ分子合成・超解像解析評価システム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1317::eqnet-1317",
+        "doc_id": "eqnet-1317",
+        "equipment_id": "eqnet-1317",
+        "name": "バーチャルスライド顕微鏡(Olympus・VS120)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1933::eqnet-1933",
+        "doc_id": "eqnet-1933",
+        "equipment_id": "eqnet-1933",
+        "name": "CCD単結晶自動X線回折装置 Rigaku MERCURY-CCD",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2027::eqnet-2027",
+        "doc_id": "eqnet-2027",
+        "equipment_id": "eqnet-2027",
+        "name": "マルチフォトンレーザー共焦点顕微鏡システム(ニコン・A1RMP)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-21::eqnet-21",
+        "doc_id": "eqnet-21",
+        "equipment_id": "eqnet-21",
+        "name": "GC型質量分析装置 (島津製作所・QP-2010型)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2129::eqnet-2129",
+        "doc_id": "eqnet-2129",
+        "equipment_id": "eqnet-2129",
+        "name": "フーリエ変換高分解能核磁気共鳴装置(日本電子 JNM-ECZ500R)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2139::eqnet-2139",
+        "doc_id": "eqnet-2139",
+        "equipment_id": "eqnet-2139",
+        "name": "DNAシーケンサー(アプライドバイオシステムス)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2145::eqnet-2145",
+        "doc_id": "eqnet-2145",
+        "equipment_id": "eqnet-2145",
+        "name": "被ばく医療解析システム質量分析システム UHPLCシステム(Dionex製 Ultimate3000)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2146::eqnet-2146",
+        "doc_id": "eqnet-2146",
+        "equipment_id": "eqnet-2146",
+        "name": "被ばく医療解析システム 質量分析システム(KYA製 NanoLC DiNa2ASH)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2163::eqnet-2163",
+        "doc_id": "eqnet-2163",
+        "equipment_id": "eqnet-2163",
+        "name": "DNAシーケンサー (ThermoFisherScientific・SeqStudio Genetic Analyzer)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2183::eqnet-2183",
+        "doc_id": "eqnet-2183",
+        "equipment_id": "eqnet-2183",
+        "name": "フーリエ変換核磁気共鳴装置(日本電子 JMN ECX-400p)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2184::eqnet-2184",
+        "doc_id": "eqnet-2184",
+        "equipment_id": "eqnet-2184",
+        "name": "フーリエ変換核磁気共鳴装置(日本電子 JMN ECA-500・固体)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2185::eqnet-2185",
+        "doc_id": "eqnet-2185",
+        "equipment_id": "eqnet-2185",
+        "name": "フーリエ変換核磁気共鳴装置(日本電子 JMN ECA-600)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2300::eqnet-2300",
+        "doc_id": "eqnet-2300",
+        "equipment_id": "eqnet-2300",
+        "name": "液体シンチレーションカウンターLSC-7200",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2308::eqnet-2308",
+        "doc_id": "eqnet-2308",
+        "equipment_id": "eqnet-2308",
+        "name": "DNAシーケンサー (反応済・機器の使用)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2310::eqnet-2310",
+        "doc_id": "eqnet-2310",
+        "equipment_id": "eqnet-2310",
+        "name": "DNAシーケンサー (フラグメントプレート)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2311::eqnet-2311",
+        "doc_id": "eqnet-2311",
+        "equipment_id": "eqnet-2311",
+        "name": "DNAシーケンサー (反応前・受託解析)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2338::eqnet-2338",
+        "doc_id": "eqnet-2338",
+        "equipment_id": "eqnet-2338",
+        "name": "実体顕微鏡 Stemi 2000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2340::eqnet-2340",
+        "doc_id": "eqnet-2340",
+        "equipment_id": "eqnet-2340",
+        "name": "密閉型超音波破砕機 Biorupter",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2438::eqnet-2438",
+        "doc_id": "eqnet-2438",
+        "equipment_id": "eqnet-2438",
+        "name": "ボックス型蛍光撮影装置 (オリンパス・FSX100)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2608::eqnet-2608",
+        "doc_id": "eqnet-2608",
+        "equipment_id": "eqnet-2608",
+        "name": "自由電子レーザー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2634::eqnet-2634",
+        "doc_id": "eqnet-2634",
+        "equipment_id": "eqnet-2634",
+        "name": "超遠心機(Beckman Coulter・Optima L-90K)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2635::eqnet-2635",
+        "doc_id": "eqnet-2635",
+        "equipment_id": "eqnet-2635",
+        "name": "卓上超遠心機(Beckman Coulter・ TL-100)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2715::eqnet-2715",
+        "doc_id": "eqnet-2715",
+        "equipment_id": "eqnet-2715",
+        "name": "走査型プローブ顕微鏡((株)日立ハイテクサイエンス・AFM5000/AFM5300E)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2761::eqnet-2761",
+        "doc_id": "eqnet-2761",
+        "equipment_id": "eqnet-2761",
+        "name": "ESI-orbitrap質量分析装置(Thermofisher Scientific社製 ExactiveTM Plus)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2972::eqnet-2972",
+        "doc_id": "eqnet-2972",
+        "equipment_id": "eqnet-2972",
+        "name": "イメージアナライザー(フジフィルム・FLA-9000/LAS-4000mini)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3081::eqnet-3081",
+        "doc_id": "eqnet-3081",
+        "equipment_id": "eqnet-3081",
+        "name": "ゲル撮影装置 AE-6933FXCF",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3304::eqnet-3304",
+        "doc_id": "eqnet-3304",
+        "equipment_id": "eqnet-3304",
+        "name": "卓上型超遠心機 Beckman Coulter Optima MAX-TL",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3332::eqnet-3332",
+        "doc_id": "eqnet-3332",
+        "equipment_id": "eqnet-3332",
+        "name": "CCD単結晶構造解析装置(Rigaku・XtaLABMini)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3335::eqnet-3335",
+        "doc_id": "eqnet-3335",
+        "equipment_id": "eqnet-3335",
+        "name": "多検体細胞破砕機(YASUI KIKAI MB2200)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3365::eqnet-3365",
+        "doc_id": "eqnet-3365",
+        "equipment_id": "eqnet-3365",
+        "name": "ESI型質量分析装置(LC-MS)(Waters社: UPLC -SYNAPT G2 HDMS)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3382::eqnet-3382",
+        "doc_id": "eqnet-3382",
+        "equipment_id": "eqnet-3382",
+        "name": "走査型プローブ顕微鏡(E-SWEEP)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3490::eqnet-3490",
+        "doc_id": "eqnet-3490",
+        "equipment_id": "eqnet-3490",
+        "name": "走査型プローブ顕微鏡 (日立ハイテクノロジーズ AFM5000II(旧セイコーインスツル SPI 3800))",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-352::eqnet-352",
+        "doc_id": "eqnet-352",
+        "equipment_id": "eqnet-352",
+        "name": "表面粗さ測定機(ミツトヨ(株)製・SV-524)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3573::eqnet-3573",
+        "doc_id": "eqnet-3573",
+        "equipment_id": "eqnet-3573",
+        "name": "超深度カラー 3D 形状測定顕微鏡(VK-9500,9510)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3652::eqnet-3652",
+        "doc_id": "eqnet-3652",
+        "equipment_id": "eqnet-3652",
+        "name": "ESI-Qq-TOF質量分析装置 Bruker micrOTOF-QIII compact",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3653::eqnet-3653",
+        "doc_id": "eqnet-3653",
+        "equipment_id": "eqnet-3653",
+        "name": "ESI (or DART)-LIT-Orbitrap質量分析装置 Thermo Fisher Scientific Orbitrap XL",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3750::eqnet-3750",
+        "doc_id": "eqnet-3750",
+        "equipment_id": "eqnet-3750",
+        "name": "走査型プローブ顕微鏡 JEOL 日本電子 JSPM-5200",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3805::eqnet-3805",
+        "doc_id": "eqnet-3805",
+        "equipment_id": "eqnet-3805",
+        "name": "DSC付 粉末X線回析装置 リガク RINT ULTIMA III KK00003509-0",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-383::eqnet-383",
+        "doc_id": "eqnet-383",
+        "equipment_id": "eqnet-383",
+        "name": "固体NMR装置(JEOL ECA300)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3898::eqnet-3898",
+        "doc_id": "eqnet-3898",
+        "equipment_id": "eqnet-3898",
+        "name": "DNAシーケンサー(Thermo Fisher・SeqStudio)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4097::eqnet-4097",
+        "doc_id": "eqnet-4097",
+        "equipment_id": "eqnet-4097",
+        "name": "多波長画像解析装置 フリアーシステムズ(SC4000-YMR)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4112::eqnet-4112",
+        "doc_id": "eqnet-4112",
+        "equipment_id": "eqnet-4112",
+        "name": "高速高精細多光子・共焦点イメージング対応レーザー顕微鏡システム ニコン(A1RMP-MR)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4150::eqnet-4150",
+        "doc_id": "eqnet-4150",
+        "equipment_id": "eqnet-4150",
+        "name": "表面粗さ測定機 ミツトヨ(SV-3100S4)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4175::eqnet-4175",
+        "doc_id": "eqnet-4175",
+        "equipment_id": "eqnet-4175",
+        "name": "X線位相スキャナ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4267::eqnet-4267",
+        "doc_id": "eqnet-4267",
+        "equipment_id": "eqnet-4267",
+        "name": "液体シンチレーションシステム(LSC-7400)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4315::eqnet-4315",
+        "doc_id": "eqnet-4315",
+        "equipment_id": "eqnet-4315",
+        "name": "3D顕微レーザーラマン分光システム 東京インスツルメンツ社 Nanofinder30 NF30-G2-AFM-NUV/VIS-SI01",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4418::eqnet-4418",
+        "doc_id": "eqnet-4418",
+        "equipment_id": "eqnet-4418",
+        "name": "GC-MS/MS Shimadzu TQ-8040NX/AOC-6000/TD-30R",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4424::eqnet-4424",
+        "doc_id": "eqnet-4424",
+        "equipment_id": "eqnet-4424",
+        "name": "ゲル撮影装置 アトー プリントグラフAE-6932",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4427::eqnet-4427",
+        "doc_id": "eqnet-4427",
+        "equipment_id": "eqnet-4427",
+        "name": "走査型プローブ顕微鏡 島津 SPM-9700",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4456::eqnet-4456",
+        "doc_id": "eqnet-4456",
+        "equipment_id": "eqnet-4456",
+        "name": "ESI-イオントラップ型質量分析システム (ブルカージャパン株式会社: amaZon ETD-OF、 nanoElute、 マトリックスサイエンス社: MASCOT server(version 2.8.2)、 MASCOT distiller(version 2.8.3))",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4546::eqnet-4546",
+        "doc_id": "eqnet-4546",
+        "equipment_id": "eqnet-4546",
+        "name": "in vivoイメージング装置(IVIS LuminaII) Caliper Life Sciences(IVIS LuminaII)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4632::eqnet-4632",
+        "doc_id": "eqnet-4632",
+        "equipment_id": "eqnet-4632",
+        "name": "走査型プローブ顕微鏡 島津製作所 SPM-9700HT",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4680-90921ce8::eqnet-4680-90921ce8",
+        "doc_id": "eqnet-4680-90921ce8",
+        "equipment_id": "eqnet-4680-90921ce8",
+        "name": "デジタルパソロジースキャナ(Motic Easy Scan)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4711::eqnet-4711",
+        "doc_id": "eqnet-4711",
+        "equipment_id": "eqnet-4711",
+        "name": "ナノイオンダイナミクス AV600 BURUKER BIOSPIN(AVANCEIII600)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4735::eqnet-4735",
+        "doc_id": "eqnet-4735",
+        "equipment_id": "eqnet-4735",
+        "name": "細胞イメージ Thermo Scientific Cellomics ArrayScan VTI Thermo Scientific(Cellomics ArrayScan VTI)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4767::eqnet-4767",
+        "doc_id": "eqnet-4767",
+        "equipment_id": "eqnet-4767",
+        "name": "超遠心機 Beckman Optima XPN-80 Beckman Coulter(Optima XPN-80)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4769::eqnet-4769",
+        "doc_id": "eqnet-4769",
+        "equipment_id": "eqnet-4769",
+        "name": "超遠心機 Beckman L-80 Beckman Coulter(L-80)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4800::eqnet-4800",
+        "doc_id": "eqnet-4800",
+        "equipment_id": "eqnet-4800",
+        "name": "Ag線源PDF計測装置 Ag-SmartLab(リガク)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4897::eqnet-4897",
+        "doc_id": "eqnet-4897",
+        "equipment_id": "eqnet-4897",
+        "name": "インキュベーター(東京理化器械株式会社 LTI-601ED)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4898::eqnet-4898",
+        "doc_id": "eqnet-4898",
+        "equipment_id": "eqnet-4898",
+        "name": "インキュベーター(冷凍機付)(三洋電機バイオメディカ株式会社(現・PHC株式会社)MIR-253)(1)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4899::eqnet-4899",
+        "doc_id": "eqnet-4899",
+        "equipment_id": "eqnet-4899",
+        "name": "インキュベーター(冷凍機付)(三洋電機バイオメディカ株式会社(現・PHC株式会社)MIR-253)(2)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4935::eqnet-4935",
+        "doc_id": "eqnet-4935",
+        "equipment_id": "eqnet-4935",
+        "name": "核酸撮影装置(1)(アトー株式会社 AE-6911CX)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4946::eqnet-4946",
+        "doc_id": "eqnet-4946",
+        "equipment_id": "eqnet-4946",
+        "name": "AC2-5N7 / ESCO(安全キャビネット)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4947::eqnet-4947",
+        "doc_id": "eqnet-4947",
+        "equipment_id": "eqnet-4947",
+        "name": "LSX-300 / TOMY(オートクレーブ)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4962::eqnet-4962",
+        "doc_id": "eqnet-4962",
+        "equipment_id": "eqnet-4962",
+        "name": "恒温振とう培養機(タイテック株式会社 BR-300LF)(1)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4963::eqnet-4963",
+        "doc_id": "eqnet-4963",
+        "equipment_id": "eqnet-4963",
+        "name": "恒温振とう培養機(タイテック株式会社 BR-300LF)(2)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5103::eqnet-5103",
+        "doc_id": "eqnet-5103",
+        "equipment_id": "eqnet-5103",
+        "name": "ガスクロマトグラフィー(FID/TCD) 島津製作所 GC-2014",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5104::eqnet-5104",
+        "doc_id": "eqnet-5104",
+        "equipment_id": "eqnet-5104",
+        "name": "高速液体クロマトグラフィー(RI/UV-vis) 島津製作所 LC-20AD",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5197::eqnet-5197",
+        "doc_id": "eqnet-5197",
+        "equipment_id": "eqnet-5197",
+        "name": "細胞外電位測定装置 (アルファメッドサイエンティフィック MED64)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5203::eqnet-5203",
+        "doc_id": "eqnet-5203",
+        "equipment_id": "eqnet-5203",
+        "name": "FLASH Smart 酸素分析装置 (Thermo Fisher Scientific)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5265::eqnet-5265",
+        "doc_id": "eqnet-5265",
+        "equipment_id": "eqnet-5265",
+        "name": "in vivoイメージング PerkinElmer IVIS Spectrum CT PerkinElmer(IVIS Spectrum CT)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5316::eqnet-5316",
+        "doc_id": "eqnet-5316",
+        "equipment_id": "eqnet-5316",
+        "name": "ナノイオンダイナミクス AV400WB BURUKER BIOSPIN(AvanceII 400WB)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5382::eqnet-5382",
+        "doc_id": "eqnet-5382",
+        "equipment_id": "eqnet-5382",
+        "name": "高速液体クロマトグラフ Vanquish Flex",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5383::eqnet-5383",
+        "doc_id": "eqnet-5383",
+        "equipment_id": "eqnet-5383",
+        "name": "液体クロマトグラフィー装置(Cytiva, AKTA micro pure)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5402::eqnet-5402",
+        "doc_id": "eqnet-5402",
+        "equipment_id": "eqnet-5402",
+        "name": "恒温振とう培養機(タイテック株式会社 BR-180LF)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5415::eqnet-5415",
+        "doc_id": "eqnet-5415",
+        "equipment_id": "eqnet-5415",
+        "name": "超高速液体クロマトグラフ(サーモフィッシャー・Vanquish Flex)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5416::eqnet-5416",
+        "doc_id": "eqnet-5416",
+        "equipment_id": "eqnet-5416",
+        "name": "低流量液体クロマトグラフ(サーモフィッシャー・Vanquish Neo)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-607::eqnet-607",
+        "doc_id": "eqnet-607",
+        "equipment_id": "eqnet-607",
+        "name": "CCD単結晶自動X線構造解析装置 Varimax Saturn724+",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-652::eqnet-652",
+        "doc_id": "eqnet-652",
+        "equipment_id": "eqnet-652",
+        "name": "DNAシーケンサー (ABI・8本キャピラリー3500型)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-663::eqnet-663",
+        "doc_id": "eqnet-663",
+        "equipment_id": "eqnet-663",
+        "name": "デジタルNMR装置(Bruker biospin・AVANCE 700MHz)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-72::eqnet-72",
+        "doc_id": "eqnet-72",
+        "equipment_id": "eqnet-72",
+        "name": "EMX 8/2.7 ESR装置(ブルカー)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "f0bLbieIXnEMmNVZlYWL::f0bLbieIXnEMmNVZlYWL",
+        "doc_id": "f0bLbieIXnEMmNVZlYWL",
+        "equipment_id": "f0bLbieIXnEMmNVZlYWL",
+        "name": "フーリエ変換赤外分光光度計",
+        "papers_count": 0
+      },
+      {
+        "row_key": "l1nDcHtAePXXCBNwBDYb::OSAKA-476",
+        "doc_id": "l1nDcHtAePXXCBNwBDYb",
+        "equipment_id": "OSAKA-476",
+        "name": "X線光学結晶用PCVM加工装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "lRjwwau5AoJvFoy1Qh74::lRjwwau5AoJvFoy1Qh74",
+        "doc_id": "lRjwwau5AoJvFoy1Qh74",
+        "equipment_id": "lRjwwau5AoJvFoy1Qh74",
+        "name": "UVナノインプリントリソグラフィ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ln5W4lfWKTgYCrNs6vnv::ln5W4lfWKTgYCrNs6vnv",
+        "doc_id": "ln5W4lfWKTgYCrNs6vnv",
+        "equipment_id": "ln5W4lfWKTgYCrNs6vnv",
+        "name": "FT-IR分光システム (JASCO FT/IR-6600)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ruGCHpG9LbyNaU4KzR9J::IMS-squid-b5d125",
+        "doc_id": "ruGCHpG9LbyNaU4KzR9J",
+        "equipment_id": "IMS-squid-b5d125",
+        "name": "Quantum Design MPMS-XL7",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-01T02:21:29.141876+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:29.199800+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:30.183326+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:32.615141+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:34.985194+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:37.337886+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:39.676676+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:42.024730+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:44.389777+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:46.734471+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:49.107474+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:21:51.429652+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-01T02:22:24.459774+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

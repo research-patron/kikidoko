@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE31R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T09:28:54.099117+00:00",
+  "updated_at": "2026-03-04T09:35:00.046420+00:00",
+  "closed_at": "2026-03-04T09:35:00.046420+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle31r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE31R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "16cc520f7aec997c0b0fea826d54cdc116f571acafccc90c93a98ac4de1186a1",
+    "queue_sha256_at_start": "c04ffb6c7277219834334b2ab9f11ddc2ba975f396986ea20ea9c3fb92af4497",
+    "queue_row_keys_sha256": "ebeb0def4d1e121f3a34698c87688858d90bfdfb11488b86337c0f4a39719ef1"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "bFpZiGKFhwYwtccYOqL2::HOKUDAI-AP-902167",
+      "TnIpRpbhRmgyLHWElK1H::HOKUDAI-AP-901850",
+      "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+      "wNEN1InjRracqmlcnCmq::HOKUDAI-AP-901802",
+      "c9vMWBGnx4JkALDEfwI4::HOKUDAI-AP-901551",
+      "fWAmfteVgJTZGLkkswfa::HOKUDAI-AP-901562",
+      "Z94A7RIggvNqKgoGBl66::HOKUDAI-AP-901085",
+      "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131",
+      "wvwD0irPfETQNr389Kkq::HOKUDAI-AP-901874",
+      "LNFpzFIYnDoDpHhxw7Xu::HOKUDAI-AP-902252"
+    ],
+    "target_rows": [
+      {
+        "row_key": "bFpZiGKFhwYwtccYOqL2::HOKUDAI-AP-902167",
+        "doc_id": "bFpZiGKFhwYwtccYOqL2",
+        "equipment_id": "HOKUDAI-AP-902167",
+        "name": "RC Xanadu Storage 12bays",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TnIpRpbhRmgyLHWElK1H::HOKUDAI-AP-901850",
+        "doc_id": "TnIpRpbhRmgyLHWElK1H",
+        "equipment_id": "HOKUDAI-AP-901850",
+        "name": "SLA光造形3Dプリンター",
+        "papers_count": 3
+      },
+      {
+        "row_key": "IICo0TdRSYRiGhj2Gssa::HOKUDAI-AP-902265",
+        "doc_id": "IICo0TdRSYRiGhj2Gssa",
+        "equipment_id": "HOKUDAI-AP-902265",
+        "name": "Thermal Cycler SimpliAmp",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wNEN1InjRracqmlcnCmq::HOKUDAI-AP-901802",
+        "doc_id": "wNEN1InjRracqmlcnCmq",
+        "equipment_id": "HOKUDAI-AP-901802",
+        "name": "Tobii Proフュージョン",
+        "papers_count": 0
+      },
+      {
+        "row_key": "c9vMWBGnx4JkALDEfwI4::HOKUDAI-AP-901551",
+        "doc_id": "c9vMWBGnx4JkALDEfwI4",
+        "equipment_id": "HOKUDAI-AP-901551",
+        "name": "UCリアクター",
+        "papers_count": 1
+      },
+      {
+        "row_key": "fWAmfteVgJTZGLkkswfa::HOKUDAI-AP-901562",
+        "doc_id": "fWAmfteVgJTZGLkkswfa",
+        "equipment_id": "HOKUDAI-AP-901562",
+        "name": "UV-LED照射器スポット型",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Z94A7RIggvNqKgoGBl66::HOKUDAI-AP-901085",
+        "doc_id": "Z94A7RIggvNqKgoGBl66",
+        "equipment_id": "HOKUDAI-AP-901085",
+        "name": "UVパルスレーザーシステム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "X5irZ5FTgTb6cDkhoQza::HOKUDAI-AP-902131",
+        "doc_id": "X5irZ5FTgTb6cDkhoQza",
+        "equipment_id": "HOKUDAI-AP-902131",
+        "name": "アイトラッカー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "wvwD0irPfETQNr389Kkq::HOKUDAI-AP-901874",
+        "doc_id": "wvwD0irPfETQNr389Kkq",
+        "equipment_id": "HOKUDAI-AP-901874",
+        "name": "アドワンファーム水耕栽培装置",
+        "papers_count": 3
+      },
+      {
+        "row_key": "LNFpzFIYnDoDpHhxw7Xu::HOKUDAI-AP-902252",
+        "doc_id": "LNFpzFIYnDoDpHhxw7Xu",
+        "equipment_id": "HOKUDAI-AP-902252",
+        "name": "イメージングサイトメーター",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T09:28:54.099117+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T09:28:54.203560+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:15.902559+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:19.999552+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:24.318018+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:28.727826+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:33.424615+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:37.814330+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:42.138820+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:46.708915+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:50.885955+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:29:55.004681+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:30:17.169862+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T09:35:00.046420+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

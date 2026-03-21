@@ -1,0 +1,222 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-12T09:50:26.666427+00:00",
+  "batch_id": "BATCH-20260312-CYCLE0020-REPAIR100B",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100b.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_repair100b.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100B.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.03,
+    "pitfall2_same_ratio": 0.03,
+    "reviewed_at_unique_count": 100,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 0,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "auto_template_marker_hits": 0,
+    "beginner_char_min": 2003,
+    "beginner_char_max": 2979,
+    "beginner_char_avg": 2634.26,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 27,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 90
+  },
+  "threshold_failures": [
+    "guide_high_similarity_detected"
+  ],
+  "offending_doc_ids": [],
+  "issue_counts": {
+    "guide_high_similarity_detected": 1
+  },
+  "issues": [],
+  "near_duplicate_pairs": [
+    {
+      "i": 1,
+      "j": 20,
+      "ratio": 0.9714067861227602
+    },
+    {
+      "i": 4,
+      "j": 42,
+      "ratio": 0.9907462098838354
+    },
+    {
+      "i": 4,
+      "j": 61,
+      "ratio": 0.9757647993643226
+    },
+    {
+      "i": 4,
+      "j": 80,
+      "ratio": 0.9757647993643226
+    },
+    {
+      "i": 10,
+      "j": 48,
+      "ratio": 0.9349648005363728
+    },
+    {
+      "i": 10,
+      "j": 86,
+      "ratio": 0.920316101415871
+    },
+    {
+      "i": 12,
+      "j": 31,
+      "ratio": 0.9624111073484592
+    },
+    {
+      "i": 39,
+      "j": 58,
+      "ratio": 0.9224833391792353
+    },
+    {
+      "i": 40,
+      "j": 59,
+      "ratio": 0.9572173913043478
+    },
+    {
+      "i": 40,
+      "j": 78,
+      "ratio": 0.9255685733976567
+    },
+    {
+      "i": 40,
+      "j": 97,
+      "ratio": 0.9347902714134649
+    },
+    {
+      "i": 42,
+      "j": 61,
+      "ratio": 0.9789328607993699
+    },
+    {
+      "i": 42,
+      "j": 80,
+      "ratio": 0.9730261862571372
+    },
+    {
+      "i": 48,
+      "j": 86,
+      "ratio": 0.9680993955674949
+    },
+    {
+      "i": 49,
+      "j": 87,
+      "ratio": 0.9215790405381483
+    },
+    {
+      "i": 52,
+      "j": 71,
+      "ratio": 0.9382041652441107
+    },
+    {
+      "i": 54,
+      "j": 73,
+      "ratio": 0.9259927797833934
+    },
+    {
+      "i": 56,
+      "j": 75,
+      "ratio": 0.9220216606498195
+    },
+    {
+      "i": 57,
+      "j": 76,
+      "ratio": 0.9257839721254355
+    },
+    {
+      "i": 59,
+      "j": 97,
+      "ratio": 0.9369118159637504
+    },
+    {
+      "i": 61,
+      "j": 80,
+      "ratio": 0.9936432260627731
+    },
+    {
+      "i": 64,
+      "j": 83,
+      "ratio": 0.970018281535649
+    },
+    {
+      "i": 66,
+      "j": 85,
+      "ratio": 0.9857169356334632
+    },
+    {
+      "i": 72,
+      "j": 91,
+      "ratio": 0.9207601290785228
+    },
+    {
+      "i": 73,
+      "j": 92,
+      "ratio": 0.9421344421344421
+    },
+    {
+      "i": 74,
+      "j": 93,
+      "ratio": 0.9812925170068028
+    },
+    {
+      "i": 78,
+      "j": 97,
+      "ratio": 0.9368093922651933
+    }
+  ],
+  "checkpoint_snapshot": {
+    "updated_at": "2026-03-12T09:41:30+00:00",
+    "defaults_added": 0,
+    "processed_rows_this_run": 1,
+    "applied_rows_this_run": 0,
+    "needs_manual_fix_this_run": 0,
+    "done": 100,
+    "remaining": 0,
+    "batch_size": 10,
+    "process_all": false,
+    "reviewer_default": "codex-manual",
+    "enforce_beginner_min_chars": 2000,
+    "enforce_beginner_max_chars": 3000,
+    "char_count_mode": "non_whitespace",
+    "forbid_internal_id": true,
+    "forbid_placeholder_doi": true,
+    "timing_log_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+    "enforce_min_elapsed_sec": 0,
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair100b.jsonl",
+    "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100B.json",
+    "guard_verify": {
+      "status": "PASS",
+      "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR100B.json",
+      "batch_id": "BATCH-20260312-CYCLE0020-REPAIR100B",
+      "reviewer_expected": "codex-manual",
+      "issues": [],
+      "details": {
+        "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+        "queue_sha256_current": "5f3786f57f1cea3419433f0db54d831a7d9ef34caf316bec514b6a8cd6783ab7",
+        "snapshot_sha256_current": "4a0d2fd7edadc48f8e94b3bb15a0e0973ac8fec1ac0b98bfe2598d2f0d3d860a",
+        "queue_rows_current": 1,
+        "queue_rows_target": 100
+      },
+      "verified_at": "2026-03-12T09:40:20.586530+00:00"
+    },
+    "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+    "post_audit_step2_same_ratio_threshold": 0.05,
+    "post_audit_pitfall2_same_ratio_threshold": 0.05,
+    "post_audit_min_reviewed_at_unique": 90,
+    "post_audit_similarity_threshold": 0.92,
+    "post_audit_status": "SKIPPED_NO_APPLY"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/Btdf28D2fmzC0u7EmD5h/10.31127/tuje.1804146",
+    "paper_space_hash": "#/paper/Btdf28D2fmzC0u7EmD5h/10.31127/tuje.1804146",
+    "beginner_enter_hash": "#/beginner/Btdf28D2fmzC0u7EmD5h",
+    "beginner_space_hash": "#/beginner/Btdf28D2fmzC0u7EmD5h"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "[068]多目的X線結晶構造解析システム",
+      "summary_len": 138,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/Btdf28D2fmzC0u7EmD5h/10.31127/tuje.1804146",
+      "beginner_hash": "#/beginner/Btdf28D2fmzC0u7EmD5h",
+      "paper_link_href": "https://doi.org/10.31127/tuje.1804146",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "顕微FT-IRスペクトル装置",
+      "summary_len": 176,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/JkDR3WwXmcpgoZsKwiMz/10.31127/tuje.1804146",
+      "beginner_hash": "#/beginner/JkDR3WwXmcpgoZsKwiMz",
+      "paper_link_href": "https://doi.org/10.31127/tuje.1804146",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "バーチャルスライド顕微鏡(Olympus・VS120)",
+      "summary_len": 156,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1317/10.1186/s12951-025-03891-0",
+      "beginner_hash": "#/beginner/eqnet-1317",
+      "paper_link_href": "https://doi.org/10.1186/s12951-025-03891-0",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "高速液体クロマトグラフィー(RI/UV-vis) 島津製作所 LC-20AD",
+      "summary_len": 190,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5104/10.1007/s00018-025-05967-4",
+      "beginner_hash": "#/beginner/eqnet-5104",
+      "paper_link_href": "https://doi.org/10.1007/s00018-025-05967-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "ファーメンター (10L) ミツワフロンテック NBC-10000(10L) ➀",
+      "summary_len": 197,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5133/10.1002/anie.202522878",
+      "beginner_hash": "#/beginner/eqnet-5133",
+      "paper_link_href": "https://doi.org/10.1002/anie.202522878",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "超深度カラー 3D 形状測定顕微鏡(VK-9500,9510)",
+      "summary_len": 210,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3573/10.1108/rpj-04-2025-0128",
+      "beginner_hash": "#/beginner/eqnet-3573",
+      "paper_link_href": "https://www.sciencedirect.com/science/article/pii/S1355254625001223",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "固体核磁気共鳴装置(Varian・600PS)",
+      "summary_len": 184,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-567/10.1038/s41597-025-06446-y",
+      "beginner_hash": "#/beginner/eqnet-567",
+      "paper_link_href": "https://doi.org/10.1038/s41597-025-06446-y",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "EMX 8/2.7 ESR装置(ブルカー)",
+      "summary_len": 145,
+      "sample_count": 4,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-72/10.1186/s12951-025-04012-7",
+      "beginner_hash": "#/beginner/eqnet-72",
+      "paper_link_href": "https://doi.org/10.1186/s12951-025-04012-7",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "多波長画像解析装置 フリアーシステムズ(SC4000-YMR)",
+      "summary_len": 156,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4097/10.1089/ham.2015.0024",
+      "beginner_hash": "#/beginner/eqnet-4097",
+      "paper_link_href": "https://doi.org/10.1089/ham.2015.0024",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "GC-MS/MS Shimadzu TQ-8040NX/AOC-6000/TD-30R",
+      "summary_len": 230,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4418/10.1038/s41612-025-01269-5",
+      "beginner_hash": "#/beginner/eqnet-4418",
+      "paper_link_href": "https://doi.org/10.1038/s41612-025-01269-5",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

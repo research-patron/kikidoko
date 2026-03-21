@@ -1,0 +1,159 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260303-CYCLE05-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T14:26:17.044482+00:00",
+  "updated_at": "2026-03-03T15:23:26.963417+00:00",
+  "closed_at": "2026-03-03T15:23:26.963417+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle05_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260303-CYCLE05-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "22a76e05a717f6e6cf50aadf5d485ef63dbb5c1d845008d350a1240185a6b4bd",
+    "queue_sha256_at_start": "45f16c687b0334eb55d7af10d76be0de50145b943e5644c3b564c10ba5e7af7a",
+    "queue_row_keys_sha256": "74025b472f9062a2010290e29ac44a49c6aae3998c3dee03391e6730c7094b18"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "y1yakDmVVyY4N0sXRH4o::y1yakDmVVyY4N0sXRH4o",
+      "7JIndth0CuPCWj5oaUwJ::7JIndth0CuPCWj5oaUwJ",
+      "wt4VpGcYI3y4EcHVNcW1::wt4VpGcYI3y4EcHVNcW1",
+      "p8IIrm7GtSNB2ztW5v2g::p8IIrm7GtSNB2ztW5v2g",
+      "kgMlDfMdPyjB5RPeuSiS::kgMlDfMdPyjB5RPeuSiS",
+      "9Dwp8xc4WHWIFy7D5NWi::9Dwp8xc4WHWIFy7D5NWi",
+      "29LpMyZYG8FCJ9NscNr6::29LpMyZYG8FCJ9NscNr6",
+      "pVjx4km0oM5vfTxHL54m::pVjx4km0oM5vfTxHL54m",
+      "geghVWTkIGCYOLVVEOWE::geghVWTkIGCYOLVVEOWE",
+      "3XW7807NKwieaw7sY2vb::3XW7807NKwieaw7sY2vb"
+    ],
+    "target_rows": [
+      {
+        "row_key": "y1yakDmVVyY4N0sXRH4o::y1yakDmVVyY4N0sXRH4o",
+        "doc_id": "y1yakDmVVyY4N0sXRH4o",
+        "equipment_id": "y1yakDmVVyY4N0sXRH4o",
+        "name": "リアルタイムPCR (ABI StepOne Plus)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "7JIndth0CuPCWj5oaUwJ::7JIndth0CuPCWj5oaUwJ",
+        "doc_id": "7JIndth0CuPCWj5oaUwJ",
+        "equipment_id": "7JIndth0CuPCWj5oaUwJ",
+        "name": "ロングリード シーケンサー (Oxford Nanopore PromethION 24)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "wt4VpGcYI3y4EcHVNcW1::wt4VpGcYI3y4EcHVNcW1",
+        "doc_id": "wt4VpGcYI3y4EcHVNcW1",
+        "equipment_id": "wt4VpGcYI3y4EcHVNcW1",
+        "name": "次世代シーケンサー (Illumina Miseq)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "p8IIrm7GtSNB2ztW5v2g::p8IIrm7GtSNB2ztW5v2g",
+        "doc_id": "p8IIrm7GtSNB2ztW5v2g",
+        "equipment_id": "p8IIrm7GtSNB2ztW5v2g",
+        "name": "次世代シーケンサー ※2023年12月で試薬販売終了 (Thermo Fisher Scientific Ion PGM)",
+        "papers_count": 1
+      },
+      {
+        "row_key": "kgMlDfMdPyjB5RPeuSiS::kgMlDfMdPyjB5RPeuSiS",
+        "doc_id": "kgMlDfMdPyjB5RPeuSiS",
+        "equipment_id": "kgMlDfMdPyjB5RPeuSiS",
+        "name": "次世代シーケンサーデータ解析システム (データ依頼解析サービス)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "9Dwp8xc4WHWIFy7D5NWi::9Dwp8xc4WHWIFy7D5NWi",
+        "doc_id": "9Dwp8xc4WHWIFy7D5NWi",
+        "equipment_id": "9Dwp8xc4WHWIFy7D5NWi",
+        "name": "次世代シーケンサーライブラリ作製 (ライブラリ依頼作製サービス)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "29LpMyZYG8FCJ9NscNr6::29LpMyZYG8FCJ9NscNr6",
+        "doc_id": "29LpMyZYG8FCJ9NscNr6",
+        "equipment_id": "29LpMyZYG8FCJ9NscNr6",
+        "name": "digitalPCRシステム BIORAD QX200",
+        "papers_count": 1
+      },
+      {
+        "row_key": "pVjx4km0oM5vfTxHL54m::pVjx4km0oM5vfTxHL54m",
+        "doc_id": "pVjx4km0oM5vfTxHL54m",
+        "equipment_id": "pVjx4km0oM5vfTxHL54m",
+        "name": "PCR装置 タカラバイオTP600",
+        "papers_count": 0
+      },
+      {
+        "row_key": "geghVWTkIGCYOLVVEOWE::geghVWTkIGCYOLVVEOWE",
+        "doc_id": "geghVWTkIGCYOLVVEOWE",
+        "equipment_id": "geghVWTkIGCYOLVVEOWE",
+        "name": "リアルタイムPCR装置 タカラバイオTP800",
+        "papers_count": 0
+      },
+      {
+        "row_key": "3XW7807NKwieaw7sY2vb::3XW7807NKwieaw7sY2vb",
+        "doc_id": "3XW7807NKwieaw7sY2vb",
+        "equipment_id": "3XW7807NKwieaw7sY2vb",
+        "name": "リアルタイムPCRシステム StepOnePlus",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T14:26:17.044482+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T14:26:56.799094+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T15:15:41.650607+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T15:17:46.433895+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T15:23:26.963417+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

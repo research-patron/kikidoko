@@ -1,0 +1,209 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260312-CYCLE0020-REPAIR18",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-12T10:09:30.005260+00:00",
+  "updated_at": "2026-03-12T10:09:46.854824+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair18.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR18.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "2b45f6b8d48943c95d3699a0db853f5f69c845b6b6ca46a4eb9741cf642f83e5",
+    "queue_sha256_at_start": "bde9586bbe916ae8f47967448113e341f26a64a132c82a14e536f6edd98a4bda",
+    "queue_row_keys_sha256": "fad7fb3ea7cfe1627c6762126e834bfede18617aceec281698b57f95dd6983c5"
+  },
+  "queue": {
+    "target_count": 18,
+    "target_row_keys": [
+      "eqnet-2494::eqnet-2494",
+      "eqnet-871::eqnet-871",
+      "eqnet-3467::eqnet-3467",
+      "eqnet-3468::eqnet-3468",
+      "eqnet-3469::eqnet-3469",
+      "eqnet-3470::eqnet-3470",
+      "eqnet-1091::eqnet-1091",
+      "eqnet-1092::eqnet-1092",
+      "eqnet-5071::eqnet-5071",
+      "eqnet-2792::eqnet-2792",
+      "eqnet-3814::eqnet-3814",
+      "eqnet-3384::eqnet-3384",
+      "eqnet-549::eqnet-549",
+      "eqnet-2133::eqnet-2133",
+      "eqnet-4964::eqnet-4964",
+      "eqnet-4965::eqnet-4965",
+      "eqnet-5441::eqnet-5441",
+      "eqnet-3899::eqnet-3899"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eqnet-2494::eqnet-2494",
+        "doc_id": "eqnet-2494",
+        "equipment_id": "eqnet-2494",
+        "name": "セルソーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-871::eqnet-871",
+        "doc_id": "eqnet-871",
+        "equipment_id": "eqnet-871",
+        "name": "セルソーター",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3467::eqnet-3467",
+        "doc_id": "eqnet-3467",
+        "equipment_id": "eqnet-3467",
+        "name": "ガスクロマトグラフ GC-2014",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3468::eqnet-3468",
+        "doc_id": "eqnet-3468",
+        "equipment_id": "eqnet-3468",
+        "name": "ガスクロマトグラフ GC-2014AFE",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3469::eqnet-3469",
+        "doc_id": "eqnet-3469",
+        "equipment_id": "eqnet-3469",
+        "name": "ガスクロマトグラフ GC-8AIF",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3470::eqnet-3470",
+        "doc_id": "eqnet-3470",
+        "equipment_id": "eqnet-3470",
+        "name": "ガスクロマトグラフ GC-8AIT",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1091::eqnet-1091",
+        "doc_id": "eqnet-1091",
+        "equipment_id": "eqnet-1091",
+        "name": "示差熱重量/熱機械分析装置(SII (現 HITACHI) TG/DTA6200 + TMA6100)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-1092::eqnet-1092",
+        "doc_id": "eqnet-1092",
+        "equipment_id": "eqnet-1092",
+        "name": "示差走査熱量分析装置(SII (現 HITACHI) DSC6200)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5071::eqnet-5071",
+        "doc_id": "eqnet-5071",
+        "equipment_id": "eqnet-5071",
+        "name": "旋光度計(日本分光・P-2100)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2792::eqnet-2792",
+        "doc_id": "eqnet-2792",
+        "equipment_id": "eqnet-2792",
+        "name": "旋光度計(日本分光・P-2200)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3814::eqnet-3814",
+        "doc_id": "eqnet-3814",
+        "equipment_id": "eqnet-3814",
+        "name": "旋光計 (日本分光 P1030)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3384::eqnet-3384",
+        "doc_id": "eqnet-3384",
+        "equipment_id": "eqnet-3384",
+        "name": "旋光計(P-1010)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-549::eqnet-549",
+        "doc_id": "eqnet-549",
+        "equipment_id": "eqnet-549",
+        "name": "蛍光X線分析装置 理学電機 ZSX-100e",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-2133::eqnet-2133",
+        "doc_id": "eqnet-2133",
+        "equipment_id": "eqnet-2133",
+        "name": "蛍光X線分析装置(Philips PW2400)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4964::eqnet-4964",
+        "doc_id": "eqnet-4964",
+        "equipment_id": "eqnet-4964",
+        "name": "恒温振とう培養機(New Brunswick Scientific社 G25 )(1)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-4965::eqnet-4965",
+        "doc_id": "eqnet-4965",
+        "equipment_id": "eqnet-4965",
+        "name": "恒温振とう培養機(New Brunswick Scientific社 G25 )(2)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-5441::eqnet-5441",
+        "doc_id": "eqnet-5441",
+        "equipment_id": "eqnet-5441",
+        "name": "(霞)DNAシーケンサー SeqStudio 8 Flex",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eqnet-3899::eqnet-3899",
+        "doc_id": "eqnet-3899",
+        "equipment_id": "eqnet-3899",
+        "name": "(霞)DNAシーケンサー(Thermo Fisher・SeqStudio)",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-12T10:09:30.005260+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 18
+      }
+    },
+    {
+      "at": "2026-03-12T10:09:35.559916+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-12T10:09:40.386948+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-12T10:09:46.854824+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

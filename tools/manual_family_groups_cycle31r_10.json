@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-04T09:28:53.955112+00:00",
+  "batch_id": "BATCH-20260304-CYCLE31R-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|その他_HU (Others) / None|rc-xanadu-storage-12bays|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "bFpZiGKFhwYwtccYOqL2",
+          "equipment_id": "HOKUDAI-AP-902167",
+          "name": "RC Xanadu Storage 12bays",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|sla-光造形-3d-プリンター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "TnIpRpbhRmgyLHWElK1H",
+          "equipment_id": "HOKUDAI-AP-901850",
+          "name": "SLA光造形3Dプリンター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|thermal-cycler-simpliamp|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "IICo0TdRSYRiGhj2Gssa",
+          "equipment_id": "HOKUDAI-AP-902265",
+          "name": "Thermal Cycler SimpliAmp",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|tobii-pro-フュージョン|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wNEN1InjRracqmlcnCmq",
+          "equipment_id": "HOKUDAI-AP-901802",
+          "name": "Tobii Proフュージョン",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|uc-リアクター|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "c9vMWBGnx4JkALDEfwI4",
+          "equipment_id": "HOKUDAI-AP-901551",
+          "name": "UCリアクター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|uv-led-照射器スポット型|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "fWAmfteVgJTZGLkkswfa",
+          "equipment_id": "HOKUDAI-AP-901562",
+          "name": "UV-LED照射器スポット型",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|uv-パルスレーザーシステム|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Z94A7RIggvNqKgoGBl66",
+          "equipment_id": "HOKUDAI-AP-901085",
+          "name": "UVパルスレーザーシステム",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|アイトラッカー|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "X5irZ5FTgTb6cDkhoQza",
+          "equipment_id": "HOKUDAI-AP-902131",
+          "name": "アイトラッカー",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|アドワンファーム水耕栽培装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "wvwD0irPfETQNr389Kkq",
+          "equipment_id": "HOKUDAI-AP-901874",
+          "name": "アドワンファーム水耕栽培装置",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|その他_HU (Others) / None|イメージングサイトメーター|other|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "LNFpzFIYnDoDpHhxw7Xu",
+          "equipment_id": "HOKUDAI-AP-902252",
+          "name": "イメージングサイトメーター",
+          "category_general": "その他",
+          "category_detail": "その他_HU (Others) / None"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9185
+}

@@ -1,0 +1,2110 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-03-12T08:52:01.777969+00:00",
+  "batch_id": "BATCH-20260312-CYCLE0020-100",
+  "reviewer_expected": "codex-manual",
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_100.jsonl",
+  "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_100.json",
+  "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-100.json",
+  "inspected_count": 100,
+  "target_count": 100,
+  "metrics": {
+    "summary_dup_rate": 0.0,
+    "principle_dup_rate": 0.0,
+    "step1_dup_rate": 0.0,
+    "pitfall1_dup_rate": 0.0,
+    "step2_same_ratio": 0.0,
+    "pitfall2_same_ratio": 0.0,
+    "reviewed_at_unique_count": 0,
+    "forbidden_pattern_hits": 0,
+    "internal_id_reference_hits": 0,
+    "placeholder_doi_hits": 0,
+    "body_contains_doi_hits": 0,
+    "auto_template_marker_hits": 0,
+    "beginner_char_min": 0,
+    "beginner_char_max": 0,
+    "beginner_char_avg": 0.0,
+    "guide_full_dup_rate": 0.0,
+    "guide_high_similarity_pairs": 0,
+    "step2_same_ratio_threshold": 0.05,
+    "pitfall2_same_ratio_threshold": 0.05,
+    "min_reviewed_at_unique": 90
+  },
+  "threshold_failures": [
+    "reviewed_at_unique_lt_90"
+  ],
+  "offending_doc_ids": [
+    "5tdhmWXXPzD98RRUmlpZ",
+    "Mzmlv9w24hD0Ln8CqOcY",
+    "NMiNhaOLzcfHsdzdj9OL",
+    "NvsHyc6rDmCiCQ9ksEeh",
+    "XCuKgmuwwjJcmVC4k5Fj",
+    "dPxexHoiQFKWaVotFrJ7",
+    "eBwIJ5JNVKnJ7GMIX8Yt",
+    "eqnet-1017",
+    "eqnet-1067",
+    "eqnet-1091",
+    "eqnet-1092",
+    "eqnet-112",
+    "eqnet-1200",
+    "eqnet-1375",
+    "eqnet-1816",
+    "eqnet-1817",
+    "eqnet-1827",
+    "eqnet-2014",
+    "eqnet-2042",
+    "eqnet-2058",
+    "eqnet-2064",
+    "eqnet-2133",
+    "eqnet-2161",
+    "eqnet-2236",
+    "eqnet-2283",
+    "eqnet-2354",
+    "eqnet-2494",
+    "eqnet-2499",
+    "eqnet-2502",
+    "eqnet-2508",
+    "eqnet-2527",
+    "eqnet-2663",
+    "eqnet-2699",
+    "eqnet-2700",
+    "eqnet-2792",
+    "eqnet-2898",
+    "eqnet-2905",
+    "eqnet-2963",
+    "eqnet-3032",
+    "eqnet-3063",
+    "eqnet-3076",
+    "eqnet-3328",
+    "eqnet-3384",
+    "eqnet-3451-fb111d82",
+    "eqnet-3467",
+    "eqnet-3468",
+    "eqnet-3469",
+    "eqnet-347",
+    "eqnet-3470",
+    "eqnet-3487",
+    "eqnet-3506",
+    "eqnet-3555",
+    "eqnet-3580",
+    "eqnet-3596",
+    "eqnet-3610",
+    "eqnet-3674",
+    "eqnet-3759",
+    "eqnet-3773",
+    "eqnet-3780",
+    "eqnet-3814",
+    "eqnet-3822",
+    "eqnet-3859",
+    "eqnet-3899",
+    "eqnet-4013",
+    "eqnet-4048",
+    "eqnet-4114",
+    "eqnet-4126",
+    "eqnet-4128",
+    "eqnet-4211",
+    "eqnet-4220",
+    "eqnet-4230",
+    "eqnet-4235",
+    "eqnet-4237",
+    "eqnet-4382",
+    "eqnet-4598",
+    "eqnet-4728",
+    "eqnet-4730",
+    "eqnet-4786",
+    "eqnet-4802",
+    "eqnet-4964",
+    "eqnet-4965",
+    "eqnet-5027",
+    "eqnet-5029",
+    "eqnet-5030",
+    "eqnet-5056",
+    "eqnet-507",
+    "eqnet-5071",
+    "eqnet-5100",
+    "eqnet-5107",
+    "eqnet-5196",
+    "eqnet-5238",
+    "eqnet-5255",
+    "eqnet-5388",
+    "eqnet-5441",
+    "eqnet-549",
+    "eqnet-571",
+    "eqnet-709",
+    "eqnet-715",
+    "eqnet-806",
+    "eqnet-871"
+  ],
+  "issue_counts": {
+    "name_not_in_summary": 100,
+    "name_not_in_principle": 100,
+    "beginner_min_chars_not_met": 100,
+    "insufficient_paper_explanations_for_multi_papers": 90,
+    "reviewed_at_unique_lt_90": 1
+  },
+  "issues": [
+    {
+      "row_key": "Mzmlv9w24hD0Ln8CqOcY::Mzmlv9w24hD0Ln8CqOcY",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "Mzmlv9w24hD0Ln8CqOcY::Mzmlv9w24hD0Ln8CqOcY",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "Mzmlv9w24hD0Ln8CqOcY::Mzmlv9w24hD0Ln8CqOcY",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "Mzmlv9w24hD0Ln8CqOcY::Mzmlv9w24hD0Ln8CqOcY",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2494::eqnet-2494",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2494::eqnet-2494",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2494::eqnet-2494",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2494::eqnet-2494",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3674::eqnet-3674",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3674::eqnet-3674",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3674::eqnet-3674",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3674::eqnet-3674",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2236::eqnet-2236",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2236::eqnet-2236",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2236::eqnet-2236",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2236::eqnet-2236",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3467::eqnet-3467",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3467::eqnet-3467",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3467::eqnet-3467",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3467::eqnet-3467",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4211::eqnet-4211",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4211::eqnet-4211",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4211::eqnet-4211",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4211::eqnet-4211",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5238::eqnet-5238",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5238::eqnet-5238",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5238::eqnet-5238",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4730::eqnet-4730",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4730::eqnet-4730",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4730::eqnet-4730",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4730::eqnet-4730",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3580::eqnet-3580",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3580::eqnet-3580",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3580::eqnet-3580",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3580::eqnet-3580",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3596::eqnet-3596",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3596::eqnet-3596",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3596::eqnet-3596",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-806::eqnet-806",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-806::eqnet-806",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-806::eqnet-806",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-806::eqnet-806",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2905::eqnet-2905",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2905::eqnet-2905",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2905::eqnet-2905",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2905::eqnet-2905",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1091::eqnet-1091",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1091::eqnet-1091",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1091::eqnet-1091",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-1091::eqnet-1091",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2161::eqnet-2161",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2161::eqnet-2161",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2161::eqnet-2161",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2161::eqnet-2161",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2042::eqnet-2042",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2042::eqnet-2042",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2042::eqnet-2042",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2042::eqnet-2042",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4013::eqnet-4013",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4013::eqnet-4013",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4013::eqnet-4013",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4013::eqnet-4013",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5100::eqnet-5100",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5100::eqnet-5100",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5100::eqnet-5100",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5100::eqnet-5100",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3032::eqnet-3032",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3032::eqnet-3032",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3032::eqnet-3032",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3032::eqnet-3032",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3555::eqnet-3555",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3555::eqnet-3555",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3555::eqnet-3555",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3555::eqnet-3555",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "5tdhmWXXPzD98RRUmlpZ::5tdhmWXXPzD98RRUmlpZ",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "5tdhmWXXPzD98RRUmlpZ::5tdhmWXXPzD98RRUmlpZ",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "5tdhmWXXPzD98RRUmlpZ::5tdhmWXXPzD98RRUmlpZ",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "5tdhmWXXPzD98RRUmlpZ::5tdhmWXXPzD98RRUmlpZ",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-871::eqnet-871",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-871::eqnet-871",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-871::eqnet-871",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-871::eqnet-871",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5107::eqnet-5107",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5107::eqnet-5107",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5107::eqnet-5107",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5107::eqnet-5107",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2502::eqnet-2502",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2502::eqnet-2502",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2502::eqnet-2502",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2502::eqnet-2502",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3076::eqnet-3076",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3076::eqnet-3076",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3076::eqnet-3076",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3076::eqnet-3076",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4230::eqnet-4230",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4230::eqnet-4230",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4230::eqnet-4230",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4230::eqnet-4230",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2064::eqnet-2064",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2064::eqnet-2064",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2064::eqnet-2064",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3063::eqnet-3063",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3063::eqnet-3063",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3063::eqnet-3063",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3063::eqnet-3063",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2283::eqnet-2283",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2283::eqnet-2283",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2283::eqnet-2283",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2283::eqnet-2283",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2014::eqnet-2014",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2014::eqnet-2014",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2014::eqnet-2014",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2898::eqnet-2898",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2898::eqnet-2898",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2898::eqnet-2898",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2898::eqnet-2898",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3487::eqnet-3487",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3487::eqnet-3487",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3487::eqnet-3487",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3487::eqnet-3487",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1092::eqnet-1092",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1092::eqnet-1092",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1092::eqnet-1092",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-1092::eqnet-1092",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2663::eqnet-2663",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2663::eqnet-2663",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2663::eqnet-2663",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2663::eqnet-2663",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4128::eqnet-4128",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4128::eqnet-4128",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4128::eqnet-4128",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4128::eqnet-4128",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-112::eqnet-112",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-112::eqnet-112",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-112::eqnet-112",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-112::eqnet-112",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5027::eqnet-5027",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5027::eqnet-5027",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5027::eqnet-5027",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5027::eqnet-5027",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1375::eqnet-1375",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1375::eqnet-1375",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1375::eqnet-1375",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-1375::eqnet-1375",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-347::eqnet-347",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-347::eqnet-347",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-347::eqnet-347",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-347::eqnet-347",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "NvsHyc6rDmCiCQ9ksEeh::NvsHyc6rDmCiCQ9ksEeh",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "NvsHyc6rDmCiCQ9ksEeh::NvsHyc6rDmCiCQ9ksEeh",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "NvsHyc6rDmCiCQ9ksEeh::NvsHyc6rDmCiCQ9ksEeh",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "NvsHyc6rDmCiCQ9ksEeh::NvsHyc6rDmCiCQ9ksEeh",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4382::eqnet-4382",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4382::eqnet-4382",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4382::eqnet-4382",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4382::eqnet-4382",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5071::eqnet-5071",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5071::eqnet-5071",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5071::eqnet-5071",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5071::eqnet-5071",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5255::eqnet-5255",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5255::eqnet-5255",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5255::eqnet-5255",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5255::eqnet-5255",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3468::eqnet-3468",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3468::eqnet-3468",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3468::eqnet-3468",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3468::eqnet-3468",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4220::eqnet-4220",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4220::eqnet-4220",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4220::eqnet-4220",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4220::eqnet-4220",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5388::eqnet-5388",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5388::eqnet-5388",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5388::eqnet-5388",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5030::eqnet-5030",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5030::eqnet-5030",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5030::eqnet-5030",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5030::eqnet-5030",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3451-fb111d82::eqnet-3451-fb111d82",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3451-fb111d82::eqnet-3451-fb111d82",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3451-fb111d82::eqnet-3451-fb111d82",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3451-fb111d82::eqnet-3451-fb111d82",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2058::eqnet-2058",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2058::eqnet-2058",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2058::eqnet-2058",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-507::eqnet-507",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-507::eqnet-507",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-507::eqnet-507",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-507::eqnet-507",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-549::eqnet-549",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-549::eqnet-549",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-549::eqnet-549",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-549::eqnet-549",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "XCuKgmuwwjJcmVC4k5Fj::OSAKA-389",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "XCuKgmuwwjJcmVC4k5Fj::OSAKA-389",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "XCuKgmuwwjJcmVC4k5Fj::OSAKA-389",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "XCuKgmuwwjJcmVC4k5Fj::OSAKA-389",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3822::eqnet-3822",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3822::eqnet-3822",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3822::eqnet-3822",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3822::eqnet-3822",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4114::eqnet-4114",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4114::eqnet-4114",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4114::eqnet-4114",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4114::eqnet-4114",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2963::eqnet-2963",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2963::eqnet-2963",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2963::eqnet-2963",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2963::eqnet-2963",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1017::eqnet-1017",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1017::eqnet-1017",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1017::eqnet-1017",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-1017::eqnet-1017",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-709::eqnet-709",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-709::eqnet-709",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-709::eqnet-709",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-709::eqnet-709",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4235::eqnet-4235",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4235::eqnet-4235",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4235::eqnet-4235",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4235::eqnet-4235",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eBwIJ5JNVKnJ7GMIX8Yt::SAGA-2455",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eBwIJ5JNVKnJ7GMIX8Yt::SAGA-2455",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eBwIJ5JNVKnJ7GMIX8Yt::SAGA-2455",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eBwIJ5JNVKnJ7GMIX8Yt::SAGA-2455",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4598::eqnet-4598",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4598::eqnet-4598",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4598::eqnet-4598",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4598::eqnet-4598",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2792::eqnet-2792",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2792::eqnet-2792",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2792::eqnet-2792",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2792::eqnet-2792",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3506::eqnet-3506",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3506::eqnet-3506",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3506::eqnet-3506",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3506::eqnet-3506",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3469::eqnet-3469",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3469::eqnet-3469",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3469::eqnet-3469",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3469::eqnet-3469",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2508::eqnet-2508",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2508::eqnet-2508",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2508::eqnet-2508",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2508::eqnet-2508",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1817::eqnet-1817",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1817::eqnet-1817",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1817::eqnet-1817",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4964::eqnet-4964",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4964::eqnet-4964",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4964::eqnet-4964",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4964::eqnet-4964",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4786::eqnet-4786",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4786::eqnet-4786",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4786::eqnet-4786",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4786::eqnet-4786",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2700::eqnet-2700",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2700::eqnet-2700",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2700::eqnet-2700",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3859::eqnet-3859",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3859::eqnet-3859",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3859::eqnet-3859",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3859::eqnet-3859",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3759::eqnet-3759",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3759::eqnet-3759",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3759::eqnet-3759",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3759::eqnet-3759",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4728::eqnet-4728",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4728::eqnet-4728",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4728::eqnet-4728",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4728::eqnet-4728",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1827::eqnet-1827",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1827::eqnet-1827",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1827::eqnet-1827",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-1827::eqnet-1827",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4048::eqnet-4048",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4048::eqnet-4048",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4048::eqnet-4048",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4048::eqnet-4048",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3328::eqnet-3328",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3328::eqnet-3328",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3328::eqnet-3328",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3328::eqnet-3328",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5029::eqnet-5029",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5029::eqnet-5029",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5029::eqnet-5029",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5029::eqnet-5029",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5441::eqnet-5441",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5441::eqnet-5441",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5441::eqnet-5441",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5441::eqnet-5441",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1200::eqnet-1200",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1200::eqnet-1200",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1200::eqnet-1200",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-1200::eqnet-1200",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "NMiNhaOLzcfHsdzdj9OL::OKAYAMA-130",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "NMiNhaOLzcfHsdzdj9OL::OKAYAMA-130",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "NMiNhaOLzcfHsdzdj9OL::OKAYAMA-130",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "NMiNhaOLzcfHsdzdj9OL::OKAYAMA-130",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4237::eqnet-4237",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4237::eqnet-4237",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4237::eqnet-4237",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4237::eqnet-4237",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3814::eqnet-3814",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3814::eqnet-3814",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3814::eqnet-3814",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3814::eqnet-3814",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2354::eqnet-2354",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2354::eqnet-2354",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2354::eqnet-2354",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2354::eqnet-2354",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3470::eqnet-3470",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3470::eqnet-3470",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3470::eqnet-3470",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3470::eqnet-3470",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2527::eqnet-2527",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2527::eqnet-2527",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2527::eqnet-2527",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2527::eqnet-2527",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1816::eqnet-1816",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1816::eqnet-1816",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1816::eqnet-1816",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4965::eqnet-4965",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4965::eqnet-4965",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4965::eqnet-4965",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4965::eqnet-4965",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3610::eqnet-3610",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3610::eqnet-3610",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3610::eqnet-3610",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3610::eqnet-3610",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2699::eqnet-2699",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2699::eqnet-2699",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2699::eqnet-2699",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-571::eqnet-571",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-571::eqnet-571",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-571::eqnet-571",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-571::eqnet-571",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2133::eqnet-2133",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2133::eqnet-2133",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2133::eqnet-2133",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2133::eqnet-2133",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3773::eqnet-3773",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3773::eqnet-3773",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3773::eqnet-3773",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3773::eqnet-3773",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3780::eqnet-3780",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3780::eqnet-3780",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3780::eqnet-3780",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3780::eqnet-3780",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4126::eqnet-4126",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4126::eqnet-4126",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4126::eqnet-4126",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4126::eqnet-4126",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-1067::eqnet-1067",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-1067::eqnet-1067",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-1067::eqnet-1067",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-1067::eqnet-1067",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5196::eqnet-5196",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5196::eqnet-5196",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5196::eqnet-5196",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5196::eqnet-5196",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3899::eqnet-3899",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3899::eqnet-3899",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3899::eqnet-3899",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3899::eqnet-3899",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-715::eqnet-715",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-715::eqnet-715",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-715::eqnet-715",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-715::eqnet-715",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "dPxexHoiQFKWaVotFrJ7::HOKUDAI-AP-901749",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "dPxexHoiQFKWaVotFrJ7::HOKUDAI-AP-901749",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "dPxexHoiQFKWaVotFrJ7::HOKUDAI-AP-901749",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "dPxexHoiQFKWaVotFrJ7::HOKUDAI-AP-901749",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-5056::eqnet-5056",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-5056::eqnet-5056",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-5056::eqnet-5056",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-5056::eqnet-5056",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-3384::eqnet-3384",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-3384::eqnet-3384",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-3384::eqnet-3384",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-3384::eqnet-3384",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 3,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-2499::eqnet-2499",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-2499::eqnet-2499",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-2499::eqnet-2499",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-2499::eqnet-2499",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    },
+    {
+      "row_key": "eqnet-4802::eqnet-4802",
+      "code": "name_not_in_summary"
+    },
+    {
+      "row_key": "eqnet-4802::eqnet-4802",
+      "code": "name_not_in_principle"
+    },
+    {
+      "row_key": "eqnet-4802::eqnet-4802",
+      "code": "beginner_min_chars_not_met",
+      "beginner_chars": 0,
+      "min_required": 2000
+    },
+    {
+      "row_key": "eqnet-4802::eqnet-4802",
+      "code": "insufficient_paper_explanations_for_multi_papers",
+      "papers_count": 2,
+      "paper_explanations_count": 0
+    }
+  ],
+  "near_duplicate_pairs": [],
+  "checkpoint_snapshot": {
+    "generated_at": "2026-03-12T08:49:40.205398+00:00",
+    "batch_id": "BATCH-20260312-CYCLE0020-100",
+    "queue_sha256": "782b0cea513f1e3564fad38abc819cde364240e0dcce69e726be411565e940f8",
+    "target_count": 100,
+    "selected_count": 100,
+    "eligible_count": 5688,
+    "category_count": 19,
+    "campaign": "default",
+    "family_mode": "none",
+    "include_reviewed": false,
+    "ignore_papers_filter": false,
+    "min_beginner_chars": 0,
+    "char_count_mode": "non_whitespace",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_100.jsonl",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "reviewer_default": "codex-manual",
+    "family_map_path": "",
+    "family_groups_path": "",
+    "eligible_family_count": 0
+  }
+}

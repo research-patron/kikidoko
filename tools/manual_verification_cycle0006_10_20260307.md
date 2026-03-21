@@ -1,0 +1,23 @@
+# Manual Verification Log
+
+- Cycle: CYCLE-REBUILD-0006
+- Verification phase Python/Node script usage: 0
+- Checked at: 2026-03-07 16:15:09 JST
+- Hosting live release: 2026-03-07 16:08:21 JST
+- Root URL: https://kikidoko.web.app/
+- Bootstrap URL: https://kikidoko.web.app/data/bootstrap-v1.json?v=20260306-bootstrap-sync-1
+- Checked data URLs:
+  - https://kikidoko.web.app/data/equipment_detail_shards/detail-3f.json?v=20260306-bootstrap-sync-1
+  - https://kikidoko.web.app/data/equipment_detail_shards/detail-0a.json?v=20260306-bootstrap-sync-1
+  - https://kikidoko.web.app/data/equipment_detail_shards/detail-39.json?v=20260306-bootstrap-sync-1
+  - https://kikidoko.web.app/data/equipment_detail_shards/detail-20.json?v=20260306-bootstrap-sync-1
+- Verified docs:
+  - VIp6ga7dIUZFFAyc0qlz / プラズマクリーナー YHS-R
+  - ozOCOvoE6Sw2VpxWrhDG / 透過型電子顕微鏡 FEI TECNAI F20
+  - OHFl57aZLStRCEjLuxEE / X線界面構造解析装置（XRR）
+  - AUUydx6XUviKtGmIIEp7 / 10X Genomics Chromiumシステム
+- Manual checks:
+  - live bootstrap generated_at = 2026-03-07T07:06:47.995522+00:00
+  - live detail shard contains reviewed_at and manual_content_v1 for the four checked docs
+  - live detail shard contains curated DOI links for the four checked docs
+- Result: PASS

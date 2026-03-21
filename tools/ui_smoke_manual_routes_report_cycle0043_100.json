@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/2tQSyysW5GzUbZBLqC9k/10.1186/s13102-025-01458-y",
+    "paper_space_hash": "#/paper/2tQSyysW5GzUbZBLqC9k/10.1186/s13102-025-01458-y",
+    "beginner_enter_hash": "#/beginner/2tQSyysW5GzUbZBLqC9k",
+    "beginner_space_hash": "#/beginner/2tQSyysW5GzUbZBLqC9k"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "超低温フリーザー_03 パナソニックヘルスケア MDF-DC500-VX-PJ",
+      "summary_len": 318,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/2tQSyysW5GzUbZBLqC9k/10.1186/s13102-025-01458-y",
+      "beginner_hash": "#/beginner/2tQSyysW5GzUbZBLqC9k",
+      "paper_link_href": "https://doi.org/10.1186/s13102-025-01458-y",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "旭町ラボ オープンラボスペース 202実験室(C)-1",
+      "summary_len": 287,
+      "sample_count": 4,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/YOyGKvBvvqYAzXGWjO8R/10.1038/nmeth.2080",
+      "beginner_hash": "#/beginner/YOyGKvBvvqYAzXGWjO8R",
+      "paper_link_href": "https://doi.org/10.1038/nmeth.2080",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "旭町ラボ オープンラボスペース 202実験室(C)-2",
+      "summary_len": 287,
+      "sample_count": 4,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/jbyanFAconRcEQs5BUum/10.1038/nmeth.2080",
+      "beginner_hash": "#/beginner/jbyanFAconRcEQs5BUum",
+      "paper_link_href": "https://doi.org/10.1038/nmeth.2080",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "マルチカラーデータ解析ソフトウェア(2)",
+      "summary_len": 272,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/aTW9idJZmVRdBSNIxexC/10.1038/nmeth.2080",
+      "beginner_hash": "#/beginner/aTW9idJZmVRdBSNIxexC",
+      "paper_link_href": "https://doi.org/10.1038/nmeth.2080",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "マイクロロガー",
+      "summary_len": 225,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/d1chcYWvdrO4bm83FPKp/10.1080/19420862.2026.2618314",
+      "beginner_hash": "#/beginner/d1chcYWvdrO4bm83FPKp",
+      "paper_link_href": "https://doi.org/10.1080/19420862.2026.2618314",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "マウス・ラットB.B.H.ユニット架台",
+      "summary_len": 268,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/CFKLjdt7bBNhhuj46CYo/10.1080/19490976.2025.2601430",
+      "beginner_hash": "#/beginner/CFKLjdt7bBNhhuj46CYo",
+      "paper_link_href": "https://doi.org/10.1080/19490976.2025.2601430",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "マルチスペクトラルカメラ",
+      "summary_len": 243,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/oaUTVMdanLnLc1uUt27D/10.1080/19420862.2026.2618314",
+      "beginner_hash": "#/beginner/oaUTVMdanLnLc1uUt27D",
+      "paper_link_href": "https://doi.org/10.1080/19420862.2026.2618314",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "マルチラベルリーダー",
+      "summary_len": 240,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/gxfaLAr20S9LwRakDRzc/10.1080/19420862.2026.2618314",
+      "beginner_hash": "#/beginner/gxfaLAr20S9LwRakDRzc",
+      "paper_link_href": "https://doi.org/10.1080/19420862.2026.2618314",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "マルチ周波数体組成計",
+      "summary_len": 229,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/gZeEGAkFfLj6IRwIbdeg/10.1080/19420862.2026.2618314",
+      "beginner_hash": "#/beginner/gZeEGAkFfLj6IRwIbdeg",
+      "paper_link_href": "https://doi.org/10.1080/19420862.2026.2618314",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "ミキサーミル",
+      "summary_len": 226,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/sTc9rJ3kNCA3SrnOtXPl/10.1080/19420862.2026.2618314",
+      "beginner_hash": "#/beginner/sTc9rJ3kNCA3SrnOtXPl",
+      "paper_link_href": "https://doi.org/10.1080/19420862.2026.2618314",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

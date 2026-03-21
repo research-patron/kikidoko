@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE07-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T15:50:36.528162+00:00",
+  "updated_at": "2026-03-03T16:06:00.156115+00:00",
+  "closed_at": "2026-03-03T16:06:00.156115+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle07_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE07-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "55544b22b44438b23a26289bf902199b5a1b8670bb9b6041550230183e05a5a9",
+    "queue_sha256_at_start": "6c58dcb0b76daf566d2b587c94d7c44726cd424241cf57d87481f85336488aa3",
+    "queue_row_keys_sha256": "c15e4277925b69dfd80e6c79fc8363aa77d88d25b266b3c1d80636601845cf4f"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "HGWdqjb3WazEwlOprX50::KUMAMOTO-list3f-03",
+      "3yDYWbTLF2OQCFYCDD6X::KUMAMOTO-list3f-02",
+      "lPelbvABYw31k0iiS2qT::lPelbvABYw31k0iiS2qT",
+      "xo3yRXGfgRZZgvJiVIE3::xo3yRXGfgRZZgvJiVIE3",
+      "5unn0TopwdTDkFw3FlKi::5unn0TopwdTDkFw3FlKi",
+      "GjOFBfhS5lhZhnAlBXnh::GjOFBfhS5lhZhnAlBXnh",
+      "5WmLFliJMWSGb18QI8GC::5WmLFliJMWSGb18QI8GC",
+      "Ius0ae3zUqpOrJdMaTVi::Ius0ae3zUqpOrJdMaTVi",
+      "FaWmwuZDbzoo6dF9GeuC::FaWmwuZDbzoo6dF9GeuC",
+      "7FuRqBil7MrQI3S8vLoH::AIST-BIT-001"
+    ],
+    "target_rows": [
+      {
+        "row_key": "HGWdqjb3WazEwlOprX50::KUMAMOTO-list3f-03",
+        "doc_id": "HGWdqjb3WazEwlOprX50",
+        "equipment_id": "KUMAMOTO-list3f-03",
+        "name": "実体顕微鏡 ライカマイクロシステムズ M205C",
+        "papers_count": 1
+      },
+      {
+        "row_key": "3yDYWbTLF2OQCFYCDD6X::KUMAMOTO-list3f-02",
+        "doc_id": "3yDYWbTLF2OQCFYCDD6X",
+        "equipment_id": "KUMAMOTO-list3f-02",
+        "name": "断面イオンミリング 株式会社日立ハイテクノロジーズ E-3500",
+        "papers_count": 1
+      },
+      {
+        "row_key": "lPelbvABYw31k0iiS2qT::lPelbvABYw31k0iiS2qT",
+        "doc_id": "lPelbvABYw31k0iiS2qT",
+        "equipment_id": "lPelbvABYw31k0iiS2qT",
+        "name": "Cell Analyzer (Muse)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "xo3yRXGfgRZZgvJiVIE3::xo3yRXGfgRZZgvJiVIE3",
+        "doc_id": "xo3yRXGfgRZZgvJiVIE3",
+        "equipment_id": "xo3yRXGfgRZZgvJiVIE3",
+        "name": "Cell Sorter (Biosorter)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5unn0TopwdTDkFw3FlKi::5unn0TopwdTDkFw3FlKi",
+        "doc_id": "5unn0TopwdTDkFw3FlKi",
+        "equipment_id": "5unn0TopwdTDkFw3FlKi",
+        "name": "Cell Sorter (FACSAria II)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "GjOFBfhS5lhZhnAlBXnh::GjOFBfhS5lhZhnAlBXnh",
+        "doc_id": "GjOFBfhS5lhZhnAlBXnh",
+        "equipment_id": "GjOFBfhS5lhZhnAlBXnh",
+        "name": "Cell Sorter (On-Chip Sort)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "5WmLFliJMWSGb18QI8GC::5WmLFliJMWSGb18QI8GC",
+        "doc_id": "5WmLFliJMWSGb18QI8GC",
+        "equipment_id": "5WmLFliJMWSGb18QI8GC",
+        "name": "Cell Sorter",
+        "papers_count": 3
+      },
+      {
+        "row_key": "Ius0ae3zUqpOrJdMaTVi::Ius0ae3zUqpOrJdMaTVi",
+        "doc_id": "Ius0ae3zUqpOrJdMaTVi",
+        "equipment_id": "Ius0ae3zUqpOrJdMaTVi",
+        "name": "Cell Analyzer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "FaWmwuZDbzoo6dF9GeuC::FaWmwuZDbzoo6dF9GeuC",
+        "doc_id": "FaWmwuZDbzoo6dF9GeuC",
+        "equipment_id": "FaWmwuZDbzoo6dF9GeuC",
+        "name": "Mass Cytometer",
+        "papers_count": 3
+      },
+      {
+        "row_key": "7FuRqBil7MrQI3S8vLoH::AIST-BIT-001",
+        "doc_id": "7FuRqBil7MrQI3S8vLoH",
+        "equipment_id": "AIST-BIT-001",
+        "name": "磁気共鳴画像装置（MRI）",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T15:50:36.528162+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T15:50:36.617067+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T16:01:30.725193+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T16:06:00.156115+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

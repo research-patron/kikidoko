@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T12:55:08.346443+00:00",
+  "batch_id": "BATCH-20260303-CYCLE02-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|2Fに設置されている機器|スキャナータイプ画像解析装置-fla---型式-typhoon|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "YTf2CxqQVg727AArwerN",
+          "equipment_id": "YTf2CxqQVg727AArwerN",
+          "name": "ｽｷｬﾅｰﾀｲﾌﾟ画像解析装置(FLA)－型式：Typhoon FLA 7000",
+          "category_general": "その他",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|2Fに設置されている機器|バイオイメージングアナライザー-bas---型式-bas-2500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "dfhSUjF7G7AFdBgqzF7B",
+          "equipment_id": "dfhSUjF7G7AFdBgqzF7B",
+          "name": "ﾊﾞｲｵｲﾒｰｼﾞﾝｸﾞｱﾅﾗｲｻﾞｰ(BAS)－型式：BAS-2500",
+          "category_general": "その他",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|2Fに設置されている機器|共焦点レーザースキャン顕微鏡---型式-lsm7duo|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AFZ0X9Z0XX3TwLmcSCKR",
+          "equipment_id": "AFZ0X9Z0XX3TwLmcSCKR",
+          "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM7DUO",
+          "category_general": "その他",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|2Fに設置されている機器|粒子径-分子量測定装置---型式-zetasizer-nano-s|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "F6TUjy60Qz1otTHODI9x",
+          "equipment_id": "F6TUjy60Qz1otTHODI9x",
+          "name": "粒子径・分子量測定装置－型式：ZETASIZER Nano-S",
+          "category_general": "その他",
+          "category_detail": "2Fに設置されている機器"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|39,000|エピタキシャル成長装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "sHzQm2a8ILlhSMS5z1F7",
+          "equipment_id": "AIST-COL020",
+          "name": "エピタキシャル成長装置",
+          "category_general": "その他",
+          "category_detail": "39,000"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|3Dプリンタ|光造形-3d-プリンタ|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "JCYT4Y9DcYVXQ8cRD47z",
+          "equipment_id": "TOKUSHIMA-72",
+          "name": "光造形3Dプリンタ",
+          "category_general": "その他",
+          "category_detail": "3Dプリンタ"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|アッシング装置-mas-室|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "xBbUhgNdmfD2OEmiWf0I",
+          "equipment_id": "AIST-COL007",
+          "name": "アッシング装置（MAS装置A室）",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|ゲート金属スパッタ成膜装置-スパッタ装置-室|other|solid_powder|processing",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "AQC680cRlhRyTgw8KGnO",
+          "equipment_id": "AIST-COL001",
+          "name": "ゲート金属スパッタ成膜装置（スパッタ装置Ａ室）",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|フラッシュランプアニール装置-fla|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "V2iy5M6sGh9pmFnV1gvN",
+          "equipment_id": "AIST-COL021",
+          "name": "フラッシュランプアニール装置(FLA)",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|5,600|プラズマポリシリコン成膜装置|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "neOW4fbLHXDhcJMtBbjX",
+          "equipment_id": "AIST-COL003",
+          "name": "プラズマポリシリコン成膜装置",
+          "category_general": "その他",
+          "category_detail": "5,600"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9449
+}

@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-03T15:50:36.401046+00:00",
+  "batch_id": "BATCH-20260304-CYCLE07-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "その他|EPMA室・試料作製室|m205c-実体顕微鏡-ライカマイクロシステムズ|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "HGWdqjb3WazEwlOprX50",
+          "equipment_id": "KUMAMOTO-list3f-03",
+          "name": "実体顕微鏡 ライカマイクロシステムズ M205C",
+          "category_general": "その他",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|EPMA室・試料作製室|断面イオンミリング-株式会社日立ハイテクノロジーズ-e-3500|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "3yDYWbTLF2OQCFYCDD6X",
+          "equipment_id": "KUMAMOTO-list3f-02",
+          "name": "断面イオンミリング 株式会社日立ハイテクノロジーズ E-3500",
+          "category_general": "その他",
+          "category_detail": "EPMA室・試料作製室"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-muse|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "lPelbvABYw31k0iiS2qT",
+          "equipment_id": "lPelbvABYw31k0iiS2qT",
+          "name": "Cell Analyzer (Muse)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter-biosorter|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "xo3yRXGfgRZZgvJiVIE3",
+          "equipment_id": "xo3yRXGfgRZZgvJiVIE3",
+          "name": "Cell Sorter (Biosorter)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter-facsaria-ii|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5unn0TopwdTDkFw3FlKi",
+          "equipment_id": "5unn0TopwdTDkFw3FlKi",
+          "name": "Cell Sorter (FACSAria II)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter-on-chip-sort|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "GjOFBfhS5lhZhnAlBXnh",
+          "equipment_id": "GjOFBfhS5lhZhnAlBXnh",
+          "name": "Cell Sorter (On-Chip Sort)",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell-sorter|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "5WmLFliJMWSGb18QI8GC",
+          "equipment_id": "5WmLFliJMWSGb18QI8GC",
+          "name": "Cell Sorter",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|cell|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "Ius0ae3zUqpOrJdMaTVi",
+          "equipment_id": "Ius0ae3zUqpOrJdMaTVi",
+          "name": "Cell Analyzer",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|Flow Cytometry|mass-cytometer|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "FaWmwuZDbzoo6dF9GeuC",
+          "equipment_id": "FaWmwuZDbzoo6dF9GeuC",
+          "name": "Mass Cytometer",
+          "category_general": "その他",
+          "category_detail": "Flow Cytometry"
+        }
+      ]
+    },
+    {
+      "family_id": "その他|MRI装置|磁気共鳴画像装置-mri|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "7FuRqBil7MrQI3S8vLoH",
+          "equipment_id": "AIST-BIT-001",
+          "name": "磁気共鳴画像装置（MRI）",
+          "category_general": "その他",
+          "category_detail": "MRI装置"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9399
+}

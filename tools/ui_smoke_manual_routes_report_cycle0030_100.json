@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-3769/10.1038/s41598-025-28860-3",
+    "paper_space_hash": "#/paper/eqnet-3769/10.1038/s41598-025-28860-3",
+    "beginner_enter_hash": "#/beginner/eqnet-3769",
+    "beginner_space_hash": "#/beginner/eqnet-3769"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "(霞)超電導核磁気共鳴装置(Bruker AvanceIII HD500)",
+      "summary_len": 176,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3769/10.1038/s41598-025-28860-3",
+      "beginner_hash": "#/beginner/eqnet-3769",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-28860-3",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "3Dプリンタ",
+      "summary_len": 145,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/mvHeWRPnzgxqa2wHKaqo/10.1038/srep09875",
+      "beginner_hash": "#/beginner/mvHeWRPnzgxqa2wHKaqo",
+      "paper_link_href": "https://doi.org/10.1038/srep09875",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "3Dプリンター（樹脂用）",
+      "summary_len": 137,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/MIYAZAKI-1259/10.1038/srep09875",
+      "beginner_hash": "#/beginner/MIYAZAKI-1259",
+      "paper_link_href": "https://doi.org/10.1038/srep09875",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "513層多層押出成形装置(YG-006)",
+      "summary_len": 155,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/IaeeL2CR9ANNkremST1r/10.1021/acs.iecr.3c03923",
+      "beginner_hash": "#/beginner/IaeeL2CR9ANNkremST1r",
+      "paper_link_href": "https://doi.org/10.1021/acs.iecr.3c03923",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        4
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "AFM(nano cute) 日立ハイテクサイエンス(nano cute)",
+      "summary_len": 189,
+      "sample_count": 2,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4217/10.1038/s41378-025-01104-0",
+      "beginner_hash": "#/beginner/eqnet-4217",
+      "paper_link_href": "https://doi.org/10.1038/s41378-025-01104-0",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "AV-300N （Bruker社製）",
+      "summary_len": 157,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/TbixpF14gEAkJxs7gZcX/10.1038/s41598-025-28860-3",
+      "beginner_hash": "#/beginner/TbixpF14gEAkJxs7gZcX",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-28860-3",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        5
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "AppliedBiosystems・433A Peptide Synthesizer",
+      "summary_len": 175,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3776/10.1080/19490976.2025.2601430",
+      "beginner_hash": "#/beginner/eqnet-3776",
+      "paper_link_href": "https://doi.org/10.1080/19490976.2025.2601430",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "CNC旋盤",
+      "summary_len": 236,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/TOKUSHIMA-8/10.1038/s41598-025-30782-z",
+      "beginner_hash": "#/beginner/TOKUSHIMA-8",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-30782-z",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "CO2インキュベーター(170L) MCO-18M三洋電機株式会社 MCO-18M",
+      "summary_len": 175,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1997/10.1016/j.celrep.2020.107900",
+      "beginner_hash": "#/beginner/eqnet-1997",
+      "paper_link_href": "https://doi.org/10.1016/j.celrep.2020.107900",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "CO2インキュベーター(170L) MCO-19AIC三洋電機株式会社 MCO-19AIC(UV)",
+      "summary_len": 183,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1998/10.1016/j.celrep.2020.107900",
+      "beginner_hash": "#/beginner/eqnet-1998",
+      "paper_link_href": "https://doi.org/10.1016/j.celrep.2020.107900",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

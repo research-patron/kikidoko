@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-03-07T03:02:37.928041+00:00",
+  "batch_id": "BATCH-20260307-CYCLE0005-10",
+  "campaign": "beginner-longform",
+  "family_mode": "deterministic",
+  "selected_count": 10,
+  "family_count": 10,
+  "groups": [
+    {
+      "family_id": "ARIM共用装置|偏光観察用システム顕微鏡|偏光観察用システム顕微鏡-yg-011-2-ミクロトーム|sem_tem|other|observation",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "3OLDgm5Yo6Olt6Lr4bZV",
+          "equipment_id": "YAMAGATA-U-YG-011-2",
+          "name": "偏光観察用システム顕微鏡(YG-011-2)・ミクロトーム",
+          "category_general": "ARIM共用装置",
+          "category_detail": "偏光観察用システム顕微鏡"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|光沢計|光沢計-yg-010-5|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "gt03Q7tDu6NppzwawuAq",
+          "equipment_id": "YAMAGATA-U-YG-010-5",
+          "name": "光沢計(YG-010-5)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "光沢計"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|全自動多目的X線回折装置|全自動多目的-線回折装置-yg-601|xray|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "XZT48BmKydVEm3kTcUYu",
+          "equipment_id": "YAMAGATA-U-YG-601",
+          "name": "全自動多目的X線回折装置(YG-601)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "全自動多目的X線回折装置"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|共押出システム|共押出システム-yg-002|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "VvILmjDAV8jIqjFKkW2w",
+          "equipment_id": "YAMAGATA-U-YG-002",
+          "name": "共押出システム(YG-002)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "共押出システム"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|分光ヘーズメーター|分光ヘーズメーター-yg-010-4|spectroscopy|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "NA4jpKc98ekkVVOq8HKq",
+          "equipment_id": "YAMAGATA-U-YG-010-4",
+          "name": "分光ヘーズメーター(YG-010-4)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "分光ヘーズメーター"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|力学試験機|力学試験機-yg-008|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "K9VDRZo46oZMdPmY6s5r",
+          "equipment_id": "YAMAGATA-U-YG-008",
+          "name": "力学試験機(YG-008)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "力学試験機"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|小角光散乱装置|高分子相構造解析システム|小角光散乱装置-高分子相構造解析システム-yg-011-1|other|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "m23l5I1cvJgRVfvBoa0i",
+          "equipment_id": "YAMAGATA-U-YG-011-1",
+          "name": "小角光散乱装置|高分子相構造解析システム(YG-011-1)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "小角光散乱装置|高分子相構造解析システム"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|形状解析レーザ顕微鏡|形状解析レーザ顕微鏡-yg-003|sem_tem|other|analysis",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "hTOFucqdg6na7Tqcjpv0",
+          "equipment_id": "YAMAGATA-U-YG-003",
+          "name": "形状解析レーザ顕微鏡(YG-003)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "形状解析レーザ顕微鏡"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|示差走査熱量計DSC|示差走査熱量計-dsc-yg-004|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "zhMfgcfND2IYgLxC3zlS",
+          "equipment_id": "YAMAGATA-U-YG-004",
+          "name": "示差走査熱量計DSC(YG-004)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "示差走査熱量計DSC"
+        }
+      ]
+    },
+    {
+      "family_id": "ARIM共用装置|複屈折計測装置|フィルム物性測定システム|複屈折計測装置-フィルム物性測定システム-yg-010-1|other|other|other",
+      "count": 1,
+      "members": [
+        {
+          "doc_id": "igWmqGuQmN0nAr7cubUs",
+          "equipment_id": "YAMAGATA-U-YG-010-1",
+          "name": "複屈折計測装置|フィルム物性測定システム(YG-010-1)",
+          "category_general": "ARIM共用装置",
+          "category_detail": "複屈折計測装置|フィルム物性測定システム"
+        }
+      ]
+    }
+  ],
+  "eligible_family_count": 9785
+}

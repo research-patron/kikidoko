@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "CYCLE-REBUILD-0001",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T10:53:24.028587+00:00",
+  "updated_at": "2026-03-04T11:47:47.404092+00:00",
+  "closed_at": "2026-03-04T11:47:47.404092+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0001_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_CYCLE-REBUILD-0001.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "f473847c64201923cd58691f702eb1c0d3a0e0f3eceafe92c7d8bb6cc4583ca6",
+    "queue_sha256_at_start": "95c5e5212538960f2247e62ad7f5983f7dea817c25abf72dee14976112cfde52",
+    "queue_row_keys_sha256": "6f51ecee28cc51010b96ba5603f92a1f7503b1b08c6872df3dca2ba461308514"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "eDX9uS88nzDUo7DRFJox::eDX9uS88nzDUo7DRFJox",
+      "R5b0pxQNyUgJdKFBwK5n::R5b0pxQNyUgJdKFBwK5n",
+      "sjeeh9D6hgUrxujOXjKl::sjeeh9D6hgUrxujOXjKl",
+      "Uws7Nd0FITQFhBuZ6UX3::Uws7Nd0FITQFhBuZ6UX3",
+      "aL0L8jOJoNHKcJb5wRrW::aL0L8jOJoNHKcJb5wRrW",
+      "zGP5IrL6MQpptV9vtbL7::zGP5IrL6MQpptV9vtbL7",
+      "zvaqj7UssGxAUiEDTBel::zvaqj7UssGxAUiEDTBel",
+      "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+      "oCRETqgx0aduVoPDIQEH::oCRETqgx0aduVoPDIQEH",
+      "b5I26chFGmL7Qoj4C8hy::b5I26chFGmL7Qoj4C8hy"
+    ],
+    "target_rows": [
+      {
+        "row_key": "eDX9uS88nzDUo7DRFJox::eDX9uS88nzDUo7DRFJox",
+        "doc_id": "eDX9uS88nzDUo7DRFJox",
+        "equipment_id": "eDX9uS88nzDUo7DRFJox",
+        "name": "NMR(400MHz)－型式：AVANCE 400",
+        "papers_count": 2
+      },
+      {
+        "row_key": "R5b0pxQNyUgJdKFBwK5n::R5b0pxQNyUgJdKFBwK5n",
+        "doc_id": "R5b0pxQNyUgJdKFBwK5n",
+        "equipment_id": "R5b0pxQNyUgJdKFBwK5n",
+        "name": "NMR(400MHz)－型式：AVANCE 400",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sjeeh9D6hgUrxujOXjKl::sjeeh9D6hgUrxujOXjKl",
+        "doc_id": "sjeeh9D6hgUrxujOXjKl",
+        "equipment_id": "sjeeh9D6hgUrxujOXjKl",
+        "name": "NMR(500MHz)－型式：AVANCEⅢHD 500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Uws7Nd0FITQFhBuZ6UX3::Uws7Nd0FITQFhBuZ6UX3",
+        "doc_id": "Uws7Nd0FITQFhBuZ6UX3",
+        "equipment_id": "Uws7Nd0FITQFhBuZ6UX3",
+        "name": "超遠心機 －型式： himac CP100WX",
+        "papers_count": 1
+      },
+      {
+        "row_key": "aL0L8jOJoNHKcJb5wRrW::aL0L8jOJoNHKcJb5wRrW",
+        "doc_id": "aL0L8jOJoNHKcJb5wRrW",
+        "equipment_id": "aL0L8jOJoNHKcJb5wRrW",
+        "name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+        "papers_count": 3
+      },
+      {
+        "row_key": "zGP5IrL6MQpptV9vtbL7::zGP5IrL6MQpptV9vtbL7",
+        "doc_id": "zGP5IrL6MQpptV9vtbL7",
+        "equipment_id": "zGP5IrL6MQpptV9vtbL7",
+        "name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zvaqj7UssGxAUiEDTBel::zvaqj7UssGxAUiEDTBel",
+        "doc_id": "zvaqj7UssGxAUiEDTBel",
+        "equipment_id": "zvaqj7UssGxAUiEDTBel",
+        "name": "円二色性分散計（CD）－型式：J-820",
+        "papers_count": 1
+      },
+      {
+        "row_key": "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+        "doc_id": "sGOjYNGg9TZMgeAGmF2B",
+        "equipment_id": "sGOjYNGg9TZMgeAGmF2B",
+        "name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oCRETqgx0aduVoPDIQEH::oCRETqgx0aduVoPDIQEH",
+        "doc_id": "oCRETqgx0aduVoPDIQEH",
+        "equipment_id": "oCRETqgx0aduVoPDIQEH",
+        "name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+        "papers_count": 2
+      },
+      {
+        "row_key": "b5I26chFGmL7Qoj4C8hy::b5I26chFGmL7Qoj4C8hy",
+        "doc_id": "b5I26chFGmL7Qoj4C8hy",
+        "equipment_id": "b5I26chFGmL7Qoj4C8hy",
+        "name": "蛍光分光光度計(FL)－型式：F-2500",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T10:53:24.028587+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T10:53:47.377284+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T11:08:19.217829+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T11:47:47.404092+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE25R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T03:40:33.464966+00:00",
+  "updated_at": "2026-03-04T03:43:57.710346+00:00",
+  "closed_at": "2026-03-04T03:43:57.710346+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle25r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE25R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "7d2a8c503beb7f7e6782cea43840e91058059614bac8e59c50fa93a65f42bce9",
+    "queue_sha256_at_start": "29f28f2f16f4c60b7fad5914121d2327f584229809eda43d6c8626fc1b3cf11d",
+    "queue_row_keys_sha256": "0f443a94925cf98def74db075ed7d897e6e4c23e86f29164baf1f9e2c2a2f02c"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "h1yNqVq9eQAAZ9yQAPMk::h1yNqVq9eQAAZ9yQAPMk",
+      "GYOrhmKFI2ZityM66zys::GYOrhmKFI2ZityM66zys",
+      "elHxPjvqmkS3UrCL5IHd::elHxPjvqmkS3UrCL5IHd",
+      "6sBrz0PgwqFdba3IPykg::6sBrz0PgwqFdba3IPykg",
+      "F0loATbhRDO5cZAiAq9d::F0loATbhRDO5cZAiAq9d",
+      "5nRHro98oP0JF44e52HM::5nRHro98oP0JF44e52HM",
+      "paSvOtj2RFKf65MA9n3n::paSvOtj2RFKf65MA9n3n",
+      "PttufmLVMRYkyMAScrl7::PttufmLVMRYkyMAScrl7",
+      "7zBARSvOwqxKdjLlHzWG::7zBARSvOwqxKdjLlHzWG",
+      "gyUTbGP9DPl8Jytw8zCy::gyUTbGP9DPl8Jytw8zCy"
+    ],
+    "target_rows": [
+      {
+        "row_key": "h1yNqVq9eQAAZ9yQAPMk::h1yNqVq9eQAAZ9yQAPMk",
+        "doc_id": "h1yNqVq9eQAAZ9yQAPMk",
+        "equipment_id": "h1yNqVq9eQAAZ9yQAPMk",
+        "name": "超低温フリーザー_07 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "GYOrhmKFI2ZityM66zys::GYOrhmKFI2ZityM66zys",
+        "doc_id": "GYOrhmKFI2ZityM66zys",
+        "equipment_id": "GYOrhmKFI2ZityM66zys",
+        "name": "イネゲノム構造機能解析システム1-2 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "elHxPjvqmkS3UrCL5IHd::elHxPjvqmkS3UrCL5IHd",
+        "doc_id": "elHxPjvqmkS3UrCL5IHd",
+        "equipment_id": "elHxPjvqmkS3UrCL5IHd",
+        "name": "イネゲノム構造機能解析システム1-3 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6sBrz0PgwqFdba3IPykg::6sBrz0PgwqFdba3IPykg",
+        "doc_id": "6sBrz0PgwqFdba3IPykg",
+        "equipment_id": "6sBrz0PgwqFdba3IPykg",
+        "name": "イネゲノム構造機能解析システム1-4 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "F0loATbhRDO5cZAiAq9d::F0loATbhRDO5cZAiAq9d",
+        "doc_id": "F0loATbhRDO5cZAiAq9d",
+        "equipment_id": "F0loATbhRDO5cZAiAq9d",
+        "name": "バイオトロンA棟-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5nRHro98oP0JF44e52HM::5nRHro98oP0JF44e52HM",
+        "doc_id": "5nRHro98oP0JF44e52HM",
+        "equipment_id": "5nRHro98oP0JF44e52HM",
+        "name": "バイオトロンA棟-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "paSvOtj2RFKf65MA9n3n::paSvOtj2RFKf65MA9n3n",
+        "doc_id": "paSvOtj2RFKf65MA9n3n",
+        "equipment_id": "paSvOtj2RFKf65MA9n3n",
+        "name": "バイオトロンA棟-3",
+        "papers_count": 0
+      },
+      {
+        "row_key": "PttufmLVMRYkyMAScrl7::PttufmLVMRYkyMAScrl7",
+        "doc_id": "PttufmLVMRYkyMAScrl7",
+        "equipment_id": "PttufmLVMRYkyMAScrl7",
+        "name": "バイオトロンA棟-4",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7zBARSvOwqxKdjLlHzWG::7zBARSvOwqxKdjLlHzWG",
+        "doc_id": "7zBARSvOwqxKdjLlHzWG",
+        "equipment_id": "7zBARSvOwqxKdjLlHzWG",
+        "name": "COY社 嫌気性チャンバー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gyUTbGP9DPl8Jytw8zCy::gyUTbGP9DPl8Jytw8zCy",
+        "doc_id": "gyUTbGP9DPl8Jytw8zCy",
+        "equipment_id": "gyUTbGP9DPl8Jytw8zCy",
+        "name": "TOYO WATER BATH WS-165",
+        "papers_count": 3
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T03:40:33.464966+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T03:40:33.552999+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:40:43.064762+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:40:46.892591+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:40:50.712944+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:40:54.777829+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:41:00.162963+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:41:05.880293+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:41:10.409405+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:41:14.549338+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:41:18.551921+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:41:22.581149+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:41:39.274530+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:43:57.710346+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

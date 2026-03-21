@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE24R-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T03:32:07.924259+00:00",
+  "updated_at": "2026-03-04T03:36:29.188797+00:00",
+  "closed_at": "2026-03-04T03:36:29.188797+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle24r_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE24R-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "61fbcbce88424091bd394be61f9687ad48cf60903a0eb95fae33246bc4e165dd",
+    "queue_sha256_at_start": "15936724f0ee42654b71d816f3a5c5fa9e9f6b883164c2dbe0f691e8beb6918c",
+    "queue_row_keys_sha256": "8d7447b5e67547c3545db2cece76d06a94411188856083e113d44d1b86c79706"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "kIdJ2BmyGxF6X1YzD4RN::kIdJ2BmyGxF6X1YzD4RN",
+      "s0umSEEzZByWxqTItxm2::s0umSEEzZByWxqTItxm2",
+      "wdIGcQr1s8TYS4eE4nfV::wdIGcQr1s8TYS4eE4nfV",
+      "ILOnTH0Q1D1pgmFCYWoZ::ILOnTH0Q1D1pgmFCYWoZ",
+      "gb8wikSyOv8Tp767llH3::gb8wikSyOv8Tp767llH3",
+      "SYO14bklmPweiq8HoBoz::SYO14bklmPweiq8HoBoz",
+      "lzw8BUj1NiadHnAoLzQI::lzw8BUj1NiadHnAoLzQI",
+      "6QZhJ88BTtN3VzFN90HE::6QZhJ88BTtN3VzFN90HE",
+      "x5aNSPm5bpozvg7OZrCg::x5aNSPm5bpozvg7OZrCg",
+      "1QXJatzkjW4hOgzXRl7K::1QXJatzkjW4hOgzXRl7K"
+    ],
+    "target_rows": [
+      {
+        "row_key": "kIdJ2BmyGxF6X1YzD4RN::kIdJ2BmyGxF6X1YzD4RN",
+        "doc_id": "kIdJ2BmyGxF6X1YzD4RN",
+        "equipment_id": "kIdJ2BmyGxF6X1YzD4RN",
+        "name": "超低温フリーザー_06 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "s0umSEEzZByWxqTItxm2::s0umSEEzZByWxqTItxm2",
+        "doc_id": "s0umSEEzZByWxqTItxm2",
+        "equipment_id": "s0umSEEzZByWxqTItxm2",
+        "name": "旭町ラボ オープンラボスペース 202実験室(E)-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "wdIGcQr1s8TYS4eE4nfV::wdIGcQr1s8TYS4eE4nfV",
+        "doc_id": "wdIGcQr1s8TYS4eE4nfV",
+        "equipment_id": "wdIGcQr1s8TYS4eE4nfV",
+        "name": "薬品庫",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ILOnTH0Q1D1pgmFCYWoZ::ILOnTH0Q1D1pgmFCYWoZ",
+        "doc_id": "ILOnTH0Q1D1pgmFCYWoZ",
+        "equipment_id": "ILOnTH0Q1D1pgmFCYWoZ",
+        "name": "製氷機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gb8wikSyOv8Tp767llH3::gb8wikSyOv8Tp767llH3",
+        "doc_id": "gb8wikSyOv8Tp767llH3",
+        "equipment_id": "gb8wikSyOv8Tp767llH3",
+        "name": "酸・有機兼用ドラフトチャンバー",
+        "papers_count": 0
+      },
+      {
+        "row_key": "SYO14bklmPweiq8HoBoz::SYO14bklmPweiq8HoBoz",
+        "doc_id": "SYO14bklmPweiq8HoBoz",
+        "equipment_id": "SYO14bklmPweiq8HoBoz",
+        "name": "恒温培養器 TVA660DB",
+        "papers_count": 0
+      },
+      {
+        "row_key": "lzw8BUj1NiadHnAoLzQI::lzw8BUj1NiadHnAoLzQI",
+        "doc_id": "lzw8BUj1NiadHnAoLzQI",
+        "equipment_id": "lzw8BUj1NiadHnAoLzQI",
+        "name": "CO2インキュベーター MCO-20AIC",
+        "papers_count": 3
+      },
+      {
+        "row_key": "6QZhJ88BTtN3VzFN90HE::6QZhJ88BTtN3VzFN90HE",
+        "doc_id": "6QZhJ88BTtN3VzFN90HE",
+        "equipment_id": "6QZhJ88BTtN3VzFN90HE",
+        "name": "バイオメディカルフリーザーMDF-U333",
+        "papers_count": 1
+      },
+      {
+        "row_key": "x5aNSPm5bpozvg7OZrCg::x5aNSPm5bpozvg7OZrCg",
+        "doc_id": "x5aNSPm5bpozvg7OZrCg",
+        "equipment_id": "x5aNSPm5bpozvg7OZrCg",
+        "name": "インキュベーター MIR-262（2台）",
+        "papers_count": 1
+      },
+      {
+        "row_key": "1QXJatzkjW4hOgzXRl7K::1QXJatzkjW4hOgzXRl7K",
+        "doc_id": "1QXJatzkjW4hOgzXRl7K",
+        "equipment_id": "1QXJatzkjW4hOgzXRl7K",
+        "name": "イネゲノム構造機能解析システム1-1 (バイオハザード対応グロースキャビネット コイトトロン SBH-3024A 特殊型) (1/4スペース)",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T03:32:07.924259+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T03:32:08.013983+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:32:34.573732+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:32:38.459975+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:32:42.458158+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:32:47.606494+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:32:53.024563+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:32:57.465184+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:33:01.464360+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:33:05.376441+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:33:09.261256+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:33:13.232203+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:33:55.836989+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T03:36:29.188797+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

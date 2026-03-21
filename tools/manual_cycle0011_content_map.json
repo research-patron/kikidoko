@@ -1,0 +1,606 @@
+{
+  "batch_id": "BATCH-20260308-CYCLE0011-100",
+  "entries": [
+    {
+      "doc_id": "NwkHQEFywrHQrQuWv5Bp",
+      "name": "15面マルチディスプレイAVシステム PN-V701×15 (PC: BOXX APEXX W4/NVIDIA Quadro RTX4000)",
+      "mode": "manual",
+      "family": "av_wall"
+    },
+    {
+      "doc_id": "TNjE5Ebgiv5ivnh6cyDw",
+      "name": "高速液体クロマトグラフ（HPLC）",
+      "mode": "manual",
+      "family": "hplc"
+    },
+    {
+      "doc_id": "TOKUSHIMA-65",
+      "name": "ドラフトチャンバー Left側（学内ユーザー限定）",
+      "mode": "template",
+      "template": "draft_family"
+    },
+    {
+      "doc_id": "xVvuN8KI9GUQlXHk8Lv5",
+      "name": "CO2インキュベータ",
+      "mode": "source",
+      "source": "incubator"
+    },
+    {
+      "doc_id": "eqnet-913",
+      "name": "(霞)フローサイトメーター(BD・FACSVerse)",
+      "mode": "source",
+      "source": "flow"
+    },
+    {
+      "doc_id": "eqnet-613",
+      "name": "プロテインシーケンサー (Shimadzu PPSQ-31A)",
+      "mode": "manual",
+      "family": "protein_seq"
+    },
+    {
+      "doc_id": "TC9XElqZZ5EDrXYDzaaN",
+      "name": "DNAシークエンサー SeqStudio Genetic Analyzer",
+      "mode": "source",
+      "source": "dna_seq"
+    },
+    {
+      "doc_id": "eqnet-1923",
+      "name": "卓上型超遠心機(ベックマン・Optima TLX)",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "s9KPP86lnMoKCCM98RoY",
+      "name": "ハンドヘルド蛍光X線分析装置",
+      "mode": "source",
+      "source": "xrf"
+    },
+    {
+      "doc_id": "SbY0dl8jrW8yhpNUFjat",
+      "name": "元素分析装置 (マイクロコーダー JM11)",
+      "mode": "manual",
+      "family": "ea"
+    },
+    {
+      "doc_id": "JgIuhrLTFl6pdeUcSKjG",
+      "name": "元素分析装置（EA）",
+      "mode": "manual",
+      "family": "ea"
+    },
+    {
+      "doc_id": "eqnet-4283",
+      "name": "FTIR JASCO(FT/IR-6600)",
+      "mode": "manual",
+      "family": "ftir"
+    },
+    {
+      "doc_id": "eqnet-5432",
+      "name": "(霞)AI画像解析付きレーザーマイクロダイセクション7(ライカ・LMD7)",
+      "mode": "manual",
+      "family": "lmd"
+    },
+    {
+      "doc_id": "TbixpF14gEAkJxs7gZcX",
+      "name": "AV-300N （Bruker社製）",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "fBzkOfPZv7HNuG3bwZ8S",
+      "name": "マイクロ波合成反応装置 (MicroSYNTH)",
+      "mode": "manual",
+      "family": "microwave_reactor"
+    },
+    {
+      "doc_id": "o8tGV8vZmgB2Q4vmTXwe",
+      "name": "分光光度計 (FP-8300)",
+      "mode": "manual",
+      "family": "spectrophotometer"
+    },
+    {
+      "doc_id": "ZyYpPjkW1ZMZx5AU5QAm",
+      "name": "分光光度計 株式会社島津製作所 UV-3600",
+      "mode": "manual",
+      "family": "spectrophotometer"
+    },
+    {
+      "doc_id": "MIE-equipment17",
+      "name": "フーリエ変換赤外分光システム（μFTIR）",
+      "mode": "manual",
+      "family": "ftir"
+    },
+    {
+      "doc_id": "SvUB2kN8tpwY3pFQXZWt",
+      "name": "X線光電子分光装置 サーモエレクトロン株式会社 SigmaProbe",
+      "mode": "source",
+      "source": "xps"
+    },
+    {
+      "doc_id": "eqnet-5039",
+      "name": "分子間相互作用測定装置 (BLItz)",
+      "mode": "source",
+      "source": "spr"
+    },
+    {
+      "doc_id": "UA14kmn46HR5OHoCGEln",
+      "name": "Ge半導体検出器 (GC2018)",
+      "mode": "manual",
+      "family": "ge_detector"
+    },
+    {
+      "doc_id": "eqnet-2641",
+      "name": "HPLC装置(日本分光・PU-4180)",
+      "mode": "manual",
+      "family": "hplc"
+    },
+    {
+      "doc_id": "MIYAZAKI-1259",
+      "name": "3Dプリンター（樹脂用）",
+      "mode": "source",
+      "source": "printer3d"
+    },
+    {
+      "doc_id": "eqnet-4185",
+      "name": "ダイナミトロン加速器装置 Radiation Dynamics(RPEA-4.5型)",
+      "mode": "manual",
+      "family": "accelerator"
+    },
+    {
+      "doc_id": "eqnet-4226",
+      "name": "4探針抵抗率測定器(Si室) ナプソン(RT-70/RG-7)",
+      "mode": "manual",
+      "family": "four_probe"
+    },
+    {
+      "doc_id": "eqnet-3935",
+      "name": "100ton竪型電動射出圧縮成形機(Mucell付帯)",
+      "mode": "manual",
+      "family": "forming_press"
+    },
+    {
+      "doc_id": "eqnet-714",
+      "name": "(工)恒温恒湿装置",
+      "mode": "template",
+      "template": "thermal_support_devices"
+    },
+    {
+      "doc_id": "rFTSLMFqWJRsQVdfvARP",
+      "name": "テラヘルツ時間領域分光(THz-TDS)装置",
+      "mode": "manual",
+      "family": "thz"
+    },
+    {
+      "doc_id": "ABJKZBe9h3RAOvzZQnbe",
+      "name": "単結晶自動X線構造解析装置 (リガク製) VariMax RAPID/α",
+      "mode": "source",
+      "source": "scxrd"
+    },
+    {
+      "doc_id": "SaMRMxP9aLhQkdyV332N",
+      "name": "CW単一周波数チューナブルTi:Sレーザーシステム",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "eqnet-2151",
+      "name": "X線照射システム(日立製作所 MBR-1520R-3)",
+      "mode": "source",
+      "source": "xray_irradiation"
+    },
+    {
+      "doc_id": "eqnet-3585",
+      "name": "3点曲げ試験機(MMT-100NB-10H)",
+      "mode": "manual",
+      "family": "bending"
+    },
+    {
+      "doc_id": "TOKUSHIMA-8",
+      "name": "CNC旋盤",
+      "mode": "manual",
+      "family": "cnc_lathe"
+    },
+    {
+      "doc_id": "YAMANASHI-3D-VR-5000",
+      "name": "ワンショット3D形状測定機",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "kSvL9o5euWQ3FWDn62Al",
+      "name": "走査電子顕微鏡（ＥＤＳ付き）",
+      "mode": "source",
+      "source": "sem"
+    },
+    {
+      "doc_id": "eqnet-2704",
+      "name": "EB蒸着装置(アルバック・UEP-2000 OT-H/C)",
+      "mode": "manual",
+      "family": "thinfilm_coater"
+    },
+    {
+      "doc_id": "QfRAe7CdtLgQyymLyRIB",
+      "name": "高分解能核磁気共鳴装置 （500 MHz NMR）",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "eqnet-3769",
+      "name": "(霞)超電導核磁気共鳴装置(Bruker AvanceIII HD500)",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "6WqTtgjsvnR3JPK5GWuc",
+      "name": "核磁気共鳴装置・電子スピン共鳴装置 (JES-FA100)",
+      "mode": "manual",
+      "family": "esr"
+    },
+    {
+      "doc_id": "m3hrKw3v9ejoymowoauL",
+      "name": "パルスNMR",
+      "mode": "source",
+      "source": "nmr_solid"
+    },
+    {
+      "doc_id": "xfscwsNhm05Kl1UOll8f",
+      "name": "フーリエ変換赤外分光光度計",
+      "mode": "manual",
+      "family": "ftir"
+    },
+    {
+      "doc_id": "eqnet-3405",
+      "name": "X/QバンドCW-ESR装置 (Bruker社製E500, F115室, Xバンドは3 K ~ 470 K、Qバンドは4 K~室温)",
+      "mode": "manual",
+      "family": "esr"
+    },
+    {
+      "doc_id": "AuJZka4IAxtV2M7FzN8U",
+      "name": "Triple-TOF型 質量分析装置（Triple-TOF-MS）",
+      "mode": "manual",
+      "family": "tofms"
+    },
+    {
+      "doc_id": "KANAZAWA-6",
+      "name": "核磁気共鳴装置(ECA-600) (600 MHz)",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "tkrfit6HY35uT0l6VbDE",
+      "name": "共焦点レーザー顕微鏡（ST8）",
+      "mode": "source",
+      "source": "confocal"
+    },
+    {
+      "doc_id": "eqnet-4778",
+      "name": "分注機 Multidrop Combi (1-3F) Thermo Scientific(Multidrop Combi)",
+      "mode": "manual",
+      "family": "dispenser"
+    },
+    {
+      "doc_id": "eqnet-1761",
+      "name": "ダイナミックDSC(PerkinElmer・DSC8000)",
+      "mode": "source",
+      "source": "dsc"
+    },
+    {
+      "doc_id": "iugsW73Q84Qz6EQgntmY",
+      "name": "高感度示差走査熱量計（DSC）",
+      "mode": "source",
+      "source": "dsc"
+    },
+    {
+      "doc_id": "eqnet-3845",
+      "name": "ゼータ電位/粒径測定システム(大塚電子ELS-Z)",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "tzWYEW4SuXMTRDcLAvcU",
+      "name": "DLTS測定装置",
+      "mode": "manual",
+      "family": "dlts"
+    },
+    {
+      "doc_id": "eqnet-4695",
+      "name": "(霞・動物)実験動物用高分解能マイクロX線CT",
+      "mode": "source",
+      "source": "microct"
+    },
+    {
+      "doc_id": "oVr7tUmgITaYn2Ybs5A7",
+      "name": "透過型電子顕微鏡 日本電子株式会社 JEM-2100plus",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "VbUXL9NmSyTZUN6JxWSb",
+      "name": "TEM薄膜試料作製電解研磨装置",
+      "mode": "manual",
+      "family": "tem_prep"
+    },
+    {
+      "doc_id": "wgvi4rlAirlK1i0Ji55l",
+      "name": "コンピュータ制御高電圧試験装置 (PIVG－200ACP)",
+      "mode": "manual",
+      "family": "high_voltage"
+    },
+    {
+      "doc_id": "TOKUSHIMA-11",
+      "name": "MALDI-TOF-MS",
+      "mode": "manual",
+      "family": "maldi"
+    },
+    {
+      "doc_id": "eqnet-909",
+      "name": "MALDI-TOF-MS(Bruker製 ultrafleXtreme)",
+      "mode": "manual",
+      "family": "maldi"
+    },
+    {
+      "doc_id": "eqnet-2319",
+      "name": "Agilent G2545A Hybridization Oven",
+      "mode": "manual",
+      "family": "hyb_oven"
+    },
+    {
+      "doc_id": "eqnet-2320",
+      "name": "Agilent DNA マイクロアレイスキャナ",
+      "mode": "manual",
+      "family": "microarray_scanner"
+    },
+    {
+      "doc_id": "TOKUSHIMA-68",
+      "name": "卓上型走査電子顕微鏡 TinySEM",
+      "mode": "source",
+      "source": "sem"
+    },
+    {
+      "doc_id": "eqnet-1401",
+      "name": "3次元レーザー・リソグラフィ・システム独ナノスクライブGmbH フォトニックプロフェッショナル",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "eqnet-2645",
+      "name": "タンパク質ブロッティング装置(Bio-Rad・Trans-Blot Turbo)",
+      "mode": "manual",
+      "family": "blotter"
+    },
+    {
+      "doc_id": "pv7zkAHRplM4UdiAg00L",
+      "name": "真空蒸着装置(DP)",
+      "mode": "manual",
+      "family": "thinfilm_coater"
+    },
+    {
+      "doc_id": "v5k8qd6bYcT0Jch0dJwK",
+      "name": "原子間力顕微鏡",
+      "mode": "source",
+      "source": "afm"
+    },
+    {
+      "doc_id": "t6CzFvITPmP98Bbp2RbX",
+      "name": "3Dプリンタ 株式会社キーエンス アジリスタ3110",
+      "mode": "source",
+      "source": "printer3d"
+    },
+    {
+      "doc_id": "NskSbUoFNUCh2UAN5zFj",
+      "name": "3130ジェネティックアナライザ 1号機 (遺制研)",
+      "mode": "source",
+      "source": "dna_seq"
+    },
+    {
+      "doc_id": "TOKUSHIMA-66",
+      "name": "ドラフトチャンバー Right側（学内ユーザー限定）",
+      "mode": "template",
+      "template": "draft_family"
+    },
+    {
+      "doc_id": "tyBYGH1k8pDUw9tECAE3",
+      "name": "PH計",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "eqnet-912",
+      "name": "(霞)フローサイトメーター(BD・LSRFortessa X-20)",
+      "mode": "source",
+      "source": "flow"
+    },
+    {
+      "doc_id": "eqnet-2430",
+      "name": "プロテインシーケンサ (SHIMADZU・PPSQ-51A)",
+      "mode": "manual",
+      "family": "protein_seq"
+    },
+    {
+      "doc_id": "q3l1Qr619nZAuDpfcZH8",
+      "name": "高速冷却遠心機 CR22N (HITACHI)",
+      "mode": "manual",
+      "family": "generic"
+    },
+    {
+      "doc_id": "eqnet-5186",
+      "name": "脱気装置 (V-700)",
+      "mode": "manual",
+      "family": "degasser"
+    },
+    {
+      "doc_id": "YAMANASHI-XRF-SEA1200VX",
+      "name": "蛍光X線分析装置",
+      "mode": "source",
+      "source": "xrf"
+    },
+    {
+      "doc_id": "eqnet-3546",
+      "name": "FTIR(顕微付き)",
+      "mode": "manual",
+      "family": "ftir"
+    },
+    {
+      "doc_id": "eqnet-1981",
+      "name": "イメージングサイトメーターGE ヘルスケア社 IN Cell Analyzer 2000システム",
+      "mode": "manual",
+      "family": "high_content_imaging"
+    },
+    {
+      "doc_id": "oLxr1t4wDDsnr5DV3Vgq",
+      "name": "分光光度計 (FP-8600)",
+      "mode": "manual",
+      "family": "spectrophotometer"
+    },
+    {
+      "doc_id": "kFup7X72pj3sskHN8JeV",
+      "name": "フーリエ変換赤外分光光度計（FT-IR)",
+      "mode": "manual",
+      "family": "ftir"
+    },
+    {
+      "doc_id": "eqnet-2795",
+      "name": "分子間相互作用解析装置(GEヘルスケア Biacore T200) (表面プラズモン共鳴装置 SPR)",
+      "mode": "source",
+      "source": "spr"
+    },
+    {
+      "doc_id": "goH8H8QrSSjwsKcGZuBQ",
+      "name": "デスクトップX線回折装置",
+      "mode": "source",
+      "source": "xrd_powder"
+    },
+    {
+      "doc_id": "eqnet-2642",
+      "name": "HPLC装置(日本分光・PU-980)",
+      "mode": "manual",
+      "family": "hplc"
+    },
+    {
+      "doc_id": "eqnet-4263",
+      "name": "タンデムペレトロン加速器 National Electronics Corporation(3SDH-2)",
+      "mode": "manual",
+      "family": "accelerator"
+    },
+    {
+      "doc_id": "eqnet-2521",
+      "name": "EB露光装置",
+      "mode": "manual",
+      "family": "eb_litho"
+    },
+    {
+      "doc_id": "eqnet-3936",
+      "name": "100ton竪型電動熱プレス",
+      "mode": "manual",
+      "family": "forming_press"
+    },
+    {
+      "doc_id": "eqnet-5302",
+      "name": "CO2インキュベーター サンヨー MCO-18AIC",
+      "mode": "source",
+      "source": "incubator"
+    },
+    {
+      "doc_id": "nw1xu7TwM2GpOpMJxVqv",
+      "name": "ミリ波ベクトルネットワークアナライザ(MVNA)",
+      "mode": "manual",
+      "family": "mvna"
+    },
+    {
+      "doc_id": "WNz0gjJXBq7zCGqQ2IdX",
+      "name": "単結晶自動X線構造解析装置 (リガク製) VariMax SaturnCCD724/α",
+      "mode": "source",
+      "source": "scxrd"
+    },
+    {
+      "doc_id": "nlnM3KGWfEIGx4KrlGx0",
+      "name": "小型走査電子顕微鏡/エネルギー分散型X線分析装置",
+      "mode": "source",
+      "source": "sem"
+    },
+    {
+      "doc_id": "eqnet-5031",
+      "name": "純水/超純水装置 (オルガノ Purelite-α/Puric-α)",
+      "mode": "manual",
+      "family": "purewater"
+    },
+    {
+      "doc_id": "eqnet-2265",
+      "name": "CO2インキュベーター",
+      "mode": "source",
+      "source": "incubator"
+    },
+    {
+      "doc_id": "lLteoxmSah83XyZzsKSH",
+      "name": "TIG溶接機",
+      "mode": "manual",
+      "family": "tig"
+    },
+    {
+      "doc_id": "vWmrR3Tfhsl0Bj0hpWxz",
+      "name": "電界放射型走査電子顕微鏡",
+      "mode": "source",
+      "source": "sem"
+    },
+    {
+      "doc_id": "eqnet-4625",
+      "name": "Q150RES スパッタコーター",
+      "mode": "template",
+      "template": "magnetron_sputter"
+    },
+    {
+      "doc_id": "f1PjqWDFN3xL0p3gMvWj",
+      "name": "高分解能核磁気共鳴装置（400 MHz NMR）",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "eqnet-2899",
+      "name": "300MHz 核磁気共鳴装置(JEOL ECZ-300 固体専用)",
+      "mode": "source",
+      "source": "nmr_solid"
+    },
+    {
+      "doc_id": "yIhaMICoeEyPIBbUvZjt",
+      "name": "核磁気共鳴装置・電子スピン共鳴装置 (AVANCEⅢ500)",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "nfZgZt58hMhCPV8mrDAx",
+      "name": "核磁気共鳴装置（NMR）",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "YAMANASHI-SENTEC-SE800",
+      "name": "分光エリプソメーター(Sentec)",
+      "mode": "manual",
+      "family": "ellipsometer"
+    },
+    {
+      "doc_id": "eqnet-3408",
+      "name": "XバンドパルスESR装置(Bruker社製E380, G207A室)",
+      "mode": "manual",
+      "family": "esr"
+    },
+    {
+      "doc_id": "SkToWN5LS3Wc7epms4hK",
+      "name": "原子吸光分析装置（固体）（AAS）",
+      "mode": "manual",
+      "family": "aas"
+    },
+    {
+      "doc_id": "KANAZAWA-7",
+      "name": "核磁気共鳴装置(ECS-400) (400 MHz)",
+      "mode": "source",
+      "source": "nmr_solution"
+    },
+    {
+      "doc_id": "q5h2D8ajmQTVwCpzbK2u",
+      "name": "原子間力顕微鏡装置(AFM)",
+      "mode": "source",
+      "source": "afm"
+    }
+  ],
+  "notes": "cycle0011 manual/source mixed map"
+}

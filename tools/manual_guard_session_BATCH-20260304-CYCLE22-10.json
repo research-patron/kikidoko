@@ -1,0 +1,223 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE22-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T01:46:40.618236+00:00",
+  "updated_at": "2026-03-04T01:56:40.848766+00:00",
+  "closed_at": "2026-03-04T01:56:40.848766+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle22_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE22-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "d0519bdffa787e789de432bff9dd1e3b4b7f23259f5a6f3ac939e0bfea5c46fe",
+    "queue_sha256_at_start": "92f892e9080efe463fadb7fdbf5aa64a04264d46c7277366af1b9ad9a3a2f0b1",
+    "queue_row_keys_sha256": "d4739ed5721e6e5b14df9134dcb76007f73d0988a1be639a7d33069b1bbe1f27"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "1aAqQrCCVXNq3Jf09gK3::1aAqQrCCVXNq3Jf09gK3",
+      "YOyGKvBvvqYAzXGWjO8R::YOyGKvBvvqYAzXGWjO8R",
+      "jbyanFAconRcEQs5BUum::jbyanFAconRcEQs5BUum",
+      "i899HgeDZoCECFD20YU0::i899HgeDZoCECFD20YU0",
+      "Qn6wDxn7B3ZvuVfAOxxU::Qn6wDxn7B3ZvuVfAOxxU",
+      "UMgsp6IXfinCuohovWZA::UMgsp6IXfinCuohovWZA",
+      "9P6tRQHSQyboPBuxePzz::9P6tRQHSQyboPBuxePzz",
+      "c6NARmD1NCVOnFzeHmQX::c6NARmD1NCVOnFzeHmQX",
+      "fwdHj6VfJAJUbssH0965::fwdHj6VfJAJUbssH0965",
+      "RQNge6kTz1x0Kz7x8Uro::RQNge6kTz1x0Kz7x8Uro"
+    ],
+    "target_rows": [
+      {
+        "row_key": "1aAqQrCCVXNq3Jf09gK3::1aAqQrCCVXNq3Jf09gK3",
+        "doc_id": "1aAqQrCCVXNq3Jf09gK3",
+        "equipment_id": "1aAqQrCCVXNq3Jf09gK3",
+        "name": "超低温フリーザー_04 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "YOyGKvBvvqYAzXGWjO8R::YOyGKvBvvqYAzXGWjO8R",
+        "doc_id": "YOyGKvBvvqYAzXGWjO8R",
+        "equipment_id": "YOyGKvBvvqYAzXGWjO8R",
+        "name": "旭町ラボ オープンラボスペース 202実験室(C)-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "jbyanFAconRcEQs5BUum::jbyanFAconRcEQs5BUum",
+        "doc_id": "jbyanFAconRcEQs5BUum",
+        "equipment_id": "jbyanFAconRcEQs5BUum",
+        "name": "旭町ラボ オープンラボスペース 202実験室(C)-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "i899HgeDZoCECFD20YU0::i899HgeDZoCECFD20YU0",
+        "doc_id": "i899HgeDZoCECFD20YU0",
+        "equipment_id": "i899HgeDZoCECFD20YU0",
+        "name": "クリーンブース１",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Qn6wDxn7B3ZvuVfAOxxU::Qn6wDxn7B3ZvuVfAOxxU",
+        "doc_id": "Qn6wDxn7B3ZvuVfAOxxU",
+        "equipment_id": "Qn6wDxn7B3ZvuVfAOxxU",
+        "name": "クリーンベンチ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "UMgsp6IXfinCuohovWZA::UMgsp6IXfinCuohovWZA",
+        "doc_id": "UMgsp6IXfinCuohovWZA",
+        "equipment_id": "UMgsp6IXfinCuohovWZA",
+        "name": "コバルト60ガンマ線照射装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "9P6tRQHSQyboPBuxePzz::9P6tRQHSQyboPBuxePzz",
+        "doc_id": "9P6tRQHSQyboPBuxePzz",
+        "equipment_id": "9P6tRQHSQyboPBuxePzz",
+        "name": "ドラフト（2台 酸用・有機用）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "c6NARmD1NCVOnFzeHmQX::c6NARmD1NCVOnFzeHmQX",
+        "doc_id": "c6NARmD1NCVOnFzeHmQX",
+        "equipment_id": "c6NARmD1NCVOnFzeHmQX",
+        "name": "ドラフト（2台）",
+        "papers_count": 0
+      },
+      {
+        "row_key": "fwdHj6VfJAJUbssH0965::fwdHj6VfJAJUbssH0965",
+        "doc_id": "fwdHj6VfJAJUbssH0965",
+        "equipment_id": "fwdHj6VfJAJUbssH0965",
+        "name": "ドラフトチャンバーRFX-183SZ-Y",
+        "papers_count": 0
+      },
+      {
+        "row_key": "RQNge6kTz1x0Kz7x8Uro::RQNge6kTz1x0Kz7x8Uro",
+        "doc_id": "RQNge6kTz1x0Kz7x8Uro",
+        "equipment_id": "RQNge6kTz1x0Kz7x8Uro",
+        "name": "ドラフトチャンバー",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 11,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T01:46:40.618236+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T01:46:50.131453+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:51:48.253097+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:51:51.100143+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:51:53.854508+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:51:56.615791+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:51:59.357147+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:52:02.113210+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:52:04.852344+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:52:07.572166+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:52:10.274505+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:52:12.990880+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:56:40.848766+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 11,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-4175/10.4185/rlcs-2027-2613",
+    "paper_space_hash": "#/paper/eqnet-4175/10.4185/rlcs-2027-2613",
+    "beginner_enter_hash": "#/beginner/eqnet-4175",
+    "beginner_space_hash": "#/beginner/eqnet-4175"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "X線位相スキャナ",
+      "summary_len": 197,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4175/10.4185/rlcs-2027-2613",
+      "beginner_hash": "#/beginner/eqnet-4175",
+      "paper_link_href": "https://doi.org/10.4185/rlcs-2027-2613",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "顕微赤外分光光度計(日本分光 FT/IR-6600)",
+      "summary_len": 214,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-409/10.31127/tuje.1804146",
+      "beginner_hash": "#/beginner/eqnet-409",
+      "paper_link_href": "https://doi.org/10.31127/tuje.1804146",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "共焦点蛍光顕微鏡(OLYMPUS社製 FLUOVIEW(FV1000-D)",
+      "summary_len": 223,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3362/10.1186/s12951-025-03891-0",
+      "beginner_hash": "#/beginner/eqnet-3362",
+      "paper_link_href": "https://doi.org/10.1186/s12951-025-03891-0",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "イオンクロマトグラフ(東亜ディーケーケー・IA-300)",
+      "summary_len": 207,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3566/10.1038/s41467-025-67641-4",
+      "beginner_hash": "#/beginner/eqnet-3566",
+      "paper_link_href": "https://doi.org/10.1038/s41467-025-67641-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "恒温振とう培養機(タイテック株式会社 BR-300LF)(1)",
+      "summary_len": 179,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4962/10.1186/s12870-025-07934-4",
+      "beginner_hash": "#/beginner/eqnet-4962",
+      "paper_link_href": "https://doi.org/10.1186/s12870-025-07934-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "液体シンチレーションカウンター(パーキンエルマー社(現・Revvity社)Tri-Carb 3110TR)",
+      "summary_len": 215,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4931/10.1016/j.jogoh.2025.103081",
+      "beginner_hash": "#/beginner/eqnet-4931",
+      "paper_link_href": "https://www.sciencedirect.com/science/article/pii/S2468784725001783",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "ナノイオンダイナミクス AV600 BURUKER BIOSPIN(AVANCEIII600)",
+      "summary_len": 248,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4711/10.1038/s42004-025-01839-x",
+      "beginner_hash": "#/beginner/eqnet-4711",
+      "paper_link_href": "https://doi.org/10.1038/s42004-025-01839-x",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "(工)ICP発光分析装置(SPS 3000)",
+      "summary_len": 191,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1005/10.31643/2027/6445.07",
+      "beginner_hash": "#/beginner/eqnet-1005",
+      "paper_link_href": "https://doi.org/10.31643/2027/6445.07",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "(工)容量法・電量法滴定方式カールフィッシャー水分計(カールフィッシャー・MKA-610-TT)",
+      "summary_len": 222,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2382/10.1186/s12886-025-04489-8",
+      "beginner_hash": "#/beginner/eqnet-2382",
+      "paper_link_href": "https://doi.org/10.1186/s12886-025-04489-8",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "in vivo 蛍光イメージングシステム(Xenogen・SPECTRUM-FS-TKKD)",
+      "summary_len": 225,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2624/10.4185/rlcs-2027-2613",
+      "beginner_hash": "#/beginner/eqnet-2624",
+      "paper_link_href": "https://doi.org/10.4185/rlcs-2027-2613",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

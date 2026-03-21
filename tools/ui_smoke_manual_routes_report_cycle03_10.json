@@ -1,0 +1,148 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/K7qIIZW4s9PipEpIpOiE/10.1038%2Fs41598-019-40050-4",
+    "paper_space_hash": "#/paper/K7qIIZW4s9PipEpIpOiE/10.1038%2Fs41598-019-40050-4",
+    "beginner_enter_hash": "#/beginner/K7qIIZW4s9PipEpIpOiE",
+    "beginner_space_hash": "#/beginner/K7qIIZW4s9PipEpIpOiE"
+  },
+  "desktop_cases": [
+    {
+      "row_name": "12\"Si 深掘ドライエッチング装置",
+      "summary_len": 220,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/PQi0mxd038GwG1W6u574/10.31643%2F2027%2F6445.12",
+      "beginner_hash": "#/beginner/PQi0mxd038GwG1W6u574",
+      "paper_link_href": "https://doi.org/10.31643/2027/6445.12",
+      "case_no": 1
+    },
+    {
+      "row_name": "12\"ウェハ常温接合装置",
+      "summary_len": 125,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/K7qIIZW4s9PipEpIpOiE/10.1038%2Fs41598-019-40050-4",
+      "beginner_hash": "#/beginner/K7qIIZW4s9PipEpIpOiE",
+      "paper_link_href": "https://doi.org/10.1038/s41598-019-40050-4",
+      "case_no": 2
+    },
+    {
+      "row_name": "137Csガンマ線照射装置 簡易型Cs照射装置",
+      "summary_len": 136,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/gxvyeJTxK8jiiCETnakn/10.1186%2Fs12872-025-05399-9",
+      "beginner_hash": "#/beginner/gxvyeJTxK8jiiCETnakn",
+      "paper_link_href": "https://doi.org/10.1186/s12872-025-05399-9",
+      "case_no": 3
+    },
+    {
+      "row_name": "14T 動物用MRI装置 横置き14T 動物用MRI装置",
+      "summary_len": 141,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/RDHJ6rPC6RGSg5ICbG1L/10.1186%2Fs12880-025-02112-2",
+      "beginner_hash": "#/beginner/RDHJ6rPC6RGSg5ICbG1L",
+      "paper_link_href": "https://doi.org/10.1186/s12880-025-02112-2",
+      "case_no": 4
+    },
+    {
+      "row_name": "1500t鍛造シミュレータ",
+      "summary_len": 126,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/cCHwRPZSem87WkeKzIfl/10.20344%2Famp.17584",
+      "beginner_hash": "#/beginner/cCHwRPZSem87WkeKzIfl",
+      "paper_link_href": "https://doi.org/10.20344/amp.17584",
+      "case_no": 5
+    },
+    {
+      "row_name": "15面マルチディスプレイAVシステム PN-V701×15 (PC: BOXX APEXX W4/NVIDIA Quadro RTX4000)",
+      "summary_len": 184,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/NwkHQEFywrHQrQuWv5Bp/10.1038%2Fs41746-025-02187-9",
+      "beginner_hash": "#/beginner/NwkHQEFywrHQrQuWv5Bp",
+      "paper_link_href": "https://doi.org/10.1038/s41746-025-02187-9",
+      "case_no": 6
+    },
+    {
+      "row_name": "1852138JA S1000 WITH 384WELL",
+      "summary_len": 141,
+      "sample_count": 1,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/DgVXXYqm3xzRF5sqJN1i/10.1007%2Fs00256-025-05028-8",
+      "beginner_hash": "#/beginner/DgVXXYqm3xzRF5sqJN1i",
+      "paper_link_href": "https://doi.org/10.1007/s00256-025-05028-8",
+      "case_no": 7
+    },
+    {
+      "row_name": "18F-FDG用自動分注装置(住友重機械工業(株)製 D200)",
+      "summary_len": 145,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1670/10.1186%2Fs40644-025-00974-x",
+      "beginner_hash": "#/beginner/eqnet-1670",
+      "paper_link_href": "https://doi.org/10.1186/s40644-025-00974-x",
+      "case_no": 8
+    },
+    {
+      "row_name": "18T汎用超伝導マグネット装置",
+      "summary_len": 128,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/veFXlRqduj6kWRZ36wSe/10.1051%2Fe3sconf%2F202561701023",
+      "beginner_hash": "#/beginner/veFXlRqduj6kWRZ36wSe",
+      "paper_link_href": "https://doi.org/10.1051/e3sconf/202561701023",
+      "case_no": 9
+    },
+    {
+      "row_name": "18ton小型スウェージングマシーン",
+      "summary_len": 131,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/GeS0IMrUMDiCgyhBibUc/10.2118%2F191010-ms",
+      "beginner_hash": "#/beginner/GeS0IMrUMDiCgyhBibUc",
+      "paper_link_href": "https://doi.org/10.2118/191010-ms",
+      "case_no": 10
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

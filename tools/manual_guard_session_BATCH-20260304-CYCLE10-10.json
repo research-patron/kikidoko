@@ -1,0 +1,151 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE10-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T16:58:51.463454+00:00",
+  "updated_at": "2026-03-03T17:14:37.776596+00:00",
+  "closed_at": "2026-03-03T17:14:37.776596+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle10_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE10-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "7736996014d3ef57cfc3927e05cbd8ace4175757659615b12c99c407da2f6a09",
+    "queue_sha256_at_start": "7534eaa355a885b5ce68aad64d1a9c3800f9e2eefd775fe2b42f9846141329f2",
+    "queue_row_keys_sha256": "bbb1b8084ab20ed09c2c69612867f614931b4f5bfa3f0010ce085c1e272d8c88"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "UYcKQgTkCKJFyx6V7ulL::UYcKQgTkCKJFyx6V7ulL",
+      "4SxXNAVyBzdJaNtTtfXn::4SxXNAVyBzdJaNtTtfXn",
+      "AKe01kSAVYjDCOFi2AG0::AKe01kSAVYjDCOFi2AG0",
+      "1HM0TVXyYopXAmOIK2di::1HM0TVXyYopXAmOIK2di",
+      "cEzc1ip1uyktZe0hSDEh::KOCHI-1b3d9523da",
+      "qSF3ReBHemepOK6GudAj::KOCHI-8cfcd50ada",
+      "0lcLwMuStZ676K1Mzp9p::KUMAMOTO-list4f-07",
+      "0pBWvk4yD9M6MGBtHvw4::KUMAMOTO-list4f-06",
+      "4Z63GGs2VVI2vybnvK5R::KUMAMOTO-list5f-01",
+      "GiO2ROwrnUpAVZiESKKi::KUMAMOTO-list5f-05"
+    ],
+    "target_rows": [
+      {
+        "row_key": "UYcKQgTkCKJFyx6V7ulL::UYcKQgTkCKJFyx6V7ulL",
+        "doc_id": "UYcKQgTkCKJFyx6V7ulL",
+        "equipment_id": "UYcKQgTkCKJFyx6V7ulL",
+        "name": "UV-Vis Spectrophotometer",
+        "papers_count": 2
+      },
+      {
+        "row_key": "4SxXNAVyBzdJaNtTtfXn::4SxXNAVyBzdJaNtTtfXn",
+        "doc_id": "4SxXNAVyBzdJaNtTtfXn",
+        "equipment_id": "4SxXNAVyBzdJaNtTtfXn",
+        "name": "VP-DSC",
+        "papers_count": 2
+      },
+      {
+        "row_key": "AKe01kSAVYjDCOFi2AG0::AKe01kSAVYjDCOFi2AG0",
+        "doc_id": "AKe01kSAVYjDCOFi2AG0",
+        "equipment_id": "AKe01kSAVYjDCOFi2AG0",
+        "name": "ﾏｲｸﾛﾌﾟﾚｰﾄｼﾝﾁﾚｰｼｮﾝ・ﾙﾐﾈｯｾﾝｽｶｳﾝﾀｰ－型式：TopCount NXT",
+        "papers_count": 2
+      },
+      {
+        "row_key": "1HM0TVXyYopXAmOIK2di::1HM0TVXyYopXAmOIK2di",
+        "doc_id": "1HM0TVXyYopXAmOIK2di",
+        "equipment_id": "1HM0TVXyYopXAmOIK2di",
+        "name": "液体ｼﾝﾁﾚｰｼｮﾝｶｳﾝﾀｰ－型式：AccuFLEX LSC-8000",
+        "papers_count": 1
+      },
+      {
+        "row_key": "cEzc1ip1uyktZe0hSDEh::KOCHI-1b3d9523da",
+        "doc_id": "cEzc1ip1uyktZe0hSDEh",
+        "equipment_id": "KOCHI-1b3d9523da",
+        "name": "イメージングアナライザー",
+        "papers_count": 1
+      },
+      {
+        "row_key": "qSF3ReBHemepOK6GudAj::KOCHI-8cfcd50ada",
+        "doc_id": "qSF3ReBHemepOK6GudAj",
+        "equipment_id": "KOCHI-8cfcd50ada",
+        "name": "β線測定装置",
+        "papers_count": 1
+      },
+      {
+        "row_key": "0lcLwMuStZ676K1Mzp9p::KUMAMOTO-list4f-07",
+        "doc_id": "0lcLwMuStZ676K1Mzp9p",
+        "equipment_id": "KUMAMOTO-list4f-07",
+        "name": "凍結乾燥装置 日本電子株式会社 JFD-300",
+        "papers_count": 2
+      },
+      {
+        "row_key": "0pBWvk4yD9M6MGBtHvw4::KUMAMOTO-list4f-06",
+        "doc_id": "0pBWvk4yD9M6MGBtHvw4",
+        "equipment_id": "KUMAMOTO-list4f-06",
+        "name": "走査型電子顕微鏡 日本電子株式会社 JSM-6390LV",
+        "papers_count": 2
+      },
+      {
+        "row_key": "4Z63GGs2VVI2vybnvK5R::KUMAMOTO-list5f-01",
+        "doc_id": "4Z63GGs2VVI2vybnvK5R",
+        "equipment_id": "KUMAMOTO-list5f-01",
+        "name": "ULSIバーチャルファクトリー",
+        "papers_count": 1
+      },
+      {
+        "row_key": "GiO2ROwrnUpAVZiESKKi::KUMAMOTO-list5f-05",
+        "doc_id": "GiO2ROwrnUpAVZiESKKi",
+        "equipment_id": "KUMAMOTO-list5f-05",
+        "name": "レーザー共焦点顕微鏡",
+        "papers_count": 1
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 2,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T16:58:51.463454+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T16:58:51.552618+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T17:10:58.316526+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T17:14:37.776596+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 2,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

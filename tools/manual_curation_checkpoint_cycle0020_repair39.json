@@ -1,0 +1,186 @@
+{
+  "updated_at": "2026-03-12T09:48:05.483069+00:00",
+  "defaults_added": 0,
+  "processed_rows_this_run": 9,
+  "applied_rows_this_run": 0,
+  "needs_manual_fix_this_run": 9,
+  "done": 30,
+  "remaining": 9,
+  "batch_size": 10,
+  "process_all": false,
+  "reviewer_default": "codex-manual",
+  "enforce_beginner_min_chars": 2000,
+  "enforce_beginner_max_chars": 3000,
+  "char_count_mode": "non_whitespace",
+  "forbid_internal_id": true,
+  "forbid_placeholder_doi": true,
+  "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+  "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair39.jsonl",
+  "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json",
+  "guard_verify": {
+    "status": "PASS",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json",
+    "batch_id": "BATCH-20260312-CYCLE0020-REPAIR39",
+    "reviewer_expected": "codex-manual",
+    "issues": [],
+    "details": {
+      "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+      "queue_sha256_current": "83aa69283471bea5798e7ee4efaef10c9a2dddba25607a8c705adb155ba7a3aa",
+      "snapshot_sha256_current": "22066cf478d4a71a7d814b6a5b53a7ccf6c45358d63c9695a72ddd016f4cd6a4",
+      "queue_rows_current": 9,
+      "queue_rows_target": 39
+    },
+    "verified_at": "2026-03-12T09:47:48.036047+00:00"
+  },
+  "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+  "post_audit_step2_same_ratio_threshold": 0.05,
+  "post_audit_pitfall2_same_ratio_threshold": 0.05,
+  "post_audit_min_reviewed_at_unique": 90,
+  "post_audit_similarity_threshold": 0.92,
+  "post_audit_status": "FAIL",
+  "post_audit": {
+    "status": "FAIL",
+    "generated_at": "2026-03-12T09:48:05.429036+00:00",
+    "batch_id": "BATCH-20260312-CYCLE0020-REPAIR39",
+    "reviewer_expected": "codex-manual",
+    "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair39.jsonl",
+    "checkpoint_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_repair39.json",
+    "session_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json",
+    "inspected_count": 39,
+    "target_count": 39,
+    "metrics": {
+      "summary_dup_rate": 0.0,
+      "principle_dup_rate": 0.0,
+      "step1_dup_rate": 0.0,
+      "pitfall1_dup_rate": 0.0,
+      "step2_same_ratio": 0.07692307692307693,
+      "pitfall2_same_ratio": 0.07692307692307693,
+      "reviewed_at_unique_count": 39,
+      "forbidden_pattern_hits": 0,
+      "internal_id_reference_hits": 0,
+      "placeholder_doi_hits": 0,
+      "body_contains_doi_hits": 0,
+      "auto_template_marker_hits": 0,
+      "beginner_char_min": 2124,
+      "beginner_char_max": 2947,
+      "beginner_char_avg": 2648.6153846153848,
+      "guide_full_dup_rate": 0.0,
+      "guide_high_similarity_pairs": 10,
+      "step2_same_ratio_threshold": 0.05,
+      "pitfall2_same_ratio_threshold": 0.05,
+      "min_reviewed_at_unique": 90
+    },
+    "threshold_failures": [
+      "step2_same_ratio_gt_0_05",
+      "pitfall2_same_ratio_gt_0_05",
+      "reviewed_at_unique_lt_90",
+      "guide_high_similarity_detected"
+    ],
+    "offending_doc_ids": [],
+    "issue_counts": {
+      "step2_same_ratio_gt_0_05": 1,
+      "pitfall2_same_ratio_gt_0_05": 1,
+      "reviewed_at_unique_lt_90": 1,
+      "guide_high_similarity_detected": 1
+    },
+    "issues": [],
+    "near_duplicate_pairs": [
+      {
+        "i": 9,
+        "j": 10,
+        "ratio": 0.9349648005363728
+      },
+      {
+        "i": 9,
+        "j": 11,
+        "ratio": 0.920316101415871
+      },
+      {
+        "i": 10,
+        "j": 11,
+        "ratio": 0.9680993955674949
+      },
+      {
+        "i": 18,
+        "j": 19,
+        "ratio": 0.9224833391792353
+      },
+      {
+        "i": 22,
+        "j": 23,
+        "ratio": 0.9857169356334632
+      },
+      {
+        "i": 26,
+        "j": 27,
+        "ratio": 0.9259927797833934
+      },
+      {
+        "i": 27,
+        "j": 28,
+        "ratio": 0.9421344421344421
+      },
+      {
+        "i": 29,
+        "j": 30,
+        "ratio": 0.9220216606498195
+      },
+      {
+        "i": 35,
+        "j": 36,
+        "ratio": 0.9207601290785228
+      },
+      {
+        "i": 37,
+        "j": 38,
+        "ratio": 0.9812925170068028
+      }
+    ],
+    "checkpoint_snapshot": {
+      "updated_at": "2026-03-12T09:47:52.240190+00:00",
+      "defaults_added": 0,
+      "processed_rows_this_run": 9,
+      "applied_rows_this_run": 9,
+      "needs_manual_fix_this_run": 0,
+      "done": 39,
+      "remaining": 0,
+      "batch_size": 10,
+      "process_all": false,
+      "reviewer_default": "codex-manual",
+      "enforce_beginner_min_chars": 2000,
+      "enforce_beginner_max_chars": 3000,
+      "char_count_mode": "non_whitespace",
+      "forbid_internal_id": true,
+      "forbid_placeholder_doi": true,
+      "timing_log_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl",
+      "enforce_min_elapsed_sec": 0,
+      "snapshot_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+      "queue_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair39.jsonl",
+      "attestation_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json",
+      "guard_verify": {
+        "status": "PASS",
+        "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json",
+        "batch_id": "BATCH-20260312-CYCLE0020-REPAIR39",
+        "reviewer_expected": "codex-manual",
+        "issues": [],
+        "details": {
+          "agents_sha256_current": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+          "queue_sha256_current": "83aa69283471bea5798e7ee4efaef10c9a2dddba25607a8c705adb155ba7a3aa",
+          "snapshot_sha256_current": "22066cf478d4a71a7d814b6a5b53a7ccf6c45358d63c9695a72ddd016f4cd6a4",
+          "queue_rows_current": 9,
+          "queue_rows_target": 39
+        },
+        "verified_at": "2026-03-12T09:47:48.036047+00:00"
+      },
+      "post_audit_report_path": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json",
+      "post_audit_step2_same_ratio_threshold": 0.05,
+      "post_audit_pitfall2_same_ratio_threshold": 0.05,
+      "post_audit_min_reviewed_at_unique": 90,
+      "post_audit_similarity_threshold": 0.92,
+      "post_audit_status": "PENDING_FINAL_BATCH"
+    }
+  },
+  "post_audit_log": "{\n  \"status\": \"FAIL\",\n  \"generated_at\": \"2026-03-12T09:48:05.429036+00:00\",\n  \"batch_id\": \"BATCH-20260312-CYCLE0020-REPAIR39\",\n  \"reviewer_expected\": \"codex-manual\",\n  \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n  \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair39.jsonl\",\n  \"checkpoint_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0020_repair39.json\",\n  \"session_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json\",\n  \"inspected_count\": 39,\n  \"target_count\": 39,\n  \"metrics\": {\n    \"summary_dup_rate\": 0.0,\n    \"principle_dup_rate\": 0.0,\n    \"step1_dup_rate\": 0.0,\n    \"pitfall1_dup_rate\": 0.0,\n    \"step2_same_ratio\": 0.07692307692307693,\n    \"pitfall2_same_ratio\": 0.07692307692307693,\n    \"reviewed_at_unique_count\": 39,\n    \"forbidden_pattern_hits\": 0,\n    \"internal_id_reference_hits\": 0,\n    \"placeholder_doi_hits\": 0,\n    \"body_contains_doi_hits\": 0,\n    \"auto_template_marker_hits\": 0,\n    \"beginner_char_min\": 2124,\n    \"beginner_char_max\": 2947,\n    \"beginner_char_avg\": 2648.6153846153848,\n    \"guide_full_dup_rate\": 0.0,\n    \"guide_high_similarity_pairs\": 10,\n    \"step2_same_ratio_threshold\": 0.05,\n    \"pitfall2_same_ratio_threshold\": 0.05,\n    \"min_reviewed_at_unique\": 90\n  },\n  \"threshold_failures\": [\n    \"step2_same_ratio_gt_0_05\",\n    \"pitfall2_same_ratio_gt_0_05\",\n    \"reviewed_at_unique_lt_90\",\n    \"guide_high_similarity_detected\"\n  ],\n  \"offending_doc_ids\": [],\n  \"issue_counts\": {\n    \"step2_same_ratio_gt_0_05\": 1,\n    \"pitfall2_same_ratio_gt_0_05\": 1,\n    \"reviewed_at_unique_lt_90\": 1,\n    \"guide_high_similarity_detected\": 1\n  },\n  \"issues\": [],\n  \"near_duplicate_pairs\": [\n    {\n      \"i\": 9,\n      \"j\": 10,\n      \"ratio\": 0.9349648005363728\n    },\n    {\n      \"i\": 9,\n      \"j\": 11,\n      \"ratio\": 0.920316101415871\n    },\n    {\n      \"i\": 10,\n      \"j\": 11,\n      \"ratio\": 0.9680993955674949\n    },\n    {\n      \"i\": 18,\n      \"j\": 19,\n      \"ratio\": 0.9224833391792353\n    },\n    {\n      \"i\": 22,\n      \"j\": 23,\n      \"ratio\": 0.9857169356334632\n    },\n    {\n      \"i\": 26,\n      \"j\": 27,\n      \"ratio\": 0.9259927797833934\n    },\n    {\n      \"i\": 27,\n      \"j\": 28,\n      \"ratio\": 0.9421344421344421\n    },\n    {\n      \"i\": 29,\n      \"j\": 30,\n      \"ratio\": 0.9220216606498195\n    },\n    {\n      \"i\": 35,\n      \"j\": 36,\n      \"ratio\": 0.9207601290785228\n    },\n    {\n      \"i\": 37,\n      \"j\": 38,\n      \"ratio\": 0.9812925170068028\n    }\n  ],\n  \"checkpoint_snapshot\": {\n    \"updated_at\": \"2026-03-12T09:47:52.240190+00:00\",\n    \"defaults_added\": 0,\n    \"processed_rows_this_run\": 9,\n    \"applied_rows_this_run\": 9,\n    \"needs_manual_fix_this_run\": 0,\n    \"done\": 39,\n    \"remaining\": 0,\n    \"batch_size\": 10,\n    \"process_all\": false,\n    \"reviewer_default\": \"codex-manual\",\n    \"enforce_beginner_min_chars\": 2000,\n    \"enforce_beginner_max_chars\": 3000,\n    \"char_count_mode\": \"non_whitespace\",\n    \"forbid_internal_id\": true,\n    \"forbid_placeholder_doi\": true,\n    \"timing_log_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_item_timing_log.jsonl\",\n    \"enforce_min_elapsed_sec\": 0,\n    \"snapshot_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz\",\n    \"queue_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0020_repair39.jsonl\",\n    \"attestation_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json\",\n    \"guard_verify\": {\n      \"status\": \"PASS\",\n      \"session\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260312-CYCLE0020-REPAIR39.json\",\n      \"batch_id\": \"BATCH-20260312-CYCLE0020-REPAIR39\",\n      \"reviewer_expected\": \"codex-manual\",\n      \"issues\": [],\n      \"details\": {\n        \"agents_sha256_current\": \"f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df\",\n        \"queue_sha256_current\": \"83aa69283471bea5798e7ee4efaef10c9a2dddba25607a8c705adb155ba7a3aa\",\n        \"snapshot_sha256_current\": \"22066cf478d4a71a7d814b6a5b53a7ccf6c45358d63c9695a72ddd016f4cd6a4\",\n        \"queue_rows_current\": 9,\n        \"queue_rows_target\": 39\n      },\n      \"verified_at\": \"2026-03-12T09:47:48.036047+00:00\"\n    },\n    \"post_audit_report_path\": \"/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report.json\",\n    \"post_audit_step2_same_ratio_threshold\": 0.05,\n    \"post_audit_pitfall2_same_ratio_threshold\": 0.05,\n    \"post_audit_min_reviewed_at_unique\": 90,\n    \"post_audit_similarity_threshold\": 0.92,\n    \"post_audit_status\": \"PENDING_FINAL_BATCH\"\n  }\n}",
+  "reverted_rows_this_run": 9
+}

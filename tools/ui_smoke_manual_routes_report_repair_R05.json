@@ -1,0 +1,138 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-3613/10.1371%2Fjournal.pone.0323968",
+    "paper_space_hash": "#/paper/eqnet-3613/10.1371%2Fjournal.pone.0323968",
+    "beginner_enter_hash": "#/beginner/eqnet-3613",
+    "beginner_space_hash": "#/beginner/eqnet-3613"
+  },
+  "desktop_cases": [
+    {
+      "row_name": "\"イオンミリング(IM4000)\"",
+      "summary_len": 154,
+      "sample_count": 3,
+      "field_count": 4,
+      "paper_count": 2,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3613/10.1371%2Fjournal.pone.0323968",
+      "beginner_hash": "#/beginner/eqnet-3613",
+      "paper_link_href": "https://doi.org/10.1371/journal.pone.0323968",
+      "case_no": 1
+    },
+    {
+      "row_name": "\"カーブトレーサー(CS-3200)\"",
+      "summary_len": 115,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3600/10.1057%2Fs41599-025-06421-3",
+      "beginner_hash": "#/beginner/eqnet-3600",
+      "paper_link_href": "https://doi.org/10.1057/s41599-025-06421-3",
+      "case_no": 2
+    },
+    {
+      "row_name": "\"スパッタ装置(E-200S)\"",
+      "summary_len": 116,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3597/10.1080%2F19490976.2025.2609461",
+      "beginner_hash": "#/beginner/eqnet-3597",
+      "paper_link_href": "https://doi.org/10.1080/19490976.2025.2609461",
+      "case_no": 3
+    },
+    {
+      "row_name": "\"デジタルマイクロスコープ(VHX-600)\"",
+      "summary_len": 209,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3614/10.1016%2Fj.biomaterials.2025.123765",
+      "beginner_hash": "#/beginner/eqnet-3614",
+      "paper_link_href": "https://www.sciencedirect.com/science/article/pii/S0142961225006842",
+      "case_no": 4
+    },
+    {
+      "row_name": "\"ロードロック式室付スパッタ装置(QAM-4C-SL)\"",
+      "summary_len": 205,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3596/10.1038%2Fs41467-025-67696-3",
+      "beginner_hash": "#/beginner/eqnet-3596",
+      "paper_link_href": "https://doi.org/10.1038/s41467-025-67696-3",
+      "case_no": 5
+    },
+    {
+      "row_name": "\"万能型ボンドテスター(ESR-4000)\"",
+      "summary_len": 111,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3601/10.1038%2Fs41598-025-29949-5",
+      "beginner_hash": "#/beginner/eqnet-3601",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-29949-5",
+      "case_no": 6
+    },
+    {
+      "row_name": "\"分光干渉レーザ変位計・高精度形状測定システム(KS-1100,SI-F01,SI-F01U)\"",
+      "summary_len": 144,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3575/10.1007%2Fs00253-025-13691-z",
+      "beginner_hash": "#/beginner/eqnet-3575",
+      "paper_link_href": "https://doi.org/10.1007/s00253-025-13691-z",
+      "case_no": 7
+    },
+    {
+      "row_name": "\"卓上型キセノンフラッシュアナライザー(LFA447)\"",
+      "summary_len": 127,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3584/10.1109%2Ficpadm49635.2021.9493996",
+      "beginner_hash": "#/beginner/eqnet-3584",
+      "paper_link_href": "https://doi.org/10.1109/icpadm49635.2021.9493996",
+      "case_no": 8
+    },
+    {
+      "row_name": "\"卓上形精密万能試験機(AGS X/10kN)\"",
+      "summary_len": 120,
+      "sample_count": 2,
+      "field_count": 4,
+      "paper_count": 1,
+      "badge": "手動審査済み",
+      "paper_hash": "#/paper/eqnet-3580/10.1186%2Fs12885-025-15323-1",
+      "beginner_hash": "#/beginner/eqnet-3580",
+      "paper_link_href": "https://doi.org/10.1186/s12885-025-15323-1",
+      "case_no": 9
+    },
+    {
+      "row_name": "\"小型環境試験機(SH241) \"",
+      "summary_len": 56,
+      "sample_count": 2,
+      "field_count": 1,
+      "paper_count": 1,
+      "badge": "暫定表示（自動補完）",
+      "paper_hash": "#/paper/eqnet-3605/10.1038%2Fnmeth.2080",
+      "beginner_hash": "#/beginner/eqnet-3605",
+      "paper_link_href": "https://doi.org/10.1038/nmeth.2080",
+      "case_no": 10
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

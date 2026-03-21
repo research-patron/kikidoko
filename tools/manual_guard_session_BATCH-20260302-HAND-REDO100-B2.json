@@ -1,0 +1,881 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260302-HAND-REDO100-B2",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-02T13:25:46.931886+00:00",
+  "updated_at": "2026-03-02T21:46:45.114590+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_rewrite_hand100_b2.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260302-HAND-REDO100-B2.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "1c54c422e5911aa6cb2f8dce91fbeed295b70a1c5c4508aa4b445673b7000722",
+    "queue_sha256_at_start": "2b952869348af0aa0b0e20ee6208271c17a1816a272fa4def7b98e7aa0d01dd1",
+    "queue_row_keys_sha256": "85735847a1b26df818322eee183d9a041316da431cbc8a543bbed3d3cbc8f161"
+  },
+  "queue": {
+    "target_count": 100,
+    "target_row_keys": [
+      "R5b0pxQNyUgJdKFBwK5n::R5b0pxQNyUgJdKFBwK5n",
+      "eDX9uS88nzDUo7DRFJox::eDX9uS88nzDUo7DRFJox",
+      "sjeeh9D6hgUrxujOXjKl::sjeeh9D6hgUrxujOXjKl",
+      "YpiYi5rGQqcX6ofJF4lt::YpiYi5rGQqcX6ofJF4lt",
+      "aL0L8jOJoNHKcJb5wRrW::aL0L8jOJoNHKcJb5wRrW",
+      "znbxD1h1tRk1CEbqpyFo::znbxD1h1tRk1CEbqpyFo",
+      "OC2X0czptgbbPUaWY00k::OC2X0czptgbbPUaWY00k",
+      "ubP9vgVGw0QLZb9Sr2Ko::ubP9vgVGw0QLZb9Sr2Ko",
+      "oNcfvHTFhIAfmMBGAXQv::oNcfvHTFhIAfmMBGAXQv",
+      "zvaqj7UssGxAUiEDTBel::zvaqj7UssGxAUiEDTBel",
+      "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+      "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+      "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+      "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+      "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+      "oCRETqgx0aduVoPDIQEH::oCRETqgx0aduVoPDIQEH",
+      "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+      "b5I26chFGmL7Qoj4C8hy::b5I26chFGmL7Qoj4C8hy",
+      "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+      "Uws7Nd0FITQFhBuZ6UX3::Uws7Nd0FITQFhBuZ6UX3",
+      "wi61TzbjV4NwlsUe3L1R::wi61TzbjV4NwlsUe3L1R",
+      "repVWVGli4uWJD2ZwH4R::repVWVGli4uWJD2ZwH4R",
+      "5X6ZriO6yzTLj79YxcNC::5X6ZriO6yzTLj79YxcNC",
+      "zGP5IrL6MQpptV9vtbL7::zGP5IrL6MQpptV9vtbL7",
+      "TOKUSHIMA-6::TOKUSHIMA-6",
+      "K7qIIZW4s9PipEpIpOiE::AIST-MEMS042",
+      "gxvyeJTxK8jiiCETnakn::UTOKYO-12",
+      "RDHJ6rPC6RGSg5ICbG1L::UTOKYO-108",
+      "cCHwRPZSem87WkeKzIfl::NIMS-257-NF0143",
+      "NwkHQEFywrHQrQuWv5Bp::UTOKYO-310",
+      "DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127",
+      "eqnet-1670::eqnet-1670",
+      "veFXlRqduj6kWRZ36wSe::NIMS-140-NF0195",
+      "GeS0IMrUMDiCgyhBibUc::NIMS-187-NF0135",
+      "YANjNIPCjNVwuVMuXv3L::TSUKUBA-319",
+      "eqnet-4123::eqnet-4123",
+      "JjAPdoA3qKERncC5JztO::NAIST-NR-203",
+      "Wqht8el3cLzCaEAPf3ri::UEC-184",
+      "3gygYTDWJdqXuMOB6BSt::UEC-193",
+      "6CkEqgiTIYOYniOomBvZ::6CkEqgiTIYOYniOomBvZ",
+      "7dRKsL6bWy4V3U1vsh3s::7dRKsL6bWy4V3U1vsh3s",
+      "MOEiCTAx2hPKtaApJWAL::MOEiCTAx2hPKtaApJWAL",
+      "e2uflAhjuaEHVpGQIeh3::HOKUDAI-AP-900839",
+      "tikonmNiKgvvbksE8dkv::HOKUDAI-AP-901113",
+      "OHw3NU718WahzMUDSf2h::AIST-MEMS109",
+      "kUkNMVBdKQbXAh0VRA2m::NIMS-262-NF0144",
+      "0lNnz4Bb98SntDjciG8d::OSAKA-297",
+      "lJMnDLAIDw3THDboh8oq::NIMS-6-NF0158",
+      "lrYnaIhNAev4M2rq2wuN::AIST-MEMS077",
+      "4rFlNSui7qs4YJ5JvEAY::HOKUDAI-AP-901683",
+      "Uy5mXiCI8FKenVJUNEtZ::HOKUDAI-AP-100350",
+      "gnRuHOoRbl2LNaE0UD96::TUAT-NMR-300",
+      "ZFgYN0hKPsQIonFk19kZ::OSAKA-347",
+      "sMUBxtsm2WW47TnS6Vhq::OSAKA-199",
+      "fnDFF5gZggk7M6cIIjuP::NIMS-183-NF0128",
+      "NskSbUoFNUCh2UAN5zFj::HOKUDAI-AP-100092",
+      "KMCgHnSgUhx3GkLMiwfn::HOKUDAI-AP-901801",
+      "otX6yKYsQlc2U3S97SK3::HOKUDAI-AP-902138",
+      "C6DUwmsTUNpywvAvEzZe::C6DUwmsTUNpywvAvEzZe",
+      "0SPJ41WAdBX1LsVxqKW7::SAGA-2368",
+      "sbIeozQzj7byGmx7Fjnp::HOKUDAI-AP-901973",
+      "OCvabyFyv6mEDWyzHe2v::HOKUDAI-AP-901371",
+      "v1gUy1dPMKKA1NNuS18X::HOKUDAI-AP-901952",
+      "Z6ZYrAnlAwAsbXdjasi8::Z6ZYrAnlAwAsbXdjasi8",
+      "4XheR15Myymx0LbKc4iT::KITAMI-c_043",
+      "Geo6vL0akPwurtYcmNtB::KITAMI-c_050",
+      "9mHA6wcY8V1ZmRrIzMcS::KITAMI-c_053",
+      "eqnet-3513::eqnet-3513",
+      "zbY4qgZK4bjNMYHGepyh::HOKUDAI-AP-902155",
+      "I2n30Ng9EYOUxlXc6YVh::HOKUDAI-AP-901920",
+      "lLja7HkKKqtRvFUj5wuZ::HOKUDAI-AP-902164",
+      "qFSo7q55jopLJkbFICo7::HOKUDAI-AP-901862",
+      "eqnet-3108::eqnet-3108",
+      "eqnet-3043::eqnet-3043",
+      "eqnet-3042::eqnet-3042",
+      "eqnet-3044::eqnet-3044",
+      "eqnet-4189::eqnet-4189",
+      "8r0MsQ2biGonBi20R14o::MIYAZAKI-1259",
+      "ZmWjWhOau35Curs2jiyS::YAMAGUCHI-core12",
+      "aEzhtOGBl9pesVnWk96N::SAGA-2485",
+      "1hPqNREwTJFLlKqDt6uv::1hPqNREwTJFLlKqDt6uv",
+      "OkLB99IsgTU5H2OcOZqV::OkLB99IsgTU5H2OcOZqV",
+      "0ETtIhtHkwEHGF8wNUbD::HOKUDAI-AP-900797",
+      "GMT7Yur37AUA0ZWyI77o::KYUSHU-OLS4000",
+      "ZvP4WWIxJfA2c7Dp1R23::YAMAGUCHI-etc61",
+      "eqnet-4834::eqnet-4834",
+      "eqnet-3100::eqnet-3100",
+      "dI6L4tVB3fbOBm41pFzj::SAGA-2496",
+      "PCDkksnUBegNyJeA8VZC::HOKUDAI-AP-902137",
+      "ikqjxKuD0EPgI7kXDKk2::ikqjxKuD0EPgI7kXDKk2",
+      "O1qrYgdPerCSjsA62Ixy::HOKUDAI-AP-901290",
+      "DWQcinYveoMNuhR7F3GD::DWQcinYveoMNuhR7F3GD",
+      "ZIsQrVvwrLUNPiDXblKn::ZIsQrVvwrLUNPiDXblKn",
+      "eJBnw4iecfbwIR31bA0C::eJBnw4iecfbwIR31bA0C",
+      "hBKd04alHXb8speJhvjR::hBKd04alHXb8speJhvjR",
+      "gF5dwkcwd2ina1Jk7dbu::HOKUDAI-AP-901408",
+      "eqnet-2037::eqnet-2037",
+      "qX9Vc5bFvyN5ryye1n1H::OKAYAMA-132",
+      "7xdbGiBo9cejdpbj5xCo::HOKUDAI-AP-901895",
+      "YKHE3wZtzUItU7kEnCO7::AIST-NPF107"
+    ],
+    "target_rows": [
+      {
+        "row_key": "R5b0pxQNyUgJdKFBwK5n::R5b0pxQNyUgJdKFBwK5n",
+        "doc_id": "R5b0pxQNyUgJdKFBwK5n",
+        "equipment_id": "R5b0pxQNyUgJdKFBwK5n",
+        "name": "NMR(400MHz)－型式：AVANCE 400",
+        "papers_count": 0
+      },
+      {
+        "row_key": "eDX9uS88nzDUo7DRFJox::eDX9uS88nzDUo7DRFJox",
+        "doc_id": "eDX9uS88nzDUo7DRFJox",
+        "equipment_id": "eDX9uS88nzDUo7DRFJox",
+        "name": "NMR(400MHz)－型式：AVANCE 400",
+        "papers_count": 2
+      },
+      {
+        "row_key": "sjeeh9D6hgUrxujOXjKl::sjeeh9D6hgUrxujOXjKl",
+        "doc_id": "sjeeh9D6hgUrxujOXjKl",
+        "equipment_id": "sjeeh9D6hgUrxujOXjKl",
+        "name": "NMR(500MHz)－型式：AVANCEⅢHD 500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "YpiYi5rGQqcX6ofJF4lt::YpiYi5rGQqcX6ofJF4lt",
+        "doc_id": "YpiYi5rGQqcX6ofJF4lt",
+        "equipment_id": "YpiYi5rGQqcX6ofJF4lt",
+        "name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+        "papers_count": 0
+      },
+      {
+        "row_key": "aL0L8jOJoNHKcJb5wRrW::aL0L8jOJoNHKcJb5wRrW",
+        "doc_id": "aL0L8jOJoNHKcJb5wRrW",
+        "equipment_id": "aL0L8jOJoNHKcJb5wRrW",
+        "name": "DNAシーケンサー －型式： Spectrum Compact CE System",
+        "papers_count": 3
+      },
+      {
+        "row_key": "znbxD1h1tRk1CEbqpyFo::znbxD1h1tRk1CEbqpyFo",
+        "doc_id": "znbxD1h1tRk1CEbqpyFo",
+        "equipment_id": "znbxD1h1tRk1CEbqpyFo",
+        "name": "サーマルサイクラー －型式： ProFlex PCRsystem",
+        "papers_count": 0
+      },
+      {
+        "row_key": "OC2X0czptgbbPUaWY00k::OC2X0czptgbbPUaWY00k",
+        "doc_id": "OC2X0czptgbbPUaWY00k",
+        "equipment_id": "OC2X0czptgbbPUaWY00k",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM700",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ubP9vgVGw0QLZb9Sr2Ko::ubP9vgVGw0QLZb9Sr2Ko",
+        "doc_id": "ubP9vgVGw0QLZb9Sr2Ko",
+        "equipment_id": "ubP9vgVGw0QLZb9Sr2Ko",
+        "name": "共焦点ﾚｰｻﾞｰｽｷｬﾝ顕微鏡－型式：LSM7DUO",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oNcfvHTFhIAfmMBGAXQv::oNcfvHTFhIAfmMBGAXQv",
+        "doc_id": "oNcfvHTFhIAfmMBGAXQv",
+        "equipment_id": "oNcfvHTFhIAfmMBGAXQv",
+        "name": "円二色性分散計（CD）－型式：J-820",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zvaqj7UssGxAUiEDTBel::zvaqj7UssGxAUiEDTBel",
+        "doc_id": "zvaqj7UssGxAUiEDTBel",
+        "equipment_id": "zvaqj7UssGxAUiEDTBel",
+        "name": "円二色性分散計（CD）－型式：J-820",
+        "papers_count": 1
+      },
+      {
+        "row_key": "VRY5cXiT090GLPf9fhAt::VRY5cXiT090GLPf9fhAt",
+        "doc_id": "VRY5cXiT090GLPf9fhAt",
+        "equipment_id": "VRY5cXiT090GLPf9fhAt",
+        "name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "sGOjYNGg9TZMgeAGmF2B::sGOjYNGg9TZMgeAGmF2B",
+        "doc_id": "sGOjYNGg9TZMgeAGmF2B",
+        "equipment_id": "sGOjYNGg9TZMgeAGmF2B",
+        "name": "化学発光イメージング装置 －型式： LuminoGraph EMⅠ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ifTzD5oXL358aBdBmbfo::ifTzD5oXL358aBdBmbfo",
+        "doc_id": "ifTzD5oXL358aBdBmbfo",
+        "equipment_id": "ifTzD5oXL358aBdBmbfo",
+        "name": "小型超遠心機 －型式： himac CS150GX",
+        "papers_count": 0
+      },
+      {
+        "row_key": "ZpEsD1VJ5uJdSfwLOx3z::ZpEsD1VJ5uJdSfwLOx3z",
+        "doc_id": "ZpEsD1VJ5uJdSfwLOx3z",
+        "equipment_id": "ZpEsD1VJ5uJdSfwLOx3z",
+        "name": "粒子径・分子量測定装置－型式：ZETASIZER Nano-S",
+        "papers_count": 0
+      },
+      {
+        "row_key": "acudKLs6rShQtvQwF6tA::acudKLs6rShQtvQwF6tA",
+        "doc_id": "acudKLs6rShQtvQwF6tA",
+        "equipment_id": "acudKLs6rShQtvQwF6tA",
+        "name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+        "papers_count": 0
+      },
+      {
+        "row_key": "oCRETqgx0aduVoPDIQEH::oCRETqgx0aduVoPDIQEH",
+        "doc_id": "oCRETqgx0aduVoPDIQEH",
+        "equipment_id": "oCRETqgx0aduVoPDIQEH",
+        "name": "紫外可視分光光度計－型式： BioSpectrometer kinetic",
+        "papers_count": 2
+      },
+      {
+        "row_key": "WA5NfqWUHxVa97Pgyojx::WA5NfqWUHxVa97Pgyojx",
+        "doc_id": "WA5NfqWUHxVa97Pgyojx",
+        "equipment_id": "WA5NfqWUHxVa97Pgyojx",
+        "name": "蛍光分光光度計(FL)－型式：F-2500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "b5I26chFGmL7Qoj4C8hy::b5I26chFGmL7Qoj4C8hy",
+        "doc_id": "b5I26chFGmL7Qoj4C8hy",
+        "equipment_id": "b5I26chFGmL7Qoj4C8hy",
+        "name": "蛍光分光光度計(FL)－型式：F-2500",
+        "papers_count": 2
+      },
+      {
+        "row_key": "9VRmb61YZlTBbAkqsd2X::9VRmb61YZlTBbAkqsd2X",
+        "doc_id": "9VRmb61YZlTBbAkqsd2X",
+        "equipment_id": "9VRmb61YZlTBbAkqsd2X",
+        "name": "超遠心機 －型式： himac CP100WX",
+        "papers_count": 0
+      },
+      {
+        "row_key": "Uws7Nd0FITQFhBuZ6UX3::Uws7Nd0FITQFhBuZ6UX3",
+        "doc_id": "Uws7Nd0FITQFhBuZ6UX3",
+        "equipment_id": "Uws7Nd0FITQFhBuZ6UX3",
+        "name": "超遠心機 －型式： himac CP100WX",
+        "papers_count": 1
+      },
+      {
+        "row_key": "wi61TzbjV4NwlsUe3L1R::wi61TzbjV4NwlsUe3L1R",
+        "doc_id": "wi61TzbjV4NwlsUe3L1R",
+        "equipment_id": "wi61TzbjV4NwlsUe3L1R",
+        "name": "ｽｷｬﾅｰﾀｲﾌﾟ画像解析装置(FLA)－型式：Typhoon FLA 7000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "repVWVGli4uWJD2ZwH4R::repVWVGli4uWJD2ZwH4R",
+        "doc_id": "repVWVGli4uWJD2ZwH4R",
+        "equipment_id": "repVWVGli4uWJD2ZwH4R",
+        "name": "ﾊﾞｲｵｲﾒｰｼﾞﾝｸﾞｱﾅﾗｲｻﾞｰ(BAS)－型式：BAS-2500",
+        "papers_count": 0
+      },
+      {
+        "row_key": "5X6ZriO6yzTLj79YxcNC::5X6ZriO6yzTLj79YxcNC",
+        "doc_id": "5X6ZriO6yzTLj79YxcNC",
+        "equipment_id": "5X6ZriO6yzTLj79YxcNC",
+        "name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "zGP5IrL6MQpptV9vtbL7::zGP5IrL6MQpptV9vtbL7",
+        "doc_id": "zGP5IrL6MQpptV9vtbL7",
+        "equipment_id": "zGP5IrL6MQpptV9vtbL7",
+        "name": "ﾏﾙﾁﾓｰﾄﾘｰﾀﾞｰ －型式： GloMax Discover System GM3000",
+        "papers_count": 0
+      },
+      {
+        "row_key": "TOKUSHIMA-6::TOKUSHIMA-6",
+        "doc_id": "TOKUSHIMA-6",
+        "equipment_id": "TOKUSHIMA-6",
+        "name": "3Dプリンタ",
+        "papers_count": 0
+      },
+      {
+        "row_key": "K7qIIZW4s9PipEpIpOiE::AIST-MEMS042",
+        "doc_id": "K7qIIZW4s9PipEpIpOiE",
+        "equipment_id": "AIST-MEMS042",
+        "name": "12\"ウェハ常温接合装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gxvyeJTxK8jiiCETnakn::UTOKYO-12",
+        "doc_id": "gxvyeJTxK8jiiCETnakn",
+        "equipment_id": "UTOKYO-12",
+        "name": "137Csガンマ線照射装置 簡易型Cs照射装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "RDHJ6rPC6RGSg5ICbG1L::UTOKYO-108",
+        "doc_id": "RDHJ6rPC6RGSg5ICbG1L",
+        "equipment_id": "UTOKYO-108",
+        "name": "14T 動物用MRI装置 横置き14T 動物用MRI装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "cCHwRPZSem87WkeKzIfl::NIMS-257-NF0143",
+        "doc_id": "cCHwRPZSem87WkeKzIfl",
+        "equipment_id": "NIMS-257-NF0143",
+        "name": "1500t鍛造シミュレータ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "NwkHQEFywrHQrQuWv5Bp::UTOKYO-310",
+        "doc_id": "NwkHQEFywrHQrQuWv5Bp",
+        "equipment_id": "UTOKYO-310",
+        "name": "15面マルチディスプレイAVシステム PN-V701×15 (PC: BOXX APEXX W4/NVIDIA Quadro RTX4000)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "DgVXXYqm3xzRF5sqJN1i::HOKUDAI-AP-902127",
+        "doc_id": "DgVXXYqm3xzRF5sqJN1i",
+        "equipment_id": "HOKUDAI-AP-902127",
+        "name": "1852138JA S1000 WITH 384WELL",
+        "papers_count": 1
+      },
+      {
+        "row_key": "eqnet-1670::eqnet-1670",
+        "doc_id": "eqnet-1670",
+        "equipment_id": "eqnet-1670",
+        "name": "18F-FDG用自動分注装置(住友重機械工業(株)製 D200)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "veFXlRqduj6kWRZ36wSe::NIMS-140-NF0195",
+        "doc_id": "veFXlRqduj6kWRZ36wSe",
+        "equipment_id": "NIMS-140-NF0195",
+        "name": "18T汎用超伝導マグネット装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "GeS0IMrUMDiCgyhBibUc::NIMS-187-NF0135",
+        "doc_id": "GeS0IMrUMDiCgyhBibUc",
+        "equipment_id": "NIMS-187-NF0135",
+        "name": "18ton小型スウェージングマシーン",
+        "papers_count": 2
+      },
+      {
+        "row_key": "YANjNIPCjNVwuVMuXv3L::TSUKUBA-319",
+        "doc_id": "YANjNIPCjNVwuVMuXv3L",
+        "equipment_id": "TSUKUBA-319",
+        "name": "1MVタンデトロン加速器",
+        "papers_count": 1
+      },
+      {
+        "row_key": "eqnet-4123::eqnet-4123",
+        "doc_id": "eqnet-4123",
+        "equipment_id": "eqnet-4123",
+        "name": "2000kN圧縮試験機 前川試験機製作所(ACA-200A-F1)",
+        "papers_count": 0
+      },
+      {
+        "row_key": "JjAPdoA3qKERncC5JztO::NAIST-NR-203",
+        "doc_id": "JjAPdoA3qKERncC5JztO",
+        "equipment_id": "NAIST-NR-203",
+        "name": "200kV透過電子顕微鏡 （200kV TEM）",
+        "papers_count": 1
+      },
+      {
+        "row_key": "Wqht8el3cLzCaEAPf3ri::UEC-184",
+        "doc_id": "Wqht8el3cLzCaEAPf3ri",
+        "equipment_id": "UEC-184",
+        "name": "200ｋV熱電子放出型透過型電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "3gygYTDWJdqXuMOB6BSt::UEC-193",
+        "doc_id": "3gygYTDWJdqXuMOB6BSt",
+        "equipment_id": "UEC-193",
+        "name": "200ｋV電界放出型透過型電子顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "6CkEqgiTIYOYniOomBvZ::6CkEqgiTIYOYniOomBvZ",
+        "doc_id": "6CkEqgiTIYOYniOomBvZ",
+        "equipment_id": "6CkEqgiTIYOYniOomBvZ",
+        "name": "20KN疲労試験機",
+        "papers_count": 0
+      },
+      {
+        "row_key": "7dRKsL6bWy4V3U1vsh3s::7dRKsL6bWy4V3U1vsh3s",
+        "doc_id": "7dRKsL6bWy4V3U1vsh3s",
+        "equipment_id": "7dRKsL6bWy4V3U1vsh3s",
+        "name": "2100バイオアナライザーDNA専用",
+        "papers_count": 2
+      },
+      {
+        "row_key": "MOEiCTAx2hPKtaApJWAL::MOEiCTAx2hPKtaApJWAL",
+        "doc_id": "MOEiCTAx2hPKtaApJWAL",
+        "equipment_id": "MOEiCTAx2hPKtaApJWAL",
+        "name": "2100バイオアナライザーRNA専用",
+        "papers_count": 2
+      },
+      {
+        "row_key": "e2uflAhjuaEHVpGQIeh3::HOKUDAI-AP-900839",
+        "doc_id": "e2uflAhjuaEHVpGQIeh3",
+        "equipment_id": "HOKUDAI-AP-900839",
+        "name": "2470 Wizard2 550サンプル 5検出器システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "tikonmNiKgvvbksE8dkv::HOKUDAI-AP-901113",
+        "doc_id": "tikonmNiKgvvbksE8dkv",
+        "equipment_id": "HOKUDAI-AP-901113",
+        "name": "2480Wizard2 システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "OHw3NU718WahzMUDSf2h::AIST-MEMS109",
+        "doc_id": "OHw3NU718WahzMUDSf2h",
+        "equipment_id": "AIST-MEMS109",
+        "name": "25MHｚ3次元レーザードップラー振動計",
+        "papers_count": 3
+      },
+      {
+        "row_key": "kUkNMVBdKQbXAh0VRA2m::NIMS-262-NF0144",
+        "doc_id": "kUkNMVBdKQbXAh0VRA2m",
+        "equipment_id": "NIMS-262-NF0144",
+        "name": "25t加工熱処理シミュレータ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "0lNnz4Bb98SntDjciG8d::OSAKA-297",
+        "doc_id": "0lNnz4Bb98SntDjciG8d",
+        "equipment_id": "OSAKA-297",
+        "name": "2次元迅速測定X線回折装置(湾曲IP) (Micro Area X-Ray Diffractometer)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "lJMnDLAIDw3THDboh8oq::NIMS-6-NF0158",
+        "doc_id": "lJMnDLAIDw3THDboh8oq",
+        "equipment_id": "NIMS-6-NF0158",
+        "name": "2波長Pilatus低温単結晶X線回折装置_NSC",
+        "papers_count": 2
+      },
+      {
+        "row_key": "lrYnaIhNAev4M2rq2wuN::AIST-MEMS077",
+        "doc_id": "lrYnaIhNAev4M2rq2wuN",
+        "equipment_id": "AIST-MEMS077",
+        "name": "2流体洗浄装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "4rFlNSui7qs4YJ5JvEAY::HOKUDAI-AP-901683",
+        "doc_id": "4rFlNSui7qs4YJ5JvEAY",
+        "equipment_id": "HOKUDAI-AP-901683",
+        "name": "3.0T/Φ70-8chアレイコイル",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Uy5mXiCI8FKenVJUNEtZ::HOKUDAI-AP-100350",
+        "doc_id": "Uy5mXiCI8FKenVJUNEtZ",
+        "equipment_id": "HOKUDAI-AP-100350",
+        "name": "300MHz NMR測定装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "gnRuHOoRbl2LNaE0UD96::TUAT-NMR-300",
+        "doc_id": "gnRuHOoRbl2LNaE0UD96",
+        "equipment_id": "TUAT-NMR-300",
+        "name": "300MHz 核磁気共鳴装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ZFgYN0hKPsQIonFk19kZ::OSAKA-347",
+        "doc_id": "ZFgYN0hKPsQIonFk19kZ",
+        "equipment_id": "OSAKA-347",
+        "name": "300MHz核磁気共鳴装（Bruker）",
+        "papers_count": 2
+      },
+      {
+        "row_key": "sMUBxtsm2WW47TnS6Vhq::OSAKA-199",
+        "doc_id": "sMUBxtsm2WW47TnS6Vhq",
+        "equipment_id": "OSAKA-199",
+        "name": "30cmイメージング回折格子分光器",
+        "papers_count": 1
+      },
+      {
+        "row_key": "fnDFF5gZggk7M6cIIjuP::NIMS-183-NF0128",
+        "doc_id": "fnDFF5gZggk7M6cIIjuP",
+        "equipment_id": "NIMS-183-NF0128",
+        "name": "30kg高周波誘導真空溶解設備",
+        "papers_count": 2
+      },
+      {
+        "row_key": "NskSbUoFNUCh2UAN5zFj::HOKUDAI-AP-100092",
+        "doc_id": "NskSbUoFNUCh2UAN5zFj",
+        "equipment_id": "HOKUDAI-AP-100092",
+        "name": "3130ジェネティックアナライザ 1号機 (遺制研)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "KMCgHnSgUhx3GkLMiwfn::HOKUDAI-AP-901801",
+        "doc_id": "KMCgHnSgUhx3GkLMiwfn",
+        "equipment_id": "HOKUDAI-AP-901801",
+        "name": "32ch actiCHamp",
+        "papers_count": 2
+      },
+      {
+        "row_key": "otX6yKYsQlc2U3S97SK3::HOKUDAI-AP-902138",
+        "doc_id": "otX6yKYsQlc2U3S97SK3",
+        "equipment_id": "HOKUDAI-AP-902138",
+        "name": "3D DIC&モーション計測",
+        "papers_count": 2
+      },
+      {
+        "row_key": "C6DUwmsTUNpywvAvEzZe::C6DUwmsTUNpywvAvEzZe",
+        "doc_id": "C6DUwmsTUNpywvAvEzZe",
+        "equipment_id": "C6DUwmsTUNpywvAvEzZe",
+        "name": "3D X線顕微鏡",
+        "papers_count": 3
+      },
+      {
+        "row_key": "0SPJ41WAdBX1LsVxqKW7::SAGA-2368",
+        "doc_id": "0SPJ41WAdBX1LsVxqKW7",
+        "equipment_id": "SAGA-2368",
+        "name": "3D/4D蛍光画像解析ソフトウェア",
+        "papers_count": 3
+      },
+      {
+        "row_key": "sbIeozQzj7byGmx7Fjnp::HOKUDAI-AP-901973",
+        "doc_id": "sbIeozQzj7byGmx7Fjnp",
+        "equipment_id": "HOKUDAI-AP-901973",
+        "name": "3Dスキャナ",
+        "papers_count": 2
+      },
+      {
+        "row_key": "OCvabyFyv6mEDWyzHe2v::HOKUDAI-AP-901371",
+        "doc_id": "OCvabyFyv6mEDWyzHe2v",
+        "equipment_id": "HOKUDAI-AP-901371",
+        "name": "3Dスキャナー",
+        "papers_count": 1
+      },
+      {
+        "row_key": "v1gUy1dPMKKA1NNuS18X::HOKUDAI-AP-901952",
+        "doc_id": "v1gUy1dPMKKA1NNuS18X",
+        "equipment_id": "HOKUDAI-AP-901952",
+        "name": "3Dスキャナー",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Z6ZYrAnlAwAsbXdjasi8::Z6ZYrAnlAwAsbXdjasi8",
+        "doc_id": "Z6ZYrAnlAwAsbXdjasi8",
+        "equipment_id": "Z6ZYrAnlAwAsbXdjasi8",
+        "name": "3Dプリンタ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "4XheR15Myymx0LbKc4iT::KITAMI-c_043",
+        "doc_id": "4XheR15Myymx0LbKc4iT",
+        "equipment_id": "KITAMI-c_043",
+        "name": "3Dプリンタ (MF-1000)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "Geo6vL0akPwurtYcmNtB::KITAMI-c_050",
+        "doc_id": "Geo6vL0akPwurtYcmNtB",
+        "equipment_id": "KITAMI-c_050",
+        "name": "3Dプリンタ (UP BOX＋)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "9mHA6wcY8V1ZmRrIzMcS::KITAMI-c_053",
+        "doc_id": "9mHA6wcY8V1ZmRrIzMcS",
+        "equipment_id": "KITAMI-c_053",
+        "name": "3Dプリンタ (UP BOX＋) [c_053]",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-3513::eqnet-3513",
+        "doc_id": "eqnet-3513",
+        "equipment_id": "eqnet-3513",
+        "name": "3Dプリンタ (システムクリエイト Bellulo200)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "zbY4qgZK4bjNMYHGepyh::HOKUDAI-AP-902155",
+        "doc_id": "zbY4qgZK4bjNMYHGepyh",
+        "equipment_id": "HOKUDAI-AP-902155",
+        "name": "3Dプリンタ Form3",
+        "papers_count": 3
+      },
+      {
+        "row_key": "I2n30Ng9EYOUxlXc6YVh::HOKUDAI-AP-901920",
+        "doc_id": "I2n30Ng9EYOUxlXc6YVh",
+        "equipment_id": "HOKUDAI-AP-901920",
+        "name": "3Dプリンター",
+        "papers_count": 1
+      },
+      {
+        "row_key": "lLja7HkKKqtRvFUj5wuZ::HOKUDAI-AP-902164",
+        "doc_id": "lLja7HkKKqtRvFUj5wuZ",
+        "equipment_id": "HOKUDAI-AP-902164",
+        "name": "3Dプリンター",
+        "papers_count": 2
+      },
+      {
+        "row_key": "qFSo7q55jopLJkbFICo7::HOKUDAI-AP-901862",
+        "doc_id": "qFSo7q55jopLJkbFICo7",
+        "equipment_id": "HOKUDAI-AP-901862",
+        "name": "3Dプリンター",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3108::eqnet-3108",
+        "doc_id": "eqnet-3108",
+        "equipment_id": "eqnet-3108",
+        "name": "3Dプリンター Raise3D Pro3 Plus HS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3043::eqnet-3043",
+        "doc_id": "eqnet-3043",
+        "equipment_id": "eqnet-3043",
+        "name": "3Dプリンター(ABS樹脂用)(xyz printing・da Vinci 2.0 A Duo)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3042::eqnet-3042",
+        "doc_id": "eqnet-3042",
+        "equipment_id": "eqnet-3042",
+        "name": "3Dプリンター(Markforged・MARK TWO)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3044::eqnet-3044",
+        "doc_id": "eqnet-3044",
+        "equipment_id": "eqnet-3044",
+        "name": "3Dプリンター(PLA樹脂用)(xyz printing・da Vinci mini)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-4189::eqnet-4189",
+        "doc_id": "eqnet-4189",
+        "equipment_id": "eqnet-4189",
+        "name": "3Dプリンターシステム Stratasys(uPrint SE)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "8r0MsQ2biGonBi20R14o::MIYAZAKI-1259",
+        "doc_id": "8r0MsQ2biGonBi20R14o",
+        "equipment_id": "MIYAZAKI-1259",
+        "name": "3Dプリンター（樹脂用）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ZmWjWhOau35Curs2jiyS::YAMAGUCHI-core12",
+        "doc_id": "ZmWjWhOau35Curs2jiyS",
+        "equipment_id": "YAMAGUCHI-core12",
+        "name": "3DマイクロX線CT",
+        "papers_count": 3
+      },
+      {
+        "row_key": "aEzhtOGBl9pesVnWk96N::SAGA-2485",
+        "doc_id": "aEzhtOGBl9pesVnWk96N",
+        "equipment_id": "SAGA-2485",
+        "name": "3DマイクロX線CT",
+        "papers_count": 3
+      },
+      {
+        "row_key": "1hPqNREwTJFLlKqDt6uv::1hPqNREwTJFLlKqDt6uv",
+        "doc_id": "1hPqNREwTJFLlKqDt6uv",
+        "equipment_id": "1hPqNREwTJFLlKqDt6uv",
+        "name": "3Dレーザースキャナー",
+        "papers_count": 3
+      },
+      {
+        "row_key": "OkLB99IsgTU5H2OcOZqV::OkLB99IsgTU5H2OcOZqV",
+        "doc_id": "OkLB99IsgTU5H2OcOZqV",
+        "equipment_id": "OkLB99IsgTU5H2OcOZqV",
+        "name": "3D形状測定機（3D-CMM）",
+        "papers_count": 3
+      },
+      {
+        "row_key": "0ETtIhtHkwEHGF8wNUbD::HOKUDAI-AP-900797",
+        "doc_id": "0ETtIhtHkwEHGF8wNUbD",
+        "equipment_id": "HOKUDAI-AP-900797",
+        "name": "3D測定レーザー顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "GMT7Yur37AUA0ZWyI77o::KYUSHU-OLS4000",
+        "doc_id": "GMT7Yur37AUA0ZWyI77o",
+        "equipment_id": "KYUSHU-OLS4000",
+        "name": "3D測定レーザー顕微鏡(OLS4500)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "ZvP4WWIxJfA2c7Dp1R23::YAMAGUCHI-etc61",
+        "doc_id": "ZvP4WWIxJfA2c7Dp1R23",
+        "equipment_id": "YAMAGUCHI-etc61",
+        "name": "3D画像処理ソフトウェア",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-4834::eqnet-4834",
+        "doc_id": "eqnet-4834",
+        "equipment_id": "eqnet-4834",
+        "name": "3D画像処理ソフトウェア マックスネット Dragonfly",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eqnet-3100::eqnet-3100",
+        "doc_id": "eqnet-3100",
+        "equipment_id": "eqnet-3100",
+        "name": "3D画像解析ソフトウェア Imaris",
+        "papers_count": 2
+      },
+      {
+        "row_key": "dI6L4tVB3fbOBm41pFzj::SAGA-2496",
+        "doc_id": "dI6L4tVB3fbOBm41pFzj",
+        "equipment_id": "SAGA-2496",
+        "name": "3D解析ソフト(オプション;欠陥・介在物モジュール)",
+        "papers_count": 3
+      },
+      {
+        "row_key": "PCDkksnUBegNyJeA8VZC::HOKUDAI-AP-902137",
+        "doc_id": "PCDkksnUBegNyJeA8VZC",
+        "equipment_id": "HOKUDAI-AP-902137",
+        "name": "3T-MRI磁気共鳴断層撮影装置システム",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ikqjxKuD0EPgI7kXDKk2::ikqjxKuD0EPgI7kXDKk2",
+        "doc_id": "ikqjxKuD0EPgI7kXDKk2",
+        "equipment_id": "ikqjxKuD0EPgI7kXDKk2",
+        "name": "3T磁気共鳴断層撮影装置",
+        "papers_count": 2
+      },
+      {
+        "row_key": "O1qrYgdPerCSjsA62Ixy::HOKUDAI-AP-901290",
+        "doc_id": "O1qrYgdPerCSjsA62Ixy",
+        "equipment_id": "HOKUDAI-AP-901290",
+        "name": "3ゾーン式セラミック電気管状炉",
+        "papers_count": 3
+      },
+      {
+        "row_key": "DWQcinYveoMNuhR7F3GD::DWQcinYveoMNuhR7F3GD",
+        "doc_id": "DWQcinYveoMNuhR7F3GD",
+        "equipment_id": "DWQcinYveoMNuhR7F3GD",
+        "name": "3次元SEM画像測定解析システム VE-8800",
+        "papers_count": 2
+      },
+      {
+        "row_key": "ZIsQrVvwrLUNPiDXblKn::ZIsQrVvwrLUNPiDXblKn",
+        "doc_id": "ZIsQrVvwrLUNPiDXblKn",
+        "equipment_id": "ZIsQrVvwrLUNPiDXblKn",
+        "name": "3次元SEM画像測定解析システム VE-8800",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eJBnw4iecfbwIR31bA0C::eJBnw4iecfbwIR31bA0C",
+        "doc_id": "eJBnw4iecfbwIR31bA0C",
+        "equipment_id": "eJBnw4iecfbwIR31bA0C",
+        "name": "3次元SEM画像測定解析システム VE-8800",
+        "papers_count": 2
+      },
+      {
+        "row_key": "hBKd04alHXb8speJhvjR::hBKd04alHXb8speJhvjR",
+        "doc_id": "hBKd04alHXb8speJhvjR",
+        "equipment_id": "hBKd04alHXb8speJhvjR",
+        "name": "3次元SEM画像測定解析システム VE-8800",
+        "papers_count": 2
+      },
+      {
+        "row_key": "gF5dwkcwd2ina1Jk7dbu::HOKUDAI-AP-901408",
+        "doc_id": "gF5dwkcwd2ina1Jk7dbu",
+        "equipment_id": "HOKUDAI-AP-901408",
+        "name": "3次元カラープリントセット POLYGONALmeister Editor academic+ダヴィンチColor 3FC1XXJPZNG",
+        "papers_count": 3
+      },
+      {
+        "row_key": "eqnet-2037::eqnet-2037",
+        "doc_id": "eqnet-2037",
+        "equipment_id": "eqnet-2037",
+        "name": "3次元デジタイザーシステム(Dimension/3次元プリンタ)(米国Stratasys社・Dimension Elite 3D Printer)",
+        "papers_count": 2
+      },
+      {
+        "row_key": "qX9Vc5bFvyN5ryye1n1H::OKAYAMA-132",
+        "doc_id": "qX9Vc5bFvyN5ryye1n1H",
+        "equipment_id": "OKAYAMA-132",
+        "name": "3次元光学プロファイラーシステム",
+        "papers_count": 3
+      },
+      {
+        "row_key": "7xdbGiBo9cejdpbj5xCo::HOKUDAI-AP-901895",
+        "doc_id": "7xdbGiBo9cejdpbj5xCo",
+        "equipment_id": "HOKUDAI-AP-901895",
+        "name": "3次元動作分析システム エントリーパッケージ",
+        "papers_count": 3
+      },
+      {
+        "row_key": "YKHE3wZtzUItU7kEnCO7::AIST-NPF107",
+        "doc_id": "YKHE3wZtzUItU7kEnCO7",
+        "equipment_id": "AIST-NPF107",
+        "name": "3次元電界放出形走査電子顕微鏡（エリオニクス）",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 5,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-02T13:25:46.931886+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 100
+      }
+    },
+    {
+      "at": "2026-03-02T13:26:22.336117+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-02T13:30:59.984902+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-02T21:31:03.985763+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-02T21:40:25.496009+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-02T21:46:45.114590+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

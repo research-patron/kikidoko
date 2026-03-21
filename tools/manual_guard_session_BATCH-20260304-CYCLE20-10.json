@@ -1,0 +1,231 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE20-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-04T01:04:25.210871+00:00",
+  "updated_at": "2026-03-04T01:26:43.484862+00:00",
+  "closed_at": "2026-03-04T01:26:43.484862+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle20_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE20-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "bd66bcf4c419050b2da0c7ae70535a136ab97b83e29bac000a6f6a1fe4966e31",
+    "queue_sha256_at_start": "638f254524087241a2bf7185a21d907eed6a4cdb450890008febc1eed701155e",
+    "queue_row_keys_sha256": "c9d274fd52e14c70b11759ddbe57fbcd14e79436bf260d7cbc5d847f735c9842"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "Mhe41ZmloumTERRiZoYm::Mhe41ZmloumTERRiZoYm",
+      "nPquo0FulBtgcezO4HLL::nPquo0FulBtgcezO4HLL",
+      "gPpjcQMpkxxLTOhWKuE7::gPpjcQMpkxxLTOhWKuE7",
+      "DLmwqYZHFbRmJHhKyalg::DLmwqYZHFbRmJHhKyalg",
+      "q7laZZWFnkJNfoOdj1kX::q7laZZWFnkJNfoOdj1kX",
+      "pyEuKbqSbE0S3hMxRjfI::pyEuKbqSbE0S3hMxRjfI",
+      "6qGUOzsMxI3VWmmH538u::6qGUOzsMxI3VWmmH538u",
+      "im9E6v5jJ5x0ZORMs5wb::im9E6v5jJ5x0ZORMs5wb",
+      "pcDLm6RhtXx6HJRjLZBb::pcDLm6RhtXx6HJRjLZBb",
+      "6ZCYUhmxSts7kcREJQvl::6ZCYUhmxSts7kcREJQvl"
+    ],
+    "target_rows": [
+      {
+        "row_key": "Mhe41ZmloumTERRiZoYm::Mhe41ZmloumTERRiZoYm",
+        "doc_id": "Mhe41ZmloumTERRiZoYm",
+        "equipment_id": "Mhe41ZmloumTERRiZoYm",
+        "name": "超低温フリーザー_02 パナソニックヘルスケア MDF-DC500-VX-PJ",
+        "papers_count": 1
+      },
+      {
+        "row_key": "nPquo0FulBtgcezO4HLL::nPquo0FulBtgcezO4HLL",
+        "doc_id": "nPquo0FulBtgcezO4HLL",
+        "equipment_id": "nPquo0FulBtgcezO4HLL",
+        "name": "衝撃的高速度破壊実験装置 一式",
+        "papers_count": 0
+      },
+      {
+        "row_key": "gPpjcQMpkxxLTOhWKuE7::gPpjcQMpkxxLTOhWKuE7",
+        "doc_id": "gPpjcQMpkxxLTOhWKuE7",
+        "equipment_id": "gPpjcQMpkxxLTOhWKuE7",
+        "name": "鉛ビスマス循環装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "DLmwqYZHFbRmJHhKyalg::DLmwqYZHFbRmJHhKyalg",
+        "doc_id": "DLmwqYZHFbRmJHhKyalg",
+        "equipment_id": "DLmwqYZHFbRmJHhKyalg",
+        "name": "静的サーボコントローラシステム",
+        "papers_count": 0
+      },
+      {
+        "row_key": "q7laZZWFnkJNfoOdj1kX::q7laZZWFnkJNfoOdj1kX",
+        "doc_id": "q7laZZWFnkJNfoOdj1kX",
+        "equipment_id": "q7laZZWFnkJNfoOdj1kX",
+        "name": "高歪み速度載荷試験装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "pyEuKbqSbE0S3hMxRjfI::pyEuKbqSbE0S3hMxRjfI",
+        "doc_id": "pyEuKbqSbE0S3hMxRjfI",
+        "equipment_id": "pyEuKbqSbE0S3hMxRjfI",
+        "name": "旭町ラボ オープンラボスペース 202実験室(A)-1",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6qGUOzsMxI3VWmmH538u::6qGUOzsMxI3VWmmH538u",
+        "doc_id": "6qGUOzsMxI3VWmmH538u",
+        "equipment_id": "6qGUOzsMxI3VWmmH538u",
+        "name": "旭町ラボ オープンラボスペース 202実験室(A)-2",
+        "papers_count": 0
+      },
+      {
+        "row_key": "im9E6v5jJ5x0ZORMs5wb::im9E6v5jJ5x0ZORMs5wb",
+        "doc_id": "im9E6v5jJ5x0ZORMs5wb",
+        "equipment_id": "im9E6v5jJ5x0ZORMs5wb",
+        "name": "フリーザー－80℃",
+        "papers_count": 0
+      },
+      {
+        "row_key": "pcDLm6RhtXx6HJRjLZBb::pcDLm6RhtXx6HJRjLZBb",
+        "doc_id": "pcDLm6RhtXx6HJRjLZBb",
+        "equipment_id": "pcDLm6RhtXx6HJRjLZBb",
+        "name": "冷却水循環装置",
+        "papers_count": 0
+      },
+      {
+        "row_key": "6ZCYUhmxSts7kcREJQvl::6ZCYUhmxSts7kcREJQvl",
+        "doc_id": "6ZCYUhmxSts7kcREJQvl",
+        "equipment_id": "6ZCYUhmxSts7kcREJQvl",
+        "name": "定温恒温乾燥器",
+        "papers_count": 0
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 12,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-04T01:04:25.210871+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-04T01:04:32.919682+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:21:52.699982+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:21:55.636845+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:21:58.402261+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:01.186224+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:03.988256+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:06.781351+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:09.542173+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:12.365660+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:15.401747+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:18.690942+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:22:44.356772+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-04T01:26:43.484862+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 12,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

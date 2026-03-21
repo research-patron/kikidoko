@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/eqnet-3600/10.1057/s41599-025-06421-3",
+    "paper_space_hash": "#/paper/eqnet-3600/10.1057/s41599-025-06421-3",
+    "beginner_enter_hash": "#/beginner/eqnet-3600",
+    "beginner_space_hash": "#/beginner/eqnet-3600"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "\"カーブトレーサー(CS-3200)\"",
+      "summary_len": 280,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3600/10.1057/s41599-025-06421-3",
+      "beginner_hash": "#/beginner/eqnet-3600",
+      "paper_link_href": "https://doi.org/10.1057/s41599-025-06421-3",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "\"スパッタ装置(E-200S)\"",
+      "summary_len": 272,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3597/10.1080/19490976.2025.2609461",
+      "beginner_hash": "#/beginner/eqnet-3597",
+      "paper_link_href": "https://doi.org/10.1080/19490976.2025.2609461",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "\"万能型ボンドテスター(ESR-4000)\"",
+      "summary_len": 286,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3601/10.1038/s41598-025-29949-5",
+      "beginner_hash": "#/beginner/eqnet-3601",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-29949-5",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "\"分光干渉レーザ変位計・高精度形状測定システム(KS-1100,SI-F01,SI-F01U)\"",
+      "summary_len": 304,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3575/10.1007/s00253-025-13691-z",
+      "beginner_hash": "#/beginner/eqnet-3575",
+      "paper_link_href": "https://doi.org/10.1007/s00253-025-13691-z",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "\"卓上型キセノンフラッシュアナライザー(LFA447)\"",
+      "summary_len": 193,
+      "sample_count": 2,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3584/10.1109/icpadm49635.2021.9493996",
+      "beginner_hash": "#/beginner/eqnet-3584",
+      "paper_link_href": "https://doi.org/10.1109/ICPADM49635.2021.9493996",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "(工)SQUID帯磁率測定装置 (Quantum Design MPMS-5S)",
+      "summary_len": 198,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1002/10.1038/s42004-025-01851-1",
+      "beginner_hash": "#/beginner/eqnet-1002",
+      "paper_link_href": "https://doi.org/10.1038/s42004-025-01851-1",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "(工)ゲッチンゲン型風洞装置",
+      "summary_len": 119,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1176/10.33142/aem.v7i5.16780",
+      "beginner_hash": "#/beginner/eqnet-1176",
+      "paper_link_href": "https://doi.org/10.33142/aem.v7i5.16780",
+      "beginner_sections": [
+        true,
+        true,
+        6,
+        6
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "(工)恒温恒湿装置",
+      "summary_len": 108,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-714/10.1088/1757-899x/711/1/012104",
+      "beginner_hash": "#/beginner/eqnet-714",
+      "paper_link_href": "https://doi.org/10.1088/1757-899X/711/1/012104",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "(工)熱分析システム (SII製 EXSTAR6000(DSC6200))",
+      "summary_len": 191,
+      "sample_count": 3,
+      "field_count": 2,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-93/10.1186/s12957-025-04167-5",
+      "beginner_hash": "#/beginner/eqnet-93",
+      "paper_link_href": "https://doi.org/10.1186/s12957-025-04167-5",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        3
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "(霞)AI画像解析付きレーザーマイクロダイセクション7(ライカ・LMD7)",
+      "summary_len": 288,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5432/10.1002/9780470015902.a0006206",
+      "beginner_hash": "#/beginner/eqnet-5432",
+      "paper_link_href": "https://doi.org/10.1002/9780470015902.a0006206",
+      "beginner_sections": [
+        true,
+        true,
+        5,
+        4
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

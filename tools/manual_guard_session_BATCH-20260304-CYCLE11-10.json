@@ -1,0 +1,159 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260304-CYCLE11-10",
+  "status": "closed",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-03T21:33:40.415059+00:00",
+  "updated_at": "2026-03-03T21:40:32.234340+00:00",
+  "closed_at": "2026-03-03T21:40:32.234340+00:00",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle11_10.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260304-CYCLE11-10.json"
+  },
+  "hashes": {
+    "agents_sha256": "5013a875aebd75d9486db350e19355a5ff658ad20078a8da0d4c30a81f2172a0",
+    "snapshot_sha256_at_start": "b6d19fe01680fbf76293373a7a55df64f532ec1133bc5f3fbb8ce4f3455d0b88",
+    "queue_sha256_at_start": "17fb464143a93eb453c3b13112ff9e8eac1f103bb006abebe64abbceba3e1322",
+    "queue_row_keys_sha256": "237c6be152087311d2c6bff28ab7c237acdcfa87fea5f5121527f2b86e31f4a1"
+  },
+  "queue": {
+    "target_count": 10,
+    "target_row_keys": [
+      "lgqfltWh9RKzCft2MqJE::KOCHI-e323d2c223",
+      "K3jD2iI2kcSTjDaXmwb4::K3jD2iI2kcSTjDaXmwb4",
+      "eBeXtuZMSRdluJwRMM99::eBeXtuZMSRdluJwRMM99",
+      "n9bW7p5SDcp78cx6d8Qa::n9bW7p5SDcp78cx6d8Qa",
+      "EzFXvpKzjlE2NL3dklGH::EzFXvpKzjlE2NL3dklGH",
+      "dFWPz7zDzlICADHdG59B::dFWPz7zDzlICADHdG59B",
+      "X6P3A6pcLb6qqLpuM4cW::X6P3A6pcLb6qqLpuM4cW",
+      "y2eHOwASIxSMiV8bEY9L::y2eHOwASIxSMiV8bEY9L",
+      "HXzfAgDwVLx1yzcqwTzQ::HXzfAgDwVLx1yzcqwTzQ",
+      "XYaxvxkGbz6gQEFEIQXS::XYaxvxkGbz6gQEFEIQXS"
+    ],
+    "target_rows": [
+      {
+        "row_key": "lgqfltWh9RKzCft2MqJE::KOCHI-e323d2c223",
+        "doc_id": "lgqfltWh9RKzCft2MqJE",
+        "equipment_id": "KOCHI-e323d2c223",
+        "name": "γ線測定装置",
+        "papers_count": 1
+      },
+      {
+        "row_key": "K3jD2iI2kcSTjDaXmwb4::K3jD2iI2kcSTjDaXmwb4",
+        "doc_id": "K3jD2iI2kcSTjDaXmwb4",
+        "equipment_id": "K3jD2iI2kcSTjDaXmwb4",
+        "name": "東陽テクニカ SKYSCAN1172-GU",
+        "papers_count": 2
+      },
+      {
+        "row_key": "eBeXtuZMSRdluJwRMM99::eBeXtuZMSRdluJwRMM99",
+        "doc_id": "eBeXtuZMSRdluJwRMM99",
+        "equipment_id": "eBeXtuZMSRdluJwRMM99",
+        "name": "研究用ヒト実験動物用型３Dエックス線CT装置 東芝メディカルシステムズ 東芝ｽｷｬﾅAlexion/2.0M",
+        "papers_count": 2
+      },
+      {
+        "row_key": "n9bW7p5SDcp78cx6d8Qa::n9bW7p5SDcp78cx6d8Qa",
+        "doc_id": "n9bW7p5SDcp78cx6d8Qa",
+        "equipment_id": "n9bW7p5SDcp78cx6d8Qa",
+        "name": "島津EPMA1610",
+        "papers_count": 2
+      },
+      {
+        "row_key": "EzFXvpKzjlE2NL3dklGH::EzFXvpKzjlE2NL3dklGH",
+        "doc_id": "EzFXvpKzjlE2NL3dklGH",
+        "equipment_id": "EzFXvpKzjlE2NL3dklGH",
+        "name": "島津EPMA1720HT",
+        "papers_count": 2
+      },
+      {
+        "row_key": "dFWPz7zDzlICADHdG59B::dFWPz7zDzlICADHdG59B",
+        "doc_id": "dFWPz7zDzlICADHdG59B",
+        "equipment_id": "dFWPz7zDzlICADHdG59B",
+        "name": "XPSデータ解析PC",
+        "papers_count": 2
+      },
+      {
+        "row_key": "X6P3A6pcLb6qqLpuM4cW::X6P3A6pcLb6qqLpuM4cW",
+        "doc_id": "X6P3A6pcLb6qqLpuM4cW",
+        "equipment_id": "X6P3A6pcLb6qqLpuM4cW",
+        "name": "X線光電子分光装置 Phi GENESIS",
+        "papers_count": 2
+      },
+      {
+        "row_key": "y2eHOwASIxSMiV8bEY9L::y2eHOwASIxSMiV8bEY9L",
+        "doc_id": "y2eHOwASIxSMiV8bEY9L",
+        "equipment_id": "y2eHOwASIxSMiV8bEY9L",
+        "name": "卓上型単結晶XRD",
+        "papers_count": 2
+      },
+      {
+        "row_key": "HXzfAgDwVLx1yzcqwTzQ::HXzfAgDwVLx1yzcqwTzQ",
+        "doc_id": "HXzfAgDwVLx1yzcqwTzQ",
+        "equipment_id": "HXzfAgDwVLx1yzcqwTzQ",
+        "name": "卓上型粉末XRD",
+        "papers_count": 2
+      },
+      {
+        "row_key": "XYaxvxkGbz6gQEFEIQXS::XYaxvxkGbz6gQEFEIQXS",
+        "doc_id": "XYaxvxkGbz6gQEFEIQXS",
+        "equipment_id": "XYaxvxkGbz6gQEFEIQXS",
+        "name": "Ｘ線回折装置",
+        "papers_count": 2
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-03T21:33:40.415059+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 10
+      }
+    },
+    {
+      "at": "2026-03-03T21:33:42.575294+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:38:28.261347+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:38:51.541508+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-03T21:40:32.234340+00:00",
+      "event": "close",
+      "details": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "verify_pass_count": 3,
+          "audit_status": "PASS",
+          "requirement_status": "PASS",
+          "ui_status": "PASS"
+        }
+      }
+    }
+  ]
+}

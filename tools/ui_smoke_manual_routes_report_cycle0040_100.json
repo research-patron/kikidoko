@@ -1,0 +1,208 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "cases_target": 10,
+  "keyboard_checks": {
+    "paper_enter_hash": "#/paper/5xyqW34rRWLUysZInUvX/10.1038/s41598-025-28860-3",
+    "paper_space_hash": "#/paper/5xyqW34rRWLUysZInUvX/10.1038/s41598-025-28860-3",
+    "beginner_enter_hash": "#/beginner/5xyqW34rRWLUysZInUvX",
+    "beginner_space_hash": "#/beginner/5xyqW34rRWLUysZInUvX"
+  },
+  "desktop_cases": [
+    {
+      "case_no": 1,
+      "row_name": "NMR (400MHz 溶液) JEOL ECZS (D104 ECS400-NMR)",
+      "summary_len": 240,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/5xyqW34rRWLUysZInUvX/10.1038/s41598-025-28860-3",
+      "beginner_hash": "#/beginner/5xyqW34rRWLUysZInUvX",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-28860-3",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 2,
+      "row_name": "顕微ラマン分光測定(RAMAN)",
+      "summary_len": 199,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2088/10.1364/jocn.575280",
+      "beginner_hash": "#/beginner/eqnet-2088",
+      "paper_link_href": "https://doi.org/10.1364/JOCN.575280",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 3,
+      "row_name": "共焦点レーザー顕微鏡(OLYMPUS FV1000-D)",
+      "summary_len": 210,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-1089/10.1186/s12951-025-03891-0",
+      "beginner_hash": "#/beginner/eqnet-1089",
+      "paper_link_href": "https://doi.org/10.1186/s12951-025-03891-0",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 4,
+      "row_name": "高速液体クロマトグラフ LC-20AD",
+      "summary_len": 196,
+      "sample_count": 3,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2764/10.1038/s41598-025-33868-w",
+      "beginner_hash": "#/beginner/eqnet-2764",
+      "paper_link_href": "https://doi.org/10.1038/s41598-025-33868-w",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 5,
+      "row_name": "ファーメンター (2L) Mitsuwa Frontech NBC-2000 3",
+      "summary_len": 210,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-5135/10.1038/s41408-025-01412-8",
+      "beginner_hash": "#/beginner/eqnet-5135",
+      "paper_link_href": "https://doi.org/10.1038/s41408-025-01412-8",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 6,
+      "row_name": "動物用自動血球計数 HORIBA Microsemi LC-662 堀場製作所(Microsemi LC-662)",
+      "summary_len": 239,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 2,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-4765/10.1016/j.carbpol.2026.124938",
+      "beginner_hash": "#/beginner/eqnet-4765",
+      "paper_link_href": "https://www.sciencedirect.com/science/article/pii/S0144861726000548",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 7,
+      "row_name": "白金スパッタ (日本電子 JFC-1600)",
+      "summary_len": 244,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-3510/10.1016/j.biomaterials.2025.123742",
+      "beginner_hash": "#/beginner/eqnet-3510",
+      "paper_link_href": "https://www.sciencedirect.com/science/article/pii/S0142961225006611",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 8,
+      "row_name": "NMR (500MHz 溶液) JEOL ECA",
+      "summary_len": 212,
+      "sample_count": 2,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/eqnet-2462/10.1007/s12104-025-10251-4",
+      "beginner_hash": "#/beginner/eqnet-2462",
+      "paper_link_href": "https://doi.org/10.1007/s12104-025-10251-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 9,
+      "row_name": "二波長線源型高分解能単結晶X線構造解析装置",
+      "summary_len": 192,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 3,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/OjEyhMa2FxkAiyFV6ZeL/10.31643/2027/6445.08",
+      "beginner_hash": "#/beginner/OjEyhMa2FxkAiyFV6ZeL",
+      "paper_link_href": "https://doi.org/10.31643/2027/6445.08",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    },
+    {
+      "case_no": 10,
+      "row_name": "熱機械分析装置 TMA-60",
+      "summary_len": 175,
+      "sample_count": 1,
+      "field_count": 3,
+      "paper_count": 1,
+      "badge_present": false,
+      "badge": "",
+      "paper_hash": "#/paper/4BsL5pko4LvBQWxx47zS/10.1038/s41699-025-00643-4",
+      "beginner_hash": "#/beginner/4BsL5pko4LvBQWxx47zS",
+      "paper_link_href": "https://doi.org/10.1038/s41699-025-00643-4",
+      "beginner_sections": [
+        true,
+        true,
+        4,
+        4
+      ]
+    }
+  ],
+  "mobile": {
+    "paper_overflow": false,
+    "beginner_overflow": false
+  },
+  "status": "PASS",
+  "error": ""
+}

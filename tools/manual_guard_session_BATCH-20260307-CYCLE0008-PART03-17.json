@@ -1,0 +1,89 @@
+{
+  "version": "manual_guard_v1",
+  "batch_id": "BATCH-20260307-CYCLE0008-PART03-17",
+  "status": "active",
+  "reviewer": "codex-manual",
+  "created_at": "2026-03-07T13:19:22.191807+00:00",
+  "updated_at": "2026-03-07T13:25:01.731503+00:00",
+  "closed_at": "",
+  "paths": {
+    "agents": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/AGENTS.md",
+    "queue": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_queue_cycle0008_part03_17.jsonl",
+    "snapshot": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/frontend/dist/equipment_snapshot.json.gz",
+    "session": "/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_guard_session_BATCH-20260307-CYCLE0008-PART03-17.json"
+  },
+  "hashes": {
+    "agents_sha256": "f4462d3e96583c5fd754d6c41b0fe2c86a4357eab68cddf7f76991f696e5e9df",
+    "snapshot_sha256_at_start": "888e4a51b0d317509328850688ae0ef7de8530836a81564e6b981d7316c2679e",
+    "queue_sha256_at_start": "c3204b5d7f00e1e0b5e8149ce16ed8e60c151c8a56f21c4cd218000ae3ae202e",
+    "queue_row_keys_sha256": "aed81408a63fe02dc3adab472202753862846caecbdab10e0c3605910a02f8fd"
+  },
+  "queue": {
+    "target_count": 3,
+    "target_row_keys": [
+      "KUMAMOTO-list5f-05::KUMAMOTO-list5f-05",
+      "kjwS6xcg54MtXReDMd6c::kjwS6xcg54MtXReDMd6c",
+      "lp1iM0WBqAGsoJnCxQcR::lp1iM0WBqAGsoJnCxQcR"
+    ],
+    "target_rows": [
+      {
+        "row_key": "KUMAMOTO-list5f-05::KUMAMOTO-list5f-05",
+        "doc_id": "KUMAMOTO-list5f-05",
+        "equipment_id": "KUMAMOTO-list5f-05",
+        "name": "レーザー共焦点顕微鏡",
+        "papers_count": 1
+      },
+      {
+        "row_key": "kjwS6xcg54MtXReDMd6c::kjwS6xcg54MtXReDMd6c",
+        "doc_id": "kjwS6xcg54MtXReDMd6c",
+        "equipment_id": "kjwS6xcg54MtXReDMd6c",
+        "name": "粉末X線回折装置",
+        "papers_count": 1
+      },
+      {
+        "row_key": "lp1iM0WBqAGsoJnCxQcR::lp1iM0WBqAGsoJnCxQcR",
+        "doc_id": "lp1iM0WBqAGsoJnCxQcR",
+        "equipment_id": "lp1iM0WBqAGsoJnCxQcR",
+        "name": "Typhoon FLA9500",
+        "papers_count": 1
+      }
+    ]
+  },
+  "stats": {
+    "verify_pass_count": 3,
+    "verify_fail_count": 0
+  },
+  "events": [
+    {
+      "at": "2026-03-07T13:19:22.191807+00:00",
+      "event": "start",
+      "details": {
+        "target_count": 3
+      }
+    },
+    {
+      "at": "2026-03-07T13:19:22.290835+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T13:20:31.279626+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "at": "2026-03-07T13:25:01.731503+00:00",
+      "event": "verify",
+      "details": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}
