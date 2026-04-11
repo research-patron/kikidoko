@@ -851,6 +851,10 @@ body[data-home-search-sheet-open="1"] .home-search-sheet-backdrop {
   fill: currentColor;
 }
 
+body:has(.eqnet-assist-panel) .home-search-fab {
+  display: none !important;
+}
+
 .home-search-sheet-close {
   display: none;
 }
