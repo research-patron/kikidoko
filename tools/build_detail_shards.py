@@ -51,6 +51,13 @@ def item_key(item: Dict[str, Any], index: int) -> str:
     return f"item-{index:06d}"
 
 
+def detail_map_key(item: Dict[str, Any], equipment_id: str) -> str:
+    doc_id = normalize_text(item.get("doc_id"))
+    if doc_id:
+        return doc_id
+    return equipment_id
+
+
 def shard_key(equipment_id: str, shard_count: int) -> str:
     digest = hashlib.md5(equipment_id.encode("utf-8")).digest()
     value = digest[0] % shard_count
@@ -183,11 +190,12 @@ def build_snapshot_lite_payload(
     for index, item in enumerate(items):
         source = item if isinstance(item, dict) else {}
         eq_id = item_key(source, index)
+        detail_id = detail_map_key(source, eq_id)
         lite: Dict[str, Any] = {}
         for key in keep_fields:
             lite[key] = source.get(key)
         lite["equipment_id"] = eq_id
-        shard = normalize_text(shard_map.get(eq_id))
+        shard = normalize_text(shard_map.get(detail_id) or shard_map.get(eq_id))
         if not shard:
             shard = f"detail-{shard_key(eq_id, shard_count)}"
         elif not shard.startswith("detail-"):
@@ -230,7 +238,7 @@ def main() -> int:
     for idx, item in enumerate(items):
         equipment_id = item_key(item, idx)
         key = shard_key(equipment_id, len(shards))
-        shard_map[equipment_id] = key
+        shard_map[detail_map_key(item, equipment_id)] = key
 
         detailed = dict(item)
         detailed["equipment_id"] = equipment_id

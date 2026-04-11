@@ -1,23 +1,32 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /feature_requests/{requestId} {
-      allow read: if true;
+    match /equipment_view_events/{eventId} {
+      allow read: if false;
       allow create: if
         request.resource.data.keys().hasOnly([
-          'message_raw',
+          'equipment_id',
+          'event_type',
           'created_at',
           'client_fingerprint',
-          'status'
+          'surface'
         ]) &&
-        request.resource.data.message_raw is string &&
+        request.resource.data.equipment_id is string &&
+        request.resource.data.event_type is string &&
         request.resource.data.created_at is timestamp &&
         request.resource.data.client_fingerprint is string &&
-        request.resource.data.status == 'new' &&
-        request.resource.data.message_raw.size() >= 8 &&
-        request.resource.data.message_raw.size() <= 500 &&
+        request.resource.data.surface is string &&
+        request.resource.data.equipment_id.size() >= 1 &&
+        request.resource.data.equipment_id.size() <= 160 &&
         request.resource.data.client_fingerprint.size() >= 6 &&
-        request.resource.data.client_fingerprint.size() <= 120;
+        request.resource.data.client_fingerprint.size() <= 120 &&
+        request.resource.data.surface.size() >= 2 &&
+        request.resource.data.surface.size() <= 40 &&
+        request.resource.data.event_type in [
+          'detail_open',
+          'source_open',
+          'eqnet_open'
+        ];
       allow update, delete: if false;
     }
 

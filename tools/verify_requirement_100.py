@@ -551,7 +551,7 @@ def load_subset_doc_ids(value: str, root: Path) -> set[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Verify requirement-100 implementation completeness.")
     parser.add_argument("--snapshot", default="frontend/dist/equipment_snapshot.json.gz")
-    parser.add_argument("--js", default="frontend/dist/kikidoko-patches-v20260224-usageinsight.js")
+    parser.add_argument("--js", default="frontend/dist/patches/site-ui-overrides.js")
     parser.add_argument(
         "--mode",
         default="functional",

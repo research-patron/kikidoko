@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-03-21T09:00:00+09:00",
+  "window_days": 30,
+  "items": [
+    {
+      "equipment_id": "eqnet-4122",
+      "score": 142,
+      "name": "1000kN万能試験機 前川試験機製作所(MRA-100-F2)",
+      "category_general": "その他",
+      "org_name": "東北大学 研究推進・支援機構コアファシリティ統括センター",
+      "prefecture": "宮城県",
+      "source_url": "https://eqnet.jp/top#/public/equipment/4122"
+    },
+    {
+      "equipment_id": "eqnet-3613",
+      "score": 136,
+      "name": "\"イオンミリング(IM4000)\"",
+      "category_general": "電子顕微鏡および関連機器",
+      "org_name": "大阪大学 産業科学研究所 フレキシブル3D実装協働研究所 フレキシブル3D実装協働研究所",
+      "prefecture": "大阪府",
+      "source_url": "https://eqnet.jp/top#/public/equipment/3613"
+    },
+    {
+      "equipment_id": "eqnet-2504",
+      "score": 128,
+      "name": "384ウェル対応Real Time PCRシステム",
+      "category_general": "遺伝子・ゲノム",
+      "org_name": "京都大学 医学研究科",
+      "prefecture": "京都府",
+      "source_url": "https://eqnet.jp/top#/public/equipment/2504"
+    },
+    {
+      "equipment_id": "eqnet-4890",
+      "score": 122,
+      "name": "16本キャピラリーDNAシーケンサー(Applied Biosystems社(現・Thermo Fisher Scientific社)3130xl Genetic Analyzer)",
+      "category_general": "遺伝子・ゲノム",
+      "org_name": "神戸大学 研究基盤センター アイソトープ部門",
+      "prefecture": "兵庫県",
+      "source_url": "https://eqnet.jp/top#/public/equipment/4890"
+    },
+    {
+      "equipment_id": "eqnet-454",
+      "score": 118,
+      "name": "400MHZ 核磁気共鳴装置 (日本電子(株)・JNM−ECS型)",
+      "category_general": "核磁気共鳴装置(NMR)",
+      "org_name": "北海道大学 工学研究院",
+      "prefecture": "北海道",
+      "source_url": "https://eqnet.jp/top#/public/equipment/454"
+    },
+    {
+      "equipment_id": "eqnet-2416",
+      "score": 113,
+      "name": "400MHz核磁気共鳴装置(Bruker・AVANCE III-400M)",
+      "category_general": "核磁気共鳴装置(NMR)",
+      "org_name": "千葉大学 工学部 共生応用化学科",
+      "prefecture": "千葉県",
+      "source_url": "https://eqnet.jp/top#/public/equipment/2416"
+    },
+    {
+      "equipment_id": "eqnet-2077",
+      "score": 109,
+      "name": "MALDI-TOF/TOF 質量分析システム",
+      "category_general": "質量分析装置(MS)",
+      "org_name": "三重大学 社会連携研究センター",
+      "prefecture": "三重県",
+      "source_url": "https://eqnet.jp/top#/public/equipment/2077"
+    },
+    {
+      "equipment_id": "eqnet-3111",
+      "score": 105,
+      "name": "2D画像解析ソフトウェア HALO",
+      "category_general": "画像撮影/解析",
+      "org_name": "佐賀大学 総合分析実験センター 鍋島地区 機器分析部門",
+      "prefecture": "佐賀県",
+      "source_url": "https://eqnet.jp/top#/public/equipment/3111"
+    },
+    {
+      "equipment_id": "eqnet-1082",
+      "score": 101,
+      "name": "CCD型単結晶構造解析装置(BRUKER SMART APEX)",
+      "category_general": "構造解析/元素分析",
+      "org_name": "埼玉大学 科学分析支援センター",
+      "prefecture": "埼玉県",
+      "source_url": "https://eqnet.jp/top#/public/equipment/1082"
+    },
+    {
+      "equipment_id": "eqnet-588",
+      "score": 97,
+      "name": "Raman分光測定システムLab RAM ARAMIS((株)堀場製作所)",
+      "category_general": "光分析装置",
+      "org_name": "大分大学 工学部 応用化学科 機能物質化学講座(豊田)",
+      "prefecture": "大分県",
+      "source_url": "https://eqnet.jp/top#/public/equipment/588"
+    }
+  ]
+}

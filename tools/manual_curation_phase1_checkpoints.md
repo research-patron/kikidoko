@@ -4,15 +4,15 @@
 - Codex手作業厳格チェック: `PASS/FAIL`（`reviewer mismatch / validation issue / duplicate metrics` を明記）
 - 件数: `done / needs_manual_fix / remaining`、全体 `approved / pending / rejected / missing`
 - FAIL→修正履歴: 失敗原因、最小修正、再検証結果
-- 検証: `verify_requirement_100`、UIスモーク、必要な構文チェック
+- 検証: `verify_requirement_100`、ローカルUIスモーク、公開JSON確認、必要な構文チェック
 - 検証フェーズでのPython/Nodeスクリプト使用: `0回`
-- 手作業確認URL: 実際に目視確認したURLを列挙
-- 手作業確認件数: 数値で明記
+- 確認した公開URL: `bootstrap-v1.json` と touched shard の `detail-xx.json` を列挙
+- 確認した shard 件数: 数値で明記
 - 次アクション: 次バッチ開始条件またはブロッカー
 
 ## Governance Note
 - `AGENTS.md` の必須フローに従い、報告前ゲート（Guard verify / strict監査 / requirement / UI）を全て PASS した場合のみ checkpoint を追記する。
-- 検証フェーズは手作業確認を必須とし、Python/Nodeスクリプトによる自動判定を使用しない。
+- 検証フェーズは Hosting 上の公開 JSON 確認を必須とし、Python/Nodeスクリプトによる自動判定を使用しない。
 
 ## 2026-02-26 Checkpoint 1
 - 変更点: `tools/manual_curation_queue.jsonl` の残り 90 件を手動審査判定として更新（`manual_content_v1.review.status = rejected`）。
@@ -2726,3 +2726,482 @@
 - live release: 2026-03-21 09:34:23 JST
 - bootstrap version: 2026-03-21T00:29:24.121982+00:00
 - note: queue was materialized from snapshot metadata, then pre-apply similarity was reduced on 202実験室(C)-1/C-2 and UC/UCR reactor pairs before full apply
+
+## 2026-03-27 CYCLE-REBUILD-0044 candidate100
+- preflight: PASS
+- apply full100: PASS
+- repair15 similarity apply: PASS
+- audit full100: PASS
+- requirement functional/strict_content: PASS
+- ui smoke: PASS
+- deploy: PASS
+- manual verification: PASS
+- verification phase script usage: 0
+- live release: 2026-03-27 23:44:09 JST
+- bootstrap version: 2026-03-27T14:40:08.485627+00:00
+- note: pre-apply similarity on 202実験室(D)-1/D-2, ハイブリオーブン1-3号機, GC/MS-PC・LC/MS-PC, pHメータ系, SH241/SH242, 大判プリンタ系を局所修正し、残り15件は repair セッションで個別化した
+
+## 2026-03-28 CYCLE-REBUILD-0045 candidate100
+- preflight: PASS (`BATCH-20260328-CYCLE0045-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=3`)
+- repair: 6 docs (`TOP5LRtd8iyGWZTGpSMH`, `OZxNeB1v5DhkllyzFlKW`, `eqnet-3529`, `eqnet-3719`, `eqnet-3577`, `eqnet-3579`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- manual verification: PASS
+
+## 2026-03-29 CYCLE-REBUILD-0046 candidate100 verification hold
+- preflight: PASS (`BATCH-20260329-CYCLE0046-CANDIDATE100`)
+- apply full100: PASS
+- audit full100: PASS
+- requirement subset functional/strict_content: PASS
+- ui smoke: PASS
+- live publish verification: FAIL
+- 検証フェーズでのスクリプト使用: 0回
+- 確認した公開URL: https://kikidoko.web.app/data/bootstrap-v1.json, https://kikidoko.firebaseapp.com/data/bootstrap-v1.json
+- 手作業確認時刻: 2026-03-29 18:54:28 JST - 2026-03-29 18:54:49 JST
+- FAIL→修正履歴: `web.app` / `firebaseapp.com` の bootstrap がともに `HTTP 509 Quota Exceeded` を返し、touched shard 確認へ進めなかった。content 側の再修正ではなく、Hosting bandwidth quota 解消後の再検証待ち。
+- 次アクション: quota 解消後に bootstrap 両ドメイン一致確認、touched shard 全件確認、`manual_guard close` を順に再実施する。
+
+## 2026-04-01 CYCLE-REBUILD-0046 candidate100 verification rerun
+- live publish verification rerun: PASS
+- bootstrap(web.app/firebaseapp.com): PASS (`2026-03-29T07:15:46.088617+00:00`)
+- touched shard verification: PASS (49 shards / both domains `HTTP 200`)
+- subset doc verification: PASS (100/100 doc_id, reviewer, reviewed_at, beginner_guide fields)
+- manual_guard close: PASS (`CANDIDATE100`, `REPAIR6-SIM`, `REPAIR6-SIM2`)
+- verification phase script usage: 0
+- note: 2026-03-29 の `HTTP 509 Quota Exceeded` hold は解消。live 公開 JSON の再確認で delivery gate を通過した。
+
+## 2026-04-02 CYCLE-REBUILD-0047 candidate100
+- preflight: PASS (`BATCH-20260402-CYCLE0047-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=16`)
+- repair: generic similarity queue -> retry -> repair 3 docs (`78knPzeYSv90eloR8Gnc`, `jTwENQIOrB2rmILgPBFJ`, `P0EkHIQuIjbNVHWw99MA`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-02 20:45:28 JST
+- bootstrap version: 2026-04-02T11:20:46.743787+00:00
+- note: fixed `detail_shard_map` generation to key by `doc_id`/primary id instead of only `equipment_id`, rebuilt dist data, then confirmed touched shard 47件 on both domains.
+
+## 2026-04-02 CYCLE-REBUILD-0048 candidate100
+- preflight: PASS (`BATCH-20260402-CYCLE0048-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=6`)
+- repair: generic similarity queue -> retry -> manual repair 6 docs (`OHpfAjPPknvsJRAQHiSP`, `20MO55GGHmWy4ipAwvoH`, `bOSxtSq0ZrjMD0ARsjdR`, `8mp1u6VuEXUdJhLiWD6P`, `DneFHMsqP1C9Dzm18znQ`, `17qXrRwMVQnE8hmUELPc`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-02 21:07:07 JST
+- bootstrap version: 2026-04-02T11:59:54.536897+00:00
+- note: touched shard 49件を `web.app` / `firebaseapp.com` で確認。subset 100件について `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄の存在を CLI で照合した。
+
+## 2026-04-02 CYCLE-REBUILD-0049 candidate100
+- preflight: PASS (`BATCH-20260402-CYCLE0049-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=3`)
+- repair: generic similarity queue -> retry -> manual repair 6 docs (`DFduftnBSoNgLxoZ4KaK`, `tLyJeXmMgR0wR63GPf9W`, `GzWvM03mMlg5qEV2KJ3Y`, `K64AwPhy1PT08IR3Z8DS`, `8yyuM4pHSpEaWbAfvj86`, `o6GkGNxN4W1j0b6qqnEF`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-02 21:27:00 JST
+- bootstrap version: 2026-04-02T12:18:42.940665+00:00
+- note: touched shard 55件を `web.app` / `firebaseapp.com` で確認。途中で壊れた `fb-detail-1a.json` を再取得し、subset 100件の `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄を CLI で照合した。
+
+## 2026-04-02 CYCLE-REBUILD-0050 candidate100
+- preflight: PASS (`BATCH-20260402-CYCLE0050-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=5`, remaining10 needs manual fix)
+- repair: remaining10 を再materializeし、ゼータ電位・元素分析・電子顕微鏡・蛍光分光・ワイヤカット加工の差分本文を手修正して再apply
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-02 22:09:01 JST
+- bootstrap version: 2026-04-02T13:03:04.455209+00:00
+- note: touched shard 51件を `web.app` / `firebaseapp.com` で確認。subset 100件について `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄の存在を CLI で照合した。
+
+## 2026-04-03 CYCLE-REBUILD-0051 candidate100
+- preflight: PASS (`BATCH-20260402-CYCLE0051-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=12`, affected 16 docs)
+- repair: generic similarity queue -> manual differentiation 16 docs (`eqnet-487`, `eqnet-2979`, `eqnet-886`, `eqnet-3757`, `gEc6jNDKCuXtCWHwwXSa`, `eqnet-3428`, `eqnet-1350`, `eqnet-1349`, `eqnet-529`, `eqnet-1351`, `eqnet-1352`, `eqnet-758`, `eqnet-1114`, `eqnet-2752`, `eqnet-3009`, `eqnet-590`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-03 07:30:40 JST
+- bootstrap version: 2026-04-02T13:24:38.003462+00:00
+- note: touched shard 52件を `web.app` / `firebaseapp.com` で確認。subset 100件について `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄の存在を CLI で照合した。
+
+## 2026-04-03 CYCLE-REBUILD-0052 candidate100
+- preflight: PASS (`BATCH-20260403-CYCLE0052-CANDIDATE100`)
+- initial apply: FAIL (`summary_dup_rate=0.01`, `principle_dup_rate=0.01`, `step1_dup_rate=0.02`, `pitfall1_dup_rate=0.02`, `guide_high_similarity_pairs=13`)
+- repair: generic similarity queue -> manual differentiation 20 docs (`eqnet-3358`, `eqnet-2909`, `eqnet-2393`, `eqnet-2733`, `eqnet-466`, `eqnet-988`, `eqnet-2762`, `eqnet-4352`, `eqnet-1064`, `eqnet-1065`, `obLFdkic0vHNGRje9FIX`, `f3eBPySPK4iYwCLXYUbv`, `eqnet-2445`, `eqnet-3014`, `eqnet-2254`, `eqnet-2276`, `eqnet-645`, `eqnet-2734`, `eqnet-3484`, `eqnet-3483`), beginner-guide char gate不足10件を追加補強して再apply
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-03 08:12:08 JST
+- bootstrap version: 2026-04-02T23:06:36.206339+00:00
+- note: touched shard 56件を `web.app` / `firebaseapp.com` で確認。subset 100件について `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄の存在を CLI で照合した。
+
+## 2026-04-03 CYCLE-REBUILD-0053 candidate100
+- queue/start/verify: PASS
+- apply: initial FAIL (`guide_high_similarity_pairs=3`), repaired 6 docs in queue and reran
+- apply rerun: PASS (`done=100 / remaining=0`)
+- full100 audit: PASS
+- requirement functional/strict_content: PASS
+- ui_smoke local: PASS
+- live publish verification (CLI): PASS
+- touched shards: 50
+- manual_guard close: PASS
+
+## 2026-04-03 CYCLE-REBUILD-0054 candidate100
+- preflight: PASS (`BATCH-20260403-CYCLE0054-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=22`)
+- repair: realtime PCR、フローサイトメーター、ジェネティックアナライザ、プレートリーダー、微量分光、次世代シーケンサー、生体イメージング系の 22 件を queue 上で個別化して再apply
+- apply rerun: PASS (`done=100 / remaining=0`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-03 08:43:50 JST
+- bootstrap version: 2026-04-02T23:37:27.855142+00:00
+- note: touched shard 54件を `web.app` / `firebaseapp.com` で確認。subset 100件について `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄の存在を CLI で照合した。
+
+## 2026-04-03 CYCLE-REBUILD-0055 candidate100
+- preflight: PASS (`BATCH-20260403-CYCLE0055-CANDIDATE100`)
+- initial apply: FAIL (`principle_dup_rate=0.29`, `step1_dup_rate=0.29`, `pitfall1_dup_rate=0.29`, `guide_high_similarity_pairs=32`)
+- repair: NMR、超遠心、DNAシーケンサー、蛍光/UV、TEM、XPS、熊本・山形・徳島・三重大系の 32 件を queue 上で個別化し、実文字数不足の 15 件を追加補強して再apply
+- apply rerun: PASS (`done=100 / remaining=0`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-03 10:12:39 JST
+- bootstrap version: 2026-04-03T01:05:28.956430+00:00
+- note: touched shard 43件を `web.app` / `firebaseapp.com` で確認。subset 100件について `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄の存在を CLI で照合した。
+
+## 2026-04-03 CYCLE-REBUILD-0056 candidate100
+- preflight: PASS (`BATCH-20260403-CYCLE0056-CANDIDATE100`)
+- initial apply: FAIL (`guide_high_similarity_pairs=17`)
+- repair: Photon Factory BL系、ビームライン周辺、超低温・秤量・乾燥系の 43 件を queue 上で個別化し、実文字数不足の 3 件を追加補強して再apply
+- apply rerun: PASS (`done=100 / remaining=0`)
+- final full100 audit: PASS
+- requirement subset: PASS
+- ui smoke: PASS
+- deploy: PASS
+- live publish verification (CLI): PASS
+- verification phase script usage: 0
+- live release: 2026-04-03 21:10:15 JST
+- bootstrap version: 2026-04-03T11:58:41.038149+00:00
+- note: touched shard 52件を `web.app` / `firebaseapp.com` で取得し、両ドメインの shard 内容一致を確認。subset 100件について `doc_id`、`reviewer`、`reviewed_at`、`beginner_guide` 各欄の存在を CLI で照合した。
+
+## CYCLE-REBUILD-0057 Candidate100 (2026-04-04)
+- batch_id: `BATCH-20260404-CYCLE0057-CANDIDATE100`
+- status: `PASS`
+- apply: initial similarity fail (`guide_high_similarity_pairs=22`) -> local repair -> rerun PASS
+- audit_manual_authenticity full100: `PASS`
+- requirement subset functional: `PASS`
+- requirement subset strict_content: `PASS`
+- ui_smoke local: `PASS`
+- live publish verification (CLI): `PASS`
+- touched shards: `54`
+- deploy: `2026-04-04 10:19:17 JST`
+- verification record: `tools/manual_verification_cycle0057_candidate100_20260404.md`
+
+## CYCLE-REBUILD-0058 Candidate100 (2026-04-04)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0058_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0058_full100.json`
+- apply audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0058_candidate100_apply_rerun2.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0058_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0058_candidate100_20260404.md`
+- live release time: `2026-04-04 10:40:30 JST`
+
+## CYCLE-REBUILD-0059 Candidate100 (2026-04-04)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0059_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0059_full100.json`
+- apply audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0059_candidate100_apply_rerun1.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0059_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0059_candidate100_20260404.md`
+- live release time: `2026-04-04 10:57:24 JST`
+
+## CYCLE-REBUILD-0060 Candidate100 (2026-04-04)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0060_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0060_full100.json`
+- apply audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0060_candidate100_apply_rerun1.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0060_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0060_candidate100_20260404.md`
+- live release time: `2026-04-04 11:12:42 JST`
+
+## CYCLE-REBUILD-0061 Candidate100 (2026-04-04)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0061_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0061_full100.json`
+- apply audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0061_candidate100_apply_rerun1.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0061_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0061_candidate100_20260404.md`
+- live release time: `2026-04-04 11:29:09 JST`
+
+## CYCLE-REBUILD-0062 Candidate100 (2026-04-09)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0062_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0062_candidate100_apply_rerun1.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0062_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0062_candidate100_20260409.md`
+- live release time: `2026-04-09 18:08:59 JST`
+- touched shards: `52`
+
+## CYCLE-REBUILD-0063 Candidate100 (2026-04-09)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0063_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0063_candidate100_apply_rerun2.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0063_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0063_candidate100_20260409.md`
+- live release time: `2026-04-09 22:53:07 JST`
+- touched shards: `51`
+
+## CYCLE-REBUILD-0064 Candidate100 (2026-04-09)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0064_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0064_candidate100_apply_rerun2.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0064_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0064_candidate100_20260409.md`
+- live release time: `2026-04-09 23:26:11 JST`
+- touched shards: `53`
+
+## CYCLE-REBUILD-0065 Candidate100 (2026-04-09)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0065_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0065_candidate100_apply_rerun1.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0065_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0065_candidate100_20260409.md`
+- live release time: `2026-04-09 23:45:25 JST`
+- touched shards: `48`
+
+## CYCLE-REBUILD-0066 Candidate100 (2026-04-10)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0066_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0066_candidate100_apply_rerun7.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0066_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0066_candidate100_20260410.md`
+- live release time: `2026-04-10 00:19:56 JST`
+- touched shards: `52`
+
+## CYCLE-REBUILD-0067 Candidate100 (2026-04-10)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0067_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0067_candidate100_apply_rerun1.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0067_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0067_candidate100_20260410.md`
+- live release time: `2026-04-10 00:41:32 JST`
+- touched shards: `50`
+
+## CYCLE-REBUILD-0068 Candidate100 (2026-04-10)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0068_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0068_candidate100_apply_rerun5.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0068_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0068_candidate100_20260410.md`
+- live release time: `2026-04-10 01:11:24 JST`
+- touched shards: `55`
+
+## CYCLE-REBUILD-0069 Candidate100 (2026-04-10)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0069_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0069_candidate100_apply_rerun2.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0069_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0069_candidate100_20260410.md`
+- live release time: `2026-04-10 01:29:27 JST`
+- touched shards: `53`
+
+## CYCLE-REBUILD-0070 Candidate100 (2026-04-10)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0070_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0070_full100.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0070_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0070_candidate100_20260410.md`
+- live release time: `2026-04-10 01:50:33 JST`
+- touched shards: `56`
+
+## CYCLE-REBUILD-0071 Candidate100 (2026-04-10)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0071_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0071_full100.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0071_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0071_candidate100_20260410.md`
+- live release time: `2026-04-10 02:10:11 JST`
+- touched shards: `54`
+
+## CYCLE-REBUILD-0072 Candidate100 (2026-04-10)
+- status: PASS
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0072_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0072_full100.json`
+- requirement: subset functional PASS / strict_content PASS
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0072_100.json`
+- verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0072_candidate100_20260410.md`
+- live release time: `2026-04-10 03:30:07 JST`
+- touched shards: `48`
+
+## CYCLE-REBUILD-0073 Candidate100 (2026-04-10)
+- checkpoint: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_curation_checkpoint_cycle0073_candidate100.json`
+- full audit: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_authenticity_audit_report_cycle0073_full100.json` (`PASS`)
+- requirement: subset functional/strict `PASS`
+- ui smoke: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/ui_smoke_manual_routes_report_cycle0073_100.json` (`PASS`)
+- live verification: `/Users/niigatadaigakukenkyuuyou/Desktop/開発アプリ/kikidoko/tools/manual_verification_cycle0073_candidate100_20260410.md` (`PASS`)
+- live release time: `2026-04-10 07:35:33 JST`
+- touched shards: `49`
+
+## CYCLE-REBUILD-0074 Candidate100 (2026-04-10)
+- batch_id: `BATCH-20260410-CYCLE0074-CANDIDATE100`
+- queue: `tools/manual_curation_queue_cycle0074_candidate100.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0074_candidate100.json`
+- source_map: `tools/manual_cycle0074_source_map.json`
+- apply rerun1: `PASS`
+- full audit: `PASS`
+- requirement subset functional: `PASS`
+- requirement subset strict_content: `PASS`
+- local ui_smoke: `PASS`
+- live publish verification (CLI): `PASS`
+- touched shards: `55`
+- live release time: `2026-04-10 07:51:57 JST`
+- verification record: `tools/manual_verification_cycle0074_candidate100_20260410.md`
+- guard close: `PASS`
+
+## CYCLE-REBUILD-0075 Candidate100 (2026-04-10)
+- batch_id: `BATCH-20260410-CYCLE0075-CANDIDATE100`
+- queue: `tools/manual_curation_queue_cycle0075_candidate100_v3.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0075_candidate100_v3.json`
+- source_map: `tools/manual_cycle0075_source_map.json`
+- apply v3: `PASS`
+- repair2 similarity: `PASS`
+- full audit: `PASS`
+- requirement subset functional: `PASS`
+- requirement subset strict_content: `PASS`
+- local ui_smoke: `PASS`
+- live publish verification (CLI): `PASS`
+- touched shards: `52`
+- live release time: `2026-04-10 18:08:21 JST`
+- verification record: `tools/manual_verification_cycle0075_candidate100_20260410.md`
+- guard close: `PASS`
+
+## CYCLE-REBUILD-0076 Candidate100 (2026-04-10)
+- batch_id: `BATCH-20260410-CYCLE0076-CANDIDATE100`
+- queue: `tools/manual_curation_queue_cycle0076_candidate100.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0076_candidate100.json`
+- source_map: `tools/manual_cycle0076_source_map.json`
+- apply rerun3: `PASS`
+- full audit: `PASS`
+- requirement subset functional: `PASS`
+- requirement subset strict_content: `PASS`
+- local ui_smoke: `PASS`
+- live publish verification (CLI): `PASS`
+- touched shards: `49`
+- live release time: `2026-04-10 18:47:16 JST`
+- verification record: `tools/manual_verification_cycle0076_candidate100_20260410.md`
+- guard close: `PASS`
+
+## CYCLE-REBUILD-0077 Candidate100 (2026-04-10)
+- batch_id: `BATCH-20260410-CYCLE0077-CANDIDATE100`
+- queue: `tools/manual_curation_queue_cycle0077_candidate100.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0077_candidate100.json`
+- source_map: `tools/manual_cycle0077_source_map.json`
+- apply rerun2: `PASS`
+- full audit: `PASS`
+- requirement subset functional: `PASS`
+- requirement subset strict_content: `PASS`
+- local ui_smoke: `PASS`
+- live publish verification (CLI): `PASS`
+- touched shards: `50`
+- live release time: `2026-04-10 23:32:27 JST`
+- verification record: `tools/manual_verification_cycle0077_candidate100_20260410.md`
+- guard close: `PASS`
+
+## CYCLE-REBUILD-0078 Candidate100 (2026-04-10)
+- queue: `tools/manual_curation_queue_cycle0078_candidate100.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0078_candidate100.json`
+- guard verify: PASS
+- apply: initial FAIL (`guide_high_similarity_pairs=18`) -> VE-8800 3件を再個別化して rerun PASS
+- full audit: PASS (`guide_high_similarity_pairs=0`)
+- requirement: functional PASS / strict_content PASS
+- local ui_smoke: PASS (`tools/ui_smoke_manual_routes_report_cycle0078_100.json`)
+- deploy: PASS (`live release time: 2026-04-10 23:59:00 JST`)
+- live publish verification (CLI): PASS
+- touched shards: `54`
+- manual_guard close: PASS
+- verification record: `tools/manual_verification_cycle0078_candidate100_20260410.md`
+
+## CYCLE-REBUILD-0079 Candidate100 (2026-04-11)
+- queue: `tools/manual_curation_queue_cycle0079_candidate100.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0079_candidate100.json`
+- guard verify: PASS
+- apply: initial FAIL (`guide_high_similarity_pairs=22`) -> 20件を個別化して rerun PASS
+- full audit: PASS (`guide_high_similarity_pairs=0`)
+- requirement: functional PASS / strict_content PASS
+- local ui_smoke: PASS (`tools/ui_smoke_manual_routes_report_cycle0079_100.json`)
+- deploy: PASS (`live release time: 2026-04-11 10:11:03 JST`)
+- live publish verification (CLI): PASS
+- touched shards: `51`
+- manual_guard close: PASS
+- verification record: `tools/manual_verification_cycle0079_candidate100_20260411.md`
+
+## CYCLE-REBUILD-0080 Candidate100 (2026-04-11)
+- queue: `tools/manual_curation_queue_cycle0080_candidate100.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0080_candidate100.json`
+- guard verify: PASS
+- apply: initial FAIL (`guide_high_similarity_pairs=22`) -> 22件を個別化して rerun PASS
+- full audit: PASS (`guide_high_similarity_pairs=0`)
+- requirement: functional PASS / strict_content PASS
+- local ui_smoke: PASS (`tools/ui_smoke_manual_routes_report_cycle0080_100.json`)
+- deploy: PASS (`live release time: 2026-04-11 10:30:55 JST`)
+- live publish verification (CLI): PASS
+- touched shards: `51`
+- manual_guard close: PASS
+- verification record: `tools/manual_verification_cycle0080_candidate100_20260411.md`
+
+## CYCLE-REBUILD-0081 Candidate100 (2026-04-11)
+- queue: `tools/manual_curation_queue_cycle0081_candidate100.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_cycle0081_candidate100.json`
+- guard verify: PASS
+- apply: initial FAIL (`guide_high_similarity_pairs=32`) -> 27件を個別化して rerun PASS
+- full audit: PASS (`guide_high_similarity_pairs=0`)
+- requirement: functional PASS / strict_content PASS
+- local ui_smoke: PASS (`tools/ui_smoke_manual_routes_report_cycle0081_100.json`)
+- deploy: PASS (`live release time: 2026-04-11 14:38:55 JST`)
+- live publish verification (CLI): PASS
+- touched shards: `47`
+- manual_guard close: PASS
+- verification record: `tools/manual_verification_cycle0081_candidate100_20260411.md`

@@ -68,6 +68,7 @@
       "slug": "research-equipment-sharing-basics",
       "url": "/guide/research-equipment-sharing-basics/",
       "title": "研究機器の共用利用とは？大学・公的機関の設備を探す基本ガイド",
+      "meta_description": "大学・公的機関の研究機器を共用利用する際の見つけ方、利用条件、料金体系、問い合わせのコツを解説。研究計画の精度を高め、効率的に研究を進めるための実践ガイドです。",
       "primary_keyword": "研究機器 共用",
       "secondary_keywords": [
         "共用設備 とは",
@@ -85,7 +86,8 @@
         "/guide/search-external-usable-equipment/",
         "/guide/research-equipment-pricing-guide/",
         "/equipment/sem-external-use-guide/"
-      ]
+      ],
+      "excerpt": "研究で必要な装置が学内にないとき、「どこで借りられるのか」「学外でも使えるのか」「料金はどのくらいか」が一気に課題になります。ここで重要になるのが 研究機器 共用 の考え方です。共用設備を正しく探せるようになると、実験の選択肢が増え、研究…"
     },
     {
       "id": "guide-02",
@@ -110,7 +112,9 @@
         "/guide/research-equipment-sharing-basics/",
         "/guide/research-equipment-inquiry-template/",
         "/region/tokyo-research-equipment-guide/"
-      ]
+      ],
+      "meta_description": "学外の設備を使って実験を進めたいとき、最初に詰まるのは「どの装置が使えるのか」ではなく「どの条件から確認すべきか」です。特に院生・若手研究者は、候補探索と問い合わせを同時進行しがちで、判断軸が混ざると時間を失います。そこで本記事では、 学…",
+      "excerpt": "学外の設備を使って実験を進めたいとき、最初に詰まるのは「どの装置が使えるのか」ではなく「どの条件から確認すべきか」です。特に院生・若手研究者は、候補探索と問い合わせを同時進行しがちで、判断軸が混ざると時間を失います。そこで本記事では、 学…"
     },
     {
       "id": "guide-03",
@@ -135,7 +139,9 @@
         "/guide/research-equipment-sharing-basics/",
         "/guide/search-external-usable-equipment/",
         "/workflow/shared-vs-outsourced-analysis/"
-      ]
+      ],
+      "meta_description": "研究設備 料金を比較するとき、多くの人が「1時間あたりいくらか」だけを見て判断しがちです。しかし実務では、同じ単価でも支援範囲、前処理対応、再測定時の条件で総コストは大きく変わります。特に院生・若手研究者は、限られた期間で候補選定と問い合…",
+      "excerpt": "研究設備 料金を比較するとき、多くの人が「1時間あたりいくらか」だけを見て判断しがちです。しかし実務では、同じ単価でも支援範囲、前処理対応、再測定時の条件で総コストは大きく変わります。特に院生・若手研究者は、限られた期間で候補選定と問い合…"
     },
     {
       "id": "guide-04",
@@ -160,7 +166,9 @@
         "/guide/search-external-usable-equipment/",
         "/guide/research-equipment-pricing-guide/",
         "/workflow/joint-research-equipment-flow/"
-      ]
+      ],
+      "meta_description": "研究機器 問い合わせを送るとき、最も多い失敗は「機器名だけを書いて連絡してしまう」ことです。担当者側は、試料条件や希望出力、納期が分からないと可否も見積もりも判断できません。その結果、確認の往復が増え、実験開始日が後ろ倒しになります。特に…",
+      "excerpt": "研究機器 問い合わせを送るとき、最も多い失敗は「機器名だけを書いて連絡してしまう」ことです。担当者側は、試料条件や希望出力、納期が分からないと可否も見積もりも判断できません。その結果、確認の往復が増え、実験開始日が後ろ倒しになります。特に…"
     },
     {
       "id": "equipment-01",
@@ -185,7 +193,9 @@
         "/equipment/tem-collaboration-guide/",
         "/equipment/xrd-collaboration-guide/",
         "/guide/search-external-usable-equipment/"
-      ]
+      ],
+      "meta_description": "SEM 学外利用を検討するとき、最初に詰まりやすいのは「どの施設に問い合わせるか」よりも「何を観察したいかを言語化できていない」点です。SEMは便利な装置ですが、倍率、分解能、試料状態、前処理条件で必要な運用が大きく変わります。ここが曖昧…",
+      "excerpt": "SEM 学外利用を検討するとき、最初に詰まりやすいのは「どの施設に問い合わせるか」よりも「何を観察したいかを言語化できていない」点です。SEMは便利な装置ですが、倍率、分解能、試料状態、前処理条件で必要な運用が大きく変わります。ここが曖昧…"
     },
     {
       "id": "equipment-02",
@@ -210,7 +220,9 @@
         "/equipment/sem-external-use-guide/",
         "/equipment/xrd-collaboration-guide/",
         "/workflow/thesis-equipment-selection/"
-      ]
+      ],
+      "meta_description": "TEM 共同利用を検討するとき、SEMと同じ感覚で問い合わせると失敗しやすくなります。透過電子顕微鏡は試料準備の難易度が高く、観察前提が合わないと実施可否そのものが変わるためです。特に学外利用では、試料の前処理、観察目的、必要分解能を初回…",
+      "excerpt": "TEM 共同利用を検討するとき、SEMと同じ感覚で問い合わせると失敗しやすくなります。透過電子顕微鏡は試料準備の難易度が高く、観察前提が合わないと実施可否そのものが変わるためです。特に学外利用では、試料の前処理、観察目的、必要分解能を初回…"
     },
     {
       "id": "equipment-03",
@@ -235,7 +247,9 @@
         "/equipment/sem-external-use-guide/",
         "/equipment/nmr-frequency-selection-guide/",
         "/guide/research-equipment-pricing-guide/"
-      ]
+      ],
+      "meta_description": "XRD 共同利用を進めるとき、最初に悩むのは「どの施設に依頼するか」ですが、実際に時間を失う原因は別にあります。多くのケースでは、測定目的と評価軸が曖昧なまま問い合わせることで、回答の往復が増えています。X線回折装置は同じXRDでも運用条…",
+      "excerpt": "XRD 共同利用を進めるとき、最初に悩むのは「どの施設に依頼するか」ですが、実際に時間を失う原因は別にあります。多くのケースでは、測定目的と評価軸が曖昧なまま問い合わせることで、回答の往復が増えています。X線回折装置は同じXRDでも運用条…"
     },
     {
       "id": "equipment-04",
@@ -260,7 +274,9 @@
         "/equipment/xrd-collaboration-guide/",
         "/equipment/lcms-shared-analysis-guide/",
         "/guide/research-equipment-pricing-guide/"
-      ]
+      ],
+      "meta_description": "NMR 外部利用を検討するとき、最初に迷いやすいのが「400MHzで十分か、600MHzが必要か」という点です。周波数帯は高ければ常に正解というものではなく、測定目的、試料濃度、納期、予算のバランスで選ぶ必要があります。ここを整理しないま…",
+      "excerpt": "NMR 外部利用を検討するとき、最初に迷いやすいのが「400MHzで十分か、600MHzが必要か」という点です。周波数帯は高ければ常に正解というものではなく、測定目的、試料濃度、納期、予算のバランスで選ぶ必要があります。ここを整理しないま…"
     },
     {
       "id": "equipment-05",
@@ -285,7 +301,9 @@
         "/equipment/hplc-uplc-shared-equipment-guide/",
         "/equipment/ngs-shared-equipment-guide/",
         "/workflow/shared-vs-outsourced-analysis/"
-      ]
+      ],
+      "meta_description": "LC-MS/MS 共同利用を検討するとき、装置名や施設名だけで候補を選ぶと、依頼後の手戻りが増えやすくなります。理由は、LC-MS/MSでは試料前処理、マトリクス影響、定量レンジ、必要な測定モードの前提が結果品質を大きく左右するためです。…",
+      "excerpt": "LC-MS/MS 共同利用を検討するとき、装置名や施設名だけで候補を選ぶと、依頼後の手戻りが増えやすくなります。理由は、LC-MS/MSでは試料前処理、マトリクス影響、定量レンジ、必要な測定モードの前提が結果品質を大きく左右するためです。…"
     },
     {
       "id": "equipment-06",
@@ -310,7 +328,9 @@
         "/equipment/lcms-shared-analysis-guide/",
         "/equipment/ngs-shared-equipment-guide/",
         "/guide/research-equipment-inquiry-template/"
-      ]
+      ],
+      "meta_description": "HPLC 共同利用を進めるとき、装置の有無だけで候補を選ぶと、依頼後に条件調整で時間を失いやすくなります。実際には、前処理の設計、分離目的の明確化、検出条件の相談が揃ってはじめて、実施可否と見積もりが固まります。特に学外の共用設備では、連…",
+      "excerpt": "HPLC 共同利用を進めるとき、装置の有無だけで候補を選ぶと、依頼後に条件調整で時間を失いやすくなります。実際には、前処理の設計、分離目的の明確化、検出条件の相談が揃ってはじめて、実施可否と見積もりが固まります。特に学外の共用設備では、連…"
     },
     {
       "id": "equipment-07",
@@ -335,7 +355,9 @@
         "/equipment/sem-external-use-guide/",
         "/equipment/tem-collaboration-guide/",
         "/workflow/thesis-equipment-selection/"
-      ]
+      ],
+      "meta_description": "共焦点顕微鏡 学外利用を検討するとき、最初に重要なのは「どの装置があるか」よりも「何を観察したいか」を明確にすることです。共焦点は蛍光観察、三次元再構成、共局在解析など用途が広く、目的が曖昧なまま問い合わせると、必要な撮像条件や前処理の確…",
+      "excerpt": "共焦点顕微鏡 学外利用を検討するとき、最初に重要なのは「どの装置があるか」よりも「何を観察したいか」を明確にすることです。共焦点は蛍光観察、三次元再構成、共局在解析など用途が広く、目的が曖昧なまま問い合わせると、必要な撮像条件や前処理の確…"
     },
     {
       "id": "equipment-08",
@@ -360,7 +382,9 @@
         "/equipment/lcms-shared-analysis-guide/",
         "/equipment/hplc-uplc-shared-equipment-guide/",
         "/guide/research-equipment-inquiry-template/"
-      ]
+      ],
+      "meta_description": "NGS 共同利用を検討するとき、最初に難しくなるのは装置選びよりも「何をどこまで解析したいか」を定義する部分です。DNAシーケンサーは共用設備でも利用可能ですが、試料品質、ライブラリ調製、解析スコープが曖昧なまま相談すると、見積もりと日程…",
+      "excerpt": "NGS 共同利用を検討するとき、最初に難しくなるのは装置選びよりも「何をどこまで解析したいか」を定義する部分です。DNAシーケンサーは共用設備でも利用可能ですが、試料品質、ライブラリ調製、解析スコープが曖昧なまま相談すると、見積もりと日程…"
     },
     {
       "id": "region-01",
@@ -385,7 +409,9 @@
         "/region/osaka-shared-equipment-guide/",
         "/region/aichi-research-equipment-guide/",
         "/equipment/sem-external-use-guide/"
-      ]
+      ],
+      "meta_description": "東京都 研究機器を探すとき、最初にぶつかる課題は「候補が多すぎて絞れない」ことです。都内は大学・研究機関の選択肢が多い一方で、学外利用可否や予約条件、支援範囲が施設ごとに異なります。条件を決めずに問い合わせると、比較できない回答が増え、実…",
+      "excerpt": "東京都 研究機器を探すとき、最初にぶつかる課題は「候補が多すぎて絞れない」ことです。都内は大学・研究機関の選択肢が多い一方で、学外利用可否や予約条件、支援範囲が施設ごとに異なります。条件を決めずに問い合わせると、比較できない回答が増え、実…"
     },
     {
       "id": "region-02",
@@ -410,7 +436,9 @@
         "/region/tokyo-research-equipment-guide/",
         "/region/fukuoka-research-equipment-guide/",
         "/guide/search-external-usable-equipment/"
-      ]
+      ],
+      "meta_description": "大阪 研究機器を探すとき、東京都とは違い、関西圏での移動・予約調整を含めた判断が必要になります。候補が複数県にまたがるため、条件を固定せずに問い合わせると比較が難しくなり、実施決定が遅れます。とくに学外利用可の確認を後回しにすると、技術的…",
+      "excerpt": "大阪 研究機器を探すとき、東京都とは違い、関西圏での移動・予約調整を含めた判断が必要になります。候補が複数県にまたがるため、条件を固定せずに問い合わせると比較が難しくなり、実施決定が遅れます。とくに学外利用可の確認を後回しにすると、技術的…"
     },
     {
       "id": "region-03",
@@ -435,7 +463,9 @@
         "/region/tokyo-research-equipment-guide/",
         "/region/hokkaido-research-equipment-guide/",
         "/equipment/xrd-collaboration-guide/"
-      ]
+      ],
+      "meta_description": "愛知 研究機器を探すときは、名古屋周辺を中心に候補が集まりやすく、比較の軸を先に決めないと判断が遅れます。中部圏は移動圏が広く、同じ県内でも予約条件や支援範囲の差が大きいため、問い合わせ前の整理が重要です。特に学外利用可否を後回しにすると…",
+      "excerpt": "愛知 研究機器を探すときは、名古屋周辺を中心に候補が集まりやすく、比較の軸を先に決めないと判断が遅れます。中部圏は移動圏が広く、同じ県内でも予約条件や支援範囲の差が大きいため、問い合わせ前の整理が重要です。特に学外利用可否を後回しにすると…"
     },
     {
       "id": "region-04",
@@ -460,7 +490,9 @@
         "/region/osaka-shared-equipment-guide/",
         "/region/hokkaido-research-equipment-guide/",
         "/workflow/joint-research-equipment-flow/"
-      ]
+      ],
+      "meta_description": "福岡 研究機器を探すとき、最初に重要なのは「福岡県内だけで完結するか、九州エリアで補完するか」を早めに決めることです。九州圏では施設間の距離や予約枠の差が判断に影響しやすく、候補を広く出しすぎると比較が複雑になります。条件を固定せずに問い…",
+      "excerpt": "福岡 研究機器を探すとき、最初に重要なのは「福岡県内だけで完結するか、九州エリアで補完するか」を早めに決めることです。九州圏では施設間の距離や予約枠の差が判断に影響しやすく、候補を広く出しすぎると比較が複雑になります。条件を固定せずに問い…"
     },
     {
       "id": "region-05",
@@ -485,7 +517,9 @@
         "/region/tokyo-research-equipment-guide/",
         "/region/fukuoka-research-equipment-guide/",
         "/guide/research-equipment-sharing-basics/"
-      ]
+      ],
+      "meta_description": "北海道 研究機器を探すときは、候補の多さよりも「候補の少なさ」と「移動・日程制約」がボトルネックになりやすい点が特徴です。道内で利用可能な設備を先に把握しつつ、必要に応じて道外候補をバックアップとして確保する運用が重要です。条件整理をせず…",
+      "excerpt": "北海道 研究機器を探すときは、候補の多さよりも「候補の少なさ」と「移動・日程制約」がボトルネックになりやすい点が特徴です。道内で利用可能な設備を先に把握しつつ、必要に応じて道外候補をバックアップとして確保する運用が重要です。条件整理をせず…"
     },
     {
       "id": "workflow-01",
@@ -510,7 +544,9 @@
         "/workflow/joint-research-equipment-flow/",
         "/workflow/shared-vs-outsourced-analysis/",
         "/equipment/tem-collaboration-guide/"
-      ]
+      ],
+      "meta_description": "卒論や修論の実験計画では、装置選定に使える時間が想像以上に短くなります。テーマ確定、試料準備、倫理申請、指導教員との調整が同時進行になるため、研究機器の探索を後ろに回すと、予約枠が埋まって計画全体が遅れやすくなります。短期間で候補を絞るに…",
+      "excerpt": "卒論や修論の実験計画では、装置選定に使える時間が想像以上に短くなります。テーマ確定、試料準備、倫理申請、指導教員との調整が同時進行になるため、研究機器の探索を後ろに回すと、予約枠が埋まって計画全体が遅れやすくなります。短期間で候補を絞るに…"
     },
     {
       "id": "workflow-02",
@@ -535,7 +571,9 @@
         "/workflow/thesis-equipment-selection/",
         "/workflow/shared-vs-outsourced-analysis/",
         "/guide/research-equipment-inquiry-template/"
-      ]
+      ],
+      "meta_description": "共同研究で研究機器を探す場面では、装置選定そのものより「誰が何を決めるか」の設計不足で遅延することが多くあります。学内の研究室だけで完結する案件と違い、共同研究先、受入施設、事務担当の合意が必要になるため、情報共有の粒度が揃っていないと問…",
+      "excerpt": "共同研究で研究機器を探す場面では、装置選定そのものより「誰が何を決めるか」の設計不足で遅延することが多くあります。学内の研究室だけで完結する案件と違い、共同研究先、受入施設、事務担当の合意が必要になるため、情報共有の粒度が揃っていないと問…"
     },
     {
       "id": "workflow-03",
@@ -560,7 +598,10 @@
         "/workflow/thesis-equipment-selection/",
         "/workflow/joint-research-equipment-flow/",
         "/equipment/lcms-shared-analysis-guide/"
-      ]
+      ],
+      "meta_description": "共用設備 受託分析 違いを正しく理解すると、研究計画の遅延や想定外コストを大きく減らせます。どちらも「外部リソースを使って分析を進める」点は同じですが、実務では責任分担、日程の決まり方、再測定時の対応が大きく異なります。費用単価だけで選ぶ…",
+      "excerpt": "共用設備 受託分析 違いを正しく理解すると、研究計画の遅延や想定外コストを大きく減らせます。どちらも「外部リソースを使って分析を進める」点は同じですが、実務では責任分担、日程の決まり方、再測定時の対応が大きく異なります。費用単価だけで選ぶ…"
     }
-  ]
+  ],
+  "generated_at": "2026-04-11T05:38:34Z"
 }

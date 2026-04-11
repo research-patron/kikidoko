@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--manifest", required=True)
     parser.add_argument("--wp-base", required=True)
     parser.add_argument("--draft")
-    parser.add_argument("--publish-log", default="frontend/public/blog/publish-log.json")
+    parser.add_argument("--publish-log", default="frontend/content/blog/ops/publication-log.json")
     parser.add_argument("--ensure-all-categories", action="store_true")
     parser.add_argument("--insecure", action="store_true")
     parser.add_argument("--report-out")
@@ -291,7 +291,7 @@ def main() -> int:
         print(str(exc))
         return 2
 
-    draft_path = Path(args.draft) if args.draft else Path(f"frontend/public/blog/drafts/{args.article_id}.md")
+    draft_path = Path(args.draft) if args.draft else Path(f"frontend/content/blog/articles/{args.article_id}.md")
     if not draft_path.exists():
         print(f"draft not found: {draft_path}")
         return 2

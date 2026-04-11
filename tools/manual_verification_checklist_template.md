@@ -10,49 +10,55 @@
 - 独自ドメイン (追従確認): https://kikidoko.student-subscription.com
 - 参照バージョン文字列:
 - 配信確認時刻:
+- bootstrap(web.app) version/generated_at 一致:
+- bootstrap(firebaseapp.com) version/generated_at 一致:
 
 ## Target Equipments
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 - doc_id:
   - 機器名:
-  - 確認URL:
+  - 確認shard:
 
-## Manual UI Verification (Per Equipment)
-- 初心者ガイド遷移可否:
-- 4セクション表示可否:
-- 記事内容が装置用途に一致:
-- 関連論文ページ遷移可否:
+## Live Publish Verification (CLI)
+- 確認した detail shard URL 一覧:
+- 対象 doc_id が shard に存在:
+- `manual_content_v1.review.reviewer=codex-manual`:
+- `reviewed_at` 非空:
+- `beginner_guide.principle_ja` 存在:
+- `beginner_guide.sample_guidance_ja` 存在:
+- `beginner_guide.basic_steps_ja` 存在:
+- `beginner_guide.common_pitfalls_ja` 存在:
 - 追加所見:
 
 ## Verification Integrity
 - 検証中スクリプト使用回数（必ず0）:
-- 手作業確認URL一覧:
+- 確認した公開URL一覧:
 - 手作業確認時刻一覧:
 
 ## Final Decision

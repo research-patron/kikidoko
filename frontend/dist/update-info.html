@@ -6,88 +6,42 @@
     <title>キキドコ | アップデート情報</title>
     <meta
       name="description"
-      content="キキドコの開発要望投稿、要望リスト、アップデート情報を確認できます。"
+      content="キキドコの最新アップデートと過去の更新履歴を確認できます。"
     />
     <link rel="icon" type="image/png" href="/brand/app-icon-square.png" />
     <link rel="apple-touch-icon" href="/brand/app-icon-square.png" />
-    <link rel="stylesheet" href="/update-info.css" />
-    <script defer src="/update-info.js"></script>
+    <link rel="stylesheet" href="/update-info.css?v=20260328-update-info-font-sheet-fix-1" />
+    <script defer src="/update-info.js?v=20260328-update-info-font-sheet-fix-1"></script>
   </head>
   <body>
     <div class="page">
       <header class="hero">
         <a href="/" class="back-link">← トップへ戻る</a>
         <h1>アップデート情報</h1>
-        <p>
-          開発要望の投稿と一覧、データ更新履歴をまとめて確認できます。最新の更新は右側に時系列で掲載します。
-        </p>
+        <p>キキドコの最新更新と過去の更新履歴を時系列で掲載しています。</p>
       </header>
 
-      <main class="blog-shell">
-        <section class="blog-grid" aria-label="要望とアップデート情報">
-          <div class="blog-column left">
-            <article class="blog-card">
-              <h2>開発要望を投稿</h2>
-              <p class="card-lead">匿名で投稿できます（8〜500文字、5分に1回まで）。</p>
-              <form id="feature-request-form" class="request-form">
-                <textarea
-                  id="feature-request-message"
-                  maxlength="500"
-                  placeholder="例: ○○のフィルタを追加してほしい"
-                  required
-                ></textarea>
-                <div class="request-actions">
-                  <button id="feature-request-submit" type="submit">要望を送信</button>
-                  <p id="feature-request-status" class="status" aria-live="polite"></p>
-                </div>
-              </form>
-            </article>
+      <main class="update-layout">
+        <nav id="update-month-nav" class="update-month-nav" aria-label="月別ナビゲーション"></nav>
 
-            <article class="blog-card">
-              <h2>要望リスト</h2>
-              <p class="card-lead">新しい投稿順で表示します。</p>
-              <div id="feature-request-list" class="request-list" aria-live="polite">
-                <p class="empty">読み込み中です...</p>
-              </div>
-              <div class="more-wrap" id="feature-request-more-wrap" hidden>
-                <button type="button" id="feature-request-more">さらに読み込む</button>
-              </div>
-            </article>
+        <section class="update-section">
+          <div class="section-heading">
+            <h2>最新の更新</h2>
           </div>
+          <div id="update-latest" class="update-latest" aria-live="polite">
+            <p class="empty">読み込み中です...</p>
+          </div>
+        </section>
 
-          <div class="blog-column right">
-            <article class="blog-card">
-              <h2>アップデート情報</h2>
-              <p class="card-lead">直近5件を表示します。・・・を押すと月別履歴を確認できます。</p>
-              <div id="update-history-recent" class="update-history-recent" aria-live="polite">
-                <p class="empty">読み込み中です...</p>
-              </div>
-              <div class="update-more-wrap" id="update-history-more-wrap" hidden>
-                <button type="button" id="update-history-more" class="update-more-button">・・・</button>
-              </div>
-            </article>
+        <section class="update-section">
+          <div class="section-heading">
+            <h2>過去の更新</h2>
+          </div>
+          <div id="update-archive" class="update-archive" aria-live="polite">
+            <p class="empty">読み込み中です...</p>
           </div>
         </section>
       </main>
-
-      <div id="update-history-modal" class="update-modal" hidden aria-hidden="true">
-        <button
-          type="button"
-          id="update-history-modal-backdrop"
-          class="update-modal-backdrop"
-          aria-label="アップデート情報ポップアップを閉じる"
-        ></button>
-        <div class="update-modal-panel" role="dialog" aria-modal="true" aria-labelledby="update-history-modal-title">
-          <div class="update-modal-header">
-            <h3 id="update-history-modal-title">月別アップデート情報</h3>
-            <button type="button" id="update-history-modal-close" class="update-modal-close">閉じる</button>
-          </div>
-          <div class="update-modal-body">
-            <div id="update-history-month-picker" class="update-month-picker" aria-label="月選択"></div>
-            <div id="update-history-month-entries" class="update-month-entries" aria-live="polite"></div>
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
