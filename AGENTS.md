@@ -79,19 +79,25 @@
 - 検証フェーズで許可:
   - `firebase` / `curl` / `jq` / `grep` / `sed` / `awk` 等の単発CLIによる公開 JSON 確認
   - Firestore 読み取りによる補助診断
-- live 反映確認の真実源は Firestore ではなく Hosting 上の JSON とする。
-- delivery gate で確認する対象は次の 3 系統とする。
-  1. `https://kikidoko.web.app/data/bootstrap-v1.json`
-  2. `https://kikidoko.firebaseapp.com/data/bootstrap-v1.json`
-  3. batch 対象100件が属する全 unique `detail-xx.json`
+- `firebase` CLI を使う場合、許可される用途は Firestore データ作業または補助診断のみとし、Firebase Hosting 用途では使わないこと。
+- live 反映確認の真実源は Firestore ではなく `https://kikidoko.org` 上の公開 JSON とする。
+- preview 検証の正規URLは、Cloudflare Pages の deployment details または API が返す branch alias を真実源とする。`https://<sanitized-branch>.kikidoko.pages.dev` を手元で組み立てて確定扱いしてはならない。
+- branch alias は lower-case 化や非英数字の `-` 正規化に加えて、Cloudflare 側で truncation や追加整形が入る場合がある前提で扱う。
+- Cloudflare Access の login への 302/200 のみでは、正しい branch alias に到達できている証拠にしないこと。必ず Cloudflare Pages 側の `エイリアス` 表示または API 応答と照合する。
+- `https://kikidoko.pages.dev` および `https://<hash>.kikidoko.pages.dev` は通常の本番確認先には使わない。
+- delivery gate で確認する対象は次の 2 系統とする。
+  1. `https://kikidoko.org/data/bootstrap-v1.json`
+  2. batch 対象100件が属する全 unique `https://kikidoko.org/data/equipment_detail_shards/detail-xx.json`
 - Firestore 読み取りは保存確認や補助診断には使ってよいが、delivery gate の PASS 条件には使わない。
 - 次サイクル開始前の固定フロー:
-  1. 配信状態確認（`firebase hosting:channel:list`、`curl` で version 参照）
-  2. `curl` で `web.app` と `firebaseapp.com` の `bootstrap-v1.json` を取得し、local `frontend/dist/data/bootstrap-v1.json` の `version/generated_at` と一致することを確認
-  3. batch 対象100件の `doc_id` から local `bootstrap.detail_shard_map` を引き、全 unique touched shard の `detail-xx.json` を確認
-  4. touched shard ごとに、対象 `doc_id` の存在、`manual_content_v1.review.reviewer=codex-manual`、`reviewed_at` 非空、`beginner_guide` 各欄の存在を確認
-  5. `tools/manual_verification_checklist_template.md` に沿って記録保存
-  6. すべて PASS の場合のみ次サイクル執筆へ進行
+  1. 公開対象ブランチと `main` 反映状態を確認する
+  2. `main` 反映前の確認は、対象ブランチが `develop`, `feat/*`, `fix/*`, `chore/*`, `docs/*` のいずれかであれば、Cloudflare Pages の deployment details または API に表示された branch alias URL を確認する
+  3. `main` 反映後または一般公開前の確認は、`curl` で `https://kikidoko.org/data/bootstrap-v1.json` を取得し、local `frontend/dist/data/bootstrap-v1.json` の `version/generated_at` と一致することを確認する
+  4. batch 対象100件の `doc_id` から local `bootstrap.detail_shard_map` を引き、全 unique touched shard の `detail-xx.json` を確認する
+  5. touched shard ごとに、対象 `doc_id` の存在、`manual_content_v1.review.reviewer=codex-manual`、`reviewed_at` 非空、`beginner_guide` 各欄の存在を確認する
+  6. `tools/manual_verification_checklist_template.md` に沿って記録保存する
+  7. `kikidoko.org` で不一致がある場合、または preview の挙動差分を切り分ける場合のみ `https://kikidoko.pages.dev` または hash 付き preview URL を補助確認する
+  8. すべて PASS の場合のみ次サイクル執筆へ進行する
 
 ## 10. Development Schedule (Fixed Milestones)
 - Phase 0（ガード実装）: 2026-03-01 〜 2026-03-02
@@ -109,19 +115,39 @@
   - 2026-04-24: approved 9600
   - 2026-05-01: approved 10598 / pending 0
 
-## 11. Update Info Governance (Mandatory)
-- Firebase Hosting に反映する前に、必ずアップデート情報を追加または更新すること。
+## 11. Publication Governance (Mandatory)
+- 静的公開物の反映は `firebase deploy` ではなく GitHub 更新で行うこと。
+- デフォルト公開フローは `branch -> Cloudflare Pages preview 確認 -> PR -> main 反映 -> Cloudflare Pages 本番` とする。
+- Cloudflare Pages の production branch は `main` とする。
+- preview 自動配信対象ブランチは `develop`, `feat/*`, `fix/*`, `chore/*`, `docs/*` とする。
+- `dependabot/*` は preview 自動配信対象から除外する前提で扱う。
+- preview 確認の正規URLは、Cloudflare Pages の deployment details または API に表示された branch alias とし、hash 付き preview URL は deployment 固有の補助確認に限定する。
+- branch alias は lower-case 化や非英数字の `-` 正規化に加えて、Cloudflare 側で truncation や追加整形が入る場合がある前提で扱う。
+- Cloudflare Access の login への 302/200 のみでは、正しい branch alias に到達できている証拠にしないこと。必ず Cloudflare Pages 側の `エイリアス` 表示または API 応答と照合する。
+- preview は Cloudflare Access で保護された内部確認面として扱い、一般公開面は `https://kikidoko.org` のみとする。
+- ユーザーが明示的に「main に反映させてください」と指示した場合のみ、PR を省略または main 反映まで進めてよい。
+- ファイルまたはコードを変更した作業の完了時には、`main` にプッシュして一般公開するか、開発プレビューへ反映するかを必ずユーザーに確認すること。
+- 事前に意向が示されている場合でも、最終反映前に公開先を再確認すること。
+- 開発プレビューへ反映する場合は、Cloudflare Pages の deployment details または API で確認した branch alias の確認URLを作業完了メッセージで必ず提示すること。
+- 一般公開を選ばず preview 反映で止める場合、`main` 反映・本番公開は行っていないことを明示すること。
+- 本番公開確認の真実源は `https://kikidoko.org` とする。
+- `https://kikidoko.pages.dev` および hash 付き preview URL は通常の本番確認先にしない。
+- Firebase 側で更新してよいのは Firestore データのみとする。
+- `firebase deploy`、`firebase hosting:disable`、Firebase Hosting 再有効化、Firebase Hosting ドメイン変更は、ユーザーの明示指示がない限り禁止する。
+
+## 12. Update Info Governance (Mandatory)
+- GitHub へ反映する前に、必ずアップデート情報を追加または更新すること。
 - source-of-truth は `frontend/update-notes/entries/YYYY/` 配下の Markdown とする。
 - 公開用 manifest は `frontend/dist/update-info/index.json` とし、手書きで直接編集してはならない。
-- deploy 前に必ず次を通すこと:
+- GitHub 反映前に必ず次を通すこと:
   1. `python3 tools/build_update_info_manifest.py`
   2. `python3 tools/verify_update_info_predeploy.py`
   3. `python3 tools/audit_public_tree.py`
-- predeploy guard が FAIL の場合、Hosting 反映は禁止する。
+- predeploy guard が FAIL の場合、GitHub 反映および公開反映は禁止する。
 - `update-history.json` は廃止済み。deploy ログの自動追記運用に戻してはならない。
 - アップデート情報ページとホーム画面には、要望投稿・要望一覧を置かないこと。
 
-## 12. Update Info Writing Policy (Mandatory)
+## 13. Update Info Writing Policy (Mandatory)
 - アップデート情報は **原則として簡潔に書く** こと。通常の軽微修正は、ユーザーが分かれば十分な粒度に留める。
 - 軽微修正では、実装詳細・内部ファイル名・細かいレイアウト調整の列挙を書かないこと。
 - 通常更新の目安:
@@ -137,7 +163,7 @@
 - 重要な変更では、背景・変更点・ユーザー影響が分かるように、通常更新より詳しい本文を書いてよい。
 - ただし重要変更でも、開発者向けの内部実装メモに寄りすぎないこと。利用者が理解できる説明を優先する。
 
-## 13. Update Info Folder Layout (Mandatory)
+## 14. Update Info Folder Layout (Mandatory)
 - 更新ソース:
   - `frontend/update-notes/entries/YYYY/YYYY-MM-DD-slug.md`
 - 更新運用ドキュメント:
@@ -148,17 +174,14 @@
   - `tools/build_update_info_manifest.py`
   - `tools/verify_update_info_predeploy.py`
 
-## 14. Public Tree Governance (Mandatory)
+## 15. Public Tree Governance (Mandatory)
 - `frontend/dist` は公開物専用とし、運用メモ、README、debug log、plan markdown、`.DS_Store` を置いてはならない。
-- `frontend/dist` には `conflicted` を含むファイル名・パスを置いてはならない。競合ファイルを見つけた場合は deploy 前に削除または正規ファイルへ統合すること。
+- `frontend/dist` には `conflicted` を含むファイル名・パスを置いてはならない。競合ファイルを見つけた場合は GitHub 反映前に削除または正規ファイルへ統合すること。
 - source は `frontend/content/**`、public は `frontend/dist/**` に分離すること。
 - patch は `frontend/dist/patches/<function-name>.css/js` に統一し、日付だけの patch ファイル名を新規作成してはならない。
 - ブログ記事の source markdown は `frontend/content/blog/articles/*.md` に置き、`frontend/dist` に markdown を公開してはならない。
 - `frontend/dist/blog/articles.json` は生成物とし、手で直接編集してはならない。
 - `frontend/dist/blog/articles.json` は正規 1 ファイルのみを許可する。`articles [conflicted].json` 等の派生ファイルを残してはならない。
-- `firebase deploy` 前に必ず `python3 tools/build_blog_articles_manifest.py` と `python3 tools/audit_public_tree.py` を通すこと。
-- public tree audit が FAIL の場合、Hosting 反映は禁止する。
-- Firebase Hosting の `live` は保持リリース数 10 件を維持すること。変更が必要な場合は Console 側で調整する。
-- Hosting storage が急増した場合は、まず retained releases/version の蓄積を疑い、Console 側で保持リリース数と古い releases を確認すること。
-- Hosting の download が急増した場合は、Cloud Logging / Hosting request logs で `requestUrl`, `responseSize`, `cacheHit`, `userAgent`, `referer` を確認し、重い URL と bot 流入を切り分けること。
+- GitHub 反映前に必ず `python3 tools/build_blog_articles_manifest.py` と `python3 tools/audit_public_tree.py` を通すこと。
+- public tree audit が FAIL の場合、GitHub 反映および公開反映は禁止する。
 - public root 直下に新しいファイルを追加する場合は、現行 runtime/tool がその直パスを参照していることを確認すること。そうでなければ `data/`, `patches/`, `brand/`, `update-info/` の既存責務ディレクトリへ入れること。

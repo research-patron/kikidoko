@@ -1,24 +1,38 @@
 {
-  "generated_at": "2026-04-11T12:57:06Z",
+  "generated_at": "2026-04-11T13:17:14Z",
   "latest": {
-    "id": "2026-04-11-eqnet-assist-search-fab-overlap",
-    "title": "eqnet補助ウィンドウ表示中は検索ボタンを隠すよう修正",
-    "published_at": "2026-04-11T21:45:00+09:00",
-    "summary": "eqnet検索補助ウィンドウを開いたときに、右下の検索ボタンが eqnet を開く操作に重ならないよう調整しました。",
-    "version_label": "2026.04.11-04",
+    "id": "2026-04-11-preview-alias-confirmation",
+    "title": "開発プレビュー URL の確認手順を見直し",
+    "published_at": "2026-04-11T22:25:00+09:00",
+    "summary": "Cloudflare Pages の開発プレビュー案内で誤った URL を出しにくいよう、branch alias を基準にした確認手順へ見直しました。",
+    "version_label": "2026.04.11-05",
     "status": "published",
     "tags": [
-      "UI改善",
-      "検索",
-      "eqnet"
+      "運用改善",
+      "開発プレビュー",
+      "Cloudflare Pages"
     ],
-    "body_html": "<h4>主な更新</h4>\n<ul><li>検索結果から <code>eqnetで確認</code> を押して補助ウィンドウを開いた際、右下の検索ボタンを強制的に非表示にするよう修正しました。</li><li><code>eqnetを開く</code> ボタンの上に検索ボタンが重なりにくくなり、操作しやすさを改善しました。</li></ul>"
+    "body_html": "<h4>主な更新</h4>\n<ul><li>開発プレビューの確認 URL は、手元で推測した文字列ではなく、Cloudflare Pages が表示する branch alias を基準に扱うよう整理しました。</li><li>Cloudflare Access のログイン画面へ到達しただけでは確認完了とせず、Cloudflare 側の表示と照合する手順に統一しました。</li></ul>"
   },
   "months": [
     {
       "key": "2026-04",
       "label": "2026年4月",
       "entries": [
+        {
+          "id": "2026-04-11-preview-alias-confirmation",
+          "title": "開発プレビュー URL の確認手順を見直し",
+          "published_at": "2026-04-11T22:25:00+09:00",
+          "summary": "Cloudflare Pages の開発プレビュー案内で誤った URL を出しにくいよう、branch alias を基準にした確認手順へ見直しました。",
+          "version_label": "2026.04.11-05",
+          "status": "published",
+          "tags": [
+            "運用改善",
+            "開発プレビュー",
+            "Cloudflare Pages"
+          ],
+          "body_html": "<h4>主な更新</h4>\n<ul><li>開発プレビューの確認 URL は、手元で推測した文字列ではなく、Cloudflare Pages が表示する branch alias を基準に扱うよう整理しました。</li><li>Cloudflare Access のログイン画面へ到達しただけでは確認完了とせず、Cloudflare 側の表示と照合する手順に統一しました。</li></ul>"
+        },
         {
           "id": "2026-04-11-eqnet-assist-search-fab-overlap",
           "title": "eqnet補助ウィンドウ表示中は検索ボタンを隠すよう修正",
