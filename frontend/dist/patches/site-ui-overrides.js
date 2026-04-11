@@ -3488,7 +3488,8 @@
     if (!(fab instanceof HTMLButtonElement)) return;
     const equipmentSheetOpen = document.querySelector(".equipment-sheet.is-open:not(.home-popular-sheet)") instanceof HTMLElement;
     const popularSheetOpen = document.querySelector(".home-popular-sheet.is-open") instanceof HTMLElement;
-    const sheetOpen = equipmentSheetOpen || popularSheetOpen || isHomeSearchSheetOpen();
+    const eqnetAssistOpen = document.querySelector(".eqnet-assist-panel") instanceof HTMLElement;
+    const sheetOpen = equipmentSheetOpen || popularSheetOpen || eqnetAssistOpen || isHomeSearchSheetOpen();
     const heroOutOfView =
       hero instanceof HTMLElement ? hero.getBoundingClientRect().bottom <= 48 : false;
     const shouldShow = isHomeRefreshEligible() && !sheetOpen && heroOutOfView;

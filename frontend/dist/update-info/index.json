@@ -1,24 +1,38 @@
 {
-  "generated_at": "2026-04-11T05:38:34Z",
+  "generated_at": "2026-04-11T12:37:54Z",
   "latest": {
-    "id": "2026-04-11-manual-content-batch-0081",
-    "title": "機器ガイド 100件を追加し UV・XPS・XRD 周辺を拡充",
-    "published_at": "2026-04-11T14:40:00+09:00",
-    "summary": "UV-Vis-NIR 分光光度計、XPS、XRD、ESR、PCR、Q-TOF LC/MS、TEM試料作製周辺などの初心者向け機器ガイドを 100 件追加しました。",
-    "version_label": "2026.04.11-03",
+    "id": "2026-04-11-eqnet-assist-search-fab-overlap",
+    "title": "eqnet補助ウィンドウ表示中は検索ボタンを隠すよう修正",
+    "published_at": "2026-04-11T21:45:00+09:00",
+    "summary": "eqnet検索補助ウィンドウを開いたときに、右下の検索ボタンが eqnet を開く操作に重ならないよう調整しました。",
+    "version_label": "2026.04.11-04",
     "status": "published",
     "tags": [
-      "manual_content_v1",
-      "初心者ガイド",
-      "機器データ拡充"
+      "UI改善",
+      "検索",
+      "eqnet"
     ],
-    "body_html": "<h4>主な更新</h4>\n<ul><li>UV-Vis-NIR 分光光度計、X線光電子分光分析装置、X線回折装置、ESR 装置などの初心者向けガイドを 100 件追加しました。</li><li>同系統装置でも、表面帯電、真空復帰、波長設定、測定順、位置合わせなど、取り違えやすい実務差分を整理しました。</li><li>PCR、Q-TOF LC/MS、TEM試料作製、熱分析、コーター類など、前処理と後片付けが重要な装置群の確認点を補強しました。</li></ul>\n<h4>今回の対象例</h4>\n<ul><li>UV-Vis-NIR 分光光度計、X線光電子分光分析装置（XPS）、X線回折装置（XRD）、Xバンド ESR 装置を追加しました。</li><li>PCR装置、QX200 Droplet Digital PCRシステム、Q-TOF LC/MSシステム、TEM試料作製、TG-GC-MS も拡充しました。</li></ul>"
+    "body_html": "<h4>主な更新</h4>\n<ul><li>検索結果から <code>eqnetで確認</code> を押して補助ウィンドウを開いた際、右下の検索ボタンを自動で非表示にするよう修正しました。</li><li><code>eqnetを開く</code> ボタンの上に検索ボタンが重なりにくくなり、操作しやすさを改善しました。</li></ul>"
   },
   "months": [
     {
       "key": "2026-04",
       "label": "2026年4月",
       "entries": [
+        {
+          "id": "2026-04-11-eqnet-assist-search-fab-overlap",
+          "title": "eqnet補助ウィンドウ表示中は検索ボタンを隠すよう修正",
+          "published_at": "2026-04-11T21:45:00+09:00",
+          "summary": "eqnet検索補助ウィンドウを開いたときに、右下の検索ボタンが eqnet を開く操作に重ならないよう調整しました。",
+          "version_label": "2026.04.11-04",
+          "status": "published",
+          "tags": [
+            "UI改善",
+            "検索",
+            "eqnet"
+          ],
+          "body_html": "<h4>主な更新</h4>\n<ul><li>検索結果から <code>eqnetで確認</code> を押して補助ウィンドウを開いた際、右下の検索ボタンを自動で非表示にするよう修正しました。</li><li><code>eqnetを開く</code> ボタンの上に検索ボタンが重なりにくくなり、操作しやすさを改善しました。</li></ul>"
+        },
         {
           "id": "2026-04-11-manual-content-batch-0081",
           "title": "機器ガイド 100件を追加し UV・XPS・XRD 周辺を拡充",
