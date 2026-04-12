@@ -1,24 +1,38 @@
 {
-  "generated_at": "2026-04-11T13:17:14Z",
+  "generated_at": "2026-04-12T06:50:55Z",
   "latest": {
-    "id": "2026-04-11-preview-alias-confirmation",
-    "title": "開発プレビュー URL の確認手順を見直し",
-    "published_at": "2026-04-11T22:25:00+09:00",
-    "summary": "Cloudflare Pages の開発プレビュー案内で誤った URL を出しにくいよう、branch alias を基準にした確認手順へ見直しました。",
-    "version_label": "2026.04.11-05",
+    "id": "2026-04-12-worktree-hygiene-cleanup",
+    "title": "作業ツリーの不要差分を整理しやすく改善",
+    "published_at": "2026-04-12T09:40:00+09:00",
+    "summary": "ローカル確認で混ざりやすいキャッシュや一時ファイルを整理し、作業ツリーが汚れにくいよう見直しました。",
+    "version_label": "2026.04.12-01",
     "status": "published",
     "tags": [
       "運用改善",
-      "開発プレビュー",
-      "Cloudflare Pages"
+      "開発環境",
+      "Git"
     ],
-    "body_html": "<h4>主な更新</h4>\n<ul><li>開発プレビューの確認 URL は、手元で推測した文字列ではなく、Cloudflare Pages が表示する branch alias を基準に扱うよう整理しました。</li><li>Cloudflare Access のログイン画面へ到達しただけでは確認完了とせず、Cloudflare 側の表示と照合する手順に統一しました。</li></ul>"
+    "body_html": "<h4>主な更新</h4>\n<ul><li>ローカル確認で発生するキャッシュや一時ファイルを ignore 対象へ整理し、不要な差分が表示されにくいよう見直しました。</li><li>追跡不要な Python バイトコードやローカルキャッシュを repository から外し、作業差分の確認をしやすくしました。</li></ul>"
   },
   "months": [
     {
       "key": "2026-04",
       "label": "2026年4月",
       "entries": [
+        {
+          "id": "2026-04-12-worktree-hygiene-cleanup",
+          "title": "作業ツリーの不要差分を整理しやすく改善",
+          "published_at": "2026-04-12T09:40:00+09:00",
+          "summary": "ローカル確認で混ざりやすいキャッシュや一時ファイルを整理し、作業ツリーが汚れにくいよう見直しました。",
+          "version_label": "2026.04.12-01",
+          "status": "published",
+          "tags": [
+            "運用改善",
+            "開発環境",
+            "Git"
+          ],
+          "body_html": "<h4>主な更新</h4>\n<ul><li>ローカル確認で発生するキャッシュや一時ファイルを ignore 対象へ整理し、不要な差分が表示されにくいよう見直しました。</li><li>追跡不要な Python バイトコードやローカルキャッシュを repository から外し、作業差分の確認をしやすくしました。</li></ul>"
+        },
         {
           "id": "2026-04-11-preview-alias-confirmation",
           "title": "開発プレビュー URL の確認手順を見直し",

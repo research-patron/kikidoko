@@ -1,0 +1,29 @@
+# macOS / local editor noise
+.DS_Store
+
+# Local Firebase cache
+.firebase/*.cache
+
+# Local verification scratch space
+tmp/
+
+# Python bytecode
+tools/__pycache__/
+
+# Manual verification / audit outputs kept local
+tools/manual_authenticity_audit_report_*.json
+tools/manual_curation_checkpoint_*.json
+tools/manual_curation_queue_*.jsonl
+tools/manual_curation_queue_*.jsonl.*
+tools/manual_curation_queue_*.bak
+tools/manual_curation_queue_*.bak.jsonl
+tools/manual_cycle*_family_groups.json
+tools/manual_cycle*_family_map.json
+tools/manual_family_groups_BATCH-*.json
+tools/manual_guard_session_*.json
+tools/manual_verification_cycle*.md
+tools/ui_smoke_manual_routes_report_*.json
+tools/ui_smoke_cycle*_doc_ids.txt
+tools/manual_touched_shards_*.txt
+tools/manual_curation_subset_*.txt
+tools/manual_cycle*_source_map*.json
