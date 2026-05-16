@@ -238,7 +238,14 @@ def main() -> int:
     for idx, item in enumerate(items):
         equipment_id = item_key(item, idx)
         key = shard_key(equipment_id, len(shards))
-        shard_map[detail_map_key(item, equipment_id)] = key
+        for map_id in {
+            detail_map_key(item, equipment_id),
+            normalize_text(item.get("doc_id")),
+            normalize_text(item.get("equipment_id")),
+            equipment_id,
+        }:
+            if map_id:
+                shard_map[map_id] = key
 
         detailed = dict(item)
         detailed["equipment_id"] = equipment_id

@@ -1874,6 +1874,291 @@
     return `#/beginner/${encodeURIComponent(String(docId || "").trim())}`;
   }
 
+  let equipmentImageLightbox = null;
+  let equipmentImageLightboxKeydownInstalled = false;
+
+  function closeEquipmentImageLightbox() {
+    const lightbox = equipmentImageLightbox;
+    if (!(lightbox instanceof HTMLElement)) return;
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("equipment-image-lightbox-open");
+  }
+
+  function ensureEquipmentImageLightbox() {
+    if (equipmentImageLightbox instanceof HTMLElement) return equipmentImageLightbox;
+
+    const lightbox = document.createElement("div");
+    lightbox.className = "equipment-image-lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-modal", "true");
+    lightbox.setAttribute("aria-hidden", "true");
+    lightbox.setAttribute("aria-label", "機器画像の拡大表示");
+    lightbox.innerHTML = `
+      <button type="button" class="equipment-image-lightbox-backdrop" aria-label="拡大画像を閉じる"></button>
+      <figure class="equipment-image-lightbox-panel">
+        <button type="button" class="equipment-image-lightbox-close">閉じる</button>
+        <img class="equipment-image-lightbox-img" alt="">
+        <figcaption class="equipment-image-lightbox-caption"></figcaption>
+      </figure>
+    `;
+
+    const closeButton = lightbox.querySelector(".equipment-image-lightbox-close");
+    const backdrop = lightbox.querySelector(".equipment-image-lightbox-backdrop");
+    if (closeButton instanceof HTMLButtonElement) {
+      closeButton.addEventListener("click", closeEquipmentImageLightbox);
+    }
+    if (backdrop instanceof HTMLButtonElement) {
+      backdrop.addEventListener("click", closeEquipmentImageLightbox);
+    }
+
+    document.body.appendChild(lightbox);
+    equipmentImageLightbox = lightbox;
+
+    if (!equipmentImageLightboxKeydownInstalled) {
+      equipmentImageLightboxKeydownInstalled = true;
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeEquipmentImageLightbox();
+      });
+    }
+
+    return lightbox;
+  }
+
+  function openEquipmentImageLightbox(image) {
+    if (!image || image.isPlaceholder || !image.displayUrl) return;
+    const lightbox = ensureEquipmentImageLightbox();
+    const img = lightbox.querySelector(".equipment-image-lightbox-img");
+    const caption = lightbox.querySelector(".equipment-image-lightbox-caption");
+    const closeButton = lightbox.querySelector(".equipment-image-lightbox-close");
+
+    if (img instanceof HTMLImageElement) {
+      img.src = image.displayUrl;
+      img.alt = image.alt || "機器画像";
+    }
+    if (caption instanceof HTMLElement) {
+      caption.innerHTML = "";
+      const label = document.createElement("span");
+      label.className = "equipment-image-source-kind";
+      label.textContent = image.sourceLabel || "機器画像";
+      caption.appendChild(label);
+
+      const attribution = image.attributionLabel || image.sourcePageUrl;
+      if (attribution) {
+        const source = document.createElement("span");
+        source.className = "equipment-image-source";
+        source.textContent = attribution;
+        caption.appendChild(source);
+      }
+
+      if (image.fallbackNote) {
+        const note = document.createElement("span");
+        note.className = "equipment-image-note";
+        note.textContent = image.fallbackNote;
+        caption.appendChild(note);
+      }
+    }
+
+    document.body.classList.add("equipment-image-lightbox-open");
+    lightbox.classList.add("is-open");
+    lightbox.setAttribute("aria-hidden", "false");
+    if (closeButton instanceof HTMLButtonElement) closeButton.focus({ preventScroll: true });
+  }
+
+  function normalizeEquipmentImage(detail) {
+    const image = detail && typeof detail.image_v1 === "object" ? detail.image_v1 : null;
+    const status = String(image?.status || "").trim();
+    const sourcePageUrl = String(image?.source_page_url || detail?.source_url || "").trim();
+    if (!image || status !== "available") {
+      return {
+        displayUrl: "",
+        sourcePageUrl: "",
+        attributionLabel: "",
+        alt: `${String(detail?.name || "研究機器")}の機器画像を準備中です`,
+        sourceLabel: "準備中",
+        fallbackNote: "情報元ページや公式ページで確認できる画像から順次整備しています。",
+        placeholderTitle: "機器画像を準備中です",
+        isPlaceholder: true,
+      };
+    }
+    const displayUrl = String(image.display_url || "").trim();
+    if (!displayUrl) {
+      return {
+        displayUrl: "",
+        sourcePageUrl: "",
+        attributionLabel: "",
+        alt: `${String(detail?.name || "研究機器")}の機器画像を準備中です`,
+        sourceLabel: "準備中",
+        fallbackNote: "情報元ページや公式ページで確認できる画像から順次整備しています。",
+        placeholderTitle: "機器画像を準備中です",
+        isPlaceholder: true,
+      };
+    }
+    const sourceKind = String(image.source_kind || "").trim();
+    const sourceLabel =
+      sourceKind === "official_reference"
+        ? "参考画像"
+        : sourceKind === "source_page"
+        ? "情報元画像"
+        : "機器画像";
+    const fallbackNote =
+      sourceKind === "official_reference"
+        ? "情報元ページに画像がなかったため、装置名称から取得した参考画像です。"
+        : "";
+    return {
+      displayUrl,
+      originalUrl: String(image.original_url || "").trim(),
+      sourcePageUrl,
+      attributionLabel: String(image.attribution_label || "").trim(),
+      alt: String(image.alt_ja || `${String(detail?.name || "研究機器")}の画像`).trim(),
+      sourceLabel,
+      fallbackNote,
+      isPlaceholder: false,
+    };
+  }
+
+  function renderEquipmentImageFigure(detail) {
+    const image = normalizeEquipmentImage(detail);
+    const figure = document.createElement("figure");
+    figure.className = image.isPlaceholder
+      ? "equipment-image-figure equipment-image-figure--placeholder"
+      : "equipment-image-figure";
+
+    if (image.isPlaceholder) {
+      const placeholder = document.createElement("div");
+      placeholder.className = "equipment-image-placeholder";
+      placeholder.setAttribute("role", "img");
+      placeholder.setAttribute("aria-label", image.alt);
+      const title = document.createElement("span");
+      title.className = "equipment-image-placeholder-title";
+      title.textContent = image.placeholderTitle;
+      const body = document.createElement("span");
+      body.className = "equipment-image-placeholder-body";
+      body.textContent = "情報元ページ・公式ページを確認中です";
+      placeholder.append(title, body);
+      figure.appendChild(placeholder);
+    } else {
+      const img = document.createElement("img");
+      img.className = "equipment-image";
+      img.src = image.displayUrl;
+      img.alt = image.alt;
+      img.loading = "lazy";
+      img.decoding = "async";
+      figure.appendChild(img);
+    }
+
+    const caption = document.createElement("figcaption");
+    caption.className = "equipment-image-caption";
+    const label = document.createElement("span");
+    label.className = "equipment-image-source-kind";
+    label.textContent = image.sourceLabel;
+    caption.appendChild(label);
+
+    const attribution = image.attributionLabel || image.sourcePageUrl;
+    if (attribution) {
+      const source = document.createElement("span");
+      source.className = "equipment-image-source";
+      source.textContent = attribution;
+      caption.appendChild(source);
+    }
+
+    if (image.fallbackNote) {
+      const note = document.createElement("span");
+      note.className = "equipment-image-note";
+      note.textContent = image.fallbackNote;
+      caption.appendChild(note);
+    }
+
+    figure.appendChild(caption);
+
+    if (!image.isPlaceholder && image.displayUrl) {
+      figure.classList.add("equipment-image-figure--interactive");
+      figure.tabIndex = 0;
+      figure.setAttribute("role", "button");
+      figure.setAttribute("aria-label", "機器画像を拡大表示");
+      const openImage = () => openEquipmentImageLightbox(image);
+      figure.addEventListener("click", openImage);
+      figure.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openImage();
+        }
+      });
+    }
+
+    return figure;
+  }
+
+  function findDirectDetailSection(body, className) {
+    if (!(body instanceof HTMLElement)) return null;
+    return Array.from(body.children).find(
+      (child) => child instanceof HTMLElement && child.classList.contains(className)
+    ) || null;
+  }
+
+  function normalizeDetailFlowSection(body, className) {
+    if (!(body instanceof HTMLElement)) return null;
+    const sections = Array.from(body.querySelectorAll(`.${className}`)).filter(
+      (section) => section instanceof HTMLElement
+    );
+    if (!sections.length) return null;
+
+    const canonical = findDirectDetailSection(body, className) || sections[0];
+    sections.forEach((section) => {
+      if (section !== canonical) section.remove();
+    });
+    return canonical;
+  }
+
+  let equipmentImageResizeSyncInstalled = false;
+
+  function syncEquipmentImageRowHeight(panel) {
+    if (!(panel instanceof HTMLElement)) return;
+    const figure = panel.querySelector(".equipment-image-figure");
+    const usage = panel.querySelector(".equipment-sheet-content > .manual-usage-section");
+    if (!(figure instanceof HTMLElement)) return;
+
+    figure.style.removeProperty("height");
+    figure.style.removeProperty("min-height");
+    figure.classList.remove("is-height-synced");
+
+    const isStacked = window.matchMedia?.("(max-width: 640px)")?.matches;
+    if (isStacked || !(usage instanceof HTMLElement)) return;
+
+    const figureRect = figure.getBoundingClientRect();
+    const usageRect = usage.getBoundingClientRect();
+    const naturalHeight = Math.ceil(figure.scrollHeight);
+    const targetHeight = Math.max(Math.ceil(usageRect.bottom - figureRect.top + 2), naturalHeight);
+    if (targetHeight <= 0) return;
+
+    figure.style.height = `${targetHeight}px`;
+    figure.style.minHeight = `${targetHeight}px`;
+    figure.classList.add("is-height-synced");
+  }
+
+  function scheduleEquipmentImageRowSync(panel) {
+    if (!(panel instanceof HTMLElement)) return;
+    syncEquipmentImageRowHeight(panel);
+    requestAnimationFrame(() => syncEquipmentImageRowHeight(panel));
+
+    const image = panel.querySelector(".equipment-image");
+    if (image instanceof HTMLImageElement && !image.complete) {
+      image.addEventListener("load", () => syncEquipmentImageRowHeight(panel), { once: true });
+    }
+
+    if (!equipmentImageResizeSyncInstalled) {
+      equipmentImageResizeSyncInstalled = true;
+      window.addEventListener(
+        "resize",
+        () => {
+          const activePanel = document.querySelector(".equipment-sheet.is-open");
+          if (activePanel instanceof HTMLElement) syncEquipmentImageRowHeight(activePanel);
+        },
+        { passive: true }
+      );
+    }
+  }
+
   function renderGeneralUsage(content, displayContent, detail) {
     if (!displayContent?.contentQualityReady) {
       const section = document.createElement("section");
@@ -1980,8 +2265,8 @@
 
   function renderManualPaperExplanations(paperSection, displayContent, detail) {
     if (!displayContent?.contentQualityReady) {
-      const empty = document.createElement("p");
-      empty.className = "paper-status manual-paper-status";
+      const empty = document.createElement("div");
+      empty.className = "paper-status manual-paper-status manual-paper-empty";
       empty.textContent = "関連論文解説は機器説明の再構築完了後に公開します。";
       paperSection.appendChild(empty);
       return;
@@ -1989,9 +2274,9 @@
 
     const papers = Array.isArray(displayContent?.papers) ? displayContent.papers : [];
     if (!papers.length) {
-      const empty = document.createElement("p");
-      empty.className = "paper-status manual-paper-status";
-      empty.textContent = "関連論文解説は現在準備中です。";
+      const empty = document.createElement("div");
+      empty.className = "paper-status manual-paper-status manual-paper-empty";
+      empty.textContent = "関連論文データを準備中です。";
       paperSection.appendChild(empty);
       return;
     }
@@ -2045,7 +2330,13 @@
     if (!panel || !detail) return;
     const displayContent = resolveDisplayContent(detail);
 
+    const body = panel.querySelector(".equipment-sheet-body");
     const content = panel.querySelector(".equipment-sheet-content");
+    const paperSection =
+      body instanceof HTMLElement ? normalizeDetailFlowSection(body, "equipment-sheet-papers") : null;
+    const recommendationSection =
+      body instanceof HTMLElement ? normalizeDetailFlowSection(body, "equipment-sheet-recommendations") : null;
+
     if (content) {
       const summaryEl = content.querySelector("p");
       if (summaryEl) {
@@ -2070,7 +2361,6 @@
       renderManualPendingStatus(content, displayContent);
     }
 
-    const paperSection = panel.querySelector(".equipment-sheet-papers");
     if (paperSection) {
       const oldStatus = paperSection.querySelector(".paper-status");
       const oldList = paperSection.querySelector(".paper-list");
@@ -2081,18 +2371,49 @@
       renderManualPaperExplanations(paperSection, displayContent, detail);
     }
 
-    const body = panel.querySelector(".equipment-sheet-body");
     if (body instanceof HTMLElement) {
-      const recommendationSection = body.querySelector(".equipment-sheet-recommendations");
+      const oldImage = body.querySelector(".equipment-image-figure");
+      if (oldImage) oldImage.remove();
+      Array.from(body.children).forEach((child) => {
+        if (
+          child instanceof HTMLElement &&
+          (child.classList.contains("manual-beginner-entry") || child.classList.contains("manual-review-status"))
+        ) {
+          child.remove();
+        }
+      });
+      body.classList.remove("has-equipment-image");
+      const imageFigure = renderEquipmentImageFigure(detail);
+      const beginnerEntry =
+        content instanceof HTMLElement ? content.querySelector(".manual-beginner-entry") : null;
+      const reviewStatus =
+        content instanceof HTMLElement ? content.querySelector(".manual-review-status") : null;
+      if (imageFigure) {
+        body.insertBefore(imageFigure, body.firstElementChild);
+        body.classList.add("has-equipment-image");
+      }
       if (content instanceof HTMLElement) {
-        body.insertBefore(content, body.firstElementChild);
+        if (imageFigure) {
+          imageFigure.after(content);
+        } else {
+          body.insertBefore(content, body.firstElementChild);
+        }
+      }
+      let detailFlowAnchor = content instanceof HTMLElement ? content : null;
+      if (detailFlowAnchor && beginnerEntry instanceof HTMLElement) {
+        detailFlowAnchor.after(beginnerEntry);
+        detailFlowAnchor = beginnerEntry;
+      }
+      if (detailFlowAnchor && reviewStatus instanceof HTMLElement) {
+        detailFlowAnchor.after(reviewStatus);
+        detailFlowAnchor = reviewStatus;
       }
       if (
-        content instanceof HTMLElement &&
+        detailFlowAnchor instanceof HTMLElement &&
         paperSection instanceof HTMLElement &&
-        paperSection.previousElementSibling !== content
+        paperSection.previousElementSibling !== detailFlowAnchor
       ) {
-        content.after(paperSection);
+        detailFlowAnchor.after(paperSection);
       }
       if (
         paperSection instanceof HTMLElement &&
@@ -2101,6 +2422,7 @@
       ) {
         paperSection.after(recommendationSection);
       }
+      scheduleEquipmentImageRowSync(panel);
     }
 
     detailBySignature.set(signature, detail);
@@ -2123,6 +2445,8 @@
       applyDetailToSheet(panel, detailBySignature.get(signature), signature);
       return;
     }
+
+    await loadBootstrapData();
 
     if (!ids.length) {
       await ensureLookupFromSnapshotLite();

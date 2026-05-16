@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "key": "doc_id-or-equipment_id",
+      "image_url": "https://example.edu/path/to/official-reference-image.jpg",
+      "source_page_url": "https://example.edu/path/to/source-or-official-page",
+      "attribution_label": "Example University official page"
+    }
+  ]
+}

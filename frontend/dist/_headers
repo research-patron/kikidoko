@@ -1,0 +1,49 @@
+# Cloudflare Pages cache policy for the static publish tree.
+/
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/update-info.html
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/update-info/index.json
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/update-info.js
+  Cache-Control: public, max-age=3600, s-maxage=3600
+
+/update-info.css
+  Cache-Control: public, max-age=3600, s-maxage=3600
+
+/patches/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/brand/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/data/*
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+/blog/articles.json
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+/equipment_snapshot.json.gz
+  Content-Type: application/json; charset=utf-8
+  Content-Encoding: gzip
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+/*.json.gz
+  Content-Type: application/json; charset=utf-8
+  Content-Encoding: gzip
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+https://kikidoko.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.kikidoko.pages.dev/*
+  X-Robots-Tag: noindex
