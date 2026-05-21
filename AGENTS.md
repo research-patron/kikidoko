@@ -9,6 +9,17 @@
 - 検証は Codex 手作業で実施し、live は CLI で公開 JSON を確認すること。
 - 検証フェーズでスクリプト実行が発生した場合、その検証結果は無効とし、手作業で再検証すること。
 
+## 0A. Git Safety and Repository Scope (Mandatory)
+- `git init` は `~`, `/Users/niigatadaigakukenkyuuyou`, `~/Desktop`, `~/Downloads`, `~/Documents` で実行禁止。新規リポジトリは `~/projects/<project-name>` など明示的なプロジェクトディレクトリ内に作成すること。
+- 次の broad / destructive Git 操作の前には、必ず `pwd` と `git rev-parse --show-toplevel` を確認すること: `git add .`, `git add -A`, `git rm`, `git clean`, `git reset --hard`, `git restore .`, `git checkout .`, `git commit`, `git gc`, `git filter-repo`, `rm -rf .git`。
+- `git rev-parse --show-toplevel` が `/Users/niigatadaigakukenkyuuyou` を返した場合は即停止する。ホームディレクトリをプロジェクトリポジトリとして扱ってはならない。
+- `git add .` や `git add -A` は、Git root が意図したプロジェクトディレクトリであると確認できる場合だけ使う。原則として `git add AGENTS.md path/to/file` のような targeted add を優先する。
+- 各プロジェクトは project root 直下に自前の `.git` を持つこと。親ディレクトリやホーム直下の `.git` に依存しない。
+- 初回 broad add 前に `.gitignore` を作成すること。`.gitignore` は未追跡ファイルの追加を防ぐためのもので、既に追跡済みのファイルには効かない。追跡済みファイルをディスクに残して Git 管理から外す場合は `git rm --cached <path>` または `git rm -r --cached <directory>` を使う。
+- 明示依頼がない限り、`node_modules/`, `dist/`, `build/`, `.cache/`, `.vite/`, `.turbo/`, `.firebase/`, `logs/`, `*.log`, `.env*`, `__pycache__/`, `.venv/`, `venv/`, `data/`, `datasets/`, `outputs/`, `results/`, `checkpoints/`, `models/`, archives, videos, model files, large research files を commit しない。
+- 誤った home-level `.git` を見つけた場合、ユーザーファイルを削除して解決してはならない。ユーザー確認後に `/Users/niigatadaigakukenkyuuyou/.git` を `.git.DELETE.<timestamp>` へ rename し、`git -C /Users/niigatadaigakukenkyuuyou rev-parse --is-inside-work-tree` が `fatal: not a git repository` を返すことを確認してから、確認済みの rename 済み `.git` だけを削除する。
+- Git scope 問題の解決に `rm -rf ~/Desktop/*`, `rm -rf ~/Documents/*`, `git clean -fdx ~`, `git reset --hard ~` を使ってはならない。修正対象は repository root, `.git`, index, ignore rules, project structure に限定する。
+
 ## 1. Non-negotiable
 - すべての審査本文は Codex 手作業で個別記述すること。
 - 自動生成文の一括投入、同一テンプレ大量展開、時刻一括承認を禁止する。
