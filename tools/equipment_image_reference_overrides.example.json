@@ -4,7 +4,22 @@
       "key": "doc_id-or-equipment_id",
       "image_url": "https://example.edu/path/to/official-reference-image.jpg",
       "source_page_url": "https://example.edu/path/to/source-or-official-page",
-      "attribution_label": "Example University official page"
+      "attribution_label": "Example University official page",
+      "reference_source_type": "manufacturer_official",
+      "matched_name": "Exact equipment name shown on the official page",
+      "name_match_score": 0.95,
+      "visual_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T00:00:00Z",
+        "note": "The downloaded image visibly shows the target instrument, not a logo, banner, or unrelated accessory."
+      },
+      "second_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T00:00:00Z",
+        "note": "The source page name and image were checked a second time before adoption."
+      }
     }
   ]
 }

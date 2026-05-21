@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "key": "デジタルマイクロスコープ(VHX-6000)",
+      "image_url": "https://www.keyence.com/img/products/model/AS_60243_L.jpg",
+      "source_page_url": "https://www.keyence.com/products/microscope/digital-microscope/vhx-6000/models/vhx-6000/",
+      "attribution_label": "KEYENCE official product page",
+      "reference_source_type": "manufacturer_official",
+      "matched_name": "Digital Microscope: Controller VHX-6000",
+      "name_match_score": 0.96,
+      "visual_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T12:40:00Z",
+        "note": "Official KEYENCE product page shows the VHX-6000 model and the image is the product/controller, not a logo or banner."
+      },
+      "second_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T12:45:00Z",
+        "note": "Rechecked the official page title, image alt text, and downloaded image before adoption."
+      }
+    },
+    {
+      "key": "セルソーター(Sony SH800)",
+      "image_url": "https://www.sony.co.jp/Products/LifeScience/common/img/fcm/sh800/main.png",
+      "source_page_url": "https://www.sony.co.jp/Products/LifeScience/fcm/products/sh800s/",
+      "attribution_label": "Sony official product page",
+      "reference_source_type": "manufacturer_official",
+      "matched_name": "Cell Sorter SH800S",
+      "name_match_score": 0.92,
+      "visual_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T12:40:00Z",
+        "note": "Official Sony page identifies the Cell Sorter SH800S and the image visibly shows the cell sorter body."
+      },
+      "second_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T12:45:00Z",
+        "note": "Rechecked the Sony page title, Japanese product description, and downloaded product image before adoption."
+      }
+    },
+    {
+      "key": "共焦点・超解像顕微鏡(TCS SP8 STED)",
+      "image_url": "https://www.leica-microsystems.com/fileadmin/_processed_/2/6/csm_leica-sted-list_9644f2cd13.jpg",
+      "source_page_url": "https://www.leica-microsystems.com/products/confocal-microscopes/p/leica-tcs-sp8-sted-one/",
+      "attribution_label": "Leica Microsystems official product page",
+      "reference_source_type": "manufacturer_official",
+      "matched_name": "Leica TCS SP8 STED STED Nanoscopes",
+      "name_match_score": 0.93,
+      "visual_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T12:40:00Z",
+        "note": "Official Leica Microsystems page identifies Leica TCS SP8 STED and the image shows a Leica STED microscope module."
+      },
+      "second_review": {
+        "status": "approved",
+        "reviewer": "codex",
+        "reviewed_at": "2026-05-21T12:45:00Z",
+        "note": "Rechecked the official product name, archived product context, and downloaded image before adoption."
+      }
+    }
+  ]
+}

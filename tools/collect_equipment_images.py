@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import difflib
 import gzip
 import hashlib
 import json
@@ -18,6 +19,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -80,6 +82,25 @@ GOOD_IMAGE_TERMS = {
     "picture",
     "upload",
 }
+
+REFERENCE_SOURCE_TYPES = {
+    "manufacturer_official",
+    "company_official",
+    "institution_official",
+    "wikimedia",
+}
+
+APPROVED_REVIEW_VALUES = {
+    "approved",
+    "clear",
+    "ok",
+    "pass",
+    "passed",
+    "目視確認済み",
+    "承認",
+}
+
+MIN_REFERENCE_NAME_MATCH_SCORE = 0.9
 
 MODEL_TOKEN_RE = re.compile(
     r"[A-Za-z]{2,}[-_A-Za-z0-9]*|\d{3,}|[\u3040-\u30ff\u3400-\u9fff]{2,}"
@@ -609,6 +630,126 @@ def reference_override_for(item: Dict[str, Any], equipment_id: str, refs: Dict[s
     return None
 
 
+def normalize_for_name_match(value: Any) -> str:
+    text = unicodedata.normalize("NFKC", normalize_text(value)).lower()
+    text = re.sub(r"[\s\"'“”‘’`´＂＇「」『』（）()\[\]【】<>＜＞:：/／,，、。・･\-‐‑‒–—ー_]+", "", text)
+    return text
+
+
+def reference_name_match_score(expected: Any, matched: Any) -> float:
+    left = normalize_for_name_match(expected)
+    right = normalize_for_name_match(matched)
+    if not left or not right:
+        return 0.0
+    sequence_score = difflib.SequenceMatcher(None, left, right).ratio()
+    containment_score = 0.0
+    shorter, longer = (left, right) if len(left) <= len(right) else (right, left)
+    if shorter and shorter in longer:
+        containment_score = len(shorter) / len(longer)
+    return max(sequence_score, containment_score)
+
+
+def get_first_reference_value(ref: Dict[str, Any], *keys: str) -> str:
+    for key in keys:
+        value: Any = ref
+        for part in key.split("."):
+            if not isinstance(value, dict):
+                value = ""
+                break
+            value = value.get(part)
+        text = normalize_text(value)
+        if text:
+            return text
+    return ""
+
+
+def reference_review_approved(ref: Dict[str, Any], *keys: str) -> bool:
+    value = get_first_reference_value(ref, *keys).lower()
+    return value in APPROVED_REVIEW_VALUES
+
+
+def reference_reviewer_is_codex(ref: Dict[str, Any], *keys: str) -> bool:
+    value = get_first_reference_value(ref, *keys).lower()
+    return "codex" in value
+
+
+def validate_reference_override(ref: Dict[str, Any], item: Dict[str, Any]) -> Tuple[bool, str, Dict[str, Any]]:
+    image_url = normalize_text(ref.get("image_url"))
+    source_page_url = normalize_text(ref.get("source_page_url"))
+    attribution_label = normalize_text(ref.get("attribution_label"))
+    source_type = normalize_text(ref.get("reference_source_type") or ref.get("source_type"))
+    matched_name = get_first_reference_value(
+        ref,
+        "matched_name",
+        "matched_equipment_name",
+        "equipment_name_on_page",
+        "official_name",
+    )
+    computed_score = reference_name_match_score(item.get("name"), matched_name)
+    provided_score = ref.get("name_match_score")
+    try:
+        provided_score_value = float(provided_score)
+    except (TypeError, ValueError):
+        provided_score_value = -1.0
+
+    evidence = {
+        "matched_name": matched_name,
+        "computed_name_match_score": round(computed_score, 4),
+        "name_match_score": round(provided_score_value, 4),
+        "reference_source_type": source_type,
+        "visual_review_status": get_first_reference_value(
+            ref,
+            "visual_review.status",
+            "codex_visual_review.status",
+            "visual_review_status",
+        ),
+        "second_review_status": get_first_reference_value(
+            ref,
+            "second_review.status",
+            "codex_second_review.status",
+            "double_check.status",
+            "second_review_status",
+            "double_check_status",
+        ),
+    }
+
+    if not image_url:
+        return False, "reference_rejected:missing_image_url", evidence
+    if not source_page_url:
+        return False, "reference_rejected:missing_source_page_url", evidence
+    if not attribution_label:
+        return False, "reference_rejected:missing_attribution_label", evidence
+    if source_type not in REFERENCE_SOURCE_TYPES:
+        return False, "reference_rejected:unsupported_source_type", evidence
+    if not matched_name:
+        return False, "reference_rejected:missing_matched_name", evidence
+    if provided_score_value < MIN_REFERENCE_NAME_MATCH_SCORE:
+        return False, "reference_rejected:name_match_below_0_90", evidence
+    if not reference_review_approved(ref, "visual_review.status", "codex_visual_review.status", "visual_review_status"):
+        return False, "reference_rejected:visual_review_not_approved", evidence
+    if not reference_review_approved(
+        ref,
+        "second_review.status",
+        "codex_second_review.status",
+        "double_check.status",
+        "second_review_status",
+        "double_check_status",
+    ):
+        return False, "reference_rejected:second_review_not_approved", evidence
+    if not reference_reviewer_is_codex(ref, "visual_review.reviewer", "codex_visual_review.reviewer", "visual_review_reviewer"):
+        return False, "reference_rejected:visual_review_reviewer_not_codex", evidence
+    if not reference_reviewer_is_codex(
+        ref,
+        "second_review.reviewer",
+        "codex_second_review.reviewer",
+        "double_check.reviewer",
+        "second_review_reviewer",
+        "double_check_reviewer",
+    ):
+        return False, "reference_rejected:second_review_reviewer_not_codex", evidence
+    return True, "", evidence
+
+
 def html_candidates_from_source(
     source_url: str,
     timeout: float,
@@ -802,6 +943,22 @@ def process_item(
 
     ref = reference_override_for(item, equipment_id, refs)
     if ref and normalize_text(ref.get("image_url")):
+        ref_ok, ref_reason, ref_evidence = validate_reference_override(ref, item)
+        if not ref_ok:
+            last_reason = ref_reason
+            status = "needs_review"
+            item["image_v1"] = unavailable_image_metadata(status, source_page_url or source_url, last_reason)
+            item["image_v1"]["reference_review_v1"] = ref_evidence
+            return {
+                "doc_id": normalize_text(item.get("doc_id")),
+                "equipment_id": equipment_id,
+                "name": normalize_text(item.get("name")),
+                "source_url": source_url,
+                "status": status,
+                "reason": last_reason,
+                "reference_review_v1": ref_evidence,
+                "candidate_count": len(scored),
+            }
         ref_url = normalize_text(ref.get("image_url"))
         image_info, reason = download_and_store_image(
             ref_url,
@@ -822,6 +979,10 @@ def process_item(
                 source_page_url=normalize_text(ref.get("source_page_url")) or ref_url,
                 attribution_label=normalize_text(ref.get("attribution_label")) or host_of(ref_url),
             )
+            item["image_v1"]["reference_review_v1"] = ref_evidence
+            item["image_v1"]["reference_note_ja"] = (
+                "情報元ページに画像がなかったため、装置名称から取得した参考画像です。"
+            )
             return {
                 "doc_id": normalize_text(item.get("doc_id")),
                 "equipment_id": equipment_id,
@@ -831,6 +992,7 @@ def process_item(
                 "source_kind": "official_reference",
                 "display_url": display_path,
                 "original_url": image_info.get("original_url"),
+                "reference_review_v1": ref_evidence,
                 "candidate_count": len(scored),
             }
         last_reason = f"reference_{reason}"
