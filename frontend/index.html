@@ -10,9 +10,315 @@
       content="公的研究機関・大学・高専の研究設備を地域別に検索できるポータル。"
     />
     <title>Kikidoko | 研究設備の横断検索</title>
+    <style>
+      .kikidoko-startup-active {
+        overflow: hidden;
+        background: #fef0d2;
+      }
+
+      .kikidoko-startup-active #root {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #root {
+        opacity: 1;
+        transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .kikidoko-startup {
+        position: fixed;
+        inset: 0;
+        z-index: 2147483000;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        overflow: hidden;
+        background:
+          linear-gradient(120deg, rgba(255, 251, 241, 0.96), rgba(255, 239, 207, 0.9)),
+          linear-gradient(145deg, #fff8ea 0%, #f7dfb4 48%, #fff2d9 100%);
+        color: #19140d;
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        transition:
+          opacity 420ms ease,
+          visibility 420ms ease;
+      }
+
+      .kikidoko-startup::before {
+        content: "";
+        position: absolute;
+        inset: -24%;
+        background:
+          repeating-linear-gradient(
+            112deg,
+            rgba(206, 150, 82, 0.13) 0,
+            rgba(206, 150, 82, 0.13) 1px,
+            transparent 1px,
+            transparent 18px
+          );
+        opacity: 0.44;
+        transform: rotate(-6deg);
+        animation: kikidokoStartupDrift 9s linear infinite;
+      }
+
+      .kikidoko-startup::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.38), transparent 42%),
+          linear-gradient(90deg, rgba(25, 20, 13, 0.08), transparent 22%, transparent 78%, rgba(25, 20, 13, 0.06));
+        pointer-events: none;
+      }
+
+      .kikidoko-startup-card {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        justify-items: center;
+        gap: 16px;
+        width: min(340px, calc(100vw - 48px));
+        padding: 30px 28px 28px;
+        border: 1px solid rgba(206, 150, 82, 0.24);
+        border-radius: 28px;
+        background: rgba(255, 250, 240, 0.76);
+        box-shadow:
+          0 22px 48px rgba(82, 59, 25, 0.14),
+          inset 0 1px 0 rgba(255, 255, 255, 0.72);
+        text-align: center;
+        backdrop-filter: blur(14px);
+      }
+
+      .kikidoko-startup-mark {
+        position: relative;
+        display: grid;
+        place-items: center;
+        width: 74px;
+        height: 74px;
+        border-radius: 24px;
+        background:
+          linear-gradient(145deg, #fffdf7, #ffe8bf);
+        box-shadow:
+          0 18px 34px rgba(206, 150, 82, 0.24),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      }
+
+      .kikidoko-startup-mark::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 18px;
+        background: url("/brand/app-icon-square.png") center / contain no-repeat;
+        animation: kikidokoStartupFloat 2.4s ease-in-out infinite;
+      }
+
+      .kikidoko-startup-mark::after {
+        content: "";
+        position: absolute;
+        inset: -9px;
+        border: 1px solid rgba(206, 150, 82, 0.22);
+        border-top-color: rgba(206, 150, 82, 0.88);
+        border-right-color: rgba(206, 150, 82, 0.46);
+        border-radius: 30px;
+        animation: kikidokoStartupSpin 1.6s linear infinite;
+      }
+
+      .kikidoko-startup-title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .kikidoko-startup-copy {
+        margin: 0;
+        color: #5c5146;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .kikidoko-startup-scan {
+        position: relative;
+        width: min(220px, 100%);
+        height: 5px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(206, 150, 82, 0.16);
+      }
+
+      .kikidoko-startup-scan span {
+        position: absolute;
+        inset: 0;
+        width: 46%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, transparent, #ce9652, #f8c677);
+        animation: kikidokoStartupScan 1.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+      }
+
+      .kikidoko-startup-ready .kikidoko-startup {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .kikidoko-startup-ready #root {
+        opacity: 1;
+      }
+
+      @keyframes kikidokoStartupSpin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes kikidokoStartupFloat {
+        0%,
+        100% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(-4px) scale(1.02);
+        }
+      }
+
+      @keyframes kikidokoStartupScan {
+        0% {
+          transform: translateX(-120%);
+        }
+        100% {
+          transform: translateX(260%);
+        }
+      }
+
+      @keyframes kikidokoStartupDrift {
+        0% {
+          transform: translate3d(-12px, 0, 0) rotate(-6deg);
+        }
+        100% {
+          transform: translate3d(42px, 0, 0) rotate(-6deg);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #root,
+        .kikidoko-startup {
+          transition: none;
+        }
+
+        .kikidoko-startup::before,
+        .kikidoko-startup-mark::before,
+        .kikidoko-startup-mark::after,
+        .kikidoko-startup-scan span {
+          animation: none;
+        }
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="kikidoko-startup-active">
+    <div id="kikidoko-startup" class="kikidoko-startup" role="status" aria-live="polite">
+      <div class="kikidoko-startup-card">
+        <div class="kikidoko-startup-mark" aria-hidden="true"></div>
+        <p class="kikidoko-startup-title">Kikidoko</p>
+        <p class="kikidoko-startup-copy">研究設備データを読み込み中です</p>
+        <div class="kikidoko-startup-scan" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+    <div id="root" aria-hidden="true"></div>
+    <script>
+      (() => {
+        const body = document.body;
+        const root = document.getElementById("root");
+        const startup = document.getElementById("kikidoko-startup");
+        const startedAt = performance.now();
+        const minVisibleMs = 1100;
+        const maxWaitMs = 4800;
+        let revealed = false;
+        let fallbackTimer = 0;
+
+        const wait = (ms) => new Promise((resolve) => window.setTimeout(resolve, Math.max(0, ms)));
+
+        const reveal = () => {
+          if (revealed) return;
+          revealed = true;
+          if (fallbackTimer) window.clearTimeout(fallbackTimer);
+          root?.removeAttribute("aria-hidden");
+          body.classList.add("kikidoko-startup-ready");
+          body.classList.remove("kikidoko-startup-active");
+          window.setTimeout(() => startup?.remove(), 720);
+        };
+
+        const hasRenderedContent = () => {
+          if (!root) return false;
+          if (root.querySelector(".page, .hero, main, [data-app-ready]")) return true;
+          return root.children.length > 0 && String(root.textContent || "").trim().length > 8;
+        };
+
+        const waitForAppRender = () =>
+          new Promise((resolve) => {
+            if (hasRenderedContent()) {
+              resolve();
+              return;
+            }
+            const observer = new MutationObserver(() => {
+              if (!hasRenderedContent()) return;
+              observer.disconnect();
+              resolve();
+            });
+            if (root) observer.observe(root, { childList: true, subtree: true });
+            window.setTimeout(() => {
+              observer.disconnect();
+              resolve();
+            }, 2400);
+          });
+
+        const waitForHomeEnhancement = () =>
+          new Promise((resolve) => {
+            if (window.location.hash.startsWith("#/")) {
+              resolve();
+              return;
+            }
+            const isReady = () => body.classList.contains("home-refresh-ready");
+            if (isReady()) {
+              resolve();
+              return;
+            }
+            const observer = new MutationObserver(() => {
+              if (!isReady()) return;
+              observer.disconnect();
+              resolve();
+            });
+            observer.observe(body, { attributes: true, attributeFilter: ["class"] });
+            window.setTimeout(() => {
+              observer.disconnect();
+              resolve();
+            }, 3600);
+          });
+
+        const waitForFonts = () => {
+          if (!document.fonts?.ready) return Promise.resolve();
+          const loads = [
+            document.fonts.load('400 16px "BIZ UDP Gothic"'),
+            document.fonts.load('700 16px "BIZ UDP Gothic"'),
+            document.fonts.ready,
+          ];
+          return Promise.race([Promise.allSettled(loads), wait(3000)]);
+        };
+
+        const settleFrames = () =>
+          new Promise((resolve) => {
+            window.requestAnimationFrame(() => {
+              window.requestAnimationFrame(resolve);
+            });
+          });
+
+        fallbackTimer = window.setTimeout(reveal, maxWaitMs);
+
+        Promise.all([waitForAppRender(), waitForFonts(), waitForHomeEnhancement(), wait(minVisibleMs - (performance.now() - startedAt))])
+          .then(settleFrames)
+          .then(reveal)
+          .catch(reveal);
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
