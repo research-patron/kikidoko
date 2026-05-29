@@ -5,7 +5,7 @@ summary: DeepRIE、拡散炉、ALD、アッシャー、電子顕微鏡、CT、NM
 version_label: 2026.04.10-9
 status: published
 tags:
-  - manual_content_v1
+  - 機器ガイド
   - 初心者ガイド
   - 機器データ拡充
 ---

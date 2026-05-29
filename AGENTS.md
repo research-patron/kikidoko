@@ -196,3 +196,13 @@
 - GitHub 反映前に必ず `python3 tools/build_blog_articles_manifest.py` と `python3 tools/audit_public_tree.py` を通すこと。
 - public tree audit が FAIL の場合、GitHub 反映および公開反映は禁止する。
 - public root 直下に新しいファイルを追加する場合は、現行 runtime/tool がその直パスを参照していることを確認すること。そうでなければ `data/`, `patches/`, `brand/`, `update-info/` の既存責務ディレクトリへ入れること。
+
+## 16. User-Facing Update Info Manual (Mandatory)
+- アップデート情報は一般利用者向けの公開文書として書くこと。利用者が画面上で何を確認できるか、何が使いやすくなったか、どのデータが増えたかを中心に記述すること。
+- タイトルと summary は利用者影響を 1 文で示すこと。軽微な修正では、実装方式、内部ファイル名、細かな CSS/JS 差分、運用作業名を書かないこと。
+- 本文は原則 `## 主な更新` と 2〜4 箇条書きにすること。重要な仕様変更や大きなデータ追加に限り、対象例や注意点の見出しを追加してよい。
+- tags は利用者に見える日本語分類だけを使うこと。snake_case、内部契約名、ファイル名、ブランチ名、スクリプト名、監査名を tags に入れてはならない。
+- 禁止語の例: `manual_content_v1`, `CYCLE-*`, `batch`, `shard`, `bootstrap`, `manifest`, `frontend`, `dist`, `tools/`, `.py`, `.js`, `.json`, `Firebase Hosting`, `Cloudflare`, `GitHub`, `PR`, `branch`, `main`, `preview`, `deploy`, `predeploy`, `cache-control`, `guard`, `reviewer`, `Codex`, `Firestore`。
+- 置換方針: `manual_content_v1` は「初心者向け機器ガイド」、`manifest` は「更新一覧」または「公開データ」、`public tree` は「公開ファイル」、`patch` は「表示調整」、`predeploy` や `deploy` は「公開前の確認」、`CYCLE-*` や batch ID は書かず「機器ガイド 100 件」のように件数と利用者影響だけを書くこと。
+- 配信や運用の改善を公開する場合は、配信基盤名や内部監査名ではなく「不要な公開ファイルを整理」「表示に必要なファイルだけを配信」「公開前の確認を強化」のように利用者へ意味が通る表現へ言い換えること。
+- 公開前に `frontend/update-notes/entries/YYYY/` と `frontend/dist/update-info/index.json` を `rg` で確認し、禁止語や内部パスが本文・summary・tags に残っていないことを手作業で判断すること。検証フェーズでは Python/Node による自動判定を使ってはならない。

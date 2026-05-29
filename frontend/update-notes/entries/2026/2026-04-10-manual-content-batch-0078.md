@@ -5,7 +5,7 @@ summary: 3D SEM解析、超高圧発生装置、NMR、TEM、3Dプリンタなど
 version_label: 2026.04.10-12
 status: published
 tags:
-  - manual_content_v1
+  - 機器ガイド
   - 初心者ガイド
   - 機器データ拡充
 ---

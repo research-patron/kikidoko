@@ -5,7 +5,7 @@ summary: NMR、LC-MS、デジタルPCR、共焦点顕微鏡、電子顕微鏡な
 version_label: 2026.04.10-10
 status: published
 tags:
-  - manual_content_v1
+  - 機器ガイド
   - 初心者ガイド
   - 機器データ拡充
 ---
