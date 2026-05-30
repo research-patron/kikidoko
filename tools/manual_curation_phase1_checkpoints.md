@@ -3205,3 +3205,18 @@
 - touched shards: `47`
 - manual_guard close: PASS
 - verification record: `tools/manual_verification_cycle0081_candidate100_20260411.md`
+
+## RELATED-PAPER-GUIDE-100 (2026-05-30)
+- batch_id: `BATCH-20260530-RELATED-PAPER-GUIDE-100`
+- queue: `tools/manual_curation_queue_related_paper_20260530_100.jsonl`
+- full queue backup: `tools/manual_curation_queue_related_paper_20260530_100_full.jsonl`
+- checkpoint: `tools/manual_curation_checkpoint_related_paper_20260530_100.json`
+- guard verify: PASS
+- duplicate paper recheck: 73件を同一機器データから補完、追加の関連対象27件と合わせて100件を審査
+- apply: 10件単位で100件 PASS
+- full audit: PASS (`tools/manual_authenticity_audit_report_related_paper_20260530_100.json`)
+- requirement: strict_content PASS
+- local ui_smoke: PASS (`tools/ui_smoke_manual_routes_report_related_paper_20260530_100.json`)
+- manual_guard close: PASS
+- update info: `frontend/update-notes/entries/2026/2026-05-30-related-paper-data.md`
+- live publish verification (CLI): pending
