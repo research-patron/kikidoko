@@ -3219,4 +3219,6 @@
 - local ui_smoke: PASS (`tools/ui_smoke_manual_routes_report_related_paper_20260530_100.json`)
 - manual_guard close: PASS
 - update info: `frontend/update-notes/entries/2026/2026-05-30-related-paper-data.md`
-- live publish verification (CLI): pending
+- live publish verification (CLI): PASS
+- touched shards: `50`
+- verification record: `tools/manual_verification_related_paper_20260530.md`
