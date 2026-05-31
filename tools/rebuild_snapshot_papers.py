@@ -378,7 +378,7 @@ def http_json(url: str, headers: Optional[Dict[str, str]] = None, timeout: int =
             data = res.read()
     except urllib.error.HTTPError:
         return None
-    except urllib.error.URLError:
+    except (urllib.error.URLError, TimeoutError):
         return None
 
     try:
