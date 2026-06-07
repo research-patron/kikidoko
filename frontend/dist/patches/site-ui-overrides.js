@@ -1089,14 +1089,6 @@
     const safeSourceBadge = escapeHtml(sourceBadge);
     const sourceBadgeMarkup = safeSourceBadge ? `<p class="manual-source-badge">${safeSourceBadge}</p>` : "";
     const equipmentName = escapeHtml(String(detail?.name || "対象機器"));
-    const safePrinciple = escapeHtml(String(guide?.principle_ja || "情報準備中です。"));
-    const safeSampleGuidance = escapeHtml(String(guide?.sample_guidance_ja || "情報準備中です。"));
-    const safeSteps = (steps.length ? steps : ["情報準備中です。"])
-      .map((value) => `<li>${escapeHtml(String(value || ""))}</li>`)
-      .join("");
-    const safePitfalls = (pitfalls.length ? pitfalls : ["情報準備中です。"])
-      .map((value) => `<li>${escapeHtml(String(value || ""))}</li>`)
-      .join("");
     const safeNote = note ? escapeHtml(note) : "";
 
     overlay.innerHTML = `
@@ -1122,24 +1114,36 @@
           </nav>
           <section class="beginner-detail-section" id="principle">
             <h4 class="beginner-section-heading">原理</h4>
-            <p>${safePrinciple}</p>
+            <div class="beginner-guide-richtext" data-guide-long="principle"></div>
           </section>
           <section class="beginner-detail-section" id="sample">
             <h4 class="beginner-section-heading">試料（固体/液体など）</h4>
-            <p>${safeSampleGuidance}</p>
+            <div class="beginner-guide-richtext" data-guide-long="sample"></div>
           </section>
           <section class="beginner-detail-section" id="steps">
             <h4 class="beginner-section-heading">基本手順</h4>
-            <ul>${safeSteps}</ul>
+            <ul data-guide-long="steps"></ul>
           </section>
           <section class="beginner-detail-section" id="pitfalls">
             <h4 class="beginner-section-heading">失敗しやすい点</h4>
-            <ul>${safePitfalls}</ul>
+            <ul data-guide-long="pitfalls"></ul>
           </section>
           ${safeNote ? `<p class="manual-source-note">${safeNote}</p>` : ""}
         </div>
       </article>
     `;
+    appendBeginnerGuideParagraphs(
+      overlay.querySelector('[data-guide-long="principle"]'),
+      guide?.principle_ja,
+      "情報準備中です。"
+    );
+    appendBeginnerGuideParagraphs(
+      overlay.querySelector('[data-guide-long="sample"]'),
+      guide?.sample_guidance_ja,
+      "情報準備中です。"
+    );
+    appendBeginnerGuideListItems(overlay.querySelector('[data-guide-long="steps"]'), steps, "情報準備中です。");
+    appendBeginnerGuideListItems(overlay.querySelector('[data-guide-long="pitfalls"]'), pitfalls, "情報準備中です。");
     bindClose();
     bindBeginnerToc();
   }
@@ -1355,11 +1359,11 @@
         <div class="beginner-guide-body">
           <section class="beginner-guide-point">
             <h5>原理</h5>
-            <p data-guide=\"principle\"></p>
+            <div class="beginner-guide-richtext" data-guide=\"principle\"></div>
           </section>
           <section class="beginner-guide-point">
             <h5>試料（固体/液体など）</h5>
-            <p data-guide=\"sample\"></p>
+            <div class="beginner-guide-richtext" data-guide=\"sample\"></div>
           </section>
           <section class="beginner-guide-point">
             <h5>基本手順</h5>
@@ -1405,34 +1409,18 @@
     const steps = modal.querySelector('[data-guide=\"steps\"]');
     const pitfalls = modal.querySelector('[data-guide=\"pitfalls\"]');
 
-    if (principle) {
-      principle.textContent = String(guide?.principle_ja || "").trim() || "情報準備中です。";
-    }
-    if (sample) {
-      sample.textContent = String(guide?.sample_guidance_ja || "").trim() || "情報準備中です。";
-    }
-
-    if (steps) {
-      steps.innerHTML = "";
-      const values = Array.isArray(guide?.basic_steps_ja) ? guide.basic_steps_ja : [];
-      const list = values.length ? values : ["情報準備中です。"];
-      list.forEach((value) => {
-        const li = document.createElement("li");
-        li.textContent = String(value || "");
-        steps.appendChild(li);
-      });
-    }
-
-    if (pitfalls) {
-      pitfalls.innerHTML = "";
-      const values = Array.isArray(guide?.common_pitfalls_ja) ? guide.common_pitfalls_ja : [];
-      const list = values.length ? values : ["情報準備中です。"];
-      list.forEach((value) => {
-        const li = document.createElement("li");
-        li.textContent = String(value || "");
-        pitfalls.appendChild(li);
-      });
-    }
+    appendBeginnerGuideParagraphs(principle, guide?.principle_ja, "情報準備中です。");
+    appendBeginnerGuideParagraphs(sample, guide?.sample_guidance_ja, "情報準備中です。");
+    appendBeginnerGuideListItems(
+      steps,
+      Array.isArray(guide?.basic_steps_ja) ? guide.basic_steps_ja : [],
+      "情報準備中です。"
+    );
+    appendBeginnerGuideListItems(
+      pitfalls,
+      Array.isArray(guide?.common_pitfalls_ja) ? guide.common_pitfalls_ja : [],
+      "情報準備中です。"
+    );
 
     modal.dataset.open = "1";
     modal.hidden = false;
@@ -1872,6 +1860,59 @@
 
   function buildBeginnerRouteHash(docId) {
     return `#/beginner/${encodeURIComponent(String(docId || "").trim())}`;
+  }
+
+  function renderBeginnerGuideInlineText(raw) {
+    const text = String(raw || "");
+    const nodes = [];
+    const pattern = /\*\*([^*]+)\*\*/g;
+    let cursor = 0;
+    let match;
+
+    while ((match = pattern.exec(text))) {
+      if (match.index > cursor) {
+        nodes.push(document.createTextNode(text.slice(cursor, match.index)));
+      }
+      const strong = document.createElement("strong");
+      strong.textContent = match[1] || "";
+      nodes.push(strong);
+      cursor = match.index + match[0].length;
+    }
+
+    if (cursor < text.length) {
+      nodes.push(document.createTextNode(text.slice(cursor)));
+    }
+    if (!nodes.length) {
+      nodes.push(document.createTextNode(text));
+    }
+    return nodes;
+  }
+
+  function appendBeginnerGuideParagraphs(container, raw, fallback) {
+    if (!(container instanceof HTMLElement)) return;
+    container.innerHTML = "";
+    const text = String(raw || "").trim() || fallback;
+    const paragraphs = text
+      .split(/\n{2,}/)
+      .map((value) => value.trim())
+      .filter(Boolean);
+
+    (paragraphs.length ? paragraphs : [fallback]).forEach((paragraph) => {
+      const p = document.createElement("p");
+      renderBeginnerGuideInlineText(paragraph).forEach((node) => p.appendChild(node));
+      container.appendChild(p);
+    });
+  }
+
+  function appendBeginnerGuideListItems(container, values, fallback) {
+    if (!(container instanceof HTMLElement)) return;
+    container.innerHTML = "";
+    const list = Array.isArray(values) && values.length ? values : [fallback];
+    list.forEach((value) => {
+      const li = document.createElement("li");
+      renderBeginnerGuideInlineText(String(value || "").trim() || fallback).forEach((node) => li.appendChild(node));
+      container.appendChild(li);
+    });
   }
 
   let equipmentImageLightbox = null;

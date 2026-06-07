@@ -764,6 +764,29 @@ body.manual-route-open {
   overflow-wrap: anywhere;
 }
 
+.beginner-guide-richtext {
+  display: grid;
+  gap: 10px;
+}
+
+.beginner-guide-richtext p {
+  margin: 0;
+}
+
+.beginner-guide-richtext strong,
+.beginner-detail-section li strong,
+.beginner-guide-point li strong {
+  color: #5a3519;
+  font-weight: 800;
+}
+
+.beginner-guide-richtext p > strong:first-child,
+.beginner-detail-section li > strong:first-child,
+.beginner-guide-point li > strong:first-child {
+  display: block;
+  margin-bottom: 4px;
+}
+
 .beginner-detail-section ul {
   margin: 0;
   padding-left: 24px;
