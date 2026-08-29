@@ -39,11 +39,25 @@ body {
 
 .hero,
 .update-section,
-.update-month-nav {
+.update-month-nav,
+.site-footer {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 18px;
   box-shadow: var(--shadow);
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 14px 18px;
+  font-size: 13px;
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
 }
 
 .hero {

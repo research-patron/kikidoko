@@ -4,9 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>キキドコ | 利用規約</title>
+    <meta
+      name="description"
+      content="研究機器検索サービス「キキドコ」の利用条件、掲載情報の取扱い、禁止事項、免責、広告表示について定めます。"
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#fff7e8" />
+    <link rel="canonical" href="https://kikidoko.org/terms" />
+    <link rel="icon" type="image/png" href="/brand/app-icon-square.png" />
+    <link rel="apple-touch-icon" href="/brand/app-icon-square.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="キキドコ" />
+    <meta property="og:title" content="キキドコ | 利用規約" />
+    <meta
+      property="og:description"
+      content="研究機器検索サービス「キキドコ」の利用条件と掲載情報の取扱いをご案内します。"
+    />
+    <meta property="og:url" content="https://kikidoko.org/terms" />
+    <meta property="og:image" content="https://kikidoko.org/brand/app-icon-square.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="キキドコのロゴ" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="キキドコ | 利用規約" />
+    <meta
+      name="twitter:description"
+      content="研究機器検索サービス「キキドコ」の利用条件と掲載情報の取扱いをご案内します。"
+    />
+    <meta name="twitter:image" content="https://kikidoko.org/brand/app-icon-square.png" />
+    <meta name="twitter:image:alt" content="キキドコのロゴ" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "キキドコ 利用規約",
+        "description": "研究機器検索サービス「キキドコ」の利用条件、掲載情報の取扱い、禁止事項、免責、広告表示について定めます。",
+        "url": "https://kikidoko.org/terms",
+        "inLanguage": "ja-JP",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "キキドコ",
+          "url": "https://kikidoko.org/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "B4から始める研究生活",
+          "url": "https://student-subscription.com/"
+        }
+      }
+    </script>
     <style>
       :root {
         color-scheme: light;
+        --paper: #fffdf7;
+        --canvas: #fff7e8;
+        --ink: #2f2520;
+        --muted: #6f5f53;
+        --line: #e8d5b8;
+        --accent: #8e5b1f;
+        --accent-soft: #fff0d2;
+      }
+      * {
+        box-sizing: border-box;
       }
       body {
         margin: 0;
@@ -15,27 +75,66 @@
           "Hiragino Kaku Gothic ProN",
           "Yu Gothic",
           sans-serif;
-        background: #fff7e8;
-        color: #2f2520;
+        background: var(--canvas);
+        color: var(--ink);
         line-height: 1.75;
       }
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.18em;
+      }
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
+      .site-header,
       main {
         width: min(920px, calc(100% - 24px));
-        margin: 16px auto 28px;
-        background: #fffdf7;
-        border: 1px solid #e8d5b8;
-        border-radius: 16px;
-        padding: clamp(16px, 3vw, 30px);
-        box-sizing: border-box;
+        margin-inline: auto;
+      }
+      .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 4px 10px;
+      }
+      .brand {
+        color: var(--ink);
+        font-size: 19px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px 14px;
+        font-size: 14px;
+      }
+      .site-nav a[aria-current="page"] {
+        color: var(--ink);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      main {
+        margin-top: 6px;
+        margin-bottom: 28px;
+        padding: clamp(18px, 4vw, 38px);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--paper);
+        box-shadow: 0 18px 50px rgba(91, 64, 31, 0.08);
       }
       h1 {
-        margin: 0 0 10px;
-        font-size: clamp(24px, 4vw, 34px);
+        margin: 0 0 8px;
+        font-size: clamp(26px, 4.4vw, 38px);
         line-height: 1.25;
       }
       h2 {
-        margin: 24px 0 8px;
-        font-size: clamp(17px, 2.8vw, 21px);
+        margin: 30px 0 8px;
+        padding-top: 2px;
+        font-size: clamp(18px, 2.8vw, 22px);
+        line-height: 1.45;
       }
       p,
       li {
@@ -43,111 +142,167 @@
       }
       ul {
         margin: 8px 0 0;
-        padding-left: 1.25em;
+        padding-left: 1.3em;
+      }
+      li + li {
+        margin-top: 5px;
       }
       .meta {
-        color: #6f5f53;
         margin: 0;
+        color: var(--muted);
         font-size: 14px;
       }
-      .note {
-        padding: 10px 12px;
-        border-radius: 10px;
-        background: #fff3dc;
-        border: 1px solid #ecd6b0;
+      .lead {
+        margin: 18px 0 0;
+        font-size: clamp(15px, 2.5vw, 17px);
       }
-      a {
-        color: #8e5b1f;
+      .note {
+        margin-top: 16px;
+        padding: 13px 15px;
+        border: 1px solid #ecd6b0;
+        border-radius: 12px;
+        background: var(--accent-soft);
       }
       footer {
-        margin-top: 28px;
+        margin-top: 34px;
+        padding-top: 20px;
         border-top: 1px solid #eadbc5;
-        padding-top: 16px;
+      }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+      }
+      @media (max-width: 680px) {
+        .site-header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .site-nav {
+          justify-content: flex-start;
+        }
       }
     </style>
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand" href="/">キキドコ</a>
+      <nav class="site-nav" aria-label="サイト案内">
+        <a href="/about">このサイトについて</a>
+        <a href="/contact">お問い合わせ</a>
+        <a href="/terms" aria-current="page">利用規約</a>
+        <a href="/privacy-policy">プライバシー</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>キキドコ 利用規約</h1>
-      <p class="meta">最終更新日: 2026年2月7日</p>
-      <p class="note">
-        本規約は、student-subscription.com配下で提供する「キキドコ」の利用条件を定めるものです。
+      <h1>利用規約</h1>
+      <p class="meta">最終更新日: 2026年8月29日</p>
+      <p class="lead">
+        本規約は、<strong>kikidoko.org</strong> で提供する研究機器検索サービス「キキドコ」の利用条件を定めるものです。
       </p>
 
       <h2>第1条（適用）</h2>
       <p>
-        本規約は、本サービスの利用に関し、利用者と運営者（B4から始める研究生活）との間の一切の関係に適用されます。
+        本規約は、本サービスの利用に関し、利用者と運営者（B4から始める研究生活）との間の関係に適用されます。
+        利用者は、本サービスを利用することにより、本規約に同意したものとみなされます。
       </p>
 
       <h2>第2条（サービス内容）</h2>
       <p>
-        本サービスは、公開情報に基づく研究機器検索・閲覧支援を提供します。掲載情報の最新性・完全性は、各情報提供元の更新状況に依存します。
+        本サービスは、大学、高等専門学校、公的研究機関、共用設備ポータル等が公開する情報をもとに、研究機器の検索、比較、
+        情報元ページへの移動を支援します。掲載情報は研究計画や問い合わせ先を検討するための参考情報であり、予約、利用申請、契約を
+        本サービス上で完結させるものではありません。
       </p>
-      <p>
-        現時点で本サービスの有料機能は提供していません。将来、機能追加や仕様変更を行う場合があります。
+      <p>現時点で本サービスの有料機能は提供していません。将来、機能追加や仕様変更を行う場合があります。</p>
+
+      <h2>第3条（独立した運営）</h2>
+      <p class="note">
+        本サービスは「B4から始める研究生活」が独立して運営する検索サービスです。掲載する大学、研究機関、設備提供者、eqnet、
+        Googleその他の第三者が運営する公式サービスではなく、これらの組織との提携、推薦、保証を示すものではありません。
       </p>
 
-      <h2>第3条（利用環境）</h2>
+      <h2>第4条（掲載情報の確認）</h2>
       <p>
-        利用者は、自己の責任と費用において、通信機器・通信回線・ブラウザ等の利用環境を整備するものとします。
+        機器の利用可否、料金、対象者、試料条件、予約方法、安全要件、所在地等は変更される場合があります。
+        利用申請や試料送付の前に、各機器に表示する情報元ページ、eqnetまたは保有機関の最新案内を必ず確認してください。
+        掲載情報に誤りや更新漏れを見つけた場合は、<a href="/contact">お問い合わせページ</a>から訂正をお知らせいただけます。
       </p>
 
-      <h2>第4条（禁止事項）</h2>
-      <p>利用者は、本サービスの利用にあたり、以下の行為をしてはなりません。</p>
+      <h2>第5条（利用環境）</h2>
+      <p>
+        利用者は、自己の責任と費用において、通信機器、通信回線、ブラウザ等の利用環境を整備するものとします。
+        通信料その他の費用は利用者が負担します。
+      </p>
+
+      <h2>第6条（禁止事項）</h2>
+      <p>利用者は、本サービスの利用にあたり、次の行為をしてはなりません。</p>
       <ul>
         <li>法令または公序良俗に違反する行為</li>
-        <li>本サービスまたは第三者の権利・利益を侵害する行為</li>
-        <li>本サービスの運営を妨害する行為（不正アクセス、過度な負荷、スクレイピング乱用等）</li>
-        <li>不正確な情報の流布や、第三者に損害を与える目的での利用</li>
-        <li>運営者が不適切と合理的に判断する行為</li>
+        <li>本サービス、掲載機関または第三者の権利・利益を侵害する行為</li>
+        <li>不正アクセス、過度なアクセス、サービス妨害、脆弱性の悪用等</li>
+        <li>技術的制限を回避した大量取得、再配布、データベースの複製その他、運営に過度な負荷を与える行為</li>
+        <li>掲載情報を公式情報であると偽る行為、または不正確な情報を故意に流布する行為</li>
+        <li>本サービスや第三者になりすます行為</li>
+        <li>その他、運営者が合理的な理由により不適切と判断する行為</li>
       </ul>
 
-      <h2>第5条（外部サイト・外部サービス）</h2>
+      <h2>第7条（外部サイト・外部サービス）</h2>
       <p>
-        本サービスは外部サイトへのリンクを含みます。遷移先サービスでの登録、申請、契約、トラブル等は利用者と遷移先との間で処理され、運営者は責任を負いません。
+        本サービスは外部サイトへのリンクを含みます。遷移先の内容、利用条件、個人情報の取扱い、登録、申請、契約、障害等については、
+        各運営者の規約や方針が適用されます。本サービスは、遷移先の継続的な提供や安全性を保証しません。
       </p>
 
-      <h2>第6条（知的財産権）</h2>
+      <h2>第8条（知的財産権）</h2>
       <p>
-        本サービスに含まれる文章、画像、UI、プログラム等に関する知的財産権は、運営者または正当な権利者に帰属します。法令上許容される場合を除き、無断で複製・転載・改変・再配布することはできません。
+        本サービスが独自に作成した文章、編集、画面設計、プログラム等の権利は、運営者または正当な権利者に帰属します。
+        情報元から取得した名称、文章、画像、商標その他の素材に関する権利は、それぞれの権利者に帰属します。
+        法令または個別の利用条件で認められる範囲を超えて、無断で複製、転載、改変、再配布することはできません。
+      </p>
+      <p>
+        権利侵害のおそれがある掲載物を見つけた場合は、対象URL、権利の内容、根拠資料を添えて
+        <a href="/contact">お問い合わせページ</a>からご連絡ください。確認後、必要に応じて非表示、差し替え等を行います。
       </p>
 
-      <h2>第7条（免責）</h2>
+      <h2>第9条（免責）</h2>
       <ul>
-        <li>運営者は、本サービスの正確性、完全性、有用性、特定目的適合性を保証しません。</li>
+        <li>運営者は、掲載情報の正確性、完全性、最新性、有用性、特定目的への適合性を保証しません。</li>
+        <li>利用者は、研究、安全、申請、契約等に関する最終判断を、情報元および担当機関へ確認したうえで行うものとします。</li>
         <li>運営者は、システム障害、通信障害、外部サービス障害、データ更新遅延等により生じた損害について責任を負いません。</li>
         <li>本サービスの利用により生じた損害について、運営者に故意または重過失がある場合を除き、責任を負いません。</li>
       </ul>
 
-      <h2>第8条（サービス変更・停止）</h2>
+      <h2>第10条（サービスの変更・停止）</h2>
       <p>
-        運営者は、保守、障害対応、法令対応、運営上の必要性等により、事前通知なく本サービスの全部または一部を変更、停止、終了することがあります。
+        運営者は、保守、障害対応、法令対応、情報元の変更、運営上の必要性等により、本サービスの全部または一部を変更、停止、終了する
+        場合があります。重要な変更は、可能な範囲で本サービス上に掲載します。
       </p>
 
-      <h2>第9条（広告表示）</h2>
+      <h2>第11条（広告表示とプライバシー）</h2>
       <p>
-        本サービスは、運営維持のため広告（Google AdSense等）を表示する場合があります。広告表示に伴うCookie等の取扱いは、プライバシーポリシーに従います。
+        本サービスは、運営維持のためGoogle AdSense等の広告サービスを利用する場合があります。Cookie等の取扱い、広告設定、
+        必要な地域での同意管理については、<a href="/privacy-policy">プライバシーポリシー</a>をご確認ください。
       </p>
 
-      <h2>第10条（規約の変更）</h2>
+      <h2>第12条（規約の変更）</h2>
       <p>
-        運営者は、必要に応じて本規約を変更できます。変更後の規約は本ページに掲載した時点で効力を生じます。
+        運営者は、法令またはサービス内容の変更等に応じて本規約を改定できます。重要な変更は本ページ等で案内し、
+        更新日以降の利用には改定後の規約を適用します。
       </p>
 
-      <h2>第11条（準拠法・管轄）</h2>
+      <h2>第13条（準拠法・管轄）</h2>
       <p>
         本規約は日本法に準拠します。本サービスに関して紛争が生じた場合、運営者所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。
       </p>
 
       <footer>
-        <h2>お問い合わせ窓口</h2>
-        <p>
-          運営者: B4から始める研究生活<br />
-          お問い合わせ:
-          <a href="https://student-subscription.com/contact/" target="_blank" rel="noreferrer">
-            https://student-subscription.com/contact/
-          </a>
-        </p>
+        <p><strong>運営者:</strong> B4から始める研究生活</p>
+        <div class="footer-links">
+          <a href="/about">運営者・編集方針</a>
+          <a href="/contact">お問い合わせ</a>
+          <a href="/privacy-policy">プライバシーポリシー</a>
+          <a href="/">トップへ戻る</a>
+        </div>
       </footer>
     </main>
   </body>

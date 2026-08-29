@@ -4,9 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>キキドコ | プライバシーポリシー</title>
+    <meta
+      name="description"
+      content="キキドコにおける個人情報、Cookie、Google AdSense、配信基盤、お問い合わせ情報の取扱いを説明します。"
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#fff7e8" />
+    <link rel="canonical" href="https://kikidoko.org/privacy-policy" />
+    <link rel="icon" type="image/png" href="/brand/app-icon-square.png" />
+    <link rel="apple-touch-icon" href="/brand/app-icon-square.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="キキドコ" />
+    <meta property="og:title" content="キキドコ | プライバシーポリシー" />
+    <meta
+      property="og:description"
+      content="キキドコにおける個人情報、Cookie、広告配信、配信基盤の取扱いをご案内します。"
+    />
+    <meta property="og:url" content="https://kikidoko.org/privacy-policy" />
+    <meta property="og:image" content="https://kikidoko.org/brand/app-icon-square.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="キキドコのロゴ" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="キキドコ | プライバシーポリシー" />
+    <meta
+      name="twitter:description"
+      content="キキドコにおける個人情報、Cookie、広告配信、配信基盤の取扱いをご案内します。"
+    />
+    <meta name="twitter:image" content="https://kikidoko.org/brand/app-icon-square.png" />
+    <meta name="twitter:image:alt" content="キキドコのロゴ" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "キキドコ プライバシーポリシー",
+        "description": "キキドコにおける個人情報、Cookie、Google AdSense、配信基盤、お問い合わせ情報の取扱いを説明します。",
+        "url": "https://kikidoko.org/privacy-policy",
+        "inLanguage": "ja-JP",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "キキドコ",
+          "url": "https://kikidoko.org/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "B4から始める研究生活",
+          "url": "https://student-subscription.com/"
+        }
+      }
+    </script>
     <style>
       :root {
         color-scheme: light;
+        --paper: #fffdf7;
+        --canvas: #fff7e8;
+        --ink: #2f2520;
+        --muted: #6f5f53;
+        --line: #e8d5b8;
+        --accent: #8e5b1f;
+        --accent-soft: #fff0d2;
+      }
+      * {
+        box-sizing: border-box;
       }
       body {
         margin: 0;
@@ -15,27 +75,66 @@
           "Hiragino Kaku Gothic ProN",
           "Yu Gothic",
           sans-serif;
-        background: #fff7e8;
-        color: #2f2520;
+        background: var(--canvas);
+        color: var(--ink);
         line-height: 1.75;
       }
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.18em;
+      }
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
+      .site-header,
       main {
         width: min(920px, calc(100% - 24px));
-        margin: 16px auto 28px;
-        background: #fffdf7;
-        border: 1px solid #e8d5b8;
-        border-radius: 16px;
-        padding: clamp(16px, 3vw, 30px);
-        box-sizing: border-box;
+        margin-inline: auto;
+      }
+      .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 4px 10px;
+      }
+      .brand {
+        color: var(--ink);
+        font-size: 19px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px 14px;
+        font-size: 14px;
+      }
+      .site-nav a[aria-current="page"] {
+        color: var(--ink);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      main {
+        margin-top: 6px;
+        margin-bottom: 28px;
+        padding: clamp(18px, 4vw, 38px);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--paper);
+        box-shadow: 0 18px 50px rgba(91, 64, 31, 0.08);
       }
       h1 {
-        margin: 0 0 10px;
-        font-size: clamp(24px, 4vw, 34px);
+        margin: 0 0 8px;
+        font-size: clamp(26px, 4.4vw, 38px);
         line-height: 1.25;
       }
       h2 {
-        margin: 24px 0 8px;
-        font-size: clamp(17px, 2.8vw, 21px);
+        margin: 30px 0 8px;
+        padding-top: 2px;
+        font-size: clamp(18px, 2.8vw, 22px);
+        line-height: 1.45;
       }
       p,
       li {
@@ -43,122 +142,187 @@
       }
       ul {
         margin: 8px 0 0;
-        padding-left: 1.25em;
+        padding-left: 1.3em;
+      }
+      li + li {
+        margin-top: 5px;
       }
       .meta {
-        color: #6f5f53;
         margin: 0;
+        color: var(--muted);
         font-size: 14px;
       }
-      .note {
-        padding: 10px 12px;
-        border-radius: 10px;
-        background: #fff3dc;
-        border: 1px solid #ecd6b0;
+      .lead {
+        margin: 18px 0 0;
+        font-size: clamp(15px, 2.5vw, 17px);
       }
-      a {
-        color: #8e5b1f;
+      .note,
+      .consent-status {
+        margin-top: 16px;
+        padding: 13px 15px;
+        border: 1px solid #ecd6b0;
+        border-radius: 12px;
+        background: var(--accent-soft);
+      }
+      .link-list {
+        display: grid;
+        gap: 6px;
+        margin-top: 10px;
       }
       footer {
-        margin-top: 28px;
+        margin-top: 34px;
+        padding-top: 20px;
         border-top: 1px solid #eadbc5;
-        padding-top: 16px;
+      }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+      }
+      @media (max-width: 680px) {
+        .site-header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .site-nav {
+          justify-content: flex-start;
+        }
       }
     </style>
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand" href="/">キキドコ</a>
+      <nav class="site-nav" aria-label="サイト案内">
+        <a href="/about">このサイトについて</a>
+        <a href="/contact">お問い合わせ</a>
+        <a href="/terms">利用規約</a>
+        <a href="/privacy-policy" aria-current="page">プライバシー</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>キキドコ プライバシーポリシー</h1>
-      <p class="meta">最終更新日: 2026年2月7日</p>
-      <p class="note">
-        本ポリシーは、student-subscription.com（運営サイト）配下で提供する「キキドコ」に適用されます。
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">最終更新日: 2026年8月29日</p>
+      <p class="lead">
+        本ポリシーは、<strong>kikidoko.org</strong> で提供する研究機器検索サービス「キキドコ」に適用されます。
+        運営者は「B4から始める研究生活」です。
       </p>
 
-      <h2>1. 当サービスについて</h2>
-      <p>
-        本サービス（キキドコ）は、研究機器の検索・閲覧支援を目的としたウェブサービスです。運営者は「B4から始める研究生活」です。
-      </p>
-
-      <h2>2. 取得する情報</h2>
-      <p>本サービスでは、以下の情報を取得する場合があります。</p>
+      <h2>1. 取得する情報</h2>
+      <p>本サービスでは、提供する機能や利用状況に応じて、次の情報を取得または処理する場合があります。</p>
       <ul>
-        <li>お問い合わせ時にユーザーが入力する情報（氏名、メールアドレス、問い合わせ内容など）</li>
-        <li>Cookie、IPアドレス、ブラウザ種別、端末情報、参照元、閲覧ページ、閲覧日時等のアクセス情報</li>
+        <li>お問い合わせフォームに入力された氏名、メールアドレス、所属、問い合わせ内容等</li>
+        <li>IPアドレス、ブラウザや端末の種類、参照元、閲覧ページ、閲覧日時、操作記録等のアクセス情報</li>
+        <li>Cookie、ローカルストレージ、広告識別子その他のオンライン識別子に保存された設定や利用情報</li>
+        <li>利用者が現在地検索を許可した場合に、ブラウザから提供される位置情報</li>
       </ul>
-      <p>
-        通常の閲覧において、クレジットカード番号等の決済情報の入力は求めません。
-      </p>
+      <p>通常の閲覧において、クレジットカード番号等の決済情報の入力は求めません。</p>
 
-      <h2>3. 利用目的</h2>
+      <h2>2. 利用目的</h2>
       <ul>
-        <li>本サービスの提供、維持、改善のため</li>
-        <li>不具合調査や不正利用防止のため</li>
-        <li>お問い合わせ対応のため</li>
-        <li>利用状況の分析による機能改善のため</li>
+        <li>研究機器の検索、表示、利用支援機能を提供するため</li>
+        <li>表示設定の保持、利便性向上、利用状況の把握および機能改善のため</li>
+        <li>不具合調査、セキュリティ確保、不正利用防止のため</li>
+        <li>お問い合わせ、掲載情報の訂正依頼、権利に関するご連絡へ対応するため</li>
+        <li>広告配信および広告効果の測定を行うため</li>
       </ul>
 
-      <h2>4. Cookie等の利用</h2>
+      <h2>3. Cookie・ローカルストレージ等</h2>
       <p>
-        本サービスでは、利便性向上、アクセス解析、広告配信のためにCookie等を利用する場合があります。Cookieは通常、単体で個人を特定する情報を含みません。
+        本サービスは、画面設定の保持、利用状況の分析、セキュリティ確保、広告配信のために、Cookie、ローカルストレージ、
+        Webビーコン、IPアドレスその他の識別技術を利用する場合があります。これらは単独で氏名等を直接示すものではありませんが、
+        他の情報と組み合わせて利用状況を識別できる場合があります。
       </p>
       <p>
-        Cookieはブラウザ設定で無効化できますが、一部機能が正常に動作しない場合があります。
-      </p>
-
-      <h2>5. 広告配信（Google AdSense等）について</h2>
-      <p>
-        本サービスでは、運営維持のために第三者配信の広告サービス（Google AdSense等）を利用する場合があります。広告配信事業者は、ユーザーの興味関心に応じた広告表示のためCookie等を使用することがあります。
-      </p>
-      <p>
-        パーソナライズド広告の設定は以下から確認できます。<br />
-        <a href="https://adssettings.google.com" target="_blank" rel="noreferrer">Google 広告設定</a><br />
-        <a href="https://www.aboutads.info" target="_blank" rel="noreferrer">AboutAds（オプトアウト案内）</a>
+        Cookieはブラウザの設定で拒否または削除できます。ただし、保存した設定が失われるなど、一部機能の動作に影響する場合があります。
       </p>
 
-      <h2>6. アクセス解析ツール</h2>
+      <h2>4. Google AdSenseと広告配信</h2>
       <p>
-        本サービスでは、サイト改善のためアクセス解析ツール（Google Analytics等）を利用する場合があります。これらのツールはCookie等を利用してトラフィックデータを収集します。
+        本サービスには、Google AdSenseとの接続確認に用いるコードを設置しています。広告配信が有効になった場合、
+        Googleを含む第三者配信事業者は、利用者による本サービスや他サイトへの過去のアクセス情報に基づいて広告を配信するため、
+        Cookieを使用することがあります。Googleの広告Cookieにより、Googleとそのパートナーは、本サービスや他サイトへのアクセス情報に
+        基づく広告を表示できるようになります。
+      </p>
+      <p>
+        広告配信に伴い、Googleを含む第三者が利用者のブラウザへCookieを配置または読み取るほか、Webビーコン、IPアドレス、
+        その他の識別子を用いて情報を収集する場合があります。Googleがパートナーサイトやアプリから取得した情報を扱う方法は、
+        次の公式案内をご確認ください。
+      </p>
+      <div class="link-list">
+        <a
+          href="https://policies.google.com/technologies/partner-sites"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Googleによるパートナーサイトやアプリの情報利用</a>
+        <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google 広告設定</a>
+        <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">AboutAdsのオプトアウト案内</a>
+      </div>
+
+      <h2>5. 必要な地域での同意管理</h2>
+      <p>
+        欧州経済領域（EEA）、英国、スイスその他、広告目的のCookieや個人データ処理について事前の説明または同意が必要な地域で
+        広告配信を有効にする場合、Googleの要件を満たす認定済みの同意管理プラットフォーム（CMP）等を設定し、必要な選択肢を提供します。
+      </p>
+      <p class="consent-status">
+        <strong>現在の同意管理について:</strong>
+        本ポリシーの掲載は、GoogleのCMPまたは他のCMPが本サイトですでに稼働していることを意味しません。
+        必要な地域で広告配信を有効にする前にCMPを設定します。設定後は、本サイト上に表示される
+        「プライバシー設定」等の導線から、広告目的の同意や選択をいつでも変更・撤回できるようにします。
+      </p>
+      <p>
+        CMPの設定前または設定画面が表示されない場合も、ブラウザのCookie削除・拒否機能やGoogle 広告設定を利用できます。
+        同意の撤回前に行われた処理の適法性は、撤回によって遡って影響を受けません。
       </p>
 
-      <h2>7. 第三者提供</h2>
+      <h2>6. 配信・セキュリティ基盤</h2>
       <p>
-        法令に基づく場合を除き、本人の同意なく個人情報を第三者に提供しません。ただし、業務委託、法令対応、生命・身体・財産保護のために必要な場合はこの限りではありません。
+        本サービスは、コンテンツ配信、通信の保護、攻撃や不正利用の防止、障害調査のためにCloudflareのサービスを利用しています。
+        これらの処理ではIPアドレス、ブラウザ情報、閲覧ページ、日時等が取り扱われる場合があります。詳細は
+        <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflareのプライバシーポリシー</a>
+        をご確認ください。
       </p>
 
-      <h2>8. 外部サービスへの遷移</h2>
+      <h2>7. 第三者提供・委託</h2>
       <p>
-        本サービスには外部サイトへのリンク（例: eqnet、機関公式ページ）が含まれます。遷移先サイトでの情報取扱いは、当該サイトのポリシーに従います。
+        法令に基づく場合を除き、本人の同意なく個人情報を第三者へ販売または提供しません。ただし、サービス運営に必要な範囲で、
+        ホスティング、セキュリティ、アクセス解析、広告配信、問い合わせ受付等を担う事業者へ処理を委託する場合があります。
+        また、法令対応や生命・身体・財産の保護に必要な場合は、法令で認められる範囲で情報を提供することがあります。
       </p>
 
-      <h2>9. 安全管理措置</h2>
+      <h2>8. 外部サイト</h2>
       <p>
-        取得情報の漏えい、滅失、毀損の防止その他の安全管理のため、必要かつ適切な措置を講じます。
+        本サービスには、研究機関、共用設備ポータル、論文ページ、運営サイト等への外部リンクが含まれます。
+        遷移先での情報取扱いには、各サイトのプライバシーポリシーが適用されます。
       </p>
 
-      <h2>10. 保存期間</h2>
+      <h2>9. 保存期間と安全管理</h2>
       <p>
-        取得情報は、利用目的達成に必要な期間保持し、不要となった場合は適切に削除または匿名化します。法令上保存義務がある場合はこれに従います。
+        取得情報は利用目的の達成、問い合わせ対応、セキュリティ確保および法令上の義務に必要な期間保存し、不要となった情報は
+        合理的な方法で削除または匿名化します。漏えい、滅失、毀損、不正アクセス等を防ぐため、必要かつ適切な安全管理措置を講じます。
       </p>
 
-      <h2>11. 開示・訂正・削除等の請求</h2>
+      <h2>10. 開示・訂正・削除等</h2>
       <p>
-        ご本人からの請求があった場合、法令の範囲内で、保有個人データの開示、訂正、利用停止、削除等に対応します。請求時には本人確認をお願いする場合があります。
+        ご本人から、法令に基づく開示、訂正、利用停止、削除等の請求があった場合は、本人確認を行ったうえで法令の範囲内で対応します。
+        掲載情報の訂正や画像等の権利に関するご連絡も、<a href="/contact">お問い合わせページ</a>からお送りください。
       </p>
 
-      <h2>12. 本ポリシーの変更</h2>
+      <h2>11. 本ポリシーの変更</h2>
       <p>
-        本ポリシーは、法令改正やサービス内容の変更に応じて改定される場合があります。変更後の内容は本ページに掲載した時点で効力を生じます。
+        法令、利用サービスまたは本サービスの内容が変わった場合、本ポリシーを改定します。重要な変更は本ページ等で案内し、
+        更新日以降の取扱いには改定後の内容を適用します。
       </p>
 
       <footer>
-        <h2>お問い合わせ窓口</h2>
-        <p>
-          運営者: B4から始める研究生活<br />
-          お問い合わせ:
-          <a href="https://student-subscription.com/contact/" target="_blank" rel="noreferrer">
-            https://student-subscription.com/contact/
-          </a>
-        </p>
+        <p><strong>運営者:</strong> B4から始める研究生活</p>
+        <div class="footer-links">
+          <a href="/about">運営者・編集方針</a>
+          <a href="/contact">お問い合わせ</a>
+          <a href="/terms">利用規約</a>
+          <a href="/">トップへ戻る</a>
+        </div>
       </footer>
     </main>
   </body>

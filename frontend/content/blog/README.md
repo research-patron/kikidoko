@@ -76,7 +76,7 @@ If your environment cannot validate TLS certificates, add `--insecure`.
 - Use markdown headings from `##` onward for body sections.
 - The publisher writes Gutenberg blocks (`wp:paragraph`, `wp:heading`, `wp:list`) to WordPress.
 - Inline markdown (`**bold**`, `*italic*`, `` `code` ``, `[link](url)`) is converted to HTML before publish.
-- App CTA URL must point to `https://kikidoko.web.app/`.
+- App CTA URL must point to `https://kikidoko.org/`.
 
 ## Public Output
 

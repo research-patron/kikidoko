@@ -1,4 +1,8 @@
 # Cloudflare Pages cache policy for the static publish tree.
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+
 /
   Cache-Control: no-store, max-age=0, must-revalidate
 
@@ -6,6 +10,9 @@
   Cache-Control: no-store, max-age=0, must-revalidate
 
 /update-info.html
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/update-info
   Cache-Control: no-store, max-age=0, must-revalidate
 
 /update-info/index.json

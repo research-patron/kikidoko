@@ -31,12 +31,12 @@
 
 ## CTA導線
 
-- 主CTA: `https://kikidoko.web.app/`
+- 主CTA: `https://kikidoko.org/`
 - 誘導文: まず候補を抽出し、テンプレートに必要項目を入れて送信する
 
 ## 内部リンク配置（相対パス）
 
-- App TOP: `https://kikidoko.web.app/`
+- App TOP: `https://kikidoko.org/`
 - Same category:
   - `/guide/search-external-usable-equipment/`
   - `/guide/research-equipment-pricing-guide/`

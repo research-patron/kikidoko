@@ -32,12 +32,12 @@
 
 ## CTA導線
 
-- 主CTA: `https://kikidoko.web.app/`
+- 主CTA: `https://kikidoko.org/`
 - 誘導文: 候補抽出後に測定目的と試料条件を固定して問い合わせる
 
 ## 内部リンク配置（相対パス）
 
-- App TOP: `https://kikidoko.web.app/`
+- App TOP: `https://kikidoko.org/`
 - Same category:
   - `/equipment/sem-external-use-guide/`
   - `/equipment/nmr-frequency-selection-guide/`

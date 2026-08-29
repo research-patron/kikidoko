@@ -27,7 +27,7 @@
 
 ## CTA導線
 - 主CTA: キキドコ？で候補を抽出し、同一フォーマット比較へ接続
-- URL: https://kikidoko.web.app/
+- URL: https://kikidoko.org/
 
 ## 内部リンク配置
 - 同カテゴリ:

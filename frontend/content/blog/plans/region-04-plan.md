@@ -32,12 +32,12 @@
 
 ## CTA導線
 
-- 主CTA: `https://kikidoko.web.app/`
+- 主CTA: `https://kikidoko.org/`
 - 誘導文: 福岡候補を3〜5件抽出し、比較表で評価して問い合わせる
 
 ## 内部リンク配置（相対パス）
 
-- App TOP: `https://kikidoko.web.app/`
+- App TOP: `https://kikidoko.org/`
 - Same category:
   - `/region/osaka-shared-equipment-guide/`
   - `/region/hokkaido-research-equipment-guide/`

@@ -3193,13 +3193,31 @@
   function ensureUpdateInfoFooterLink() {
     const footerLinks = document.querySelector(".footer-links");
     if (!footerLinks) return;
-    if (footerLinks.querySelector('a[href="/update-info.html"]')) return;
 
-    const link = document.createElement("a");
-    link.href = "/update-info.html";
-    link.textContent = "アップデート情報";
-    link.rel = "noreferrer";
-    footerLinks.appendChild(link);
+    [
+      { label: "利用規約", href: "/terms" },
+      { label: "プライバシー", href: "/privacy-policy" },
+      { label: "問い合わせ", href: "/contact" },
+    ].forEach(({ label, href }) => {
+      const existingLink = Array.from(footerLinks.querySelectorAll("a")).find((anchor) =>
+        String(anchor.textContent || "").includes(label)
+      );
+      if (!existingLink) return;
+      existingLink.href = href;
+      existingLink.removeAttribute("target");
+      existingLink.removeAttribute("rel");
+    });
+
+    [
+      { href: "/about", label: "運営・編集方針" },
+      { href: "/update-info", label: "アップデート情報" },
+    ].forEach(({ href, label }) => {
+      if (footerLinks.querySelector(`a[href="${href}"]`)) return;
+      const link = document.createElement("a");
+      link.href = href;
+      link.textContent = label;
+      footerLinks.appendChild(link);
+    });
   }
 
   function installFooterLinkWatcher() {
@@ -4781,32 +4799,12 @@
     });
   }
 
-  function collectFooterSupportLinks(footer) {
-    const fallback = {
-      terms: "",
-      privacy: "",
-      contact: "",
-    };
-    if (!(footer instanceof Element)) return fallback;
-    const anchors = Array.from(footer.querySelectorAll(".footer-links a"));
-    anchors.forEach((anchor) => {
-      const label = String(anchor.textContent || "").trim();
-      const href = String(anchor.getAttribute("href") || "").trim();
-      if (!href) return;
-      if (label.includes("利用規約")) fallback.terms = href;
-      if (label.includes("プライバシー")) fallback.privacy = href;
-      if (label.includes("問い合わせ")) fallback.contact = href;
-    });
-    return fallback;
-  }
-
   function installHomeFooter() {
     if (!isHomeRefreshEligible()) return;
     const footer = document.querySelector(".footer");
     if (!(footer instanceof HTMLElement)) return;
     if (footer.dataset.homeFooterReady === "1") return;
 
-    const links = collectFooterSupportLinks(footer);
     footer.classList.add("home-footer");
     footer.dataset.homeFooterReady = "1";
     footer.innerHTML = `
@@ -4839,7 +4837,7 @@
           <div class="home-footer-links-grid">
             <button type="button" data-home-scroll="home-popular" data-home-tab="popular">人気機器を見る</button>
             <button type="button" data-home-scroll="home-popular" data-home-tab="articles">記事ピックアップを見る</button>
-            <a href="/update-info.html">アップデート情報</a>
+            <a href="/update-info">アップデート情報</a>
           </div>
           <p class="home-footer-note">最新の修正内容と過去の更新履歴はアップデート情報ページに掲載しています。</p>
         </section>
@@ -4847,9 +4845,10 @@
         <section class="home-footer-column">
           <h4>法務・サポート</h4>
           <div class="home-footer-links-grid">
-            ${links.terms ? `<a href="${escapeHtml(links.terms)}" target="_blank" rel="noreferrer">利用規約</a>` : ""}
-            ${links.privacy ? `<a href="${escapeHtml(links.privacy)}" target="_blank" rel="noreferrer">プライバシーポリシー</a>` : ""}
-            ${links.contact ? `<a href="${escapeHtml(links.contact)}" target="_blank" rel="noreferrer">お問い合わせ</a>` : ""}
+            <a href="/terms">利用規約</a>
+            <a href="/privacy-policy">プライバシーポリシー</a>
+            <a href="/about">運営・編集方針</a>
+            <a href="/contact">お問い合わせ</a>
           </div>
           <p class="home-footer-note">利用登録や申請フローは eqnet または各保有機関の案内をご確認ください。</p>
         </section>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="theme-color" content="#fff7e8" />
+    <meta
+      name="description"
+      content="お探しのページは見つかりませんでした。キキドコのトップページから研究設備を検索できます。"
+    />
+    <link rel="icon" type="image/png" href="/brand/app-icon-square.png" />
+    <link rel="apple-touch-icon" href="/brand/app-icon-square.png" />
+    <title>ページが見つかりません | キキドコ</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family:
+          "BIZ UDPGothic",
+          "Hiragino Kaku Gothic ProN",
+          "Yu Gothic",
+          sans-serif;
+        background: #fff7e8;
+        color: #2f2520;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.92), transparent 30%),
+          linear-gradient(145deg, #fff8ea 0%, #f7dfb4 52%, #fff2d9 100%);
+        line-height: 1.75;
+      }
+
+      main {
+        width: min(620px, 100%);
+        padding: clamp(28px, 6vw, 52px);
+        border: 1px solid #e8d5b8;
+        border-radius: 24px;
+        background: rgba(255, 253, 247, 0.94);
+        box-shadow: 0 22px 48px rgba(82, 59, 25, 0.14);
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        width: 76px;
+        height: 76px;
+        margin: 0 auto 20px;
+        border-radius: 22px;
+        box-shadow: 0 12px 28px rgba(142, 91, 31, 0.2);
+      }
+
+      .status {
+        margin: 0 0 4px;
+        color: #8e5b1f;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(25px, 6vw, 36px);
+        line-height: 1.35;
+      }
+
+      .message {
+        margin: 16px auto 26px;
+        color: #6f5f53;
+        font-size: clamp(14px, 3.5vw, 16px);
+      }
+
+      .home-link {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 22px;
+        border: 1px solid #8e5b1f;
+        border-radius: 999px;
+        background: #8e5b1f;
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        transition:
+          background-color 160ms ease,
+          border-color 160ms ease,
+          transform 160ms ease;
+      }
+
+      .home-link:hover {
+        border-color: #704515;
+        background: #704515;
+        transform: translateY(-1px);
+      }
+
+      .home-link:focus-visible {
+        outline: 3px solid rgba(142, 91, 31, 0.32);
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="/brand/app-icon-square.png" alt="" width="76" height="76" />
+      <p class="status">404 NOT FOUND</p>
+      <h1>ページが見つかりません</h1>
+      <p class="message">
+        URLが変更されたか、ページが削除された可能性があります。<br />
+        トップページから研究設備を探し直してください。
+      </p>
+      <a class="home-link" href="/">トップページへ戻る</a>
+    </main>
+  </body>
+</html>

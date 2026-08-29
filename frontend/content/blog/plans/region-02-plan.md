@@ -32,12 +32,12 @@
 
 ## CTA導線
 
-- 主CTA: `https://kikidoko.web.app/`
+- 主CTA: `https://kikidoko.org/`
 - 誘導文: 関西候補を抽出し、比較表化して問い合わせへ進む
 
 ## 内部リンク配置（相対パス）
 
-- App TOP: `https://kikidoko.web.app/`
+- App TOP: `https://kikidoko.org/`
 - Same category:
   - `/region/tokyo-research-equipment-guide/`
   - `/region/fukuoka-research-equipment-guide/`
